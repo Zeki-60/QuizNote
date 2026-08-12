@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    container_name: quiznote-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: quiznote
+      POSTGRES_USER: quiznote
+      POSTGRES_PASSWORD: quiznote123
+    ports:
+      - "5435:5432"
+    volumes:
+      - quiznote-pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U quiznote -d quiznote"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  quiznote-pgdata:

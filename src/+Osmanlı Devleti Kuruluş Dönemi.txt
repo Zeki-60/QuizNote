@@ -1,0 +1,2078 @@
+BÖLÜM 1 — Not isimleri
+
+notCagdasDevletlerIlhanliAltinordu, notCagdasDevletlerMemlukTurkiyeSelcuklu, notBizansVeTrabzonRum, notOsmanliKurulusYeriVeAtsb, notKisaSurdeBuyumeNedenleri, notMudaraPolitikasi, notGaziyaniRumVeDestekcigruplar, notIskanIstimaletTimar, notIskaninAmaclariVeSartlari, notOsmanBeyDonemiFetihleri, notOsmanBeyDonemiIlkler, notOrhanBeyBursaIznik, notOrhanBeyPelekanonCimpeKale, notOrhanBeyDonemiIlkler, notOrhanBeyRumeliFetihleri, notBiriciMuratHudavendigarBeylikler, notBiriciMuratSirpSindigiCirmen, notBiriciMuratKosovaSavasi, notBiriciMuratKurumsalGelismeler, notBiriciMuratSavciBeyIsyani, notYildirimBeyazitFrenkYazisiIstanbulKusatma, notYildirimSultaniIklimiRum, notAnkaraSavasiNedenleri, notAnkaraSavasiSonuclariVeFetret, notCelebiMehmetDuzmeceMustafaBedrettin, notIkinciMuratEdirneSegedin, notIkinciMuratVarnaKosova, notHacliSavaslariKronolojisi
+
+BÖLÜM 2 — Notlar
+
+// --- Notlar: "Osmanlı Devleti Kuruluş Dönemi" başlığının ilgili bölümleri ---
+
+var notCagdasDevletlerIlhanliAltinordu = new Note
+{
+    Title = "Osmanlı Devleti Kuruluş Dönemi — Kuruluşta Çağdaş Devletler: İlhanlılar ve Altınordu",
+    Body = """
+           Osmanlı Devleti'nin kuruluş tarihi genel kabule göre 1299'dur (Halil İnalcık 1302'yi kabul eder). 1299 yılında çağdaş olan (aynı dönemde yaşayan) devletler arasında İlhanlılar, Altınordu, Memlükler, Anadolu (Türkiye) Selçuklu Devleti, Bizans, Trabzon Rum İmparatorluğu ve çeşitli Avrupa devletleri sayılabilir.
+
+           **Burası karıştırılabilir:** Osmanlı Devleti kurulduğunda 1157'de yıkılmış olan Büyük Selçuklu Devleti ile 1250'de yıkılmış olan Eyyubiler artık çağdaş değildir; bu devletler "Osmanlı ile çağdaş olmayan devlet" sorularında sıkça cevap olarak çıkar. Anadolu Selçuklu Devleti ise 1308'e kadar var olduğu için Osmanlı ile 9 yıl çağdaş kalmıştır.
+
+           İlhanlılar, İran'da kurulmuştur. 1231'de Harzemşahlara son vermiş, 1243 Kösedağ Savaşı'yla Anadolu Selçuklu Devleti'ni mağlup edip kendine bağlı hale getirmiştir. 1258'de Bağdat'a girerek Batınîliği (Alamut Kalesi) ve Abbasi Devleti'ni ortadan kaldırmıştır.
+
+           Altınordu Devleti, Karadeniz'in kuzeyinde Batu Han tarafından kurulmuştur. Rusların güneye (Akdeniz'e) inmesini uzun süre engellemiştir. Timur'un saldırıları sonucunda parçalanarak Kırım, Kazan, Ejderhan, Astrahan gibi hanlıklara ayrılmıştır.
+
+           **Bu konudan sıkça soru gelmektedir.** Kırım, Kazan, Ejderhan ve Astrahan hanlıkları Altınordu Devleti'nin parçalanmasıyla ortaya çıkmıştır.
+           """
+};
+
+var notCagdasDevletlerMemlukTurkiyeSelcuklu = new Note
+{
+    Title = "Osmanlı Devleti Kuruluş Dönemi — Kuruluşta Çağdaş Devletler: Memlükler ve Anadolu Selçuklu Devleti",
+    Body = """
+           Memlükler Devleti, 1250'de Aybek tarafından kurulmuştur. İlhanlıların Abbasilere son vermesinin ardından kaçan Abbasi halifesi Memlüklere (Mısır'a) sığınmış; Memlükler halifeliği 1517'ye kadar himayelerinde muhafaza etmiştir.
+
+           **Burası karıştırılabilir:** Memlüklerde halifelik ile sultanlık ayrı kişilerde bulunuyordu; halife ayrı, sultan ayrı bir kişiydi. Osmanlı Devleti'nde ise Yavuz Sultan Selim, 1517'de Memlükler Devleti'ne Ridaniye Savaşı ile son verdikten sonra halifelik yetkisini kendi üzerine almıştır; bu yönüyle Osmanlı, Memlüklerden farklıdır.
+
+           Anadolu (Türkiye) Selçuklu Devleti, 1075'te Kutalmışoğlu Süleymanşah tarafından İznik'te kurulmuştur. 1243 Kösedağ Savaşı ile İlhanlılara tabi olmuş, 1308'de Sultan III. Mesud'un ölümüyle yıkılmıştır. Bu tarih Osmanlı'nın kuruluşundan (1299) 9 yıl sonradır; dolayısıyla iki devlet bir süre çağdaş olarak var olmuştur.
+
+           1243 Kösedağ Savaşı sonrasında Anadolu Selçuklu Devleti'nin zayıflamasıyla Anadolu'da birçok Türk beyliği (Osmanoğulları, Karamanoğulları, Germiyanoğulları, Dulkadiroğulları, Hamitoğulları, Sahib Ataoğulları, Ramazanoğulları gibi) kurulmuştur. Bu durum, Anadolu Türk Siyasi Birliği'nin (ATSB) bozulması anlamına gelir.
+
+           **Bu konudan sıkça soru gelmektedir.** ATSB, Anadolu'da Türklerin tek bir bayrak (devlet) altında yaşamasını ifade eder. Anadolu'da birden fazla Türk devleti/beyliği bir arada varsa ATSB yok demektir. [[notOsmanliKurulusYeriVeAtsb]]
+           """
+};
+
+var notBizansVeTrabzonRum = new Note
+{
+    Title = "Osmanlı Devleti Kuruluş Dönemi — Bizans, İznik Rum ve Trabzon Rum İmparatorlukları",
+    Body = """
+           Bizans İmparatorluğu, Osmanlı'nın kuruluş döneminde çöküş sürecindeydi. Bizans'ın taşra valilerine "tekfur" denilirdi; tekfurlar merkezi dinlemez, halka özellikle vergi konusunda zulmederdi. Bu nedenle birçok tekfur, Osmanlı hakimiyetine geçtiğinde memnuniyetle karşılamıştır; çünkü Osmanlı vergileri düşürmüştür.
+
+           Bizans'ta iki büyük aile (Kantakuzenler ve Paleologoslar) arasındaki sürekli taht kavgaları, Osmanlı Devleti'nin bu durumdan yararlanmasını sağlamıştır.
+
+           1204 yılında IV. Haçlı Seferi sırasında Latinler İstanbul'u yağmalamış ve burada Latin İmparatorluğu'nu kurmuştur (1204-1261). Bu süreçte kaçan Bizanslı şehzadeler iki ayrı imparatorluk kurmuştur:
+           - İznik Rum İmparatorluğu (1204-1261)
+           - Trabzon Rum İmparatorluğu (1204-1461)
+
+           **Bu konudan sıkça soru gelmektedir.** Trabzon Rum İmparatorluğu'na 1461'de Fatih Sultan Mehmet tarafından son verilmiştir.
+
+           **Burası karıştırılabilir:** Bizans İmparatorluğu bir süre (1204-1261) tamamen ortadan kalkmıştır; ancak Trabzon Rum İmparatorluğu bu süreçten etkilenmeden 1461'e kadar varlığını sürdürmüştür.
+           """
+};
+
+var notOsmanliKurulusYeriVeAtsb = new Note
+{
+    Title = "Osmanlı Devleti Kuruluş Dönemi — Kuruluş Yeri ve Ertuğrul Gazi",
+    Body = """
+           Osmanlı Devleti, Söğüt ve Domaniç bölgesinde kurulmuştur. Söğüt, Bilecik'in; Domaniç ise Kütahya'nın bir ilçesidir. Bu iki bölge, Ertuğrul Gazi'ye Anadolu Selçuklu Devleti hükümdarı tarafından yurtluk olarak verilmiştir; biri yaylak, diğeri kışlak olarak kullanılmıştır.
+
+           Söğüt ve Domaniç arasında bulunan İnegöl bölgesi, bu iki yerleşimin arasındaki geçişi zorlaştırdığı için Osmanlı Devleti'nin ilk fetih hedeflerinden biri olmuştur.
+
+           Devletin kurucu sırası şu şekildedir: Ertuğrul Gazi, Osman Gazi (kurucu), Orhan Gazi, I. Murat, Yıldırım Bayezid, Çelebi Mehmet (ikinci kurucu), II. Murat...
+
+           **Bu konudan sıkça soru gelmektedir.** Anadolu Türk Siyasi Birliği (ATSB), Anadolu'da Türklerin tek bir bayrak altında yaşamasını ifade eder. 1243 Kösedağ Savaşı'ndan sonra Anadolu'da birden fazla Türk beyliği kurulduğu için ATSB bozulmuştur; Osmanlı Devleti'nin kısa sürede genişlemesinin en önemli sonuçlarından biri ATSB'nin yeniden sağlanma sürecidir.
+           """
+};
+
+var notKisaSurdeBuyumeNedenleri = new Note
+{
+    Title = "Osmanlı Devleti Kuruluş Dönemi — Kısa Sürede Büyümenin Nedenleri",
+    Body = """
+           Osmanlı Devleti'nin kısa sürede büyümesinin nedenleri şunlardır:
+           - Bizans'ın içindeki taht kavgaları
+           - Bizans tekfurlarının merkezi dinlememesi
+           - Türklerdeki gaza ve cihat ruhu
+           - Avrupa'da İngiltere ile Fransa arasında Yüzyıl Savaşları'nın yaşanması (1337-1453)
+           - Merkezi otoritenin güçlü tutulması
+           - Yetenekli padişahların art arda tahta çıkması
+           - Anadolu beylikleriyle başlarda iyi geçinilmesi
+           - Güçlü bir orduya sahip olunması
+           - Balkanların siyasi ve dini açıdan bölünmüş olması
+           - Türklerin sahip olduğu milli özellikler (savaşçılık, yardımseverlik, konukseverlik gibi)
+           - Anadolu Selçuklu Devleti'nin zayıflaması ve beyliklerin kurulduğu dönemde Anadolu'da siyasi boşluğun olması
+
+           **Bu konudan sıkça soru gelmektedir.** Osmanlı Devleti, yıllarca farklı milletleri barış ve huzur içinde bir arada tuttuğu için klasik döneminde batıda "Osmanlı Barışı" (Pax Ottomana) olarak anılmıştır; bu, İslamiyet öncesi dönemdeki Pax Sarmatica benzeri bir kavramdır.
+
+           **Burası karıştırılabilir:** Osmanlı Devleti başlarda güçlü beyliklerle (Karamanoğulları, Germiyanoğulları gibi) savaşmak yerine iyi geçinmeyi tercih etmiştir; toprak kazanımlarını çoğunlukla evlilik, satın alma veya iç kavgalardan yararlanma yoluyla elde etmiştir. [[notBiriciMuratHudavendigarBeylikler]]
+           """
+};
+
+var notMudaraPolitikasi = new Note
+{
+    Title = "Osmanlı Devleti Kuruluş Dönemi — Müdara Politikası",
+    Body = """
+           Osmanlı Devleti, kuruluş yıllarında özellikle Bizans tekfurlarıyla "görünüşte dostça geçinme" anlamına gelen müdara politikasını uygulamıştır.
+
+           Örnek olarak Harmankaya Tekfuru Mihail Kosses (Köse), Osmanlı Devleti ile dostluk kurmuş, 1313'te Müslüman olarak "Abdullah Köseoğlu" ismini almış ve Mihaloğulları (ünlü akıncı ailesi) sülalesinin kurucusu olmuştur.
+
+           **Burası karıştırılabilir:** Müdara politikası, İnegöl, Bilecik, Yarhisar gibi tekfurlarla kurulan geçici ve görünüşte dostluk ilişkilerini kapsar; her tekfurla ilişki Mihail Kosses örneğindeki gibi kalıcı dostluğa dönüşmemiştir; Osmanlı, tekfurlar arasındaki husumetlerden yararlanarak onları tek tek ele geçirmiştir.
+           """
+};
+
+var notGaziyaniRumVeDestekcigruplar = new Note
+{
+    Title = "Osmanlı Devleti Kuruluş Dönemi — Kuruluşa Destek Veren Gruplar (Rum Teşkilatları)",
+    Body = """
+           Osmanlı Devleti'nin kuruluşuna destek veren dört önemli teşkilat/grup şunlardır (isimlerinin sonundaki "Rum" kelimesi Anadolu anlamına gelir):
+           - Gaziyân-ı Rum: Anadolu gazileri (savaşçılar)
+           - Ahiyân-ı Rum: Anadolu esnaf ve zanaatkârları (Ahiler)
+           - Abdalân-ı Rum: Anadolu dervişleri ve ozanları
+           - Bacıyân-ı Rum: Anadolu kadınları
+
+           Bunlara ek olarak Osman Bey'in çevresinde Alperenler (Samsa Çavuş, Konur Alp, Turgut Alp, Evrenos Gazi, Hacı İlbey gibi) bulunmaktadır.
+
+           Osman Bey, Şeyh Edebali'nin kızı Bala Hatun ile evlenerek hem Ahiler hem de ailesinden büyük destek almıştır.
+
+           **Bu konudan sıkça soru gelmektedir.** "Gaziyân-ı Rum" ve benzer "Rum" ile biten teşkilat isimleri, defalarca sınav sorusuna konu olmuştur; bu kavramlar Anadolu'yu (Rum diyarı) ifade eder, günümüzdeki Yunanistan anlamında değildir.
+           """
+};
+
+var notIskanIstimaletTimar = new Note
+{
+    Title = "Osmanlı Devleti Kuruluş Dönemi — İskan, İstimalet ve Tımar",
+    Body = """
+           Osmanlı Devleti, fethettiği bölgelerde üç temel politika uygulamıştır:
+
+           - Tımar: Fethedilen bölgede hizmet eden kişilere toprak, vergi muafiyeti ve tarım araç-gereci verilmesidir. Bu sayede toprağın işlenmesi ve üretimin sürekliliği sağlanmıştır.
+           - İskan (yerleştirme, şenlendirme): Türkmen ailelerin, özellikle kan davalı ailelerin birbirinden ayrılarak farklı bölgelere yerleştirilmesidir. Yeni yerleşim yerlerine cami, han, hamam, kütüphane gibi yapılar inşa edilerek bölge şenlendirilmiştir.
+           - İstimalet: "Meyl ettirme, cezbettirme, gönül alma" anlamına gelen hoşgörü politikasıdır. Gayrimüslim halkın din, dil ve törelerine karışılmamış; kiliseler onarılmış, yortular saygıyla karşılanmıştır.
+
+           **Bu konudan sıkça soru gelmektedir.** Osmanlı Devleti, fethettiği yerlerde kılıç hakkı olan (savaşarak alınan) şehirlerdeki en büyük kiliseyi camiye çevirmiş, ancak köylerdeki kiliselere dokunmamıştır.
+
+           **Burası karıştırılabilir:** İskan sırasında iklim uyumuna dikkat edilmiştir; soğuk bölgeden gelen aileler soğuk bölgelere, sıcak bölgeden gelenler sıcak bölgelere yerleştirilmiştir.
+           """
+};
+
+var notIskaninAmaclariVeSartlari = new Note
+{
+    Title = "Osmanlı Devleti Kuruluş Dönemi — İskan Politikasının Amaçları ve Şartları",
+    Body = """
+           İskan politikasının amaçları:
+           - Fethedilen bölgelerin Türkleşmesini ve İslamlaşmasını sağlayarak egemenliği kalıcı hale getirmek
+           - Konar göçer Türkmenlerin yerleşik hayata geçmesini sağlamak
+           - Gayrimüslim halkın ayaklanma ihtimalini ortadan kaldırmak
+           - Aralarında kavga yaşayan aile ve aşiretleri birbirinden uzaklaştırarak huzuru sağlamak
+           - Fetih hareketlerinin sürekliliğini sağlamak
+           - Bölgeyi imar faaliyetleriyle şenlendirmek
+
+           İskana tabi tutulanlara sağlanan şartlar:
+           - Genellikle gönüllülük esasına göre yapılmıştır.
+           - Tüm ihtiyaçları devlet tarafından karşılanmıştır.
+           - Vergiden muaf olarak toprak verilmiştir.
+           - Belli bir süre (genellikle 5 yıl) eski yurtlarına dönüşleri yasaklanmıştır.
+
+           **Bu konudan sıkça soru gelmektedir.** İskan kavramı KPSS'de defalarca (örneğin 2005'te) doğrudan sorulmuştur; iskanın amaçları ile şartları birbirine karıştırılmamalıdır.
+           """
+};
+
+var notOsmanBeyDonemiFetihleri = new Note
+{
+    Title = "Osmanlı Devleti Kuruluş Dönemi — Osman Bey Dönemi Fetihleri",
+    Body = """
+           Osman Bey'in lakabı Fahreddin'dir. Osman Bey döneminde yapılan başlıca fetihler kronolojik olarak:
+           - 1285: Kulaca Hisar alınmıştır.
+           - 1288: Karacahisar alınmıştır. Karacahisar, ilk kez kadı atanan ve ilk vergi alınan yer olması bakımından önemlidir.
+           - 1299-1300 civarı: Yarhisar, Bilecik, Yenişehir ve İnegöl alınmıştır.
+           - 1302: Koyunhisar (Bafeus/Bafeon) Savaşı Bizans'a karşı kazanılmıştır.
+
+           **Bu konudan sıkça soru gelmektedir.** Koyunhisar Savaşı (Bafeus/Bafeon Savaşı), ilk Osmanlı-Bizans savaşıdır.
+
+           Osman Bey, hem İznik'i hem de Bursa'yı kuşatmıştır; ancak her iki şehrin de fethi kendisine değil oğlu Orhan Bey'e nasip olmuştur.
+
+           **Burası karıştırılabilir:** Kulaca Hisar (1285) ile Karacahisar (1288) isimleri benzer olduğundan karıştırılabilir; Karacahisar'da ilk kadı ataması ve ilk vergi toplanması gerçekleşmiştir, Kulaca Hisar'da böyle bir özellik yoktur.
+           """
+};
+
+var notOsmanBeyDonemiIlkler = new Note
+{
+    Title = "Osmanlı Devleti Kuruluş Dönemi — Osman Bey Dönemi İlkleri",
+    Body = """
+           Osman Bey döneminde gerçekleşen önemli ilkler:
+           - İlk vergi: Bac vergisi (Karacahisar'da alınmıştır).
+           - İlk kadı ataması: Dursun Fakih, Karacahisar'a atanmıştır.
+           - İlk para bastırıldı (mangır/akçe olarak anılır).
+           - Bilecik'in alınmasıyla buradaki demir madeni işlenerek silah yapılmıştır.
+           - Osman Bey'in yakın arkadaşlarına (Konur Alp, Samsa Çavuş gibi) ilk defa tımar dağıtılmıştır.
+
+           Osman Bey vefatının ardından vasiyeti gereği oğlu Orhan Bey tarafından Bursa'daki Gümüşlü Kümbet'e defnedilmiştir.
+
+           **Bu konudan sıkça soru gelmektedir.** Osman Bey döneminin ilkleri (ilk vergi, ilk kadı, ilk para, ilk tımar) sınavlarda sıkça karıştırılır; hepsi Osman Bey dönemine, çoğu Karacahisar'a aittir.
+           """
+};
+
+var notOrhanBeyBursaIznik = new Note
+{
+    Title = "Osmanlı Devleti Kuruluş Dönemi — Orhan Bey: Bursa ve İznik'in Fethi",
+    Body = """
+           Orhan Bey döneminde, yaklaşık 20 yıl süren kuşatmaların ardından 1326'da Bursa fethedilmiş ve başkent ilan edilmiştir. Bursa kuşatması, şehrin su ve gıda kaynaklarının kesilmesiyle sonuçlandırılmıştır.
+
+           1329'da Bizans ile Pelekanon Savaşı (Koyunhisar veya Maltepe Savaşı olarak da bilinir) yapılmış ve kazanılmıştır; bu savaşta Bizans İmparatoru III. Andronikos yaralanarak kaçmıştır. Bu zafer sonucunda Kocaeli Yarımadası Osmanlı kontrolüne geçmiştir.
+
+           1331'de İznik fethedilmiş ve hemen başkent ilan edilmiştir. 1337'de İzmit alınmıştır.
+
+           **Burası karıştırılabilir:** Kronolojik sıralamada önce İznik (1331) başkent yapılmış, ardından imar çalışmaları tamamlanan Bursa (1326'da fethedilmesine rağmen) başkent haline getirilmiştir; yani "Bursa alındı-başkent oldu, sonra İznik alındı" şeklindeki sıralama yanlıştır, gerçek sıra tam tersidir.
+
+           1337 yılı ayrıca Avrupa'da İngiltere ile Fransa arasındaki Yüzyıl Savaşları'nın başladığı tarihe denk gelir.
+           """
+};
+
+var notOrhanBeyPelekanonCimpeKale = new Note
+{
+    Title = "Osmanlı Devleti Kuruluş Dönemi — Çimpe Kalesi ve Rumeli'ye Geçiş",
+    Body = """
+           1353 yılında Bizans'ta Kantakuzenos ile Yuhannis (VI. Ioannes) arasındaki taht kavgasında Kantakuzenos'a verilen yardım karşılığında Çimpe Kalesi Osmanlı'nın eline geçmiştir. Bu, Rumeli'deki ilk Osmanlı toprak parçasıdır.
+
+           Kantakuzenos'un kızı Theodora ile Orhan Bey, siyasi bir evlilik yapmıştır; bu evlilikten Halil adlı bir çocuk doğmuştur. Halil, Foçalı korsanlar tarafından kaçırılmış, 4 yıl sonra Kantakuzenos tarafından fidye ile geri alınmıştır.
+
+           1354 yılında yaşanan Marmara ve Gelibolu depremi sonucunda bölge halkı İstanbul surları içine kaçmış, boşalan Marmara ve Gelibolu kıyıları Osmanlı Devleti tarafından fethedilmiştir. Bu fetihleri gerçekleştiren komutan, Orhan Bey'in oğlu Gelibolu Fatihi Süleyman Paşa'dır (Theodora'dan değil, Nilüfer Hatun'dan doğmuştur).
+
+           **Bu konudan sıkça soru gelmektedir.** Kantakuzenos'un Osmanlı Devleti'ne yardım karşılığında verdiği kale Çimpe Kalesi'dir; bu olay sınavlarda en sık gelen konulardan biridir.
+
+           Yine bu dönemde Osmanlı Devleti, Karesioğulları Beyliği'ndeki bir taht kavgasından yararlanarak bu beyliğin topraklarını kendine katmıştır (Hacı İlbey, Evrenos Gazi, Ece Halil gibi denizciler bu katılımla Osmanlı hizmetine girmiştir). Bu, Anadolu Türk Siyasi Birliği'ni sağlamaya yönelik ilk faaliyet ve Osmanlı'nın deniz gücüne erişmesi olarak kabul edilir.
+
+           **Burası karıştırılabilir:** Halil, Kantakuzenos'un kızı Theodora'dan doğmuştur; Gelibolu'yu fetheden Süleyman Paşa ise Orhan Bey'in Nilüfer Hatun'dan olan oğludur; ikisi farklı annelerden gelen kardeşlerdir.
+           """
+};
+
+var notOrhanBeyDonemiIlkler = new Note
+{
+    Title = "Osmanlı Devleti Kuruluş Dönemi — Orhan Bey Dönemi İlkleri",
+    Body = """
+           Orhan Bey döneminde gerçekleşen önemli ilkler:
+           - İlk tersane: Karamürsel Tersanesi
+           - İlk saray: Bursa Bey Sarayı
+           - İlk medrese: İznik (Orhaniye) Medresesi
+           - İlk müderris: Davud-i Kayseri
+           - İlk cami: Hacı Özbek Camisi (İznik)
+           - İlk kul sistemi (savaş esirlerinden ilk faydalanma)
+           - İlk gümüş para: Akçe
+           - İlk ordu: Yaya ve Müsellem ordusu
+           - İlk divan: Divan-ı Hümayun
+           - İlk vezir: Alaeddin Paşa (Orhan Bey'in ağabeyi)
+           - İlk imarethane (aşevi)
+           - İlk vakıf teşkilatı
+           - İlk "sultan" unvanının kullanılması
+           - İlk iskan uygulaması: Bursa'daki Kara Tatarların Tekirdağ'ın Hayrabolu ilçesine yerleştirilmesi
+
+           **Bu konudan sıkça soru gelmektedir.** "Orhan Bey her zaman bir kurumu kuran hükümdardır" ifadesiyle özetlenen bu ilkler grubu, Osmanlı Devleti kuruluş döneminde en sık sorulan konulardan biridir.
+
+           Bu dönemi anlatan seyyah İbn Battuta, Osman ve Orhan Bey dönemlerini "Türkmen hükümdarlarının en ulusu" ifadesiyle tasvir etmiştir.
+           """
+};
+
+var notOrhanBeyRumeliFetihleri = new Note
+{
+    Title = "Osmanlı Devleti Kuruluş Dönemi — Orhan Bey Dönemi Rumeli Fetihleri",
+    Body = """
+           Orhan Bey döneminde Rumeli'ye geçiş sonrasında gerçekleşen fetihler:
+           - 1345: Karesioğulları Beyliği'nin toprakları Osmanlı'ya katılmıştır (Anadolu Türk Siyasi Birliği'ni sağlamaya yönelik ilk adım).
+           - 1353: Çimpe Kalesi Osmanlı'nın eline geçmiştir (Rumeli'deki ilk toprak parçası).
+           - 1354: Marmara ve Gelibolu hattının fethi tamamlanmıştır.
+           - 1357: Çorlu, Tekirdağ ve Malkara fethedilmiştir.
+
+           Bu gelişmeler Osmanlı Devleti'nin İstanbul'u git gide çevrelemesini sağlamıştır; ancak bu dönemde İstanbul kuşatılmamış, yalnızca çevresi ele geçirilmiştir.
+
+           **Bu konudan sıkça soru gelmektedir.** Karesioğulları'nın alınması, Osmanlı Devleti'nin donanma gücüne sahip olmasını sağlayan gelişmedir ve Anadolu Türk Siyasi Birliği'ni sağlamaya yönelik ilk adımdır.
+           """
+};
+
+var notBiriciMuratHudavendigarBeylikler = new Note
+{
+    Title = "Osmanlı Devleti Kuruluş Dönemi — I. Murat (Hüdavendigar) ve Beyliklerle İlişkiler",
+    Body = """
+           I. Murat'ın lakabı Hüdavendigar'dır. I. Murat döneminde iki Anadolu beyliği farklı yöntemlerle Osmanlı topraklarına katılmıştır:
+           - Hamitoğulları: Karamanoğulları'nın tehdidi üzerine, Isparta ve Yalvaç dahil toprakları 80.000 altın karşılığında satın alınmıştır.
+           - Germiyanoğulları: I. Yakup Bey'in kızı Devlet Hatun'un, I. Murat'ın oğlu Yıldırım Bayezid ile evlenmesi sonucunda Kütahya, Emet, Hisarcık ve Tavşanlı bölgesi çeyiz yoluyla Osmanlı'ya verilmiştir.
+
+           **Burası karıştırılabilir:** Hamitoğulları toprakları parayla satın alınmıştır; Germiyanoğulları toprakları ise çeyiz yoluyla (evlilik sonucu) elde edilmiştir; bu iki yöntem sık sık birbirine karıştırılır.
+
+           I. Murat, Bizans'ın üç büyük merkezinden biri olan Edirne'yi 1363'te Sazlıdere Savaşı ile fethetmiş, ardından 1364 Sırp Sındığı Savaşı'ndan sonra Edirne'yi başkent ilan etmiştir.
+           """
+};
+
+var notBiriciMuratSirpSindigiCirmen = new Note
+{
+    Title = "Osmanlı Devleti Kuruluş Dönemi — I. Murat: Sırp Sındığı ve Çirmen Savaşları",
+    Body = """
+           Edirne'nin fethi üzerine İstanbul'un tehlikeye girdiğini gören Bizans, Katolik dünyasından (Papa önderliğinde) yardım istemiş ve Osmanlı üzerine ilk Haçlı ittifakı düzenlenmiştir. 1364 yılında Meriç Nehri kıyısında, Hacı İlbey komutasındaki Osmanlı akıncı birlikleri gece baskınıyla Haçlı ordusunu (ağırlıklı olarak Sırplardan oluşan) bozguna uğratmıştır. Bu savaş Sırp Sındığı Savaşı olarak bilinir.
+
+           **Bu konudan sıkça soru gelmektedir.** Sırp Sındığı Savaşı (1364), Osmanlı Devleti'nin kazandığı ilk Osmanlı-Haçlı savaşıdır.
+
+           1371 yılında ise Lala Şahin Paşa komutasındaki 800 kişilik akıncı birliği, Meriç (Çirmen) Savaşı'nda 70.000 kişilik Sırp ordusunu ani bir gece baskınıyla mağlup etmiştir; bu savaş II. Meriç Zaferi veya Çirmen Zaferi olarak da bilinir.
+
+           **Burası karıştırılabilir:** Sırp Sındığı Savaşı (1364) ile Çirmen Savaşı (1371) farklı tarihlerde, farklı komutanlar (sırasıyla Hacı İlbey ve Lala Şahin Paşa) tarafından kazanılmış iki ayrı zaferdir; ikisi de Meriç Nehri çevresinde gerçekleşmiştir ve bu yüzden karıştırılabilir.
+
+           1387'de Ploşnik'te Osmanlı öncü birlikleri bir Haçlı kuvveti tarafından bozguna uğratılmıştır; ancak bu, Osmanlı'nın asıl ordusunu etkilememiştir.
+           """
+};
+
+var notBiriciMuratKosovaSavasi = new Note
+{
+    Title = "Osmanlı Devleti Kuruluş Dönemi — I. Kosova Savaşı ve I. Murat'ın Şehadeti",
+    Body = """
+           1389 yılında büyük bir Haçlı ordusuna karşı I. Kosova Savaşı yapılmış ve kazanılmıştır. Bu savaşa Anadolu beylikleri de asker göndererek destek olmuştur. Savaşta ilk defa top kullanılmıştır.
+
+           Savaş sonunda I. Murat, Miloš Obilić adlı bir Sırp prensi tarafından savaş meydanında hançerlenerek şehit edilmiştir.
+
+           **Bu konudan sıkça soru gelmektedir.** I. Murat, savaş meydanında şehit edilen ilk ve tek Osmanlı padişahıdır (Kanuni Sultan Süleyman Zigetvar Seferi sırasında vefat etmiştir ancak şehit edilmemiştir, eceliyle ölmüştür).
+
+           I. Murat'ın şehadetinden sonra oğlu Yıldırım Bayezid tahta çıkmıştır. Diğer oğlu Yakup Çelebi ise, tahta geçme ihtimalini ortadan kaldırmak amacıyla yay kirişiyle boğdurularak öldürülmüştür.
+
+           **Burası karıştırılabilir:** I. Kosova Savaşı'nda top kullanılması ile Türk bayrağının şeklinin oluştuğuna dair rivayet aynı döneme ait iki farklı bilgidir; ikisi birbirine karıştırılmamalıdır.
+           """
+};
+
+var notBiriciMuratKurumsalGelismeler = new Note
+{
+    Title = "Osmanlı Devleti Kuruluş Dönemi — I. Murat Dönemi Kurumsal Gelişmeler",
+    Body = """
+           I. Murat döneminde gerçekleşen önemli kurumsal gelişmeler:
+           - İlk defa maliye teşkilatı kurulmuştur (kazaskerlik, defterdarlık ve sadrazamlık makamları oluşturulmuştur).
+           - Edirne'de Kapıkulu Ocağı kurulmuştur; buna bağlı olarak Yeniçeri Ocağı ve Topçu Ocağı oluşturulmuştur.
+           - Çandarlı Kara Halil Hayreddin Paşa ve Molla Rüstem'in (Karamanlı Bilgi Mevlana) teşvikiyle Pençik Sistemi (savaş esirlerinin beşte birinin devlete ayrılması) kurulmuştur; bu sistem askeri alma yöntemidir.
+           - Sistemli şekilde tımar ve iskan uygulamaları yapılmıştır.
+           - Veraset sisteminde değişiklik yapılmıştır: "Ülke hükümdar ve ailesine aittir" anlayışı yerini "ülke hükümdar ve oğullarına aittir" anlayışına bırakmıştır.
+           - Manastır merkezli Rumeli Beylerbeyliği kurulmuş; ilk Rumeli Beylerbeyi Lala Şahin Paşa olmuştur.
+
+           **Bu konudan sıkça soru gelmektedir.** Pençik sistemini kuran iki isim Çandarlı Kara Halil Hayreddin Paşa ve Molla Rüstem'dir; bu isimler sınavlarda birbirine karıştırılabilir.
+           """
+};
+
+var notBiriciMuratSavciBeyIsyani = new Note
+{
+    Title = "Osmanlı Devleti Kuruluş Dönemi — Savcı Bey İsyanı",
+    Body = """
+           I. Murat'ın oğlu Savcı Bey, Bizans İmparatoru'nun oğlu IV. Andronikos ile anlaşarak babalarına karşı eş zamanlı isyan etmiştir. İsyan bastırılmış, IV. Andronikos'un gözlerine yalancı körlük (mil çektirme benzeri, iyileşebilen bir yöntem) uygulanırken, Savcı Bey idam edilmiştir.
+
+           **Bu konudan sıkça soru gelmektedir.** Savcı Bey İsyanı, Osmanlı Devleti'nde görülen ilk kapsamlı ve sistemli şehzade isyanıdır; isyancı kendi ordusunu toplamış ve kendi adına para bastırmıştır (para bastırmak egemenlik sembollerinden biridir).
+
+           **Burası karıştırılabilir:** IV. Andronikos'a uygulanan ceza "yalancı körlük" olup birkaç gün sonra etkisi geçmiştir; Savcı Bey'e uygulanan ceza ise idamdır. İki isyancıya farklı cezalar uygulanmıştır.
+           """
+};
+
+// --- Notlar: "Osmanlı Devleti Kuruluş Dönemi (2. Bölüm)" başlığının ilgili bölümleri ---
+
+var notYildirimBeyazitFrenkYazisiIstanbulKusatma = new Note
+{
+    Title = "Osmanlı Devleti Kuruluş Dönemi — Yıldırım Bayezid: Unvan ve İstanbul Kuşatmaları",
+    Body = """
+           Yıldırım Bayezid, henüz şehzadeliğinde Karamanoğulları ile yapılan Frenk Yazısı Savaşı'nda çok hızlı hareket ettiği için "Yıldırım" unvanını almıştır (Fransızlar ona "şimşek" demiştir).
+
+           Yıldırım Bayezid, Anadolu Türk Siyasi Birliği'ni (ATSB) geniş ölçüde sağlayan ilk Osmanlı hükümdarıdır; döneminde Saruhanoğulları, Candaroğulları, Menteşeoğulları ve Aydınoğulları gibi beyliklere son verilmiştir.
+
+           **Bu konudan sıkça soru gelmektedir.** Yıldırım Bayezid, Osmanlı tarihinde İstanbul'u kuşatan ilk padişahtır. Kuşatmaya yardımcı olmak amacıyla Anadolu Hisarı'nı (Güzelce Hisar) yaptırmıştır.
+
+           İstanbul, 1391-1401 yılları arasında toplam dört kez kuşatılmış ancak alınamamıştır. Kuşatmaların yarıda kesilme nedenleri:
+           - Karamanoğulları'nın iki kez isyan etmesi
+           - 1396'da Niğbolu Savaşı'nın çıkması
+           - 1401'de Timur'un Sivas'ı işgal edip Anadolu'ya doğru ilerlemesi
+
+           **Burası karıştırılabilir:** İstanbul'da bir Türk mahallesinin kurulması, kadı atanması ve Bizans'ın vergi vermesi kararları, Fatih Sultan Mehmet'in fethinden değil, Yıldırım Bayezid'in İstanbul kuşatmaları sonucunda yapılan bir anlaşmadan kaynaklanır (ancak uygulanamamıştır).
+           """
+};
+
+var notYildirimSultaniIklimiRum = new Note
+{
+    Title = "Osmanlı Devleti Kuruluş Dönemi — Niğbolu Savaşı ve Sultan-ı İklim-i Rum Unvanı",
+    Body = """
+           1396 yılında Macar Kralı Sigismund önderliğinde Osmanlı Devleti'ne karşı bir Haçlı ordusu oluşturulmuştur. Tuna Nehri üzerindeki Niğbolu Kalesi'ni Doğan Bey kahramanca müdafaa etmiş, Yıldırım Bayezid ordusuyla yetişerek Niğbolu'da Haçlıları yenmiştir.
+
+           Niğbolu zaferinin ardından Yıldırım Bayezid, Abbasi halifesine 1000 köle hediye göndermiş ve halifeden kendisine bir unvan verilmesini istemiştir. Bunun üzerine kendisine "Sultan-ı İklim-i Rum" (Anadolu memleketlerinin sultanı) unvanı verilmiştir.
+
+           **Bu konudan sıkça soru gelmektedir.** Sultan-ı İklim-i Rum unvanının verilmesine neden olan gelişme Niğbolu Savaşı'dır; bu konu sınavlarda sıkça sorulur (örneğin 2021'de).
+
+           **Burası karıştırılabilir:** Bu dönemde halifelik ile sultanlık hâlâ ayrı kişilerdeydi (halife Memlüklerdeydi); halifelik yetkisini kendi üzerine alan hükümdar Yavuz Sultan Selim'dir, Yıldırım Bayezid değildir. Yıldırım yalnızca halifeden bir unvan istemiştir.
+           """
+};
+
+var notAnkaraSavasiNedenleri = new Note
+{
+    Title = "Osmanlı Devleti Kuruluş Dönemi — Ankara Savaşı'nın Nedenleri",
+    Body = """
+           1402 Ankara Savaşı'nın nedenleri:
+           - Timur'un önünden kaçan Celayiroğlu Ahmet ve Karayülük Osman'ın (Akkoyunlu) Yıldırım Bayezid'e sığınması ve kendilerine amanname verilmesi
+           - Akkoyunluların Timur'u sürekli Anadolu'ya doğru kışkırtması
+           - İki liderin (Timur ve Yıldırım Bayezid) birbirlerini savaşa tahrik eden hakaretvari mektuplaşmaları
+           - İkisinin de Türk-İslam dünyasının tek lideri olmak istemesi
+           - Timur'un Sivas'ı işgal edip büyük bir katliam yapması
+
+           **Bu konudan sıkça soru gelmektedir.** Timur ile Yıldırım Bayezid arasında dört mektup teatisi olmuştur; ilk mektup diplomatik bir dille yazılmış, sonraki mektuplar ağır hakaretler içermiştir.
+
+           **Burası karıştırılabilir:** Ankara Savaşı, Osmanlı Devleti ile Haçlılar arasında değil, Yıldırım Bayezid ile Timur arasında yapılmıştır; bu nedenle "Osmanlı-Haçlı savaşları" sınıflandırmasına dahil edilmez. [[notHacliSavaslariKronolojisi]]
+           """
+};
+
+var notAnkaraSavasiSonuclariVeFetret = new Note
+{
+    Title = "Osmanlı Devleti Kuruluş Dönemi — Ankara Savaşı'nın Sonuçları ve Fetret Devri",
+    Body = """
+           1402 Ankara Savaşı'nda Yıldırım Bayezid, ordusundaki bazı Germiyan askerleri ve Kara Tatarların karşı tarafa geçmesi sonucunda esir düşmüştür; kendisi Osmanlı tarihinde düşmana esir düşen ilk ve tek padişahtır. Eşi Maria ve oğlu Mustafa ile birlikte Semerkant'a götürülmüştür.
+
+           Ankara Savaşı'nın sonuçları:
+           - Anadolu Türk Siyasi Birliği (ATSB) yeniden bozulmuştur; Timur, son verilen beyliklerin (Karesioğulları hariç) topraklarını eski beylerine geri vermiştir.
+           - İstanbul'un fethi yaklaşık yarım yüzyıl (50 yıl) gecikmiştir.
+           - Osmanlı'nın Balkanlardaki fetih hareketleri durma noktasına gelmiştir.
+           - Yıldırım Bayezid'in oğulları (Musa, İsa, Süleyman, Mehmet) arasında 1402-1413 yılları arasında 11 yıl süren taht kavgaları (Fetret Devri / Fasıl-ı Saltanat) yaşanmıştır.
+
+           **Bu konudan sıkça soru gelmektedir.** Karesioğulları, diğer beyliklerin aksine tekrar kurulamamıştır; çünkü beylik ailesinin tüm bireyleri daha önce ortadan kalkmıştır ve "kut" sahibi bir kişi kalmamıştır.
+
+           **Burası karıştırılabilir:** Fetret Devri'nde (11 yıl boyunca tahtta kimse olmamasına rağmen) Osmanlı Devleti Balkanlarda önemli bir toprak kaybı yaşamamıştır; bunun temel nedeni daha önce uygulanan istimalet ve iskan politikalarının halkta oluşturduğu bağlılıktır.
+           """
+};
+
+var notCelebiMehmetDuzmeceMustafaBedrettin = new Note
+{
+    Title = "Osmanlı Devleti Kuruluş Dönemi — Çelebi Mehmet: Fetreti Bitirme, Düzmece Mustafa ve Şeyh Bedrettin",
+    Body = """
+           Fetret Devri'nde Yıldırım Bayezid'in oğulları Musa, İsa, Süleyman ve Mehmet birbirleriyle mücadele etmiş, bu mücadeleyi I. (Çelebi) Mehmet kazanmıştır. Bu nedenle Çelebi Mehmet, tarihe "Osmanlı Devleti'nin ikinci kurucusu" olarak geçmiştir.
+
+           **Bu konudan sıkça soru gelmektedir.** "Osmanlı Devleti'nin ikinci kurucusu" unvanı Osman Bey'e değil, Fetret Devri'ni sona erdiren Çelebi Mehmet'e (I. Mehmet) aittir.
+
+           Çelebi Mehmet döneminde, Timur tarafından götürülüp daha sonra geri dönen ve "ben Yıldırım Bayezid'in oğluyum" iddiasıyla ortaya çıkan bir şahıs isyan etmiştir; bu olay "Düzmece Mustafa" olayı olarak bilinir. Mustafa, isyanı bastırılınca Bizans'a sığınmıştır.
+
+           **Burası karıştırılabilir:** Düzmece Mustafa iki farklı padişah döneminde (I. Mehmet ve II. Murat) isyan etmiştir; ilk isyanında yakalanamamış, ikinci isyanında II. Murat döneminde yakalanarak idam edilmiştir.
+
+           Yine bu dönemde Şeyh Bedrettin, müritleri Börklüce Mustafa ve Torlak Kemal ile birlikte (Serez, İzmir Karaburun ve Manisa'da) isyan etmiştir. Bu isyan, Osmanlı Devleti'nde çıkan ilk dinî nitelikli toplumsal ayaklanma olarak kabul edilir.
+
+           Çelebi Mehmet döneminde ayrıca Venedik ile ilk deniz savaşı yapılmış, Çalı Bey bu savaşta şehit olmuştur.
+           """
+};
+
+var notIkinciMuratEdirneSegedin = new Note
+{
+    Title = "Osmanlı Devleti Kuruluş Dönemi — II. Murat ve Edirne-Segedin Anlaşması",
+    Body = """
+           II. Murat'ın lakabı Ebu'l-Hayrat'tır ("hayır babası" anlamına gelir). Döneminde Aydınoğulları Beyliği'ne son verilmiştir.
+
+           1437-1444 yılları arasında Macar Kralı Ladislas ve Eflak Beyi Hünyadi Yanoş ile büyük mücadeleler yaşanmış, akıncı bey Mezid Bey bu mücadelelerde önemli rol oynamıştır. Her iki tarafın da çok kayıp vermesi üzerine Osmanlı Devleti ile Macarlar arasında Edirne-Segedin Anlaşması imzalanmıştır. Anlaşmanın koşulları:
+           - 10 yıl boyunca iki devlet arasında savaş olmayacaktır.
+           - Tuna Nehri iki devlet arasında sınır kabul edilecektir.
+
+           Bu anlaşmanın ardından II. Murat, tahtı 12 yaşındaki oğlu II. Mehmet'e bırakmıştır. Bu durumu fırsata çeviren Papa, Edirne-Segedin Anlaşması'nı bozdurmuştur.
+
+           **Bu konudan sıkça soru gelmektedir.** Edirne-Segedin Anlaşması'nın bozulması üzerine, Çandarlı sülalesinin teşvikiyle II. Murat tekrar tahta çağrılmış ve orduya "Serdar-ı Ekrem" unvanıyla komuta etmiştir.
+
+           **Burası karıştırılabilir:** II. Murat, Edirne-Segedin Anlaşması'nın bozulmasından sonra tahta iki kez dönmüştür: ilk kez Varna Savaşı öncesinde, ikinci kez 1446'daki Buçuktepe (Yeniçeri) İsyanı sonrasında II. Kosova Savaşı öncesinde.
+           """
+};
+
+var notIkinciMuratVarnaKosova = new Note
+{
+    Title = "Osmanlı Devleti Kuruluş Dönemi — Varna ve II. Kosova Savaşları",
+    Body = """
+           1444 yılında Osmanlı Devleti, Varna Savaşı'nda Haçlıları mağlup etmiştir. 1446'da Buçuktepe'de (Edirne) yeniçerilerin maaş sorunundan kaynaklanan bir isyan çıkması üzerine II. Murat tekrar tahta dönmüştür.
+
+           1448 yılında II. Kosova Savaşı ile Haçlılar bir kez daha mağlup edilmiştir. Bu savaşın sonuçları:
+           - Balkanlar kesin olarak Türk yurdu haline gelmiştir; Türklerin Balkanlardan atılamayacağı anlaşılmıştır.
+           - 1683 (II. Viyana Kuşatması) yılına kadar Osmanlı üzerine bir Haçlı ittifakı kurulamamıştır (235 yıl boyunca).
+           - Avrupalılar savunma durumuna geçerken Osmanlı Devleti taarruza geçmiştir.
+
+           **Bu konudan sıkça soru gelmektedir.** II. Kosova Savaşı'nın sonuçları, Balkanlar için 1176 Miryokefalon Savaşı'nın Anadolu için ifade ettiği anlama benzetilir: ikisi de "artık bu topraklardan atılamayacağız" gerçeğinin kesinleştiği savaşlardır.
+
+           **Burası karıştırılabilir:** Varna Savaşı (1444) ile II. Kosova Savaşı (1448) farklı tarihlerde gerçekleşmiş iki ayrı zaferdir; sınavlarda genellikle II. Kosova Savaşı hatırlanıp Varna Savaşı unutulur.
+
+           II. Murat döneminde Enderun Mektebi ilk defa Edirne'de açılmıştır; ancak bu kurumu sistemli hale getirip Topkapı Sarayı'na taşıyan hükümdar Fatih Sultan Mehmet'tir.
+           """
+};
+
+var notHacliSavaslariKronolojisi = new Note
+{
+    Title = "Osmanlı Devleti Kuruluş Dönemi — Osmanlı-Haçlı Savaşları Kronolojik Şifresi",
+    Body = """
+           Osmanlı Devleti'nin kuruluş dönemindeki Osmanlı-Haçlı savaşlarının kronolojik sırası "SINAV 2" şifresiyle hatırlanabilir:
+           - S: Sırp Sındığı (1364)
+           - I: I. Kosova (1389)
+           - N: Niğbolu (1396)
+           - A: Ankara (1402) — bu savaş aslında Haçlılarla değil, Timur ile Yıldırım Bayezid arasında yapılmıştır; şifrede yalnızca hatırlama kolaylığı için yer alır.
+           - V: Varna (1444)
+           - 2: II. Kosova (1448)
+
+           **Bu konudan sıkça soru gelmektedir.** "Aşağıdakilerden hangisi Osmanlı Devleti ile Haçlılar arasında yapılan savaşlardan biri değildir?" sorularında cevap genellikle Ankara Savaşı'dır; çünkü bu savaş Osmanlı ile Timur arasında yapılmıştır, Haçlılarla ilgisi yoktur.
+
+           Bu savaşlardaki karşı taraf liderleri: Sırp Sındığı'nda Macar Kralı Layoş, I. Kosova'da Sırp Kralı Lazar, Niğbolu'da Macar Kralı Sigismund, Varna ve II. Kosova'da Macar Kralı Ladislas ile Eflak Beyi Hünyadi Yanoş.
+
+           **Burası karıştırılabilir:** Koyunhisar (1302) ve Pelekanon (1329) savaşları Bizans'a karşı yapılmış olup bu Haçlı savaşları kronolojisine dahil değildir; bunlar doğrudan Osmanlı-Bizans savaşlarıdır.
+           """
+};
+
+BÖLÜM 3 — Sorular
+
+// --- SORU 1 ---
+new Question
+{
+    Note = notCagdasDevletlerIlhanliAltinordu,
+    Type = QuestionType.MultipleChoice,
+    Text = "Osmanlı Devleti kurulduğunda (1299) çağdaş olan devletlerden biri aşağıdakilerden hangisidir?",
+    Explanation = "İlhanlılar, Osmanlı Devleti'nin kuruluş tarihinde (1299) hâlâ var olan bir devlettir.",
+    OrderIndex = 1,
+    Choices =
+    {
+        new Choice { Text = "İlhanlılar", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Büyük Selçuklu Devleti", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Eyyubiler", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Gazneliler", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Akkoyunlular", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 2 ---
+new Question
+{
+    Note = notCagdasDevletlerIlhanliAltinordu,
+    Type = QuestionType.MultipleChoice,
+    Text = "Kırım, Kazan, Ejderhan ve Astrahan hanlıkları hangi devletin parçalanmasıyla ortaya çıkmıştır?",
+    Explanation = "Bu hanlıklar, Timur'un saldırıları sonucunda parçalanan Altınordu Devleti'nden doğmuştur.",
+    OrderIndex = 2,
+    Choices =
+    {
+        new Choice { Text = "Altınordu Devleti", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "İlhanlılar", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Memlükler", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Harzemşahlar", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Anadolu Selçuklu Devleti", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 3 (ters soru) ---
+new Question
+{
+    Note = notCagdasDevletlerIlhanliAltinordu,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "İlhanlılar ve Altınordu Devleti ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Altınordu Devleti, İran'da değil Karadeniz'in kuzeyinde kurulmuştur; İran'da kurulan devlet İlhanlılardır.",
+    OrderIndex = 3,
+    Choices =
+    {
+        new Choice { Text = "İlhanlılar 1258'de Abbasi Devleti'ni yıkmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "İlhanlılar 1243 Kösedağ Savaşı ile Anadolu Selçuklu Devleti'ni mağlup etmiştir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Altınordu Devleti Batu Han tarafından kurulmuştur.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Altınordu Devleti, Rusların güneye inmesini uzun süre engellemiştir.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Altınordu Devleti İran'da kurulmuştur.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 4 ---
+new Question
+{
+    Note = notCagdasDevletlerMemlukTurkiyeSelcuklu,
+    Type = QuestionType.MultipleChoice,
+    Text = "Memlükler Devleti'ni kuran kişi aşağıdakilerden hangisidir?",
+    Explanation = "Memlükler Devleti, 1250'de Aybek tarafından kurulmuştur.",
+    OrderIndex = 4,
+    Choices =
+    {
+        new Choice { Text = "Aybek", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Batu Han", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Kutalmışoğlu Süleymanşah", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yavuz Sultan Selim", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Osman Bey", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 5 ---
+new Question
+{
+    Note = notCagdasDevletlerMemlukTurkiyeSelcuklu,
+    Type = QuestionType.MultipleChoice,
+    Text = "Anadolu Selçuklu Devleti ile ilgili aşağıdakilerden hangisi doğrudur?",
+    Explanation = "Anadolu Selçuklu Devleti 1075'te İznik'te kurulmuş, 1243'te İlhanlılara tabi olmuş ve 1308'de yıkılmıştır.",
+    OrderIndex = 5,
+    Choices =
+    {
+        new Choice { Text = "1075'te İznik'te kurulmuştur.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "1243 Kösedağ Savaşı ile İlhanlılara tabi olmuştur.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "1308'de III. Mesud'un ölümüyle yıkılmıştır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Osmanlı Devleti ile bir süre çağdaş olmuştur.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Osmanlı Devleti'nin kuruluşundan önce yıkılmıştır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Memlükler tarafından yıkılmıştır.", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 6 (ters soru) ---
+new Question
+{
+    Note = notCagdasDevletlerMemlukTurkiyeSelcuklu,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Memlükler Devleti ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Memlüklerde halifelik ile sultanlık ayrı kişilerdedir; halifelik yetkisini kendi üzerine alan hükümdar Yavuz Sultan Selim'dir, Memlük sultanları değil.",
+    OrderIndex = 6,
+    Choices =
+    {
+        new Choice { Text = "1250'de Aybek tarafından kurulmuştur.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Abbasi halifesini himayelerine almışlardır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "1517'de Yavuz Sultan Selim tarafından yıkılmıştır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Ridaniye Savaşı sonucunda son bulmuşlardır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Memlük sultanları aynı zamanda halifelik yetkisini de kendi üzerlerinde taşımıştır.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 7 ---
+new Question
+{
+    Note = notBizansVeTrabzonRum,
+    Type = QuestionType.MultipleChoice,
+    Text = "1204 yılında IV. Haçlı Seferi sonucunda kaçan Bizanslı şehzadelerin kurduğu devletler aşağıdakilerden hangileridir?",
+    Explanation = "1204 sonrasında İznik Rum İmparatorluğu ve Trabzon Rum İmparatorluğu kurulmuştur.",
+    OrderIndex = 7,
+    Choices =
+    {
+        new Choice { Text = "İznik Rum İmparatorluğu", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Trabzon Rum İmparatorluğu", IsCorrect = true, OrderIndex = 2 },
+
+        new Choice { Text = "Latin İmparatorluğu", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Altınordu Devleti", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Memlükler Devleti", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 8 ---
+new Question
+{
+    Note = notBizansVeTrabzonRum,
+    Type = QuestionType.MultipleChoice,
+    Text = "Trabzon Rum İmparatorluğu'na hangi hükümdar tarafından son verilmiştir?",
+    Explanation = "Trabzon Rum İmparatorluğu, 1461'de Fatih Sultan Mehmet tarafından ortadan kaldırılmıştır.",
+    OrderIndex = 8,
+    Choices =
+    {
+        new Choice { Text = "Fatih Sultan Mehmet", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "I. Murat", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Orhan Bey", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Yavuz Sultan Selim", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 9 (ters soru) ---
+new Question
+{
+    Note = notBizansVeTrabzonRum,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Bizans ve Rum imparatorlukları ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Bizans tekfurları, merkezi dinlememiş ve halka zulmetmiştir; bu nedenle birçok tekfur Osmanlı hakimiyetine geçmekten memnuniyet duymuştur, ifadenin tersi doğrudur.",
+    OrderIndex = 9,
+    Choices =
+    {
+        new Choice { Text = "Bizans'ta Kantakuzenler ve Paleologoslar arasında sürekli taht kavgaları yaşanmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "1204'te Latinler İstanbul'u yağmalamıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Trabzon Rum İmparatorluğu 1461'e kadar varlığını sürdürmüştür.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "İznik Rum İmparatorluğu 1204-1261 arasında var olmuştur.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Bizans tekfurları merkezi eksiksiz dinlemiş ve halka adaletle davranmıştır.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 10 ---
+new Question
+{
+    Note = notOsmanliKurulusYeriVeAtsb,
+    Type = QuestionType.MultipleChoice,
+    Text = "Osmanlı Devleti'nin kurulduğu bölge aşağıdakilerden hangisidir?",
+    Explanation = "Osmanlı Devleti, Söğüt ve Domaniç bölgesinde kurulmuştur.",
+    OrderIndex = 10,
+    Choices =
+    {
+        new Choice { Text = "Söğüt ve Domaniç", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "İznik ve Bursa", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Konya ve Karaman", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Kütahya ve Balıkesir", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Edirne ve İstanbul", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 11 ---
+new Question
+{
+    Note = notOsmanliKurulusYeriVeAtsb,
+    Type = QuestionType.MultipleChoice,
+    Text = "Anadolu Türk Siyasi Birliği (ATSB) ile ilgili aşağıdakilerden hangisi doğrudur?",
+    Explanation = "ATSB, Anadolu'da Türklerin tek bir bayrak altında yaşamasını ifade eder; birden fazla Türk devleti/beyliği varsa ATSB yoktur.",
+    OrderIndex = 11,
+    Choices =
+    {
+        new Choice { Text = "Anadolu'da Türklerin tek bir bayrak altında yaşamasını ifade eder.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "1243 Kösedağ Savaşı sonrasında bozulmuştur.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Söğüt, Bilecik'in; Domaniç ise Kütahya'nın bir ilçesidir.", IsCorrect = true, OrderIndex = 3 },
+
+        new Choice { Text = "Birden fazla Türk beyliğinin varlığı ATSB'nin sağlandığı anlamına gelir.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Osmanlı Devleti'nin kuruluşuyla birlikte hiçbir zaman bozulmamıştır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Yalnızca Bizans ile ilgili bir kavramdır.", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 12 (ters soru) ---
+new Question
+{
+    Note = notOsmanliKurulusYeriVeAtsb,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Osmanlı Devleti'nin kuruluş yeri ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Söğüt, Domaniç'in değil Bilecik'in bir ilçesidir; Domaniç ise Kütahya'ya bağlıdır.",
+    OrderIndex = 12,
+    Choices =
+    {
+        new Choice { Text = "Söğüt ve Domaniç, biri yaylak biri kışlak olarak kullanılmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Söğüt ve Domaniç arasındaki İnegöl, ilk fetih hedeflerinden biri olmuştur.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Devletin kurucusu Osman Gazi'dir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Devletin ikinci kurucusu Çelebi Mehmet'tir.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Söğüt, Domaniç'in bir ilçesidir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 13 ---
+new Question
+{
+    Note = notKisaSurdeBuyumeNedenleri,
+    Type = QuestionType.MultipleChoice,
+    Text = "Osmanlı Devleti'nin kısa sürede büyümesinin nedenlerinden biri aşağıdakilerden hangisidir?",
+    Explanation = "Bizans'ın içindeki taht kavgaları, Osmanlı'nın büyümesini kolaylaştıran en önemli nedenlerden biridir.",
+    OrderIndex = 13,
+    Choices =
+    {
+        new Choice { Text = "Bizans'ın içindeki taht kavgaları", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Bizans tekfurlarının merkezi dinlememesi", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Avrupa'da Yüzyıl Savaşları'nın yaşanması", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Anadolu Selçuklu Devleti'nin zayıflaması", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Osmanlı'nın kuruluş yıllarında en güçlü ordu ve donanmaya sahip olması", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Balkanların siyasi ve dini açıdan tam bir birlik içinde olması", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 14 ---
+new Question
+{
+    Note = notKisaSurdeBuyumeNedenleri,
+    Type = QuestionType.MultipleChoice,
+    Text = "Osmanlı Devleti'nin klasik döneminde farklı unsurları barış ve huzur içinde yaşattığı için batıda kullanılan tabir aşağıdakilerden hangisidir?",
+    Explanation = "Bu duruma batıda 'Osmanlı Barışı' (Pax Ottomana) denilmiştir.",
+    OrderIndex = 14,
+    Choices =
+    {
+        new Choice { Text = "Osmanlı Barışı", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Pax Sarmatica", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Müdara", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "İstimalet", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Anadolu Türk Siyasi Birliği", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 15 (ters soru) ---
+new Question
+{
+    Note = notKisaSurdeBuyumeNedenleri,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Osmanlı Devleti'nin büyüme nedenleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Osmanlı Devleti başlarda güçlü beyliklerle savaşmak yerine iyi geçinmeyi tercih etmiştir; bu nedenle 'başlarda güçlü beyliklerle savaşarak toprak kazanmıştır' ifadesi yanlıştır.",
+    OrderIndex = 15,
+    Choices =
+    {
+        new Choice { Text = "Türklerdeki gaza ve cihat ruhu etkili olmuştur.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Merkezi otoritenin güçlü tutulması etkili olmuştur.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Yetenekli padişahların art arda tahta çıkması etkili olmuştur.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Anadolu'da siyasi boşluğun bulunması etkili olmuştur.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Osmanlı Devleti başlarda güçlü beyliklerle savaşarak toprak kazanmıştır.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 16 ---
+new Question
+{
+    Note = notMudaraPolitikasi,
+    Type = QuestionType.MultipleChoice,
+    Text = "Osmanlı Devleti'nin Bizans tekfurlarıyla görünüşte dostça geçinme anlamına gelen politikası aşağıdakilerden hangisidir?",
+    Explanation = "Bu politikanın adı müdaradır.",
+    OrderIndex = 16,
+    Choices =
+    {
+        new Choice { Text = "Müdara", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "İstimalet", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "İskan", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Tımar", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Pençik", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 17 (ters soru) ---
+new Question
+{
+    Note = notMudaraPolitikasi,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Müdara politikası ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Mihail Kosses, Harmankaya Tekfuru'dur, İnegöl Tekfuru değildir.",
+    OrderIndex = 17,
+    Choices =
+    {
+        new Choice { Text = "Görünüşte dostça geçinme anlamına gelir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Mihail Kosses 1313'te Müslüman olarak Abdullah Köseoğlu adını almıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Mihaloğulları sülalesinin kurucusu Mihail Kosses'tir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Her tekfurla kurulan ilişki kalıcı dostluğa dönüşmemiştir.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Mihail Kosses, İnegöl Tekfuru'dur.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 18 ---
+new Question
+{
+    Note = notGaziyaniRumVeDestekcigruplar,
+    Type = QuestionType.MultipleChoice,
+    Text = "Aşına, eşine ve işine dikkat et prensibiyle bilinen, Anadolu kadınlarından oluşan teşkilat aşağıdakilerden hangisidir?",
+    Explanation = "Bacıyân-ı Rum, Anadolu kadınlarından oluşan ve Fatma Bacı tarafından kurulan teşkilattır.",
+    OrderIndex = 18,
+    Choices =
+    {
+        new Choice { Text = "Bacıyân-ı Rum", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Gaziyân-ı Rum", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Ahiyân-ı Rum", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Abdalân-ı Rum", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Alperenler", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 19 ---
+new Question
+{
+    Note = notGaziyaniRumVeDestekcigruplar,
+    Type = QuestionType.MultipleChoice,
+    Text = "Osmanlı Devleti'nin kuruluşuna destek veren 'Rum' ile biten teşkilatlar aşağıdakilerden hangileridir?",
+    Explanation = "Gaziyân-ı Rum, Ahiyân-ı Rum, Abdalân-ı Rum ve Bacıyân-ı Rum, Osmanlı'nın kuruluşuna destek veren dört teşkilattır.",
+    OrderIndex = 19,
+    Choices =
+    {
+        new Choice { Text = "Gaziyân-ı Rum", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Ahiyân-ı Rum", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Abdalân-ı Rum", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Bacıyân-ı Rum", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Mihaloğulları", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Evrenosoğulları", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 20 (ters soru) ---
+new Question
+{
+    Note = notGaziyaniRumVeDestekcigruplar,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Osmanlı Devleti'nin kuruluşuna destek veren teşkilatlarla ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "'Rum' kelimesi bu teşkilat isimlerinde Anadolu anlamına gelir; günümüzdeki Yunanistan anlamında kullanılmamıştır.",
+    OrderIndex = 20,
+    Choices =
+    {
+        new Choice { Text = "Ahiyân-ı Rum, Anadolu esnaf ve zanaatkârlarını ifade eder.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Abdalân-ı Rum, Anadolu dervişlerini ve ozanlarını ifade eder.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Osman Bey, Şeyh Edebali'nin kızı Bala Hatun ile evlenmiştir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Osman Bey'in çevresinde Alperenler bulunmaktaydı.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "'Rum' kelimesi bu isimlerde günümüzdeki Yunanistan'ı ifade eder.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 21 ---
+new Question
+{
+    Note = notIskanIstimaletTimar,
+    Type = QuestionType.MultipleChoice,
+    Text = "Osmanlı Devleti'nin fethedilen bölgelerde uyguladığı politikalardan biri olan, hoşgörü ve gönül alma anlamına gelen kavram aşağıdakilerden hangisidir?",
+    Explanation = "İstimalet, meyl ettirme, cezbettirme ve gönül alma anlamına gelen hoşgörü politikasıdır.",
+    OrderIndex = 21,
+    Choices =
+    {
+        new Choice { Text = "İstimalet", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Tımar", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Müdara", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Pençik", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Devşirme", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 22 ---
+new Question
+{
+    Note = notIskanIstimaletTimar,
+    Type = QuestionType.MultipleChoice,
+    Text = "Osmanlı Devleti'nin fetih politikalarıyla ilgili aşağıdakilerden hangisi doğrudur?",
+    Explanation = "Tımar toprak ve vergi muafiyeti sağlar, iskan yeniden yerleştirme ve şenlendirmedir, istimalet ise hoşgörü politikasıdır.",
+    OrderIndex = 22,
+    Choices =
+    {
+        new Choice { Text = "Tımar, hizmet edenlere toprak ve vergi muafiyeti sağlar.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "İskan, kan davalı ailelerin birbirinden ayrılarak yerleştirilmesini içerir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "İstimalet, gayrimüslimlerin din ve törelerine karışılmamasını içerir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Köylerdeki kiliselere genellikle dokunulmamıştır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Kılıç hakkı olan şehirlerdeki büyük kiliseler her zaman korunmuştur.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "İskan uygulamasında iklim uyumuna dikkat edilmemiştir.", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 23 (ters soru) ---
+new Question
+{
+    Note = notIskanIstimaletTimar,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "İskan, istimalet ve tımar politikalarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Osmanlı, kılıç hakkı olan (savaşarak alınan) şehirlerdeki en büyük kiliseyi camiye çevirmiştir; bu ifadenin tam tersi (hiçbir kiliseye dokunulmadığı) yanlıştır.",
+    OrderIndex = 23,
+    Choices =
+    {
+        new Choice { Text = "Tımar sisteminde toprağı işleyene araç-gereç de verilmiştir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "İskan sırasında iklim uyumuna dikkat edilmiştir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "İstimalet politikası gönül alma ve hoşgörüyü içerir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Yeni yerleşim yerlerine han, hamam ve külliye gibi yapılar inşa edilmiştir.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Kılıç hakkı olan şehirlerde hiçbir kilise camiye çevrilmemiştir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 24 ---
+new Question
+{
+    Note = notIskaninAmaclariVeSartlari,
+    Type = QuestionType.MultipleChoice,
+    Text = "İskan politikasının amaçlarından biri aşağıdakilerden hangisidir?",
+    Explanation = "Konar göçer Türkmenlerin yerleşik hayata geçmesini sağlamak, iskan politikasının amaçlarından biridir.",
+    OrderIndex = 24,
+    Choices =
+    {
+        new Choice { Text = "Konar göçer Türkmenlerin yerleşik hayata geçmesini sağlamak", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Gayrimüslim halkın ayaklanma ihtimalini ortadan kaldırmak", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Fetih hareketlerinin sürekliliğini sağlamak", IsCorrect = true, OrderIndex = 3 },
+
+        new Choice { Text = "Konar göçer hayatı teşvik etmek", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Aynı bölgedeki kan davalı aileleri bir arada tutmak", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Fetih hareketlerini durdurmak", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 25 ---
+new Question
+{
+    Note = notIskaninAmaclariVeSartlari,
+    Type = QuestionType.MultipleChoice,
+    Text = "İskana tabi tutulanlara sağlanan şartlardan biri aşağıdakilerden hangisidir?",
+    Explanation = "İskana tabi tutulanlara vergiden muaf toprak verilmiştir.",
+    OrderIndex = 25,
+    Choices =
+    {
+        new Choice { Text = "Vergiden muaf olarak toprak verilmiştir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Tüm ihtiyaçları devlet tarafından karşılanmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Genellikle gönüllülük esasına göre yapılmıştır.", IsCorrect = true, OrderIndex = 3 },
+
+        new Choice { Text = "Belirli bir süre eski yurtlarına dönmeleri zorunlu tutulmuştur.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Vergi yükümlülükleri artırılmıştır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "İhtiyaçlarını kendileri karşılamak zorunda bırakılmışlardır.", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 26 (ters soru) ---
+new Question
+{
+    Note = notIskaninAmaclariVeSartlari,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "İskan politikasının amaç ve şartlarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "İskana tabi tutulanların eski yurtlarına dönüşü belirli bir süre (genellikle 5 yıl) yasaklanmıştır; 'serbesttir' ifadesi yanlıştır.",
+    OrderIndex = 26,
+    Choices =
+    {
+        new Choice { Text = "Fethedilen bölgelerin Türkleşmesini sağlamak amaçlanmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Kavgalı aileleri birbirinden uzaklaştırarak huzuru sağlamak amaçlanmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Bölgeyi imar faaliyetleriyle şenlendirmek amaçlanmıştır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "İskana tabi tutulanlara vergiden muaf toprak verilmiştir.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "İskana tabi tutulanların eski yurtlarına dönüşü serbesttir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 27 ---
+new Question
+{
+    Note = notOsmanBeyDonemiFetihleri,
+    Type = QuestionType.MultipleChoice,
+    Text = "İlk Osmanlı-Bizans savaşı aşağıdakilerden hangisidir?",
+    Explanation = "Koyunhisar (Bafeus/Bafeon) Savaşı, 1302'de yapılan ilk Osmanlı-Bizans savaşıdır.",
+    OrderIndex = 27,
+    Choices =
+    {
+        new Choice { Text = "Koyunhisar (Bafeus) Savaşı", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Pelekanon Savaşı", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Sırp Sındığı Savaşı", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "I. Kosova Savaşı", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Çirmen Savaşı", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 28 ---
+new Question
+{
+    Note = notOsmanBeyDonemiFetihleri,
+    Type = QuestionType.MultipleChoice,
+    Text = "Osman Bey döneminde ilk kez kadı atanan ve ilk vergi alınan yer aşağıdakilerden hangisidir?",
+    Explanation = "Karacahisar, Osman Bey döneminde ilk kadı atamasının yapıldığı ve ilk verginin alındığı yerdir.",
+    OrderIndex = 28,
+    Choices =
+    {
+        new Choice { Text = "Karacahisar", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Kulaca Hisar", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Bilecik", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "İznik", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Yenişehir", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 29 (ters soru) ---
+new Question
+{
+    Note = notOsmanBeyDonemiFetihleri,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Osman Bey dönemi fetihleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Hem İznik hem de Bursa'nın fethi Osman Bey'e değil oğlu Orhan Bey'e nasip olmuştur; Osman Bey yalnızca bu şehirleri kuşatmıştır.",
+    OrderIndex = 29,
+    Choices =
+    {
+        new Choice { Text = "Osman Bey'in lakabı Fahreddin'dir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "1285'te Kulaca Hisar alınmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "1302'de Koyunhisar Savaşı Bizans'a karşı kazanılmıştır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "1299-1300 civarında Yarhisar ve Yenişehir alınmıştır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "İznik ve Bursa'nın fethi Osman Bey'e nasip olmuştur.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 30 ---
+new Question
+{
+    Note = notOsmanBeyDonemiIlkler,
+    Type = QuestionType.MultipleChoice,
+    Text = "Osman Bey döneminde Karacahisar'a atanan ilk kadı aşağıdakilerden hangisidir?",
+    Explanation = "Dursun Fakih, Osman Bey döneminde Karacahisar'a atanan ilk kadıdır.",
+    OrderIndex = 30,
+    Choices =
+    {
+        new Choice { Text = "Dursun Fakih", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Davud-i Kayseri", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Çandarlı Kara Halil", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Şeyh Edebali", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Molla Rüstem", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 31 ---
+new Question
+{
+    Note = notOsmanBeyDonemiIlkler,
+    Type = QuestionType.MultipleChoice,
+    Text = "Osman Bey dönemine ait ilklerden biri aşağıdakilerden hangisidir?",
+    Explanation = "İlk vergi (bac vergisi), ilk kadı ataması ve ilk tımar dağıtımı Osman Bey dönemine aittir.",
+    OrderIndex = 31,
+    Choices =
+    {
+        new Choice { Text = "İlk vergi olarak bac vergisi alınmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "İlk kadı ataması yapılmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Yakın arkadaşlarına ilk tımar dağıtılmıştır.", IsCorrect = true, OrderIndex = 3 },
+
+        new Choice { Text = "İlk divan kurulmuştur.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "İlk medrese açılmıştır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "İlk tersane kurulmuştur.", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 32 (ters soru) ---
+new Question
+{
+    Note = notOsmanBeyDonemiIlkler,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Osman Bey dönemi ilkleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Osman Bey, vasiyeti gereği Gümüşlü Kümbet'e defnedilmiştir; bu yapı İznik'te değil Bursa'dadır.",
+    OrderIndex = 32,
+    Choices =
+    {
+        new Choice { Text = "Bilecik'in alınmasıyla demir madeni işlenerek silah yapılmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "İlk para bu dönemde bastırılmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Konur Alp ve Samsa Çavuş gibi kişilere tımar dağıtılmıştır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Osman Bey, oğlu Orhan Bey tarafından defnedilmiştir.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Osman Bey, İznik'teki Gümüşlü Kümbet'e defnedilmiştir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 33 ---
+new Question
+{
+    Note = notOrhanBeyBursaIznik,
+    Type = QuestionType.MultipleChoice,
+    Text = "Orhan Bey döneminde 1326'da fethedilen ve daha sonra başkent yapılan şehir aşağıdakilerden hangisidir?",
+    Explanation = "Bursa, 1326'da fethedilmiş ve imar çalışmalarının tamamlanmasının ardından başkent ilan edilmiştir.",
+    OrderIndex = 33,
+    Choices =
+    {
+        new Choice { Text = "Bursa", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "İznik", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "İzmit", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Edirne", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Gelibolu", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 34 ---
+new Question
+{
+    Note = notOrhanBeyBursaIznik,
+    Type = QuestionType.MultipleChoice,
+    Text = "1329 Pelekanon Savaşı ile ilgili aşağıdakilerden hangisi doğrudur?",
+    Explanation = "Pelekanon Savaşı'nda Bizans İmparatoru III. Andronikos yaralanarak kaçmış ve Kocaeli Yarımadası Osmanlı kontrolüne geçmiştir.",
+    OrderIndex = 34,
+    Choices =
+    {
+        new Choice { Text = "Bizans İmparatoru III. Andronikos yaralanarak kaçmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Kocaeli Yarımadası Osmanlı kontrolüne geçmiştir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Koyunhisar ya da Maltepe Savaşı olarak da bilinir.", IsCorrect = true, OrderIndex = 3 },
+
+        new Choice { Text = "Osmanlı Devleti bu savaşı kaybetmiştir.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "I. Murat döneminde gerçekleşmiştir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Sırp Sındığı Savaşı'nın diğer adıdır.", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 35 (ters soru) ---
+new Question
+{
+    Note = notOrhanBeyBursaIznik,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Bursa ve İznik'in başkent olma sırasıyla ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Kronolojik olarak önce İznik (1331) başkent yapılmış, Bursa'nın imarı tamamlandıktan sonra başkentlik Bursa'ya geçmiştir; 'Bursa ilk başkenttir' ifadesi yanlıştır.",
+    OrderIndex = 35,
+    Choices =
+    {
+        new Choice { Text = "Bursa 1326'da fethedilmiştir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "İznik 1331'de fethedilmiş ve hemen başkent yapılmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "1337'de İzmit alınmıştır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "1337 yılı Avrupa'da Yüzyıl Savaşları'nın başlangıcına denk gelir.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Bursa, İznik'ten önce başkent yapılan ilk şehirdir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 36 ---
+new Question
+{
+    Note = notOrhanBeyPelekanonCimpeKale,
+    Type = QuestionType.MultipleChoice,
+    Text = "Kantakuzenos'un, Osmanlı Devleti'nden aldığı yardıma karşılık verdiği ve Rumeli'deki ilk Osmanlı toprağı olan kale aşağıdakilerden hangisidir?",
+    Explanation = "Çimpe Kalesi, 1353'te Kantakuzenos tarafından Osmanlı'ya verilmiş ve Rumeli'deki ilk Osmanlı toprağı olmuştur.",
+    OrderIndex = 36,
+    Choices =
+    {
+        new Choice { Text = "Çimpe Kalesi", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Karacahisar", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Kulaca Hisar", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yarhisar", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Bilecik Kalesi", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 37 ---
+new Question
+{
+    Note = notOrhanBeyPelekanonCimpeKale,
+    Type = QuestionType.MultipleChoice,
+    Text = "Karesioğulları Beyliği'nin Osmanlı Devleti'ne katılmasıyla ilgili aşağıdakilerden hangisi doğrudur?",
+    Explanation = "Karesioğulları'nın katılması, hem Osmanlı'nın deniz gücüne erişmesini sağlamış hem de Anadolu Türk Siyasi Birliği'ne yönelik ilk adım olmuştur.",
+    OrderIndex = 37,
+    Choices =
+    {
+        new Choice { Text = "Osmanlı'nın deniz gücüne erişmesini sağlamıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Anadolu Türk Siyasi Birliği'ne yönelik ilk adım kabul edilir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Hacı İlbey ve Evrenos Gazi gibi denizciler Osmanlı hizmetine girmiştir.", IsCorrect = true, OrderIndex = 3 },
+
+        new Choice { Text = "Bir taht kavgasından yararlanılarak gerçekleşmiştir.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "I. Murat döneminde gerçekleşmiştir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Osmanlı'nın kaybettiği ilk beyliktir.", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 38 (ters soru) ---
+new Question
+{
+    Note = notOrhanBeyPelekanonCimpeKale,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Çimpe Kalesi ve Halil olayı ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Halil, Theodora'dan doğmuştur; Gelibolu Fatihi Süleyman Paşa ise Nilüfer Hatun'dan doğmuştur, ikisi farklı kişilerdir.",
+    OrderIndex = 38,
+    Choices =
+    {
+        new Choice { Text = "Çimpe Kalesi 1353'te Osmanlı'nın eline geçmiştir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Halil, Foçalı korsanlar tarafından kaçırılmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Halil 4 yıl sonra fidye ile geri alınmıştır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Orhan Bey, Kantakuzenos'un kızı Theodora ile evlenmiştir.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Halil ile Gelibolu Fatihi Süleyman Paşa aynı kişidir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 39 ---
+new Question
+{
+    Note = notOrhanBeyDonemiIlkler,
+    Type = QuestionType.MultipleChoice,
+    Text = "Orhan Bey döneminde kurulan ilk tersane aşağıdaki yerlerden hangisindedir?",
+    Explanation = "İlk tersane, Karamürsel'de kurulmuştur.",
+    OrderIndex = 39,
+    Choices =
+    {
+        new Choice { Text = "Karamürsel", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Gelibolu", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "İznik", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Bursa", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "İzmit", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 40 ---
+new Question
+{
+    Note = notOrhanBeyDonemiIlkler,
+    Type = QuestionType.MultipleChoice,
+    Text = "Orhan Bey dönemi ilkleriyle ilgili aşağıdakilerden hangisi doğrudur?",
+    Explanation = "İlk medrese İznik'te açılmış, ilk müderris Davud-i Kayseri olmuş, ilk vezir Alaeddin Paşa olmuştur.",
+    OrderIndex = 40,
+    Choices =
+    {
+        new Choice { Text = "İlk medrese İznik'te açılmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "İlk müderris Davud-i Kayseri'dir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "İlk vezir Alaeddin Paşa'dır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "İlk gümüş para akçedir.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "İlk divan I. Murat döneminde kurulmuştur.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "İlk vakıf teşkilatı Osman Bey döneminde kurulmuştur.", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 41 (ters soru) ---
+new Question
+{
+    Note = notOrhanBeyDonemiIlkler,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Orhan Bey dönemi ilkleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "İlk vezir Alaeddin Paşa, Orhan Bey'in ağabeyidir, oğlu değildir.",
+    OrderIndex = 41,
+    Choices =
+    {
+        new Choice { Text = "İlk cami, İznik'teki Hacı Özbek Camisi'dir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "İlk saray, Bursa Bey Sarayı'dır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "İlk ordu, Yaya ve Müsellem ordusudur.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "İlk divan, Divan-ı Hümayun'dur.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "İlk vezir Alaeddin Paşa, Orhan Bey'in oğludur.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 42 ---
+new Question
+{
+    Note = notOrhanBeyRumeliFetihleri,
+    Type = QuestionType.MultipleChoice,
+    Text = "Orhan Bey döneminde Rumeli'de gerçekleşen fetihlerden biri aşağıdakilerden hangisidir?",
+    Explanation = "1357'de Çorlu, Tekirdağ ve Malkara fethedilmiştir.",
+    OrderIndex = 42,
+    Choices =
+    {
+        new Choice { Text = "1357'de Çorlu, Tekirdağ ve Malkara'nın fethi", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "1345'te Karesioğulları'nın topraklarının alınması", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "1354'te Marmara ve Gelibolu hattının fethinin tamamlanması", IsCorrect = true, OrderIndex = 3 },
+
+        new Choice { Text = "1364'te Edirne'nin başkent ilan edilmesi", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "1389'da I. Kosova Savaşı'nın kazanılması", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "1371'de Çirmen Savaşı'nın kazanılması", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 43 (ters soru) ---
+new Question
+{
+    Note = notOrhanBeyRumeliFetihleri,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Orhan Bey dönemi Rumeli fetihleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Bu dönemde İstanbul kuşatılmamıştır; yalnızca çevresi ele geçirilerek şehir git gide çevrelenmiştir.",
+    OrderIndex = 43,
+    Choices =
+    {
+        new Choice { Text = "1345'te Karesioğulları toprakları Osmanlı'ya katılmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "1353'te Çimpe Kalesi Osmanlı'nın eline geçmiştir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "1357'de Çorlu, Tekirdağ ve Malkara fethedilmiştir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Bu fetihler İstanbul'un çevrelenmesini sağlamıştır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Bu dönemde İstanbul doğrudan kuşatılmıştır.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 44 ---
+new Question
+{
+    Note = notBiriciMuratHudavendigarBeylikler,
+    Type = QuestionType.MultipleChoice,
+    Text = "I. Murat döneminde çeyiz yoluyla Osmanlı Devleti'ne katılan beylik aşağıdakilerden hangisidir?",
+    Explanation = "Germiyanoğulları, Devlet Hatun'un Yıldırım Bayezid ile evlenmesi sonucunda çeyiz yoluyla Osmanlı'ya katılmıştır.",
+    OrderIndex = 44,
+    Choices =
+    {
+        new Choice { Text = "Germiyanoğulları", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Hamitoğulları", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Karesioğulları", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Karamanoğulları", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Dulkadiroğulları", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 45 ---
+new Question
+{
+    Note = notBiriciMuratHudavendigarBeylikler,
+    Type = QuestionType.MultipleChoice,
+    Text = "I. Murat'ın lakabı ve Edirne'nin başkent ilan edilmesiyle ilgili aşağıdakilerden hangisi doğrudur?",
+    Explanation = "I. Murat'ın lakabı Hüdavendigar'dır; Edirne, 1364 Sırp Sındığı Savaşı'ndan sonra başkent ilan edilmiştir.",
+    OrderIndex = 45,
+    Choices =
+    {
+        new Choice { Text = "I. Murat'ın lakabı Hüdavendigar'dır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Edirne 1363'te Sazlıdere Savaşı ile fethedilmiştir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Edirne, 1364 Sırp Sındığı Savaşı'ndan sonra başkent ilan edilmiştir.", IsCorrect = true, OrderIndex = 3 },
+
+        new Choice { Text = "Hamitoğulları toprakları çeyiz yoluyla alınmıştır.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Germiyanoğulları toprakları parayla satın alınmıştır.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 46 (ters soru) ---
+new Question
+{
+    Note = notBiriciMuratHudavendigarBeylikler,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "I. Murat dönemi beylik ilişkileriyle ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Hamitoğulları toprakları parayla (80.000 altın karşılığında) satın alınmıştır; çeyiz yoluyla alınan beylik Germiyanoğulları'dır.",
+    OrderIndex = 46,
+    Choices =
+    {
+        new Choice { Text = "Germiyanoğulları toprakları çeyiz yoluyla alınmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Devlet Hatun, Yıldırım Bayezid ile evlenmiştir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Edirne, Bizans'ın üç büyük merkezinden biridir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "I. Murat'ın lakabı Hüdavendigar'dır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Hamitoğulları toprakları çeyiz yoluyla alınmıştır.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 47 ---
+new Question
+{
+    Note = notBiriciMuratSirpSindigiCirmen,
+    Type = QuestionType.MultipleChoice,
+    Text = "Osmanlı Devleti'nin kazandığı ilk Osmanlı-Haçlı savaşı aşağıdakilerden hangisidir?",
+    Explanation = "1364 Sırp Sındığı Savaşı, Osmanlı'nın kazandığı ilk Osmanlı-Haçlı savaşıdır.",
+    OrderIndex = 47,
+    Choices =
+    {
+        new Choice { Text = "Sırp Sındığı Savaşı", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Çirmen Savaşı", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "I. Kosova Savaşı", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Pelekanon Savaşı", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Koyunhisar Savaşı", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 48 ---
+new Question
+{
+    Note = notBiriciMuratSirpSindigiCirmen,
+    Type = QuestionType.MultipleChoice,
+    Text = "1371 Çirmen Savaşı ile ilgili aşağıdakilerden hangisi doğrudur?",
+    Explanation = "Çirmen Savaşı'nda Lala Şahin Paşa komutasındaki 800 kişilik birlik, 70.000 kişilik Sırp ordusunu mağlup etmiştir.",
+    OrderIndex = 48,
+    Choices =
+    {
+        new Choice { Text = "Lala Şahin Paşa komutasında kazanılmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "800 kişilik bir birlik 70.000 kişilik orduyu mağlup etmiştir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "II. Meriç Zaferi olarak da bilinir.", IsCorrect = true, OrderIndex = 3 },
+
+        new Choice { Text = "Hacı İlbey komutasında kazanılmıştır.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "1364 yılında gerçekleşmiştir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 49 (ters soru) ---
+new Question
+{
+    Note = notBiriciMuratSirpSindigiCirmen,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Sırp Sındığı ve Çirmen savaşlarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Sırp Sındığı Savaşı'nı Hacı İlbey, Çirmen Savaşı'nı ise Lala Şahin Paşa yönetmiştir; komutanlar birbirine karıştırılmamalıdır.",
+    OrderIndex = 49,
+    Choices =
+    {
+        new Choice { Text = "Sırp Sındığı Savaşı 1364'te gerçekleşmiştir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Çirmen Savaşı 1371'de gerçekleşmiştir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "1387'de Ploşnik'te Osmanlı öncü birlikleri bozguna uğramıştır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Her iki savaş da Meriç Nehri çevresinde gerçekleşmiştir.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Sırp Sındığı Savaşı'nı da Çirmen Savaşı'nı da Lala Şahin Paşa yönetmiştir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 50 ---
+new Question
+{
+    Note = notBiriciMuratKosovaSavasi,
+    Type = QuestionType.MultipleChoice,
+    Text = "Savaş meydanında şehit edilen ilk ve tek Osmanlı padişahı aşağıdakilerden hangisidir?",
+    Explanation = "I. Murat, I. Kosova Savaşı'nda Miloš Obilić tarafından şehit edilen ilk ve tek Osmanlı padişahıdır.",
+    OrderIndex = 50,
+    Choices =
+    {
+        new Choice { Text = "I. Murat", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Orhan Bey", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Kanuni Sultan Süleyman", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Osman Bey", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 51 ---
+new Question
+{
+    Note = notBiriciMuratKosovaSavasi,
+    Type = QuestionType.MultipleChoice,
+    Text = "1389 I. Kosova Savaşı ile ilgili aşağıdakilerden hangisi doğrudur?",
+    Explanation = "I. Kosova Savaşı'na Anadolu beylikleri de asker göndermiş ve bu savaşta ilk defa top kullanılmıştır.",
+    OrderIndex = 51,
+    Choices =
+    {
+        new Choice { Text = "Bu savaşa Anadolu beylikleri de asker göndermiştir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Bu savaşta ilk defa top kullanılmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Savaş Osmanlı Devleti tarafından kazanılmıştır.", IsCorrect = true, OrderIndex = 3 },
+
+        new Choice { Text = "Savaş sonucunda Osmanlı Devleti mağlup olmuştur.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Bu savaşta Yıldırım Bayezid şehit edilmiştir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 52 (ters soru) ---
+new Question
+{
+    Note = notBiriciMuratKosovaSavasi,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "I. Murat'ın şehadeti ve sonrası ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "I. Murat'ın şehadetinin ardından tahta Yakup Çelebi değil Yıldırım Bayezid çıkmıştır; Yakup Çelebi ise boğdurularak öldürülmüştür.",
+    OrderIndex = 52,
+    Choices =
+    {
+        new Choice { Text = "I. Murat, Miloš Obilić tarafından şehit edilmiştir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Yakup Çelebi, yay kirişiyle boğdurularak öldürülmüştür.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "I. Murat'ın şehadetinden sonra Yıldırım Bayezid tahta çıkmıştır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "I. Kosova Savaşı'nda ilk defa top kullanılmıştır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "I. Murat'ın şehadetinden sonra Yakup Çelebi tahta çıkmıştır.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 53 ---
+new Question
+{
+    Note = notBiriciMuratKurumsalGelismeler,
+    Type = QuestionType.MultipleChoice,
+    Text = "I. Murat döneminde savaş esirlerinin beşte birinin devlete ayrılması esasına dayanan sistem aşağıdakilerden hangisidir?",
+    Explanation = "Pençik sistemi, savaş esirlerinin beşte birinin devlete ayrılması esasına dayanır.",
+    OrderIndex = 53,
+    Choices =
+    {
+        new Choice { Text = "Pençik sistemi", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Tımar sistemi", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "İskan sistemi", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "İstimalet sistemi", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Müdara sistemi", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 54 ---
+new Question
+{
+    Note = notBiriciMuratKurumsalGelismeler,
+    Type = QuestionType.MultipleChoice,
+    Text = "I. Murat döneminde gerçekleşen kurumsal gelişmelerden biri aşağıdakilerden hangisidir?",
+    Explanation = "I. Murat döneminde ilk defa maliye teşkilatı kurulmuş, Kapıkulu Ocağı oluşturulmuş ve veraset sisteminde değişiklik yapılmıştır.",
+    OrderIndex = 54,
+    Choices =
+    {
+        new Choice { Text = "İlk defa maliye teşkilatı kurulmuştur.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Edirne'de Kapıkulu Ocağı kurulmuştur.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Veraset sisteminde değişiklik yapılmıştır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "İlk Rumeli Beylerbeyi Lala Şahin Paşa olmuştur.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "İlk divan bu dönemde kurulmuştur.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "İlk tımar bu dönemde dağıtılmıştır.", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 55 (ters soru) ---
+new Question
+{
+    Note = notBiriciMuratKurumsalGelismeler,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "I. Murat dönemi kurumsal gelişmeleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Pençik sistemi Çandarlı Kara Halil Hayreddin Paşa ve Molla Rüstem'in teşvikiyle kurulmuştur, tek başına Lala Şahin Paşa tarafından değil.",
+    OrderIndex = 55,
+    Choices =
+    {
+        new Choice { Text = "Veraset anlayışı 'hükümdar ve oğullarına aittir' şeklinde değişmiştir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Manastır merkezli Rumeli Beylerbeyliği kurulmuştur.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Kapıkulu Ocağı'na bağlı Yeniçeri ve Topçu ocakları kurulmuştur.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Sistemli şekilde tımar ve iskan uygulamaları yapılmıştır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Pençik sistemi yalnızca Lala Şahin Paşa tarafından kurulmuştur.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 56 ---
+new Question
+{
+    Note = notBiriciMuratSavciBeyIsyani,
+    Type = QuestionType.MultipleChoice,
+    Text = "Osmanlı Devleti'nde görülen ilk kapsamlı ve sistemli şehzade isyanı aşağıdakilerden hangisidir?",
+    Explanation = "Savcı Bey İsyanı, Osmanlı Devleti'nde görülen ilk kapsamlı ve sistemli şehzade isyanıdır.",
+    OrderIndex = 56,
+    Choices =
+    {
+        new Choice { Text = "Savcı Bey İsyanı", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Şehzade Korkut İsyanı", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Cem Sultan İsyanı", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Düzmece Mustafa İsyanı", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Şahkulu İsyanı", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 57 (ters soru) ---
+new Question
+{
+    Note = notBiriciMuratSavciBeyIsyani,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Savcı Bey İsyanı ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Savcı Bey, isyanının bastırılmasının ardından idam edilmiştir; IV. Andronikos'a uygulanan yalancı körlük cezası Savcı Bey'e değil Bizans şehzadesine uygulanmıştır.",
+    OrderIndex = 57,
+    Choices =
+    {
+        new Choice { Text = "Savcı Bey, IV. Andronikos ile anlaşarak isyan etmiştir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "İsyancı kendi adına para bastırmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Bu isyan Osmanlı'da ilk kapsamlı ve sistemli şehzade isyanıdır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "İsyan I. Murat döneminde gerçekleşmiştir.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Savcı Bey'e yalancı körlük cezası uygulanmıştır.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 58 ---
+new Question
+{
+    Note = notYildirimBeyazitFrenkYazisiIstanbulKusatma,
+    Type = QuestionType.MultipleChoice,
+    Text = "Yıldırım Bayezid'in 'Yıldırım' unvanını almasına neden olan savaş aşağıdakilerden hangisidir?",
+    Explanation = "Yıldırım Bayezid, Karamanoğulları ile yapılan Frenk Yazısı Savaşı'nda hızlı hareket ettiği için bu unvanı almıştır.",
+    OrderIndex = 58,
+    Choices =
+    {
+        new Choice { Text = "Frenk Yazısı Savaşı", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Niğbolu Savaşı", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Ankara Savaşı", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Koyunhisar Savaşı", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Varna Savaşı", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 59 ---
+new Question
+{
+    Note = notYildirimBeyazitFrenkYazisiIstanbulKusatma,
+    Type = QuestionType.MultipleChoice,
+    Text = "İstanbul'u kuşatan ilk Osmanlı padişahı aşağıdakilerden hangisidir?",
+    Explanation = "Yıldırım Bayezid, İstanbul'u kuşatan ilk Osmanlı padişahıdır ve bu amaçla Anadolu Hisarı'nı yaptırmıştır.",
+    OrderIndex = 59,
+    Choices =
+    {
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Fatih Sultan Mehmet", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Orhan Bey", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Çelebi Mehmet", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 60 (ters soru) ---
+new Question
+{
+    Note = notYildirimBeyazitFrenkYazisiIstanbulKusatma,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Yıldırım Bayezid'in İstanbul kuşatmalarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "İstanbul dört kez kuşatılmış olsa da hiçbirinde alınamamıştır; 'İstanbul bu kuşatmalardan biriyle alınmıştır' ifadesi yanlıştır.",
+    OrderIndex = 60,
+    Choices =
+    {
+        new Choice { Text = "İstanbul, 1391-1401 arasında dört kez kuşatılmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Kuşatmaya yardımcı olmak için Anadolu Hisarı yaptırılmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Karamanoğulları'nın isyanları kuşatmaların yarıda kesilmesine neden olmuştur.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "1401'de Timur'un Sivas'ı işgali kuşatmanın kaldırılmasına neden olmuştur.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "İstanbul, bu dört kuşatmadan biri sonucunda fethedilmiştir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 61 ---
+new Question
+{
+    Note = notYildirimSultaniIklimiRum,
+    Type = QuestionType.MultipleChoice,
+    Text = "Niğbolu Kalesi'ni kahramanca savunan komutan aşağıdakilerden hangisidir?",
+    Explanation = "Doğan Bey, Niğbolu Kalesi'ni Yıldırım Bayezid yetişene kadar kahramanca savunmuştur.",
+    OrderIndex = 61,
+    Choices =
+    {
+        new Choice { Text = "Doğan Bey", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Hacı İlbey", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Lala Şahin Paşa", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Mezid Bey", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Çalı Bey", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 62 ---
+new Question
+{
+    Note = notYildirimSultaniIklimiRum,
+    Type = QuestionType.MultipleChoice,
+    Text = "Niğbolu Savaşı zaferi sonrasında halife tarafından Yıldırım Bayezid'e verilen unvan aşağıdakilerden hangisidir?",
+    Explanation = "Yıldırım Bayezid, Niğbolu zaferinin ardından halifeden 'Sultan-ı İklim-i Rum' unvanını istemiş ve almıştır.",
+    OrderIndex = 62,
+    Choices =
+    {
+        new Choice { Text = "Sultan-ı İklim-i Rum", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Serdar-ı Ekrem", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Halife", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Ebu'l-Hayrat", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Gazi", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 63 (ters soru) ---
+new Question
+{
+    Note = notYildirimSultaniIklimiRum,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Niğbolu Savaşı ve Sultan-ı İklim-i Rum unvanıyla ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Halifelik yetkisini kendi üzerine alan hükümdar Yavuz Sultan Selim'dir; Yıldırım Bayezid döneminde halifelik hâlâ Memlüklerdeydi ve halife ile sultan ayrı kişilerdi.",
+    OrderIndex = 63,
+    Choices =
+    {
+        new Choice { Text = "Niğbolu Savaşı'nda Macar Kralı Sigismund yenilmiştir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Tuna Nehri üzerindeki Niğbolu Kalesi kuşatılmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Sultan-ı İklim-i Rum, Anadolu memleketlerinin sultanı anlamına gelir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Bu unvan Yıldırım Bayezid'in isteği üzerine verilmiştir.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Yıldırım Bayezid, bu dönemde halifelik yetkisini de üzerine almıştır.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 64 ---
+new Question
+{
+    Note = notAnkaraSavasiNedenleri,
+    Type = QuestionType.MultipleChoice,
+    Text = "1402 Ankara Savaşı'nın nedenlerinden biri aşağıdakilerden hangisidir?",
+    Explanation = "Timur'un önünden kaçan Celayiroğlu Ahmet ve Karayülük Osman'ın Yıldırım Bayezid'e sığınması, Ankara Savaşı'nın nedenlerinden biridir.",
+    OrderIndex = 64,
+    Choices =
+    {
+        new Choice { Text = "Celayiroğlu Ahmet ve Karayülük Osman'ın Yıldırım Bayezid'e sığınması", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Akkoyunluların Timur'u Anadolu'ya kışkırtması", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "İki liderin birbirini tahrik eden mektuplaşmaları", IsCorrect = true, OrderIndex = 3 },
+
+        new Choice { Text = "Bizans'ın Timur'dan yardım istemesi", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Papa'nın Timur'u kışkırtması", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Venedik'in Osmanlı'ya savaş açması", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 65 ---
+new Question
+{
+    Note = notAnkaraSavasiNedenleri,
+    Type = QuestionType.MultipleChoice,
+    Text = "Ankara Savaşı ile ilgili aşağıdakilerden hangisi doğrudur?",
+    Explanation = "Ankara Savaşı, Osmanlı Devleti ile Haçlılar arasında değil, Yıldırım Bayezid ile Timur arasında yapılmıştır.",
+    OrderIndex = 65,
+    Choices =
+    {
+        new Choice { Text = "Yıldırım Bayezid ile Timur arasında yapılmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Timur ile Yıldırım Bayezid arasında dört mektup teatisi yaşanmıştır.", IsCorrect = true, OrderIndex = 2 },
+
+        new Choice { Text = "Osmanlı-Haçlı savaşları kronolojisine dahildir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Macar Kralı Sigismund ile yapılmıştır.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Hünyadi Yanoş komutasındaki ordu ile yapılmıştır.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 66 (ters soru) ---
+new Question
+{
+    Note = notAnkaraSavasiNedenleri,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Ankara Savaşı'nın nedenleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Ankara Savaşı Haçlılarla değil Timur ile yapılmıştır; 'Haçlı ittifakının kışkırtmasıyla başlamıştır' ifadesi yanlıştır.",
+    OrderIndex = 66,
+    Choices =
+    {
+        new Choice { Text = "Akkoyunlular Timur'u Anadolu'ya doğru kışkırtmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Timur, Sivas'ı işgal ederek büyük bir katliam yapmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "İkisi de Türk-İslam dünyasının tek lideri olmak istemiştir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Yıldırım Bayezid, sığınan beylere amanname vermiştir.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Savaş, bir Haçlı ittifakının kışkırtmasıyla başlamıştır.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 67 ---
+new Question
+{
+    Note = notAnkaraSavasiSonuclariVeFetret,
+    Type = QuestionType.MultipleChoice,
+    Text = "Ankara Savaşı sonrasında düşmana esir düşen ilk ve tek Osmanlı padişahı aşağıdakilerden hangisidir?",
+    Explanation = "Yıldırım Bayezid, Ankara Savaşı'nda esir düşen ilk ve tek Osmanlı padişahıdır.",
+    OrderIndex = 67,
+    Choices =
+    {
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "I. Murat", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Çelebi Mehmet", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Orhan Bey", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 68 ---
+new Question
+{
+    Note = notAnkaraSavasiSonuclariVeFetret,
+    Type = QuestionType.MultipleChoice,
+    Text = "Ankara Savaşı'nın sonuçlarından biri aşağıdakilerden hangisidir?",
+    Explanation = "Ankara Savaşı sonucunda ATSB yeniden bozulmuş ve İstanbul'un fethi yarım yüzyıl gecikmiştir.",
+    OrderIndex = 68,
+    Choices =
+    {
+        new Choice { Text = "Anadolu Türk Siyasi Birliği yeniden bozulmuştur.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "İstanbul'un fethi yaklaşık yarım yüzyıl gecikmiştir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Osmanlı'nın Balkanlardaki fetihleri durma noktasına gelmiştir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Yıldırım Bayezid'in oğulları arasında 11 yıl süren taht kavgaları başlamıştır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Osmanlı Devleti, Balkanlardaki tüm topraklarını kaybetmiştir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Karesioğulları tekrar kurulmuştur.", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 69 (ters soru) ---
+new Question
+{
+    Note = notAnkaraSavasiSonuclariVeFetret,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Ankara Savaşı sonrası dönemle ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Karesioğulları, beylik ailesinin tüm bireyleri ortadan kalktığı için tekrar kurulamamıştır; diğer beyliklerden farklı olarak istisnadır.",
+    OrderIndex = 69,
+    Choices =
+    {
+        new Choice { Text = "Timur, son verilen beyliklerin çoğunun topraklarını eski beylere geri vermiştir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Fetret Devri 1402-1413 yılları arasında yaşanmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Fetret Devri'nde Balkanlarda büyük bir toprak kaybı yaşanmamıştır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Bu durumun nedeni istimalet ve iskan politikalarının etkisidir.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Karesioğulları da diğer beylikler gibi tekrar kurulmuştur.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 70 ---
+new Question
+{
+    Note = notCelebiMehmetDuzmeceMustafaBedrettin,
+    Type = QuestionType.MultipleChoice,
+    Text = "Tarihe 'Osmanlı Devleti'nin ikinci kurucusu' olarak geçen hükümdar aşağıdakilerden hangisidir?",
+    Explanation = "Fetret Devri'ni sona erdiren Çelebi Mehmet (I. Mehmet), Osmanlı Devleti'nin ikinci kurucusu olarak anılır.",
+    OrderIndex = 70,
+    Choices =
+    {
+        new Choice { Text = "Çelebi Mehmet (I. Mehmet)", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Osman Bey", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Orhan Bey", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 71 ---
+new Question
+{
+    Note = notCelebiMehmetDuzmeceMustafaBedrettin,
+    Type = QuestionType.MultipleChoice,
+    Text = "Osmanlı Devleti'nde çıkan ilk dinî nitelikli toplumsal ayaklanma aşağıdakilerden hangisidir?",
+    Explanation = "Şeyh Bedrettin İsyanı, Osmanlı Devleti'nde çıkan ilk dinî nitelikli toplumsal ayaklanmadır.",
+    OrderIndex = 71,
+    Choices =
+    {
+        new Choice { Text = "Şeyh Bedrettin İsyanı", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Düzmece Mustafa İsyanı", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Savcı Bey İsyanı", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Buçuktepe İsyanı", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Baba İshak İsyanı", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 72 (ters soru) ---
+new Question
+{
+    Note = notCelebiMehmetDuzmeceMustafaBedrettin,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Çelebi Mehmet dönemiyle ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Düzmece Mustafa, ilk isyanında yakalanamamış, Bizans'a sığınmış ve ikinci kez II. Murat döneminde isyan ederek yakalanmıştır; 'Çelebi Mehmet döneminde yakalanıp idam edildi' ifadesi yanlıştır.",
+    OrderIndex = 72,
+    Choices =
+    {
+        new Choice { Text = "Şeyh Bedrettin'in müritleri arasında Börklüce Mustafa ve Torlak Kemal vardır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Venedik ile ilk deniz savaşı bu dönemde yapılmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Çalı Bey, Venedik ile yapılan deniz savaşında şehit olmuştur.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Düzmece Mustafa, ilk isyanının ardından Bizans'a sığınmıştır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Düzmece Mustafa, Çelebi Mehmet döneminde yakalanarak idam edilmiştir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 73 ---
+new Question
+{
+    Note = notIkinciMuratEdirneSegedin,
+    Type = QuestionType.MultipleChoice,
+    Text = "Edirne-Segedin Anlaşması ile ilgili aşağıdakilerden hangisi doğrudur?",
+    Explanation = "Edirne-Segedin Anlaşması'nda 10 yıl savaşılmaması ve Tuna Nehri'nin sınır kabul edilmesi kararlaştırılmıştır.",
+    OrderIndex = 73,
+    Choices =
+    {
+        new Choice { Text = "10 yıl boyunca savaş olmayacağı kararlaştırılmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Tuna Nehri iki devlet arasında sınır kabul edilmiştir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Osmanlı Devleti ile Macarlar arasında imzalanmıştır.", IsCorrect = true, OrderIndex = 3 },
+
+        new Choice { Text = "Papa tarafından desteklenerek kalıcı hale getirilmiştir.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "20 yıl boyunca savaşılmayacağını öngörmüştür.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 74 ---
+new Question
+{
+    Note = notIkinciMuratEdirneSegedin,
+    Type = QuestionType.MultipleChoice,
+    Text = "II. Murat'ın Edirne-Segedin Anlaşması sonrasında tahtı 12 yaşındaki oğluna bırakmasıyla ilgili aşağıdakilerden hangisi doğrudur?",
+    Explanation = "II. Murat, tahtı II. Mehmet'e bırakmış; Papa bu durumu fırsat bilerek anlaşmayı bozdurmuştur.",
+    OrderIndex = 74,
+    Choices =
+    {
+        new Choice { Text = "Tahtı II. Mehmet'e bırakmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Papa bu durumu fırsata çevirerek anlaşmayı bozdurmuştur.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Çandarlı sülalesinin teşvikiyle II. Murat tekrar tahta çağrılmıştır.", IsCorrect = true, OrderIndex = 3 },
+
+        new Choice { Text = "II. Murat bir daha tahta dönmemiştir.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Bu olay Buçuktepe İsyanı'ndan önce gerçekleşmemiştir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 75 (ters soru) ---
+new Question
+{
+    Note = notIkinciMuratEdirneSegedin,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "II. Murat dönemi ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "II. Murat'ın lakabı Ebu'l-Hayrat'tır; 'Sofu' unvanı ise II. Bayezid'e aittir.",
+    OrderIndex = 75,
+    Choices =
+    {
+        new Choice { Text = "II. Murat döneminde Aydınoğulları Beyliği'ne son verilmiştir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Mezid Bey, Macarlarla mücadelede önemli bir akıncı beydir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "1437-1444 arasında Hünyadi Yanoş ile mücadele edilmiştir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "II. Murat'ın lakabı Ebu'l-Hayrat'tır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "II. Murat'ın lakabı Sofu'dur.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 76 ---
+new Question
+{
+    Note = notIkinciMuratVarnaKosova,
+    Type = QuestionType.MultipleChoice,
+    Text = "1448 II. Kosova Savaşı'nın en önemli sonuçlarından biri aşağıdakilerden hangisidir?",
+    Explanation = "II. Kosova Savaşı sonucunda Balkanlar kesin olarak Türk yurdu haline gelmiştir.",
+    OrderIndex = 76,
+    Choices =
+    {
+        new Choice { Text = "Balkanlar kesin olarak Türk yurdu haline gelmiştir.", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Anadolu kesin olarak Türk yurdu haline gelmiştir.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "İstanbul'un fethi 50 yıl gecikmiştir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Osmanlı Devleti Timur'a esir düşmüştür.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Anadolu Türk Siyasi Birliği ilk kez sağlanmıştır.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 77 ---
+new Question
+{
+    Note = notIkinciMuratVarnaKosova,
+    Type = QuestionType.MultipleChoice,
+    Text = "II. Murat dönemiyle ilgili aşağıdakilerden hangisi doğrudur?",
+    Explanation = "1444'te Varna, 1448'de II. Kosova savaşları kazanılmış; Enderun Mektebi ilk defa Edirne'de açılmıştır.",
+    OrderIndex = 77,
+    Choices =
+    {
+        new Choice { Text = "1444'te Varna Savaşı'nda Haçlılar mağlup edilmiştir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "1448'de II. Kosova Savaşı kazanılmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Enderun Mektebi ilk defa bu dönemde Edirne'de açılmıştır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "1446'da Buçuktepe İsyanı yaşanmıştır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Enderun Mektebi'ni sistemli hale getiren hükümdar II. Murat'tır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "II. Kosova Savaşı'ndan sonra Balkanlarda toprak kaybedilmiştir.", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 78 (ters soru) ---
+new Question
+{
+    Note = notIkinciMuratVarnaKosova,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Varna ve II. Kosova savaşlarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "1683 II. Viyana Kuşatması'na kadar (235 yıl boyunca) Osmanlı üzerine Haçlı ittifakı kurulamamıştır; 'hemen ardından yeni bir ittifak kurulmuştur' ifadesi yanlıştır.",
+    OrderIndex = 78,
+    Choices =
+    {
+        new Choice { Text = "Varna Savaşı 1444'te, II. Kosova Savaşı 1448'de gerçekleşmiştir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "II. Kosova Savaşı'nın sonucu Miryokefalon Savaşı'na benzetilir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Avrupalılar bu savaşlardan sonra savunma durumuna geçmiştir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Osmanlı Devleti bu savaşlardan sonra taarruza geçmiştir.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "II. Kosova Savaşı'ndan hemen sonra Osmanlı üzerine yeni bir Haçlı ittifakı kurulmuştur.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 79 ---
+new Question
+{
+    Note = notHacliSavaslariKronolojisi,
+    Type = QuestionType.MultipleChoice,
+    Text = "Aşağıdakilerden hangisi Osmanlı Devleti ile Haçlılar arasında yapılan savaşlardan biri değildir?",
+    Explanation = "Ankara Savaşı, Haçlılarla değil Timur ile yapılmıştır; bu nedenle Osmanlı-Haçlı savaşları arasında sayılmaz.",
+    OrderIndex = 79,
+    Choices =
+    {
+        new Choice { Text = "Ankara Savaşı", IsCorrect = false, OrderIndex = 1 },
+
+        new Choice { Text = "Sırp Sındığı Savaşı", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "I. Kosova Savaşı", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Niğbolu Savaşı", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Varna Savaşı", IsCorrect = true, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 80 ---
+new Question
+{
+    Note = notHacliSavaslariKronolojisi,
+    Type = QuestionType.MultipleChoice,
+    Text = "'SINAV 2' şifresiyle hatırlanan Osmanlı-Haçlı savaşları kronolojisinde 'V' harfi hangi savaşı temsil eder?",
+    Explanation = "'V' harfi, 1444'te gerçekleşen Varna Savaşı'nı temsil eder.",
+    OrderIndex = 80,
+    Choices =
+    {
+        new Choice { Text = "Varna Savaşı", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Niğbolu Savaşı", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "II. Kosova Savaşı", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Sırp Sındığı Savaşı", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Ankara Savaşı", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 81 (ters soru) ---
+new Question
+{
+    Note = notHacliSavaslariKronolojisi,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Osmanlı-Haçlı savaşları kronolojisiyle ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Koyunhisar (1302) ve Pelekanon (1329) savaşları Bizans'a karşı yapılmış doğrudan Osmanlı-Bizans savaşlarıdır; Haçlı savaşları kronolojisine dahil değildir.",
+    OrderIndex = 81,
+    Choices =
+    {
+        new Choice { Text = "Sırp Sındığı Savaşı'nda karşı taraf lideri Macar Kralı Layoş'tur.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "I. Kosova Savaşı'nda karşı taraf lideri Sırp Kralı Lazar'dır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Niğbolu Savaşı'nda karşı taraf lideri Macar Kralı Sigismund'dur.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Varna ve II. Kosova savaşlarında Hünyadi Yanoş yer almıştır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Koyunhisar ve Pelekanon savaşları bu Haçlı savaşları kronolojisine dahildir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},

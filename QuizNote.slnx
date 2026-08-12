@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/QuizNote.Api/QuizNote.Api.csproj" />
+    <Project Path="src/QuizNote.Application/QuizNote.Application.csproj" />
+    <Project Path="src/QuizNote.Persistence/QuizNote.Persistence.csproj" />
+  </Folder>
+</Solution>

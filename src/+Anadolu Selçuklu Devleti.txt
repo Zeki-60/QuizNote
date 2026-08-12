@@ -1,0 +1,1268 @@
+BÖLÜM 1 — Not isimleri
+
+notKurulusVeIznik, notHacliSeferleriVeKilicArslan, notMiryaKefelonVe11Ogul, notFarsUnvanlarVeGyasettin, notTicaretVeKervansaray, notHanVeRibat, notYassiCemenVeMogolTehlikesi, notBabaIshakVeKosedag, notKosedagSonuclariVeBeylikler, notDenizciBeylikler, notDigerBeylikler, notASDBSDFarklariVeDivan, notAhilikTeskilati, notFatmaBaciVeBacianiRum, notIlimInsanlari, notMimariEserBulmaYontemi, notASDMimariEserleri
+
+BÖLÜM 2 — Notlar
+
+// --- Notlar: "Anadolu Selçuklu Devleti" başlığının ilgili bölümleri ---
+
+var notKurulusVeIznik = new Note
+{
+    Title = "Anadolu Selçuklu Devleti — Kuruluş ve İznik",
+    Body = """
+           Anadolu Selçuklu Devleti (Türkiye Selçuklu Devleti), Büyük Selçuklu Devleti hükümdarı Sultan Alparslan'ın akrabası olan Kutalmış oğlu Süleymanşah tarafından 1075 yılında İznik merkez olmak üzere kurulmuştur.
+
+           Süleymanşah, Bizans İmparatorluğu'ndaki taht kavgalarından yararlanarak Anadolu'ya yerleşmiş; kendisinden yardım isteyen bir Bizans şehzadesine destek karşılığında İznik bölgesini almıştır.
+
+           **Bu konudan sıkça soru gelmektedir.** Devletin varlığı, 1932 yılında Türk Tarih Kurumu'nun kurulmasıyla ve Fuat Köprülü'nün çalışmalarıyla ortaya çıkarılmıştır. O tarihe kadar bu devlet, Büyük Selçuklu Devleti'nin bir uzantısı gibi işlenmiştir.
+
+           **Burası karıştırılabilir:** Büyük Selçuklu Devleti (1040 Dandanakan – 1157 Sultan Sencer'in ölümü) ile Anadolu Selçuklu Devleti aynı dönemde, çağdaş olarak var olmuştur. Büyük Selçuklu Devleti yıkıldıktan sonra Anadolu Selçuklu Devleti kurulmuş değildir; ikisi bir süre birlikte yaşamıştır. Aynı dönemde Anadolu'da Danişmentliler, Saltuklular, Mengücekliler, Artuklular ve Çaka Beyliği gibi Büyük Selçuklu Devleti'ne bağlı komutanların kurduğu beylikler de bulunmaktadır.
+
+           Kutalmış oğlu Süleymanşah'ın ölümünden sonra oğlu Şahinşah tahta geçmiş, ancak otoriteyi sağlayamamıştır.
+           """
+};
+
+var notHacliSeferleriVeKilicArslan = new Note
+{
+    Title = "Anadolu Selçuklu Devleti — Haçlı Seferleri ve I. Kılıç Arslan",
+    Body = """
+           1071 Malazgirt Meydan Muharebesi'nden sonra Bizans, Avrupa'dan yardım istemiş ve bunun sonucunda Haçlı Seferleri başlamıştır. Haçlı Seferleri'nin görünürdeki temel amacı, Müslümanların elinde bulunan Kudüs'ü almaktır.
+
+           I. Haçlı Seferi 1096 yılında başlamış ve bu dönemde Anadolu Selçuklu Devleti'nin başında I. Kılıç Arslan bulunmaktadır. I. Kılıç Arslan, Malatya'yı Anadolu Türk siyasi birliğini sağlamak amacıyla kuşatırken I. Haçlı Seferi başlamıştır.
+
+           İlk gelen öncü Haçlı birliğini I. Kılıç Arslan büyük ölçüde yok etmiştir. Ancak asıl Haçlı ordusu geldiğinde, Malatya kuşatmasıyla uğraştığı için İznik'e zamanında yetişememiş ve İznik kaybedilmiştir.
+
+           I. Kılıç Arslan, 1097'de Eskişehir'de Dorlon Muharebesi'ni yapmış, Haçlılara ağır kayıplar verdirmesine rağmen İznik'i geri alamamış ve bu gelişme üzerine devletin merkezini Konya'ya taşımıştır.
+
+           **Burası karıştırılabilir:** Başkentin İznik'ten Konya'ya taşınmasına neden olan gelişme I. Haçlı Seferi'dir; bu değişiklik I. Kılıç Arslan döneminde gerçekleşmiştir.
+
+           1096'da başlayan I. Haçlı Seferi'nde yaklaşık 600.000 kişilik Haçlı kuvvetinden 550.000'i, savaş dışında susuzluk, açlık ve yıpratma savaşlarıyla yok edilmiştir. Bu nedenle I. Haçlı Seferi, hedefine (Kudüs'ü almak) ulaşan tek Haçlı Seferi olarak kabul edilir.
+
+           **Buraya dikkat:** I. Mesut döneminde de II. Haçlı Seferi sırasında yine Eskişehir'de II. Dorlon Muharebesi yapılmış ve Haçlılar mağlup edilmiştir. Bu dönemde Anadolu'dan ilk defa "Türkiye" diye bahsedilmiştir.
+           """
+};
+
+var notMiryaKefelonVe11Ogul = new Note
+{
+    Title = "Anadolu Selçuklu Devleti — II. Kılıç Arslan ve Miryokefalon",
+    Body = """
+           II. Kılıç Arslan döneminde (1156-1192), 1176 yılında Bizans İmparatorluğu'na karşı Miryokefalon Zaferi (Kumdanlı Savaşı, Yurt Tutan Savaşı) kazanılmıştır. Bu savaş sonucunda Anadolu kesin olarak Türk yurdu haline gelmiştir.
+
+           **Bu konudan sıkça soru gelmektedir.** Miryokefalon Savaşı, Malazgirt'ten sonraki en önemli savaş kabul edilir: Malazgirt Anadolu'nun kapısını açmış, Miryokefalon ise Türklerin Anadolu'dan atılamayacağını kesinleştirmiştir.
+
+           II. Kılıç Arslan, sağlığında taht kavgalarını önlemek amacıyla ülkesini 11 oğlu arasında paylaştırmıştır. Ancak bu uygulama, amacının aksine taht kavgalarına sebep olmuştur.
+
+           **Burası karıştırılabilir:** "11 oğlu arasında paylaştırma" bilgisi sınavda II. Kılıç Arslan'a aittir; "11" rakamı hatırlama tekniği olarak "2" gibi düşünülüp bu hükümdarla ilişkilendirilebilir.
+           """
+};
+
+var notFarsUnvanlarVeGyasettin = new Note
+{
+    Title = "Anadolu Selçuklu Devleti — Farsça Unvanlar ve I. Gıyasettin Keyhüsrev",
+    Body = """
+           Anadolu Selçuklu Devleti, Büyük Selçuklu Devleti'nin kurulduğu coğrafyada kurulmamasına rağmen resmi dil olarak Farsçayı kullanmış ve hükümdarları için Farsça unvanlar (Key Hüsrev, Key Kavus, Key Kubat gibi) tercih etmiştir. "Key" kelimesi Farsçada hükümdar, sultan, büyük anlamına gelir.
+
+           I. Gıyasettin Keyhüsrev, farklı tarihlerde (1192-1196 ve 1205-1211) iki kez tahta çıkmış tek Anadolu Selçuklu hükümdarıdır. Toplamda yaklaşık 10 yıl hükümdarlık yapmıştır.
+
+           I. Gıyasettin Keyhüsrev döneminde Anadolu'da ticareti geliştirmek amacıyla kıyı şehirlerinin alınması başlamış; bu dönemde Antalya, Bizans'ın elinden alınmıştır.
+
+           **Burası karıştırılabilir:** IV. Haçlı Seferi (1204), amacından sapan tek Haçlı Seferi'dir; Kudüs'e değil İstanbul'a yönelmiş, Latinler İstanbul'u yağmalamış ve burada Latin İmparatorluğu'nu (1204-1261) kurmuşlardır. Bizans bu dönemde İznik Rum İmparatorluğu ve Trabzon Rum İmparatorluğu olarak varlığını sürdürmüştür.
+           """
+};
+
+var notTicaretVeKervansaray = new Note
+{
+    Title = "Anadolu Selçuklu Devleti — Ticaret Politikası ve Kervansaraylar",
+    Body = """
+           Anadolu Selçuklu Devleti, uluslararası ticareti geliştirmek amacıyla kıyı şehirlerini ele geçirmiştir: İzzettin Keykavus döneminde Sinop ve Samsun alınmış, Alaattin Keykubat döneminde Sudak limanı ve Kolonoros (Alanya, eski adıyla Alaiyye) fethedilmiştir.
+
+           Kıbrıs Krallığı ve Venedik gibi devletlerle ticari anlaşmalar yapılmış, düşük gümrük vergileri uygulanmıştır. Ticaret yolları üzerine kervansaraylar inşa edilmiş; tüccarlar burada 3 gün boyunca ücretsiz olarak yeme, içme ve konaklama imkânı bulmuştur.
+
+           **Bu konudan sıkça soru gelmektedir.** Anadolu Selçuklu Devleti, ticaret kervanlarının yolda uğradığı zararı (soygun, doğal afet gibi) devlet güvencesiyle karşılamıştır; bu uygulama bir tür devlet sigortacılığı sistemidir.
+
+           Kayseri'de kurulan Yabanlı Pazarı da yine Anadolu Selçuklu Devleti tarafından oluşturulmuş, düşük gümrük vergisi sayesinde yerli halkın da yabancı tüccarların mallarından yararlanmasını sağlamıştır.
+
+           **Burası karıştırılabilir:** Kervansaraylar şehir dışında olup ücretsizdir; hanlar ise şehir merkezinde olup ücretlidir. [[notHanVeRibat]]
+           """
+};
+
+var notHanVeRibat = new Note
+{
+    Title = "Anadolu Selçuklu Devleti — Han, Kervansaray ve Ribat Farkı",
+    Body = """
+           Kervansaraylar, Türkistan devletlerinden gelen ribatların devamı niteliğindedir. Ribatlar ilk zamanlar sınır boylarını korumak ve gaza faaliyetlerini desteklemek amacıyla kullanılmıştır.
+
+           Kervansarayların temel işlevleri şunlardır:
+           - Yol güvenliğini sağlamak
+           - Konaklama imkânı sunmak (3 gün boyunca ücretsiz)
+           - Ticareti geliştirmek
+
+           İslam devletleri döneminde "han" adı verilen ticari işletmeler de kurulmuştur. Hanlar şehir merkezinde bulunur ve ücretlidir; bu yönüyle ribat ve kervansaraylardan ayrılır.
+
+           **Burası karıştırılabilir:** Han (şehir içi, ücretli) ile kervansaray (şehir dışı, ücretsiz, 3 gün süreli) sık sık karıştırılır. Sınavda konaklama süresinin "3 gün" olduğu doğrudan sorulmuştur.
+           """
+};
+
+var notYassiCemenVeMogolTehlikesi = new Note
+{
+    Title = "Anadolu Selçuklu Devleti — Alaattin Keykubat ve Yassı Çemen Savaşı",
+    Body = """
+           Alaattin Keykubat döneminde (1220-1237) Anadolu Selçuklu Devleti en parlak dönemini yaşamıştır. Bu dönemde Sudak limanı, Kolonoros (Alanya) fethedilmiş; Moğol tehlikesine karşı Sivas, Erzincan ve Tokat'ın surları güçlendirilmiş, Erzurum'un surları da güçlendirilmiştir.
+
+           1230 yılında Harzemşahlar'ın Ahlat'a saldırması üzerine Anadolu Selçuklu Devleti ile Harzemşahlar arasında Yassı Çemen Savaşı yapılmış ve bu savaş kazanılmıştır.
+
+           **Burası karıştırılabilir:** Yassı Çemen Savaşı'nın kazanılması kısa vadede olumlu görünse de uzun vadede olumsuz sonuç doğurmuştur: Harzemşahlar, Anadolu Selçuklu Devleti ile İlhanlılar (Moğollar) arasında tampon bölge görevi görüyordu. Bu tampon bölgenin ortadan kalkmasıyla Anadolu Selçuklu Devleti, Moğollara doğrudan komşu olmuştur.
+
+           **Bu konudan sıkça soru gelmektedir.** Yassı Çemen Savaşı'nın temel sebebi Harzemşahlar'ın Ahlat'a saldırmasıdır; savaşın en önemli sonucu ise Anadolu Selçuklu Devleti'nin Moğollara komşu olmasıdır.
+           """
+};
+
+var notBabaIshakVeKosedag = new Note
+{
+    Title = "Anadolu Selçuklu Devleti — Baba İshak İsyanı ve Kösedağ Savaşı",
+    Body = """
+           I. Gıyasettin Keyhüsrev döneminde, Türkmenler arasında İslamiyet'in tam olarak yerleşmemiş olması ve otlak arazi sorunları gibi nedenlerle Baba İlyas (Amasya) ve Baba İshak (Adıyaman Kahta) önderliğinde bir isyan çıkmıştır. Bu isyan Anadolu Selçuklu Devleti'nde ortaya çıkan ilk dinî nitelikli toplumsal isyandır ve devlet tarafından yaklaşık 2 yıl sonra güçlükle bastırılmıştır.
+
+           Bu isyan, İlhanlıları (Moğolları) harekete geçirmiştir. Ayrıca Saadettin Köpek adlı vezirin, yaklaşık 100 devlet adamını çeşitli hilelerle ortadan kaldırması devleti içten zayıflatmıştır. Saadettin Köpek, taht iddiasında bulununca idam edilmiştir.
+
+           1243 yılında Moğol komutanı Baycu Noyan liderliğindeki İlhanlı ordusu ile Anadolu Selçuklu Devleti orduları Sivas'ta Kösedağ Savaşı'nı yapmıştır. Tecrübesiz askerlerin yanlış mevzi tutması ve hükümdar I. Gıyasettin Keyhüsrev'in savaş sırasında Sivas'tan Tokat'a kaçması nedeniyle bu savaş kaybedilmiştir.
+
+           **Burası karıştırılabilir:** Baycu Noyan, Anadolu'ya iki kez gelmiştir: 1243'te Kösedağ Savaşı'nı kazanıp Sivas, Erzincan, Erzurum ve Kayseri'yi tahrip etmiş; 1256'da ise Aksaray yakınlarında Selçuklu ordusunu tekrar mağlup etmiştir. 1243 yılı, yapılan yıkım o kadar büyük olmuştur ki Anadolu'da yıllarca "Baycu Noyan yılı" olarak anılmıştır.
+           """
+};
+
+var notKosedagSonuclariVeBeylikler = new Note
+{
+    Title = "Anadolu Selçuklu Devleti — Kösedağ Savaşı'nın Sonuçları",
+    Body = """
+           1243 Kösedağ Savaşı'nın sonuçları şunlardır:
+           - Anadolu Moğollar tarafından tahrip edilmiştir.
+           - Anadolu Selçuklu Devleti İlhanlılara tabi hale gelmiştir.
+           - Anadolu Türk siyasi birliği bozulmuştur.
+           - Moğolların önünden kaçan Türkmen kitleleri Bizans sınırına doğru göç ederek Anadolu'da ikinci kez Türk beyliklerinin kurulmasını sağlamıştır; bu göç Anadolu'da Türk nüfusunu artırmıştır.
+
+           **Bu konudan sıkça soru gelmektedir.** Anadolu'da ilk Türk beylikleri 1071 Malazgirt Savaşı'ndan sonra, ikinci Türk beylikleri ise 1243 Kösedağ Savaşı'ndan sonra kurulmuştur.
+
+           Kösedağ Savaşı'ndan sonra Anadolu Selçuklu Devleti'nin çöküş sürecinde üç önemli devlet adamı öne çıkar:
+           - Celalettin Karatay: Üç şehzadeyi (bilinen üç hükümdar adayını) aynı anda hükümdar ilan etmiş, Karatay Medresesi ve Karatay Kervansarayı'nı yaptırmıştır.
+           - Muinüddin Pervane: Vezirdir, Sinop'ta ileride Pervaneoğulları Beyliği'ne dönüşecek yapılanmanın temelini atmıştır; önce Memlüklerden yardım istemiş, sonra İlhanlılardan yana tavır almış, bu ikili tutumu nedeniyle Abaka Han tarafından öldürtülmüştür.
+           - Alaattin Siyavuş: Karamanoğlu Mehmet Bey'in desteğiyle 1277'de Anadolu Selçuklu Devleti tahtına çıkmış, ilk divan toplantısında Karamanoğlu Mehmet Bey Türkçenin resmi dil olacağını ilan etmiştir. Moğollar tarafından tahttan indirilen Alaattin Siyavuş, tarihe "Cimri Olayı" adıyla geçmiştir.
+
+           1308 yılında son hükümdar III. Mesut'un ölümüyle Anadolu Selçuklu Devleti tarihe karışmıştır.
+           """
+};
+
+var notDenizciBeylikler = new Note
+{
+    Title = "Anadolu Beylikleri — Denizci Beylikler",
+    Body = """
+           Kösedağ Savaşı sonrası kurulan Anadolu beyliklerinden bazıları denizcilikle uğraşmış ve Ege-Karadeniz-Akdeniz kıyılarında donanma faaliyetleri yürütmüştür:
+
+           - Karesioğulları: Balıkesir ve Çanakkale bölgesinde kurulmuştur. Osmanlı Devleti'nin katıldığı ilk beyliktir; Osmanlı bu beyliğe son vererek deniz gücüne kavuşmuştur.
+           - Aydınoğulları: İzmir ve Aydın bölgesinde kurulmuştur. Umur Bey ve Cüneyt Bey döneminde Ege Adaları'na seferler düzenlemiştir.
+           - Menteşeoğulları: Muğla bölgesinde kurulmuştur. Rodos Şövalyeleri ve Kıbrıs Krallığı ile mücadele etmiştir.
+           - Candaroğulları (İsfendiyaroğulları): Sinop, Kastamonu ve Samsun bölgesinde kurulmuştur; Cenevizlilerle ticari ilişkiler kurmuştur. 1402'den sonra İsfendiyar Bey tarafından "İsfendiyaroğulları" adıyla devam etmiştir.
+           - Saruhanoğulları: Manisa'da kurulmuştur; Ege Adaları ve Balkanlara seferler düzenlemiştir.
+
+           **Bu konudan sıkça soru gelmektedir.** "Aşağıdaki beyliklerden hangileri denizcilikle uğraşmıştır?" tarzı sorularda Karesioğulları, Aydınoğulları, Menteşeoğulları, Candaroğulları ve Saruhanoğulları birlikte doğru kabul edilir.
+           """
+};
+
+var notDigerBeylikler = new Note
+{
+    Title = "Anadolu Beylikleri — Diğer Önemli Beylikler",
+    Body = """
+           Kösedağ Savaşı sonrası kurulan diğer önemli Anadolu beylikleri:
+
+           - Karamanoğulları: Karaman (Larende) bölgesinde kurulmuştur. Kendilerini Anadolu Selçuklu Devleti'nin devamı olarak görmüşlerdir; bu nedenle Osmanlı Devleti'ni en çok uğraştıran beyliktir. 1277'de Karamanoğlu Mehmet Bey, Türkçeyi resmi dil ilan etmiştir.
+           - Germiyanoğulları: Kütahya'da I. Yakup tarafından kurulmuştur. Osmanlı Devleti'ne çeyiz ve vasiyet yoluyla katılmıştır.
+           - Hamitoğulları: Isparta, Eğridir bölgesinde Dündar Bey tarafından kurulmuştur. Topraklarını Osmanlı Devleti'ne 80.000 altın karşılığında satmıştır.
+           - Dulkadiroğulları: Kahramanmaraş, Elbistan bölgesinde kurulmuştur. Osmanlı Devleti'ne siyaseten en son katılan beyliktir; Yavuz Sultan Selim tarafından Turnadağ Savaşı ile son verilmiştir.
+           - Eretna Beyliği: Sivas, Tokat, Kayseri bölgesinde kurulmuştur; kadısı Kadı Burhanettin tarafından beyliğe son verilmiştir.
+           - Eşrefoğulları: Beyşehir'de kurulmuştur; ahşap direkli en büyük cami olan Eşrefoğlu Ulu Camisi'ni yaptırmışlardır.
+           - Sahip Ataoğulları: Afyon (Karahisar) bölgesinde, Anadolu Selçuklu veziri Sahip Ata Fahrettin'in oğulları tarafından kurulmuştur.
+           - Taceddinoğulları: Bafra, Niksar, Canik ve Ordu civarında kurulmuştur.
+           - Pervaneoğulları: Sinop'ta kurulmuştur; denizcilik alanında gelişmiş ve Kırım'a seferler düzenlemiştir.
+           - Çobanoğulları: Kastamonu'da kurulmuştur. Bir rivayete göre Osmanoğulları, kuruluş döneminde Çobanoğullarına bağlı olarak yaşamını sürdürmüştür.
+
+           **Burası karıştırılabilir:** Karamanoğulları kurulduğu yerin adını almamış, kurucusu Karaman Bey'in adını almıştır (eski adı Larende). Hamitoğulları'nı Hamit Bey değil Dündar Bey kurmuştur; bu yüzden isim ile kurucu birbirine karıştırılabilir.
+           """
+};
+
+var notASDBSDFarklariVeDivan = new Note
+{
+    Title = "Anadolu Selçuklu Devleti — Büyük Selçuklu Devleti'nden Farkları",
+    Body = """
+           Anadolu Selçuklu Devleti, Büyük Selçuklu Devleti ile aynı kökenden gelmesine rağmen bulunduğu coğrafya nedeniyle bazı farklı kurumlar ve unvanlar geliştirmiştir.
+
+           Anadolu Selçuklu Devleti denizcilikle uğraşmıştır (Sinop, Samsun, Antalya, Alanya, Sudak); Büyük Selçuklu Devleti İran'da kurulduğu için denizcilik faaliyeti bulunmamaktadır. Denizcilik faaliyetlerinden sorumlu komutana Anadolu Selçuklu Devleti'nde "Emir-i Sevahil" veya "Reisü'l-Bahr" denilmiştir.
+
+           Anadolu Selçuklu Devleti hükümdarları "Key" (Keyhüsrev, Keykavus, Keykubat gibi) ve "Rükneddin" gibi Farsça unvanlar kullanmıştır; bu unvanlara Büyük Selçuklu Devleti'nde rastlanmaz.
+
+           Devlet işlerinin görüşüldüğü divana Anadolu Selçuklu Devleti'nde "Divan-ı Ala" denilmiştir; bu, Büyük Selçuklu Devleti'ndeki Divan-ı Saltanat'a karşılık gelir.
+
+           **Burası karıştırılabilir:** "Divan-ı Berid" bir divan çeşidi değildir, posta teşkilatının adıdır. "Divan-ı Pervane" ise ikta topraklarının dağıtımından sorumlu divandır; başındaki görevliye "pervaneci" denir. Türkiye topraklarında ilk ikta dağıtımı Tokat'ta yapılmıştır.
+           """
+};
+
+var notAhilikTeskilati = new Note
+{
+    Title = "Anadolu Selçuklu Devleti — Ahilik Teşkilatı",
+    Body = """
+           Ahilik teşkilatı, asıl adı Şeyh Nasirettin olan Ahi Evran (Muhammed bin Ahmet el-Hoyi) tarafından, esnaf ve zanaatkârlar arasında dayanışmayı sağlamak amacıyla kurulmuştur. Teşkilatın temelleri I. Gıyasettin Keyhüsrev zamanında, Kayseri'de atılmıştır.
+
+           Ahilik teşkilatının özellikleri:
+           - Gayrimüslimler teşkilata alınmamıştır.
+           - Merkezleri Kırşehir, Kayseri ve Konya'dır.
+           - Üretilen mallara narh sistemine benzer şekilde değer biçilmiştir.
+           - Esnafların başındakilere "şeyh" veya "pir" adı verilmiştir.
+           - Esnaflar, ahlak kurallarını içeren fütüvvetnameye uymuştur.
+           - İhtiyaca göre kaliteli mal üretilmiştir.
+           - Mesleki eğitim vermişler, mezun olanlara "icazetname" adı verilen belge düzenlemişlerdir.
+           - Esnaflar arasında dayanışmayı artırmıştır.
+           - Ortak sandıklarda para toplanmış, bu birikim yeni dükkân açacak çıraklara destek olarak kullanılmıştır.
+           - Esnaflar cihat faaliyetlerine de katılmıştır.
+
+           Ahi Evran, ahiliğin amaç ve felsefesini "Letaif-i Hikmet" adlı eserinde anlatmıştır.
+
+           **Burası karıştırılabilir:** Ahilik, Osmanlı dönemindeki lonca teşkilatından farklı olarak gayrimüslimleri bünyesine almamıştır; loncalara gayrimüslimler de katılabilmiştir. [[notFatmaBaciVeBacianiRum]]
+           """
+};
+
+var notFatmaBaciVeBacianiRum = new Note
+{
+    Title = "Anadolu Selçuklu Devleti — Fatma Bacı ve Bacıyân-ı Rum",
+    Body = """
+           Ahi Evran'ın eşi Fatma Bacı (Fatma Kadın), esnaf eşlerinin eğitimi amacıyla "Bacıyân-ı Rum" (Anadolu kadınları) teşkilatını kurmuştur. Bu teşkilat kadınları dokumacılıktan ev işlerine kadar birçok konuda eğitmiş, ayrıca bekâr kız çocuklarını evlendirme görevini de üstlenmiştir.
+
+           Bacıyân-ı Rum'un temel prensibi "aşına, eşine ve işine dikkat et" şeklinde özetlenir.
+
+           **Bu konudan sıkça soru gelmektedir.** "Rum" ile biten teşkilat isimleri (Bacıyân-ı Rum, Gaziyân-ı Rum, Abdalân-ı Rum gibi) Anadolu'yu ifade eder; "Rum" burada bugünkü Yunanistan anlamında değildir.
+
+           Hem Ahi Evran hem de Fatma Bacı, Moğolların Konya'yı basması sırasında öldürülmüştür.
+           """
+};
+
+var notIlimInsanlari = new Note
+{
+    Title = "Anadolu Selçuklu Devleti — Önemli İlim İnsanları",
+    Body = """
+           Anadolu Selçuklu Devleti döneminde yetişen önemli ilim insanları ve eserleri:
+
+           - Hazreti Mevlana: Divan-ı Kebir ve Mesnevi adlı eserleri kaleme almıştır.
+           - Hacı Bektaş-ı Veli: Makalat adlı eserin sahibidir.
+           - Yunus Emre: Risaletü'n-Nushiyye adlı eseri yazmıştır ("nushiyye", nasihat anlamına gelir).
+           - Aşık Paşa: Garipname adlı eseri yazmıştır; mezarı Kırşehir'dedir.
+           - Muhyiddin Arabi: Vahdet-i Vücut felsefesinin öncüsüdür.
+           - Hacı Paşa: "Anadolu'nun İbn Sina'sı" olarak anılan tıp âlimidir.
+           - Ravendi: Selçuklu tarihini yazan bir tarihçidir.
+           - Feridüddin Attar: "Mantıku't-Tayr" (Kuşların Dili) adlı eserin yazarıdır; bu eseri Gülşehri Türkçeye çevirmiştir.
+           - Hoca Dehhani: Anadolu Selçuklu Devleti'nde divan edebiyatının kurucusu sayılır.
+
+           **Burası karıştırılabilir:** Mantıku't-Tayr'ın yazarı Feridüddin Attar'dır; eseri Türkçeye çeviren kişi Gülşehri'dir. Bu ikisi sık sık birbirine karıştırılır.
+           """
+};
+
+var notMimariEserBulmaYontemi = new Note
+{
+    Title = "Anadolu Selçuklu Devleti — Mimari Eserin Kime Ait Olduğunu Belirleme Yöntemi",
+    Body = """
+           Anadolu'da 5.000'den fazla Türk-İslam eseri bulunduğu için hangi eserin hangi devlete ait olduğunu belirlemek amacıyla aşağıdaki sıralı yöntem kullanılabilir:
+
+           1. Eser, Danişmentliler, Saltuklular, Mengücekliler, Artuklular, Çaka Beyliği (D-S-M-A-Ç) tarafından bırakılan eserlerden biri mi? Öyleyse bu beyliklere aittir.
+           2. Eser İstanbul, Bursa, Trabzon, Edirne, Kırklareli veya Tekirdağ'da mı bulunuyor? Bu şehirleri ilk fetheden Türk devleti Osmanlı Devleti'dir; bu şehirlerdeki tüm Türk-İslam eserleri istisnasız Osmanlı Devleti'ne aittir.
+           3. Eserin adında Paşa, Yeşil, Çelebi, Haseki, Ağa, Sultan gibi unvan ve lakaplar var mı? Bu unvanlar Osmanlı Devleti'ne özgüdür, eser Osmanlı Devleti'ne aittir.
+           4. Yukarıdakilerin hiçbiri geçerli değilse, eser Anadolu Selçuklu Devleti'ne aittir.
+
+           **Bu konudan sıkça soru gelmektedir.** Bu yöntemde iki istisna vardır: Afyon Karahisar'daki Sultan Dağı Medresesi, "Sultan" kelimesi geçmesine rağmen Anadolu Selçuklu Devleti'ne aittir. Erzurum'daki Yakutiye Medresesi ise İlhanlılar tarafından yapılmıştır.
+
+           **Burası karıştırılabilir:** "Çifte" (örneğin çifte minareli medrese) ve "Alaattin" kelimeleri Anadolu Selçuklu Devleti eserlerinde sıkça geçer; minare sayısının fazlalığı devletin gücünü sembolize eder.
+           """
+};
+
+var notASDMimariEserleri = new Note
+{
+    Title = "Anadolu Selçuklu Devleti — Önemli Mimari Eserler",
+    Body = """
+           Anadolu Selçuklu Devleti'nin bilinen bazı önemli eserleri:
+
+           - Alayhan: İlk han kabul edilir (Aksaray-Niğde yolu üzerinde).
+           - Konya Alaattin Camisi: İlk cami kabul edilir.
+           - Koca Hasan Medresesi (Kayseri): İlk medrese kabul edilir.
+           - Gevher Nesibe Darüşşifası (Kayseri): Anadolu'nun en eski hastanesi kabul edilir; I. Gıyasettin Keyhüsrev'in kız kardeşi Gevher Nesibe'nin isteği üzerine yaptırılmıştır.
+           - Sivas Gökmedrese
+           - Kırşehir Caca Bey Medresesi
+           - Kayseri Hunat Hatun Türbesi
+           - Erzurum Çifte Minareli Medrese
+           - Konya İnce Minareli Medrese, Taş Mescit, Karatay Medresesi
+           - Antalya Yivli Minare, Evdirhan
+           - Ankara Aslanhane Camisi, Akköprü
+           - Tokat Pervane Hamamı
+           - Kayseri Keykubadiye Sarayı, Beyşehir Kubadabat Sarayı, Konya Alaattin Köşkü
+
+           **Burası karıştırılabilir:** Kütahya'daki Karagöz Camisi Anadolu Selçuklu Devleti'ne, Antalya'daki Karagözpaşa Camisi ise Osmanlı Devleti'ne aittir; isim benzerliği eserin sahibini karıştırabilir. Aynı şekilde Ankara'daki Alaattin Camisi Anadolu Selçuklu Devleti'ne, Konya'daki Alaattin Paşa Camisi ise Osmanlı Devleti'ne aittir.
+           """
+};
+
+BÖLÜM 3 — Sorular
+
+// --- SORU 1 ---
+new Question
+{
+    Note = notKurulusVeIznik,
+    Type = QuestionType.MultipleChoice,
+    Text = "Anadolu Selçuklu Devleti'nin kurucusu aşağıdakilerden hangisidir?",
+    Explanation = "Anadolu Selçuklu Devleti 1075'te Kutalmış oğlu Süleymanşah tarafından kurulmuştur.",
+    OrderIndex = 1,
+    Choices =
+    {
+        new Choice { Text = "Kutalmış oğlu Süleymanşah", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "I. Kılıç Arslan", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Fuat Köprülü", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Sultan Alparslan", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Şahinşah", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 2 ---
+new Question
+{
+    Note = notKurulusVeIznik,
+    Type = QuestionType.MultipleChoice,
+    Text = "Anadolu Selçuklu Devleti 1075 yılında hangi şehir merkez olmak üzere kurulmuştur?",
+    Explanation = "Devlet, İznik merkez olmak üzere kurulmuştur.",
+    OrderIndex = 2,
+    Choices =
+    {
+        new Choice { Text = "İznik", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Konya", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Kayseri", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Sivas", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Antalya", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 3 (ters soru) ---
+new Question
+{
+    Note = notKurulusVeIznik,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Anadolu Selçuklu Devleti'nin kuruluşuyla ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Anadolu Selçuklu Devleti'nin varlığı 1932'de Türk Tarih Kurumu ve Fuat Köprülü'nün çalışmalarıyla ortaya çıkarılmıştır; Büyük Selçuklu Devleti'nin yıkılmasından sonra kurulduğu ifadesi yanlıştır, iki devlet bir süre birlikte var olmuştur.",
+    OrderIndex = 3,
+    Choices =
+    {
+        new Choice { Text = "Devlet, Kutalmış oğlu Süleymanşah tarafından kurulmuştur.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Devletin varlığı 1932'de Türk Tarih Kurumu'nun çalışmalarıyla ortaya çıkarılmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Kuruluş sırasında Bizans'taki taht kavgalarından yararlanılmıştır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Süleymanşah'ın ölümünden sonra Şahinşah otoriteyi sağlayamamıştır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Devlet, Büyük Selçuklu Devleti yıkıldıktan sonra kurulmuştur.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 4 ---
+new Question
+{
+    Note = notHacliSeferleriVeKilicArslan,
+    Type = QuestionType.MultipleChoice,
+    Text = "I. Kılıç Arslan döneminde başkentin İznik'ten Konya'ya taşınmasına neden olan gelişme aşağıdakilerden hangisidir?",
+    Explanation = "İznik'in I. Haçlı Seferi sonrasında kaybedilmesi, başkentin Konya'ya taşınmasına neden olmuştur.",
+    OrderIndex = 4,
+    Choices =
+    {
+        new Choice { Text = "I. Haçlı Seferi", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Miryokefalon Savaşı", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Kösedağ Savaşı", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Malazgirt Savaşı", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Yassı Çemen Savaşı", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 5 ---
+new Question
+{
+    Note = notHacliSeferleriVeKilicArslan,
+    Type = QuestionType.MultipleChoice,
+    Text = "I. Haçlı Seferi ile ilgili aşağıdakilerden hangisi doğrudur?",
+    Explanation = "I. Haçlı Seferi, hedefine (Kudüs'e) ulaşan tek Haçlı Seferi olarak kabul edilir.",
+    OrderIndex = 5,
+    Choices =
+    {
+        new Choice { Text = "Hedefine ulaşan tek Haçlı Seferi'dir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "1096 yılında başlamıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "I. Kılıç Arslan döneminde gerçekleşmiştir.", IsCorrect = true, OrderIndex = 3 },
+
+        new Choice { Text = "Amacından sapan tek Haçlı Seferi'dir.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "İstanbul'un Latinler tarafından yağmalanmasıyla sonuçlanmıştır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "II. Kılıç Arslan döneminde gerçekleşmiştir.", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 6 (ters soru) ---
+new Question
+{
+    Note = notHacliSeferleriVeKilicArslan,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "I. Kılıç Arslan dönemi ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "I. Kılıç Arslan, İznik'i geri alamamış ve Malatya kuşatması sırasında İznik'i kaybetmiştir; İznik'i geri aldığı ifadesi yanlıştır.",
+    OrderIndex = 6,
+    Choices =
+    {
+        new Choice { Text = "1097'de Eskişehir'de Dorlon Muharebesi'ni yapmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Malatya'yı Anadolu Türk siyasi birliğini sağlamak amacıyla kuşatmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "İlk öncü Haçlı birliğini büyük ölçüde yok etmiştir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Devletin merkezini Konya'ya taşımıştır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "İznik'i I. Haçlı Seferi sonrasında geri almıştır.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 7 ---
+new Question
+{
+    Note = notMiryaKefelonVe11Ogul,
+    Type = QuestionType.MultipleChoice,
+    Text = "Miryokefalon Savaşı'nda Bizans İmparatorluğu'nu mağlup eden Anadolu Selçuklu Devleti hükümdarı aşağıdakilerden hangisidir?",
+    Explanation = "Miryokefalon Zaferi, 1176'da II. Kılıç Arslan tarafından kazanılmıştır.",
+    OrderIndex = 7,
+    Choices =
+    {
+        new Choice { Text = "II. Kılıç Arslan", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "I. Kılıç Arslan", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "I. Gıyasettin Keyhüsrev", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Alaattin Keykubat", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Kutalmış oğlu Süleymanşah", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 8 ---
+new Question
+{
+    Note = notMiryaKefelonVe11Ogul,
+    Type = QuestionType.MultipleChoice,
+    Text = "II. Kılıç Arslan, eski bir Türk geleneği olarak ülkesini kaç oğlu arasında paylaştırmıştır?",
+    Explanation = "II. Kılıç Arslan, taht kavgalarını önlemek amacıyla ülkesini 11 oğlu arasında paylaştırmıştır.",
+    OrderIndex = 8,
+    Choices =
+    {
+        new Choice { Text = "11", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "5", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "9", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "7", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "3", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 9 (ters soru) ---
+new Question
+{
+    Note = notMiryaKefelonVe11Ogul,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Miryokefalon Savaşı ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Miryokefalon Savaşı'nı I. Kılıç Arslan değil II. Kılıç Arslan kazanmıştır.",
+    OrderIndex = 9,
+    Choices =
+    {
+        new Choice { Text = "1176 yılında kazanılmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "'Yurt Tutan Savaşı' olarak da anılır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Anadolu'nun kesin olarak Türk yurdu haline gelmesini sağlamıştır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Malazgirt'ten sonraki en önemli savaş kabul edilir.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "I. Kılıç Arslan tarafından kazanılmıştır.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 10 ---
+new Question
+{
+    Note = notFarsUnvanlarVeGyasettin,
+    Type = QuestionType.MultipleChoice,
+    Text = "Farklı tarihlerde iki kez tahta çıkan Anadolu Selçuklu hükümdarı aşağıdakilerden hangisidir?",
+    Explanation = "I. Gıyasettin Keyhüsrev, 1192-1196 ve 1205-1211 yıllarında olmak üzere iki kez tahta çıkmıştır.",
+    OrderIndex = 10,
+    Choices =
+    {
+        new Choice { Text = "I. Gıyasettin Keyhüsrev", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "İzzettin Keykavus", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Alaattin Keykubat", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "II. Kılıç Arslan", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "III. Mesut", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 11 ---
+new Question
+{
+    Note = notFarsUnvanlarVeGyasettin,
+    Type = QuestionType.MultipleChoice,
+    Text = "IV. Haçlı Seferi ile ilgili aşağıdakilerden hangisi doğrudur?",
+    Explanation = "IV. Haçlı Seferi amacından sapmış, Latinler İstanbul'u yağmalayarak burada Latin İmparatorluğu'nu kurmuştur.",
+    OrderIndex = 11,
+    Choices =
+    {
+        new Choice { Text = "Amacından sapan tek Haçlı Seferi'dir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "İstanbul'un yağmalanmasıyla sonuçlanmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Latin İmparatorluğu'nun kurulmasına yol açmıştır.", IsCorrect = true, OrderIndex = 3 },
+
+        new Choice { Text = "Kudüs'ün alınmasıyla sonuçlanmıştır.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "1096 yılında gerçekleşmiştir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "I. Kılıç Arslan döneminde gerçekleşmiştir.", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 12 (ters soru) ---
+new Question
+{
+    Note = notFarsUnvanlarVeGyasettin,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Anadolu Selçuklu Devleti'nin Farsça unvan kullanımıyla ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "'Key' kelimesi Farsçada anahtar değil, hükümdar/sultan/büyük anlamına gelir.",
+    OrderIndex = 12,
+    Choices =
+    {
+        new Choice { Text = "Devlet, resmi dil olarak Farsçayı kullanmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Hükümdarlar Key Hüsrev, Key Kavus gibi unvanlar taşımıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Devlet, Büyük Selçuklu Devleti'nin kurulduğu coğrafyada kurulmamıştır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "I. Gıyasettin Keyhüsrev döneminde Antalya, Bizans'tan alınmıştır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "'Key' kelimesi Farsçada 'anahtar' anlamına gelir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 13 ---
+new Question
+{
+    Note = notTicaretVeKervansaray,
+    Type = QuestionType.MultipleChoice,
+    Text = "Anadolu Selçuklu Devleti'nin ticaret politikasıyla ilgili aşağıdakilerden hangisi doğrudur?",
+    Explanation = "Devlet, ticaret kervanlarının uğrayacağı zararı bir tür devlet sigortası ile karşılamıştır.",
+    OrderIndex = 13,
+    Choices =
+    {
+        new Choice { Text = "Ticaret kervanlarının zararı devlet güvencesiyle karşılanmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Kıbrıs Krallığı ve Venedik ile ticari anlaşmalar yapılmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Kayseri'de Yabanlı Pazarı kurulmuştur.", IsCorrect = true, OrderIndex = 3 },
+
+        new Choice { Text = "Yabancı tüccarlardan yüksek gümrük vergisi alınmıştır.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Ticaret yalnızca kara yoluyla değil deniz yoluyla da tamamen yasaklanmıştır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Kervansaraylarda konaklama süresi sınırsızdır.", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 14 ---
+new Question
+{
+    Note = notTicaretVeKervansaray,
+    Type = QuestionType.MultipleChoice,
+    Text = "Alaattin Keykubat döneminde fethedilen kıyı yerleşimleri aşağıdakilerden hangisidir?",
+    Explanation = "Alaattin Keykubat, Sudak limanını ve Kolonoros'u (Alanya) fethetmiştir.",
+    OrderIndex = 14,
+    Choices =
+    {
+        new Choice { Text = "Sudak limanı", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Kolonoros (Alanya)", IsCorrect = true, OrderIndex = 2 },
+
+        new Choice { Text = "Sinop", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Samsun", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "İstanbul", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Trabzon", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 15 (ters soru) ---
+new Question
+{
+    Note = notTicaretVeKervansaray,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Anadolu Selçuklu Devleti'nin ticaret politikasıyla ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Sinop ve Samsun, İzzettin Keykavus döneminde alınmış olup Sudak ve Alanya değil bu kentler onun döneminin kazanımlarıdır; kervansaraylar ücretsizdir, ücretli olan hanlardır.",
+    OrderIndex = 15,
+    Choices =
+    {
+        new Choice { Text = "İzzettin Keykavus döneminde Sinop ve Samsun alınmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Kervansaraylarda 3 gün boyunca ücretsiz konaklama sağlanmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Kıbrıs Krallığı ile düşük gümrük vergili anlaşmalar yapılmıştır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Kayseri'de Yabanlı Pazarı kurulmuştur.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Kervansaraylarda konaklama ücretlidir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 16 ---
+new Question
+{
+    Note = notHanVeRibat,
+    Type = QuestionType.MultipleChoice,
+    Text = "Kervansaraylar ile ilgili aşağıdakilerden hangisi doğrudur?",
+    Explanation = "Kervansaraylar Türkistan'daki ribatların devamı niteliğindedir ve şehir dışında bulunur, hanlar ise şehir içindedir ve ücretlidir.",
+    OrderIndex = 16,
+    Choices =
+    {
+        new Choice { Text = "Ribatların devamı niteliğindedir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Yol güvenliğini sağlamıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Şehir dışında bulunur ve ücretsizdir.", IsCorrect = true, OrderIndex = 3 },
+
+        new Choice { Text = "Şehir merkezinde bulunur ve ücretlidir.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Han ile aynı yapı türüdür, aralarında fark yoktur.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Yalnızca askeri amaçla kullanılmıştır.", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 17 (ters soru) ---
+new Question
+{
+    Note = notHanVeRibat,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Han ve kervansaray farkıyla ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Hanlar şehir merkezinde olup ücretlidir; kervansaraylar ise şehir dışında olup ücretsizdir. 'Hanların ücretsiz olduğu' ifadesi yanlıştır.",
+    OrderIndex = 17,
+    Choices =
+    {
+        new Choice { Text = "Kervansaraylar şehir dışında bulunur.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Hanlar şehir merkezinde bulunur.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Kervansaraylarda konaklama süresi 3 gündür.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Kervansaraylar ribatların devamıdır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Hanlar ücretsizdir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 18 ---
+new Question
+{
+    Note = notYassiCemenVeMogolTehlikesi,
+    Type = QuestionType.MultipleChoice,
+    Text = "1230 yılında Anadolu Selçuklu Devleti ile Harzemşahlar arasında yapılan savaş aşağıdakilerden hangisidir?",
+    Explanation = "Harzemşahlar'ın Ahlat'a saldırması üzerine Yassı Çemen Savaşı yapılmış ve kazanılmıştır.",
+    OrderIndex = 18,
+    Choices =
+    {
+        new Choice { Text = "Yassı Çemen Savaşı", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Kösedağ Savaşı", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Miryokefalon Savaşı", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Malazgirt Savaşı", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Dorlon Muharebesi", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 19 ---
+new Question
+{
+    Note = notYassiCemenVeMogolTehlikesi,
+    Type = QuestionType.MultipleChoice,
+    Text = "Yassı Çemen Savaşı'nın en önemli sonucu aşağıdakilerden hangisidir?",
+    Explanation = "Harzemşahlar'ın yenilmesiyle tampon bölge ortadan kalkmış, Anadolu Selçuklu Devleti Moğollara komşu olmuştur.",
+    OrderIndex = 19,
+    Choices =
+    {
+        new Choice { Text = "Anadolu Selçuklu Devleti'nin Moğollara komşu olması", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Anadolu'nun kesin olarak Türk yurdu haline gelmesi", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Başkentin İznik'ten Konya'ya taşınması", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Anadolu'da ilk Türk beyliklerinin kurulması", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Devletin Bizans'a tabi hale gelmesi", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 20 (ters soru) ---
+new Question
+{
+    Note = notYassiCemenVeMogolTehlikesi,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Alaattin Keykubat dönemi ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Sudak limanı ve Kolonoros (Alanya) Alaattin Keykubat döneminde alınmıştır; bu bilgi doğrudur, dolayısıyla aksini iddia eden ifade yanlıştır.",
+    OrderIndex = 20,
+    Choices =
+    {
+        new Choice { Text = "Sivas, Erzincan ve Tokat surları güçlendirilmiştir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Kolonoros (Alanya) fethedilmiştir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Sudak limanı alınmıştır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Devletin en parlak dönemi olarak kabul edilir.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Sudak limanı bu dönemde değil İzzettin Keykavus döneminde alınmıştır.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 21 ---
+new Question
+{
+    Note = notBabaIshakVeKosedag,
+    Type = QuestionType.MultipleChoice,
+    Text = "Anadolu Selçuklu Devleti'nde ortaya çıkan ilk dinî nitelikli toplumsal isyan aşağıdakilerden hangisidir?",
+    Explanation = "Baba İlyas ve Baba İshak önderliğindeki isyan, Anadolu Selçuklu Devleti'nde ortaya çıkan ilk dinî nitelikli toplumsal isyandır.",
+    OrderIndex = 21,
+    Choices =
+    {
+        new Choice { Text = "Baba İshak İsyanı", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Cimri Olayı", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Kösedağ İsyanı", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Saadettin Köpek İsyanı", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Şahinşah İsyanı", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 22 ---
+new Question
+{
+    Note = notBabaIshakVeKosedag,
+    Type = QuestionType.MultipleChoice,
+    Text = "Kösedağ Savaşı'nın kaybedilmesinde etkili olan gelişme aşağıdakilerden hangisidir?",
+    Explanation = "Tecrübesiz askerlerin yanlış mevzi tutması ve I. Gıyasettin Keyhüsrev'in Sivas'tan Tokat'a kaçması savaşın kaybedilmesinde etkili olmuştur.",
+    OrderIndex = 22,
+    Choices =
+    {
+        new Choice { Text = "Tecrübesiz askerlerin yanlış mevzi tutması", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "I. Gıyasettin Keyhüsrev'in Sivas'tan Tokat'a kaçması", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Saadettin Köpek'in birçok devlet adamını ortadan kaldırması", IsCorrect = true, OrderIndex = 3 },
+
+        new Choice { Text = "Alaattin Keykubat'ın savaşı bizzat yönetmesi", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Bizans'ın Moğollarla ittifak kurması", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Ahilik teşkilatının savaşa katılmayı reddetmesi", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 23 (ters soru) ---
+new Question
+{
+    Note = notBabaIshakVeKosedag,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "1243 Kösedağ Savaşı ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Kösedağ Savaşı, Moğol komutanı Baycu Noyan liderliğindeki ordu ile yapılmış ve Anadolu Selçuklu Devleti bu savaşı kaybetmiştir; 'kazanmıştır' ifadesi yanlıştır.",
+    OrderIndex = 23,
+    Choices =
+    {
+        new Choice { Text = "Sivas'ta yapılmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Moğol komutanı Baycu Noyan liderliğinde yapılmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "1243 yılı Anadolu'da 'Baycu Noyan yılı' olarak anılmıştır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Baba İshak İsyanı, bu savaştan önce meydana gelmiştir.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Anadolu Selçuklu Devleti bu savaşı kazanmıştır.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 24 ---
+new Question
+{
+    Note = notKosedagSonuclariVeBeylikler,
+    Type = QuestionType.MultipleChoice,
+    Text = "1243 Kösedağ Savaşı'nın sonuçlarından biri aşağıdakilerden hangisidir?",
+    Explanation = "Kösedağ Savaşı sonucunda Anadolu Selçuklu Devleti İlhanlılara tabi hale gelmiştir.",
+    OrderIndex = 24,
+    Choices =
+    {
+        new Choice { Text = "Anadolu Selçuklu Devleti İlhanlılara tabi hale gelmiştir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Anadolu Türk siyasi birliği bozulmuştur.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Anadolu'da ikinci kez Türk beylikleri kurulmuştur.", IsCorrect = true, OrderIndex = 3 },
+
+        new Choice { Text = "Anadolu Selçuklu Devleti'nin sınırları genişlemiştir.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Anadolu'da ilk kez Türk beylikleri kurulmuştur.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Devlet, Bizans'a tabi hale gelmiştir.", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 25 ---
+new Question
+{
+    Note = notKosedagSonuclariVeBeylikler,
+    Type = QuestionType.MultipleChoice,
+    Text = "Karamanoğlu Mehmet Bey'in desteğiyle 1277'de Anadolu Selçuklu Devleti tahtına çıkan ve tarihe 'Cimri Olayı' ile geçen kişi kimdir?",
+    Explanation = "Alaattin Siyavuş, Karamanoğlu Mehmet Bey'in desteğiyle tahta çıkmış ve Moğollar tarafından indirilmiştir; bu olay 'Cimri Olayı' olarak bilinir.",
+    OrderIndex = 25,
+    Choices =
+    {
+        new Choice { Text = "Alaattin Siyavuş", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Muinüddin Pervane", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Celalettin Karatay", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "III. Mesut", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Saadettin Köpek", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 26 (ters soru) ---
+new Question
+{
+    Note = notKosedagSonuclariVeBeylikler,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Kösedağ Savaşı sonrası dönemin önemli devlet adamlarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Üç şehzadeyi aynı anda hükümdar ilan eden kişi Muinüddin Pervane değil Celalettin Karatay'dır.",
+    OrderIndex = 26,
+    Choices =
+    {
+        new Choice { Text = "Celalettin Karatay, üç şehzadeyi aynı anda hükümdar ilan etmiştir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Muinüddin Pervane, Abaka Han tarafından öldürtülmüştür.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Alaattin Siyavuş, Moğollar tarafından tahttan indirilmiştir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Son hükümdar III. Mesut'un ölümüyle devlet 1308'de sona ermiştir.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Üç şehzadeyi aynı anda hükümdar ilan eden kişi Muinüddin Pervane'dir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 27 ---
+new Question
+{
+    Note = notDenizciBeylikler,
+    Type = QuestionType.MultipleChoice,
+    Text = "Osmanlı Devleti'ne katılan ilk beylik aşağıdakilerden hangisidir?",
+    Explanation = "Karesioğulları, Osmanlı Devleti'nin katıldığı ilk beyliktir ve bu sayede Osmanlı deniz gücüne kavuşmuştur.",
+    OrderIndex = 27,
+    Choices =
+    {
+        new Choice { Text = "Karesioğulları", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Germiyanoğulları", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Dulkadiroğulları", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Karamanoğulları", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Hamitoğulları", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 28 ---
+new Question
+{
+    Note = notDenizciBeylikler,
+    Type = QuestionType.MultipleChoice,
+    Text = "Aşağıdaki beyliklerden hangisi denizcilikle uğraşmıştır?",
+    Explanation = "Aydınoğulları, Umur Bey ve Cüneyt Bey döneminde Ege Adaları'na seferler düzenlemiş bir denizci beyliktir.",
+    OrderIndex = 28,
+    Choices =
+    {
+        new Choice { Text = "Aydınoğulları", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Menteşeoğulları", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Saruhanoğulları", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Candaroğulları", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Germiyanoğulları", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Hamitoğulları", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 29 (ters soru) ---
+new Question
+{
+    Note = notDenizciBeylikler,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Denizci Anadolu beylikleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Menteşeoğulları'nın kurulduğu bölge Muğla'dır; Kastamonu, Candaroğulları'nın kurulduğu bölgedir.",
+    OrderIndex = 29,
+    Choices =
+    {
+        new Choice { Text = "Karesioğulları, Balıkesir ve Çanakkale'de kurulmuştur.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Aydınoğulları, İzmir ve Aydın bölgesinde kurulmuştur.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Candaroğulları, Sinop ve Kastamonu bölgesinde kurulmuştur.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Saruhanoğulları, Manisa'da kurulmuştur.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Menteşeoğulları, Kastamonu bölgesinde kurulmuştur.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 30 ---
+new Question
+{
+    Note = notDigerBeylikler,
+    Type = QuestionType.MultipleChoice,
+    Text = "Osmanlı Devleti'ne siyaseten en son katılan beylik aşağıdakilerden hangisidir?",
+    Explanation = "Dulkadiroğulları, Osmanlı Devleti'ne siyaseten en son katılan beyliktir ve Yavuz Sultan Selim tarafından Turnadağ Savaşı ile son verilmiştir.",
+    OrderIndex = 30,
+    Choices =
+    {
+        new Choice { Text = "Dulkadiroğulları", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Karesioğulları", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Hamitoğulları", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Germiyanoğulları", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Karamanoğulları", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 31 ---
+new Question
+{
+    Note = notDigerBeylikler,
+    Type = QuestionType.MultipleChoice,
+    Text = "Topraklarını Osmanlı Devleti'ne 80.000 altın karşılığında satan beylik aşağıdakilerden hangisidir?",
+    Explanation = "Hamitoğulları, Dündar Bey tarafından kurulmuş ve topraklarını Osmanlı'ya 80.000 altın karşılığında satmıştır.",
+    OrderIndex = 31,
+    Choices =
+    {
+        new Choice { Text = "Hamitoğulları", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Germiyanoğulları", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Karamanoğulları", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Eretna Beyliği", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Eşrefoğulları", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 32 (ters soru) ---
+new Question
+{
+    Note = notDigerBeylikler,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Anadolu beylikleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Karamanoğulları, kurulduğu yerin adını almamış, kurucusu Karaman Bey'in adını almıştır; bölgenin eski adı Larende'dir.",
+    OrderIndex = 32,
+    Choices =
+    {
+        new Choice { Text = "Germiyanoğulları, Osmanlı'ya çeyiz ve vasiyet yoluyla katılmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Karamanoğulları, Osmanlı Devleti'ni en çok uğraştıran beyliktir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Eşrefoğulları, Eşrefoğlu Ulu Camisi'ni yaptırmıştır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Eretna Beyliği'ne Kadı Burhanettin tarafından son verilmiştir.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Karamanoğulları, kurulduğu yer olan Larende'nin adını almıştır.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 33 ---
+new Question
+{
+    Note = notASDBSDFarklariVeDivan,
+    Type = QuestionType.MultipleChoice,
+    Text = "Anadolu Selçuklu Devleti'nde ikta topraklarının dağıtımından sorumlu divan aşağıdakilerden hangisidir?",
+    Explanation = "İkta topraklarının dağıtımından Divan-ı Pervane sorumludur; başındaki görevliye pervaneci denir.",
+    OrderIndex = 33,
+    Choices =
+    {
+        new Choice { Text = "Divan-ı Pervane", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Divan-ı Ala", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Divan-ı Berid", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Divan-ı Saltanat", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Divan-ı İnşa", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 34 ---
+new Question
+{
+    Note = notASDBSDFarklariVeDivan,
+    Type = QuestionType.MultipleChoice,
+    Text = "Anadolu Selçuklu Devleti'nin Büyük Selçuklu Devleti'nden farklarıyla ilgili aşağıdakilerden hangisi doğrudur?",
+    Explanation = "Anadolu Selçuklu Devleti denizcilikle uğraşmış ve denizcilik komutanına Emir-i Sevahil veya Reisü'l-Bahr denilmiştir; bu unvanlar Büyük Selçuklu Devleti'nde yoktur.",
+    OrderIndex = 34,
+    Choices =
+    {
+        new Choice { Text = "Anadolu Selçuklu Devleti denizcilikle uğraşmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Denizcilik komutanına 'Emir-i Sevahil' denilmiştir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Devlet işleri Divan-ı Ala'da görüşülmüştür.", IsCorrect = true, OrderIndex = 3 },
+
+        new Choice { Text = "Büyük Selçuklu Devleti de aktif olarak denizcilikle uğraşmıştır.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Divan-ı Berid bir divan çeşididir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Devlet işleri yalnızca Divan-ı Saltanat'ta görüşülmüştür.", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 35 (ters soru) ---
+new Question
+{
+    Note = notASDBSDFarklariVeDivan,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Anadolu Selçuklu Devleti kurumlarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Divan-ı Berid bir divan çeşidi değil, posta teşkilatının adıdır.",
+    OrderIndex = 35,
+    Choices =
+    {
+        new Choice { Text = "Türkiye topraklarında ilk ikta dağıtımı Tokat'ta yapılmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Divan-ı Pervane, ikta topraklarının dağıtımından sorumludur.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Devlet işlerinin görüşüldüğü divana Divan-ı Ala denilmiştir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Hükümdarlar Farsça unvanlar kullanmıştır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Divan-ı Berid bir divan çeşididir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 36 ---
+new Question
+{
+    Note = notAhilikTeskilati,
+    Type = QuestionType.MultipleChoice,
+    Text = "Ahilik teşkilatını kuran kişinin asıl adı aşağıdakilerden hangisidir?",
+    Explanation = "Ahi Evran'ın asıl adı Şeyh Nasirettin'dir (Muhammed bin Ahmet el-Hoyi).",
+    OrderIndex = 36,
+    Choices =
+    {
+        new Choice { Text = "Şeyh Nasirettin", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Celalettin Karatay", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Sahip Ata Fahrettin", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Saadettin Köpek", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Muinüddin Pervane", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 37 ---
+new Question
+{
+    Note = notAhilikTeskilati,
+    Type = QuestionType.MultipleChoice,
+    Text = "Ahilik teşkilatının özellikleriyle ilgili aşağıdakilerden hangisi doğrudur?",
+    Explanation = "Ahilik teşkilatına gayrimüslimler alınmamış, esnaflar fütüvvetnameye uymuş ve mesleki eğitim sonrası icazetname verilmiştir.",
+    OrderIndex = 37,
+    Choices =
+    {
+        new Choice { Text = "Gayrimüslimler teşkilata alınmamıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Esnaflar fütüvvetnameye uymuştur.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Mesleki eğitim sonrası icazetname verilmiştir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Merkezleri Kırşehir, Kayseri ve Konya'dır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Teşkilata gayrimüslim esnaflar da katılabilmiştir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Esnaflar cihat faaliyetlerine katılmamıştır.", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 38 (ters soru) ---
+new Question
+{
+    Note = notAhilikTeskilati,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Ahilik teşkilatı ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Ahilik teşkilatının temelleri I. Gıyasettin Keyhüsrev zamanında Kayseri'de atılmıştır, Konya'da değil.",
+    OrderIndex = 38,
+    Choices =
+    {
+        new Choice { Text = "Esnafların başındakilere 'şeyh' veya 'pir' denilmiştir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Ortak sandıklarda toplanan para, çıraklara destek olarak kullanılmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Ahi Evran, felsefesini Letaif-i Hikmet adlı eserinde anlatmıştır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Üretilen mallara narh sistemine benzer şekilde değer biçilmiştir.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Teşkilatın temelleri Konya'da atılmıştır.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 39 ---
+new Question
+{
+    Note = notFatmaBaciVeBacianiRum,
+    Type = QuestionType.MultipleChoice,
+    Text = "Aşına, eşine ve işine dikkat eden Fatma Bacı'nın kurduğu teşkilatın adı aşağıdakilerden hangisidir?",
+    Explanation = "Fatma Bacı, esnaf eşlerinin eğitimi için Bacıyân-ı Rum teşkilatını kurmuştur.",
+    OrderIndex = 39,
+    Choices =
+    {
+        new Choice { Text = "Bacıyân-ı Rum", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Gaziyân-ı Rum", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Abdalân-ı Rum", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Ahilik Teşkilatı", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Fütüvvetname Teşkilatı", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 40 (ters soru) ---
+new Question
+{
+    Note = notFatmaBaciVeBacianiRum,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Fatma Bacı ve Bacıyân-ı Rum ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Fatma Bacı, Ahi Evran'ın eşidir, kızı değildir.",
+    OrderIndex = 40,
+    Choices =
+    {
+        new Choice { Text = "Bacıyân-ı Rum'un temel prensibi 'aşına, eşine ve işine dikkat et' şeklindedir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Fatma Bacı, Moğolların Konya'yı basması sırasında öldürülmüştür.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "'Rum' ifadesi burada Anadolu anlamına gelmektedir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Teşkilat, kadınları dokumacılıktan ev işlerine kadar birçok konuda eğitmiştir.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Fatma Bacı, Ahi Evran'ın kızıdır.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 41 ---
+new Question
+{
+    Note = notIlimInsanlari,
+    Type = QuestionType.MultipleChoice,
+    Text = "Mesnevi ve Divan-ı Kebir adlı eserlerin yazarı aşağıdakilerden hangisidir?",
+    Explanation = "Hazreti Mevlana, Mesnevi ve Divan-ı Kebir adlı eserleri kaleme almıştır.",
+    OrderIndex = 41,
+    Choices =
+    {
+        new Choice { Text = "Hazreti Mevlana", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Yunus Emre", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Hacı Bektaş-ı Veli", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Aşık Paşa", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Ravendi", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 42 ---
+new Question
+{
+    Note = notIlimInsanlari,
+    Type = QuestionType.MultipleChoice,
+    Text = "Anadolu Selçuklu döneminde yaşamış ilim insanları ve eserleriyle ilgili aşağıdakilerden hangisi doğrudur?",
+    Explanation = "Hacı Bektaş-ı Veli'nin eseri Makalat, Yunus Emre'nin eseri Risaletü'n-Nushiyye, Aşık Paşa'nın eseri Garipname'dir.",
+    OrderIndex = 42,
+    Choices =
+    {
+        new Choice { Text = "Hacı Bektaş-ı Veli'nin eseri Makalat'tır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Yunus Emre'nin eseri Risaletü'n-Nushiyye'dir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Aşık Paşa'nın eseri Garipname'dir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Hacı Paşa, 'Anadolu'nun İbn Sina'sı' olarak anılır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Mantıku't-Tayr'ın yazarı Gülşehri'dir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Hoca Dehhani, ahilik teşkilatının kurucusudur.", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 43 (ters soru) ---
+new Question
+{
+    Note = notIlimInsanlari,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Anadolu Selçuklu dönemi ilim insanlarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Mantıku't-Tayr'ın (Kuşların Dili) yazarı Feridüddin Attar'dır; Gülşehri bu eseri Türkçeye çevirmiştir, yazarı değildir.",
+    OrderIndex = 43,
+    Choices =
+    {
+        new Choice { Text = "Aşık Paşa'nın mezarı Kırşehir'dedir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Muhyiddin Arabi, Vahdet-i Vücut felsefesinin öncüsüdür.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Ravendi, Selçuklu tarihini yazan bir tarihçidir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Hoca Dehhani, divan edebiyatının kurucusu sayılır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Mantıku't-Tayr'ın yazarı Gülşehri'dir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 44 ---
+new Question
+{
+    Note = notMimariEserBulmaYontemi,
+    Type = QuestionType.MultipleChoice,
+    Text = "Anadolu'da bir mimari eserin Osmanlı Devleti'ne ait olduğunu gösteren bir işaret aşağıdakilerden hangisidir?",
+    Explanation = "Eserin İstanbul, Bursa, Trabzon, Edirne, Kırklareli veya Tekirdağ'da bulunması ya da adında Paşa, Yeşil, Çelebi, Haseki, Ağa, Sultan gibi unvanların geçmesi, eserin Osmanlı Devleti'ne ait olduğunu gösterir.",
+    OrderIndex = 44,
+    Choices =
+    {
+        new Choice { Text = "Eserin İstanbul, Bursa veya Trabzon'da bulunması", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Eserin adında 'Paşa' unvanının geçmesi", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Eserin adında 'Çelebi' unvanının geçmesi", IsCorrect = true, OrderIndex = 3 },
+
+        new Choice { Text = "Eserin adında 'Çifte' kelimesinin geçmesi", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Eserin Danişmentliler, Saltuklular gibi beyliklere ait olması", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Eserin adında 'Alaattin' kelimesinin geçmesi", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 45 ---
+new Question
+{
+    Note = notMimariEserBulmaYontemi,
+    Type = QuestionType.MultipleChoice,
+    Text = "'Sultan' kelimesi geçmesine rağmen Anadolu Selçuklu Devleti'ne ait olan istisna eser aşağıdakilerden hangisidir?",
+    Explanation = "Sultan Dağı Medresesi, 'Sultan' kelimesi geçmesine rağmen Anadolu Selçuklu Devleti'ne aittir; bu, yöntemin istisnalarından biridir.",
+    OrderIndex = 45,
+    Choices =
+    {
+        new Choice { Text = "Sultan Dağı Medresesi", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Yakutiye Medresesi", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Sultan Ahmet Camisi", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yeşil Türbe", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Karagözpaşa Camisi", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 46 (ters soru) ---
+new Question
+{
+    Note = notMimariEserBulmaYontemi,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Anadolu'daki mimari eserleri devletlere ayırma yöntemiyle ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Yakutiye Medresesi Erzurum'da olup Anadolu Selçuklu Devleti'ne değil İlhanlılara aittir; bu yöntemin bir istisnasıdır.",
+    OrderIndex = 46,
+    Choices =
+    {
+        new Choice { Text = "İstanbul, Bursa ve Trabzon'daki eserler istisnasız Osmanlı'ya aittir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Sultan Dağı Medresesi, Anadolu Selçuklu Devleti'ne aittir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "'Çifte' ve 'Alaattin' kelimeleri Anadolu Selçuklu Devleti eserleriyle ilişkilendirilir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Minare sayısının fazlalığı devletin gücünü sembolize eder.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Yakutiye Medresesi, Anadolu Selçuklu Devleti'ne aittir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 47 ---
+new Question
+{
+    Note = notASDMimariEserleri,
+    Type = QuestionType.MultipleChoice,
+    Text = "Anadolu'nun en eski hastanesi kabul edilen eser aşağıdakilerden hangisidir?",
+    Explanation = "Gevher Nesibe Darüşşifası, Anadolu'nun en eski hastanesi kabul edilir ve Kayseri'de bulunur.",
+    OrderIndex = 47,
+    Choices =
+    {
+        new Choice { Text = "Gevher Nesibe Darüşşifası", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Sivas Gökmedrese", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Konya Karatay Medresesi", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Erzurum Çifte Minareli Medrese", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Kayseri Hunat Hatun Türbesi", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 48 ---
+new Question
+{
+    Note = notASDMimariEserleri,
+    Type = QuestionType.MultipleChoice,
+    Text = "Anadolu Selçuklu Devleti'nin ilk han, ilk cami ve ilk medrese olarak kabul edilen eserleri aşağıdakilerden hangisidir?",
+    Explanation = "Alayhan ilk han, Konya Alaattin Camisi ilk cami, Koca Hasan Medresesi (Kayseri) ilk medrese kabul edilir.",
+    OrderIndex = 48,
+    Choices =
+    {
+        new Choice { Text = "Alayhan (ilk han)", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Konya Alaattin Camisi (ilk cami)", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Koca Hasan Medresesi (ilk medrese)", IsCorrect = true, OrderIndex = 3 },
+
+        new Choice { Text = "Sivas Gökmedrese (ilk medrese)", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Yakutiye Medresesi (ilk medrese)", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Karagözpaşa Camisi (ilk cami)", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 49 (ters soru) ---
+new Question
+{
+    Note = notASDMimariEserleri,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Anadolu Selçuklu Devleti eserleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Kütahya'daki Karagöz Camisi Anadolu Selçuklu Devleti'ne aittir; Antalya'daki Karagözpaşa Camisi ise Osmanlı Devleti'ne aittir. İkisinin karıştırılması yanlıştır.",
+    OrderIndex = 49,
+    Choices =
+    {
+        new Choice { Text = "Gevher Nesibe Darüşşifası Kayseri'dedir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Kırşehir Caca Bey Medresesi, Anadolu Selçuklu Devleti'ne aittir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Erzurum Çifte Minareli Medrese, Anadolu Selçuklu Devleti'ne aittir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Beyşehir Kubadabat Sarayı, Anadolu Selçuklu Devleti'ne aittir.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Kütahya'daki Karagöz Camisi Osmanlı Devleti'ne aittir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},

@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c ' *)",
+      "Bash(docker compose *)",
+      "Bash(cp src/QuizNote.Persistence/DbSeeder.cs /tmp/DbSeeder.before-newq.cs)",
+      "Bash(sed -i 's|                // --- SORU 1 ---\\\\n|&|' src/QuizNote.Persistence/DbSeeder.cs)",
+      "Bash(cd \"c:/201001066_Zeki_Uğuz/QuizNote\" && cp src/QuizNote.Persistence/DbSeeder.cs /tmp/DbSeeder.before-newq.cs && tail -30 src/QuizNote.Persistence/DbSeeder.cs | grep -n \"OrderIndex = 15\\\\|^            }\\\\|^        };\" | head)",
+      "Bash(sed -i 's|    Note = notTakvimVeBilim,\\\\n    Type = QuestionType.MultipleChoice,\\\\n    Text = \"GECICI TEST SORUSU|X|' src/QuizNote.Persistence/DbSeeder.cs)",
+      "Bash(perl -0pi -e 's/\\(\\\\/\\\\/ --- GECICI TEST SORUSU.*?\\\\n.*?\\\\{\\\\n\\)    Note = notTakvimVeBilim,/$1    Note = notSinavSoruStilleri,/s' src/QuizNote.Persistence/DbSeeder.cs)",
+      "Bash(perl -0pi -e 's/\\\\n\\\\/\\\\/ --- GECICI TEST SORUSU.*?\\\\n\\\\},\\\\n\\(?=            \\\\}\\\\n        \\\\};\\)//s' src/QuizNote.Persistence/DbSeeder.cs)"
+    ],
+    "additionalDirectories": [
+      "\\tmp"
+    ]
+  }
+}

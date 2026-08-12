@@ -1,0 +1,2170 @@
+BÖLÜM 1 — Not isimleri
+
+notFatihKisiligiVeUnvanlar, notIstanbulunFethiNedenleri, notFetihHazirliklariVeOnlemler, notBizansinAldigiOnlemler, notFetihSonuclariGenel, notFetihSonuclariAvrupaEtkisi, notCandarliIdami, notFatihinAnadoluFetihleri, notFatihinBalkanFetihleri, notFatihinKirimVeAkkoyunlu, notAtsbVeAsbFarki, notFatihDonemiKurumsalGelismeler, notFatihDonemiDigerGelismeler, notFatihinOlumu, notIkinciBayezidCemSultan, notIkinciBayezidDigerOlaylar, notYavuzDoguSeferleriVeAtsb, notYavuzMemluklerVeHilafet, notYavuzUnvanVeVasiyet, notKanuniKisiligiVeMisirIsyanlari, notKanuniAvrupaFetihleri, notKanuniIstanbulAntlasmasi, notBarbarosVeAkdeniz, notKanuniHintDenizSeferleri, notKanuniDigerFetihlerVeZigetvar, notKapitulasyonAmaclari, notSokulluSelimDonemiInebahti, notSokulluMuratDonemiFerhatPasa, notSokulluDonVolgaProjesi, notSokulluSuveysVeKanalProjeleri
+
+BÖLÜM 2 — Notlar
+
+// --- Notlar: "Osmanlı Devleti Yükselme Dönemi" başlığının ilgili bölümleri ---
+
+var notFatihKisiligiVeUnvanlar = new Note
+{
+    Title = "Osmanlı Devleti Yükselme Dönemi — Fatih Sultan Mehmet'in Kişiliği ve Unvanları",
+    Body = """
+           Fatih Sultan Mehmet, 1451'de 19 yaşında tahta çıkmış, 1453'te 21 yaşında İstanbul'u fethetmiştir. Yedi dil bilen, şiirlerinde "Avni" mahlasını kullanan, "bir ayağı Şark'ta bir ayağı Garp'ta" zihniyetiyle anılan çok yönlü bir hükümdardır.
+
+           **Bu konudan sıkça soru gelmektedir.** Fatih Sultan Mehmet'e verilen başlıca unvanlar:
+           - Kayzer-i Rum: Roma hükümdarı anlamına gelir; yalnızca Roma krallarına verilen bir unvandır.
+           - Sultanü'l-Bahreyn ve Hakanü'l-Berreyn: İki denizin ve iki karanın hükümdarı anlamına gelir.
+           - Ebu'l-Feth: Fetihlerin babası.
+           - Kanun Hükümdarı: Kanunname-i Ali Osmani'yi (örfi hukuk kurallarını) yazılı hale getirdiği için verilmiştir.
+
+           **Burası karıştırılabilir:** "Kayzer-i Rum" unvanı özellikle sınavlarda vurgulanır; bu unvan Roma imparatorluğunun devamı olarak görülmesini sağlamıştır. Venedikliler, Fatih'in ölümü üzerine ona "Grand Türk" (Büyük Türk) lakabını takmıştır; bu lakap daha sonra Kanuni Sultan Süleyman için de kullanılmıştır.
+           """
+};
+
+var notIstanbulunFethiNedenleri = new Note
+{
+    Title = "Osmanlı Devleti Yükselme Dönemi — İstanbul'un Fethinin Nedenleri",
+    Body = """
+           İstanbul'un fethinin nedenleri:
+           - Anadolu ve Rumeli arasındaki toprak bütünlüğünü sağlamak
+           - Boğazlara ve İpek Yolu'na hakim olmak
+           - Bizans'ın Anadolu beylikleriyle (özellikle Karamanoğulları ile) işbirliği içinde olması ve Osmanlı'ya karşı kışkırtması
+           - Bizans'ın Haçlı Seferleri düzenlenmesine neden olması ve Osmanlı şehzadelerini kışkırtması
+           - İstanbul'un bir bilim ve kültür merkezi olması
+           - Hazreti Muhammed'in İstanbul'un fethedileceğine dair hadisi (dini neden)
+
+           **Bu konudan sıkça soru gelmektedir.** Bizans, taht kavgalarında yenilen Osmanlı şehzadelerini (örneğin II. Murat döneminde isyan eden Şehzade Orhan'ı) barındırmış, bu nedenle Osmanlı Devleti zaman zaman Bizans'a fidye vermek zorunda kalmıştır.
+
+           **Burası karıştırılabilir:** İstanbul'un fethinin dini nedeni yalnızca hadis-i şeriftir; boğazlara hakim olmak ekonomik, Anadolu-Rumeli toprak bütünlüğü ise siyasi/stratejik bir nedendir. Bunlar sınavlarda birbirine karıştırılabilir.
+           """
+};
+
+var notFetihHazirliklariVeOnlemler = new Note
+{
+    Title = "Osmanlı Devleti Yükselme Dönemi — Fetih İçin Yapılan Hazırlıklar",
+    Body = """
+           Osmanlı Devleti, İstanbul'un fethi için şu hazırlıkları yapmıştır:
+           - Venedik ve Eflak prensleriyle saldırmazlık anlaşmaları imzalanmıştır.
+           - Anadolu beylikleri ve Avrupa devletleriyle saldırmazlık anlaşmaları yapılmıştır (Karamanoğulları'nın arkadan vurmaması için).
+           - Şahi adı verilen büyük toplar döktürülmüştür (Fatih'in kendi çizdiği proje olduğu için bu ad verilmiştir; Macar Urban yalnızca dökümle uğraşmıştır).
+           - 400 parçalık bir donanma hazırlanmıştır.
+           - Mancınıklar ve "şahnişin" (hareketli kuleler) inşa edilmiştir.
+           - Rumeli Hisarı (Boğazkesen) yaptırılmıştır; bunun karşısındaki Anadolu Hisarı'nın diğer adı Güzelce Hisar'dır (Yıldırım Bayezid döneminde yapılmıştır).
+
+           **Bu konudan sıkça soru gelmektedir.** Anadolu Hisarı'nın diğer adı Güzelce Hisar, Rumeli Hisarı'nın diğer adı Boğazkesen'dir; bu isimler sınavlarda sıkça karıştırılır.
+
+           **Burası karıştırılabilir:** Şahi topunun projesini bizzat Fatih Sultan Mehmet çizmiştir; Macar Urban yalnızca dökümünü gerçekleştirmiştir, tasarımcısı değildir.
+           """
+};
+
+var notBizansinAldigiOnlemler = new Note
+{
+    Title = "Osmanlı Devleti Yükselme Dönemi — Bizans'ın Aldığı Önlemler",
+    Body = """
+           Bizans İmparatorluğu, kuşatmaya karşı şu önlemleri almıştır:
+           - Grejuva (Rum ateşi) adı verilen, deniz üzerinde yanabilen bir madde çoğaltılmıştır.
+           - Halk silahlandırılmıştır.
+           - Haliç'e (Osmanlı donanmasının girişini engellemek için) zincir çekilmiştir.
+           - Avrupa'dan yardım istenmiştir.
+           - İstanbul surları güçlendirilmiştir.
+           - Katolik ve Ortodoks kiliseleri birleştirilmiştir (Katolikliğe geçiş şartıyla).
+
+           **Bu konudan sıkça soru gelmektedir.** Bizans İmparatoru, Papa'dan yardım almak için Ortodoks kiliselerini Katolikliğe bağlamayı kabul etmiştir; bu ayine katılan Bizanslı yüksek dereceli devlet adamı Grandük Notaras, "İstanbul'da Latin serpuşu (kardinal külahı) görmektense Osmanlı'nın sarığını görmeyi tercih ederim" demiştir.
+
+           **Burası karıştırılabilir:** Fatih Sultan Mehmet, Haliç'e çekilen zinciri aşmak için gemileri karadan yürütmüş ve zincirin arkasına geçirmiştir; bu, zinciri kırmak yerine dolaşarak aşma stratejisidir.
+           """
+};
+
+var notFetihSonuclariGenel = new Note
+{
+    Title = "Osmanlı Devleti Yükselme Dönemi — İstanbul'un Fethinin Genel Sonuçları",
+    Body = """
+           İstanbul'un fethinin (29 Mayıs 1453) genel sonuçları:
+           - Genadios, Rum (Ortodoks) patriği; Hovagim, Ermeni patriği olarak atanmıştır.
+           - Fatih Sultan Mehmet, "Kayzer-i Rum" (Roma hükümdarı) unvanını almıştır.
+           - İstanbul, Osmanlı Devleti'nin başkenti olmuştur.
+           - II. Mehmet'e "Fatih" unvanı verilmiştir.
+           - Kuruluş dönemi bitmiş, yükselme dönemi başlamıştır.
+           - Anadolu ve Rumeli arasındaki toprak bütünlüğü sağlanmıştır.
+           - Boğazlar ve İpek Yolu Osmanlı Devleti'nin eline geçmiştir; bu durum Avrupalıların yeni ticaret yolları aramasına, yani Coğrafi Keşiflere zemin hazırlamıştır.
+           - Orta Çağ kapanmış, Yeni Çağ başlamıştır.
+
+           **Bu konudan sıkça soru gelmektedir.** İslam dünyası, İstanbul'un fethine "Fethi Mübin" (parlak zafer) adını vermiştir.
+
+           **Burası karıştırılabilir:** Fatih Sultan Mehmet, dini hoşgörü göstererek Ortodokslara din ve mezhep özgürlüğü tanımıştır; ancak asıl amacı Katolik-Ortodoks mezhep mücadelesinin devam etmesini sağlayarak Hristiyan dünyasının birleşmesini önlemektir.
+           """
+};
+
+var notFetihSonuclariAvrupaEtkisi = new Note
+{
+    Title = "Osmanlı Devleti Yükselme Dönemi — İstanbul'un Fethinin Avrupa'ya Etkileri",
+    Body = """
+           İstanbul'un fethinin Avrupa'ya etkileri:
+           - Şahi toplarının surları yıkabildiğinin anlaşılması üzerine Avrupa'da feodalite (derebeylik) zayıflamış, merkeziyetçi krallıklar güçlenmeye başlamıştır.
+           - İstanbul'dan kaçan Bizanslı bilim insanları İtalya'ya giderek Rönesans'ın başlamasında etkili olmuştur.
+           - Boğazların Osmanlı eline geçmesi, Avrupalıları yeni ticaret yolları aramaya yöneltmiş, bu da Coğrafi Keşiflere zemin hazırlamıştır.
+
+           **Bu konudan sıkça soru gelmektedir.** Fatih Sultan Mehmet, Bizanslı bilim insanlarının İstanbul'da kalmasını istemiş, ancak seyahat özgürlüklerine müdahale etmemiştir; bu bilim insanlarının bir kısmı kendi isteğiyle İtalya'ya gitmiştir.
+
+           **Burası karıştırılabilir:** Rönesans, Reform ve Coğrafi Keşifler gibi Avrupa tarihi konuları KPSS kapsamında değildir; ancak bu olayların Osmanlı fetihleriyle bağlantısı (örneğin İstanbul'un fethinin bu süreçlere etkisi) sınav kapsamındadır.
+           """
+};
+
+var notCandarliIdami = new Note
+{
+    Title = "Osmanlı Devleti Yükselme Dönemi — Çandarlı Halil Paşa'nın İdamı",
+    Body = """
+           Fetih öncesinde Çandarlı Halil Paşa, İstanbul'un fethedilmesine karşı çıkmış, henüz zamanının gelmediğini savunmuştur; Molla Gürani ve Akşemseddin gibi hocalar ise fetih taraftarı olmuştur.
+
+           **Bu konudan sıkça soru gelmektedir.** Fatih Sultan Mehmet, fetihten kısa bir süre sonra Çandarlı Halil Paşa'yı görevden alıp hapsettirmiş, mallarına müsadere uygulamış ve idam ettirmiştir; bu, Osmanlı tarihinde bir sadrazamın ilk idamıdır.
+
+           **Burası karıştırılabilir:** Çandarlı Halil Paşa'nın idamında Grandük Notaras'ın Bizans'a bilgi sızdırdığına dair şüphelerin de etkili olduğu düşünülür; II. Bayezid döneminde Çandarlı'nın malları çocuklarına geri verilmiştir (çocukların babalarının suçundan sorumlu tutulmaması amacıyla).
+           """
+};
+
+var notFatihinAnadoluFetihleri = new Note
+{
+    Title = "Osmanlı Devleti Yükselme Dönemi — Fatih'in Anadolu'daki Fetihleri",
+    Body = """
+           Fatih Sultan Mehmet döneminde Anadolu'da gerçekleştirilen fetihler:
+           - Karamanoğulları'ndan Konya ve Karaman alınmıştır (Karamanoğulları tamamen ortadan kaldırılmamış, merkezlerini Silifke'ye taşımışlardır).
+           - Candaroğulları'ndan (İsfendiyaroğulları) Sinop ve Samsun alınmıştır.
+           - Cenevizlilerden Amasra alınmıştır.
+           - Trabzon Rum İmparatorluğu'na 1461'de son verilmiştir.
+           - Doğu Anadolu, Akkoyunlularla yapılan mücadele sonucunda Osmanlı egemenliğine geçmiştir.
+
+           **Bu konudan sıkça soru gelmektedir.** Trabzon Rum İmparatorluğu'na son verilip oradaki Bizans şehzadesinin yakalanıp öldürülmesiyle Bizans'ın tekrar dirilme umutları sona ermiştir.
+
+           **Burası karıştırılabilir:** Karamanoğulları'nın alınması "Konya ve Karaman'ın alınması" şeklinde ifade edilir; beylik tamamen ortadan kalkmamış, II. Bayezid dönemine kadar Silifke merkezli olarak varlığını sürdürmüştür.
+           """
+};
+
+var notFatihinBalkanFetihleri = new Note
+{
+    Title = "Osmanlı Devleti Yükselme Dönemi — Fatih'in Balkanlardaki ve Denizlerdeki Fetihleri",
+    Body = """
+           Fatih Sultan Mehmet döneminde Balkanlarda ve denizlerde gerçekleştirilen fetihler:
+           - Sırbistan alınmıştır (Belgrad hariç).
+           - Bosna-Hersek alınmıştır (halkın çoğu Müslüman olmuş, "Evlad-ı Fatihan" - Fatih'in evlatları - adını almıştır).
+           - Arnavutluk alınmıştır (İskender Bey'e karşı büyük mücadele verilmiştir).
+           - Mora Yarımadası alınmıştır.
+           - Eflak (bugünkü Romanya) ve Boğdan (bugünkü Moldova) alınmıştır; bu iki bölgenin ortak adı "Memleketeyn"dir (iki memleket).
+           - Ege Adaları'ndan Bozcaada ve Gökçeada alınmıştır (Rodos ve Girit alınamamıştır).
+           - Otranto Limanı (İtalya) fethedilmiştir; ancak Fatih'in ölümüyle Napoli Krallığı burayı geri almıştır.
+
+           **Bu konudan sıkça soru gelmektedir.** Rodos ve Belgrad, Fatih Sultan Mehmet tarafından kuşatılmasına rağmen alınamamıştır; bu iki yeri daha sonra Kanuni Sultan Süleyman almıştır ("Kanuni, Fatih'in tamamlayıcısıdır" ifadesi buradan gelir).
+
+           **Burası karıştırılabilir:** Bosna-Hersek halkının aldığı "Evlad-ı Fatihan" unvanı ile Fatih'in kişisel unvanları (Kayzer-i Rum, Ebu'l-Feth gibi) birbirinden farklı kavramlardır; biri halka, diğerleri padişaha aittir.
+           """
+};
+
+var notFatihinKirimVeAkkoyunlu = new Note
+{
+    Title = "Osmanlı Devleti Yükselme Dönemi — Kırım'ın Alınması ve Otlukbeli Savaşı",
+    Body = """
+           1475'te Gedik Ahmet Paşa tarafından Kefe limanı ile birlikte Kırım alınmıştır. Bu, Karadeniz'in bir Türk gölü haline gelmesini sağlamıştır.
+
+           1473'te Akkoyunlu hükümdarı Uzun Hasan ile Erzincan yakınlarındaki Otlukbeli'nde savaş yapılmış ve Fatih Sultan Mehmet bu savaşı kazanmıştır. Uzun Hasan'a "Küçük Türk", Fatih'e ise "Büyük Türk" (Grand Türk) denilmiştir. Bu zaferin ardından Doğu Anadolu'nun büyük bölümü Osmanlı egemenliğine geçmiştir.
+
+           **Bu konudan sıkça soru gelmektedir.** Kırım'ın alınmasıyla Karadeniz bir Türk gölü haline gelmiştir; benzer şekilde Akdeniz'in bir Türk gölü haline gelmesi ise Kanuni Sultan Süleyman dönemindedir (bu iki padişah "birbirini tamamlayan padişahlar" olarak anılır).
+
+           **Burası karıştırılabilir:** Fatih Sultan Mehmet döneminde Memlüklerle (Hicaz su yolları sorunu nedeniyle gerilim olmasına rağmen) doğrudan bir savaş yaşanmamıştır; bu durum Otlukbeli Savaşı ile karıştırılmamalıdır.
+           """
+};
+
+var notAtsbVeAsbFarki = new Note
+{
+    Title = "Osmanlı Devleti Yükselme Dönemi — ATSB ve ASB Kavramları",
+    Body = """
+           Fatih Sultan Mehmet dönemi fetihlerini değerlendirirken iki farklı kavram kullanılır:
+           - ATSB (Anadolu Türk Siyasi Birliği): Anadolu'da bulunan Türk beyliklerinin ortadan kaldırılıp tek bayrak altında toplanmasını ifade eder.
+           - ASB (Anadolu Siyasi Birliği): Anadolu topraklarının (kurucusu Türk olsun ya da olmasın) tek bir siyasi güç altında toplanmasını ifade eder.
+
+           Örnekler:
+           - Karamanoğulları'ndan Konya ve Karaman'ın alınması → hem ATSB hem ASB'dir (Karamanoğulları Türk bir beylik ve Anadolu'dadır).
+           - Cenevizlilerden Amasra'nın alınması → yalnızca ASB'dir (Cenevizliler Türk değildir, ama Amasra Anadolu'dadır).
+           - Trabzon Rum İmparatorluğu'na son verilmesi → yalnızca ASB'dir (Rum İmparatorluğu Türk değildir).
+           - Candaroğulları'ndan Sinop'un alınması → hem ATSB hem ASB'dir (Candaroğulları Türk bir beylik ve Anadolu'dadır).
+
+           **Bu konudan sıkça soru gelmektedir.** Sınav sorusunda "ATSB'yi sağlamaya yöneliktir" denirse yalnızca Türk beyliklerinden yapılan fetihler seçilir; "ASB'yi sağlamaya yöneliktir" denirse Anadolu'daki tüm fetihler (Türk olsun olmasın) seçilir.
+
+           **Burası karıştırılabilir:** Kırım'ın alınması gibi Anadolu dışındaki fetihler ne ATSB'ye ne de ASB'ye örnek olarak sayılamaz; bu kavramlar yalnızca Anadolu toprakları için geçerlidir.
+           """
+};
+
+var notFatihDonemiKurumsalGelismeler = new Note
+{
+    Title = "Osmanlı Devleti Yükselme Dönemi — Fatih Dönemi Kurumsal Gelişmeler",
+    Body = """
+           Fatih Sultan Mehmet döneminde gerçekleşen kurumsal gelişmeler:
+           - İlk altın para (Sultani veya Sikke-i Hasene) bastırılmıştır; bu, devletin ekonomik gücünün göstergesidir.
+           - İlk defa iltizam sistemi uygulanmıştır (saliyaneli eyaletlerde vergi toplama yöntemi).
+           - İlk defa müsadere sistemi uygulanmıştır (Çandarlı Halil Paşa örneğinde olduğu gibi).
+           - Cülus bahşişi vermek yasal hale getirilmiştir (Buçuktepe İsyanı sonrası uygulama başlamıştır).
+           - Divana nişancı atanmıştır; nişancı örfi hukukun temsilcisidir (kazasker ise şeri hukukun temsilcisidir).
+           - Sadrazamlar, Fatih döneminden itibaren divana başkanlık etmeye başlamıştır (daha önce padişahlar başkanlık ediyordu; Fatih'ten sonra padişahlar kafes penceresinden divanı izlemiştir).
+           - Kanunname-i Ali Osmani hazırlanmış, örfi hukuk kuralları yazılı hale getirilmiştir; bu kanunla "nizam-ı alem için kardeş katli" vacip (yasal) hale getirilmiştir.
+           - Sahn-ı Seman ve Tetimme medreseleri açılmıştır ("Sahn-ı Seman" sekiz bölüm anlamına gelir).
+
+           **Bu konudan sıkça soru gelmektedir.** Sadrazamların divana başkanlık etmesi Fatih Sultan Mehmet döneminden itibaren başlamıştır; bu, sadrazamlığın öneminin artmasının bir göstergesidir.
+
+           **Burası karıştırılabilir:** Nişancı örfi (padişah) hukukunun, kazasker ise şeri (dini) hukukun temsilcisidir; bu iki görev sık sık karıştırılır.
+           """
+};
+
+var notFatihDonemiDigerGelismeler = new Note
+{
+    Title = "Osmanlı Devleti Yükselme Dönemi — Fatih Dönemi Diğer Gelişmeler ve Kapitülasyonlar",
+    Body = """
+           Fatih Sultan Mehmet döneminde diğer önemli gelişmeler:
+           - Topkapı Sarayı (Yeni Saray) yaptırılmıştır.
+           - Ayasofya Kilisesi camiye çevrilmiş, gerçek adı "Fatih Camisi"dir.
+           - Ticari imtiyazlar (kapitülasyonlar) ilk defa 1352'de Orhan Bey döneminde Cenevizlilere verilmiş, Fatih Sultan Mehmet döneminde Venediklilere devam ettirilmiştir.
+           - Osmanlı Devleti'nde ilk elçiliği Venedik açmıştır; İstanbul'daki Venedik elçisine "Balyos" (Baylos) adı verilmiştir.
+           - Hicaz su yolları sorunu nedeniyle Memlüklerle ilişkiler gerilmiş, ancak bu durum savaşa yol açmamıştır.
+           - Doğu Anadolu bölgesi, Akkoyunlularla yapılan Otlukbeli Savaşı sonucunda Osmanlı egemenliğine geçmiştir.
+
+           **Bu konudan sıkça soru gelmektedir.** Venedik'e verilen kapitülasyonların amacı yalnızca ticari değildir; aynı zamanda Venedik'i Hristiyan dünyasından (Haçlı ittifaklarından) uzak tutmayı da hedefler.
+
+           **Burası karıştırılabilir:** Gerçek anlamda ilk kapsamlı kapitülasyon Kanuni Sultan Süleyman döneminde Fransa'ya verilmiştir; Fatih döneminde Venediklilere verilenler daha sınırlı ticari imtiyazlardır.
+           """
+};
+
+var notFatihinOlumu = new Note
+{
+    Title = "Osmanlı Devleti Yükselme Dönemi — Fatih Sultan Mehmet'in Ölümü",
+    Body = """
+           Fatih Sultan Mehmet 1481 yılında vefat etmiştir. Ölümü üzerine Venedikliler "büyük kartal öldü" diyerek manşet atmıştır. Fatih'in ölümünün ardından ceset yaklaşık 19 gün boyunca defnedilememiş, bu durum yeniçerilerin İstanbul'da kısa süreli kargaşa çıkarmasından kaynaklanmıştır.
+
+           **Bu konudan sıkça soru gelmektedir.** Fatih'in ölümünden hemen sonra oğulları Bayezid ile Cem Sultan arasında taht mücadelesi başlamıştır.
+
+           **Burası karıştırılabilir:** Fatih'in ölüm nedeni tam olarak bilinmemektedir; bazı kaynaklar doğal ölüm, bazı kaynaklar ise zehirlenme ihtimalinden söz eder; bu, kesin bir tarihi bilgi değil rivayettir.
+           """
+};
+
+var notIkinciBayezidCemSultan = new Note
+{
+    Title = "Osmanlı Devleti Yükselme Dönemi — II. Bayezid ve Cem Sultan Olayı",
+    Body = """
+           Fatih Sultan Mehmet'in ölümünün ardından oğulları II. Bayezid ile Cem Sultan arasında taht mücadelesi yaşanmıştır. Cem Sultan, Osmanlı topraklarının ikiye bölünmesini teklif etmiş, Bayezid bunu reddetmiştir. Yapılan savaşı II. Bayezid kazanmıştır.
+
+           Cem Sultan, yenilgiden sonra sırasıyla Karamanoğulları'na, Anamur'daki Mamure Kalesi'ne, Rodos Şövalyelerine ve son olarak Papa'ya sığınmış, esaret altında yaşamış ve orada ölmüştür.
+
+           **Bu konudan sıkça soru gelmektedir.** "Cem Sultan" ifadesindeki "Sultan" kelimesi normalde bir şehzade unvanının arkasına gelmez (kadın hükümdarlar için kullanılır); bu ifade, Cem'in kaçışını küçümseyen bir adlandırma olarak yorumlanır.
+
+           Cem Sultan olayı, Osmanlı Devleti'nde bir iç sorunun ilk kez uluslararası bir soruna dönüştüğü örnektir; Papa'nın elinde bulunan Cem Sultan tehdidi nedeniyle II. Bayezid döneminde batıya yönelik seferlerde durgunluk yaşanmıştır.
+
+           **Burası karıştırılabilir:** Cem Sultan olayı ile Şehzade Orhan'ın Bizans'a sığınması farklı olaylardır; ancak ikisi de "Osmanlı şehzadelerinin düşman güçlere sığınması" örüntüsüne dahildir.
+           """
+};
+
+var notIkinciBayezidDigerOlaylar = new Note
+{
+    Title = "Osmanlı Devleti Yükselme Dönemi — II. Bayezid Dönemi Diğer Olaylar",
+    Body = """
+           II. Bayezid döneminde yaşanan diğer önemli olaylar:
+           - Karamanoğulları Beyliği'ne tamamen son verilmiştir.
+           - 1511'de Antalya'da İran destekli Şahkulu İsyanı (Türkmenler tarafından çıkarılmıştır) yaşanmış ve güçlükle bastırılmıştır.
+           - Kemal Reis, İspanya'da zulüm gören Müslüman ve Yahudileri gemileriyle İstanbul'a getirmiştir.
+           - Hicaz su yolları sorunu nedeniyle Memlük Devleti ile 1485-1491 yılları arasında 6 yıl süren bir savaş yaşanmış, ancak bu savaştan kesin bir sonuç alınamamıştır.
+           - İlk defa avarız vergisi (olağanüstü durumlarda alınan vergi) toplanmıştır.
+           - İhtisap Kanunu çıkarılmıştır (malların kalite ve standartlarını düzenleyen kanun).
+
+           **Bu konudan sıkça soru gelmektedir.** II. Bayezid dönemi, yaşanan iç ve dış sorunlar (Cem Sultan olayı, Şahkulu İsyanı, sonuçsuz Memlük savaşı) nedeniyle yükselme döneminin içinde bir "duraklama dönemi" olarak nitelendirilir.
+
+           II. Bayezid, tahttan zorla indirilen ilk Osmanlı padişahıdır; bu olayı oğlu Yavuz Sultan Selim gerçekleştirmiştir.
+
+           **Burası karıştırılabilir:** Şahkulu İsyanı dinî nitelikli bir isyandır ("şah" kelimesi isyanın dinî/mezhepsel karakterine işaret eder); Karamanoğulları'na tamamen son verilmesiyle karıştırılmamalıdır, bunlar farklı olaylardır.
+           """
+};
+
+// --- Notlar: "Osmanlı Devleti Yükselme Dönemi (2. Bölüm)" başlığının ilgili bölümleri ---
+
+var notYavuzDoguSeferleriVeAtsb = new Note
+{
+    Title = "Osmanlı Devleti Yükselme Dönemi — Yavuz Sultan Selim'in Doğu Seferleri",
+    Body = """
+           Yavuz Sultan Selim, "8 yıla 80 yıllık iş sığdırmış padişah" olarak nitelendirilir (1512-1520). Batıdan çok fazla tehlike gelmediğini görerek Doğu siyasetini benimsemiştir.
+
+           1514'te Safevilerle Çaldıran Savaşı yapılmış ve kazanılmıştır; böylece İran kaynaklı Şii tehlikesi bertaraf edilmiştir (Safeviler, bir önceki padişah döneminde Antalya'daki Şahkulu İsyanı'na destek vermişti).
+
+           1515'te Dulkadiroğulları ile Turnadağ Savaşı yapılmış ve kazanılmıştır; bu savaşla Anadolu Türk Siyasi Birliği (ATSB) kesin olarak sağlanmıştır.
+
+           **Bu konudan sıkça soru gelmektedir.** İdris-i Bitlisi, "Heşt Behişt" (8 Cennet) adlı eseriyle Güneydoğu Anadolu ve Musul bölgesindeki yaklaşık 25 bölgenin ikna yoluyla Osmanlı idaresine bağlanmasında etkili olmuştur.
+
+           1519'da (ölümüne bir yıl kala) Tokat'ta Bozoklu Celal tarafından ilk Celali İsyanı çıkarılmıştır.
+
+           **Burası karıştırılabilir:** Dulkadiroğulları'na bağlı olan Ramazanoğulları, Dulkadiroğulları'na son verildiğinde hemen ortadan kaldırılmamış, beyin kendisi Osmanlı'ya bağlılığını bildirdiği için varlığını sürdürmüş, ailesi tükenince toprakları kendiliğinden Osmanlı'ya katılmıştır.
+           """
+};
+
+var notYavuzMemluklerVeHilafet = new Note
+{
+    Title = "Osmanlı Devleti Yükselme Dönemi — Yavuz'un Memlük Seferleri ve Hilafetin Alınması",
+    Body = """
+           1516'da Memlüklerle Mercidabık Savaşı yapılmış ve kazanılmıştır; bu savaşta Memlük hükümdarı Kansu Gavri ölmüştür. Bu savaş sonucunda Suriye ve Filistin Osmanlı idaresine girmiştir.
+
+           1517'de yine Memlüklerle Ridaniye Savaşı yapılmış ve kazanılmıştır. Bu savaşın sonuçları:
+           - Memlükler Devleti yıkılmıştır.
+           - Suriye, Filistin, Irak, Hicaz ve Mısır Osmanlı topraklarına katılmıştır.
+           - Halifelik Osmanlı Devleti'ne geçmiştir (Halife Mütevekkil, halifeliği Yavuz Sultan Selim'e devretmiştir).
+           - Baharat Yolu Osmanlı Devleti'nin eline geçmiştir.
+           - Kutsal emanetler İstanbul'a getirilmiştir.
+           - Venedik'in Kıbrıs için Memlüklere ödediği vergi artık Osmanlı'ya ödenmeye başlanmıştır.
+
+           **Bu konudan sıkça soru gelmektedir.** Memlüklerde halife ile sultan ayrı kişilerdi; Yavuz Sultan Selim halifeliği kendi üzerine alarak Osmanlı Devleti'nde teokratik devlet anlayışının güçlenmesini sağlamıştır.
+
+           **Burası karıştırılabilir:** Kansu Gavri'nin öldüğü savaş Mercidabık'tır (Ridaniye değil); bu iki savaş ve sonuçları sık sık birbirine karıştırılır. Ridaniye Savaşı sırasında Avrupa'da Martin Luther'in başlattığı Reform hareketi eş zamanlı gelişmedir (95 Tez, Wittenberg Kilisesi, 1517).
+           """
+};
+
+var notYavuzUnvanVeVasiyet = new Note
+{
+    Title = "Osmanlı Devleti Yükselme Dönemi — Yavuz'un Unvanı ve Vasiyeti",
+    Body = """
+           Yavuz Sultan Selim'e, Mekke ve Medine'nin hizmetkârı anlamına gelen "Hadimü'l-Haremeyn'iş-Şerifeyn" unvanı verilmiştir; kendisine teklif edilen "Mekke ve Medine'nin sahibi" unvanını ise kabul etmemiştir.
+
+           **Bu konudan sıkça soru gelmektedir.** Yavuz Sultan Selim'in ünlü vasiyeti: "Kim ki torunlarımdan hazineyi benim kadar doldurursa, kapılar onun mührüyle mühürlensin (aksi halde benim mührümle mühürlenmeye devam etsin)." Hiçbir Osmanlı padişahı (Kanuni dahil) Yavuz kadar hazineyi dolduramamıştır.
+
+           Yavuz Sultan Selim, 1520'de "şir-i pençe" adı verilen sırtındaki bir çıbandan dolayı vefat etmiştir.
+
+           **Burası karıştırılabilir:** "Hadimü'l-Haremeyn'iş-Şerifeyn" unvanı ile "Sultan-ı İklim-i Rum" (Yıldırım Bayezid'e ait) ve "Kayzer-i Rum" (Fatih'e ait) unvanları farklı padişahlara ait olup sık sık karıştırılır.
+           """
+};
+
+var notKanuniKisiligiVeMisirIsyanlari = new Note
+{
+    Title = "Osmanlı Devleti Yükselme Dönemi — Kanuni'nin Kişiliği ve Mısır İsyanları",
+    Body = """
+           Kanuni Sultan Süleyman, 46 yıl (1520-1566) tahtta kalarak Osmanlı tarihinin en uzun süre hükümdarlık yapan padişahıdır. Şiirlerinde "Muhibbi" mahlasını kullanmıştır. "Kanuni" sıfatını kendisine ilk defa Rumen tarihçi Dimitri Kantemir vermiştir.
+
+           **Bu konudan sıkça soru gelmektedir.** Kanuni'nin ünlü sözü: "Halk içinde muteber bir nesne yok devlet gibi / Olmaya bir dem bu dünyada devlet gibi." Bu söz "Muhibbi" imzasıyla yazılmıştır.
+
+           Tahtının ilk yıllarında Mısır'da çıkan Canberdi Gazali ve Ahmet Paşa isyanları ile Baba Zünnun ve Kalender Çelebi isyanlarıyla uğraşmıştır.
+
+           **Burası karıştırılabilir:** "Kanuni" unvanını kendisi almamış, bu unvanı ona Rumen tarihçi Dimitri Kantemir vermiştir; bu, Yavuz'un unvanını kendisi istemesiyle tezat oluşturur.
+           """
+};
+
+var notKanuniAvrupaFetihleri = new Note
+{
+    Title = "Osmanlı Devleti Yükselme Dönemi — Kanuni'nin Avrupa'daki Fetihleri",
+    Body = """
+           Kanuni Sultan Süleyman, "Fatih'in tamamlayıcısı" olarak anılır; çünkü Fatih'in kuşatıp alamadığı iki yeri (Belgrad ve Rodos) ardı ardına almıştır:
+           - 1521: Belgrad alınmıştır.
+           - 1522: Rodos, Sen Jean Şövalyelerinden alınmıştır.
+
+           1526'da Macarlarla Mohaç Meydan Muharebesi yapılmış, Turan taktiği kullanılarak yalnızca 2 saat içinde kazanılmıştır; bu, dünyanın en kısa süren ova savaşı olarak bilinir.
+
+           **Bu konudan sıkça soru gelmektedir.** Turan taktiği, 1071 Malazgirt, 1526 Mohaç ve 1922 Büyük Taarruz'da uygulanan ortak bir savaş taktiğidir.
+
+           1529'da Osmanlı Devleti ilk defa Viyana'yı kuşatmış, ancak kış şartlarının yaklaşması ve ağır topların İstanbul'da bırakılmış olması nedeniyle kuşatma başarısız olmuştur.
+
+           **Burası karıştırılabilir:** Belgrad ve Rodos'u Fatih Sultan Mehmet kuşatmış ancak alamamıştı; bu iki yeri alan padişah Kanuni'dir. Viyana ise hiçbir zaman alınamamıştır (yalnızca kuşatılmıştır).
+           """
+};
+
+var notKanuniIstanbulAntlasmasi = new Note
+{
+    Title = "Osmanlı Devleti Yükselme Dönemi — 1532 Alman Seferi ve İstanbul Antlaşması",
+    Body = """
+           1532'de Kanuni, Alman Seferi'ne çıkmış; Şarlken (Kutsal Roma Germen İmparatoru) Osmanlı ordusunun karşısına çıkamamıştır. Bu seferin amaçlarından biri, Şarlken'in elinde esir bulunan Fransa Kralı I. François'yı (I. Fransuva) kurtarmaktı; bu istek, I. François'nın annesinin Kanuni'ye yazdığı mektup üzerine gerçekleşmiştir.
+
+           1533'te Avusturya ile İstanbul Antlaşması (İbrahim Paşa Antlaşması) imzalanmıştır. Bu antlaşmanın en önemli maddesi: Avusturya Kralı (Arşidük) Ferdinand, protokolde Osmanlı sadrazamına denk sayılmıştır.
+
+           **Bu konudan sıkça soru gelmektedir.** İstanbul Antlaşması ile Orta Avrupa'nın siyasi üstünlüğü Osmanlı Devleti'nin eline geçmiştir; bu durum 1606 Zitvatorok Antlaşması'na kadar (yaklaşık 73 yıl) devam etmiştir.
+
+           **Burası karıştırılabilir:** Osmanlı-Fransa dostluğunun başlangıcı 1532 Alman Seferi'ndeki bu olaya dayanır; bu dostluk, Fransızcanın Osmanlı Devleti'nin ilk yabancı resmi dili olmasına kadar uzanan uzun bir ilişkinin başlangıcıdır.
+           """
+};
+
+var notBarbarosVeAkdeniz = new Note
+{
+    Title = "Osmanlı Devleti Yükselme Dönemi — Barbaros Hayreddin Paşa ve Preveze Deniz Savaşı",
+    Body = """
+           1538'de Barbaros Hayreddin Paşa, Cezayir'i Osmanlı Devleti'ne katarak kaptan-ı deryalık görevine getirilmiş ve Kanuni döneminden itibaren divana üye olan ilk denizci olmuştur.
+
+           1538'de Andrea Doria komutasındaki Haçlı donanması ile Preveze Deniz Savaşı yapılmış, Barbaros Hayreddin Paşa Turan taktiğini uygulayarak zafer kazanmıştır. Bu tarih (27/28 Eylül), Türkiye'de Donanma Günü olarak kutlanır.
+
+           **Bu konudan sıkça soru gelmektedir.** Preveze Deniz Savaşı'nın en önemli sonucu, Akdeniz'in bir Türk gölü haline gelmesidir; Karadeniz'in Türk gölü olması Fatih dönemine (Kırım'ın alınması), Akdeniz'in Türk gölü olması ise Kanuni dönemine (Preveze) aittir.
+
+           **Burası karıştırılabilir:** Barbaros Hayreddin Paşa'nın gerçek adı farklıdır; "Barbaros" (Kızıl Sakal) bir lakaptır. Preveze zaferi ile Kırım'ın alınması farklı dönemlere (sırasıyla Kanuni ve Fatih) ait olup karıştırılmamalıdır.
+           """
+};
+
+var notKanuniHintDenizSeferleri = new Note
+{
+    Title = "Osmanlı Devleti Yükselme Dönemi — Hint Deniz Seferleri",
+    Body = """
+           1538-1553 yılları arasında Osmanlı Devleti, Gücerat Sultanlığı'nın Portekizlilere karşı yardım isteği üzerine Hindistan'a dört defa deniz seferi düzenlemiştir. Bu seferlerden istenen sonuç alınamamıştır.
+
+           Hint deniz seferlerinin yeterince başarılı olamamasının nedenleri:
+           - Osmanlı donanmasının okyanus şartlarına dayanıklı gemilere sahip olmaması
+           - Osmanlı denizcilerinin bölgeyi yeterince bilmemesi
+           - Gücerat Sultanlığı'nın beklenen desteği vermemesi
+           - Seferlere gereken önemin verilmemesi (yaygın kabul gören ama tartışmalı bir gerekçe)
+
+           **Bu konudan sıkça soru gelmektedir.** Piri Reis'in bu seferler sonrasında idam edilmesinin ardından Seydi Ali Reis, "Kitabü'l-Muhit" (Yön Kitabı) adlı eseri bu bölgede kaybolmamak amacıyla yazmıştır.
+
+           **Burası karıştırılabilir:** Gücerat Sultanlığı, Osmanlı'yı yardıma çağırmasına rağmen daha sonra Portekizlilerden yana tavır almıştır; bu, "seferlere önem verilmemesi" tezinin aksine bölgesel siyasi koşulların da seferlerin başarısızlığında etkili olduğunu gösterir.
+           """
+};
+
+var notKanuniDigerFetihlerVeZigetvar = new Note
+{
+    Title = "Osmanlı Devleti Yükselme Dönemi — Kanuni'nin Diğer Fetihleri ve Zigetvar Seferi",
+    Body = """
+           Kanuni Sultan Süleyman döneminde gerçekleşen diğer önemli olaylar:
+           - 1541: Macaristan'ın büyük bölümü alınmıştır.
+           - 1551: Trablusgarp alınmış; Turgut Reis, Trablusgarp Beylerbeyi olarak atanmıştır.
+           - 1555: İran ile Amasya Antlaşması imzalanmıştır (Osmanlı-Safevi ilişkilerinde ilk resmi antlaşma).
+           - 1560: Cerbe Deniz Savaşı, Piyale Paşa komutasında kazanılmış ve Kuzey Afrika'daki Osmanlı egemenliği pekiştirilmiştir.
+           - 1565: Turgut Reis, Malta Kuşatması sırasında şehit olmuştur; kuşatma başarısızlıkla sonuçlanmıştır (Malta hiçbir zaman fethedilememiştir).
+           - 1566: Kanuni, son seferi olan Zigetvar Seferi sırasında (Macaristan üzerine) vefat etmiştir; ölümü, ordunun dağılmaması için bir süre gizli tutulmuştur.
+
+           **Bu konudan sıkça soru gelmektedir.** Kanuni'nin son seferi Zigetvar Seferi'dir; bu bilgi sınavlarda sıkça sorulur.
+
+           **Burası karıştırılabilir:** Malta hiçbir zaman fethedilememiştir; yalnızca kuşatılmıştır. Bu durum, Fatih'in alamadığı Rodos ve Belgrad'ın aksine Kanuni döneminde de sonuçsuz kalmış bir kuşatmadır.
+           """
+};
+
+var notKapitulasyonAmaclari = new Note
+{
+    Title = "Osmanlı Devleti Yükselme Dönemi — Kapitülasyonların Amaçları",
+    Body = """
+           1569'da Kanuni Sultan Süleyman döneminde Fransa'ya, Venedik'e verilenden çok daha geniş kapsamlı kapitülasyonlar (imtiyazlar) verilmiştir. Bu antlaşmanın temeli, 1535'te I. François ile imzalanan "Ahdname-i Hümayun" (Ahd-i Atik) antlaşmasına dayanır.
+
+           Kapitülasyonların verilme amaçları:
+           - Hazineye gelir sağlamak
+           - Kendi emniyet ve çıkarlarını sağlamak
+           - Batılı devletlere imtiyaz vererek onları müttefik edinmek
+           - Haçlı ittifakını parçalamak
+           - Ticari faaliyetleri geliştirmek
+
+           **Bu konudan sıkça soru gelmektedir.** Fransızlara verilen kapitülasyonlar kapsamında "konsolosluk mahkemeleri" kurulmuştur; bu mahkemeler Fransızların kendi aralarındaki davalarına bakmıştır.
+
+           **Burası karıştırılabilir:** Fransa'ya verilen kapitülasyonlar ile 1352'de Cenevizlilere veya Fatih döneminde Venediklilere verilen ticari imtiyazlar farklı kapsamdadır; Fransa'ya verilenler çok daha geniştir (eğitim, din, hukuk, ekonomi gibi birçok alanı kapsar).
+           """
+};
+
+var notSokulluSelimDonemiInebahti = new Note
+{
+    Title = "Osmanlı Devleti Yükselme Dönemi — Sokullu Mehmet Paşa ve II. Selim Dönemi: İnebahtı",
+    Body = """
+           Sokullu Mehmet Paşa, bir devşirmedir; Kanuni'nin son 2 yılı, II. Selim'in tamamı ve III. Murat'ın bir kısmında sadrazamlık yapmış, devlet işlerinde çok etkili olduğu için bu döneme adını vermiştir.
+
+           II. Selim (Sarı Selim), ordunun başında sefere çıkma geleneğini terk eden ilk Osmanlı padişahıdır; İstanbul'da doğup İstanbul'da ölen ilk padişahtır.
+
+           1571'de Kıbrıs, Venedik'in elinden alınmıştır. Bu duruma tepki gösteren Haçlı donanması, aynı yıl İnebahtı'da Osmanlı donanmasını yakmıştır.
+
+           **Bu konudan sıkça soru gelmektedir.** Osmanlı tarihinde donanmanın dört kez yakıldığı bilinir: 1571 İnebahtı, 1770 Çeşme, 1827 Navarin, 1853 Sinop.
+
+           Sokullu Mehmet Paşa'nın Venedik elçisine söylediği ünlü söz: "Biz Kıbrıs'ı alarak sizin kolunuzu kestik, siz İnebahtı'da bizim sakalımızı kestiniz; fakat kesilen kolun yerine yenisi gelmez, kesilen sakal ise daha gür çıkar."
+
+           **Burası karıştırılabilir:** İnebahtı'da donanma yakılmasına rağmen Kıbrıs, Osmanlı'nın elinde kalmıştır; "İnebahtı sonrasında Kıbrıs geri alındı" ifadesi yanlıştır.
+           """
+};
+
+var notSokulluMuratDonemiFerhatPasa = new Note
+{
+    Title = "Osmanlı Devleti Yükselme Dönemi — III. Murat Dönemi: Meşaleler Savaşı ve Ferhat Paşa Antlaşması",
+    Body = """
+           III. Murat döneminde 1576'da Fas, Osmanlı egemenliğine girmiştir. İran ile yapılan savaşlardan biri olan Meşaleler Savaşı (diğer adıyla Beştepe Savaşı) gece meşale ışığında devam ettiği için bu adı almıştır.
+
+           1590'da İran ile Ferhat Paşa Antlaşması imzalanmıştır; bu antlaşmayla Osmanlı Devleti Tebriz, Revan ve Bağdat'ı alarak doğuda en geniş sınırlarına ulaşmıştır.
+
+           **Bu konudan sıkça soru gelmektedir.** Ferhat Paşa Antlaşması, yükselme döneminin sonunda (1595'e kadar, III. Murat'ın ölümüne kadar) değerlendirilir; duraklama dönemi 1595'ten itibaren başlar. Bu nedenle Ferhat Paşa Antlaşması yanlışlıkla duraklama dönemine dahil edilmemelidir.
+
+           **Burası karıştırılabilir:** Yükselme döneminin bitiş tarihi olarak eskiden Sokullu'nun ölümü (1579) kabul edilirken, güncel yaklaşımda III. Murat'ın ölümü (1595) esas alınır; bu nedenle Ferhat Paşa Antlaşması (1590) yükselme dönemine dahildir.
+           """
+};
+
+var notSokulluDonVolgaProjesi = new Note
+{
+    Title = "Osmanlı Devleti Yükselme Dönemi — Sokullu'nun Don-Volga Projesi",
+    Body = """
+           Sokullu Mehmet Paşa'nın önemli projelerinden biri, Don ve Volga nehirlerini birleştirme projesidir. Bu projenin amaçları:
+           - Kırım'ı Ruslara karşı korumak
+           - Orta Asya Türkleriyle bağlantı kurmak
+           - İran'ı kuzeyden kontrol etmek (Hazar Denizi'ne donanma indirerek)
+
+           **Bu konudan sıkça soru gelmektedir.** Projenin uygulanması Mimar Sinan'a verilmiştir; ancak Mimar Sinan'ın (99 yaşında) vefatı, Kırım Hanlığı'nın isteksizliği ve Rusların saldırıları nedeniyle bu proje Osmanlı Devleti tarafından gerçekleştirilememiştir.
+
+           **Burası karıştırılabilir:** Bu kanalı Osmanlı Devleti değil, 1956'da Rusya açmıştır; bu proje "Osmanlı'nın düşünüp gerçekleştiremediği, Rusya'nın gerçekleştirdiği" bir proje örneğidir.
+           """
+};
+
+var notSokulluSuveysVeKanalProjeleri = new Note
+{
+    Title = "Osmanlı Devleti Yükselme Dönemi — Sokullu'nun Süveyş ve Marmara-Karadeniz Projeleri",
+    Body = """
+           Sokullu Mehmet Paşa'nın Süveyş Kanalı projesinin amaçları:
+           - Kızıldeniz ile Akdeniz'i birleştirmek
+           - Osmanlı'yı Hindistan'a kısa yoldan ulaştırmak
+           - Baharat Yolu'na işlerlik kazandırmak (Ümit Burnu'nun keşfiyle önemini yitiren bu yolu canlandırmak)
+
+           **Bu konudan sıkça soru gelmektedir.** Süveyş Kanalı projesi Osmanlı Devleti tarafından gerçekleştirilememiş; kanal, 1869'da İngiltere ve Fransa şirketleri tarafından açılmıştır.
+
+           Sokullu'nun bir diğer projesi Marmara-Karadeniz projesidir; amacı İznik-Sapanca gölleri üzerinden Karadeniz'e ikinci bir çıkış açmak ve tersanelerin kereste ihtiyacını karşılamaktır (günümüzdeki Kanal İstanbul projesine benzetilir).
+
+           **Burası karıştırılabilir:** Süveyş Kanalı projesi ile Don-Volga projesi farklı coğrafyalarda (biri Mısır'da, diğeri Kırım-Kafkasya'da) planlanmış iki ayrı Sokullu projesidir; ikisi de gerçekleştirilememiştir.
+           """
+};
+
+BÖLÜM 3 — Sorular
+
+// --- SORU 1 ---
+new Question
+{
+    Note = notFatihKisiligiVeUnvanlar,
+    Type = QuestionType.MultipleChoice,
+    Text = "Fatih Sultan Mehmet'e verilen ve 'Roma hükümdarı' anlamına gelen unvan aşağıdakilerden hangisidir?",
+    Explanation = "Kayzer-i Rum, Roma hükümdarı anlamına gelir ve yalnızca Roma krallarına verilen bir unvandır.",
+    OrderIndex = 1,
+    Choices =
+    {
+        new Choice { Text = "Kayzer-i Rum", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Sultan-ı İklim-i Rum", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Ebu'l-Hayrat", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Serdar-ı Ekrem", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Sofu", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 2 ---
+new Question
+{
+    Note = notFatihKisiligiVeUnvanlar,
+    Type = QuestionType.MultipleChoice,
+    Text = "Fatih Sultan Mehmet'in kişiliğiyle ilgili aşağıdakilerden hangisi doğrudur?",
+    Explanation = "Fatih, şiirlerinde Avni mahlasını kullanmış ve 'bir ayağı Şark'ta bir ayağı Garp'ta' zihniyetiyle anılmıştır.",
+    OrderIndex = 2,
+    Choices =
+    {
+        new Choice { Text = "Şiirlerinde Avni mahlasını kullanmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Yedi dil bilmektedir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Kanunname-i Ali Osmani'yi hazırlatmıştır.", IsCorrect = true, OrderIndex = 3 },
+
+        new Choice { Text = "Venedikliler tarafından 'Sofu' lakabıyla anılmıştır.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Tahta 30 yaşında çıkmıştır.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 3 (ters soru) ---
+new Question
+{
+    Note = notFatihKisiligiVeUnvanlar,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Fatih Sultan Mehmet'in unvanlarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "'Grand Türk' lakabını Fatih'e Venedikliler takmıştır; bu unvanı Fatih kendisi istememiştir, tersine Yıldırım Bayezid Sultan-ı İklim-i Rum unvanını kendisi istemiştir.",
+    OrderIndex = 3,
+    Choices =
+    {
+        new Choice { Text = "Sultanü'l-Bahreyn ve Hakanü'l-Berreyn unvanını almıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Ebu'l-Feth unvanını almıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Venedikliler ona 'Grand Türk' lakabını takmıştır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Kayzer-i Rum unvanı Roma krallarına özgü bir unvandır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "'Grand Türk' unvanını Fatih kendisi halifeden istemiştir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 4 ---
+new Question
+{
+    Note = notIstanbulunFethiNedenleri,
+    Type = QuestionType.MultipleChoice,
+    Text = "İstanbul'un fethinin nedenlerinden biri aşağıdakilerden hangisidir?",
+    Explanation = "Anadolu ve Rumeli arasındaki toprak bütünlüğünü sağlamak, İstanbul'un fethinin temel nedenlerinden biridir.",
+    OrderIndex = 4,
+    Choices =
+    {
+        new Choice { Text = "Anadolu ve Rumeli arasındaki toprak bütünlüğünü sağlamak", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Boğazlara ve İpek Yolu'na hakim olmak", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Bizans'ın Osmanlı şehzadelerini kışkırtması", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "İstanbul'un bir bilim ve kültür merkezi olması", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Venedik'in Osmanlı'ya kapitülasyon vermeyi reddetmesi", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Memlüklerin İstanbul'a saldırma girişimi", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 5 ---
+new Question
+{
+    Note = notIstanbulunFethiNedenleri,
+    Type = QuestionType.MultipleChoice,
+    Text = "Osmanlı Devleti'nin zaman zaman Bizans'a fidye vermek zorunda kalmasının nedeni aşağıdakilerden hangisidir?",
+    Explanation = "Bizans, taht kavgalarında yenilen Osmanlı şehzadelerini barındırarak onları tehdit unsuru olarak kullanmış, bu nedenle Osmanlı fidye ödemek zorunda kalmıştır.",
+    OrderIndex = 5,
+    Choices =
+    {
+        new Choice { Text = "Bizans'ın isyan eden Osmanlı şehzadelerini barındırması", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Bizans'ın Osmanlı topraklarını işgal etmesi", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Bizans'ın İstanbul Boğazı'nı kapatması", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Bizans'ın donanma üstünlüğünü kullanması", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Bizans'ın Osmanlı ile ticareti durdurması", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 6 (ters soru) ---
+new Question
+{
+    Note = notIstanbulunFethiNedenleri,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "İstanbul'un fethinin nedenleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "İstanbul'un fethinin dini nedeni Hazreti Muhammed'in hadisidir; Papa'nın daveti bu fethin bir nedeni değildir, tam tersine Bizans Papa'dan Osmanlı'ya karşı yardım istemiştir.",
+    OrderIndex = 6,
+    Choices =
+    {
+        new Choice { Text = "Bizans, Anadolu beylikleriyle işbirliği içinde olmuştur.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Bizans, Haçlı Seferleri düzenlenmesine neden olmuştur.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Hazreti Muhammed'in hadisi dini bir neden oluşturmuştur.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "İstanbul'un bilim ve kültür merkezi olması bir neden olmuştur.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Papa'nın Osmanlı'yı İstanbul'u fethetmeye davet etmesi bir nedendir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 7 ---
+new Question
+{
+    Note = notFetihHazirliklariVeOnlemler,
+    Type = QuestionType.MultipleChoice,
+    Text = "Fatih Sultan Mehmet'in kendi tasarladığı ve İstanbul kuşatmasında kullanılan büyük toplara verilen ad aşağıdakilerden hangisidir?",
+    Explanation = "Şahi, Fatih'in kendi çizdiği projeye göre dökülen toplara verilen addır.",
+    OrderIndex = 7,
+    Choices =
+    {
+        new Choice { Text = "Şahi", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Grejuva", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Balyos", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Sikke-i Hasene", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Kayzer", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 8 ---
+new Question
+{
+    Note = notFetihHazirliklariVeOnlemler,
+    Type = QuestionType.MultipleChoice,
+    Text = "Rumeli Hisarı'nın diğer adı aşağıdakilerden hangisidir?",
+    Explanation = "Rumeli Hisarı'nın diğer adı Boğazkesen'dir.",
+    OrderIndex = 8,
+    Choices =
+    {
+        new Choice { Text = "Boğazkesen", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Güzelce Hisar", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Yedikule", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Anadolu Hisarı", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Kız Kalesi", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 9 (ters soru) ---
+new Question
+{
+    Note = notFetihHazirliklariVeOnlemler,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "İstanbul'un fethi için yapılan hazırlıklarla ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Şahi topunun projesini bizzat Fatih Sultan Mehmet çizmiştir; Macar Urban yalnızca dökümünü gerçekleştirmiştir.",
+    OrderIndex = 9,
+    Choices =
+    {
+        new Choice { Text = "400 parçalık bir donanma hazırlanmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Anadolu beylikleriyle saldırmazlık anlaşmaları yapılmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Rumeli Hisarı'nın karşısında Anadolu Hisarı bulunmaktadır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Şahnişin adı verilen hareketli kuleler inşa edilmiştir.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Şahi topunun projesini Macar Urban çizmiştir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 10 ---
+new Question
+{
+    Note = notBizansinAldigiOnlemler,
+    Type = QuestionType.MultipleChoice,
+    Text = "İstanbul'da kardinal külahı görmektense Osmanlı sarığı görmeyi tercih ettiğini söyleyen Bizanslı devlet adamı aşağıdakilerden hangisidir?",
+    Explanation = "Grandük Notaras, bu sözü söyleyen Bizanslı yüksek dereceli devlet adamıdır.",
+    OrderIndex = 10,
+    Choices =
+    {
+        new Choice { Text = "Grandük Notaras", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Çandarlı Halil Paşa", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "III. Andronikos", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Kantakuzenos", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Genadios", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 11 ---
+new Question
+{
+    Note = notBizansinAldigiOnlemler,
+    Type = QuestionType.MultipleChoice,
+    Text = "Bizans'ın İstanbul kuşatmasına karşı aldığı önlemlerden biri aşağıdakilerden hangisidir?",
+    Explanation = "Bizans, Haliç'e zincir çekmiş, Grejuva'yı çoğaltmış ve surları güçlendirmiştir.",
+    OrderIndex = 11,
+    Choices =
+    {
+        new Choice { Text = "Haliç'e zincir çekilmiştir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Grejuva (Rum ateşi) çoğaltılmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "İstanbul surları güçlendirilmiştir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Katolik ve Ortodoks kiliseleri birleştirilmiştir.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Anadolu beylikleriyle ittifak kurulmuştur.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Osmanlı'ya kapitülasyon verilmiştir.", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 12 (ters soru) ---
+new Question
+{
+    Note = notBizansinAldigiOnlemler,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Bizans'ın aldığı önlemlerle ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Fatih, Haliç'e çekilen zinciri kırmak yerine gemileri karadan yürüterek zincirin arkasına geçirmiştir; 'zinciri doğrudan kırarak geçmiştir' ifadesi yanlıştır.",
+    OrderIndex = 12,
+    Choices =
+    {
+        new Choice { Text = "Grejuva, deniz üzerinde yanabilen bir maddedir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Bizans, Katolik dünyasından yardım istemiştir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Grandük Notaras, Osmanlı sarığını Katolik külahına tercih etmiştir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Bizans halkı silahlandırılmıştır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Fatih, Haliç'teki zinciri doğrudan kırarak geçmiştir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 13 ---
+new Question
+{
+    Note = notFetihSonuclariGenel,
+    Type = QuestionType.MultipleChoice,
+    Text = "İslam dünyasının İstanbul'un fethine verdiği isim aşağıdakilerden hangisidir?",
+    Explanation = "İslam dünyası, İstanbul'un fethine 'Fethi Mübin' (parlak zafer) adını vermiştir.",
+    OrderIndex = 13,
+    Choices =
+    {
+        new Choice { Text = "Fethi Mübin", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Kızılelma", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Evlad-ı Fatihan", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Kayzer-i Rum", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Devlet-i Ebed Müddet", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 14 ---
+new Question
+{
+    Note = notFetihSonuclariGenel,
+    Type = QuestionType.MultipleChoice,
+    Text = "İstanbul'un fethinin sonuçlarından biri aşağıdakilerden hangisidir?",
+    Explanation = "Kuruluş döneminin bitip yükselme döneminin başlaması ve İstanbul'un başkent olması, fethin doğrudan sonuçlarındandır.",
+    OrderIndex = 14,
+    Choices =
+    {
+        new Choice { Text = "Kuruluş dönemi bitmiş, yükselme dönemi başlamıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "İstanbul, Osmanlı Devleti'nin başkenti olmuştur.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Anadolu ve Rumeli arasındaki toprak bütünlüğü sağlanmıştır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Boğazlar ve İpek Yolu Osmanlı'nın eline geçmiştir.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Osmanlı Devleti Memlüklerle savaşa girmiştir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Ortodoks kiliseleri tamamen kapatılmıştır.", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 15 (ters soru) ---
+new Question
+{
+    Note = notFetihSonuclariGenel,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "İstanbul'un fethinin sonuçlarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Fatih Sultan Mehmet, Ortodokslara din ve mezhep özgürlüğü tanımıştır; 'Ortodoksluk tamamen yasaklanmıştır' ifadesi yanlıştır.",
+    OrderIndex = 15,
+    Choices =
+    {
+        new Choice { Text = "Genadios Rum patriği olarak atanmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "II. Mehmet'e 'Fatih' unvanı verilmiştir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Orta Çağ kapanmış, Yeni Çağ başlamıştır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Fatih, Kayzer-i Rum unvanını almıştır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Fetihten sonra Ortodoksluk tamamen yasaklanmıştır.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 16 ---
+new Question
+{
+    Note = notFetihSonuclariAvrupaEtkisi,
+    Type = QuestionType.MultipleChoice,
+    Text = "İstanbul'dan kaçan Bizanslı bilim insanlarının İtalya'ya gitmesi hangi Avrupa hareketinin başlamasında etkili olmuştur?",
+    Explanation = "İstanbul'dan kaçan bilim insanları İtalya'ya giderek Rönesans'ın başlamasında etkili olmuştur.",
+    OrderIndex = 16,
+    Choices =
+    {
+        new Choice { Text = "Rönesans", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Reform", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Coğrafi Keşifler", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Sanayi Devrimi", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Fransız İhtilali", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 17 ---
+new Question
+{
+    Note = notFetihSonuclariAvrupaEtkisi,
+    Type = QuestionType.MultipleChoice,
+    Text = "İstanbul'un fethinin Avrupa'ya etkileriyle ilgili aşağıdakilerden hangisi doğrudur?",
+    Explanation = "Şahi toplarının surları yıkabildiğinin anlaşılması feodaliteyi zayıflatmış; boğazların ele geçirilmesi Coğrafi Keşiflere zemin hazırlamıştır.",
+    OrderIndex = 17,
+    Choices =
+    {
+        new Choice { Text = "Avrupa'da feodalite (derebeylik) zayıflamıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Boğazların ele geçirilmesi Coğrafi Keşiflere zemin hazırlamıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Kaçan bilim insanları Rönesans'ın başlamasında etkili olmuştur.", IsCorrect = true, OrderIndex = 3 },
+
+        new Choice { Text = "Avrupa'da merkeziyetçi krallıklar zayıflamıştır.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Feodal beylerin gücü artmıştır.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 18 (ters soru) ---
+new Question
+{
+    Note = notFetihSonuclariAvrupaEtkisi,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "İstanbul'un fethinin Avrupa'ya etkileriyle ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Fatih Sultan Mehmet, Bizanslı bilim insanlarının seyahat özgürlüğüne müdahale etmemiş, kalmalarını istemiş ama zorlamamıştır; 'bilim insanlarını zorla alıkoymuştur' ifadesi yanlıştır.",
+    OrderIndex = 18,
+    Choices =
+    {
+        new Choice { Text = "Rönesans'ın başlamasında kaçan bilim insanları etkili olmuştur.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Feodalite, şahi toplarının etkisiyle zayıflamıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Boğazların ele geçirilmesi yeni ticaret yolları arayışına yol açmıştır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Bu süreç Coğrafi Keşiflere zemin hazırlamıştır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Fatih Sultan Mehmet, bilim insanlarını zorla alıkoymuştur.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 19 ---
+new Question
+{
+    Note = notCandarliIdami,
+    Type = QuestionType.MultipleChoice,
+    Text = "Fetih öncesinde İstanbul'un fethedilmesine karşı çıkan ve fetihten sonra idam edilen sadrazam aşağıdakilerden hangisidir?",
+    Explanation = "Çandarlı Halil Paşa, fetih öncesinde karşı çıkmış ve fetihten sonra idam edilmiştir.",
+    OrderIndex = 19,
+    Choices =
+    {
+        new Choice { Text = "Çandarlı Halil Paşa", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Gedik Ahmet Paşa", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Zağanos Paşa", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Akşemseddin", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Molla Gürani", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 20 (ters soru) ---
+new Question
+{
+    Note = notCandarliIdami,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Çandarlı Halil Paşa'nın idamıyla ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Çandarlı'nın malları, oğluna II. Bayezid döneminde geri verilmiştir; 'mallar hiçbir zaman geri verilmemiştir' ifadesi yanlıştır.",
+    OrderIndex = 20,
+    Choices =
+    {
+        new Choice { Text = "Çandarlı, fetihten kısa süre sonra hapsedilmiştir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Bu olay, Osmanlı'da ilk sadrazam idamıdır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Molla Gürani ve Akşemseddin fetih taraftarıydı.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Çandarlı, İstanbul'un fethedilmesine karşı çıkmıştır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Çandarlı'nın malları hiçbir zaman ailesine geri verilmemiştir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 21 ---
+new Question
+{
+    Note = notFatihinAnadoluFetihleri,
+    Type = QuestionType.MultipleChoice,
+    Text = "Trabzon Rum İmparatorluğu'na hangi yılda son verilmiştir?",
+    Explanation = "Trabzon Rum İmparatorluğu'na 1461'de son verilmiştir.",
+    OrderIndex = 21,
+    Choices =
+    {
+        new Choice { Text = "1461", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "1453", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "1473", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "1475", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "1481", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 22 ---
+new Question
+{
+    Note = notFatihinAnadoluFetihleri,
+    Type = QuestionType.MultipleChoice,
+    Text = "Fatih Sultan Mehmet'in Anadolu'daki fetihlerinden biri aşağıdakilerden hangisidir?",
+    Explanation = "Karamanoğulları'ndan Konya ve Karaman, Candaroğulları'ndan Sinop ve Samsun, Cenevizlilerden Amasra alınmıştır.",
+    OrderIndex = 22,
+    Choices =
+    {
+        new Choice { Text = "Karamanoğulları'ndan Konya ve Karaman'ın alınması", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Candaroğulları'ndan Sinop ve Samsun'un alınması", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Cenevizlilerden Amasra'nın alınması", IsCorrect = true, OrderIndex = 3 },
+
+        new Choice { Text = "Dulkadiroğulları'na tamamen son verilmesi", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Memlüklerle savaşılması", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 23 (ters soru) ---
+new Question
+{
+    Note = notFatihinAnadoluFetihleri,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Fatih'in Anadolu fetihleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Karamanoğulları, Fatih döneminde tamamen ortadan kaldırılmamış, Silifke merkezli olarak II. Bayezid dönemine kadar varlığını sürdürmüştür.",
+    OrderIndex = 23,
+    Choices =
+    {
+        new Choice { Text = "Trabzon Rum İmparatorluğu'nun alınmasıyla Bizans'ın dirilme umudu sona ermiştir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Candaroğulları'nın diğer adı İsfendiyaroğulları'dır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Amasra, Cenevizlilerden alınmıştır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Doğu Anadolu, Akkoyunlularla yapılan mücadele sonucu alınmıştır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Karamanoğulları, Fatih döneminde tamamen ortadan kaldırılmıştır.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 24 ---
+new Question
+{
+    Note = notFatihinBalkanFetihleri,
+    Type = QuestionType.MultipleChoice,
+    Text = "Bosna-Hersek'in fethinden sonra Müslüman olan halka verilen unvan aşağıdakilerden hangisidir?",
+    Explanation = "Bosna-Hersek halkının Müslüman olan kesimine 'Evlad-ı Fatihan' (Fatih'in evlatları) unvanı verilmiştir.",
+    OrderIndex = 24,
+    Choices =
+    {
+        new Choice { Text = "Evlad-ı Fatihan", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Gaziyân-ı Rum", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Bacıyân-ı Rum", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Ahiyân-ı Rum", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Kayzer-i Rum", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 25 ---
+new Question
+{
+    Note = notFatihinBalkanFetihleri,
+    Type = QuestionType.MultipleChoice,
+    Text = "Fatih Sultan Mehmet'in kuşatmasına rağmen alamadığı yerler aşağıdakilerden hangileridir?",
+    Explanation = "Fatih, Rodos ve Belgrad'ı kuşatmasına rağmen alamamıştır; bu iki yeri daha sonra Kanuni Sultan Süleyman almıştır.",
+    OrderIndex = 25,
+    Choices =
+    {
+        new Choice { Text = "Rodos", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Belgrad", IsCorrect = true, OrderIndex = 2 },
+
+        new Choice { Text = "Mora Yarımadası", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Bosna-Hersek", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Arnavutluk", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Eflak", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 26 (ters soru) ---
+new Question
+{
+    Note = notFatihinBalkanFetihleri,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Fatih Sultan Mehmet'in Balkan ve deniz fetihleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Eflak ve Boğdan'ın ortak adı Memleketeyn'dir; bu iki bölge sırasıyla bugünkü Romanya ve Moldova'ya karşılık gelir.",
+    OrderIndex = 26,
+    Choices =
+    {
+        new Choice { Text = "Arnavutluk'ta İskender Bey'e karşı büyük mücadele verilmiştir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Ege Adaları'ndan Bozcaada ve Gökçeada alınmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Otranto Limanı fethedilmiş, ancak sonra kaybedilmiştir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Sırbistan alınmış, ancak Belgrad alınamamıştır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Eflak ve Boğdan'ın ortak adı Evlad-ı Fatihan'dır.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 27 ---
+new Question
+{
+    Note = notFatihinKirimVeAkkoyunlu,
+    Type = QuestionType.MultipleChoice,
+    Text = "1473'te Fatih Sultan Mehmet'in Uzun Hasan'ı mağlup ettiği savaş aşağıdakilerden hangisidir?",
+    Explanation = "Otlukbeli Savaşı, 1473'te Erzincan yakınlarında Akkoyunlu hükümdarı Uzun Hasan'a karşı kazanılmıştır.",
+    OrderIndex = 27,
+    Choices =
+    {
+        new Choice { Text = "Otlukbeli Savaşı", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Yassı Çemen Savaşı", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Kösedağ Savaşı", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Çaldıran Savaşı", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Mercidabık Savaşı", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 28 ---
+new Question
+{
+    Note = notFatihinKirimVeAkkoyunlu,
+    Type = QuestionType.MultipleChoice,
+    Text = "1475'te Kefe limanı ile birlikte Kırım'ı alan komutan aşağıdakilerden hangisidir?",
+    Explanation = "Gedik Ahmet Paşa, 1475'te Kefe limanı ile birlikte Kırım'ı almıştır.",
+    OrderIndex = 28,
+    Choices =
+    {
+        new Choice { Text = "Gedik Ahmet Paşa", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Zağanos Paşa", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Kemal Reis", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Çandarlı Halil Paşa", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Lala Şahin Paşa", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 29 (ters soru) ---
+new Question
+{
+    Note = notFatihinKirimVeAkkoyunlu,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Kırım'ın alınması ve Otlukbeli Savaşı ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Fatih döneminde Memlüklerle Hicaz su yolları nedeniyle gerginlik olsa da doğrudan bir savaş yaşanmamıştır; bu durum Otlukbeli Savaşı ile karıştırılmamalıdır.",
+    OrderIndex = 29,
+    Choices =
+    {
+        new Choice { Text = "Kırım'ın alınması Karadeniz'i bir Türk gölü haline getirmiştir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Uzun Hasan'a 'Küçük Türk' denilmiştir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Otlukbeli Savaşı sonrası Doğu Anadolu'nun büyük bölümü Osmanlı'ya geçmiştir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Akdeniz'in Türk gölü haline gelmesi Kanuni dönemine aittir.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Fatih Sultan Mehmet döneminde Memlüklerle doğrudan bir savaş yaşanmıştır.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 30 ---
+new Question
+{
+    Note = notAtsbVeAsbFarki,
+    Type = QuestionType.MultipleChoice,
+    Text = "Cenevizlilerden Amasra'nın alınması hangi kavrama örnektir?",
+    Explanation = "Amasra Anadolu'dadır ancak Cenevizliler Türk değildir; bu nedenle bu fetih yalnızca ASB'ye (Anadolu Siyasi Birliği) örnektir.",
+    OrderIndex = 30,
+    Choices =
+    {
+        new Choice { Text = "Yalnızca ASB (Anadolu Siyasi Birliği)", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Yalnızca ATSB (Anadolu Türk Siyasi Birliği)", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Hem ATSB hem ASB", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Ne ATSB ne ASB", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Yalnızca Rumeli Türk Siyasi Birliği", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 31 ---
+new Question
+{
+    Note = notAtsbVeAsbFarki,
+    Type = QuestionType.MultipleChoice,
+    Text = "Hem ATSB hem de ASB'ye örnek olan gelişme aşağıdakilerden hangisidir?",
+    Explanation = "Karamanoğulları'ndan Konya ve Karaman'ın alınması, hem Türk bir beyliğin ortadan kaldırılması (ATSB) hem de Anadolu topraklarının birleştirilmesi (ASB) anlamına gelir.",
+    OrderIndex = 31,
+    Choices =
+    {
+        new Choice { Text = "Karamanoğulları'ndan Konya ve Karaman'ın alınması", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Candaroğulları'ndan Sinop'un alınması", IsCorrect = true, OrderIndex = 2 },
+
+        new Choice { Text = "Trabzon Rum İmparatorluğu'nun alınması", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Cenevizlilerden Amasra'nın alınması", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Kırım'ın alınması", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 32 (ters soru) ---
+new Question
+{
+    Note = notAtsbVeAsbFarki,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "ATSB ve ASB kavramlarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "ATSB, Türk beyliklerinin ortadan kaldırılmasını ifade eder; Trabzon Rum İmparatorluğu Türk olmadığı için bu fetih ATSB'ye değil yalnızca ASB'ye örnektir.",
+    OrderIndex = 32,
+    Choices =
+    {
+        new Choice { Text = "ASB, Anadolu topraklarının tek bir siyasi güç altında toplanmasını ifade eder.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "ATSB, Türk beyliklerinin tek bayrak altında toplanmasını ifade eder.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Kırım'ın alınması ne ATSB ne de ASB'ye örnektir (Anadolu dışındadır).", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Candaroğulları'ndan Sinop'un alınması hem ATSB hem ASB'dir.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Trabzon Rum İmparatorluğu'nun alınması ATSB'ye örnektir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 33 ---
+new Question
+{
+    Note = notFatihDonemiKurumsalGelismeler,
+    Type = QuestionType.MultipleChoice,
+    Text = "Fatih Sultan Mehmet döneminden itibaren divana başkanlık etmeye başlayan görevliler aşağıdakilerden hangisidir?",
+    Explanation = "Fatih döneminden itibaren sadrazamlar divana başkanlık etmeye başlamıştır; daha önce padişahlar başkanlık ediyordu.",
+    OrderIndex = 33,
+    Choices =
+    {
+        new Choice { Text = "Sadrazamlar", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Kazaskerler", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Nişancılar", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Defterdarlar", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Beylerbeyiler", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 34 ---
+new Question
+{
+    Note = notFatihDonemiKurumsalGelismeler,
+    Type = QuestionType.MultipleChoice,
+    Text = "Fatih Sultan Mehmet döneminde gerçekleşen kurumsal gelişmelerden biri aşağıdakilerden hangisidir?",
+    Explanation = "İlk altın para bastırılması, ilk müsadere ve iltizam uygulamaları, cülus bahşişinin yasal hale gelmesi Fatih dönemine aittir.",
+    OrderIndex = 34,
+    Choices =
+    {
+        new Choice { Text = "İlk altın para (Sultani) bastırılmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "İlk defa müsadere sistemi uygulanmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Cülus bahşişi vermek yasal hale getirilmiştir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Kanunname-i Ali Osmani hazırlanmıştır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "İlk defa divan kurulmuştur.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "İlk defa tımar sistemi uygulanmıştır.", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 35 (ters soru) ---
+new Question
+{
+    Note = notFatihDonemiKurumsalGelismeler,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Fatih dönemi kurumsal gelişmeleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Nişancı örfi hukukun temsilcisidir; kazasker ise şeri hukukun temsilcisidir. Bu ikisi birbirine karıştırılmamalıdır.",
+    OrderIndex = 35,
+    Choices =
+    {
+        new Choice { Text = "Sahn-ı Seman medreseleri açılmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "'Sahn-ı Seman' sekiz bölüm anlamına gelir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Kanunname-i Ali Osmani'de kardeş katli vacip hale getirilmiştir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "İlk defa iltizam sistemi uygulanmıştır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Nişancı, şeri hukukun temsilcisidir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 36 ---
+new Question
+{
+    Note = notFatihDonemiDigerGelismeler,
+    Type = QuestionType.MultipleChoice,
+    Text = "İstanbul'da bulunan Venedik elçisine verilen unvan aşağıdakilerden hangisidir?",
+    Explanation = "İstanbul'daki Venedik elçisine 'Balyos' (Baylos) adı verilmiştir.",
+    OrderIndex = 36,
+    Choices =
+    {
+        new Choice { Text = "Balyos", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Tekfur", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Reis", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Emir-i Sevahil", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Kapudan", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 37 ---
+new Question
+{
+    Note = notFatihDonemiDigerGelismeler,
+    Type = QuestionType.MultipleChoice,
+    Text = "Fatih Sultan Mehmet dönemi diğer gelişmeleriyle ilgili aşağıdakilerden hangisi doğrudur?",
+    Explanation = "Topkapı Sarayı yaptırılmış, Ayasofya camiye çevrilmiş ve Osmanlı'da ilk elçiliği Venedik açmıştır.",
+    OrderIndex = 37,
+    Choices =
+    {
+        new Choice { Text = "Topkapı Sarayı (Yeni Saray) yaptırılmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Ayasofya Kilisesi camiye çevrilmiştir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Osmanlı Devleti'nde ilk elçiliği Venedik açmıştır.", IsCorrect = true, OrderIndex = 3 },
+
+        new Choice { Text = "Fatih döneminde Memlüklerle savaşa girilmiştir.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Kapitülasyonlar ilk defa Fatih döneminde verilmiştir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 38 (ters soru) ---
+new Question
+{
+    Note = notFatihDonemiDigerGelismeler,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Fatih dönemi kapitülasyonları ve diğer gelişmelerle ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "İlk kapitülasyon 1352'de Orhan Bey döneminde Cenevizlilere verilmiştir; Fatih döneminde ise Venediklilere devam ettirilmiştir; 'ilk kapitülasyon Fatih döneminde verilmiştir' ifadesi yanlıştır.",
+    OrderIndex = 38,
+    Choices =
+    {
+        new Choice { Text = "Hicaz su yolları sorunu Memlüklerle ilişkileri germiştir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Bu gerginlik savaşa yol açmamıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Venedik'e verilen kapitülasyonların amacı yalnızca ticari değildir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Gerçek anlamda ilk kapsamlı kapitülasyon Kanuni döneminde Fransa'ya verilmiştir.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "İlk kapitülasyon Fatih Sultan Mehmet döneminde verilmiştir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 39 ---
+new Question
+{
+    Note = notFatihinOlumu,
+    Type = QuestionType.MultipleChoice,
+    Text = "Fatih Sultan Mehmet hangi yılda vefat etmiştir?",
+    Explanation = "Fatih Sultan Mehmet, 1481 yılında vefat etmiştir.",
+    OrderIndex = 39,
+    Choices =
+    {
+        new Choice { Text = "1481", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "1453", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "1461", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "1473", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "1511", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 40 (ters soru) ---
+new Question
+{
+    Note = notFatihinOlumu,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Fatih Sultan Mehmet'in ölümüyle ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Fatih'in ölüm nedeni kesin olarak bilinmemektedir; 'kesin olarak zehirlendiği kanıtlanmıştır' ifadesi yanlıştır, bu yalnızca bir rivayettir.",
+    OrderIndex = 40,
+    Choices =
+    {
+        new Choice { Text = "Venedikliler ölümü üzerine 'büyük kartal öldü' demiştir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Ölümünün ardından defin işlemi günler sürmüştür.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Ölümünden sonra Bayezid ile Cem Sultan arasında taht mücadelesi başlamıştır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Ölüm nedeni kesin olarak bilinmemektedir.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Fatih'in zehirlenerek öldürüldüğü kesin olarak kanıtlanmıştır.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 41 ---
+new Question
+{
+    Note = notIkinciBayezidCemSultan,
+    Type = QuestionType.MultipleChoice,
+    Text = "Fatih'in ölümünden sonra II. Bayezid'e karşı taht mücadelesi veren kardeşi aşağıdakilerden hangisidir?",
+    Explanation = "Cem Sultan, II. Bayezid'e karşı taht mücadelesi vermiş ve yenilmiştir.",
+    OrderIndex = 41,
+    Choices =
+    {
+        new Choice { Text = "Cem Sultan", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Şehzade Korkut", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Şehzade Ahmet", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Şehzade Orhan", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Şehzade Mustafa", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 42 ---
+new Question
+{
+    Note = notIkinciBayezidCemSultan,
+    Type = QuestionType.MultipleChoice,
+    Text = "Cem Sultan'ın yenilgi sonrası sığındığı yerlerin kronolojik sırası aşağıdakilerden hangisidir?",
+    Explanation = "Cem Sultan sırasıyla Karamanoğulları'na, Mamure Kalesi'ne, Rodos Şövalyelerine ve son olarak Papa'ya sığınmıştır.",
+    OrderIndex = 42,
+    Choices =
+    {
+        new Choice { Text = "Karamanoğulları, Mamure Kalesi, Rodos Şövalyeleri, Papa", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Papa, Rodos Şövalyeleri, Mamure Kalesi, Karamanoğulları", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Memlükler, Rodos Şövalyeleri, Papa, Karamanoğulları", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Rodos Şövalyeleri, Papa, Karamanoğulları, Mamure Kalesi", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Bizans, Karamanoğulları, Rodos Şövalyeleri, Papa", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 43 (ters soru) ---
+new Question
+{
+    Note = notIkinciBayezidCemSultan,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Cem Sultan olayı ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Cem Sultan olayı bir iç sorun olarak başlamış, ancak zamanla Papa'nın elinde bir tehdit unsuruna dönüşerek uluslararası bir sorun haline gelmiştir; 'yalnızca iç bir sorun olarak kalmıştır' ifadesi yanlıştır.",
+    OrderIndex = 43,
+    Choices =
+    {
+        new Choice { Text = "Cem Sultan, Osmanlı topraklarının ikiye bölünmesini teklif etmiştir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Bu olay nedeniyle II. Bayezid döneminde batıya seferlerde durgunluk yaşanmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Cem Sultan, esaret altında yaşamış ve orada ölmüştür.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Savaşı II. Bayezid kazanmıştır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Cem Sultan olayı yalnızca bir iç sorun olarak kalmış, hiçbir zaman uluslararası boyut kazanmamıştır.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 44 ---
+new Question
+{
+    Note = notIkinciBayezidDigerOlaylar,
+    Type = QuestionType.MultipleChoice,
+    Text = "1511'de Antalya'da İran destekli olarak çıkan isyan aşağıdakilerden hangisidir?",
+    Explanation = "Şahkulu İsyanı, 1511'de Antalya'da İran destekli Türkmenler tarafından çıkarılmıştır.",
+    OrderIndex = 44,
+    Choices =
+    {
+        new Choice { Text = "Şahkulu İsyanı", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Şeyh Bedrettin İsyanı", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Baba İshak İsyanı", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Celali İsyanları", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Düzmece Mustafa İsyanı", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 45 ---
+new Question
+{
+    Note = notIkinciBayezidDigerOlaylar,
+    Type = QuestionType.MultipleChoice,
+    Text = "II. Bayezid döneminde yaşanan olaylardan biri aşağıdakilerden hangisidir?",
+    Explanation = "Karamanoğulları'na tamamen son verilmesi, Şahkulu İsyanı ve Memlüklerle sonuçsuz savaş II. Bayezid dönemine aittir.",
+    OrderIndex = 45,
+    Choices =
+    {
+        new Choice { Text = "Karamanoğulları Beyliği'ne tamamen son verilmiştir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Memlüklerle 6 yıl süren sonuçsuz bir savaş yaşanmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Kemal Reis, Müslüman ve Yahudileri İstanbul'a getirmiştir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "İlk defa avarız vergisi toplanmıştır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "İstanbul fethedilmiştir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Kırım alınmıştır.", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 46 (ters soru) ---
+new Question
+{
+    Note = notIkinciBayezidDigerOlaylar,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "II. Bayezid dönemi ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "II. Bayezid, tahttan zorla indirilen ilk Osmanlı padişahıdır; bunu gerçekleştiren oğlu Yavuz Sultan Selim'dir; 'tahtından hiç indirilmemiştir' ifadesi yanlıştır.",
+    OrderIndex = 46,
+    Choices =
+    {
+        new Choice { Text = "Bu dönem, yükselme içinde bir duraklama dönemi olarak nitelendirilir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "1511'de Antalya'da Şahkulu İsyanı yaşanmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "İhtisap Kanunu bu dönemde çıkarılmıştır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Memlüklerle yapılan savaştan kesin bir sonuç alınamamıştır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "II. Bayezid, tahtından hiçbir zaman zorla indirilmemiştir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 47 ---
+new Question
+{
+    Note = notYavuzDoguSeferleriVeAtsb,
+    Type = QuestionType.MultipleChoice,
+    Text = "Yavuz Sultan Selim'in Dulkadiroğulları ile yaptığı ve ATSB'yi kesin olarak sağladığı savaş aşağıdakilerden hangisidir?",
+    Explanation = "1515'te yapılan Turnadağ Savaşı ile Dulkadiroğulları'na son verilmiş ve ATSB kesin olarak sağlanmıştır.",
+    OrderIndex = 47,
+    Choices =
+    {
+        new Choice { Text = "Turnadağ Savaşı", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Çaldıran Savaşı", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Mercidabık Savaşı", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Ridaniye Savaşı", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Otlukbeli Savaşı", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 48 ---
+new Question
+{
+    Note = notYavuzDoguSeferleriVeAtsb,
+    Type = QuestionType.MultipleChoice,
+    Text = "Yavuz Sultan Selim dönemiyle ilgili aşağıdakilerden hangisi doğrudur?",
+    Explanation = "Çaldıran Savaşı 1514'te Safevilerle yapılmış, İdris-i Bitlisi 25 bölgenin Osmanlı'ya bağlanmasında etkili olmuş, Bozoklu Celal 1519'da ilk Celali İsyanı'nı çıkarmıştır.",
+    OrderIndex = 48,
+    Choices =
+    {
+        new Choice { Text = "1514'te Safevilerle Çaldıran Savaşı yapılmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "İdris-i Bitlisi, 25 bölgenin Osmanlı idaresine bağlanmasında etkili olmuştur.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "1519'da Bozoklu Celal, ilk Celali İsyanı'nı çıkarmıştır.", IsCorrect = true, OrderIndex = 3 },
+
+        new Choice { Text = "Yavuz Sultan Selim öncelikle Batı'ya yönelik bir siyaset izlemiştir.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Çaldıran Savaşı Memlüklerle yapılmıştır.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 49 (ters soru) ---
+new Question
+{
+    Note = notYavuzDoguSeferleriVeAtsb,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Yavuz Sultan Selim'in doğu siyasetiyle ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Ramazanoğulları, Dulkadiroğulları'na son verildiğinde hemen ortadan kaldırılmamıştır; bey Osmanlı'ya bağlılığını bildirdiği için beyliğin yaşamasına değil beyin yaşamasına izin verilmiş, aile tükenince topraklar Osmanlı'ya katılmıştır.",
+    OrderIndex = 49,
+    Choices =
+    {
+        new Choice { Text = "Çaldıran Savaşı ile Şii tehlikesi bertaraf edilmiştir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Turnadağ Savaşı ile Dulkadiroğulları'na son verilmiştir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Bozoklu Celal İsyanı Tokat'ta çıkmıştır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Safeviler, Şahkulu İsyanı'na destek vermiştir.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Ramazanoğulları, Dulkadiroğulları'na son verilir verilmez hemen ortadan kaldırılmıştır.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 50 ---
+new Question
+{
+    Note = notYavuzMemluklerVeHilafet,
+    Type = QuestionType.MultipleChoice,
+    Text = "Memlük hükümdarı Kansu Gavri'nin öldüğü savaş aşağıdakilerden hangisidir?",
+    Explanation = "Kansu Gavri, 1516'daki Mercidabık Savaşı'nda ölmüştür.",
+    OrderIndex = 50,
+    Choices =
+    {
+        new Choice { Text = "Mercidabık Savaşı", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Ridaniye Savaşı", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Çaldıran Savaşı", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Turnadağ Savaşı", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Otlukbeli Savaşı", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 51 ---
+new Question
+{
+    Note = notYavuzMemluklerVeHilafet,
+    Type = QuestionType.MultipleChoice,
+    Text = "1517 Ridaniye Savaşı'nın sonuçlarından biri aşağıdakilerden hangisidir?",
+    Explanation = "Ridaniye Savaşı sonucunda Memlükler Devleti yıkılmış, halifelik Osmanlı Devleti'ne geçmiş ve baharat yolu Osmanlı'nın eline geçmiştir.",
+    OrderIndex = 51,
+    Choices =
+    {
+        new Choice { Text = "Memlükler Devleti yıkılmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Halifelik Osmanlı Devleti'ne geçmiştir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Baharat Yolu Osmanlı Devleti'nin eline geçmiştir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Kutsal emanetler İstanbul'a getirilmiştir.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Venedik, Kıbrıs için ödediği vergiyi kesmiştir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Safeviler Osmanlı'ya bağlanmıştır.", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 52 (ters soru) ---
+new Question
+{
+    Note = notYavuzMemluklerVeHilafet,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Yavuz'un Memlük seferleri ve hilafetin alınmasıyla ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Memlüklerde halife ile sultan ayrı kişilerdi; Yavuz Sultan Selim halifeliği kendi üzerine alarak bu ayrımı sona erdirmiştir. 'Halifelik ve sultanlık Osmanlı'da da ayrı kişilerde kalmıştır' ifadesi yanlıştır.",
+    OrderIndex = 52,
+    Choices =
+    {
+        new Choice { Text = "Mercidabık Savaşı ile Suriye ve Filistin Osmanlı'ya geçmiştir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Ridaniye Savaşı ile Memlükler Devleti yıkılmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Ridaniye Savaşı sürerken Avrupa'da Reform hareketi başlamıştır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Halife Mütevekkil, halifeliği Yavuz Sultan Selim'e devretmiştir.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Halifelik ve sultanlık Osmanlı Devleti'nde de ayrı kişilerde kalmaya devam etmiştir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 53 ---
+new Question
+{
+    Note = notYavuzUnvanVeVasiyet,
+    Type = QuestionType.MultipleChoice,
+    Text = "Yavuz Sultan Selim'e verilen ve Mekke-Medine'nin hizmetkârı anlamına gelen unvan aşağıdakilerden hangisidir?",
+    Explanation = "Hadimü'l-Haremeyn'iş-Şerifeyn, Mekke ve Medine'nin hizmetkârı anlamına gelir.",
+    OrderIndex = 53,
+    Choices =
+    {
+        new Choice { Text = "Hadimü'l-Haremeyn'iş-Şerifeyn", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Kayzer-i Rum", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Sultan-ı İklim-i Rum", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Ebu'l-Feth", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Muhibbi", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 54 (ters soru) ---
+new Question
+{
+    Note = notYavuzUnvanVeVasiyet,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Yavuz Sultan Selim'in unvanı ve vasiyetiyle ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Kanuni dahil hiçbir Osmanlı padişahı Yavuz kadar hazineyi dolduramamıştır; 'Kanuni onu geçmiştir' ifadesi yanlıştır.",
+    OrderIndex = 54,
+    Choices =
+    {
+        new Choice { Text = "Yavuz, 'Mekke ve Medine'nin sahibi' unvanını kabul etmemiştir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Yavuz, 1520'de şir-i pençe adı verilen bir hastalıktan vefat etmiştir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Yavuz'un vasiyetinde hazine dolu tutulması istenmiştir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Hadimü'l-Haremeyn unvanı hizmetkârlık anlamı taşır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Kanuni Sultan Süleyman, hazineyi Yavuz'dan daha fazla doldurmuştur.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 55 ---
+new Question
+{
+    Note = notKanuniKisiligiVeMisirIsyanlari,
+    Type = QuestionType.MultipleChoice,
+    Text = "Osmanlı tarihinin en uzun süre tahtta kalan padişahı aşağıdakilerden hangisidir?",
+    Explanation = "Kanuni Sultan Süleyman, 46 yıl tahtta kalarak Osmanlı tarihinin en uzun süre hükümdarlık yapan padişahıdır.",
+    OrderIndex = 55,
+    Choices =
+    {
+        new Choice { Text = "Kanuni Sultan Süleyman", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Fatih Sultan Mehmet", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "II. Abdülhamit", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yavuz Sultan Selim", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "III. Murat", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 56 ---
+new Question
+{
+    Note = notKanuniKisiligiVeMisirIsyanlari,
+    Type = QuestionType.MultipleChoice,
+    Text = "Kanuni Sultan Süleyman'ın kişiliğiyle ilgili aşağıdakilerden hangisi doğrudur?",
+    Explanation = "Kanuni, şiirlerinde Muhibbi mahlasını kullanmış; 'Kanuni' unvanını ona Rumen tarihçi Dimitri Kantemir vermiştir.",
+    OrderIndex = 56,
+    Choices =
+    {
+        new Choice { Text = "Şiirlerinde Muhibbi mahlasını kullanmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "'Kanuni' unvanını ona Dimitri Kantemir vermiştir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Tahtının ilk yıllarında Mısır'daki isyanlarla uğraşmıştır.", IsCorrect = true, OrderIndex = 3 },
+
+        new Choice { Text = "Şiirlerinde Avni mahlasını kullanmıştır.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "'Kanuni' unvanını kendisi istemiştir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 57 (ters soru) ---
+new Question
+{
+    Note = notKanuniKisiligiVeMisirIsyanlari,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Kanuni'nin tahtının ilk yıllarındaki isyanlarla ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Canberdi Gazali ve Ahmet Paşa isyanları Mısır'da; Baba Zünnun ve Kalender Çelebi isyanları ise farklı bölgelerde çıkmıştır; her ikisi de Kanuni'nin tahtının ilk yıllarına aittir.",
+    OrderIndex = 57,
+    Choices =
+    {
+        new Choice { Text = "Canberdi Gazali isyanı Mısır'da çıkmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Kalender Çelebi isyanı Kanuni döneminde bastırılmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Kanuni, 46 yıl tahtta kalmıştır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Kanuni'nin ünlü sözü Muhibbi imzasıyla yazılmıştır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Bu isyanlar Kanuni'nin saltanatının son yıllarında çıkmıştır.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 58 ---
+new Question
+{
+    Note = notKanuniAvrupaFetihleri,
+    Type = QuestionType.MultipleChoice,
+    Text = "Fatih Sultan Mehmet'in kuşatıp alamadığı, Kanuni Sultan Süleyman'ın ise fethettiği iki yer aşağıdakilerden hangileridir?",
+    Explanation = "Fatih'in kuşatıp alamadığı Belgrad ve Rodos, Kanuni tarafından fethedilmiştir.",
+    OrderIndex = 58,
+    Choices =
+    {
+        new Choice { Text = "Belgrad", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Rodos", IsCorrect = true, OrderIndex = 2 },
+
+        new Choice { Text = "Viyana", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Malta", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "İstanbul", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 59 ---
+new Question
+{
+    Note = notKanuniAvrupaFetihleri,
+    Type = QuestionType.MultipleChoice,
+    Text = "Dünyanın en kısa süren ova savaşı olarak bilinen ve Turan taktiğinin uygulandığı savaş aşağıdakilerden hangisidir?",
+    Explanation = "Mohaç Meydan Muharebesi, Turan taktiğiyle yaklaşık 2 saat içinde kazanılmış ve dünyanın en kısa süren ova savaşı olarak bilinir.",
+    OrderIndex = 59,
+    Choices =
+    {
+        new Choice { Text = "Mohaç Meydan Muharebesi", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Malazgirt Savaşı", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Otlukbeli Savaşı", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Preveze Deniz Savaşı", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Çaldıran Savaşı", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 60 (ters soru) ---
+new Question
+{
+    Note = notKanuniAvrupaFetihleri,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Kanuni'nin Avrupa fetihleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Viyana, 1529'da kuşatılmış ancak alınamamıştır; 'Viyana bu kuşatmada fethedilmiştir' ifadesi yanlıştır.",
+    OrderIndex = 60,
+    Choices =
+    {
+        new Choice { Text = "Belgrad 1521'de alınmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Rodos 1522'de Sen Jean Şövalyelerinden alınmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Mohaç Meydan Muharebesi 1526'da kazanılmıştır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "1071 Malazgirt, 1526 Mohaç ve 1922 Büyük Taarruz'da Turan taktiği uygulanmıştır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Viyana, 1529'daki kuşatmada fethedilmiştir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 61 ---
+new Question
+{
+    Note = notKanuniIstanbulAntlasmasi,
+    Type = QuestionType.MultipleChoice,
+    Text = "1533 İstanbul Antlaşması'nın en önemli özelliği aşağıdakilerden hangisidir?",
+    Explanation = "İstanbul Antlaşması ile Avusturya Kralı Ferdinand, protokolde Osmanlı sadrazamına denk sayılmıştır.",
+    OrderIndex = 61,
+    Choices =
+    {
+        new Choice { Text = "Avusturya Kralı Ferdinand, Osmanlı sadrazamına denk sayılmıştır.", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Fransa'ya ilk kapitülasyon verilmiştir.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Kıbrıs Venedik'ten alınmıştır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Malta fethedilmiştir.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Belgrad Fatih tarafından fethedilmiştir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 62 ---
+new Question
+{
+    Note = notKanuniIstanbulAntlasmasi,
+    Type = QuestionType.MultipleChoice,
+    Text = "1532 Alman Seferi ile ilgili aşağıdakilerden hangisi doğrudur?",
+    Explanation = "Şarlken Osmanlı ordusunun karşısına çıkamamış; seferin amaçlarından biri Fransa Kralı I. François'yı Şarlken'in elinden kurtarmaktı.",
+    OrderIndex = 62,
+    Choices =
+    {
+        new Choice { Text = "Şarlken, Osmanlı ordusunun karşısına çıkamamıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Amaçlardan biri I. François'yı esaretten kurtarmaktı.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Bu sefer sonucunda Avusturya'ya doğru yönelinmiştir.", IsCorrect = true, OrderIndex = 3 },
+
+        new Choice { Text = "Bu sefer sonucunda Belgrad alınmıştır.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Bu sefer Mısır'a yönelik yapılmıştır.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 63 (ters soru) ---
+new Question
+{
+    Note = notKanuniIstanbulAntlasmasi,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "İstanbul Antlaşması ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "İstanbul Antlaşması sonrasında sağlanan Orta Avrupa'daki siyasi üstünlük 1606 Zitvatorok Antlaşması'na kadar sürmüştür; 'hiçbir zaman sona ermemiştir' ifadesi yanlıştır.",
+    OrderIndex = 63,
+    Choices =
+    {
+        new Choice { Text = "Antlaşma diğer adıyla İbrahim Paşa Antlaşması olarak da bilinir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Bu durum Orta Avrupa'nın siyasi üstünlüğünü Osmanlı'ya kazandırmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Osmanlı-Fransa dostluğunun temelleri bu dönemde atılmıştır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Fransızca, Osmanlı'nın ilk yabancı resmi dili olmuştur.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "İstanbul Antlaşması'nın sağladığı siyasi üstünlük hiçbir zaman sona ermemiştir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 64 ---
+new Question
+{
+    Note = notBarbarosVeAkdeniz,
+    Type = QuestionType.MultipleChoice,
+    Text = "Preveze Deniz Savaşı'nda Barbaros Hayreddin Paşa'nın yendiği Haçlı donanması komutanı aşağıdakilerden hangisidir?",
+    Explanation = "Andrea Doria, Preveze Deniz Savaşı'nda yenilen Haçlı donanması komutanıdır.",
+    OrderIndex = 64,
+    Choices =
+    {
+        new Choice { Text = "Andrea Doria", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Şarlken", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Ferdinand", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Hünyadi Yanoş", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "I. François", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 65 ---
+new Question
+{
+    Note = notBarbarosVeAkdeniz,
+    Type = QuestionType.MultipleChoice,
+    Text = "Preveze Deniz Savaşı'nın en önemli sonucu aşağıdakilerden hangisidir?",
+    Explanation = "Preveze Deniz Savaşı'nın en önemli sonucu, Akdeniz'in bir Türk gölü haline gelmesidir.",
+    OrderIndex = 65,
+    Choices =
+    {
+        new Choice { Text = "Akdeniz bir Türk gölü haline gelmiştir.", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Karadeniz bir Türk gölü haline gelmiştir.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Kıbrıs Venedik'ten alınmıştır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Malta fethedilmiştir.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Belgrad fethedilmiştir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 66 (ters soru) ---
+new Question
+{
+    Note = notBarbarosVeAkdeniz,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Barbaros Hayreddin Paşa ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Karadeniz'in Türk gölü olması Fatih dönemine (Kırım'ın alınması) aittir; Barbaros'un ilgili olduğu Preveze zaferi ise Akdeniz'i Türk gölü yapmıştır.",
+    OrderIndex = 66,
+    Choices =
+    {
+        new Choice { Text = "1538'de Cezayir'i Osmanlı Devleti'ne katmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Kaptan-ı deryalık görevine getirilmiştir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Kanuni döneminden itibaren divana üye olan ilk denizcidir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Preveze zaferi Donanma Günü olarak kutlanır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Barbaros, Karadeniz'i bir Türk gölü haline getirmiştir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 67 ---
+new Question
+{
+    Note = notKanuniHintDenizSeferleri,
+    Type = QuestionType.MultipleChoice,
+    Text = "Hint deniz seferlerinin yardım istediği Müslüman sultanlık aşağıdakilerden hangisidir?",
+    Explanation = "Gücerat Sultanlığı, Portekizlilere karşı Osmanlı'dan yardım istemiştir.",
+    OrderIndex = 67,
+    Choices =
+    {
+        new Choice { Text = "Gücerat Sultanlığı", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Memlükler Devleti", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Safeviler", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Babür Devleti", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Akkoyunlular", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 68 ---
+new Question
+{
+    Note = notKanuniHintDenizSeferleri,
+    Type = QuestionType.MultipleChoice,
+    Text = "Hint deniz seferlerinin başarısız olmasının nedenlerinden biri aşağıdakilerden hangisidir?",
+    Explanation = "Okyanus şartlarına dayanıklı gemilerin olmaması, denizcilerin bölgeyi bilmemesi ve Gücerat Sultanlığı'nın destek vermemesi bu seferlerin başarısızlığının nedenleridir.",
+    OrderIndex = 68,
+    Choices =
+    {
+        new Choice { Text = "Osmanlı donanmasının okyanus şartlarına dayanıklı olmaması", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Osmanlı denizcilerinin bölgeyi yeterince bilmemesi", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Gücerat Sultanlığı'nın beklenen desteği vermemesi", IsCorrect = true, OrderIndex = 3 },
+
+        new Choice { Text = "Portekizlilerin bölgeden tamamen çekilmiş olması", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Osmanlı donanmasının Akdeniz'de yenilmiş olması", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 69 (ters soru) ---
+new Question
+{
+    Note = notKanuniHintDenizSeferleri,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Hint deniz seferleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Seydi Ali Reis, Kitabü'l-Muhit'i Piri Reis'in idamından sonra bölgede kaybolmamak amacıyla yazmıştır; bu eseri yazan kişi Piri Reis değildir.",
+    OrderIndex = 69,
+    Choices =
+    {
+        new Choice { Text = "Seferler 1538-1553 yılları arasında dört kez düzenlenmiştir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Gücerat Sultanlığı sonradan Portekizlilerden yana tavır almıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Piri Reis, bu seferler sonrasında idam edilmiştir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Kitabü'l-Muhit, bölgede kaybolmamak amacıyla yazılmıştır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Kitabü'l-Muhit'i Piri Reis yazmıştır.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 70 ---
+new Question
+{
+    Note = notKanuniDigerFetihlerVeZigetvar,
+    Type = QuestionType.MultipleChoice,
+    Text = "Kanuni Sultan Süleyman'ın vefat ettiği son seferi aşağıdakilerden hangisidir?",
+    Explanation = "Kanuni, Zigetvar Seferi sırasında vefat etmiştir.",
+    OrderIndex = 70,
+    Choices =
+    {
+        new Choice { Text = "Zigetvar Seferi", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Mohaç Seferi", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Rodos Seferi", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Alman Seferi", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Malta Seferi", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 71 ---
+new Question
+{
+    Note = notKanuniDigerFetihlerVeZigetvar,
+    Type = QuestionType.MultipleChoice,
+    Text = "Kanuni Sultan Süleyman döneminde gerçekleşen gelişmelerden biri aşağıdakilerden hangisidir?",
+    Explanation = "1541'de Macaristan alınmış, 1551'de Trablusgarp fethedilmiş, 1555'te İran ile Amasya Antlaşması imzalanmıştır.",
+    OrderIndex = 71,
+    Choices =
+    {
+        new Choice { Text = "1541'de Macaristan'ın büyük bölümü alınmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "1551'de Trablusgarp alınmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "1555'te İran ile Amasya Antlaşması imzalanmıştır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "1560'ta Cerbe Deniz Savaşı kazanılmıştır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "1565'te Malta tamamen fethedilmiştir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "1590'da Ferhat Paşa Antlaşması imzalanmıştır.", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 72 (ters soru) ---
+new Question
+{
+    Note = notKanuniDigerFetihlerVeZigetvar,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Kanuni'nin diğer fetihleri ve Zigetvar seferiyle ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Malta hiçbir zaman fethedilememiştir, yalnızca kuşatılmıştır; 'Malta 1565'te fethedilmiştir' ifadesi yanlıştır.",
+    OrderIndex = 72,
+    Choices =
+    {
+        new Choice { Text = "Turgut Reis, Trablusgarp Beylerbeyi olarak atanmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Cerbe Deniz Savaşı'nı Piyale Paşa kazanmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Kanuni'nin ölümü ordunun dağılmaması için gizlenmiştir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Turgut Reis, Malta Kuşatması sırasında şehit olmuştur.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Malta, 1565'teki kuşatmada fethedilmiştir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 73 ---
+new Question
+{
+    Note = notKapitulasyonAmaclari,
+    Type = QuestionType.MultipleChoice,
+    Text = "1569'da Kanuni Sultan Süleyman döneminde gerçek anlamda kapsamlı kapitülasyonlar hangi devlete verilmiştir?",
+    Explanation = "1569'da Fransa'ya, diğer devletlere verilenden çok daha geniş kapsamlı kapitülasyonlar verilmiştir.",
+    OrderIndex = 73,
+    Choices =
+    {
+        new Choice { Text = "Fransa", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Venedik", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Ceneviz", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "İngiltere", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Avusturya", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 74 ---
+new Question
+{
+    Note = notKapitulasyonAmaclari,
+    Type = QuestionType.MultipleChoice,
+    Text = "Kapitülasyonların verilme amaçlarından biri aşağıdakilerden hangisidir?",
+    Explanation = "Kapitülasyonlar hazineye gelir sağlamak, batılı devletleri müttefik edinmek ve Haçlı ittifakını parçalamak amacıyla verilmiştir.",
+    OrderIndex = 74,
+    Choices =
+    {
+        new Choice { Text = "Hazineye gelir sağlamak", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Batılı devletleri müttefik edinmek", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Haçlı ittifakını parçalamak", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Ticari faaliyetleri geliştirmek", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Batılı devletlerin Osmanlı topraklarını işgal etmesini teşvik etmek", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Osmanlı ordusunu batılı devletlere bağlamak", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 75 (ters soru) ---
+new Question
+{
+    Note = notKapitulasyonAmaclari,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Kapitülasyonlarla ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Fransa'ya verilen kapitülasyonlar Venedik'e verilenlerden çok daha geniş kapsamlıdır (eğitim, din, hukuk, ekonomi gibi birçok alanı kapsar); 'ikisi aynı kapsamdadır' ifadesi yanlıştır.",
+    OrderIndex = 75,
+    Choices =
+    {
+        new Choice { Text = "1535'te I. François ile Ahdname-i Hümayun imzalanmıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Fransızlara konsolosluk mahkemeleri kurma hakkı verilmiştir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Kapitülasyonlar hazineye gelir sağlamıştır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "1569'daki kapitülasyon Fransa'ya verilmiştir.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Fransa'ya ve Venedik'e verilen kapitülasyonlar aynı kapsamdadır.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 76 ---
+new Question
+{
+    Note = notSokulluSelimDonemiInebahti,
+    Type = QuestionType.MultipleChoice,
+    Text = "Ordunun başında sefere çıkma geleneğini terk eden ilk Osmanlı padişahı aşağıdakilerden hangisidir?",
+    Explanation = "II. Selim (Sarı Selim), ordunun başında sefere çıkma geleneğini terk eden ilk Osmanlı padişahıdır.",
+    OrderIndex = 76,
+    Choices =
+    {
+        new Choice { Text = "II. Selim", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "III. Murat", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Kanuni Sultan Süleyman", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "II. Bayezid", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Yavuz Sultan Selim", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 77 ---
+new Question
+{
+    Note = notSokulluSelimDonemiInebahti,
+    Type = QuestionType.MultipleChoice,
+    Text = "Osmanlı donanmasının tarih boyunca yakıldığı savaşlardan biri aşağıdakilerden hangisidir?",
+    Explanation = "İnebahtı (1571), Çeşme (1770), Navarin (1827) ve Sinop (1853) savaşlarında Osmanlı donanması yakılmıştır.",
+    OrderIndex = 77,
+    Choices =
+    {
+        new Choice { Text = "İnebahtı", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Çeşme", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Navarin", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Sinop", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Preveze", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Mohaç", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 78 (ters soru) ---
+new Question
+{
+    Note = notSokulluSelimDonemiInebahti,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "II. Selim dönemi ve İnebahtı olayıyla ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "İnebahtı'da donanma yakılmasına rağmen Kıbrıs Osmanlı'nın elinde kalmıştır; 'Kıbrıs bu savaştan sonra Venedik'e geri verildi' ifadesi yanlıştır.",
+    OrderIndex = 78,
+    Choices =
+    {
+        new Choice { Text = "II. Selim, İstanbul'da doğup İstanbul'da ölmüştür.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Kıbrıs, 1571'de Venedik'in elinden alınmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Sokullu Mehmet Paşa, Venedik elçisine 'kesilen sakal daha gür çıkar' demiştir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "İnebahtı'da Haçlı donanması Osmanlı donanmasını yakmıştır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Kıbrıs, İnebahtı Savaşı'ndan sonra Venedik'e geri verilmiştir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 79 ---
+new Question
+{
+    Note = notSokulluMuratDonemiFerhatPasa,
+    Type = QuestionType.MultipleChoice,
+    Text = "1590'da İran ile imzalanan ve Osmanlı'yı doğuda en geniş sınırlarına ulaştıran antlaşma aşağıdakilerden hangisidir?",
+    Explanation = "Ferhat Paşa Antlaşması ile Osmanlı Devleti Tebriz, Revan ve Bağdat'ı alarak doğuda en geniş sınırlarına ulaşmıştır.",
+    OrderIndex = 79,
+    Choices =
+    {
+        new Choice { Text = "Ferhat Paşa Antlaşması", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Amasya Antlaşması", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "İstanbul Antlaşması", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Zitvatorok Antlaşması", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Kasr-ı Şirin Antlaşması", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 80 ---
+new Question
+{
+    Note = notSokulluMuratDonemiFerhatPasa,
+    Type = QuestionType.MultipleChoice,
+    Text = "III. Murat dönemiyle ilgili aşağıdakilerden hangisi doğrudur?",
+    Explanation = "1576'da Fas Osmanlı egemenliğine girmiş; Meşaleler Savaşı (Beştepe Savaşı) İran ile yapılmış; Ferhat Paşa Antlaşması yükselme döneminin sonunda değerlendirilir.",
+    OrderIndex = 80,
+    Choices =
+    {
+        new Choice { Text = "1576'da Fas, Osmanlı egemenliğine girmiştir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Meşaleler Savaşı (Beştepe Savaşı) İran ile yapılmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Ferhat Paşa Antlaşması yükselme döneminin sonunda değerlendirilir.", IsCorrect = true, OrderIndex = 3 },
+
+        new Choice { Text = "Ferhat Paşa Antlaşması duraklama döneminde imzalanmıştır.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "III. Murat, sefere çıkma geleneğini terk eden ilk padişahtır.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 81 (ters soru) ---
+new Question
+{
+    Note = notSokulluMuratDonemiFerhatPasa,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "III. Murat dönemi ve Ferhat Paşa Antlaşması ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Yükselme döneminin bitiş tarihi güncel yaklaşımda III. Murat'ın ölümü (1595) olarak kabul edilir, Sokullu'nun ölümü (1579) değil; bu nedenle Ferhat Paşa Antlaşması (1590) yükselme dönemine dahildir.",
+    OrderIndex = 81,
+    Choices =
+    {
+        new Choice { Text = "Meşaleler Savaşı, gece meşale ışığında devam ettiği için bu adı almıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Ferhat Paşa Antlaşması ile Tebriz, Revan ve Bağdat alınmıştır.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "1576'da Fas Osmanlı egemenliğine girmiştir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Güncel yaklaşımda yükselme dönemi III. Murat'ın ölümüyle (1595) sona erer.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Yükselme döneminin bitişi güncel yaklaşımda hâlâ Sokullu'nun ölüm tarihi (1579) olarak kabul edilir.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 82 ---
+new Question
+{
+    Note = notSokulluDonVolgaProjesi,
+    Type = QuestionType.MultipleChoice,
+    Text = "Sokullu Mehmet Paşa'nın Don-Volga Kanalı projesinin amaçlarından biri aşağıdakilerden hangisidir?",
+    Explanation = "Bu projenin amaçları Kırım'ı Ruslara karşı korumak, Orta Asya Türkleriyle bağlantı kurmak ve İran'ı kuzeyden kontrol etmektir.",
+    OrderIndex = 82,
+    Choices =
+    {
+        new Choice { Text = "Kırım'ı Ruslara karşı korumak", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Orta Asya Türkleriyle bağlantı kurmak", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "İran'ı kuzeyden kontrol etmek", IsCorrect = true, OrderIndex = 3 },
+
+        new Choice { Text = "Baharat Yolu'na işlerlik kazandırmak", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "İstanbul trafiğini rahatlatmak", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 83 (ters soru) ---
+new Question
+{
+    Note = notSokulluDonVolgaProjesi,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Don-Volga projesiyle ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Bu kanalı Osmanlı Devleti değil, 1956'da Rusya açmıştır; 'Osmanlı Devleti tarafından başarıyla tamamlanmıştır' ifadesi yanlıştır.",
+    OrderIndex = 83,
+    Choices =
+    {
+        new Choice { Text = "Projenin uygulanması Mimar Sinan'a verilmiştir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Mimar Sinan'ın vefatı projenin tamamlanamamasında etkili olmuştur.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Kırım Hanlığı'nın isteksizliği projeyi olumsuz etkilemiştir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Rus saldırıları projenin tamamlanmasını engellemiştir.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Don-Volga Kanalı, Osmanlı Devleti tarafından başarıyla tamamlanmıştır.", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 84 ---
+new Question
+{
+    Note = notSokulluSuveysVeKanalProjeleri,
+    Type = QuestionType.MultipleChoice,
+    Text = "Sokullu Mehmet Paşa'nın Süveyş Kanalı projesinin amacı aşağıdakilerden hangisidir?",
+    Explanation = "Süveyş Kanalı projesinin amacı Kızıldeniz ile Akdeniz'i birleştirerek Baharat Yolu'na işlerlik kazandırmaktı.",
+    OrderIndex = 84,
+    Choices =
+    {
+        new Choice { Text = "Kızıldeniz ile Akdeniz'i birleştirmek", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Osmanlı'yı Hindistan'a kısa yoldan ulaştırmak", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Baharat Yolu'na işlerlik kazandırmak", IsCorrect = true, OrderIndex = 3 },
+
+        new Choice { Text = "Kırım'ı Ruslara karşı korumak", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "İstanbul trafiğini rahatlatmak", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 85 (ters soru) ---
+new Question
+{
+    Note = notSokulluSuveysVeKanalProjeleri,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Sokullu'nun Süveyş ve Marmara-Karadeniz projeleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Süveyş Kanalı, Osmanlı Devleti tarafından değil 1869'da İngiltere ve Fransa şirketleri tarafından açılmıştır; 'Osmanlı Devleti tarafından açılmıştır' ifadesi yanlıştır.",
+    OrderIndex = 85,
+    Choices =
+    {
+        new Choice { Text = "Marmara-Karadeniz projesi günümüzdeki Kanal İstanbul projesine benzetilir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Marmara-Karadeniz projesinin amacı tersanelerin kereste ihtiyacını karşılamaktı.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Süveyş projesi Ümit Burnu'nun keşfiyle önemini yitiren Baharat Yolu'nu canlandırmayı amaçlıyordu.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Süveyş ve Don-Volga projeleri farklı coğrafyalarda planlanmıştır.", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Süveyş Kanalı, Osmanlı Devleti tarafından 1869'da açılmıştır.", IsCorrect = false, OrderIndex = 5 },
+    }
+},

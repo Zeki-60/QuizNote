@@ -1,0 +1,2230 @@
+BÖLÜM 1 — Not isimleri
+
+notHukumdarDegisim, notCihanHakimiyeti, notHukumdarSembolleri, notHukumdarUnvanlari, notSarayGorevlileri, notHacip, notDivanSaltanat, notDivaniIstifaArz, notDivaniIsrafInsaBerit, notNiyabetSaltanat, notDivaniMezalim, notDiniAskeriGorevliler, notHukukSistemi, notHukukAlanlari, notTopragYonetimi, notIktaSistemi, notIktaFaydalari, notCebeluSipahi, notSosyalHayatKurumlari, notKumbeTturbeKulliye, notGulamSistemi, notHastaOrdusu, notMedreseler, notNizamiyeMedreseleri, notNizamiyeAcilmaNedenleri, notMedreseUnvanlari, notMimariCesitleri, notKarahanliGazneliEserleri, notBuyukSelcukluEserleri, notHatSanati, notMinyatur, notTezhipVeDigerSanatlar, notSanatEtkisi, notFarabi, notGazali, notBiruni, notIbnSina, notCabirRaziIbnRust, notHarezmiVeDigerleri, notKutadguBilig, notDivanuLugatitTurk, notAtabetulHakayikVeAhmetYesevi, notFirdevsiVeAliSirNevai, notNizamulmulkVeOmerHayyam
+
+BÖLÜM 2 — Notlar
+
+// --- Notlar: "İlk Türk İslam Devletleri Kültür ve Medeniyeti" başlığının ilgili bölümleri ---
+
+var notHukumdarDegisim = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Hükümdarlık Anlayışında Süreklilik ve Değişim",
+    Body = """
+           İlk Müslüman Türk devletlerinin kültür ve medeniyeti incelenirken esas alınan devlet Büyük Selçuklu Devleti'dir; sorular genellikle bu devletin kültür ve medeniyetinden gelir. Bazı kavramlar Karahanlı veya Gazneli Devleti'nde daha belirgin bulunuyorsa o devlete bağlanır.
+
+           İslamiyet öncesindeki Kut anlayışı, Müslümanlıkla birlikte devam etmiştir; kut, gök tanrının hükümdara ve ailesine devlet yönetme yetkisi verdiğine olan inançtır. İslamiyet'in kabulünden sonra bu anlayış, devlet yönetme yetkisinin Allah'ın nasibi ve takdirine dönüştüğü şeklinde yeniden yorumlanmıştır.
+
+           Kut anlayışının sürmesi, kardeşler arasında taht kavgalarına yol açmaya devam etmiş; bu da devletlerin kısa ömürlü olmasına veya merkezi otoritenin bozulmasına neden olmuştur.
+
+           Hükümdarın görevleri (aç doyurmak, çıplağı giydirmek, ülkenin bağımsızlığını korumak) değişmemiştir. Eski kurultayın yerini divan almış, hükümdar divana başkanlık etmeye devam etmiştir.
+
+           **Burası karıştırılabilir:** Kut anlayışı ortadan kalkmamış, İslami bir içerik kazanarak (Allah'ın nasibi ve takdiri) devam etmiştir.
+           """
+};
+
+var notCihanHakimiyeti = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Türk Cihan Hakimiyeti'nin İslami Karşılığı",
+    Body = """
+           İslamiyet öncesindeki Türk Cihan Hakimiyeti anlayışı (tüm dünyaya hükmetme amacıyla yapılan fetih hareketleri), İslamiyet'in kabulüyle birlikte cihat, gaza ve "ilahi kelimatullah" (Allah'ın adını her yerde yüceltmek) kavramlarına dönüşmüştür.
+
+           Gayrimüslimlere karşı yapılan cihat, Allah'ın adını her yerde yaymak amacını taşımıştır. Böylece İslam öncesi cihan hakimiyeti anlayışının yerini ilahi kelimatullah almıştır.
+
+           **Bu konudan sıkça soru gelmektedir.** İlahi kelimatullah kavramının Türk Cihan Hakimiyeti anlayışının İslami bir devamı olduğu unutulmamalıdır.
+           """
+};
+
+var notHukumdarSembolleri = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Hükümdarlık Sembol ve Unvanları",
+    Body = """
+           İslamiyet'in kabulüyle birlikte hükümdarlık sembollerine yeni unsurlar eklenmiştir:
+
+           - **Çetr:** Saltanat şemsiyesi. Üzerine Fetih suresi işlenir, hükümdarı savaş sırasında korur ve manevi anlam taşır. Şemsiyenin düşmesi, hükümdarın veya yakınındaki komutanın vurulduğunun işareti sayılırdı.
+           - **Hilat:** Abbasi halifesinin gönderdiği kemer, külah, at, para, ziynet gibi hediyelerin tümüne verilen isim.
+           - **Tıraz:** Halifenin ve sultanın adının işlendiği, hükümdara gönderilen özel işlemeli elbise.
+           - **Hutbe:** Cuma namazlarında halifeyle birlikte hükümdarın adının okutulup dua edilmesi.
+           - **Menşur:** Abbasi halifesinin, kurulan bir İslam devletine verdiği onay belgesi.
+
+           Bunların hepsi İslamiyet'le birlikte ortaya çıkmış sembollerdir; İslamiyet öncesinde bulunmazlar.
+
+           İslamiyet öncesinden devam eden semboller arasında kılıç, yay, tuğ, nevbet (davul) ve otağ (çadır) sayılabilir.
+
+           **Burası karıştırılabilir:** Çetr, hilat, tıraz, hutbe ve menşur İslamiyet öncesi hükümdarlık sembolleri arasında sayılmaz; bunlar İslam'la gelen yeniliklerdir.
+           """
+};
+
+var notHukumdarUnvanlari = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Hükümdar Unvanları",
+    Body = """
+           Müslüman olduktan sonra Han ve Hakan unvanları kullanılmaya devam edilmiş, ancak Çinceden geçtiği düşünülen Kaan unvanı terk edilmiştir.
+
+           Kullanılan diğer unvanlar arasında Sultan, Padişah, Tonga, İlik Han, Kara Han (Karahanlılar'a özgü), Erkin, Bey, Tamgaç, Buğra Han, Terken, Sultan-ı Azam (büyük sultan), Melik, Emir, Şah, Kadır ve Arslan Han sayılabilir.
+
+           **Burası karıştırılabilir:** Kaan unvanı İslamiyet'in kabulünden sonra artık kullanılmamıştır; Han ve Hakan unvanları ise kullanılmaya devam etmiştir.
+           """
+};
+
+var notSarayGorevlileri = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Saraydaki Özel Görevliler",
+    Body = """
+           Sarayda hükümdarın çevresinde görev yapan özel kişiler bulunurdu:
+
+           - **Alemdar:** Devletin bayraklarından sorumlu görevli.
+           - **Çaşnigir:** Hükümdarın yemeklerini kontrol eden görevli (zehirlenme ihtimaline karşı).
+           - **Emir-i Ahur:** Hükümdarın atlarından sorumlu görevli.
+           - **Taşt-dar (Abdar):** Hükümdarın temizlik işlerinden sorumlu görevli.
+           - **Camedar:** Hükümdarın kıyafetleriyle ilgilenen görevli.
+           - **Candar:** Hükümdarın özel muhafızı, yakın korumasıdır.
+           - **Hares Emiri:** Hükümdara karşı suç işleyenleri cezalandıran görevli.
+           - **Serhenk:** Hükümdarın yolculuk güzergahıyla ilgilenen görevli.
+           - **Vekil-i Has:** Sarayın tüm işleriyle ilgilenen görevli.
+           - **Emir-i Şikar:** Hükümdarın av partilerini tertip eden görevli.
+           - **Şarabdar:** Hükümdarın içecekleriyle ilgilenen görevli.
+           - **Hansalar:** Hükümdarın sofra düzeniyle ilgilenen görevli.
+           - **Aşçıbaşı (Şaşi):** Padişahın yiyecekleriyle ilgilenen görevli.
+
+           **Burası karıştırılabilir:** "-dar" eki sona geldiğinde "yapan, eden" anlamı taşır (candar, alemdar gibi); "dar" kelimenin başına geldiğinde ise kurum/yapı anlamı taşır (darüşşifa, darülfünun gibi).
+           """
+};
+
+var notHacip = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Hacip",
+    Body = """
+           Hacip, hükümdar ve vezirden sonra protokolde üçüncü sırada yer alan yetkilidir. Sarayda birden fazla hacip bulunur; hepsi şeri ve örfi hukuka hakim olmak zorundadır.
+
+           Hacibin görevleri:
+           - Hükümdar ile halk arasındaki ilişkiyi düzenlemek.
+           - Elçileri kabul etmek.
+           - Uygun gördüğü kişileri Divan-ı Mezalim'e (sultanın huzuruna) çıkarmak.
+
+           Haciplerin başındaki kişiye Has Hacip, Hacibü'l-Hüccab veya Ulu Hacip denir; Gaznelilerde bu kişiye Hacib-i Bozork denir. Balasagunlu Yusuf, Kutadgu Bilig'i sunduktan sonra Has Haciplik görevine yükseltilmiştir.
+
+           **Bu konudan sıkça soru gelmektedir.** Hacip'in sultanın huzuruna çıkmaya izin vermesi zorunlu bir adımdır; hacip izin vermezse kişi divana çıkamaz.
+           """
+};
+
+var notDivanSaltanat = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Divan-ı Saltanat",
+    Body = """
+           İslam öncesindeki kurultayın yerini divan almıştır. Divan-ı Saltanat, merkezi otoritenin (Hakan/Sultan) bulunduğu büyük divandır ve bu ismin farklı devletlerde farklı karşılıkları vardır:
+
+           - Karahanlılarda: Meclis-i Ali (Ali burada "büyük" anlamındadır).
+           - Gaznelilerde: Divan-ı Vezaret (mali ve genel işlerden sorumludur).
+           - Büyük Selçuklu Devleti'nde: Divan-ı Saltanat.
+
+           Divan-ı Saltanat günümüzdeki Bakanlar Kurulu'na tekabül eder. Bu divana bağlı alt divanlar bulunur.
+
+           **Burası karıştırılabilir:** Divan-ı Saltanat'ın adı devletten devlete değişir; Karahanlılarda Meclis-i Ali, Gaznelilerde Divan-ı Vezaret olarak geçer.
+           """
+};
+
+var notDivaniIstifaArz = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Divan-ı İstifa ve Divan-ı Arz",
+    Body = """
+           Divan-ı Saltanat'a bağlı alt divanlardan ikisi:
+
+           - **Divan-ı İstifa:** "İstif etmek" biriktirmek demektir; bu divan ekonomi ve mali işlerle ilgilenir. Başındaki görevliye müstevfi denir.
+           - **Divan-ı Arz:** "Arz etmek" bir durumu bildirmek anlamına gelir ve en çok askeriyede kullanılır; bu divan ordu işleriyle ilgilenir. Başındaki görevliye emir-i arz denir.
+
+           **Burası karıştırılabilir:** Divan-ı İstifa ekonomiyle, Divan-ı Arz ise ordu işleriyle ilgilenir; isimler kelime köküyle bağlantılı olarak (istif=biriktirme, arz=bildirme) ayırt edilmelidir.
+           """
+};
+
+var notDivaniIsrafInsaBerit = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Divan-ı İşraf, Divan-ı İnşa ve Divan-ı Berid",
+    Body = """
+           Divan-ı Saltanat'a bağlı diğer divanlar:
+
+           - **Divan-ı İşraf:** Askeri ve hukuk dışındaki tüm devlet işlerini denetleyen kurumdur (günümüzdeki Sayıştay'a benzetilebilir). Başındaki görevliye müşrif-i memalik denir.
+           - **Divan-ı İnşa (eski adıyla Divan-ı Tuğra):** Devletin iç ve dış yazışma işlerinden sorumlu divandır. Başında Tuğrai bulunur.
+           - **Divan-ı Berid:** Adında "divan" geçmesine rağmen aslında bir divan değildir; posta ve haberleşme işlerinden sorumludur. Başındaki görevliye Berid denir.
+
+           **Burası karıştırılabilir:** Divan-ı Berid ismine rağmen alt divanlardan biri sayılmaz; sadece isim benzerliği taşır.
+           """
+};
+
+var notNiyabetSaltanat = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Niyabet-i Saltanat",
+    Body = """
+           Niyabet-i Saltanat, hükümdarın (sultanın) yokluğunda görev yapan divandır; sultan olmadığı zamanlarda toplanmıştır. Başında naip bulunur; naip "yardımcı, bir kişinin yerine bakan" anlamına gelir.
+
+           **Buraya dikkat:** Niyabet-i Saltanat, sultanın savaşta ölmesi, esir düşmesi veya kaçması gibi olağanüstü durumlarda devletin işleyişini sürdürmek için kurulmuştur.
+           """
+};
+
+var notDivaniMezalim = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Divan-ı Mezalim",
+    Body = """
+           Divan-ı Mezalim, zulme veya haksızlığa uğradığını düşünen kişilerin başvurduğu, başkanlığını bizzat sultanın yaptığı divandır. Kişi önce hacibe başvurur; hacip uygun görürse kişiyi sultanın huzuruna (divana) çıkarır.
+
+           Divan-ı Mezalim'in görevleri:
+           - Kadı kararlarına yapılan itirazları değerlendirmek ve sonuçlandırmak.
+           - Devlet memurları hakkındaki şikayetleri incelemek.
+           - Katipleri aracılığıyla vakıfları denetlemek.
+           - Muhtesibin yerine getiremediği kararları uygulamak.
+           - Devlet memurlarının maaşlarının geç veya eksik ödenmesiyle ilgili şikayetleri incelemek.
+           - Cuma ve bayram namazları, hac ve cihat gibi ibadetlerle ilgili görüş ve önerileri dinlemek.
+
+           Divan-ı Mezalim'de sultan tarafından verilen karar kesindir ve değiştirilemez.
+
+           Örnek olarak Gazneli Mahmut'un oğlu Mesut'un bir tüccardan aldığı parayı ödememesi davası Divan-ı Mezalim'de görülmüştür.
+
+           **Bu konudan sıkça soru gelmektedir.** Divan-ı Mezalim'e çıkış hacibin iznine bağlıdır ve başkanlığını doğrudan sultan yapar.
+           """
+};
+
+var notDiniAskeriGorevliler = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Diğer Devlet Görevlileri",
+    Body = """
+           İlk Müslüman Türk devletlerinde bilinmesi gereken bazı görevliler:
+
+           - **Amil:** Vergi toplayan sivil yönetici; diğer adıyla ılımga veya ımga.
+           - **Yuğruş:** Karahanlılarda vezire verilen Türkçe isim.
+           - **Hace:** Gaznelilerde vezire verilen isim.
+           - **Melik:** Hükümdarın oğlu (İslamiyet öncesindeki karşılığı Tigin'dir).
+           - **Atabey:** Hükümdarın oğlunun (meliğin) yetiştirilmesinden sorumlu görevli. Osmanlı'daki karşılığı Lala'dır. İlk Türk atabeyi vezir Nizamülmülk'tür.
+           - **Şahne:** Askeri vali.
+           - **Muhtesip:** Çarşı ve pazarı denetleyen, günümüzdeki zabıtaya benzeyen görevli.
+
+           **Burası karıştırılabilir:** Vezir unvanı devletten devlete farklı adlarla anılır; Karahanlılarda yuğruş, Gaznelilerde hace olarak geçer.
+           """
+};
+
+var notHukukSistemi = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Hukuk Sisteminin Kaynakları",
+    Body = """
+           İlk Türk İslam hukukunun oluşmasında üç temel etmen rol oynamıştır:
+           - İslam'ın getirdiği esaslar.
+           - Oğuzların kabile gelenekleri.
+           - Göktürk, Uygur, Sasani ve Hun gelenekleri.
+
+           Hukuk, örfi hukuk ve şeri hukuk olmak üzere iki kısma ayrılmıştır.
+
+           Örfi hukukun kaynakları: Hun gelenekleri, Göktürk ve Uygur kanunları, Oğuz gelenekleri. Örfi hukuk yönetim, maliye ve askerlik gibi alanlarda geçerlidir. Başında Emir-i Dad bulunur (dad: adalet).
+
+           Şeri hukukun kaynakları: Kur'an, sünnet, icma ve kıyas. Başında Kadıü'l-Kudat (baş kadı) bulunur.
+
+           Askeri davalara ise Kadı Asker (Kadı Leşker) bakar.
+
+           **Burası karıştırılabilir:** Örfi hukukun başında Emir-i Dad, şeri hukukun başında Kadıü'l-Kudat, askeri davalarda ise Kadı Asker (Kadı Leşker) bulunur; bu üç görevli birbirine karıştırılmamalıdır.
+           """
+};
+
+var notHukukAlanlari = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Şeri ve Örfi Hukukun Uygulama Alanları",
+    Body = """
+           Şeri hukuk özellikle evlenme, boşanma ve miras gibi alanlarda uygulanır. Miras, İslamiyet öncesinde bulunmayan ancak Müslüman olunca ortaya çıkan yeni bir kavramdır.
+
+           Mihir, evlilikte erkeğin kadına vermeyi taahhüt ettiği ve boşanma sonrası kadının geçimini sağlamaya yönelik bir hak olup şeri hukukun kapsamındadır; Selçuklu döneminde en çok mihir davaları görülmüştür.
+
+           Örfi hukuk ise yönetim, maliye ve askerlik gibi alanlarda geçerlidir.
+
+           **Burası karıştırılabilir:** Miras İslamiyet öncesi Türk toplumunda kavram olarak yoktu; şeri hukukla birlikte ortaya çıkmıştır.
+           """
+};
+
+var notTopragYonetimi = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Toprak Yönetimi",
+    Body = """
+           İlk Türk İslam devletlerinde toprak; miri (devlete ait), vakıf ve mülk (Müslüman ve gayrimüslimlere ait) topraklar olmak üzere ayrılırdı.
+
+           - **Has toprak:** Geliri doğrudan sultana ayrılan en verimli topraktır.
+           - **Vakıf toprak:** Bir kişinin kendi mülkünü (toprak, han vb.) kendisinden sonra kamu yararına bir kuruma bağışlamasıyla oluşan topraktır; özel mülkiyetten çıkarma işlemidir ve bir kez vakfedildikten sonra geri alınamaz.
+           - **Öşri toprak:** Müslümanlara ait topraktır; üründen öşür adı verilen vergi alınır.
+           - **Haraci toprak:** Gayrimüslimlerden haraç adı verilen vergi alınan topraktır.
+           - **Mülk toprak:** Alınıp satılabilen, miras bırakılabilen kişisel mülkiyet toprağıdır.
+
+           **Burası karıştırılabilir:** Öşür Müslümanlardan, haraç ise gayrimüslimlerden alınan vergidir; bu iki kavram ters bağlanabilir.
+           """
+};
+
+var notIktaSistemi = new Note
+{
+    Title = "İlk Türk İslam Devletleri — İkta Sistemi",
+    Body = """
+           İkta sistemi, ilk defa Hz. Ömer zamanında uygulanmış, Büyük Selçuklu Devleti'nde vezir Nizamülmülk tarafından geliştirilerek genişletilmiştir. Osmanlı Devleti'ndeki karşılığı dirlik (daha çok tımar sistemi olarak bilinir) sistemidir.
+
+           Nizamülmülk, Siyasetname adlı eserinde ikta sistemini şöyle tanımlamıştır: devlete ait olan ve kimsenin mülkiyetinde bulunmayan topraklardan elde edilen vergi ve gelirlerin, askeri ve sivil devlet görevlilerine maaş veya hizmet karşılığı verilmesi.
+
+           **Bu konudan sıkça soru gelmektedir.** İkta sisteminin Siyasetname adlı eserde Nizamülmülk tarafından tanımlandığı unutulmamalıdır.
+           """
+};
+
+var notIktaFaydalari = new Note
+{
+    Title = "İlk Türk İslam Devletleri — İkta Sisteminin Faydaları",
+    Body = """
+           İkta sisteminin sağladığı faydalar:
+           - Toprağın boş kalması engellenmiş, üretimde süreklilik sağlanmıştır.
+           - Düzenli vergi toplanmıştır.
+           - Devlet memurlarının maaşı ödenmiştir.
+           - Masrafsız bir ordu kurulmuştur.
+           - Görevlinin bulunduğu bölgenin güvenliği sağlanmıştır.
+
+           **Burası karıştırılabilir:** İkta sisteminin beş faydası da doğru olmakla birlikte, sistemin temel uygulanma amacı olarak sınavlarda özellikle "masrafsız bir ordu kurmak" öne çıkarılır.
+           """
+};
+
+var notCebeluSipahi = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Sipahi ve Cebelü",
+    Body = """
+           İkta sistemiyle yetişen askere barış zamanında sipahi, savaş zamanında ise (atına binip savaşa gittiği için) cebelü adı verilirdi. Aynı kişiden söz edilmektedir; sadece durumuna göre unvanı değişir.
+
+           Bu askerler ikta sahibi oldukları bölgede yaşadıkları için barış zamanında çiftçiye yardım eder, savaş zamanında ise orduya katılırlardı; böylece bölgenin güvenliği de sağlanmış olurdu.
+
+           **Burası karıştırılabilir:** Sipahi ve cebelü aynı kişiyi tanımlar; sipahi barış zamanındaki, cebelü ise savaş zamanındaki unvanıdır.
+           """
+};
+
+var notSosyalHayatKurumlari = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Sosyal Hayat Kurumları",
+    Body = """
+           İlk Müslüman Türk devletlerinde sosyal hayatta ortaya çıkan kurumlar:
+
+           - **İmarethane:** Yoksullara sıcak yemek dağıtılan kurum.
+           - **Kapan:** Tek bir cins malın satıldığı yer (un kapanı, balık kapanı gibi).
+           - **Bedesten:** Her türlü ticari malın depolanıp satıldığı merkez.
+           - **Sebil:** Halka ücretsiz su dağıtılan çeşme.
+           - **Bargah:** Saray, yönetim merkezi.
+           - **Tekke:** Yeni Müslüman olan Oğuzların inançlarını pekiştirmek amacıyla kurulan din kurumu.
+           - **Zaviye:** Tekkenin köy ve kasabalardaki küçük hali.
+           - **Darüşşifa (Darülafiye, Bimaristan):** Hastane.
+           - **Arasta:** Tek bir cins malın satıldığı, genellikle üstü açık çarşı.
+
+           **Burası karıştırılabilir:** Kapan ve arasta ikisi de tek bir cins malın satıldığı yerlerdir; bedesten ise her türlü ticari malın satıldığı geniş merkezdir.
+           """
+};
+
+var notKumbeTturbeKulliye = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Kümbet, Türbe ve Külliye",
+    Body = """
+           **Kümbet:** İslamiyet öncesi kurgan geleneğinin yerini alan, padişah, sultan eşleri ve önemli devlet adamlarının gömüldüğü özel mezar yapısıdır. İlk defa Büyük Selçuklu Devleti'nde görülmüştür; üst kısmı İslamiyet öncesi çadırı simgeler.
+
+           **Türbe:** Genellikle dini şahsiyetlerin ve onların sülalesinden gelen kişilerin gömüldüğü, yarım daire biçimli mezar yapısıdır.
+
+           **Külliye:** Genellikle caminin merkez alınarak etrafına medrese, han, hamam, kütüphane gibi yapıların eklenmesiyle oluşan toplu yapı grubudur.
+
+           **Bu konudan sıkça soru gelmektedir.** Kümbet ilk defa Büyük Selçuklu Devleti'nde görülen bir mimari yapı türüdür; İslamiyet öncesinde bulunmaz.
+           """
+};
+
+var notGulamSistemi = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Gulam Sistemi",
+    Body = """
+           Gulam sistemi, savaşlarda elde edilen esirlerin veya satın alınan çocukların beşte birinin (ganimetin beşte biri devlet malı sayıldığından) devlet sistemine alınıp gulamhanelerde yetiştirildiği sistemdir. Gulam kelimesi "köle" anlamına gelir.
+
+           Gulam olarak alınan askerlerin büyük çoğunluğu, savaşçılık özellikleri nedeniyle Türklerden oluşmuştur; yabancı köle alındığı düşüncesi yanlıştır.
+
+           Gulamhanede yetiştirilen çocuklar, yeteneklerine göre ya hassa askeri olarak orduya ya da saray hizmetine (idari göreve) yönlendirilirdi.
+
+           Gulam sisteminin Osmanlı Devleti'ndeki karşılığı pençik sistemidir (pençik: beşte bir). Gulam sistemi, İslamiyet öncesi Türk ordu yapısına göre getirilen en büyük yeniliktir.
+
+           **Burası karıştırılabilir:** Gulam sisteminin Osmanlı'daki karşılığı devşirme değil, pençik sistemidir.
+           """
+};
+
+var notHastaOrdusu = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Hassa Ordusu",
+    Body = """
+           Hassa ordusu, Büyük Selçuklu Devleti'nin en iyi (has: en iyi) askerlerinden oluşan ordusudur. Bu ordunun Osmanlı Devleti'ndeki karşılığı Kapıkulu Ocağı'dır.
+
+           **Buraya dikkat:** Burada karşılaştırılan iki devletin en iyi orduları (Hassa Ordusu – Kapıkulu Ocağı) olup, gulam sisteminin karşılığı değildir; gulamın Osmanlı'daki karşılığı ayrıca pençik sistemidir.
+           """
+};
+
+var notMedreseler = new Note
+{
+    Title = "İlk Türk İslam Devletleri — İlk Medreseler",
+    Body = """
+           İlk Türk İslam devletlerinde eğitim alanında açılan önemli medreseler:
+
+           - **Semerkant Medresesi:** Karahanlılar tarafından kurulan ilk Türk İslam medresesidir; burslu öğrencilik sisteminin ilk uygulandığı medresedir.
+           - **Yağıbasan Medresesi:** Danışmentliler tarafından Tokat Niksar'da kurulmuş, Anadolu'da kurulan ilk medresedir.
+           - **Nişabur Medresesi:** Büyük Selçuklu Devleti'nin kurduğu ilk medresedir.
+
+           **Burası karıştırılabilir:** İlk Türk İslam medresesi Semerkant Medresesi'dir; Anadolu'daki ilk medrese ise Yağıbasan Medresesi'dir.
+           """
+};
+
+var notNizamiyeMedreseleri = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Nizamiye Medreseleri",
+    Body = """
+           Nizamiye medreseleri, Büyük Selçuklu Devleti'nin en ünlü medreseleridir. İlki Nişabur'da Sultan Alparslan tarafından açılmıştır; 17 farklı şehirde şubesi bulunmasına rağmen en ünlüsü Bağdat'ta açılandır. Bunun nedeni Gazali'nin Bağdat'taki Nizamiye Medresesi'nde rektörlük yapmasıdır.
+
+           **Burası karıştırılabilir:** Nizamiye medreselerinin ilki Nişabur'da açılmıştır; en ünlenmiş olanı ise Bağdat'takidir.
+           """
+};
+
+var notNizamiyeAcilmaNedenleri = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Nizamiye Medreselerinin Açılma Nedenleri",
+    Body = """
+           Nizamiye medreselerinin açılma nedenleri:
+           - İslamiyet'e yeni geçen Oğuz topluluklarının inançlarını pekiştirmek.
+           - Yoksul ve yetenekli çocukları topluma kazandırmak.
+           - Bilim insanı yetiştirmek.
+           - Devlet memuru ihtiyacını karşılamak.
+           - Din adamı yetiştirmek.
+           - Zararlı fikir akımlarına (özellikle Batınilik) karşı fikirle karşılık vermek.
+
+           **Bu konudan sıkça soru gelmektedir.** Nizamiye medreselerinin kuruluş amaçlarından biri de Batınilik gibi zararlı fikir akımlarına karşı Sünni itikadı korumaktır.
+           """
+};
+
+var notMedreseUnvanlari = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Medrese ile İlgili Kavramlar",
+    Body = """
+           Medreselerle ilgili terimler:
+           - **Softa (Danişmend/Şakirt):** Medresede öğrenim gören öğrenci.
+           - **Müderris:** Öğretmen (günümüzdeki profesöre karşılık gelir).
+           - **İcazetname:** Medreseden veya bir meslek kuruluşundan (örneğin ahilik teşkilatından) mezuniyet sonunda verilen diploma.
+           - **Muhaddis:** Hadis ilmiyle uğraşan kişi.
+           - **Müfessir:** Tefsir ilmiyle uğraşan kişi.
+           - **Fakih:** Fıkıh ilmiyle uğraşan kişi (örnek: Dursun Fakih).
+
+           **Burası karıştırılabilir:** Ahilik teşkilatında ustalığa geçen kişiye verilen diplomanın adı da icazetnamedir, ahitname değildir.
+           """
+};
+
+// --- Notlar: "İlk Türk İslam Devletleri Kültür ve Medeniyeti" (mimari, sanat, bilim insanları, edebiyat) ---
+
+var notMimariCesitleri = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Dini, Sivil ve Askeri Mimari",
+    Body = """
+           İlk Müslüman Türk devletlerinde mimari; dini, sivil ve askeri olmak üzere üç grupta incelenir. Bir yapının hangi gruba girdiği, içinde ne yapıldığına değil, yapının kendi mimari özelliklerine göre belirlenir.
+
+           - **Dini mimari:** Cami, mescit, türbe, kümbet, külliye, medrese, tekke ve zaviye.
+           - **Sivil mimari:** Ev, çeşme (sebil), kervansaray, han, hamam, kütüphane, ribat.
+           - **Askeri mimari:** Kışla, tersane, kale, burç, sur, garnizon, Nizamiye kapısı.
+
+           Cami ile mescit aynı anlamda kullanılır (secde edilen yer); Türk milleti "cami", Araplar ve Farslar ise "mescit" demeyi tercih etmiştir.
+
+           **Burası karıştırılabilir:** Medrese, içinde ders verilmesine rağmen yapısında mescit ve şadırvan bulunduğu için dini mimari grubuna girer; mimari sınıflandırma yapının içeriğine değil, yapısal özelliklerine göre yapılır.
+           """
+};
+
+var notKarahanliGazneliEserleri = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Karahanlı ve Gazneli Mimari Eserleri",
+    Body = """
+           Karahanlılar, bulundukları bölgelerde (Orta Asya) eser bırakan ilk Türk İslam devletidir. En bilinen eserleri Ayşe Bibi Türbesi ve Arap Ata Türbesi'dir; ayrıca Degaron Camii ve Talhatan Baba Camii de Karahanlılara aittir.
+
+           Gazneliler ise eserlerini Afganistan'da bırakmıştır: Ribat-ı Mahi, 3. Mesut Minaresi, Leşkeri Pazar Camii (leşker: asker, pazar: çarşı — "askeri pazar" anlamına gelir) ve zafer kuleleri.
+
+           **Burası karıştırılabilir:** Ayşe Bibi ve Arap Ata Türbesi Karahanlılara, Leşkeri Pazar Camii ve 3. Mesut Minaresi ise Gaznelilere aittir; bu eserler devlet bazında birbirine karıştırılmamalıdır.
+           """
+};
+
+var notBuyukSelcukluEserleri = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Büyük Selçuklu Mimari Eserleri",
+    Body = """
+           Büyük Selçuklu Devleti'nin eserleri ağırlıklı olarak İran'da (Rey, Nişabur, İsfahan, Tahran gibi kentlerde) bulunur.
+
+           Diyarbakır Ulu Camii aslen bir kiliseydi; Emeviler tarafından yıkılıp cami haline getirilmiş, üzerine Sultan Melikşah döneminde Büyük Selçuklu Devleti tarafından eklemeler yapılmıştır. Bu nedenle Diyarbakır Ulu Camii doğrudan Büyük Selçuklu eseri olarak nitelendirilemez; yalnızca eklemeler bu döneme aittir.
+
+           **Bu konudan sıkça soru gelmektedir.** Diyarbakır Ulu Camii'nin bir kilise üzerine inşa edildiği ve Büyük Selçuklu Devleti'nin bu yapıya yalnızca Sultan Melikşah döneminde eklemeler yaptığı unutulmamalıdır.
+           """
+};
+
+var notHatSanati = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Hat Sanatı",
+    Body = """
+           Türk milleti İslamiyet'i kabul ettikten sonra resim ve heykelcilik gerilemiş, bunun yerine Arapçayı güzel yazma sanatı olan hat büyük bir yükseliş göstermiştir. Hat ile uğraşan kişiye hattat denir.
+
+           Amasyalı Yakut, ilk büyük Türk hattatı olarak bilinir.
+
+           **Burası karıştırılabilir:** İslamiyet'in kabulünden sonra en çok gelişme gösteren sanat dalı hattır; resim ve heykelcilik ise gerilemiştir.
+           """
+};
+
+var notMinyatur = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Minyatür Sanatı",
+    Body = """
+           Minyatür, resmin yerini alan bir tasvir sanatıdır ve ilk örnekleri Uygurlarda (fresk olarak) görülmüştür. Minyatürde perspektif kurallarına uyulmaz; kişiler gerçek boyutlarına göre değil, toplumsal statülerine göre büyük veya küçük çizilir (sultan en büyük, köylü ise en küçük çizilir).
+
+           Minyatür ile uğraşan kişiye nakkaş veya musavvir denir. El-Cezeri, "Kitabü'l-Hiyel" (Otomata) adlı eserinde tasarladığı mekanik düzenekleri minyatürlerle görselleştirmiştir.
+
+           **Bu konudan sıkça soru gelmektedir.** Minyatürde kişiler gerçek boyutlarına göre değil, toplumsal statülerine göre büyük veya küçük çizilir; bu perspektif kuralına aykırıdır.
+           """
+};
+
+var notTezhipVeDigerSanatlar = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Tezhip, Telkari, Malakari, Vitray ve Ebru",
+    Body = """
+           - **Tezhip:** Kelime anlamı "altınlamak, yaldızlamak"tır; kitapları (özellikle Kur'an-ı Kerim'i) altın tozuyla süsleme sanatıdır. Uğraşana müzehhip denir.
+           - **Telkari:** Gümüş işlemeciliği sanatıdır; Türkiye'de en ünlü olduğu yer Mardin'dir.
+           - **Malakari:** Duvar süsleme ve kabartma sanatıdır.
+           - **Vitray:** Cam süsleme sanatıdır; renkli camlardan oluşur ve maliyeti yüksektir.
+           - **Ebru:** Kelime anlamı "bulut, bulutlanmak"tır; kağıt üzerinde su ve boya ile yapılan süsleme sanatıdır.
+
+           **Burası karıştırılabilir:** Tezhip kitap süslemede altın tozu kullanımıyken, vitray cam süsleme sanatıdır; bu iki kavram birbirinden farklıdır.
+           """
+};
+
+var notSanatEtkisi = new Note
+{
+    Title = "İlk Türk İslam Devletleri — İslamiyet'in Sanata Etkisi",
+    Body = """
+           Türk milleti Müslüman olduktan sonra resim ve heykelcilik sanatlarında büyük bir gerileme yaşanmıştır. Resmin yerini minyatür, heykelin yerini ise çoğunlukla geometrik figürlere dayanan çinicilik ve ahşap işlemeciliği gibi sanat dalları almıştır.
+
+           **Burası karıştırılabilir:** İslamiyet'in kabulüyle birlikte en büyük düşüş resim ve heykelcilikte yaşanmıştır; buna karşılık hat sanatında en büyük yükseliş görülmüştür.
+           """
+};
+
+var notFarabi = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Farabi",
+    Body = """
+           Farabi, dünyanın ilk öğretmeni kabul edilen Aristo'nun en büyük yorumcularından biridir ve bu nedenle "Muallim-i Sani" (ikinci öğretmen) unvanıyla anılır. Batıda "Alfarabius" olarak tanınır.
+
+           Farabi'nin özellikleri:
+           - Siyaset felsefesinden ilk bahseden kişidir.
+           - Birleşmiş Milletler fikrini ilk defa ortaya atan kişidir (bazı sorunların devletler tarafından ortak çözülmesi gerektiğini savunmuştur).
+           - İhsau'l-Ulûm adlı eserinde İslam dünyasında ilimleri ilk sınıflandıran kişidir.
+           - Kitabü'l-Musiki adlı, dünyanın ilk modern müzik kitabını yazmıştır.
+           - Logaritmayı icat etmiş, hava, ses ve titreşim olaylarını incelemiştir.
+           - El-Medinetü'l-Fazıla (Erdemli Şehir) adlı eserinde ideal devlet ve hükümdar anlayışını anlatmıştır.
+           - İslam dünyasında pozitif bilimleri başlatan kişidir.
+
+           **Bu konudan sıkça soru gelmektedir.** Farabi'nin Birleşmiş Milletler fikrini ilk ortaya atan kişi olduğu, "Farabi" isminin son iki hecesinden ("B") hatırlanabilir.
+           """
+};
+
+var notGazali = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Gazali",
+    Body = """
+           Gazali, Büyük Selçuklu Devleti'nde Bağdat'taki Nizamiye Medresesi'nin rektörlüğünü (müderrisliğini) yapmış önemli bir din alimidir. Hocası Cüveyni tarafından "derin bir deniz" olarak nitelendirilmiştir.
+
+           Gazali'nin lakabı Hüccetü'l-İslam'dır (İslam'ın ispatlayıcısı). Felsefeyle uğraşmış ve Batınilik akımına karşı fikirle mücadele etmiştir.
+
+           Önemli eserleri:
+           - **İhyau Ulûmi'd-Din:** "Dini ilimlerin ihyası" anlamına gelir.
+           - **Kimya-i Saadet:** Bir kimya kitabı değildir; ahlak, güzel davranışlar ve hadislerle ilgili bir eserdir.
+
+           **Burası karıştırılabilir:** Kimya-i Saadet adından dolayı bir kimya kitabı sanılabilir; oysa ahlak ve dini öğütler içeren bir eserdir.
+           """
+};
+
+var notBiruni = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Biruni",
+    Body = """
+           Biruni, Gazneli Mahmut'un Hindistan'a düzenlediği ilk dört sefere katılmış, Gazneli Mahmut tarafından "sarayımın en kıymetli hazinesi" olarak nitelendirilmiştir. Lakapları arasında el-Üstad ve el-Beruni sayılabilir.
+
+           Biruni matematikçi, coğrafyacı, fizikçi, tarihçi ve astronomdur. Bilimsel özgürlüğü savunmuş, yer çekiminin varlığını Newton'dan önce ("her şey yere doğru çekiliyor" diyerek) ifade etmiş ve jeodezi ilmini bulmuştur; dünyanın yarıçapını oldukça doğru şekilde hesaplamıştır.
+
+           Eserleri:
+           - **Asarü'l-Bakiye:** Asyalı milletlerin tarihini ve kültürlerini anlattığı eserdir.
+           - **Tahkiku Ma li'l-Hind:** Hindistan seferleri sonucunda yazdığı, Hindistan coğrafyasını ve kültürünü anlattığı eserdir.
+           - **El-Kanunu'l-Mesudi**, **Kitabü's-Saydele** gibi diğer eserleri de vardır.
+
+           **Burası karıştırılabilir:** Biruni'nin yer çekimiyle ilgili sözleri Newton'dan önce söylenmiştir; ancak bunu bilimsel bir kanun haline getiren Newton'dur.
+           """
+};
+
+var notIbnSina = new Note
+{
+    Title = "İlk Türk İslam Devletleri — İbn Sina",
+    Body = """
+           İbn Sina, Batı dünyasında "Avicenna" olarak tanınır; "tıbbın hükümdarı" ve "doktorların prensi" unvanlarına sahiptir. Aynı zamanda büyük bir felsefeci olup "Şeyhü'l-Felasife" (felsefenin şeyhi) lakabını taşır.
+
+           İbn Sina fıkıh, kelam, mantık, felsefe, tıp, astronomi, jeoloji ve matematik gibi birçok alanda eser vermiştir.
+
+           Önemli katkıları:
+           - El-Kanun fi't-Tıb adlı eserinde insan vücudundaki mikropları "kurt" kavramıyla tarif etmiştir; bu, mikrobun tarif edilmesi anlamına gelir.
+           - İlk kez mide ameliyatı yapmış, şeker hastalığını tespit etmiştir.
+           - Kitabü'ş-Şifa adlı eserinde çeşitli konularda tarifler vermiştir.
+           - Azimut halkasını (gök cisimleri arasındaki mesafeyi ölçmeye yarayan aleti) bulmuştur.
+           - Ayda bir kratere onun adı verilmiştir.
+
+           **Bu konudan sıkça soru gelmektedir.** El-Kanun fi't-Tıb adlı eserin İbn Sina'ya ait olduğu ve Azimut halkasının onun buluşu olduğu unutulmamalıdır.
+           """
+};
+
+var notCabirRaziIbnRust = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Cabir bin Hayyan, Zekeriya Razi ve İbn Rüşt",
+    Body = """
+           **Cabir bin Hayyan:** Modern kimyanın kurucusu kabul edilir. Atomun parçalanabileceğini Einstein'dan önce öne sürmüştür. İmbik yöntemini ve damıtma işlemini bulmuş, hassas terazi kullanmış, yapay alaşımlardan altın elde etmeye çalışmış, nitrik asit gibi birçok asidi keşfetmiştir. Kitabü'l-Kimya adlı ilk modern kimya kitabını yazmıştır.
+
+           **Zekeriya Razi:** Çiçek ve kızamık hastalıkları arasındaki farkı bulmuştur. El-Havi adlı 17 ciltlik büyük bir tıp ansiklopedisi yazmıştır.
+
+           **İbn Rüşt (Averroes):** Aristo'yu Avrupalılara tanıtan kişidir; "zamanın Volteri" olarak bilinir. Aklın ve mantığın sorunları çözebileceğini her zaman savunmuştur. Güneş lekelerini ilk defa gözlemlemiştir.
+
+           **Burası karıştırılabilir:** Cabir bin Hayyan modern kimyanın kurucusu, İbn Rüşt ise "zamanın Volteri" ve Aristo'yu Avrupa'ya tanıtan kişidir; bu iki bilim insanının katkıları birbirine karıştırılmamalıdır.
+           """
+};
+
+var notHarezmiVeDigerleri = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Harezmi ve İbn Heysem",
+    Body = """
+           **Harezmi:** Sıfır sayısını bulan kişi değildir (sıfır Hintliler ve Mısırlılar tarafından bulunmuştur), ancak sıfırın yanına rakam yazarak ikinci ve üçüncü derece denklemleri çözen matematikçi ve astronomdur. Hisabü'l-Cebri ve'l-Mukabele adlı eserinde karşılaştırmalı matematik yapmıştır; cebrin kurucusu kabul edilir ve ondalık sayı sistemini bulmuştur. "Algoritma" kelimesi onun isminden türemiştir.
+
+           **İbn Heysem:** Karanlık odayı bulan, bu nedenle fotoğraf makinesinin mucidi kabul edilen kişidir. Kitabü'l-Menazir (Görme Kitabı) adlı eserinde optik alanında günümüzde temel kabul edilen kavramları ilk kez ortaya koymuştur.
+
+           **Burası karıştırılabilir:** Harezmi sıfırı bulan kişi değildir; onun katkısı sıfırın yanına rakam yazarak denklemler çözmesidir.
+           """
+};
+
+var notKutadguBilig = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Kutadgu Bilig",
+    Body = """
+           Kutadgu Bilig, "mutluluk veren bilgi" anlamına gelir ve Balasagunlu Yusuf (Yusuf Has Hacip) tarafından yazılmış, ilk Türk İslam yazılı eseridir. Tamgaç Buğra Han'a (diğer adıyla Ulu Kara Buğra Han) sunulmuştur; Yusuf bu eseri sunduktan sonra Has Haciplik unvanını almıştır.
+
+           Eser, 6645 beyitten oluşan bir siyasetname ve nasihatnamedir; kendisinden sonraki birçok devlet kitabına başucu eseri olmuştur.
+
+           Eserde dört temel kavram dört karakterle simgelenir:
+           - **Küntoğdu:** Hükümdar, adaleti temsil eder.
+           - **Aytoldı:** Vezir, saadeti (devleti) temsil eder.
+           - **Ögdülmüş:** Vezirin oğlu, aklı temsil eder.
+           - **Odgurmış:** Kanaati (akıbeti) temsil eder.
+
+           **Bu konudan sıkça soru gelmektedir.** Kutadgu Bilig'in Balasagunlu Yusuf tarafından yazıldığı ve Tamgaç Buğra Han'a sunulduğu, dört karakterin (Küntoğdu-adalet, Aytoldı-saadet, Ögdülmüş-akıl, Odgurmış-kanaat) neyi temsil ettiği unutulmamalıdır.
+           """
+};
+
+var notDivanuLugatitTurk = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Divanü Lügati't-Türk",
+    Body = """
+           Divanü Lügati't-Türk, Kaşgarlı Mahmut tarafından yazılan, Arapça kaleme alınmış ilk Türkçe ansiklopedik sözlüktür. Abbasi halifesi El-Muktedi Billah'a sunulmuştur.
+
+           Eserin Arapça yazılma amacı, Türkçenin Arapçadan daha zengin bir dil olduğunu Araplara ispat etmektir. Eserde Orta Asya'daki Türk topluluklarının yaşadığı yerleri gösteren bir harita da bulunur.
+
+           Kaşgarlı Mahmut aynı zamanda bir etnograf, dil bilimci ve haritacıdır. 2008 yılı UNESCO tarafından "Kaşgarlı Mahmut Yılı" ilan edilmiştir.
+
+           **Burası karıştırılabilir:** Divanü Lügati't-Türk Türkçe bir sözlük değil, Arapça yazılmış ve Türkçenin zenginliğini kanıtlamayı amaçlayan bir eserdir.
+           """
+};
+
+var notAtabetulHakayikVeAhmetYesevi = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Atabetü'l-Hakayık ve Ahmet Yesevi",
+    Body = """
+           **Atabetü'l-Hakayık:** Edip Ahmet Yükneki tarafından yazılmıştır; "hakikatlerin eşiği" anlamına gelir. İçerik olarak Kutadgu Bilig'in devamı sayılır; bir nasihatname ve ahlak kitabıdır. Emir Sipahsalar'a sunulmuştur.
+
+           **Ahmet Yesevi:** "Piri Türkistan" (Türkistan'ın piri) olarak bilinir ve Türkistan bölgesinin İslamlaşmasını sağlamıştır. İlk Türk mutasavvıfı (tasavvufçusu) kabul edilir. Divan-ı Hikmet adlı, şiirlerini topladığı ve Hz. Muhammed'in yaşamından örnekler verdiği eseriyle Türk tasavvuf tarihinin bilinen ilk eseridir. Mezarını Timur yaptırmıştır.
+
+           **Burası karıştırılabilir:** İlk Türk mutasavvıfı Ahmet Yesevi'dir, Hz. Mevlana değildir; bu iki isim sınavlarda birbirine karıştırılmak istenir.
+           """
+};
+
+var notFirdevsiVeAliSirNevai = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Firdevsi ve Ali Şir Nevai",
+    Body = """
+           **Firdevsi:** Şehname adlı biyografik eserini Gazneli Mahmut'a sunmuştur. Eserde İran-Turan mücadeleleri anlatılır; efsanevi Türk hükümdarı Alp Er Tunga, eserde "Afrasiyab" olarak geçer.
+
+           **Ali Şir Nevai:** Timur zamanında yaşamış, Çağatay Türkçesinin en büyük şairi kabul edilir. Muhakemetü'l-Lügateyn adlı eserinde Türkçenin Farsça ve Hintçeden daha üstün bir dil olduğunu kanıtlamaya çalışmıştır.
+
+           **Burası karıştırılabilir:** Şehname'de Alp Er Tunga "Afrasiyab" adıyla geçer; bu isim değişikliği sıkça sorulur.
+           """
+};
+
+var notNizamulmulkVeOmerHayyam = new Note
+{
+    Title = "İlk Türk İslam Devletleri — Nizamülmülk ve Ömer Hayyam",
+    Body = """
+           **Nizamülmülk:** Gerçek adı Ebu Ali Hasan'dır; Nizamülmülk lakabıdır. İlk Türk atabeyidir ve Nizamiye medreselerinin kuruluşunda etkili olmuştur. Siyasetname adlı eserinde hükümdara örnek hikayelerle devletin nasıl yönetilmesi gerektiğini anlatmıştır. Eserini Sultan Melikşah'a sunmuştur.
+
+           **Ömer Hayyam:** Matematikçi ve astronomdur; ikinci ve üçüncü derece denklemleri çözmüştür. Sultan Melikşah döneminde hazırlanan, güneş yılı esaslı Celali Takvimi'ni hazırlayan heyetin başkanlığını yapmıştır. Aşk, doğa ve ahiret üzerine rubailer (dört dizelik mısralardan oluşan şiirler) yazmıştır.
+
+           **Bu konudan sıkça soru gelmektedir.** Celali Takvimi'nin heyet başkanlığını Ömer Hayyam'ın yaptığı ve takvimin adının Melikşah'ın "Celalettin" lakabından geldiği unutulmamalıdır.
+           """
+};
+
+BÖLÜM 3 — Sorular
+
+// --- SORU 1 ---
+new Question
+{
+    Note = notHukumdarDegisim,
+    Type = QuestionType.MultipleChoice,
+    Text = "İlk Müslüman Türk devletlerinde İslamiyet'in kabulünden sonra Kut anlayışı hakkında aşağıdakilerden hangisi doğrudur?",
+    Explanation = "Kut anlayışı ortadan kalkmamış, devlet yönetme yetkisinin Allah'ın nasibi ve takdirine dönüştüğü biçiminde İslami bir içerik kazanarak devam etmiştir.",
+    OrderIndex = 1,
+    Choices =
+    {
+        new Choice { Text = "Devlet yönetme yetkisinin Allah'ın nasibi ve takdirine dönüştüğü şeklinde yorumlanmıştır", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Kardeşler arasındaki taht kavgalarına neden olmaya devam etmiştir", IsCorrect = true, OrderIndex = 2 },
+
+        new Choice { Text = "İslamiyet'in kabulüyle birlikte tamamen terk edilmiştir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yalnızca Büyük Selçuklu Devleti'nde uygulanmıştır", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Hükümdarlığın seçimle belirlenmesini sağlamıştır", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Merkezi otoritenin hiçbir zaman bozulmamasını sağlamıştır", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 2 (ters soru) ---
+new Question
+{
+    Note = notHukumdarDegisim,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "İlk Müslüman Türk devletlerinin hükümdarlık anlayışıyla ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Kurultayın yerini divan almış, hükümdar divana başkanlık etmeye devam etmiştir; kurultay kurumu değişmeden aynen sürmemiştir.",
+    OrderIndex = 2,
+    Choices =
+    {
+        new Choice { Text = "Sorular genellikle Büyük Selçuklu Devleti'nin kültür ve medeniyeti esas alınarak sorulur", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Hükümdarın aç doyurmak, çıplağı giydirmek gibi görevleri değişmemiştir", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Kut anlayışının sürmesi taht kavgalarına yol açmıştır", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Bazı kavramlar Karahanlı ve Gaznelilerde daha belirgin bulunuyorsa o devlete bağlanır", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Kurultay kurumu isim ve işlev bakımından hiçbir değişikliğe uğramadan aynen devam etmiştir", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 3 ---
+new Question
+{
+    Note = notCihanHakimiyeti,
+    Type = QuestionType.MultipleChoice,
+    Text = "İslamiyet öncesindeki Türk Cihan Hakimiyeti anlayışının İslamiyet'in kabulünden sonraki karşılığı aşağıdakilerden hangisidir?",
+    Explanation = "Türk Cihan Hakimiyeti anlayışı, İslamiyet'le birlikte cihat, gaza ve ilahi kelimatullah (Allah'ın adını her yerde yüceltmek) kavramlarına dönüşmüştür.",
+    OrderIndex = 3,
+    Choices =
+    {
+        new Choice { Text = "İlahi kelimatullah", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Cihat ve gaza", IsCorrect = true, OrderIndex = 2 },
+
+        new Choice { Text = "Kut anlayışı", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Divan-ı Saltanat", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Hilat", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "İkta sistemi", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 4 ---
+new Question
+{
+    Note = notHukumdarSembolleri,
+    Type = QuestionType.MultipleChoice,
+    Text = "Aşağıdakilerden hangisi İslamiyet'le birlikte ortaya çıkan hükümdarlık sembollerinden biridir?",
+    Explanation = "Çetr, hilat, tıraz, hutbe ve menşur İslamiyet'in kabulünden sonra ortaya çıkan hükümdarlık sembolleridir.",
+    OrderIndex = 4,
+    Choices =
+    {
+        new Choice { Text = "Çetr (saltanat şemsiyesi)", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Hilat", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Tıraz", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Menşur", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Nevbet (davul)", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Otağ (çadır)", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 5 (ters soru) ---
+new Question
+{
+    Note = notHukumdarSembolleri,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "İslamiyet öncesinde hükümdarın kullandığı sembollerden biri aşağıdakilerden hangisidir?",
+    Explanation = "Kılıç, yay, tuğ, nevbet ve otağ İslamiyet öncesinden beri kullanılan sembollerdir; hutbe ise İslam'la gelen bir semboldür.",
+    OrderIndex = 5,
+    Choices =
+    {
+        new Choice { Text = "Kılıç ve yay", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Tuğ", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Nevbet (davul)", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Otağ (çadır)", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Hutbe", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 6 ---
+new Question
+{
+    Note = notHukumdarUnvanlari,
+    Type = QuestionType.MultipleChoice,
+    Text = "İslamiyet'in kabulünden sonra ilk Müslüman Türk devletlerinde artık kullanılmayan hükümdar unvanı aşağıdakilerden hangisidir?",
+    Explanation = "Kaan unvanı Çinceden geçtiği düşünüldüğü için Müslüman olunduktan sonra terk edilmiştir; Han ve Hakan unvanları ise kullanılmaya devam etmiştir.",
+    OrderIndex = 6,
+    Choices =
+    {
+        new Choice { Text = "Kaan", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Han", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Hakan", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Sultan", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Melik", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 7 (ters soru) ---
+new Question
+{
+    Note = notHukumdarUnvanlari,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "İslamiyet'in kabulünden sonra ilk Müslüman Türk devletlerinde kullanılan hükümdar unvanlarından biri değildir?",
+    Explanation = "Han, Hakan, Sultan ve Padişah İslamiyet'in kabulünden sonra kullanılmaya devam eden unvanlardır; Kaan ise terk edilmiştir.",
+    OrderIndex = 7,
+    Choices =
+    {
+        new Choice { Text = "Han", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Hakan", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Sultan", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Padişah", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Kaan", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 8 ---
+new Question
+{
+    Note = notSarayGorevlileri,
+    Type = QuestionType.MultipleChoice,
+    Text = "Sarayda hükümdarın kıyafetleriyle ilgilenen görevliye ne ad verilir?",
+    Explanation = "Camedar, hükümdarın kıyafetleriyle ilgilenen görevlidir; kelime köküyle camekan (ayna) arasında bağlantı kurularak hatırlanabilir.",
+    OrderIndex = 8,
+    Choices =
+    {
+        new Choice { Text = "Camedar", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Alemdar", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Çaşnigir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Candar", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Emir-i Ahur", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 9 (ters soru) ---
+new Question
+{
+    Note = notSarayGorevlileri,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Aşağıdakilerden hangisi hükümdarın atlarından sorumlu olan saray görevlisi değildir?",
+    Explanation = "Emir-i Ahur hükümdarın atlarından sorumlu görevlidir; diğer seçenekler farklı görevlere ait unvanlardır.",
+    OrderIndex = 9,
+    Choices =
+    {
+        new Choice { Text = "Alemdar devletin bayraklarından sorumludur", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Çaşnigir hükümdarın yemeklerini kontrol eder", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Candar hükümdarın özel muhafızıdır", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Hares Emiri suç işleyenleri cezalandırır", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Emir-i Ahur hükümdarın atlarından sorumludur", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 10 ---
+new Question
+{
+    Note = notHacip,
+    Type = QuestionType.MultipleChoice,
+    Text = "Sarayda hükümdar ve vezirden sonra protokolde üçüncü sırada yer alan yetkili aşağıdakilerden hangisidir?",
+    Explanation = "Hacip, hükümdar ve vezirden sonra protokolde üçüncü sırada yer alan, elçileri kabul eden ve kişileri sultanın huzuruna çıkaran görevlidir.",
+    OrderIndex = 10,
+    Choices =
+    {
+        new Choice { Text = "Hacip", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Naip", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Atabey", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Muhtesip", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Emir-i Dad", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 11 (ters soru) ---
+new Question
+{
+    Note = notHacip,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Hacip ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Haciplerin başındaki kişiye Has Hacip, Hacibü'l-Hüccab veya Ulu Hacip (Gaznelilerde Hacib-i Bozork) denir; hacip sultanın kendisi değildir.",
+    OrderIndex = 11,
+    Choices =
+    {
+        new Choice { Text = "Hükümdar ile halk arasındaki ilişkiyi düzenler", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Elçileri kabul eder", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Uygun gördüklerini Divan-ı Mezalim'e çıkarır", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Şeri ve örfi hukuka hakim olmak zorundadır", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Divan-ı Mezalim'in başkanlığını bizzat hacip yapar", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 12 ---
+new Question
+{
+    Note = notDivanSaltanat,
+    Type = QuestionType.MultipleChoice,
+    Text = "Büyük Selçuklu Devleti'nde merkezi otoritenin bulunduğu büyük divanın adı aşağıdakilerden hangisidir?",
+    Explanation = "Büyük Selçuklu Devleti'nde bu divana Divan-ı Saltanat denir; Karahanlılarda Meclis-i Ali, Gaznelilerde Divan-ı Vezaret olarak geçer.",
+    OrderIndex = 12,
+    Choices =
+    {
+        new Choice { Text = "Divan-ı Saltanat", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Meclis-i Ali", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Divan-ı Vezaret", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Divan-ı Mezalim", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Niyabet-i Saltanat", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 13 (ters soru) ---
+new Question
+{
+    Note = notDivanSaltanat,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Büyük divanın (Divan-ı Saltanat) devletlere göre adlandırılmasıyla ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Büyük Selçuklu'da bu divanın adı Divan-ı Saltanat'tır; Divan-ı Vezaret ise Gaznelilere, Meclis-i Ali ise Karahanlılara aittir.",
+    OrderIndex = 13,
+    Choices =
+    {
+        new Choice { Text = "Karahanlılarda Meclis-i Ali denir", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Gaznelilerde Divan-ı Vezaret denir", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Büyük Selçuklu'da Divan-ı Saltanat denir", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Günümüzdeki Bakanlar Kurulu'na tekabül eder", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Gaznelilerde de Meclis-i Ali adıyla anılır", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 14 ---
+new Question
+{
+    Note = notDivaniIstifaArz,
+    Type = QuestionType.MultipleChoice,
+    Text = "Ekonomi ve mali işlerle ilgilenen, başında müstevfinin bulunduğu divan aşağıdakilerden hangisidir?",
+    Explanation = "İstif etmek biriktirmek anlamına geldiği için Divan-ı İstifa mali ve ekonomik işlerle ilgilenir.",
+    OrderIndex = 14,
+    Choices =
+    {
+        new Choice { Text = "Divan-ı İstifa", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Divan-ı Arz", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Divan-ı İşraf", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Divan-ı İnşa", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Divan-ı Berid", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 15 (ters soru) ---
+new Question
+{
+    Note = notDivaniIstifaArz,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Divan-ı İstifa ve Divan-ı Arz ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Divan-ı İstifa ekonomi ve mali işlerle, Divan-ı Arz ise ordu işleriyle ilgilenir; ikisi birbirinin görevini üstlenmez.",
+    OrderIndex = 15,
+    Choices =
+    {
+        new Choice { Text = "Divan-ı İstifa'nın başında müstevfi bulunur", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Divan-ı Arz ordu işleriyle ilgilenir", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Divan-ı Arz'ın başında emir-i arz bulunur", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "İstif etmek biriktirmek anlamına gelir", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Divan-ı İstifa ordu işleriyle, Divan-ı Arz ekonomi işleriyle ilgilenir", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 16 ---
+new Question
+{
+    Note = notDivaniIsrafInsaBerit,
+    Type = QuestionType.MultipleChoice,
+    Text = "İsim olarak divan geçmesine rağmen aslında bir divan olmayıp posta ve haberleşme işlerinden sorumlu olan kurum aşağıdakilerden hangisidir?",
+    Explanation = "Divan-ı Berid, adında divan geçmesine karşın alt divanlardan biri sayılmaz ve sadece posta-haberleşme işleriyle ilgilenir.",
+    OrderIndex = 16,
+    Choices =
+    {
+        new Choice { Text = "Divan-ı Berid", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Divan-ı İnşa", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Divan-ı İşraf", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Divan-ı Arz", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Divan-ı İstifa", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 17 (ters soru) ---
+new Question
+{
+    Note = notDivaniIsrafInsaBerit,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Divan-ı İşraf, Divan-ı İnşa ve Divan-ı Berid ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Divan-ı İşraf askeri ve hukuk dışındaki tüm devlet işlerini denetler; posta işleriyle ilgilenen Divan-ı Berid'dir.",
+    OrderIndex = 17,
+    Choices =
+    {
+        new Choice { Text = "Divan-ı İnşa devletin iç ve dış yazışma işlerinden sorumludur", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Divan-ı İnşa eski adıyla Divan-ı Tuğra olarak bilinir", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Divan-ı İşraf'ın başında müşrif-i memalik bulunur", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Divan-ı Berid gerçekte bir divan değildir", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Divan-ı İşraf posta ve haberleşme işlerinden sorumludur", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 18 ---
+new Question
+{
+    Note = notNiyabetSaltanat,
+    Type = QuestionType.MultipleChoice,
+    Text = "Sultanın olmadığı zamanlarda toplanan, başında naibin bulunduğu divan aşağıdakilerden hangisidir?",
+    Explanation = "Niyabet-i Saltanat, hükümdarın yokluğunda görev yapan ve başında naibin bulunduğu divandır.",
+    OrderIndex = 18,
+    Choices =
+    {
+        new Choice { Text = "Niyabet-i Saltanat", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Divan-ı Mezalim", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Divan-ı İstifa", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Divan-ı Saltanat", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Divan-ı Arz", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 19 ---
+new Question
+{
+    Note = notDivaniMezalim,
+    Type = QuestionType.MultipleChoice,
+    Text = "Aşağıdakilerden hangisi Divan-ı Mezalim'in görevlerinden biridir?",
+    Explanation = "Divan-ı Mezalim; kadı kararlarına yapılan itirazları değerlendirme, memur şikayetlerini inceleme, vakıfları denetleme ve muhtesibin yerine getiremediği kararları uygulama gibi görevleri üstlenir.",
+    OrderIndex = 19,
+    Choices =
+    {
+        new Choice { Text = "Kadı kararlarına yapılan itirazları değerlendirmek", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Devlet memurları hakkındaki şikayetleri incelemek", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Muhtesibin yerine getiremediği kararları uygulamak", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Katipleri aracılığıyla vakıfları denetlemek", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "İkta topraklarının dağıtımını doğrudan gerçekleştirmek", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Posta ve haberleşme işlerini yürütmek", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 20 (ters soru) ---
+new Question
+{
+    Note = notDivaniMezalim,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Divan-ı Mezalim ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Divan-ı Mezalim'in başkanlığını bizzat sultan yapar; hacip başkanlık etmez, yalnızca kişileri sultanın huzuruna çıkarır.",
+    OrderIndex = 20,
+    Choices =
+    {
+        new Choice { Text = "Divan-ı Mezalim'de verilen karar kesindir ve değiştirilemez", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Devlet memurlarının maaşlarının geç ödenmesiyle ilgili şikayetleri inceler", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Cuma ve bayram namazlarıyla ilgili görüş ve önerileri dinler", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Gazneli Mahmut'un oğlu Mesut'un tüccarla olan davası bu divanda görülmüştür", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Divan-ı Mezalim'in başkanlığını hacip yapar", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 21 ---
+new Question
+{
+    Note = notDiniAskeriGorevliler,
+    Type = QuestionType.MultipleChoice,
+    Text = "Karahanlılarda vezire verilen Türkçe unvan aşağıdakilerden hangisidir?",
+    Explanation = "Karahanlılarda vezire yuğruş denirken, Gaznelilerde bu görev hace olarak adlandırılır.",
+    OrderIndex = 21,
+    Choices =
+    {
+        new Choice { Text = "Yuğruş", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Hace", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Atabey", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Amil", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Şahne", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 22 (ters soru) ---
+new Question
+{
+    Note = notDiniAskeriGorevliler,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Devlet görevlileriyle ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Muhtesip çarşı ve pazarı denetleyen görevlidir; vergi toplama görevi ise amile aittir.",
+    OrderIndex = 22,
+    Choices =
+    {
+        new Choice { Text = "Amil vergi toplayan sivil yöneticidir", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Atabey hükümdarın oğlunun yetiştirilmesinden sorumludur", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Şahne askeri validir", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "İlk Türk atabeyi Nizamülmülk'tür", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Muhtesip vergi toplamakla görevlidir", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 23 ---
+new Question
+{
+    Note = notHukukSistemi,
+    Type = QuestionType.MultipleChoice,
+    Text = "Askeri davalara bakan görevli aşağıdakilerden hangisidir?",
+    Explanation = "Askeri davalara Kadı Asker (Kadı Leşker) bakar; örfi hukukun başında Emir-i Dad, şeri hukukun başında Kadıü'l-Kudat bulunur.",
+    OrderIndex = 23,
+    Choices =
+    {
+        new Choice { Text = "Kadı Asker (Kadı Leşker)", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Emir-i Dad", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Kadıü'l-Kudat", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Hacip", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Naip", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 24 (ters soru) ---
+new Question
+{
+    Note = notHukukSistemi,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "İlk Türk İslam hukuk sistemi ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Örfi hukukun başında Emir-i Dad, şeri hukukun başında Kadıü'l-Kudat bulunur; bu iki görevli birbirinin yerini almaz.",
+    OrderIndex = 24,
+    Choices =
+    {
+        new Choice { Text = "Örfi hukukun kaynakları arasında Hun ve Göktürk gelenekleri bulunur", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Şeri hukukun kaynakları Kur'an, sünnet, icma ve kıyastır", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Örfi hukuk yönetim, maliye ve askerlik alanlarında geçerlidir", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Askeri davalara Kadı Asker bakar", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Örfi hukukun başında Kadıü'l-Kudat bulunur", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 25 ---
+new Question
+{
+    Note = notHukukAlanlari,
+    Type = QuestionType.MultipleChoice,
+    Text = "İslamiyet öncesinde Türk toplumunda kavram olarak bulunmayan, Müslüman olunduktan sonra ortaya çıkan hukuki kavram aşağıdakilerden hangisidir?",
+    Explanation = "Miras, İslamiyet öncesinde bulunmayan ve Müslüman olunduktan sonra şeri hukukla birlikte ortaya çıkan bir kavramdır.",
+    OrderIndex = 25,
+    Choices =
+    {
+        new Choice { Text = "Miras", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Kut", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Örfi hukuk", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "İkta", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Cihan hakimiyeti", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 26 ---
+new Question
+{
+    Note = notTopragYonetimi,
+    Type = QuestionType.MultipleChoice,
+    Text = "Müslümanlara ait olan ve üründen öşür adı verilen verginin alındığı toprak türü aşağıdakilerden hangisidir?",
+    Explanation = "Öşri topraklar Müslümanlara aittir ve bu topraklardan öşür adı verilen vergi alınır; haraç ise gayrimüslimlerden alınan vergidir.",
+    OrderIndex = 26,
+    Choices =
+    {
+        new Choice { Text = "Öşri toprak", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Haraci toprak", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Has toprak", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Vakıf toprak", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Mülk toprak (gayrimüslim)", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 27 (ters soru) ---
+new Question
+{
+    Note = notTopragYonetimi,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Toprak yönetimiyle ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Has topraklar sultana ayrılır; vakıf topraklar ise kamu yararına ayrılmış olup bir kez vakfedildikten sonra geri alınamaz.",
+    OrderIndex = 27,
+    Choices =
+    {
+        new Choice { Text = "Has topraklardan elde edilen gelir sultana ayrılır", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Vakıf toprak özel mülkiyetten çıkarma işlemidir", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Haraç gayrimüslimlerden alınan bir vergidir", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Mülk topraklar alınıp satılabilir ve miras bırakılabilir", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Vakfedilen bir toprak istenildiğinde geri alınabilir", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 28 ---
+new Question
+{
+    Note = notIktaSistemi,
+    Type = QuestionType.MultipleChoice,
+    Text = "İkta sistemini Siyasetname adlı eserinde tanımlayan ve bu sistemi geliştirerek genişleten kişi aşağıdakilerden hangisidir?",
+    Explanation = "Vezir Nizamülmülk, Hz. Ömer zamanında başlayan ikta sistemini geliştirerek genişletmiş ve Siyasetname adlı eserinde tanımlamıştır.",
+    OrderIndex = 28,
+    Choices =
+    {
+        new Choice { Text = "Nizamülmülk", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Alparslan", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Gazali", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Balasagunlu Yusuf", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Melikşah", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 29 (ters soru) ---
+new Question
+{
+    Note = notIktaSistemi,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "İkta sistemi ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "İkta sisteminin Osmanlı'daki karşılığı dirlik (tımar) sistemidir; pençik ise gulam sisteminin Osmanlı'daki karşılığıdır.",
+    OrderIndex = 29,
+    Choices =
+    {
+        new Choice { Text = "İlk defa Hz. Ömer zamanında uygulanmıştır", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Nizamülmülk tarafından geliştirilerek genişletilmiştir", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Siyasetname adlı eserde tanımlanmıştır", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Devlete ait olan ve kimsenin mülkiyetinde bulunmayan topraklardan elde edilen gelirlerin görevlilere verilmesidir", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Osmanlı Devleti'ndeki karşılığı pençik sistemidir", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 30 ---
+new Question
+{
+    Note = notIktaFaydalari,
+    Type = QuestionType.MultipleChoice,
+    Text = "Aşağıdakilerden hangisi ikta sisteminin sağladığı faydalardan biridir?",
+    Explanation = "İkta sistemi toprağın boş kalmasını engellemiş, düzenli vergi toplanmasını, memur maaşlarının ödenmesini, masrafsız ordu kurulmasını ve bölge güvenliğinin sağlanmasını mümkün kılmıştır.",
+    OrderIndex = 30,
+    Choices =
+    {
+        new Choice { Text = "Toprağın boş kalması engellenmiştir", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Masrafsız bir ordu kurulmuştur", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Düzenli vergi toplanmıştır", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Bölgenin güvenliği sağlanmıştır", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Merkezi hazineden askerlere doğrudan maaş ödenmesi sağlanmıştır", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Vergilerin tamamen kaldırılması sağlanmıştır", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 31 (ters soru) ---
+new Question
+{
+    Note = notIktaFaydalari,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "İkta sisteminin faydalarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "İkta sistemi devlet memurlarının maaşını topraktan elde edilen gelirle ödemiştir; merkezi hazineden doğrudan nakit ödeme yapılması sistemin amacına aykırıdır.",
+    OrderIndex = 31,
+    Choices =
+    {
+        new Choice { Text = "Devlet memurlarının maaşı ödenmiştir", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Üretimde süreklilik sağlanmıştır", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Masrafsız bir ordu kurulmuştur", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Düzenli vergi toplanmıştır", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Memur maaşları merkezi hazineden doğrudan ödenmiştir", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 32 ---
+new Question
+{
+    Note = notCebeluSipahi,
+    Type = QuestionType.MultipleChoice,
+    Text = "İkta sisteminde yetişen askere savaş zamanında verilen isim aşağıdakilerden hangisidir?",
+    Explanation = "İkta sisteminde yetişen askere barış zamanında sipahi, savaş zamanında atına binip savaşa gittiği için cebelü denir.",
+    OrderIndex = 32,
+    Choices =
+    {
+        new Choice { Text = "Cebelü", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Sipahi", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Gulam", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Hassa askeri", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Amil", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 33 ---
+new Question
+{
+    Note = notSosyalHayatKurumlari,
+    Type = QuestionType.MultipleChoice,
+    Text = "Yoksullara sıcak yemek dağıtılan kurumun adı aşağıdakilerden hangisidir?",
+    Explanation = "İmarethane, yoksullara sıcak yemek dağıtılan aş evi niteliğindeki kurumdur.",
+    OrderIndex = 33,
+    Choices =
+    {
+        new Choice { Text = "İmarethane", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Kapan", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Bedesten", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Sebil", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Darüşşifa", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 34 (ters soru) ---
+new Question
+{
+    Note = notSosyalHayatKurumlari,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Sosyal hayat kurumlarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Bedesten her türlü ticari malın satıldığı geniş merkezdir; kapan ise yalnızca tek bir cins malın satıldığı yerdir, bu iki kavram birbirine karıştırılmamalıdır.",
+    OrderIndex = 34,
+    Choices =
+    {
+        new Choice { Text = "Sebil halka su dağıtılan çeşmedir", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Bargah saray ve yönetim merkezi anlamındadır", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Tekke Oğuzların İslami inançlarını pekiştirmek için kurulmuştur", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Zaviye tekkenin köylerdeki küçük halidir", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Kapan her türlü ticari malın satıldığı geniş bir merkezdir", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 35 ---
+new Question
+{
+    Note = notKumbeTturbeKulliye,
+    Type = QuestionType.MultipleChoice,
+    Text = "İslamiyet öncesi kurgan geleneğinin yerini alan ve ilk defa Büyük Selçuklu Devleti'nde görülen mezar yapısı aşağıdakilerden hangisidir?",
+    Explanation = "Kümbet, kurgan geleneğinin yerini alan ve ilk defa Büyük Selçuklu Devleti'nde görülen özel mezar yapısıdır.",
+    OrderIndex = 35,
+    Choices =
+    {
+        new Choice { Text = "Kümbet", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Türbe", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Külliye", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Kapan", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Bedesten", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 36 (ters soru) ---
+new Question
+{
+    Note = notKumbeTturbeKulliye,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Kümbet, türbe ve külliye ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Külliye genellikle caminin merkez alınmasıyla oluşan toplu yapı grubudur; kurgan geleneğinin yerini alan ise kümbettir, külliye değil.",
+    OrderIndex = 36,
+    Choices =
+    {
+        new Choice { Text = "Kümbet ilk defa Büyük Selçuklu Devleti'nde görülmüştür", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Türbe genellikle dini şahsiyetlerin gömüldüğü yarım daire biçimli yapıdır", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Külliye genellikle caminin merkez alınmasıyla oluşur", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Kümbetin üst kısmı İslamiyet öncesi çadırı simgeler", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "İslamiyet öncesi kurgan geleneğinin yerini külliye almıştır", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 37 ---
+new Question
+{
+    Note = notGulamSistemi,
+    Type = QuestionType.MultipleChoice,
+    Text = "Savaşlarda elde edilen esirlerin beşte birinin devlet sistemine alınıp yetiştirildiği sistemin adı aşağıdakilerden hangisidir?",
+    Explanation = "Gulam sistemi, esirlerin beşte birinin devlet sistemine alınıp gulamhanelerde yetiştirildiği, İslamiyet öncesi ordu yapısına göre getirilen en büyük yeniliktir.",
+    OrderIndex = 37,
+    Choices =
+    {
+        new Choice { Text = "Gulam sistemi", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "İkta sistemi", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Devşirme sistemi", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Pençik sistemi", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Atabeylik sistemi", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 38 (ters soru) ---
+new Question
+{
+    Note = notGulamSistemi,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Gulam sistemi ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Gulam sisteminin Osmanlı Devleti'ndeki karşılığı pençik sistemidir; devşirme sistemi bambaşka bir uygulamadır.",
+    OrderIndex = 38,
+    Choices =
+    {
+        new Choice { Text = "Esirlerin veya satın alınan çocukların beşte biri devlet sistemine alınır", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Alınan askerlerin büyük çoğunluğu Türklerden oluşur", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Yetenekli çocuklar hassa askeri veya saray hizmetine yönlendirilir", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "İslamiyet öncesi ordu yapısına göre getirilen en büyük yeniliktir", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Osmanlı Devleti'ndeki karşılığı devşirme sistemidir", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 39 ---
+new Question
+{
+    Note = notHastaOrdusu,
+    Type = QuestionType.MultipleChoice,
+    Text = "Büyük Selçuklu Devleti'nin hassa ordusunun Osmanlı Devleti'ndeki karşılığı aşağıdakilerden hangisidir?",
+    Explanation = "Hassa ordusu ile Kapıkulu Ocağı, iki devletin en iyi askerlerinden oluşan orduları olarak karşılaştırılır.",
+    OrderIndex = 39,
+    Choices =
+    {
+        new Choice { Text = "Kapıkulu Ocağı", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Pençik sistemi", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Devşirme sistemi", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Tımar sistemi", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Dirlik sistemi", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 40 ---
+new Question
+{
+    Note = notMedreseler,
+    Type = QuestionType.MultipleChoice,
+    Text = "Karahanlılar tarafından kurulan ilk Türk İslam medresesi aşağıdakilerden hangisidir?",
+    Explanation = "Semerkant Medresesi Karahanlılar tarafından kurulan ilk Türk İslam medresesidir ve burslu öğrencilik sisteminin ilk uygulandığı medresedir.",
+    OrderIndex = 40,
+    Choices =
+    {
+        new Choice { Text = "Semerkant Medresesi", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Yağıbasan Medresesi", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Nişabur Medresesi", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Nizamiye Medresesi", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Bağdat Medresesi", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 41 (ters soru) ---
+new Question
+{
+    Note = notMedreseler,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "İlk medreselerle ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Anadolu'da kurulan ilk medrese Danışmentliler tarafından Tokat Niksar'da açılan Yağıbasan Medresesi'dir; Semerkant Medresesi ise Karahanlılar döneminde Orta Asya'da kurulmuştur.",
+    OrderIndex = 41,
+    Choices =
+    {
+        new Choice { Text = "Semerkant Medresesi Karahanlılar tarafından kurulmuştur", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Semerkant Medresesi'nde burslu öğrencilik sistemi ilk kez uygulanmıştır", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Nişabur Medresesi Büyük Selçuklu Devleti'nin kurduğu ilk medresedir", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Yağıbasan Medresesi Danışmentliler tarafından Tokat Niksar'da kurulmuştur", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Anadolu'da kurulan ilk medrese Semerkant Medresesi'dir", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 42 ---
+new Question
+{
+    Note = notNizamiyeMedreseleri,
+    Type = QuestionType.MultipleChoice,
+    Text = "Nizamiye medreselerinin ilki aşağıdakilerden hangisinde açılmıştır?",
+    Explanation = "Nizamiye medreselerinin ilki Nişabur'da Sultan Alparslan tarafından açılmıştır; en ünlüsü ise Gazali'nin rektörlük yaptığı Bağdat'takidir.",
+    OrderIndex = 42,
+    Choices =
+    {
+        new Choice { Text = "Nişabur", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Bağdat", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Semerkant", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Tokat Niksar", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Buhara", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 43 ---
+new Question
+{
+    Note = notNizamiyeAcilmaNedenleri,
+    Type = QuestionType.MultipleChoice,
+    Text = "Aşağıdakilerden hangisi Nizamiye medreselerinin açılma nedenlerinden biridir?",
+    Explanation = "Nizamiye medreseleri; Oğuzların inançlarını pekiştirmek, yoksul ve yetenekli çocukları topluma kazandırmak, bilim insanı ve devlet memuru yetiştirmek, din adamı yetiştirmek ve zararlı fikir akımlarına karşı fikirle mücadele etmek amacıyla açılmıştır.",
+    OrderIndex = 43,
+    Choices =
+    {
+        new Choice { Text = "İslamiyet'e yeni geçen Oğuz topluluklarının inançlarını pekiştirmek", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Zararlı fikir akımlarına (Batınilik) karşı fikirle karşılık vermek", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Yoksul ve yetenekli çocukları topluma kazandırmak", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Devlet memuru ihtiyacını karşılamak", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Yalnızca askeri komutan yetiştirmek", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Vergi toplama işlerini yürütmek", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 44 (ters soru) ---
+new Question
+{
+    Note = notNizamiyeAcilmaNedenleri,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Nizamiye medreselerinin açılma nedenleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Nizamiye medreselerinin amacı arasında vergi toplama görevi bulunmaz; bu görev amil gibi ayrı bir devlet görevlisine aittir.",
+    OrderIndex = 44,
+    Choices =
+    {
+        new Choice { Text = "Bilim insanı yetiştirmeyi amaçlar", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Din adamı yetiştirmeyi amaçlar", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Devlet memuru ihtiyacını karşılamayı amaçlar", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Zararlı fikir akımlarına karşı fikirle mücadele etmeyi amaçlar", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Vergi toplama işlerini yürütmeyi amaçlar", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 45 ---
+new Question
+{
+    Note = notMedreseUnvanlari,
+    Type = QuestionType.MultipleChoice,
+    Text = "Medreseden veya bir meslek kuruluşundan mezuniyet sonunda verilen diplomanın eski adı aşağıdakilerden hangisidir?",
+    Explanation = "İcazetname, diplomanın eski adıdır; hem medreselerden hem ahilik teşkilatı gibi meslek kuruluşlarından mezun olanlara verilirdi.",
+    OrderIndex = 45,
+    Choices =
+    {
+        new Choice { Text = "İcazetname", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Ahitname", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Tasdikname", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Menşur", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Vakfiye", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 46 (ters soru) ---
+new Question
+{
+    Note = notMedreseUnvanlari,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Medrese ile ilgili kavramlar hakkında aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Müderris öğretmen anlamına gelir ve günümüzdeki profesöre karşılık gelir; öğrenciye ise softa veya danişmend denir.",
+    OrderIndex = 46,
+    Choices =
+    {
+        new Choice { Text = "Muhaddis hadis ilmiyle uğraşan kişidir", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Müfessir tefsir ilmiyle uğraşan kişidir", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Fakih fıkıh ilmiyle uğraşan kişidir", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Medresede öğrenim gören öğrenciye softa denir", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Müderris medresede öğrenim gören öğrenciye verilen isimdir", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 47 ---
+new Question
+{
+    Note = notMimariCesitleri,
+    Type = QuestionType.MultipleChoice,
+    Text = "Aşağıdakilerden hangisi ilk Müslüman Türk devletlerinde dini mimariye örnektir?",
+    Explanation = "Cami, mescit, türbe ve medrese; yapısal özellikleri (mescit, şadırvan gibi unsurlar barındırmaları) nedeniyle dini mimari grubuna girer.",
+    OrderIndex = 47,
+    Choices =
+    {
+        new Choice { Text = "Cami", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Türbe", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Medrese", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Tekke", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Kervansaray", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Kışla", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 48 (ters soru) ---
+new Question
+{
+    Note = notMimariCesitleri,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "İlk Müslüman Türk devletlerinde askeri mimariye örnek olarak aşağıdakilerden hangisi verilemez?",
+    Explanation = "Kışla, tersane, kale ve sur askeri mimari örnekleridir; medrese ise yapısal özellikleri nedeniyle dini mimari grubuna girer.",
+    OrderIndex = 48,
+    Choices =
+    {
+        new Choice { Text = "Kışla", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Tersane", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Kale ve burç", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Sur ve garnizon", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Medrese", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 49 ---
+new Question
+{
+    Note = notKarahanliGazneliEserleri,
+    Type = QuestionType.MultipleChoice,
+    Text = "Aşağıdakilerden hangisi Karahanlılardan günümüze kalan mimari eserlerden biridir?",
+    Explanation = "Ayşe Bibi Türbesi ve Arap Ata Türbesi, Karahanlılardan günümüze kalan en bilinen mimari eserlerdir.",
+    OrderIndex = 49,
+    Choices =
+    {
+        new Choice { Text = "Ayşe Bibi Türbesi", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Arap Ata Türbesi", IsCorrect = true, OrderIndex = 2 },
+
+        new Choice { Text = "Leşkeri Pazar Camii", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "3. Mesut Minaresi", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Ribat-ı Mahi", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Diyarbakır Ulu Camii", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 50 (ters soru) ---
+new Question
+{
+    Note = notKarahanliGazneliEserleri,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Gazneli Devleti'nin mimari eserleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Gaznelilerin eserleri Afganistan'da bulunur; Ayşe Bibi Türbesi ise Karahanlılara aittir.",
+    OrderIndex = 50,
+    Choices =
+    {
+        new Choice { Text = "Leşkeri Pazar Camii Gaznelilere aittir", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "3. Mesut Minaresi Gaznelilere aittir", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Ribat-ı Mahi Gaznelilere aittir", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Gaznelilerin eserleri Afganistan'da bulunur", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Ayşe Bibi Türbesi Gaznelilere aittir", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 51 ---
+new Question
+{
+    Note = notBuyukSelcukluEserleri,
+    Type = QuestionType.MultipleChoice,
+    Text = "Diyarbakır Ulu Camii ile ilgili aşağıdakilerden hangisi doğrudur?",
+    Explanation = "Diyarbakır Ulu Camii aslen bir kiliseydi; Emeviler tarafından camiye çevrilmiş, Büyük Selçuklu Devleti ise sadece Sultan Melikşah döneminde eklemeler yapmıştır.",
+    OrderIndex = 51,
+    Choices =
+    {
+        new Choice { Text = "Aslen bir kiliseydi ve Emeviler tarafından camiye çevrildi", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Sultan Melikşah döneminde eklemeler yapılmıştır", IsCorrect = true, OrderIndex = 2 },
+
+        new Choice { Text = "Büyük Selçuklu Devleti tarafından sıfırdan inşa edilmiştir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Karahanlılar tarafından yaptırılmıştır", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Gazneliler tarafından yaptırılmıştır", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Bir Zerdüşt tapınağı üzerine inşa edilmiştir", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 52 ---
+new Question
+{
+    Note = notHatSanati,
+    Type = QuestionType.MultipleChoice,
+    Text = "İlk büyük Türk hattatı olarak bilinen kişi aşağıdakilerden hangisidir?",
+    Explanation = "Amasyalı Yakut, ilk büyük Türk hattatı olarak bilinir.",
+    OrderIndex = 52,
+    Choices =
+    {
+        new Choice { Text = "Amasyalı Yakut", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "El-Cezeri", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Kaşgarlı Mahmut", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Balasagunlu Yusuf", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Edip Ahmet Yükneki", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 53 (ters soru) ---
+new Question
+{
+    Note = notHatSanati,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Hat sanatıyla ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "İslamiyet'in kabulüyle birlikte en çok gelişen sanat dalı hattır; resim ve heykelcilik ise gerilemiştir, gelişmemiştir.",
+    OrderIndex = 53,
+    Choices =
+    {
+        new Choice { Text = "Hat, Arapçayı güzel yazma sanatıdır", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Hat ile uğraşan kişiye hattat denir", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Amasyalı Yakut ilk büyük Türk hattatıdır", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "İslamiyet'in kabulünden sonra en çok gelişen sanat dalıdır", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "İslamiyet'in kabulünden sonra heykelcilikle birlikte gerilemiştir", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 54 ---
+new Question
+{
+    Note = notMinyatur,
+    Type = QuestionType.MultipleChoice,
+    Text = "Minyatür sanatı ile ilgili aşağıdakilerden hangisi doğrudur?",
+    Explanation = "Minyatürde perspektif kurallarına uyulmaz; kişiler gerçek boyutlarına göre değil, toplumsal statülerine göre büyük veya küçük çizilir.",
+    OrderIndex = 54,
+    Choices =
+    {
+        new Choice { Text = "Perspektif kurallarına uyulmaz", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Kişiler toplumsal statülerine göre büyük veya küçük çizilir", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Uğraşan kişiye nakkaş veya musavvir denir", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "İlk örnekleri Uygurlarda fresk olarak görülmüştür", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Gerçek perspektif kurallarına birebir uygun çizilir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Yalnızca hayvan figürleri çizilir", IsCorrect = false, OrderIndex = 6 },
+    }
+},
+
+// --- SORU 55 (ters soru) ---
+new Question
+{
+    Note = notMinyatur,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Minyatür sanatıyla ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Minyatürde perspektif kurallarına uyulmaz; kişiler gerçek boyutlarına göre değil, statülerine göre çizilir. El-Cezeri'nin Otomata adlı eserindeki tasarımlar da minyatürle görselleştirilmiştir.",
+    OrderIndex = 55,
+    Choices =
+    {
+        new Choice { Text = "Kişiler statülerine göre büyük veya küçük çizilir", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "İlk örnekleri Uygurlarda görülmüştür", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Uğraşan kişiye musavvir denir", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "El-Cezeri'nin Otomata adlı eserindeki tasarımlar minyatürle görselleştirilmiştir", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Perspektif kurallarına titizlikle uyularak çizilir", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 56 ---
+new Question
+{
+    Note = notTezhipVeDigerSanatlar,
+    Type = QuestionType.MultipleChoice,
+    Text = "Kelime anlamı \"altınlamak, yaldızlamak\" olan ve özellikle Kur'an-ı Kerim süslemelerinde kullanılan sanat dalı aşağıdakilerden hangisidir?",
+    Explanation = "Tezhip, kitapları (özellikle Kur'an-ı Kerim'i) altın tozuyla süsleme sanatıdır; uğraşana müzehhip denir.",
+    OrderIndex = 56,
+    Choices =
+    {
+        new Choice { Text = "Tezhip", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Telkari", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Malakari", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Vitray", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Ebru", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 57 (ters soru) ---
+new Question
+{
+    Note = notTezhipVeDigerSanatlar,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Süsleme sanatlarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Telkari gümüş işlemeciliği, vitray ise cam süsleme sanatıdır; bu iki sanat dalı birbirine karıştırılmamalıdır.",
+    OrderIndex = 57,
+    Choices =
+    {
+        new Choice { Text = "Telkari gümüş işlemeciliği sanatıdır", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Malakari duvar süsleme ve kabartma sanatıdır", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Ebru kelime anlamı olarak bulut, bulutlanmak demektir", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Tezhip kitap süslemede altın tozu kullanılan sanattır", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Vitray gümüş işlemeciliği sanatıdır", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 58 ---
+new Question
+{
+    Note = notSanatEtkisi,
+    Type = QuestionType.MultipleChoice,
+    Text = "İslamiyet'in kabulünden sonra Türk sanatında en büyük gerilemenin yaşandığı alan aşağıdakilerden hangisidir?",
+    Explanation = "İslamiyet'in kabulünden sonra resim ve heykelcilik sanatlarında büyük bir gerileme yaşanmış; resmin yerini minyatür almıştır.",
+    OrderIndex = 58,
+    Choices =
+    {
+        new Choice { Text = "Resim ve heykelcilik", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Hat sanatı", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Minyatür sanatı", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Çinicilik", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Tezhip sanatı", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 59 ---
+new Question
+{
+    Note = notFarabi,
+    Type = QuestionType.MultipleChoice,
+    Text = "Birleşmiş Milletler fikrini ilk defa ortaya atan bilim insanı aşağıdakilerden hangisidir?",
+    Explanation = "Farabi, bazı sorunların devletler tarafından ortak çözülmesi gerektiğini savunarak Birleşmiş Milletler fikrini ilk defa ortaya atan kişidir.",
+    OrderIndex = 59,
+    Choices =
+    {
+        new Choice { Text = "Farabi", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Gazali", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "İbn Sina", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Biruni", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Harezmi", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 60 (ters soru) ---
+new Question
+{
+    Note = notFarabi,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Farabi ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Farabi'nin unvanı Muallim-i Sani'dir (ikinci öğretmen); dünyanın ilk öğretmeni olarak kabul edilen Aristo'dur, Farabi değildir.",
+    OrderIndex = 60,
+    Choices =
+    {
+        new Choice { Text = "Siyaset felsefesinden ilk bahseden kişidir", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "İhsau'l-Ulûm adlı eserinde ilimleri sınıflandırmıştır", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Kitabü'l-Musiki adlı ilk modern müzik kitabını yazmıştır", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "El-Medinetü'l-Fazıla adlı eseri yazmıştır", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Dünyanın ilk öğretmeni kabul edilen kişidir", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 61 ---
+new Question
+{
+    Note = notGazali,
+    Type = QuestionType.MultipleChoice,
+    Text = "Bağdat'taki Nizamiye Medresesi'nin rektörlüğünü yapmış, hocası Cüveyni tarafından \"derin bir deniz\" olarak nitelendirilen bilim insanı aşağıdakilerden hangisidir?",
+    Explanation = "Gazali, Bağdat'taki Nizamiye Medresesi'nin rektörlüğünü yapmış ve hocası Cüveyni tarafından derin bir deniz olarak nitelendirilmiştir.",
+    OrderIndex = 61,
+    Choices =
+    {
+        new Choice { Text = "Gazali", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Farabi", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "İbn Rüşt", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Nizamülmülk", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Ömer Hayyam", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 62 (ters soru) ---
+new Question
+{
+    Note = notGazali,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Gazali ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Kimya-i Saadet bir kimya kitabı değildir; ahlak ve dini öğütler içeren bir eserdir.",
+    OrderIndex = 62,
+    Choices =
+    {
+        new Choice { Text = "Lakabı Hüccetü'l-İslam'dır", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "İhyau Ulûmi'd-Din adlı eseri yazmıştır", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Batınilik akımına karşı fikirle mücadele etmiştir", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Bağdat'taki Nizamiye Medresesi'nin rektörlüğünü yapmıştır", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Kimya-i Saadet, bir kimya bilimi eseridir", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 63 ---
+new Question
+{
+    Note = notBiruni,
+    Type = QuestionType.MultipleChoice,
+    Text = "Gazneli Mahmut tarafından \"sarayımın en kıymetli hazinesi\" olarak nitelendirilen ve Hindistan seferlerine katılan bilim insanı aşağıdakilerden hangisidir?",
+    Explanation = "Biruni, Gazneli Mahmut'un Hindistan'a düzenlediği ilk dört sefere katılmış ve sultan tarafından sarayının en kıymetli hazinesi olarak nitelendirilmiştir.",
+    OrderIndex = 63,
+    Choices =
+    {
+        new Choice { Text = "Biruni", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "İbn Sina", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Farabi", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Harezmi", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Cabir bin Hayyan", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 64 (ters soru) ---
+new Question
+{
+    Note = notBiruni,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Biruni ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Tahkiku Ma li'l-Hind, Biruni'nin Hindistan seferleri sonucunda yazdığı eserdir; Asarü'l-Bakiye ise Asyalı milletlerin tarihini anlattığı eserdir. Bu iki eser birbirine karıştırılmamalıdır.",
+    OrderIndex = 64,
+    Choices =
+    {
+        new Choice { Text = "Jeodezi ilmini bulmuştur", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Yer çekiminin varlığını Newton'dan önce ifade etmiştir", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Asarü'l-Bakiye adlı eserinde Asyalı milletlerin tarihini anlatmıştır", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Dünyanın yarıçapını oldukça doğru şekilde hesaplamıştır", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Tahkiku Ma li'l-Hind adlı eserinde Asyalı milletlerin tarihini anlatmıştır", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 65 ---
+new Question
+{
+    Note = notIbnSina,
+    Type = QuestionType.MultipleChoice,
+    Text = "\"Tıbbın hükümdarı\" ve \"doktorların prensi\" unvanlarıyla anılan, Azimut halkasını bulan bilim insanı aşağıdakilerden hangisidir?",
+    Explanation = "İbn Sina, tıbbın hükümdarı ve doktorların prensi unvanlarına sahiptir; Azimut halkasını bulan kişidir.",
+    OrderIndex = 65,
+    Choices =
+    {
+        new Choice { Text = "İbn Sina", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Biruni", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Razi", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "İbn Rüşt", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Harezmi", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 66 (ters soru) ---
+new Question
+{
+    Note = notIbnSina,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "İbn Sina ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "İbn Sina'nın Şeyhü'l-Felasife (felsefenin şeyhi) lakabı da bulunur; onu yalnızca tıpla sınırlamak yanlıştır.",
+    OrderIndex = 66,
+    Choices =
+    {
+        new Choice { Text = "El-Kanun fi't-Tıb adlı eserinde mikropları \"kurt\" kavramıyla tarif etmiştir", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "İlk kez mide ameliyatı yapmıştır", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Azimut halkasını bulmuştur", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Ayda bir kratere adı verilmiştir", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Yalnızca tıp alanında eser vermiş, felsefeyle ilgilenmemiştir", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 67 ---
+new Question
+{
+    Note = notCabirRaziIbnRust,
+    Type = QuestionType.MultipleChoice,
+    Text = "Modern kimyanın kurucusu kabul edilen, atomun parçalanabileceğini Einstein'dan önce öne süren bilim insanı aşağıdakilerden hangisidir?",
+    Explanation = "Cabir bin Hayyan, modern kimyanın kurucusu kabul edilir ve atomun parçalanabileceğini Einstein'dan önce öne sürmüştür.",
+    OrderIndex = 67,
+    Choices =
+    {
+        new Choice { Text = "Cabir bin Hayyan", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Zekeriya Razi", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "İbn Rüşt", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Harezmi", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "İbn Heysem", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 68 (ters soru) ---
+new Question
+{
+    Note = notCabirRaziIbnRust,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Cabir bin Hayyan, Zekeriya Razi ve İbn Rüşt ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Çiçek ve kızamık hastalıkları arasındaki farkı bulan kişi Zekeriya Razi'dir; Cabir bin Hayyan kimya alanında çalışmalar yapmıştır.",
+    OrderIndex = 68,
+    Choices =
+    {
+        new Choice { Text = "Zekeriya Razi El-Havi adlı bir tıp ansiklopedisi yazmıştır", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "İbn Rüşt Aristo'yu Avrupalılara tanıtan kişidir", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "İbn Rüşt güneş lekelerini ilk defa gözlemlemiştir", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Cabir bin Hayyan hassas terazi kullanmıştır", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Çiçek ve kızamık hastalıkları arasındaki farkı Cabir bin Hayyan bulmuştur", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 69 ---
+new Question
+{
+    Note = notHarezmiVeDigerleri,
+    Type = QuestionType.MultipleChoice,
+    Text = "Hisabü'l-Cebri ve'l-Mukabele adlı eseriyle cebrin kurucusu kabul edilen ve \"algoritma\" kelimesinin türediği bilim insanı aşağıdakilerden hangisidir?",
+    Explanation = "Harezmi, Hisabü'l-Cebri ve'l-Mukabele adlı eseriyle cebrin kurucusu kabul edilir ve algoritma kelimesi onun isminden türemiştir.",
+    OrderIndex = 69,
+    Choices =
+    {
+        new Choice { Text = "Harezmi", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "İbn Heysem", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Ömer Hayyam", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Biruni", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Farabi", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 70 (ters soru) ---
+new Question
+{
+    Note = notHarezmiVeDigerleri,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Harezmi ve İbn Heysem ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Sıfırı bulan kişi Harezmi değildir; Harezmi'nin katkısı sıfırın yanına rakam yazarak denklemler çözmesidir.",
+    OrderIndex = 70,
+    Choices =
+    {
+        new Choice { Text = "Harezmi ikinci ve üçüncü derece denklemleri çözmüştür", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Harezmi ondalık sayı sistemini bulmuştur", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "İbn Heysem karanlık odayı bulmuştur", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "İbn Heysem Kitabü'l-Menazir adlı eseri yazmıştır", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Harezmi sıfır sayısını ilk bulan kişidir", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 71 ---
+new Question
+{
+    Note = notKutadguBilig,
+    Type = QuestionType.MultipleChoice,
+    Text = "\"Mutluluk veren bilgi\" anlamına gelen ve Balasagunlu Yusuf tarafından yazılan ilk Türk İslam yazılı eseri aşağıdakilerden hangisidir?",
+    Explanation = "Kutadgu Bilig, mutluluk veren bilgi anlamına gelir ve Balasagunlu Yusuf (Yusuf Has Hacip) tarafından yazılmış ilk Türk İslam yazılı eseridir.",
+    OrderIndex = 71,
+    Choices =
+    {
+        new Choice { Text = "Kutadgu Bilig", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Divanü Lügati't-Türk", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Atabetü'l-Hakayık", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Divan-ı Hikmet", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Şehname", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 72 (ters soru) ---
+new Question
+{
+    Note = notKutadguBilig,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Kutadgu Bilig ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Kutadgu Bilig'de Küntoğdu adaleti, Aytoldı saadeti, Ögdülmüş aklı, Odgurmış ise kanaati temsil eder; bu karakterlerin temsil ettiği kavramlar birbirine karıştırılmamalıdır.",
+    OrderIndex = 72,
+    Choices =
+    {
+        new Choice { Text = "6645 beyitten oluşur", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Tamgaç Buğra Han'a sunulmuştur", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Küntoğdu karakteri adaleti temsil eder", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Bir siyasetname ve nasihatnamedir", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Ögdülmüş karakteri kanaati temsil eder", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 73 ---
+new Question
+{
+    Note = notDivanuLugatitTurk,
+    Type = QuestionType.MultipleChoice,
+    Text = "Kaşgarlı Mahmut'un Türkçenin Arapçadan daha zengin bir dil olduğunu ispatlamak amacıyla Arapça yazdığı ilk Türkçe ansiklopedik sözlük aşağıdakilerden hangisidir?",
+    Explanation = "Divanü Lügati't-Türk, Kaşgarlı Mahmut tarafından yazılan, Arapça kaleme alınmış ilk Türkçe ansiklopedik sözlüktür.",
+    OrderIndex = 73,
+    Choices =
+    {
+        new Choice { Text = "Divanü Lügati't-Türk", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Kutadgu Bilig", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Atabetü'l-Hakayık", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Muhakemetü'l-Lügateyn", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Siyasetname", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 74 (ters soru) ---
+new Question
+{
+    Note = notDivanuLugatitTurk,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Divanü Lügati't-Türk ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Divanü Lügati't-Türk, Türkçe değil Arapça yazılmıştır; amacı Türkçenin zenginliğini Araplara göstermektir.",
+    OrderIndex = 74,
+    Choices =
+    {
+        new Choice { Text = "Kaşgarlı Mahmut tarafından yazılmıştır", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "El-Muktedi Billah'a sunulmuştur", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "İçinde Orta Asya'daki Türk topluluklarının yaşadığı yerleri gösteren bir harita bulunur", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "2008 yılı UNESCO tarafından Kaşgarlı Mahmut Yılı ilan edilmiştir", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Eser Türkçe olarak yazılmıştır", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 75 ---
+new Question
+{
+    Note = notAtabetulHakayikVeAhmetYesevi,
+    Type = QuestionType.MultipleChoice,
+    Text = "\"Piri Türkistan\" olarak bilinen ve Türkistan bölgesinin İslamlaşmasını sağlayan ilk Türk mutasavvıfı aşağıdakilerden hangisidir?",
+    Explanation = "Ahmet Yesevi, Piri Türkistan olarak bilinir ve Türkistan bölgesinin İslamlaşmasını sağlayan ilk Türk mutasavvıfıdır.",
+    OrderIndex = 75,
+    Choices =
+    {
+        new Choice { Text = "Ahmet Yesevi", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Hz. Mevlana", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Edip Ahmet Yükneki", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Balasagunlu Yusuf", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Kaşgarlı Mahmut", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 76 (ters soru) ---
+new Question
+{
+    Note = notAtabetulHakayikVeAhmetYesevi,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Atabetü'l-Hakayık ve Ahmet Yesevi ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "İlk Türk mutasavvıfı Ahmet Yesevi'dir, Hz. Mevlana değildir; bu bilgi sınavlarda sık sık karıştırılmak istenir.",
+    OrderIndex = 76,
+    Choices =
+    {
+        new Choice { Text = "Atabetü'l-Hakayık, Edip Ahmet Yükneki tarafından yazılmıştır", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Atabetü'l-Hakayık, Kutadgu Bilig'in devamı sayılır", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Divan-ı Hikmet, Ahmet Yesevi'nin şiirlerini topladığı eserdir", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Ahmet Yesevi'nin mezarını Timur yaptırmıştır", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "İlk Türk mutasavvıfı Hz. Mevlana'dır", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 77 ---
+new Question
+{
+    Note = notFirdevsiVeAliSirNevai,
+    Type = QuestionType.MultipleChoice,
+    Text = "Şehname adlı biyografik eserini Gazneli Mahmut'a sunan ve eserinde İran-Turan mücadelelerini anlatan şair aşağıdakilerden hangisidir?",
+    Explanation = "Firdevsi, Şehname adlı biyografik eserini Gazneli Mahmut'a sunmuştur; eserde İran-Turan mücadeleleri anlatılır.",
+    OrderIndex = 77,
+    Choices =
+    {
+        new Choice { Text = "Firdevsi", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Ali Şir Nevai", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Ömer Hayyam", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Edip Ahmet Yükneki", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Kaşgarlı Mahmut", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 78 (ters soru) ---
+new Question
+{
+    Note = notFirdevsiVeAliSirNevai,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Firdevsi ve Ali Şir Nevai ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Şehname'de Alp Er Tunga, Afrasiyab adıyla geçer; bu isim değişikliği unutulmamalıdır.",
+    OrderIndex = 78,
+    Choices =
+    {
+        new Choice { Text = "Ali Şir Nevai, Timur zamanında yaşamıştır", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Ali Şir Nevai, Çağatay Türkçesinin en büyük şairi kabul edilir", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Muhakemetü'l-Lügateyn'de Türkçenin üstünlüğü savunulmuştur", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Firdevsi, Şehname'yi Gazneli Mahmut'a sunmuştur", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Şehname'de Alp Er Tunga \"Küntoğdu\" adıyla geçer", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 79 ---
+new Question
+{
+    Note = notNizamulmulkVeOmerHayyam,
+    Type = QuestionType.MultipleChoice,
+    Text = "Siyasetname adlı eseri Sultan Melikşah'a sunan, ilk Türk atabeyi olan devlet adamı aşağıdakilerden hangisidir?",
+    Explanation = "Nizamülmülk, ilk Türk atabeyidir ve Siyasetname adlı eserini Sultan Melikşah'a sunmuştur.",
+    OrderIndex = 79,
+    Choices =
+    {
+        new Choice { Text = "Nizamülmülk", IsCorrect = true, OrderIndex = 1 },
+
+        new Choice { Text = "Ömer Hayyam", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Balasagunlu Yusuf", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Firdevsi", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Gazali", IsCorrect = false, OrderIndex = 5 },
+    }
+},
+
+// --- SORU 80 (ters soru) ---
+new Question
+{
+    Note = notNizamulmulkVeOmerHayyam,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Nizamülmülk ve Ömer Hayyam ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Celali Takvimi'nin heyet başkanlığını Ömer Hayyam yapmıştır; Nizamülmülk'ün eseri Siyasetname'dir, Celali Takvimi ile ilgisi yoktur.",
+    OrderIndex = 80,
+    Choices =
+    {
+        new Choice { Text = "Nizamülmülk'ün gerçek adı Ebu Ali Hasan'dır", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Nizamülmülk Nizamiye medreselerinin kuruluşunda etkili olmuştur", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Ömer Hayyam ikinci ve üçüncü derece denklemler çözmüştür", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Ömer Hayyam aşk, doğa ve ahiret üzerine rubailer yazmıştır", IsCorrect = true, OrderIndex = 4 },
+
+        new Choice { Text = "Celali Takvimi'nin heyet başkanlığını Nizamülmülk yapmıştır", IsCorrect = false, OrderIndex = 5 },
+    }
+},

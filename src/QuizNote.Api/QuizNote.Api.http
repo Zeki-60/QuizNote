@@ -1,0 +1,6 @@
+@QuizNote.Api_HostAddress = http://localhost:5274
+
+GET {{QuizNote.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
