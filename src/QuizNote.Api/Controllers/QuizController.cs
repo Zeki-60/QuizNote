@@ -26,6 +26,117 @@ public class QuizController(QuizNoteDbContext db) : ControllerBase
         return Ok(topics);
     }
 
+    /// <summary>Kullanıcının yeni bir konu (Topic) açması; "+ Konu ekle" butonu bunu çağırır.</summary>
+    [Authorize]
+    [HttpPost("topics")]
+    public async Task<ActionResult<TopicDto>> CreateTopic(CreateTopicRequest req, CancellationToken ct)
+    {
+        if (string.IsNullOrWhiteSpace(req.Name))
+            return BadRequest(new { message = "Konu adı boş olamaz." });
+
+        var name = req.Name.Trim();
+        if (await db.Topics.AnyAsync(t => t.Name == name, ct))
+            return BadRequest(new { message = "Bu isimde bir konu zaten var." });
+
+        var topic = new Topic { Name = name, Description = string.IsNullOrWhiteSpace(req.Description) ? null : req.Description.Trim() };
+        db.Topics.Add(topic);
+        await db.SaveChangesAsync(ct);
+
+        return Ok(new TopicDto(topic.Id, topic.Name, topic.Description, 0));
+    }
+
+    /// <summary>Konu adını/açıklamasını günceller; konu kartındaki ✎ butonu bunu çağırır.</summary>
+    [Authorize]
+    [HttpPut("topics/{topicId:guid}")]
+    public async Task<ActionResult<TopicDto>> UpdateTopic(Guid topicId, CreateTopicRequest req, CancellationToken ct)
+    {
+        if (string.IsNullOrWhiteSpace(req.Name))
+            return BadRequest(new { message = "Konu adı boş olamaz." });
+
+        var topic = await db.Topics.Include(t => t.Questions).FirstOrDefaultAsync(t => t.Id == topicId, ct);
+        if (topic is null) return NotFound(new { message = "Konu bulunamadı." });
+
+        var name = req.Name.Trim();
+        if (name != topic.Name && await db.Topics.AnyAsync(t => t.Name == name, ct))
+            return BadRequest(new { message = "Bu isimde bir konu zaten var." });
+
+        topic.Name = name;
+        topic.Description = string.IsNullOrWhiteSpace(req.Description) ? null : req.Description.Trim();
+        await db.SaveChangesAsync(ct);
+
+        return Ok(new TopicDto(topic.Id, topic.Name, topic.Description, topic.Questions.Count));
+    }
+
+    /// <summary>
+    /// Konuyu ve altındaki TÜM notları/soruları/şıkları siler (cascade delete).
+    /// Konu kartındaki 🗑 butonu, kullanıcı onayladıktan sonra bunu çağırır.
+    /// </summary>
+    [Authorize]
+    [HttpDelete("topics/{topicId:guid}")]
+    public async Task<ActionResult> DeleteTopic(Guid topicId, CancellationToken ct)
+    {
+        var topic = await db.Topics.FirstOrDefaultAsync(t => t.Id == topicId, ct);
+        if (topic is null) return NotFound(new { message = "Konu bulunamadı." });
+
+        db.Topics.Remove(topic);
+        await db.SaveChangesAsync(ct);
+        return NoContent();
+    }
+
+    /// <summary>
+    /// Kullanıcının arayüzden yeni soru eklemesi. Not her zaman yeni oluşturulur;
+    /// başlık/gövde boş bırakılırsa soru metninden türetilen bir başlıkla ve boş
+    /// gövdeyle otomatik bir not açılır. Eklenen soru <see cref="Question.CreatedByUserId"/>
+    /// ile işaretlenir — "Kendi Sorularım" kartı bunu kullanır.
+    /// </summary>
+    [Authorize]
+    [HttpPost("questions")]
+    public async Task<ActionResult> CreateUserQuestion(CreateUserQuestionRequest req, CancellationToken ct)
+    {
+        var userId = CurrentUserId;
+        if (userId is null) return Unauthorized();
+
+        if (string.IsNullOrWhiteSpace(req.Text))
+            return BadRequest(new { message = "Soru metni boş olamaz." });
+
+        if (!await db.Topics.AnyAsync(t => t.Id == req.TopicId, ct))
+            return BadRequest(new { message = "Konu bulunamadı." });
+
+        var choices = req.Choices?.Where(c => !string.IsNullOrWhiteSpace(c.Text)).ToList() ?? [];
+        if (choices.Count < 2)
+            return BadRequest(new { message = "En az iki şık girilmelidir." });
+        if (!choices.Any(c => c.IsCorrect))
+            return BadRequest(new { message = "En az bir doğru şık işaretlenmelidir." });
+        if (!choices.Any(c => !c.IsCorrect))
+            return BadRequest(new { message = "En az bir yanlış şık işaretlenmelidir." });
+
+        var noteTitle = string.IsNullOrWhiteSpace(req.NoteTitle)
+            ? (req.Text.Length > 80 ? req.Text[..80] + "…" : req.Text)
+            : req.NoteTitle.Trim();
+        var noteBody = string.IsNullOrWhiteSpace(req.NoteBody) ? " " : req.NoteBody.Trim();
+
+        var note = new Note { TopicId = req.TopicId, Title = noteTitle, Body = noteBody };
+        db.Notes.Add(note);
+
+        var question = new Question
+        {
+            TopicId = req.TopicId,
+            Note = note,
+            Type = QuestionType.MultipleChoice,
+            Text = req.Text.Trim(),
+            Explanation = string.IsNullOrWhiteSpace(req.Explanation) ? null : req.Explanation.Trim(),
+            CreatedByUserId = userId,
+        };
+
+        for (var i = 0; i < choices.Count; i++)
+            question.Choices.Add(new Choice { Text = choices[i].Text.Trim(), IsCorrect = choices[i].IsCorrect, OrderIndex = i + 1 });
+
+        db.Questions.Add(question);
+        await db.SaveChangesAsync(ct);
+
+        return Ok(new { id = question.Id });
+    }
+
     /// <summary>
     /// Sonsuz akış için tek bir soru döndürür; havuzdan rastgele seçilir.
     /// <paramref name="topicId"/> verilmezse tüm konuların soruları havuza girer.
@@ -43,6 +154,7 @@ public class QuizController(QuizNoteDbContext db) : ControllerBase
         [FromQuery] bool prioritizeHard,
         [FromQuery] bool favoritesOnly,
         [FromQuery] bool inactiveOnly,
+        [FromQuery] bool myQuestionsOnly,
         [FromQuery] string? excludeIds,
         CancellationToken ct)
     {
@@ -65,6 +177,14 @@ public class QuizController(QuizNoteDbContext db) : ControllerBase
                 .Any(f => f.UserId == userId && f.QuestionId == q.Id));
         }
 
+        if (myQuestionsOnly)
+        {
+            if (userId is null)
+                return Unauthorized(new { message = "Kendi sorularınız için giriş yapmalısınız." });
+
+            query = query.Where(q => q.CreatedByUserId == userId);
+        }
+
         if (inactiveOnly)
         {
             if (userId is null)
@@ -75,8 +195,8 @@ public class QuizController(QuizNoteDbContext db) : ControllerBase
         }
         else if (userId is not null)
         {
-            // Normal akışta (Tümü / konu / favoriler) kullanıcının pasife aldığı
-            // sorular havuza hiç girmez.
+            // Normal akışta (Tümü / konu / favoriler / kendi sorularım) kullanıcının
+            // pasife aldığı sorular havuza hiç girmez.
             query = query.Where(q => !db.InactiveQuestions
                 .Any(i => i.UserId == userId && i.QuestionId == q.Id));
         }
@@ -92,9 +212,11 @@ public class QuizController(QuizNoteDbContext db) : ControllerBase
             {
                 message = inactiveOnly
                     ? "Aktif olmayan sorunuz yok."
-                    : favoritesOnly
-                        ? "Favori sorunuz yok. Sorulardaki kalp simgesine dokunarak ekleyebilirsiniz."
-                        : "Soru bulunamadı."
+                    : myQuestionsOnly
+                        ? "Henüz eklediğiniz bir soru yok."
+                        : favoritesOnly
+                            ? "Favori sorunuz yok. Sorulardaki kalp simgesine dokunarak ekleyebilirsiniz."
+                            : "Soru bulunamadı."
             });
 
         // Son gösterilen soruları dışla; havuz tükenirse dışlama kaldırılır.
@@ -201,8 +323,9 @@ public class QuizController(QuizNoteDbContext db) : ControllerBase
     }
 
     /// <summary>
-    /// Konular ekranı için özet: toplam soru sayısı, favori sayısı ve pasif soru sayısı.
-    /// "Tümü", "Favorilerim" ve "Aktif Olmayanlar" kartları ile "Toplam soru: ..." göstergesi bunu kullanır.
+    /// Konular ekranı için özet: toplam soru sayısı, favori sayısı, pasif soru sayısı
+    /// ve kullanıcının kendi eklediği soru sayısı. "Tümü", "Favorilerim", "Aktif
+    /// Olmayanlar" ve "Kendi Sorularım" kartları ile "Toplam soru: ..." göstergesi bunu kullanır.
     /// </summary>
     [HttpGet("me/summary")]
     public async Task<ActionResult> Summary(CancellationToken ct)
@@ -219,13 +342,17 @@ public class QuizController(QuizNoteDbContext db) : ControllerBase
             ? 0
             : await db.InactiveQuestions.CountAsync(i => i.UserId == userId, ct);
 
-        return Ok(new { totalQuestions, favoriteCount, inactiveCount });
+        var myQuestionsCount = userId is null
+            ? 0
+            : await db.Questions.CountAsync(q => q.CreatedByUserId == userId, ct);
+
+        return Ok(new { totalQuestions, favoriteCount, inactiveCount, myQuestionsCount });
     }
 
     /// <summary>
     /// Soru kartının yanındaki bilgi kartı için: aktif kapsamdaki (konu / favoriler /
-    /// aktif olmayanlar / tümü) toplam soru sayısı, seviye dağılımı, favori ve pasif
-    /// soru sayıları. <paramref name="scope"/>: "topic" | "favorites" | "inactive" | "all".
+    /// aktif olmayanlar / kendi sorularım / tümü) toplam soru sayısı, seviye dağılımı,
+    /// favori ve pasif soru sayıları. <paramref name="scope"/>: "topic" | "favorites" | "inactive" | "myQuestions" | "all".
     /// </summary>
     [HttpGet("me/scope-stats")]
     public async Task<ActionResult<ScopeStatsDto>> ScopeStats(
@@ -247,6 +374,10 @@ public class QuizController(QuizNoteDbContext db) : ControllerBase
             query = userId is null
                 ? query.Where(q => false)
                 : query.Where(q => db.InactiveQuestions.Any(i => i.UserId == userId && i.QuestionId == q.Id));
+        else if (scope == "myQuestions")
+            query = userId is null
+                ? query.Where(q => false)
+                : query.Where(q => q.CreatedByUserId == userId);
         // "all" için ek filtre uygulanmaz.
 
         var ids = await query.Select(q => q.Id).ToListAsync(ct);
@@ -358,6 +489,156 @@ public class QuizController(QuizNoteDbContext db) : ControllerBase
         return note is null ? NotFound(new { message = "Not bulunamadı." }) : Ok(note);
     }
 
+    // --- Soru/Not düzenleme ekranı ---
+
+    /// <summary>Düzenleme ekranı için soruyu TÜM şıklarıyla (doğru/yanlış fark etmeksizin) döner.</summary>
+    [Authorize]
+    [HttpGet("questions/{questionId:guid}/edit")]
+    public async Task<ActionResult<QuestionEditDto>> GetQuestionForEdit(Guid questionId, CancellationToken ct)
+    {
+        var q = await db.Questions
+            .Include(x => x.Choices)
+            .Include(x => x.Note)
+            .FirstOrDefaultAsync(x => x.Id == questionId, ct);
+
+        if (q is null) return NotFound(new { message = "Soru bulunamadı." });
+
+        return Ok(new QuestionEditDto(
+            q.Id, q.TopicId, q.Type, q.Text, q.IsNegative, q.Explanation, q.OrderIndex,
+            q.NoteId, q.Note.Title, q.Note.Body,
+            q.Choices.OrderBy(c => c.OrderIndex)
+                .Select(c => new ChoiceEditDto(c.Id, c.Text, c.IsCorrect, c.OrderIndex))
+                .ToList()));
+    }
+
+    /// <summary>Soru metnini, ters soru bayrağını ve açıklamasını günceller.</summary>
+    [Authorize]
+    [HttpPut("questions/{questionId:guid}")]
+    public async Task<ActionResult> UpdateQuestion(Guid questionId, UpdateQuestionRequest req, CancellationToken ct)
+    {
+        if (string.IsNullOrWhiteSpace(req.Text))
+            return BadRequest(new { message = "Soru metni boş olamaz." });
+
+        var q = await db.Questions.FirstOrDefaultAsync(x => x.Id == questionId, ct);
+        if (q is null) return NotFound(new { message = "Soru bulunamadı." });
+
+        q.Text = req.Text.Trim();
+        q.IsNegative = req.IsNegative;
+        q.Explanation = string.IsNullOrWhiteSpace(req.Explanation) ? null : req.Explanation.Trim();
+
+        await db.SaveChangesAsync(ct);
+        return NoContent();
+    }
+
+    /// <summary>Sorunun bağlı olduğu notu (başlık ve gövde) günceller.</summary>
+    [Authorize]
+    [HttpPut("notes/{noteId:guid}")]
+    public async Task<ActionResult> UpdateNote(Guid noteId, UpdateNoteRequest req, CancellationToken ct)
+    {
+        if (string.IsNullOrWhiteSpace(req.Title) || string.IsNullOrWhiteSpace(req.Body))
+            return BadRequest(new { message = "Not başlığı ve içeriği boş olamaz." });
+
+        var note = await db.Notes.FirstOrDefaultAsync(n => n.Id == noteId, ct);
+        if (note is null) return NotFound(new { message = "Not bulunamadı." });
+
+        note.Title = req.Title.Trim();
+        note.Body = req.Body.Trim();
+
+        await db.SaveChangesAsync(ct);
+        return NoContent();
+    }
+
+    /// <summary>Bir soruya yeni şık ekler; eklenen şıkkı döner.</summary>
+    [Authorize]
+    [HttpPost("questions/{questionId:guid}/choices")]
+    public async Task<ActionResult<ChoiceEditDto>> AddChoice(
+        Guid questionId, CreateChoiceForQuestionRequest req, CancellationToken ct)
+    {
+        if (string.IsNullOrWhiteSpace(req.Text))
+            return BadRequest(new { message = "Şık metni boş olamaz." });
+
+        var q = await db.Questions.Include(x => x.Choices).FirstOrDefaultAsync(x => x.Id == questionId, ct);
+        if (q is null) return NotFound(new { message = "Soru bulunamadı." });
+
+        var nextOrder = q.Choices.Count == 0 ? 1 : q.Choices.Max(c => c.OrderIndex) + 1;
+        var choice = new Choice
+        {
+            QuestionId = questionId,
+            Text = req.Text.Trim(),
+            IsCorrect = req.IsCorrect,
+            OrderIndex = nextOrder,
+        };
+
+        db.Choices.Add(choice);
+        await db.SaveChangesAsync(ct);
+
+        return Ok(new ChoiceEditDto(choice.Id, choice.Text, choice.IsCorrect, choice.OrderIndex));
+    }
+
+    /// <summary>Bir şıkkın metnini ve doğru/yanlış durumunu günceller.</summary>
+    [Authorize]
+    [HttpPut("choices/{choiceId:guid}")]
+    public async Task<ActionResult> UpdateChoice(Guid choiceId, UpdateChoiceRequest req, CancellationToken ct)
+    {
+        if (string.IsNullOrWhiteSpace(req.Text))
+            return BadRequest(new { message = "Şık metni boş olamaz." });
+
+        var choice = await db.Choices.FirstOrDefaultAsync(c => c.Id == choiceId, ct);
+        if (choice is null) return NotFound(new { message = "Şık bulunamadı." });
+
+        // Son doğru şık yanlışa çevrilemez — havuzda en az 1 doğru kalmalı.
+        if (choice.IsCorrect && !req.IsCorrect)
+        {
+            var otherCorrectCount = await db.Choices
+                .CountAsync(c => c.QuestionId == choice.QuestionId && c.Id != choiceId && c.IsCorrect, ct);
+            if (otherCorrectCount == 0)
+                return BadRequest(new { message = "Son doğru şık yanlış olarak işaretlenemez; en az bir doğru şık kalmalıdır." });
+        }
+
+        // Son yanlış şık doğruya çevrilemez — havuzda en az 1 yanlış kalmalı.
+        if (!choice.IsCorrect && req.IsCorrect)
+        {
+            var otherWrongCount = await db.Choices
+                .CountAsync(c => c.QuestionId == choice.QuestionId && c.Id != choiceId && !c.IsCorrect, ct);
+            if (otherWrongCount == 0)
+                return BadRequest(new { message = "Son yanlış şık doğru olarak işaretlenemez; en az bir yanlış şık kalmalıdır." });
+        }
+
+        choice.Text = req.Text.Trim();
+        choice.IsCorrect = req.IsCorrect;
+
+        await db.SaveChangesAsync(ct);
+        return NoContent();
+    }
+
+    /// <summary>Bir şıkkı siler. Havuzdaki son doğru veya son yanlış şık silinemez.</summary>
+    [Authorize]
+    [HttpDelete("choices/{choiceId:guid}")]
+    public async Task<ActionResult> DeleteChoice(Guid choiceId, CancellationToken ct)
+    {
+        var choice = await db.Choices.FirstOrDefaultAsync(c => c.Id == choiceId, ct);
+        if (choice is null) return NotFound(new { message = "Şık bulunamadı." });
+
+        if (choice.IsCorrect)
+        {
+            var otherCorrectCount = await db.Choices
+                .CountAsync(c => c.QuestionId == choice.QuestionId && c.Id != choiceId && c.IsCorrect, ct);
+            if (otherCorrectCount == 0)
+                return BadRequest(new { message = "Son doğru şık silinemez; en az bir doğru şık kalmalıdır." });
+        }
+        else
+        {
+            var otherWrongCount = await db.Choices
+                .CountAsync(c => c.QuestionId == choice.QuestionId && c.Id != choiceId && !c.IsCorrect, ct);
+            if (otherWrongCount == 0)
+                return BadRequest(new { message = "Son yanlış şık silinemez; en az bir yanlış şık kalmalıdır." });
+        }
+
+        db.Choices.Remove(choice);
+        await db.SaveChangesAsync(ct);
+        return NoContent();
+    }
+
     /// <summary>Cevabı değerlendirir; sonucu ve ilgili notu birlikte döndürür.</summary>
     [HttpPost("answers")]
     public async Task<ActionResult<AnswerResultDto>> SubmitAnswer(SubmitAnswerRequest req, CancellationToken ct)
@@ -434,5 +715,81 @@ public class QuizController(QuizNoteDbContext db) : ControllerBase
             isCorrect, question.Explanation, correctChoiceId, correctPairs, noteDto,
             newLevel, previousLevel, UserQuestionLevel.MaxLevel));
     }
+
+    /// <summary>
+    /// Kullanıcının kendi eklediği soruları (ve notlarını) DbSeeder.cs'deki seed veri
+    /// formatına benzer C# kodu olarak bir .txt dosyası şeklinde indirir. Topbar'daki
+    /// indirme ikonu bunu çağırır.
+    /// </summary>
+    [Authorize]
+    [HttpGet("me/questions/export")]
+    public async Task<ActionResult> ExportMyQuestions(CancellationToken ct)
+    {
+        var userId = CurrentUserId;
+        if (userId is null) return Unauthorized();
+
+        var questions = await db.Questions
+            .Where(q => q.CreatedByUserId == userId)
+            // Pasifleştirilmiş (aktif olmayan) sorular dışa aktarıma dahil edilmez.
+            .Where(q => !db.InactiveQuestions.Any(i => i.UserId == userId && i.QuestionId == q.Id))
+            .Include(q => q.Choices)
+            .Include(q => q.Note)
+            .Include(q => q.Topic)
+            .OrderBy(q => q.Topic.Name).ThenBy(q => q.CreatedAt)
+            .ToListAsync(ct);
+
+        var sb = new System.Text.StringBuilder();
+        sb.AppendLine("// Kendi eklediğiniz sorular ve notlar — DbSeeder.cs seed formatında dışa aktarıldı.");
+        sb.AppendLine($"// Dışa aktarma tarihi: {DateTime.UtcNow:yyyy-MM-dd HH:mm} UTC");
+        sb.AppendLine();
+
+        // Her sorunun notu ayrı bir değişkene atanır; aynı isim (örn. "not") tüm
+        // sorularda tekrarlanırsa dosya tek bir metot scope'una yapıştırıldığında
+        // "değişken zaten tanımlı" derleme hatası verir. Rastgele kısa bir kimlikle
+        // benzersizleştirilir.
+        foreach (var byTopic in questions.GroupBy(q => q.Topic.Name))
+        {
+            sb.AppendLine($"// --- Konu: {byTopic.Key} ---");
+            sb.AppendLine();
+
+            foreach (var q in byTopic)
+            {
+                var noteVar = $"not_{Guid.NewGuid():N}"[..12];
+
+                sb.AppendLine($"var {noteVar} = new Note");
+                sb.AppendLine("{");
+                sb.AppendLine($"    Title = {CsString(q.Note.Title)},");
+                sb.AppendLine($"    Body = {CsString(q.Note.Body)},");
+                sb.AppendLine("};");
+                sb.AppendLine();
+
+                sb.AppendLine("new Question");
+                sb.AppendLine("{");
+                sb.AppendLine($"    Note = {noteVar},");
+                sb.AppendLine("    Type = QuestionType.MultipleChoice,");
+                sb.AppendLine($"    Text = {CsString(q.Text)},");
+                if (!string.IsNullOrWhiteSpace(q.Explanation))
+                    sb.AppendLine($"    Explanation = {CsString(q.Explanation)},");
+                sb.AppendLine("    Choices =");
+                sb.AppendLine("    {");
+                foreach (var c in q.Choices.OrderBy(c => c.OrderIndex))
+                    sb.AppendLine(
+                        $"        new Choice {{ Text = {CsString(c.Text)}, IsCorrect = {(c.IsCorrect ? "true" : "false")}, OrderIndex = {c.OrderIndex} }},");
+                sb.AppendLine("    }");
+                sb.AppendLine("},");
+                sb.AppendLine();
+            }
+        }
+
+        if (questions.Count == 0)
+            sb.AppendLine("// Henüz eklediğiniz bir soru yok.");
+
+        var bytes = System.Text.Encoding.UTF8.GetBytes(sb.ToString());
+        return File(bytes, "text/plain; charset=utf-8", "kendi-sorularim.txt");
+    }
+
+    /// <summary>Bir metni C# string literal'ine (çift tırnak + kaçış) çevirir.</summary>
+    private static string CsString(string s) =>
+        "\"" + s.Replace("\\", "\\\\").Replace("\"", "\\\"").Replace("\r\n", "\\n").Replace("\n", "\\n") + "\"";
 
 }

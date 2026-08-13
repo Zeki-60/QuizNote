@@ -121,8 +121,8 @@ public static class DbSeeder
         BuildAnadoluSelcukluDevleti(),
         BuildOsmanliDevletiKurulusDonemi(),
         BuildOsmanliDevletiYukselmeDonemi(),
-        BuildOsmanliDevletiKulturVeMedeniyeti(),
-        BuildDenemeKonusu()
+        BuildOsmanliDevletiKulturVeMedeniyeti()
+        // BuildDenemeKonusu() // Test amaçlı konu; artık seed'e dahil edilmiyor.
     ];
 
     /// <summary>
@@ -1266,11 +1266,11 @@ public static class DbSeeder
            """
         };
 
-// 3. HAZARLAR (GENEL ÖZELLİKLER, İNANÇ, TİCARET VE YIKILIŞ)
-var notHazarlarGenel = new Note
-{
-    Title = "Hazarlar — İnanç (Musevilik), Kürk Yolu, Paks Hazariya, Adalet ve Yıkılış",
-    Body = """
+        // 3. HAZARLAR (GENEL ÖZELLİKLER, İNANÇ, TİCARET VE YIKILIŞ)
+        var notHazarlarGenel = new Note
+        {
+            Title = "Hazarlar — İnanç (Musevilik), Kürk Yolu, Paks Hazariya, Adalet ve Yıkılış",
+            Body = """
            Doğu Göktürk Devleti'nin yıkılmasıyla Gürcistan/Tiflis bölgesinde bağımsızlıklarını kazanmışlardır.
 
            - Türk tarihinde **Museviliği (Yahudiliği)** kabul eden **ilk ve tek** Türk devletidir.
@@ -1282,13 +1282,13 @@ var notHazarlarGenel = new Note
 
            Günümüzde **Karay/Karaçay Türkleri** Musevi Türklerin devamıdır; **Hazar Denizi** adını Hazarlardan alır.
            """
-};
+        };
 
-// 4. HAZARLAR (ASKERİ YAPI VE EMEVİ MÜCADELELERİ)
-var notHazarlarAskeriVeEmevi = new Note
-{
-    Title = "Hazarlar — Ücretli Askerlik, Emevi Savaşları ve İç Müslümanların Durumu",
-    Body = """
+        // 4. HAZARLAR (ASKERİ YAPI VE EMEVİ MÜCADELELERİ)
+        var notHazarlarAskeriVeEmevi = new Note
+        {
+            Title = "Hazarlar — Ücretli Askerlik, Emevi Savaşları ve İç Müslümanların Durumu",
+            Body = """
            - Hazarlar, İslam öncesi Türk tarihinde ordusuna **ücretli asker alan ilk ve tek** Türk
              devletidir.
            - **Emeviler** ile mücadele ederek **Türgişler** ile birlikte İslamiyet'in Karadeniz'in
@@ -1299,13 +1299,13 @@ var notHazarlarAskeriVeEmevi = new Note
            - Hazar Hakanı, bu Müslümanları yönetmek üzere **"Haz"** adı verilen yöneticiler
              atamıştır.
            """
-};
+        };
 
-// 5. SİBİRLER (SABİRLER)
-var notSibirler = new Note
-{
-    Title = "Sibirler (Sabirler) — Kelime Anlamı, Boğarık Hatun, Akınlar ve Yıkılış",
-    Body = """
+        // 5. SİBİRLER (SABİRLER)
+        var notSibirler = new Note
+        {
+            Title = "Sibirler (Sabirler) — Kelime Anlamı, Boğarık Hatun, Akınlar ve Yıkılış",
+            Body = """
            - **Sibir** kelimesinin anlamı **"yoldan sapan, yol değiştiren, serbest dolaşan"**dır.
            - Günümüz **Sibirya** bölgesine adını veren Türk boyudur.
            - Başlarında **"Boğarık Hatun"** adında bir kadın hükümdar bulunur; **100.000 kişilik**
@@ -1314,13 +1314,13 @@ var notSibirler = new Note
              **İnözü Vadisi** gibi mağaralarda izler bırakmışlardır.
            - Siyasi varlıklarına **Bizans** tarafından son verilmiştir.
            """
-};
+        };
 
-// 6. KIPÇAKLAR (KUMANLAR)
-var notKipcaklar = new Note
-{
-    Title = "Kıpçaklar (Kumanlar) — İsimler, Destanlar, Kodeks Kumanikus ve Özellikler",
-    Body = """
+        // 6. KIPÇAKLAR (KUMANLAR)
+        var notKipcaklar = new Note
+        {
+            Title = "Kıpçaklar (Kumanlar) — İsimler, Destanlar, Kodeks Kumanikus ve Özellikler",
+            Body = """
            - **Kıpçaklar**; **Kuman, Kun, Polvet** (Rusların verdiği isim, "tarla/bozkır ahalisi")
              adlarıyla da bilinir.
            - Kelime anlamı **"sarı, sarımtırak, solgun, kül rengi, öfkeli, birden kızan"**dır.
@@ -1335,7 +1335,7 @@ var notKipcaklar = new Note
            - **Eyyubi** ve **Memlük** ordularında görev yapmışlar, **Altın Orda Devleti**'nin
              Türkleşmesini sağlamışlar ve Rusların güneye inmesine engel olmuşlardır.
            """
-};
+        };
 
         var notMacarlarVeBulgarlar = new Note
         {
@@ -1530,24 +1530,24 @@ new Question
 {
     Note = notTunaVeItilBulgarlari,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Tuna Bulgarları ve Bulgar tarihi ile ilgili aşağıda verilen yargılardan hangisi yanlıştır?",
     Explanation = "Çar unvanını ilk kullanan hükümdar Boris Han değil Simon'dur. Boris Han döneminde Hristiyanlık kabul edilmiş, ardından Simon döneminde Çar unvanına geçilmiştir.",
     OrderIndex = 98,
     Choices =
     {
-        // Doğru ifadeler (IsCorrect = true)
-        new Choice { Text = "Bulgar kelimesi 'karışık, karışmak' anlamında kullanılır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Kubrat zamanında Büyük Bulgar Devleti kurulmuştur", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Tuna Bulgarları Asparuh Han tarafından kurulmuştur", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Kurum Han döneminde İstanbul kuşatılmıştır", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Omurtak Han dönemi Tuna Bulgarlarının en parlak zamanıdır", IsCorrect = true, OrderIndex = 5 },
-        new Choice { Text = "Boris Han zamanında Hristiyanlık kabul edilmiştir", IsCorrect = true, OrderIndex = 6 },
+        // Doğru ifadeler (IsCorrect = false)
+        new Choice { Text = "Bulgar kelimesi 'karışık, karışmak' anlamında kullanılır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Kubrat zamanında Büyük Bulgar Devleti kurulmuştur", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Tuna Bulgarları Asparuh Han tarafından kurulmuştur", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Kurum Han döneminde İstanbul kuşatılmıştır", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Omurtak Han dönemi Tuna Bulgarlarının en parlak zamanıdır", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Boris Han zamanında Hristiyanlık kabul edilmiştir", IsCorrect = false, OrderIndex = 6 },
 
-        // Aranan cevap: Yanlış ifadeler (IsCorrect = false)
-        new Choice { Text = "Boris Han, Çar unvanını kullanan ilk Tuna Bulgar hükümdarıdır", IsCorrect = false, OrderIndex = 7 },
-        new Choice { Text = "Tuna Bulgarları İlteber Almış Han önderliğinde İslamiyet'i seçmiştir", IsCorrect = false, OrderIndex = 8 },
-        new Choice { Text = "Bulgarlar Kürk Yolunu kullanarak Museviliği benimseyen tek Türk devletidir", IsCorrect = false, OrderIndex = 9 }
+        // Aranan cevap: Yanlış ifadeler (IsCorrect = true)
+        new Choice { Text = "Boris Han, Çar unvanını kullanan ilk Tuna Bulgar hükümdarıdır", IsCorrect = true, OrderIndex = 7 },
+        new Choice { Text = "Tuna Bulgarları İlteber Almış Han önderliğinde İslamiyet'i seçmiştir", IsCorrect = true, OrderIndex = 8 },
+        new Choice { Text = "Bulgarlar Kürk Yolunu kullanarak Museviliği benimseyen tek Türk devletidir", IsCorrect = true, OrderIndex = 9 }
     }
 },
 
@@ -1608,23 +1608,23 @@ new Question
 {
     Note = notHazarlarAskeriVeEmevi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Hazarların askeri yapısı, Emeviler ile ilişkileri ve iç idaresine dair aşağıda verilen ifadelerden hangisi yanlıştır?",
     Explanation = "Hazarlar İslamiyet'in yayılmasını engellemek için Emevilerle savaşmış, bu süreçte Türgişlerle ortak hareket etmişlerdir. Müslüman tebaayı yönetmek için Haz adı verilen yöneticiler atamışlardır.",
     OrderIndex = 101,
     Choices =
     {
-        // Doğru ifadeler (IsCorrect = true)
-        new Choice { Text = "İslam öncesi dönemde ordusuna ücretli asker alan ilk ve tek Türk devletidir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Emeviler ile savaşarak İslamiyet'in Karadeniz'in kuzeyine yayılmasını engellemişlerdir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Türgişler ile ortak hareket ederek Emevi ilerleyişini durdurmuşlardır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Emevilerin Mevali politikası nedeniyle Hazar Müslümanları savaşta Hazarların yanında yer almıştır", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Hazar Hakanı, Müslümanları yönetmek için 'Haz' adı verilen yöneticiler görevlendirmiştir", IsCorrect = true, OrderIndex = 5 },
+        // Doğru ifadeler (IsCorrect = false)
+        new Choice { Text = "İslam öncesi dönemde ordusuna ücretli asker alan ilk ve tek Türk devletidir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Emeviler ile savaşarak İslamiyet'in Karadeniz'in kuzeyine yayılmasını engellemişlerdir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Türgişler ile ortak hareket ederek Emevi ilerleyişini durdurmuşlardır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Emevilerin Mevali politikası nedeniyle Hazar Müslümanları savaşta Hazarların yanında yer almıştır", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Hazar Hakanı, Müslümanları yönetmek için 'Haz' adı verilen yöneticiler görevlendirmiştir", IsCorrect = false, OrderIndex = 5 },
 
-        // Aranan cevap: Yanlış ifadeler (IsCorrect = false)
-        new Choice { Text = "Hazarlar Emevilere karşı İtil Bulgarları ile ittifak yapıp İslamiyet'i resmî din ilan etmiştir", IsCorrect = false, OrderIndex = 6 },
-        new Choice { Text = "Geleneksel ordu-millet anlayışını koruyarak dışarıdan hiçbir şekilde asker satın almamışlardır", IsCorrect = false, OrderIndex = 7 },
-        new Choice { Text = "Emevilerle yaptıkları savaşlar sonucunda topluca İslamiyet'e geçmişlerdir", IsCorrect = false, OrderIndex = 8 }
+        // Aranan cevap: Yanlış ifadeler (IsCorrect = true)
+        new Choice { Text = "Hazarlar Emevilere karşı İtil Bulgarları ile ittifak yapıp İslamiyet'i resmî din ilan etmiştir", IsCorrect = true, OrderIndex = 6 },
+        new Choice { Text = "Geleneksel ordu-millet anlayışını koruyarak dışarıdan hiçbir şekilde asker satın almamışlardır", IsCorrect = true, OrderIndex = 7 },
+        new Choice { Text = "Emevilerle yaptıkları savaşlar sonucunda topluca İslamiyet'e geçmişlerdir", IsCorrect = true, OrderIndex = 8 }
     }
 },
 
@@ -1713,24 +1713,24 @@ new Question
 {
     Note = notTunaVeItilBulgarlari,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Tuna Bulgarları ve Bulgar tarihi ile ilgili aşağıda verilen yargılardan hangisi yanlıştır?",
     Explanation = "Çar unvanını ilk kullanan hükümdar Boris Han değil Simon'dur. Boris Han döneminde Hristiyanlık kabul edilmiş, ardından Simon döneminde Çar unvanına geçilmiştir.",
     OrderIndex = 105,
     Choices =
     {
-        // Doğru ifadeler (IsCorrect = true)
-        new Choice { Text = "Bulgar kelimesi 'karışık, karışmak' anlamında kullanılır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Kubrat zamanında Büyük Bulgar Devleti kurulmuştur", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Tuna Bulgarları Asparuh Han tarafından kurulmuştur", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Kurum Han döneminde İstanbul kuşatılmıştır", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Omurtak Han dönemi Tuna Bulgarlarının en parlak zamanıdır", IsCorrect = true, OrderIndex = 5 },
-        new Choice { Text = "Boris Han zamanında Hristiyanlık kabul edilmiştir", IsCorrect = true, OrderIndex = 6 },
+        // Doğru ifadeler (IsCorrect = false)
+        new Choice { Text = "Bulgar kelimesi 'karışık, karışmak' anlamında kullanılır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Kubrat zamanında Büyük Bulgar Devleti kurulmuştur", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Tuna Bulgarları Asparuh Han tarafından kurulmuştur", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Kurum Han döneminde İstanbul kuşatılmıştır", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Omurtak Han dönemi Tuna Bulgarlarının en parlak zamanıdır", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Boris Han zamanında Hristiyanlık kabul edilmiştir", IsCorrect = false, OrderIndex = 6 },
 
-        // Aranan cevap: Yanlış ifadeler (IsCorrect = false)
-        new Choice { Text = "Boris Han, Çar unvanını kullanan ilk Tuna Bulgar hükümdarıdır", IsCorrect = false, OrderIndex = 7 },
-        new Choice { Text = "Tuna Bulgarları İlteber Almış Han önderliğinde İslamiyet'i seçmiştir", IsCorrect = false, OrderIndex = 8 },
-        new Choice { Text = "Bulgarlar Kürk Yolunu kullanarak Museviliği benimseyen tek Türk devletidir", IsCorrect = false, OrderIndex = 9 }
+        // Aranan cevap: Yanlış ifadeler (IsCorrect = true)
+        new Choice { Text = "Boris Han, Çar unvanını kullanan ilk Tuna Bulgar hükümdarıdır", IsCorrect = true, OrderIndex = 7 },
+        new Choice { Text = "Tuna Bulgarları İlteber Almış Han önderliğinde İslamiyet'i seçmiştir", IsCorrect = true, OrderIndex = 8 },
+        new Choice { Text = "Bulgarlar Kürk Yolunu kullanarak Museviliği benimseyen tek Türk devletidir", IsCorrect = true, OrderIndex = 9 }
     }
 },
 
@@ -1789,23 +1789,23 @@ new Question
 {
     Note = notHazarlarAskeriVeEmevi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Hazarların askeri yapısı ve Emeviler ile olan ilişkilerine dair aşağıda verilen ifadelerden hangisi yanlıştır?",
     Explanation = "Hazarlar İslamiyet'in yayılmasını engellemek için Emevilerle savaşmış, bu süreçte Türgişlerle ortak hareket etmişlerdir. İtil Bulgarları ile bu konuda ittifak kurmamışlardır.",
     OrderIndex = 108,
     Choices =
     {
-        // Doğru ifadeler (IsCorrect = true)
-        new Choice { Text = "İslam öncesi dönemde ordusuna ücretli asker alan ilk ve tek Türk devletidir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Emeviler ile savaşarak İslamiyet'in Karadeniz'in kuzeyine yayılmasını engellemişlerdir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Türgişler ile ortak hareket ederek Emevi ilerleyişini durdurmuşlardır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Emevilerin Mevali politikası nedeniyle Hazar Müslümanları savaşta Hazarların yanında yer almıştır", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Hazar Hakanı, Müslümanları yönetmek için 'Haz' adı verilen yöneticiler görevlendirmiştir", IsCorrect = true, OrderIndex = 5 },
+        // Doğru ifadeler (IsCorrect = false)
+        new Choice { Text = "İslam öncesi dönemde ordusuna ücretli asker alan ilk ve tek Türk devletidir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Emeviler ile savaşarak İslamiyet'in Karadeniz'in kuzeyine yayılmasını engellemişlerdir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Türgişler ile ortak hareket ederek Emevi ilerleyişini durdurmuşlardır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Emevilerin Mevali politikası nedeniyle Hazar Müslümanları savaşta Hazarların yanında yer almıştır", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Hazar Hakanı, Müslümanları yönetmek için 'Haz' adı verilen yöneticiler görevlendirmiştir", IsCorrect = false, OrderIndex = 5 },
 
-        // Aranan cevap: Yanlış ifadeler (IsCorrect = false)
-        new Choice { Text = "Hazarlar Emevilere karşı İtil Bulgarları ile ittifak yapıp İslamiyet'i resmî din ilan etmiştir", IsCorrect = false, OrderIndex = 6 },
-        new Choice { Text = "Geleneksel ordu-millet anlayışını koruyarak dışarıdan hiçbir şekilde asker satın almamışlardır", IsCorrect = false, OrderIndex = 7 },
-        new Choice { Text = "Emevilerle yaptıkları savaşlar sonucunda topluca İslamiyet'e geçmişlerdir", IsCorrect = false, OrderIndex = 8 }
+        // Aranan cevap: Yanlış ifadeler (IsCorrect = true)
+        new Choice { Text = "Hazarlar Emevilere karşı İtil Bulgarları ile ittifak yapıp İslamiyet'i resmî din ilan etmiştir", IsCorrect = true, OrderIndex = 6 },
+        new Choice { Text = "Geleneksel ordu-millet anlayışını koruyarak dışarıdan hiçbir şekilde asker satın almamışlardır", IsCorrect = true, OrderIndex = 7 },
+        new Choice { Text = "Emevilerle yaptıkları savaşlar sonucunda topluca İslamiyet'e geçmişlerdir", IsCorrect = true, OrderIndex = 8 }
     }
 },
 
@@ -1958,22 +1958,22 @@ new Question
                 {
                     Note = notAnaYurtNeresi,
                     Type = QuestionType.MultipleChoice,
-                    IsNegative = true,
+                    IsNegative = false,
                     Text = "Türklerin ilk ana yurdu ile ilgili olarak aşağıdakilerden hangisi söylenemez?",
                     Explanation = "Türklerin ilk ana yurdu Anadolu değil, klasik Orta Asya diye tabir edilen bölgedir.",
                     OrderIndex = 5,
                     Choices =
                     {
                         // Ters soruda aranan cevap YANLIŞ olan şıktır; havuz rolleri tersine döner.
-                        new Choice { Text = "Türkler, klasik Orta Asya diye tabir edilen bölgede dünyaya gelmiştir", IsCorrect = true, OrderIndex = 1 },
-                        new Choice { Text = "Türklerin ilk ana yurdu Tanrı dağlarının bulunduğu bölgedir", IsCorrect = true, OrderIndex = 2 },
-                        new Choice { Text = "Türklerin ilk ana yurdu Hazar Denizi'nin bu tarafında yer alır", IsCorrect = true, OrderIndex = 3 },
-                        new Choice { Text = "Türklerin ilk ana yurdu Balkaş Gölü'nün bulunduğu bölgededir", IsCorrect = true, OrderIndex = 4 },
-                        new Choice { Text = "Ana yurt, karanlık dağların bulunduğu tarafta yer alır", IsCorrect = true, OrderIndex = 5 },
+                        new Choice { Text = "Türkler, klasik Orta Asya diye tabir edilen bölgede dünyaya gelmiştir", IsCorrect = false, OrderIndex = 1 },
+                        new Choice { Text = "Türklerin ilk ana yurdu Tanrı dağlarının bulunduğu bölgedir", IsCorrect = false, OrderIndex = 2 },
+                        new Choice { Text = "Türklerin ilk ana yurdu Hazar Denizi'nin bu tarafında yer alır", IsCorrect = false, OrderIndex = 3 },
+                        new Choice { Text = "Türklerin ilk ana yurdu Balkaş Gölü'nün bulunduğu bölgededir", IsCorrect = false, OrderIndex = 4 },
+                        new Choice { Text = "Ana yurt, karanlık dağların bulunduğu tarafta yer alır", IsCorrect = false, OrderIndex = 5 },
 
-                        new Choice { Text = "Türklerin ilk ana yurdu Anadolu'dur", IsCorrect = false, OrderIndex = 6 },
-                        new Choice { Text = "Türklerin ilk ana yurdu Mezopotamya'dır", IsCorrect = false, OrderIndex = 7 },
-                        new Choice { Text = "Türklerin ilk ana yurdu Balkanlar'dır", IsCorrect = false, OrderIndex = 8 },
+                        new Choice { Text = "Türklerin ilk ana yurdu Anadolu'dur", IsCorrect = true, OrderIndex = 6 },
+                        new Choice { Text = "Türklerin ilk ana yurdu Mezopotamya'dır", IsCorrect = true, OrderIndex = 7 },
+                        new Choice { Text = "Türklerin ilk ana yurdu Balkanlar'dır", IsCorrect = true, OrderIndex = 8 },
                     }
                 },
 
@@ -2183,25 +2183,25 @@ new Question
                 {
                     Note = notAnlamlar,
                     Type = QuestionType.MultipleChoice,
-                    IsNegative = true,
+                    IsNegative = false,
                     Text = "\"Türk\" kelimesinin anlamları ile ilgili olarak aşağıdakilerden hangisi söylenemez?",
                     Explanation = "Türk kelimesi ilk defa Çin kaynaklarında geçer, İran kaynaklarında değil.",
                     OrderIndex = 14,
                     Choices =
                     {
                         // Ters soruda doğru ifadeler çeldirici olur.
-                        new Choice { Text = "Çin kaynaklarında \"zırhlı, miğfer\" anlamına gelir", IsCorrect = true, OrderIndex = 1 },
-                        new Choice { Text = "Ziya Gökalp'e göre \"kanunlu, nizam sahibi, töreli\" demektir", IsCorrect = true, OrderIndex = 2 },
-                        new Choice { Text = "Kaşgarlı Mahmut'a göre \"olgundur\"", IsCorrect = true, OrderIndex = 3 },
-                        new Choice { Text = "Vambery'ye göre \"türemek\"ten gelir", IsCorrect = true, OrderIndex = 4 },
-                        new Choice { Text = "Danforth'a göre \"devlete bağlı halk\" demektir", IsCorrect = true, OrderIndex = 5 },
-                        new Choice { Text = "İran kaynaklarında \"güzel insanlardır\" anlamındadır", IsCorrect = true, OrderIndex = 6 },
+                        new Choice { Text = "Çin kaynaklarında \"zırhlı, miğfer\" anlamına gelir", IsCorrect = false, OrderIndex = 1 },
+                        new Choice { Text = "Ziya Gökalp'e göre \"kanunlu, nizam sahibi, töreli\" demektir", IsCorrect = false, OrderIndex = 2 },
+                        new Choice { Text = "Kaşgarlı Mahmut'a göre \"olgundur\"", IsCorrect = false, OrderIndex = 3 },
+                        new Choice { Text = "Vambery'ye göre \"türemek\"ten gelir", IsCorrect = false, OrderIndex = 4 },
+                        new Choice { Text = "Danforth'a göre \"devlete bağlı halk\" demektir", IsCorrect = false, OrderIndex = 5 },
+                        new Choice { Text = "İran kaynaklarında \"güzel insanlardır\" anlamındadır", IsCorrect = false, OrderIndex = 6 },
 
                         // Aranan cevap: yanlış ifadeler
-                        new Choice { Text = "Türk kelimesi ilk defa İran kaynaklarında geçer", IsCorrect = false, OrderIndex = 7 },
-                        new Choice { Text = "Çin kaynaklarında \"türemek\" anlamına gelir", IsCorrect = false, OrderIndex = 8 },
-                        new Choice { Text = "Ziya Gökalp'e göre \"güzel insan\" demektir", IsCorrect = false, OrderIndex = 9 },
-                        new Choice { Text = "Kaşgarlı Mahmut'a göre \"devlete bağlı halk\"tır", IsCorrect = false, OrderIndex = 10 },
+                        new Choice { Text = "Türk kelimesi ilk defa İran kaynaklarında geçer", IsCorrect = true, OrderIndex = 7 },
+                        new Choice { Text = "Çin kaynaklarında \"türemek\" anlamına gelir", IsCorrect = true, OrderIndex = 8 },
+                        new Choice { Text = "Ziya Gökalp'e göre \"güzel insan\" demektir", IsCorrect = true, OrderIndex = 9 },
+                        new Choice { Text = "Kaşgarlı Mahmut'a göre \"devlete bağlı halk\"tır", IsCorrect = true, OrderIndex = 10 },
                     }
                 },
 
@@ -2339,25 +2339,25 @@ new Question
                 {
                     Note = notMerkezler,
                     Type = QuestionType.MultipleChoice,
-                    IsNegative = true,
+                    IsNegative = false,
                     Text = "Orta Asya kültür merkezleri ve kurgan ile ilgili olarak aşağıdakilerden hangisi söylenemez?",
                     Explanation = "Çatalhöyük ve Göbeklitepe Anadolu'daki kazı merkezleridir; kurgan mezar anlamına gelir.",
                     OrderIndex = 20,
                     Choices =
                     {
                         // Ters soruda doğru ifadeler çeldirici olur.
-                        new Choice { Text = "Kurgan mezar anlamına gelir", IsCorrect = true, OrderIndex = 1 },
-                        new Choice { Text = "Anav bir Orta Asya kültür merkezidir", IsCorrect = true, OrderIndex = 2 },
-                        new Choice { Text = "Kelteminar bir Orta Asya kültür merkezidir", IsCorrect = true, OrderIndex = 3 },
-                        new Choice { Text = "Hakan sevdiği eşyalarla beraber gömülür", IsCorrect = true, OrderIndex = 4 },
-                        new Choice { Text = "Hakan'ın elinde kadeh bulunur", IsCorrect = true, OrderIndex = 5 },
-                        new Choice { Text = "Bu merkezler bölgelerin isimlendirmeleridir", IsCorrect = true, OrderIndex = 6 },
+                        new Choice { Text = "Kurgan mezar anlamına gelir", IsCorrect = false, OrderIndex = 1 },
+                        new Choice { Text = "Anav bir Orta Asya kültür merkezidir", IsCorrect = false, OrderIndex = 2 },
+                        new Choice { Text = "Kelteminar bir Orta Asya kültür merkezidir", IsCorrect = false, OrderIndex = 3 },
+                        new Choice { Text = "Hakan sevdiği eşyalarla beraber gömülür", IsCorrect = false, OrderIndex = 4 },
+                        new Choice { Text = "Hakan'ın elinde kadeh bulunur", IsCorrect = false, OrderIndex = 5 },
+                        new Choice { Text = "Bu merkezler bölgelerin isimlendirmeleridir", IsCorrect = false, OrderIndex = 6 },
 
                         // Aranan cevap: yanlış ifadeler
-                        new Choice { Text = "Çatalhöyük bir Orta Asya kültür merkezidir", IsCorrect = false, OrderIndex = 7 },
-                        new Choice { Text = "Kurgan çadır anlamına gelir", IsCorrect = false, OrderIndex = 8 },
-                        new Choice { Text = "Göbeklitepe Orta Asya'daki kültür merkezlerindendir", IsCorrect = false, OrderIndex = 9 },
-                        new Choice { Text = "Hakan'ın elindeki kadeh Çinlilerde de bulunur", IsCorrect = false, OrderIndex = 10 },
+                        new Choice { Text = "Çatalhöyük bir Orta Asya kültür merkezidir", IsCorrect = true, OrderIndex = 7 },
+                        new Choice { Text = "Kurgan çadır anlamına gelir", IsCorrect = true, OrderIndex = 8 },
+                        new Choice { Text = "Göbeklitepe Orta Asya'daki kültür merkezlerindendir", IsCorrect = true, OrderIndex = 9 },
+                        new Choice { Text = "Hakan'ın elindeki kadeh Çinlilerde de bulunur", IsCorrect = true, OrderIndex = 10 },
                     }
                 },
 
@@ -2529,25 +2529,25 @@ new Question
                 {
                     Note = notFarkliCografyalar,
                     Type = QuestionType.MultipleChoice,
-                    IsNegative = true,
+                    IsNegative = false,
                     Text = "\"Türkiye\" adının kullanımı ile ilgili olarak aşağıdakilerden hangisi söylenemez?",
                     Explanation = "Türkiye adını ilk kullanan Bizanslı kaynaklardır ve bu ad Anadolu dışında Orta Asya ile Mısır için de kullanılmıştır.",
                     OrderIndex = 28,
                     Choices =
                     {
                         // Ters soruda doğru ifadeler çeldirici olur.
-                        new Choice { Text = "\"Türkiye\" adını ilk kullanan Bizanslı kaynaklardır", IsCorrect = true, OrderIndex = 1 },
-                        new Choice { Text = "Bizanslılar bu adı Anadolu için kullanmıştır", IsCorrect = true, OrderIndex = 2 },
-                        new Choice { Text = "Bizanslılar bu adı Orta Asya için de kullanmıştır", IsCorrect = true, OrderIndex = 3 },
-                        new Choice { Text = "Memlük Devleti'nin adı Ed-Devletü't-Türkiyye'dir", IsCorrect = true, OrderIndex = 4 },
-                        new Choice { Text = "\"Türkiye\" Türk yurdu anlamına gelir", IsCorrect = true, OrderIndex = 5 },
-                        new Choice { Text = "Türk adıyla kurulan ilk devlet Göktürklerdir", IsCorrect = true, OrderIndex = 6 },
+                        new Choice { Text = "\"Türkiye\" adını ilk kullanan Bizanslı kaynaklardır", IsCorrect = false, OrderIndex = 1 },
+                        new Choice { Text = "Bizanslılar bu adı Anadolu için kullanmıştır", IsCorrect = false, OrderIndex = 2 },
+                        new Choice { Text = "Bizanslılar bu adı Orta Asya için de kullanmıştır", IsCorrect = false, OrderIndex = 3 },
+                        new Choice { Text = "Memlük Devleti'nin adı Ed-Devletü't-Türkiyye'dir", IsCorrect = false, OrderIndex = 4 },
+                        new Choice { Text = "\"Türkiye\" Türk yurdu anlamına gelir", IsCorrect = false, OrderIndex = 5 },
+                        new Choice { Text = "Türk adıyla kurulan ilk devlet Göktürklerdir", IsCorrect = false, OrderIndex = 6 },
 
                         // Aranan cevap: yanlış ifadeler
-                        new Choice { Text = "\"Türkiye\" adını ilk kullanan Çin kaynaklarıdır", IsCorrect = false, OrderIndex = 7 },
-                        new Choice { Text = "Bu ad yalnızca Anadolu için kullanılmıştır", IsCorrect = false, OrderIndex = 8 },
-                        new Choice { Text = "\"Türkiye\" adı Türkiye Cumhuriyeti kurulduğunda verilmiştir", IsCorrect = false, OrderIndex = 9 },
-                        new Choice { Text = "Türk adıyla kurulan ilk devlet Memlüklerdir", IsCorrect = false, OrderIndex = 10 },
+                        new Choice { Text = "\"Türkiye\" adını ilk kullanan Çin kaynaklarıdır", IsCorrect = true, OrderIndex = 7 },
+                        new Choice { Text = "Bu ad yalnızca Anadolu için kullanılmıştır", IsCorrect = true, OrderIndex = 8 },
+                        new Choice { Text = "\"Türkiye\" adı Türkiye Cumhuriyeti kurulduğunda verilmiştir", IsCorrect = true, OrderIndex = 9 },
+                        new Choice { Text = "Türk adıyla kurulan ilk devlet Memlüklerdir", IsCorrect = true, OrderIndex = 10 },
                     }
                 },
 
@@ -2672,25 +2672,25 @@ new Question
                 {
                     Note = notKuraklik,
                     Type = QuestionType.MultipleChoice,
-                    IsNegative = true,
+                    IsNegative = false,
                     Text = "Orta Asya'nın coğrafi yapısı ile ilgili olarak aşağıdakilerden hangisi söylenemez?",
                     Explanation = "Kuraklık yalnızca sıcaklıkla ilgili değildir; soğuk için de kullanılır. Kışlar ılıman değil, inanılmaz serttir.",
                     OrderIndex = 35,
                     Choices =
                     {
                         // Ters soruda doğru ifadeler çeldirici olur.
-                        new Choice { Text = "Yazlar çok sıcak ve kuraktır", IsCorrect = true, OrderIndex = 1 },
-                        new Choice { Text = "Kışlar inanılmaz serttir", IsCorrect = true, OrderIndex = 2 },
-                        new Choice { Text = "Kuraklık soğuk için de kullanılan bir kelimedir", IsCorrect = true, OrderIndex = 3 },
-                        new Choice { Text = "Kışın çayırın üzeri karla kaplanır", IsCorrect = true, OrderIndex = 4 },
-                        new Choice { Text = "Bölge dağların arasında bir yerdir", IsCorrect = true, OrderIndex = 5 },
-                        new Choice { Text = "İklim yapısı insanı göçe zorlamıştır", IsCorrect = true, OrderIndex = 6 },
+                        new Choice { Text = "Yazlar çok sıcak ve kuraktır", IsCorrect = false, OrderIndex = 1 },
+                        new Choice { Text = "Kışlar inanılmaz serttir", IsCorrect = false, OrderIndex = 2 },
+                        new Choice { Text = "Kuraklık soğuk için de kullanılan bir kelimedir", IsCorrect = false, OrderIndex = 3 },
+                        new Choice { Text = "Kışın çayırın üzeri karla kaplanır", IsCorrect = false, OrderIndex = 4 },
+                        new Choice { Text = "Bölge dağların arasında bir yerdir", IsCorrect = false, OrderIndex = 5 },
+                        new Choice { Text = "İklim yapısı insanı göçe zorlamıştır", IsCorrect = false, OrderIndex = 6 },
 
                         // Aranan cevap: yanlış ifadeler
-                        new Choice { Text = "Kuraklık yalnızca sıcaklıkla ilgili bir kavramdır", IsCorrect = false, OrderIndex = 7 },
-                        new Choice { Text = "Kışlar ılıman ve yağışlı geçer", IsCorrect = false, OrderIndex = 8 },
-                        new Choice { Text = "Yazın hayvanlar bol su bulur", IsCorrect = false, OrderIndex = 9 },
-                        new Choice { Text = "İklim yapısı göçü hiç etkilememiştir", IsCorrect = false, OrderIndex = 10 },
+                        new Choice { Text = "Kuraklık yalnızca sıcaklıkla ilgili bir kavramdır", IsCorrect = true, OrderIndex = 7 },
+                        new Choice { Text = "Kışlar ılıman ve yağışlı geçer", IsCorrect = true, OrderIndex = 8 },
+                        new Choice { Text = "Yazın hayvanlar bol su bulur", IsCorrect = true, OrderIndex = 9 },
+                        new Choice { Text = "İklim yapısı göçü hiç etkilememiştir", IsCorrect = true, OrderIndex = 10 },
                     }
                 },
 
@@ -2846,26 +2846,26 @@ new Question
                 {
                     Note = notMerkezOzellikleri,
                     Type = QuestionType.MultipleChoice,
-                    IsNegative = true,
+                    IsNegative = false,
                     Text = "Orta Asya kültür merkezleri ile ilgili olarak aşağıdakilerden hangisi söylenemez?",
                     Explanation = "Truva, Alişar ve Göbeklitepe Orta Asya'da değil, Anadolu'daki kazı merkezleridir. Ayrıca Anav Orta Asya'nın en eskisi, Afanasyevo ise en eski Türk kültür merkezidir.",
                     OrderIndex = 42,
                     Choices =
                     {
                         // Ters soruda doğru ifadeler çeldirici olur.
-                        new Choice { Text = "Anav, Orta Asya'nın en eski kültür merkezidir", IsCorrect = true, OrderIndex = 1 },
-                        new Choice { Text = "Afanasyevo, en eski Türk kültür merkezidir", IsCorrect = true, OrderIndex = 2 },
-                        new Choice { Text = "Tagar, en gelişmiş kültür merkezidir", IsCorrect = true, OrderIndex = 3 },
-                        new Choice { Text = "Karasuk'ta ilk defa demir işlenmiştir", IsCorrect = true, OrderIndex = 4 },
-                        new Choice { Text = "Kelteminar'da yerleşik yaşam görülmüştür", IsCorrect = true, OrderIndex = 5 },
-                        new Choice { Text = "Andronova, atalarımızın yaşadığı yerdir", IsCorrect = true, OrderIndex = 6 },
+                        new Choice { Text = "Anav, Orta Asya'nın en eski kültür merkezidir", IsCorrect = false, OrderIndex = 1 },
+                        new Choice { Text = "Afanasyevo, en eski Türk kültür merkezidir", IsCorrect = false, OrderIndex = 2 },
+                        new Choice { Text = "Tagar, en gelişmiş kültür merkezidir", IsCorrect = false, OrderIndex = 3 },
+                        new Choice { Text = "Karasuk'ta ilk defa demir işlenmiştir", IsCorrect = false, OrderIndex = 4 },
+                        new Choice { Text = "Kelteminar'da yerleşik yaşam görülmüştür", IsCorrect = false, OrderIndex = 5 },
+                        new Choice { Text = "Andronova, atalarımızın yaşadığı yerdir", IsCorrect = false, OrderIndex = 6 },
 
                         // Aranan cevap: yanlış ifadeler
-                        new Choice { Text = "Truva, Orta Asya kültür merkezlerinden biridir", IsCorrect = false, OrderIndex = 7 },
-                        new Choice { Text = "Alişar, Orta Asya kültür merkezlerinden biridir", IsCorrect = false, OrderIndex = 8 },
-                        new Choice { Text = "Göbeklitepe, Orta Asya kültür merkezlerinden biridir", IsCorrect = false, OrderIndex = 9 },
-                        new Choice { Text = "Anav, en eski Türk kültür merkezidir", IsCorrect = false, OrderIndex = 10 },
-                        new Choice { Text = "Karasuk, yerleşik yaşamın görüldüğü merkezdir", IsCorrect = false, OrderIndex = 11 },
+                        new Choice { Text = "Truva, Orta Asya kültür merkezlerinden biridir", IsCorrect = true, OrderIndex = 7 },
+                        new Choice { Text = "Alişar, Orta Asya kültür merkezlerinden biridir", IsCorrect = true, OrderIndex = 8 },
+                        new Choice { Text = "Göbeklitepe, Orta Asya kültür merkezlerinden biridir", IsCorrect = true, OrderIndex = 9 },
+                        new Choice { Text = "Anav, en eski Türk kültür merkezidir", IsCorrect = true, OrderIndex = 10 },
+                        new Choice { Text = "Karasuk, yerleşik yaşamın görüldüğü merkezdir", IsCorrect = true, OrderIndex = 11 },
                     }
                 },
 
@@ -2972,23 +2972,23 @@ new Question
                 {
                     Note = notGocNufusArtisi,
                     Type = QuestionType.MultipleChoice,
-                    IsNegative = true,
+                    IsNegative = false,
                     Text = "Hızlı nüfus artışının göçe yol açması ile ilgili olarak aşağıdakilerden hangisi söylenemez?",
                     Explanation = "Sorun coğrafi olarak bir yere sığamama değildir; Orta Asya geniş bir bölgedir. Asıl sorun artan nüfusun kaynak tüketimini artırması ve kaynakların tükenmesidir.",
                     OrderIndex = 47,
                     Choices =
                     {
                         // Ters soruda doğru ifadeler çeldirici olur.
-                        new Choice { Text = "Nüfus artışı kaynakların hızla tükenmesine yol açmıştır", IsCorrect = true, OrderIndex = 1 },
-                        new Choice { Text = "Artan nüfus, aynı kaynakların daha fazla kişiye paylaştırılmasına sebep olmuştur", IsCorrect = true, OrderIndex = 2 },
-                        new Choice { Text = "Kaynak tüketiminin artması göçü zorunlu kılmıştır", IsCorrect = true, OrderIndex = 3 },
-                        new Choice { Text = "Orta Asya geniş bir bölgedir", IsCorrect = true, OrderIndex = 4 },
+                        new Choice { Text = "Nüfus artışı kaynakların hızla tükenmesine yol açmıştır", IsCorrect = false, OrderIndex = 1 },
+                        new Choice { Text = "Artan nüfus, aynı kaynakların daha fazla kişiye paylaştırılmasına sebep olmuştur", IsCorrect = false, OrderIndex = 2 },
+                        new Choice { Text = "Kaynak tüketiminin artması göçü zorunlu kılmıştır", IsCorrect = false, OrderIndex = 3 },
+                        new Choice { Text = "Orta Asya geniş bir bölgedir", IsCorrect = false, OrderIndex = 4 },
 
                         // Aranan cevap: yanlış ifadeler
-                        new Choice { Text = "Göçün sebebi, coğrafi olarak bir yere sığamamaktır", IsCorrect = false, OrderIndex = 5 },
-                        new Choice { Text = "Nüfus artışının kaynaklarla hiçbir ilgisi yoktur", IsCorrect = false, OrderIndex = 6 },
-                        new Choice { Text = "Orta Asya dar bir bölge olduğu için nüfus sığmamıştır", IsCorrect = false, OrderIndex = 7 },
-                        new Choice { Text = "Nüfus artışı kaynakları çoğaltmıştır", IsCorrect = false, OrderIndex = 8 },
+                        new Choice { Text = "Göçün sebebi, coğrafi olarak bir yere sığamamaktır", IsCorrect = true, OrderIndex = 5 },
+                        new Choice { Text = "Nüfus artışının kaynaklarla hiçbir ilgisi yoktur", IsCorrect = true, OrderIndex = 6 },
+                        new Choice { Text = "Orta Asya dar bir bölge olduğu için nüfus sığmamıştır", IsCorrect = true, OrderIndex = 7 },
+                        new Choice { Text = "Nüfus artışı kaynakları çoğaltmıştır", IsCorrect = true, OrderIndex = 8 },
                     }
                 },
 
@@ -3046,25 +3046,25 @@ new Question
                 {
                     Note = notGocNedenleriGenel,
                     Type = QuestionType.MultipleChoice,
-                    IsNegative = true,
+                    IsNegative = false,
                     Text = "Türk göçlerinin nedenleri ile ilgili olarak aşağıdakilerden hangisi söylenemez?",
                     Explanation = "Göç nedenleri arasındaki tek dış neden Çin, Kitan ve Moğol baskısıdır. Göçler bir tercih değil, zorunluluk sonucudur.",
                     OrderIndex = 50,
                     Choices =
                     {
                         // Ters soruda doğru ifadeler çeldirici olur.
-                        new Choice { Text = "Kuraklık, kar fırtınaları ve kıtlık göç nedenlerindendir", IsCorrect = true, OrderIndex = 1 },
-                        new Choice { Text = "İklimin tarım ve hayvancılığa elverişsiz olması göç nedenidir", IsCorrect = true, OrderIndex = 2 },
-                        new Choice { Text = "Çin, Kitan ve Moğol baskısı dış nedendir", IsCorrect = true, OrderIndex = 3 },
-                        new Choice { Text = "Boylar arası mücadele göç nedenlerindendir", IsCorrect = true, OrderIndex = 4 },
-                        new Choice { Text = "Hayvan hastalıkları göç nedenlerindendir", IsCorrect = true, OrderIndex = 5 },
-                        new Choice { Text = "Türk Cihan Hâkimiyeti Mefkûresi göç nedenlerindendir", IsCorrect = true, OrderIndex = 6 },
+                        new Choice { Text = "Kuraklık, kar fırtınaları ve kıtlık göç nedenlerindendir", IsCorrect = false, OrderIndex = 1 },
+                        new Choice { Text = "İklimin tarım ve hayvancılığa elverişsiz olması göç nedenidir", IsCorrect = false, OrderIndex = 2 },
+                        new Choice { Text = "Çin, Kitan ve Moğol baskısı dış nedendir", IsCorrect = false, OrderIndex = 3 },
+                        new Choice { Text = "Boylar arası mücadele göç nedenlerindendir", IsCorrect = false, OrderIndex = 4 },
+                        new Choice { Text = "Hayvan hastalıkları göç nedenlerindendir", IsCorrect = false, OrderIndex = 5 },
+                        new Choice { Text = "Türk Cihan Hâkimiyeti Mefkûresi göç nedenlerindendir", IsCorrect = false, OrderIndex = 6 },
 
                         // Aranan cevap: yanlış ifadeler
-                        new Choice { Text = "Boylar arası mücadele dış nedendir", IsCorrect = false, OrderIndex = 7 },
-                        new Choice { Text = "Çin baskısı iç nedendir", IsCorrect = false, OrderIndex = 8 },
-                        new Choice { Text = "Göçler tamamen isteğe bağlı bir tercihti", IsCorrect = false, OrderIndex = 9 },
-                        new Choice { Text = "İklim şartlarının göçle bir ilgisi yoktur", IsCorrect = false, OrderIndex = 10 },
+                        new Choice { Text = "Boylar arası mücadele dış nedendir", IsCorrect = true, OrderIndex = 7 },
+                        new Choice { Text = "Çin baskısı iç nedendir", IsCorrect = true, OrderIndex = 8 },
+                        new Choice { Text = "Göçler tamamen isteğe bağlı bir tercihti", IsCorrect = true, OrderIndex = 9 },
+                        new Choice { Text = "İklim şartlarının göçle bir ilgisi yoktur", IsCorrect = true, OrderIndex = 10 },
                     }
                 },
 
@@ -3120,23 +3120,23 @@ new Question
                 {
                     Note = notGocSonuclariGenel,
                     Type = QuestionType.MultipleChoice,
-                    IsNegative = true,
+                    IsNegative = false,
                     Text = "Türk göçlerinin sonuçları ile ilgili olarak aşağıdakilerden hangisi söylenemez?",
                     Explanation = "Göçler Türk tarihinin incelenmesini kolaylaştırmamış, aksine geniş coğrafyalara yayılındığı için zorlaştırmıştır.",
                     OrderIndex = 53,
                     Choices =
                     {
                         // Ters soruda doğru ifadeler çeldirici olur.
-                        new Choice { Text = "Türk kültürü farklı coğrafyalara ve kıtalara yayılmıştır", IsCorrect = true, OrderIndex = 1 },
-                        new Choice { Text = "Farklı bölgelerde yeni Türk devletleri kurulmuştur", IsCorrect = true, OrderIndex = 2 },
-                        new Choice { Text = "Türkler başka toplumları askerî ve teşkilatlanma alanında etkilemiştir", IsCorrect = true, OrderIndex = 3 },
-                        new Choice { Text = "Bazı Türk boyları zamanla asimile olarak millî benliğini kaybetmiştir", IsCorrect = true, OrderIndex = 4 },
+                        new Choice { Text = "Türk kültürü farklı coğrafyalara ve kıtalara yayılmıştır", IsCorrect = false, OrderIndex = 1 },
+                        new Choice { Text = "Farklı bölgelerde yeni Türk devletleri kurulmuştur", IsCorrect = false, OrderIndex = 2 },
+                        new Choice { Text = "Türkler başka toplumları askerî ve teşkilatlanma alanında etkilemiştir", IsCorrect = false, OrderIndex = 3 },
+                        new Choice { Text = "Bazı Türk boyları zamanla asimile olarak millî benliğini kaybetmiştir", IsCorrect = false, OrderIndex = 4 },
 
                         // Aranan cevap: yanlış ifadeler
-                        new Choice { Text = "Türk tarihinin bir bütün halinde incelenmesi kolaylaşmıştır", IsCorrect = false, OrderIndex = 5 },
-                        new Choice { Text = "Göçler sadece Asya kıtasıyla sınırlı kalmıştır", IsCorrect = false, OrderIndex = 6 },
-                        new Choice { Text = "Türkler göç ettikleri tüm bölgelerde nüfus çoğunluğunu ele geçirmiştir", IsCorrect = false, OrderIndex = 7 },
-                        new Choice { Text = "Türklerin tamamı tek bir din etrafında birleşmiştir", IsCorrect = false, OrderIndex = 8 },
+                        new Choice { Text = "Türk tarihinin bir bütün halinde incelenmesi kolaylaşmıştır", IsCorrect = true, OrderIndex = 5 },
+                        new Choice { Text = "Göçler sadece Asya kıtasıyla sınırlı kalmıştır", IsCorrect = true, OrderIndex = 6 },
+                        new Choice { Text = "Türkler göç ettikleri tüm bölgelerde nüfus çoğunluğunu ele geçirmiştir", IsCorrect = true, OrderIndex = 7 },
+                        new Choice { Text = "Türklerin tamamı tek bir din etrafında birleşmiştir", IsCorrect = true, OrderIndex = 8 },
                     }
                 },
 
@@ -3272,23 +3272,23 @@ new Question
                 {
                     Note = notIskitlerGenel,
                     Type = QuestionType.MultipleChoice,
-                    IsNegative = true,
+                    IsNegative = false,
                     Text = "İskitler (Sakalar) ile ilgili olarak aşağıdakilerden hangisi söylenemez?",
                     Explanation = "İskitler bir devlet değil, boy birliği halinde yaşamışlardır. Tarihte bilinen ilk Türk devleti Asya Hun Devleti'dir.",
                     OrderIndex = 60,
                     Choices =
                     {
                         // Ters soruda doğru ifadeler çeldirici olur.
-                        new Choice { Text = "Tarihte bilinen ilk Türk boyudur", IsCorrect = true, OrderIndex = 1 },
-                        new Choice { Text = "Tomris Hatun adında kadın hükümdarları vardır", IsCorrect = true, OrderIndex = 2 },
-                        new Choice { Text = "Bozkırın Kuyumcuları olarak bilinirler", IsCorrect = true, OrderIndex = 3 },
-                        new Choice { Text = "İlk balbal örneklerini vermişlerdir", IsCorrect = true, OrderIndex = 4 },
+                        new Choice { Text = "Tarihte bilinen ilk Türk boyudur", IsCorrect = false, OrderIndex = 1 },
+                        new Choice { Text = "Tomris Hatun adında kadın hükümdarları vardır", IsCorrect = false, OrderIndex = 2 },
+                        new Choice { Text = "Bozkırın Kuyumcuları olarak bilinirler", IsCorrect = false, OrderIndex = 3 },
+                        new Choice { Text = "İlk balbal örneklerini vermişlerdir", IsCorrect = false, OrderIndex = 4 },
 
                         // Aranan cevap: yanlış ifadeler
-                        new Choice { Text = "Tarihte bilinen ilk teşkilatlı Türk devletini kurmuşlardır", IsCorrect = false, OrderIndex = 5 },
-                        new Choice { Text = "Sadece yerleşik hayatta yaşamışlardır", IsCorrect = false, OrderIndex = 6 },
-                        new Choice { Text = "Yazıyı ilk kullanan Türk topluluğudur", IsCorrect = false, OrderIndex = 7 },
-                        new Choice { Text = "Atı evcilleştirmeyi bilmeyen tek Türk topluluğudur", IsCorrect = false, OrderIndex = 8 },
+                        new Choice { Text = "Tarihte bilinen ilk teşkilatlı Türk devletini kurmuşlardır", IsCorrect = true, OrderIndex = 5 },
+                        new Choice { Text = "Sadece yerleşik hayatta yaşamışlardır", IsCorrect = true, OrderIndex = 6 },
+                        new Choice { Text = "Yazıyı ilk kullanan Türk topluluğudur", IsCorrect = true, OrderIndex = 7 },
+                        new Choice { Text = "Atı evcilleştirmeyi bilmeyen tek Türk topluluğudur", IsCorrect = true, OrderIndex = 8 },
                     }
                 },
 
@@ -3318,22 +3318,22 @@ new Question
                 {
                     Note = notBoyDevletAyrimi,
                     Type = QuestionType.MultipleChoice,
-                    IsNegative = true,
+                    IsNegative = false,
                     Text = "Türk tarihindeki boy ve devlet kavramlarının özellikleri ile ilgili aşağıdakilerden hangisi söylenemez?",
                     Explanation = "İskitler teşkilatlı bir devlet yapısı değil, boylar birliği özelliği gösterdikleri için ilk Türk boyu olarak kabul edilirler.",
                     OrderIndex = 62,
                     Choices =
                     {
                         // Ters soruda doğru ifadeler çeldirici olur.
-                        new Choice { Text = "Boylar ortak soy ve kültür etrafında şekillenmiş topluluklardır", IsCorrect = true, OrderIndex = 1 },
-                        new Choice { Text = "Devlet, belirli sınırlara ve merkezi teşkilata sahip siyasi yapıdır", IsCorrect = true, OrderIndex = 2 },
-                        new Choice { Text = "Asya Hun Devleti tarihte bilinen ilk teşkilatlı Türk devletidir", IsCorrect = true, OrderIndex = 3 },
-                        new Choice { Text = "İskitler boylar birliği şeklinde yaşadığı için ilk Türk boyu kabul edilir", IsCorrect = true, OrderIndex = 4 },
+                        new Choice { Text = "Boylar ortak soy ve kültür etrafında şekillenmiş topluluklardır", IsCorrect = false, OrderIndex = 1 },
+                        new Choice { Text = "Devlet, belirli sınırlara ve merkezi teşkilata sahip siyasi yapıdır", IsCorrect = false, OrderIndex = 2 },
+                        new Choice { Text = "Asya Hun Devleti tarihte bilinen ilk teşkilatlı Türk devletidir", IsCorrect = false, OrderIndex = 3 },
+                        new Choice { Text = "İskitler boylar birliği şeklinde yaşadığı için ilk Türk boyu kabul edilir", IsCorrect = false, OrderIndex = 4 },
 
                         // Aranan cevap: yanlış ifadeler
-                        new Choice { Text = "İskitler, merkezi yönetime ve teşkilatlı organlara sahip ilk Türk devletidir", IsCorrect = false, OrderIndex = 5 },
-                        new Choice { Text = "Boy ile devlet kavramı arasında hiçbir fark yoktur", IsCorrect = false, OrderIndex = 6 },
-                        new Choice { Text = "İlk Türk devleti İskitler tarafından kurulmuştur", IsCorrect = false, OrderIndex = 7 },
+                        new Choice { Text = "İskitler, merkezi yönetime ve teşkilatlı organlara sahip ilk Türk devletidir", IsCorrect = true, OrderIndex = 5 },
+                        new Choice { Text = "Boy ile devlet kavramı arasında hiçbir fark yoktur", IsCorrect = true, OrderIndex = 6 },
+                        new Choice { Text = "İlk Türk devleti İskitler tarafından kurulmuştur", IsCorrect = true, OrderIndex = 7 },
                     }
                 },
 
@@ -3459,21 +3459,21 @@ new Question
                 {
                     Note = notAsyaHunSavasVeCin,
                     Type = QuestionType.MultipleChoice,
-                    IsNegative = true,
+                    IsNegative = false,
                     Text = "Asya Hun Devleti ile ilgili aşağıda verilen bilgilerden hangisi yanlıştır?",
                     Explanation = "Asya Hun Devleti yazıyı kullanmamıştır (sözlü hukuk/töre hakimdi). İlk yazılı belgeler ve alfabe Göktürklere aittir.",
                     OrderIndex = 69,
                     Choices =
                     {
                         // Ters soruda doğru ifadeler çeldirici olur.
-                        new Choice { Text = "Bilinen ilk hükümdarı Teoman'dır", IsCorrect = true, OrderIndex = 1 },
-                        new Choice { Text = "Mete Han döneminde Onlu Sistem kurulmuştur", IsCorrect = true, OrderIndex = 2 },
-                        new Choice { Text = "Payteng Savaşı'nda Turan taktiği uygulanmıştır", IsCorrect = true, OrderIndex = 3 },
-                        new Choice { Text = "Çiçi ve Hohanyeh döneminde bölünme yaşanmıştır", IsCorrect = true, OrderIndex = 4 },
+                        new Choice { Text = "Bilinen ilk hükümdarı Teoman'dır", IsCorrect = false, OrderIndex = 1 },
+                        new Choice { Text = "Mete Han döneminde Onlu Sistem kurulmuştur", IsCorrect = false, OrderIndex = 2 },
+                        new Choice { Text = "Payteng Savaşı'nda Turan taktiği uygulanmıştır", IsCorrect = false, OrderIndex = 3 },
+                        new Choice { Text = "Çiçi ve Hohanyeh döneminde bölünme yaşanmıştır", IsCorrect = false, OrderIndex = 4 },
 
                         // Aranan cevap: yanlış ifadeler
-                        new Choice { Text = "Türk tarihinin ilk yazılı kanunlarını hazırlamışlardır", IsCorrect = false, OrderIndex = 5 },
-                        new Choice { Text = "Yerleşik hayata geçen ilk Türk devletidir", IsCorrect = false, OrderIndex = 6 },
+                        new Choice { Text = "Türk tarihinin ilk yazılı kanunlarını hazırlamışlardır", IsCorrect = true, OrderIndex = 5 },
+                        new Choice { Text = "Yerleşik hayata geçen ilk Türk devletidir", IsCorrect = true, OrderIndex = 6 },
                     }
                 },
 
@@ -3577,21 +3577,21 @@ new Question
                 {
                     Note = notAsyaHunMeteOrduVeBirlesim,
                     Type = QuestionType.MultipleChoice,
-                    IsNegative = true,
+                    IsNegative = false,
                     Text = "Mete Han Dönemi ve siyasi hamleleri ile ilgili aşağıda verilen bilgilerden hangisi yanlıştır?",
                     Explanation = "Mete Han döneminde yazılı hukuk veya yazılı belgeler kullanılmamıştır; Hunlarda sözlü hukuk (töre) hakimdir.",
                     OrderIndex = 75,
                     Choices =
                     {
                         // Ters soruda doğru ifadeler çeldirici olur.
-                        new Choice { Text = "MÖ 209 yılında Onlu Sistemi kurarak düzenli orduyu oluşturmuştur", IsCorrect = true, OrderIndex = 1 },
-                        new Choice { Text = "Orta Asya'da Türk siyasi birliğini sağlayan ilk hükümdardır", IsCorrect = true, OrderIndex = 2 },
-                        new Choice { Text = "Payteng Muharebesi'nde sahte ricat (Turan taktiği) uygulamıştır", IsCorrect = true, OrderIndex = 3 },
-                        new Choice { Text = "Toprak vermeyerek vatan sevgisinden bahseden ilk Türk hükümdarıdır", IsCorrect = true, OrderIndex = 4 },
-                        new Choice { Text = "Çin'i kalabalık nüfusu nedeniyle asimile olmamak için vergiye bağlamıştır", IsCorrect = true, OrderIndex = 5 },
+                        new Choice { Text = "MÖ 209 yılında Onlu Sistemi kurarak düzenli orduyu oluşturmuştur", IsCorrect = false, OrderIndex = 1 },
+                        new Choice { Text = "Orta Asya'da Türk siyasi birliğini sağlayan ilk hükümdardır", IsCorrect = false, OrderIndex = 2 },
+                        new Choice { Text = "Payteng Muharebesi'nde sahte ricat (Turan taktiği) uygulamıştır", IsCorrect = false, OrderIndex = 3 },
+                        new Choice { Text = "Toprak vermeyerek vatan sevgisinden bahseden ilk Türk hükümdarıdır", IsCorrect = false, OrderIndex = 4 },
+                        new Choice { Text = "Çin'i kalabalık nüfusu nedeniyle asimile olmamak için vergiye bağlamıştır", IsCorrect = false, OrderIndex = 5 },
 
                         // Aranan cevap: yanlış ifade
-                        new Choice { Text = "Çin ile yapılan mücadeleler sonucunda ilk yazılı Türk kanunlarını çıkarmıştır", IsCorrect = false, OrderIndex = 6 },
+                        new Choice { Text = "Çin ile yapılan mücadeleler sonucunda ilk yazılı Türk kanunlarını çıkarmıştır", IsCorrect = true, OrderIndex = 6 },
                     }
                 },
 
@@ -3776,24 +3776,24 @@ new Question
                 {
                     Note = notKavimlerGocuVeSonuclari,
                     Type = QuestionType.MultipleChoice,
-                    IsNegative = true,
+                    IsNegative = false,
                     Text = "375 yılında gerçekleşen Kavimler Göçü ve sonuçları ile ilgili aşağıda verilen yargılardan hangisi yanlıştır?",
                     Explanation = "Kavimler Göçü sonrasında kilisenin etkisi azalmamış, aksine kargaşa ve korku nedeniyle kilise güç kazanmıştır. Ayrıca göç Asya ile sınırlı kalmamış, Avrupa'yı sarsmıştır.",
                     OrderIndex = 84,
                     Choices =
                     {
                         // Ters soruda doğru ifadeler çeldirici olur.
-                        new Choice { Text = "Roma İmparatorluğu Doğu ve Batı olmak üzere ikiye ayrılmıştır", IsCorrect = true, OrderIndex = 1 },
-                        new Choice { Text = "Avrupa'da derebeylik (feodalite) rejimi ortaya çıkmıştır", IsCorrect = true, OrderIndex = 2 },
-                        new Choice { Text = "İlk Çağ sona ermiş, Orta Çağ başlamıştır", IsCorrect = true, OrderIndex = 3 },
-                        new Choice { Text = "Batı Roma İmparatorluğu 476 yılında yıkılmıştır", IsCorrect = true, OrderIndex = 4 },
-                        new Choice { Text = "Günümüz Avrupa milletlerinin temelleri atılmıştır", IsCorrect = true, OrderIndex = 5 },
-                        new Choice { Text = "Göç, Balamir önderliğindeki Hunların batıya ilerlemesiyle başlamıştır", IsCorrect = true, OrderIndex = 6 },
+                        new Choice { Text = "Roma İmparatorluğu Doğu ve Batı olmak üzere ikiye ayrılmıştır", IsCorrect = false, OrderIndex = 1 },
+                        new Choice { Text = "Avrupa'da derebeylik (feodalite) rejimi ortaya çıkmıştır", IsCorrect = false, OrderIndex = 2 },
+                        new Choice { Text = "İlk Çağ sona ermiş, Orta Çağ başlamıştır", IsCorrect = false, OrderIndex = 3 },
+                        new Choice { Text = "Batı Roma İmparatorluğu 476 yılında yıkılmıştır", IsCorrect = false, OrderIndex = 4 },
+                        new Choice { Text = "Günümüz Avrupa milletlerinin temelleri atılmıştır", IsCorrect = false, OrderIndex = 5 },
+                        new Choice { Text = "Göç, Balamir önderliğindeki Hunların batıya ilerlemesiyle başlamıştır", IsCorrect = false, OrderIndex = 6 },
 
                         // Aranan cevap: yanlış ifadeler
-                        new Choice { Text = "Kilisenin halk üzerindeki baskısı azalmış ve skolastik düşünce yıkılmıştır", IsCorrect = false, OrderIndex = 7 },
-                        new Choice { Text = "Göç hareketleri sadece Asya kıtası içinde sınırlı kalmıştır", IsCorrect = false, OrderIndex = 8 },
-                        new Choice { Text = "Türklerin tamamı bu göçle birlikte tek bir din etrafında birleşmiştir", IsCorrect = false, OrderIndex = 9 },
+                        new Choice { Text = "Kilisenin halk üzerindeki baskısı azalmış ve skolastik düşünce yıkılmıştır", IsCorrect = true, OrderIndex = 7 },
+                        new Choice { Text = "Göç hareketleri sadece Asya kıtası içinde sınırlı kalmıştır", IsCorrect = true, OrderIndex = 8 },
+                        new Choice { Text = "Türklerin tamamı bu göçle birlikte tek bir din etrafında birleşmiştir", IsCorrect = true, OrderIndex = 9 },
                     }
                 },
 
@@ -3802,23 +3802,23 @@ new Question
                 {
                     Note = notAsyaHunCinPolitikasiVeCici,
                     Type = QuestionType.MultipleChoice,
-                    IsNegative = true,
+                    IsNegative = false,
                     Text = "Türk devletlerinin Çin politikası ve Hun iç mücadeleleri ile ilgili aşağıda verilen bilgilerden hangisi yanlıştır?",
                     Explanation = "Hohanyeh Çin'e bağlanmayı teklif etmiş, Çiçi ise buna karşı çıkarak bağımsızlığı savunmuştur. Çinli tüccarların Ötüken'e girmesi de yasaklanmıştır.",
                     OrderIndex = 85,
                     Choices =
                     {
                         // Ters soruda doğru ifadeler çeldirici olur.
-                        new Choice { Text = "Çiçi Yabgu, Çin hakimiyetine girmeyi bağımsızlığa aykırı görerek reddetmiştir", IsCorrect = true, OrderIndex = 1 },
-                        new Choice { Text = "Çin, Türk boylarını birbirine düşürmek için casusluk ve prenses diplomasisi kullanmıştır", IsCorrect = true, OrderIndex = 2 },
-                        new Choice { Text = "Hohanyeh, Çin hakimiyetine girmeyi teklif etmiştir", IsCorrect = true, OrderIndex = 3 },
-                        new Choice { Text = "Ticaret, asimilasyonu önlemek için sınır kasabalarıyla sınırlandırılmıştır", IsCorrect = true, OrderIndex = 4 },
-                        new Choice { Text = "İç mücadeleler sonucu devlet Doğu ve Batı Hunları olarak bölünmüştür", IsCorrect = true, OrderIndex = 5 },
+                        new Choice { Text = "Çiçi Yabgu, Çin hakimiyetine girmeyi bağımsızlığa aykırı görerek reddetmiştir", IsCorrect = false, OrderIndex = 1 },
+                        new Choice { Text = "Çin, Türk boylarını birbirine düşürmek için casusluk ve prenses diplomasisi kullanmıştır", IsCorrect = false, OrderIndex = 2 },
+                        new Choice { Text = "Hohanyeh, Çin hakimiyetine girmeyi teklif etmiştir", IsCorrect = false, OrderIndex = 3 },
+                        new Choice { Text = "Ticaret, asimilasyonu önlemek için sınır kasabalarıyla sınırlandırılmıştır", IsCorrect = false, OrderIndex = 4 },
+                        new Choice { Text = "İç mücadeleler sonucu devlet Doğu ve Batı Hunları olarak bölünmüştür", IsCorrect = false, OrderIndex = 5 },
 
                         // Aranan cevap: yanlış ifadeler
-                        new Choice { Text = "Hohanyeh, bağımsızlık mücadelesi vererek Çin'e karşı sonuna kadar savaşmıştır", IsCorrect = false, OrderIndex = 6 },
-                        new Choice { Text = "Çinli tüccarların Ötüken gibi Türk merkezlerine serbestçe girmesine izin verilmiştir", IsCorrect = false, OrderIndex = 7 },
-                        new Choice { Text = "Türkler Çin'i mağlup ettiğinde Çin topraklarına kalabalık nüfus nedeniyle doğrudan yerleşmiştir", IsCorrect = false, OrderIndex = 8 },
+                        new Choice { Text = "Hohanyeh, bağımsızlık mücadelesi vererek Çin'e karşı sonuna kadar savaşmıştır", IsCorrect = true, OrderIndex = 6 },
+                        new Choice { Text = "Çinli tüccarların Ötüken gibi Türk merkezlerine serbestçe girmesine izin verilmiştir", IsCorrect = true, OrderIndex = 7 },
+                        new Choice { Text = "Türkler Çin'i mağlup ettiğinde Çin topraklarına kalabalık nüfus nedeniyle doğrudan yerleşmiştir", IsCorrect = true, OrderIndex = 8 },
                     }
                 },
 
@@ -4047,23 +4047,23 @@ new Question
                 {
                     Note = notMacarlarVeBulgarlar,
                     Type = QuestionType.MultipleChoice,
-                    IsNegative = true,
+                    IsNegative = false,
                     Text = "Tuna Bulgarları ve İtil Bulgarları ile ilgili aşağıda verilen yargılardan hangisi yanlıştır?",
                     Explanation = "Tuna Bulgarları Hristiyanlaşmış ve Slavlaşmıştır. İtil Bulgarları ise Müslüman olmuştur. Karahanlılar Orta Asya'daki ilk Müslüman Türk devletidir.",
                     OrderIndex = 96,
                     Choices =
                     {
                         // Ters soruda doğru ifadeler çeldirici olur.
-                        new Choice { Text = "Tuna Bulgarları Boris Han döneminde Hristiyanlığı kabul etmiştir", IsCorrect = true, OrderIndex = 1 },
-                        new Choice { Text = "Tuna Bulgarları Simon döneminde Çar unvanını kullanmaya başlamıştır", IsCorrect = true, OrderIndex = 2 },
-                        new Choice { Text = "İtil Bulgarları Almış Han döneminde İslamiyet'i kabul etmiştir", IsCorrect = true, OrderIndex = 3 },
-                        new Choice { Text = "İbn Fadlan Rihle eserinde İtil Bulgarlarının Müslümanlaşma sürecini anlatmıştır", IsCorrect = true, OrderIndex = 4 },
-                        new Choice { Text = "İtil Bulgarları Avrupa'nın kuzeyinde kurulan ilk Müslüman Türk devletidir", IsCorrect = true, OrderIndex = 5 },
+                        new Choice { Text = "Tuna Bulgarları Boris Han döneminde Hristiyanlığı kabul etmiştir", IsCorrect = false, OrderIndex = 1 },
+                        new Choice { Text = "Tuna Bulgarları Simon döneminde Çar unvanını kullanmaya başlamıştır", IsCorrect = false, OrderIndex = 2 },
+                        new Choice { Text = "İtil Bulgarları Almış Han döneminde İslamiyet'i kabul etmiştir", IsCorrect = false, OrderIndex = 3 },
+                        new Choice { Text = "İbn Fadlan Rihle eserinde İtil Bulgarlarının Müslümanlaşma sürecini anlatmıştır", IsCorrect = false, OrderIndex = 4 },
+                        new Choice { Text = "İtil Bulgarları Avrupa'nın kuzeyinde kurulan ilk Müslüman Türk devletidir", IsCorrect = false, OrderIndex = 5 },
 
                         // Aranan cevap: yanlış ifadeler
-                        new Choice { Text = "Tuna Bulgarları İslamiyet'i kabul ederek Orta Asya'da varlığını sürdürmüştür", IsCorrect = false, OrderIndex = 6 },
-                        new Choice { Text = "İtil Bulgarları Boris Han döneminde Hristiyanlaşıp Slavlaşmıştır", IsCorrect = false, OrderIndex = 7 },
-                        new Choice { Text = "Tuna Bulgarları dünya tarihindeki ilk Müslüman Türk devletidir", IsCorrect = false, OrderIndex = 8 },
+                        new Choice { Text = "Tuna Bulgarları İslamiyet'i kabul ederek Orta Asya'da varlığını sürdürmüştür", IsCorrect = true, OrderIndex = 6 },
+                        new Choice { Text = "İtil Bulgarları Boris Han döneminde Hristiyanlaşıp Slavlaşmıştır", IsCorrect = true, OrderIndex = 7 },
+                        new Choice { Text = "Tuna Bulgarları dünya tarihindeki ilk Müslüman Türk devletidir", IsCorrect = true, OrderIndex = 8 },
                     }
                 },
 
@@ -4095,20 +4095,20 @@ new Question
                 {
                     Note = notGokturkTolesVeAvar,
                     Type = QuestionType.MultipleChoice,
-                    IsNegative = true,
+                    IsNegative = false,
                     Text = "Göktürklerin kuruluş aşamasında Avarlar ile yaşadığı süreç hakkında aşağıda verilen yargılardan hangisi yanlıştır?",
                     Explanation = "Avar Hakanı teklifi kabul etmemiş, Bumin Kaan'a 'Siz bizim demirci kölelerimizsiniz' diyerek reddetmiş ve Bumin Kaan başka bir güçle birleşip Avarları mağlup etmiştir.",
                     OrderIndex = 112,
                     Choices =
                     {
-                        new Choice { Text = "546 yılında Avarlara karşı çıkan Töles isyanını Bumin Kaan liderliğindeki Aşina boyu bastırmıştır", IsCorrect = true, OrderIndex = 1 },
-                        new Choice { Text = "İsyanı bastıran Bumin Kaan, Avar Hakanı'nın kızıyla evlenmek istemiştir", IsCorrect = true, OrderIndex = 2 },
-                        new Choice { Text = "Avar Hakanı teklif karşısında 'Siz bizim demirci kölelerimizsiniz' cevabını vermiştir", IsCorrect = true, OrderIndex = 3 },
-                        new Choice { Text = "Bumin Kaan aldığı ret cevabı sonrası başka bir evlilik ve güç birliğiyle Avarları mağlup etmiştir", IsCorrect = true, OrderIndex = 4 },
+                        new Choice { Text = "546 yılında Avarlara karşı çıkan Töles isyanını Bumin Kaan liderliğindeki Aşina boyu bastırmıştır", IsCorrect = false, OrderIndex = 1 },
+                        new Choice { Text = "İsyanı bastıran Bumin Kaan, Avar Hakanı'nın kızıyla evlenmek istemiştir", IsCorrect = false, OrderIndex = 2 },
+                        new Choice { Text = "Avar Hakanı teklif karşısında 'Siz bizim demirci kölelerimizsiniz' cevabını vermiştir", IsCorrect = false, OrderIndex = 3 },
+                        new Choice { Text = "Bumin Kaan aldığı ret cevabı sonrası başka bir evlilik ve güç birliğiyle Avarları mağlup etmiştir", IsCorrect = false, OrderIndex = 4 },
 
-                        new Choice { Text = "Avar Hakanı kızını vererek Bumin Kaan ile çeyiz olarak devlet topraklarını paylaşmıştır", IsCorrect = false, OrderIndex = 5 },
-                        new Choice { Text = "Töles İsyanı doğrudan Çin imparatoru tarafından finanse edilip bastırılmıştır", IsCorrect = false, OrderIndex = 6 },
-                        new Choice { Text = "Bumin Kaan Avarların baskısıyla Avrupa'ya göç ederek devletini orada kurmuştur", IsCorrect = false, OrderIndex = 7 },
+                        new Choice { Text = "Avar Hakanı kızını vererek Bumin Kaan ile çeyiz olarak devlet topraklarını paylaşmıştır", IsCorrect = true, OrderIndex = 5 },
+                        new Choice { Text = "Töles İsyanı doğrudan Çin imparatoru tarafından finanse edilip bastırılmıştır", IsCorrect = true, OrderIndex = 6 },
+                        new Choice { Text = "Bumin Kaan Avarların baskısıyla Avrupa'ya göç ederek devletini orada kurmuştur", IsCorrect = true, OrderIndex = 7 },
                     }
                 },
 
@@ -4140,20 +4140,20 @@ new Question
                 {
                     Note = notGokturkDisPolitikaVeDiplomasi,
                     Type = QuestionType.MultipleChoice,
-                    IsNegative = true,
+                    IsNegative = false,
                     Text = "İstemi Yabgu dönemi dış politikası ve diplomasi hamleleri göz önüne alındığında aşağıdakilerden hangisi söylenemez?",
                     Explanation = "Göktürkler İpek Yolu için Sasanilerle birleşip Akunlara son vermiş, ardından Sasanilere karşı Bizans ile ittifak yapmıştır.",
                     OrderIndex = 114,
                     Choices =
                     {
-                        new Choice { Text = "İstemi Yabgu İpek Yolu hakimiyeti için Sasanilerle anlaşıp Akunlar (Eftalitler) Devleti'ne son vermiştir", IsCorrect = true, OrderIndex = 1 },
-                        new Choice { Text = "İpek Yolu üzerindeki Sasani baskısına karşı Doğu Roma (Bizans) ile diplomatik ilişki kurulmuştur", IsCorrect = true, OrderIndex = 2 },
-                        new Choice { Text = "Orta Asya'dan Bizans'a ilk elçilik heyeti Manieş (Maniakh) başkanlığında gönderilmiştir", IsCorrect = true, OrderIndex = 3 },
-                        new Choice { Text = "İstemi Yabgu Bizans elçisi Zemerkos'a Türk Cihan Hakimiyeti anlayışını vurgulayan ifadeler kullanmıştır", IsCorrect = true, OrderIndex = 4 },
+                        new Choice { Text = "İstemi Yabgu İpek Yolu hakimiyeti için Sasanilerle anlaşıp Akunlar (Eftalitler) Devleti'ne son vermiştir", IsCorrect = false, OrderIndex = 1 },
+                        new Choice { Text = "İpek Yolu üzerindeki Sasani baskısına karşı Doğu Roma (Bizans) ile diplomatik ilişki kurulmuştur", IsCorrect = false, OrderIndex = 2 },
+                        new Choice { Text = "Orta Asya'dan Bizans'a ilk elçilik heyeti Manieş (Maniakh) başkanlığında gönderilmiştir", IsCorrect = false, OrderIndex = 3 },
+                        new Choice { Text = "İstemi Yabgu Bizans elçisi Zemerkos'a Türk Cihan Hakimiyeti anlayışını vurgulayan ifadeler kullanmıştır", IsCorrect = false, OrderIndex = 4 },
 
-                        new Choice { Text = "Göktürkler Bizans ile anlaşarak Sasani Devleti'ni tamamen haritadan silmiş ve topraklarını paylaşmıştır", IsCorrect = false, OrderIndex = 5 },
-                        new Choice { Text = "Bizans İmparatorluğu Orta Asya Türklerinden ilk kez elçi kabul etmeyi reddetmiştir", IsCorrect = false, OrderIndex = 6 },
-                        new Choice { Text = "İstemi Yabgu Sasaniler ile birleşip Akunlar yerine Çin İmparatorluğu'na son vermiştir", IsCorrect = false, OrderIndex = 7 },
+                        new Choice { Text = "Göktürkler Bizans ile anlaşarak Sasani Devleti'ni tamamen haritadan silmiş ve topraklarını paylaşmıştır", IsCorrect = true, OrderIndex = 5 },
+                        new Choice { Text = "Bizans İmparatorluğu Orta Asya Türklerinden ilk kez elçi kabul etmeyi reddetmiştir", IsCorrect = true, OrderIndex = 6 },
+                        new Choice { Text = "İstemi Yabgu Sasaniler ile birleşip Akunlar yerine Çin İmparatorluğu'na son vermiştir", IsCorrect = true, OrderIndex = 7 },
                     }
                 },
 
@@ -4221,20 +4221,20 @@ new Question
                 {
                     Note = notKursatAyaklanmasi,
                     Type = QuestionType.MultipleChoice,
-                    IsNegative = true,
+                    IsNegative = false,
                     Text = "639 yılında gerçekleşen Kürşat Ayaklanması ile ilgili aşağıda verilen bilgilerden hangisi yanlıştır?",
                     Explanation = "Kürşat Ayaklanması Çin sarayına yapılmış, plan yağmur sebebiyle değişmiş ve vuruşularak şehit olunmuştur. Başarısız olsa da ilk Milli İstiklal Ayaklanmasıdır.",
                     OrderIndex = 116,
                     Choices =
                     {
-                        new Choice { Text = "Kürşat, Çuluk Prens'in oğlu olup Çin esaretindeki Türk beylerini kurtarmak istemiştir", IsCorrect = true, OrderIndex = 1 },
-                        new Choice { Text = "40 Türk çerisi ile birlikte Çin sarayını basarak takas yapma amacı gütmüşlerdir", IsCorrect = true, OrderIndex = 2 },
-                        new Choice { Text = "Şiddetli yağmur ve nehir taşması sonucu plan değişmek zorunda kalmıştır", IsCorrect = true, OrderIndex = 3 },
-                        new Choice { Text = "Türk tarihindeki ilk 'Milli İstiklal Ayaklanması' olarak kabul edilmektedir", IsCorrect = true, OrderIndex = 4 },
+                        new Choice { Text = "Kürşat, Çuluk Prens'in oğlu olup Çin esaretindeki Türk beylerini kurtarmak istemiştir", IsCorrect = false, OrderIndex = 1 },
+                        new Choice { Text = "40 Türk çerisi ile birlikte Çin sarayını basarak takas yapma amacı gütmüşlerdir", IsCorrect = false, OrderIndex = 2 },
+                        new Choice { Text = "Şiddetli yağmur ve nehir taşması sonucu plan değişmek zorunda kalmıştır", IsCorrect = false, OrderIndex = 3 },
+                        new Choice { Text = "Türk tarihindeki ilk 'Milli İstiklal Ayaklanması' olarak kabul edilmektedir", IsCorrect = false, OrderIndex = 4 },
 
-                        new Choice { Text = "Kürşat baskın sonucunda Çin imparatorunu esir alarak I. Göktürk Devleti'ni aynı gün yeniden kurmuştur", IsCorrect = false, OrderIndex = 5 },
-                        new Choice { Text = "Ayaklanma Çin sarayındaki tüm Türklerin Çin ordusu tarafından tamamen katledilmesiyle son bulmuştur", IsCorrect = false, OrderIndex = 6 },
-                        new Choice { Text = "Kürşat Ayaklanması Türklerin Çin kültürünü tamamen benimsemesine yol açan barışçıl bir elçilik olayıdır", IsCorrect = false, OrderIndex = 7 },
+                        new Choice { Text = "Kürşat baskın sonucunda Çin imparatorunu esir alarak I. Göktürk Devleti'ni aynı gün yeniden kurmuştur", IsCorrect = true, OrderIndex = 5 },
+                        new Choice { Text = "Ayaklanma Çin sarayındaki tüm Türklerin Çin ordusu tarafından tamamen katledilmesiyle son bulmuştur", IsCorrect = true, OrderIndex = 6 },
+                        new Choice { Text = "Kürşat Ayaklanması Türklerin Çin kültürünü tamamen benimsemesine yol açan barışçıl bir elçilik olayıdır", IsCorrect = true, OrderIndex = 7 },
                     }
                 },
             }
@@ -5455,20 +5455,20 @@ new Question
 {
     Note = notHukumdarinGorevleri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "İslamiyet öncesi Türk hükümdarlarının görevleri ve yetkileri ile ilgili aşağıda verilen bilgilerden hangisi yanlıştır?",
     Explanation = "Hükümdarlar dağınık boyları toplamak, açı doyurup çıplağı giydirmek, ordunun başında sefere çıkmak, adalet sağlamak ve kurultaya başkanlık etmekle yükümlüdür.",
     OrderIndex = 2,
     Choices =
     {
-        new Choice { Text = "Dağınık Türk boylarını bir bayrak altında toplamak hükümdarın temel vazifesidir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Açı doyurmak ve çıplağı giydirmek sosyal devlet anlayışının gereğidir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Hükümdar ordunun başında sefere çıkmak ve kurultaya başkanlık etmekle görevlidir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Töre hükümlerini uygulamak ve gerektiğinde yeni töreler koymak hükümdarın yetkisindedir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Dağınık Türk boylarını bir bayrak altında toplamak hükümdarın temel vazifesidir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Açı doyurmak ve çıplağı giydirmek sosyal devlet anlayışının gereğidir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Hükümdar ordunun başında sefere çıkmak ve kurultaya başkanlık etmekle görevlidir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Töre hükümlerini uygulamak ve gerektiğinde yeni töreler koymak hükümdarın yetkisindedir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Hükümdarlar töre kurallarına kesinlikle uymak zorunda olmayıp törenin tamamen üzerindedirler", IsCorrect = false, OrderIndex = 5 },
-        new Choice { Text = "Hükümdar sadece çadırında oturarak orduyu yönetir, sefere asla bizzat katılmazdı", IsCorrect = false, OrderIndex = 6 },
-        new Choice { Text = "Sosyal devlet anlayışı gereği sadece hanedan mensuplarının ihtiyaçları karşılanırdı", IsCorrect = false, OrderIndex = 7 }
+        new Choice { Text = "Hükümdarlar töre kurallarına kesinlikle uymak zorunda olmayıp törenin tamamen üzerindedirler", IsCorrect = true, OrderIndex = 5 },
+        new Choice { Text = "Hükümdar sadece çadırında oturarak orduyu yönetir, sefere asla bizzat katılmazdı", IsCorrect = true, OrderIndex = 6 },
+        new Choice { Text = "Sosyal devlet anlayışı gereği sadece hanedan mensuplarının ihtiyaçları karşılanırdı", IsCorrect = true, OrderIndex = 7 }
     }
 },
 
@@ -5501,28 +5501,28 @@ new Question
 {
     Note = notAyukiVeDevletGorevlileri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "İslam öncesi Türk devlet görevlileri ve terim eşleştirmelerinden hangisi yanlış verilmiştir?",
     Explanation = "Ayuki hükümet, Aygıcı başvezir, Tudun vergi memuru/vali, Tutuk askeri vali, Ataman/İnal ise Tiginleri eğiten devlet adamıdır (Lala/Atabey).",
     OrderIndex = 4,
     Choices =
     {
-        new Choice { Text = "Ayuki - Hükümet", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Aygıcı - Başvezir / Başbakan", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Buyruk - Bakan", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Tudun - Vergi Memuru / Vali", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Tutuk - Askeri Vali", IsCorrect = true, OrderIndex = 5 },
-        new Choice { Text = "Apa - Sivil Yönetici", IsCorrect = true, OrderIndex = 6 },
-        new Choice { Text = "Ağılı - Hazineden Sorumlu Görevli", IsCorrect = true, OrderIndex = 7 },
-        new Choice { Text = "Otacı (Emçi) - Tabip, Hekim", IsCorrect = true, OrderIndex = 8 },
-        new Choice { Text = "Bitikçi (Tamgacı) - Yazışma ve Mühür İşlerinden Sorumlu Katip", IsCorrect = true, OrderIndex = 9 },
-        new Choice { Text = "Tigin - Hükümdar/Hakan Oğlu (Prens)", IsCorrect = true, OrderIndex = 10 },
-        new Choice { Text = "İnanç / İnal / Ataman - Tiginleri Yetiştiren Devlet Adamı (Lala/Atabey)", IsCorrect = true, OrderIndex = 11 },
-        new Choice { Text = "Şad - Eyaletlere/Ordulara Komutan Olarak Atanan Hanedan Üyesi", IsCorrect = true, OrderIndex = 12 },
+        new Choice { Text = "Ayuki - Hükümet", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Aygıcı - Başvezir / Başbakan", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Buyruk - Bakan", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Tudun - Vergi Memuru / Vali", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Tutuk - Askeri Vali", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Apa - Sivil Yönetici", IsCorrect = false, OrderIndex = 6 },
+        new Choice { Text = "Ağılı - Hazineden Sorumlu Görevli", IsCorrect = false, OrderIndex = 7 },
+        new Choice { Text = "Otacı (Emçi) - Tabip, Hekim", IsCorrect = false, OrderIndex = 8 },
+        new Choice { Text = "Bitikçi (Tamgacı) - Yazışma ve Mühür İşlerinden Sorumlu Katip", IsCorrect = false, OrderIndex = 9 },
+        new Choice { Text = "Tigin - Hükümdar/Hakan Oğlu (Prens)", IsCorrect = false, OrderIndex = 10 },
+        new Choice { Text = "İnanç / İnal / Ataman - Tiginleri Yetiştiren Devlet Adamı (Lala/Atabey)", IsCorrect = false, OrderIndex = 11 },
+        new Choice { Text = "Şad - Eyaletlere/Ordulara Komutan Olarak Atanan Hanedan Üyesi", IsCorrect = false, OrderIndex = 12 },
 
-        new Choice { Text = "Tigin - Din adamı ve şaman", IsCorrect = false, OrderIndex = 13 },
-        new Choice { Text = "Bitikçi - Hükümdarın ordu komutanı", IsCorrect = false, OrderIndex = 14 },
-        new Choice { Text = "Ataman (İnal) - Saray muhafız birliği başkanı", IsCorrect = false, OrderIndex = 15 }
+        new Choice { Text = "Tigin - Din adamı ve şaman", IsCorrect = true, OrderIndex = 13 },
+        new Choice { Text = "Bitikçi - Hükümdarın ordu komutanı", IsCorrect = true, OrderIndex = 14 },
+        new Choice { Text = "Ataman (İnal) - Saray muhafız birliği başkanı", IsCorrect = true, OrderIndex = 15 }
     }
 },
 
@@ -5555,20 +5555,20 @@ new Question
 {
     Note = notKutKucUlusVeBoyutlari,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Gök Tanrı tarafından hükümdara verildiğine inanılan Kut, Küç ve Ülüş kavramları ile ilgili aşağıdaki yargılardan hangisi yanlıştır?",
     Explanation = "Kut siyasi yönetme yetkisidir ve kan yoluyla hanedan erkeklerine geçer (taht kavgalarına neden olur). Küç askeri güçtür. Ülüş ise iktisadi bolluğun halka adil şekilde dağıtılmasıdır.",
     OrderIndex = 6,
     Choices =
     {
-        new Choice { Text = "Kut yetkisi kan yoluyla hanedanın tüm erkek mensuplarına aktarılmaktadır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Kut anlayışı Türk devletlerinde taht kavgalarına ve devletlerin çabuk yıkılmasına yol açmıştır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Küç kavramı Hakan'ın askeri gücü ve savaş yeteneğini simgelemektedir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Ülüş anlayışı Tanrı'nın ihsan ettiği iktisadi bereketi halka adil paylaşma sorumluluğudur", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Kut yetkisi kan yoluyla hanedanın tüm erkek mensuplarına aktarılmaktadır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Kut anlayışı Türk devletlerinde taht kavgalarına ve devletlerin çabuk yıkılmasına yol açmıştır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Küç kavramı Hakan'ın askeri gücü ve savaş yeteneğini simgelemektedir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Ülüş anlayışı Tanrı'nın ihsan ettiği iktisadi bereketi halka adil paylaşma sorumluluğudur", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Kut anlayışı sayesinde Türk devletlerinde taht devirleri tamamen kavgasız ve düzenli yapılmıştır", IsCorrect = false, OrderIndex = 5 },
-        new Choice { Text = "Ülüş yetkisi sadece Hakan'ın kişisel servet edinmesi için Tanrı tarafından bağışlanan güçtür", IsCorrect = false, OrderIndex = 6 },
-        new Choice { Text = "Kut yetkisi yalnızca hükümdarın en büyük kız çocuğuna babadan kıza geçen bir haktır", IsCorrect = false, OrderIndex = 7 }
+        new Choice { Text = "Kut anlayışı sayesinde Türk devletlerinde taht devirleri tamamen kavgasız ve düzenli yapılmıştır", IsCorrect = true, OrderIndex = 5 },
+        new Choice { Text = "Ülüş yetkisi sadece Hakan'ın kişisel servet edinmesi için Tanrı tarafından bağışlanan güçtür", IsCorrect = true, OrderIndex = 6 },
+        new Choice { Text = "Kut yetkisi yalnızca hükümdarın en büyük kız çocuğuna babadan kıza geçen bir haktır", IsCorrect = true, OrderIndex = 7 }
     }
 },
 
@@ -5601,20 +5601,20 @@ new Question
 {
     Note = notIkiliTeskilatYapisi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "İslamiyet öncesi Türk devletlerinde uygulanan 'İkili Teşkilat' sistemi ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
     Explanation = "İkili teşkilatta doğuda asıl kağan oturur, batıda ise hanedandan Yabgu oturur. Geniş coğrafyaları yönetmeyi kolaylaştırsa da Yabgu'nun bağımsızlık mücadelesi veya taht kavgaları devletin çabuk bölünmesine sebep olmuştur.",
     OrderIndex = 8,
     Choices =
     {
-        new Choice { Text = "Devlet idaresini kolaylaştırmak amacıyla doğu ve batı şeklinde ikiye bölünerek yönetilmesidir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Güneşin doğduğu yön kutsal sayıldığı için asıl hükümdar (Kağan) Doğu kanadında oturur", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Batı kanadını idare eden hanedan mensubuna 'Yabgu' unvanı verilmektedir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "İlk kez Asya Hun Devleti döneminde Mete Han tarafından uygulanmaya başlanmıştır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Devlet idaresini kolaylaştırmak amacıyla doğu ve batı şeklinde ikiye bölünerek yönetilmesidir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Güneşin doğduğu yön kutsal sayıldığı için asıl hükümdar (Kağan) Doğu kanadında oturur", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Batı kanadını idare eden hanedan mensubuna 'Yabgu' unvanı verilmektedir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "İlk kez Asya Hun Devleti döneminde Mete Han tarafından uygulanmaya başlanmıştır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "İkili teşkilat sistemi Türk devletlerinin yıkılmasını engellemiş ve merkezi otoriteyi sonsuz güçlendirmiştir", IsCorrect = false, OrderIndex = 5 },
-        new Choice { Text = "Batıyı yöneten Yabgu, hanedan dışından rastgele seçilen halktan sivil bir yöneticidir", IsCorrect = false, OrderIndex = 6 },
-        new Choice { Text = "Güneşin batığı yön kutsal sayıldığı için asıl hükümdar daima Batı kanadında oturmuştur", IsCorrect = false, OrderIndex = 7 }
+        new Choice { Text = "İkili teşkilat sistemi Türk devletlerinin yıkılmasını engellemiş ve merkezi otoriteyi sonsuz güçlendirmiştir", IsCorrect = true, OrderIndex = 5 },
+        new Choice { Text = "Batıyı yöneten Yabgu, hanedan dışından rastgele seçilen halktan sivil bir yöneticidir", IsCorrect = true, OrderIndex = 6 },
+        new Choice { Text = "Güneşin batığı yön kutsal sayıldığı için asıl hükümdar daima Batı kanadında oturmuştur", IsCorrect = true, OrderIndex = 7 }
     }
 },// --- SORULAR (OrderIndex: 9 - 17) ---
 
@@ -5647,20 +5647,20 @@ new Question
 {
     Note = notKurultayToyKengesVeOtorite,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "İslamiyet öncesi Türk devletlerindeki meclis ve ziyafet geleneği ile ilgili aşağıda verilen ifadelerden hangisi yanlıştır?",
     Explanation = "Kurultay, Toy ve Kengeş meclis anlamındadır. Toy aynı zamanda meclis sonrası Hakan'ın verdiği ziyafettir. Kurultaya katıldıktan sonra toya katılmamak kağana isyan sayılır.",
     OrderIndex = 10,
     Choices =
     {
-        new Choice { Text = "Devlet meselelerinin görüşüldüğü kurula Kurultay, Toy veya Kengeş adları verilir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Toy terimi meclis anlamının yanında Kurultay üyelerine verilen ziyafeti de ifade eder", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Hakan'ın verdiği toya (ziyafete) katılmamak doğrudan kağana isyan sebebi kabul edilir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Kurultaya katılan üyeler boy beylerinden ve hanedan mensuplarından oluşur", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Devlet meselelerinin görüşüldüğü kurula Kurultay, Toy veya Kengeş adları verilir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Toy terimi meclis anlamının yanında Kurultay üyelerine verilen ziyafeti de ifade eder", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Hakan'ın verdiği toya (ziyafete) katılmamak doğrudan kağana isyan sebebi kabul edilir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Kurultaya katılan üyeler boy beylerinden ve hanedan mensuplarından oluşur", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Toy ziyafetleri sadece halk arasında yapılır, devlet görevlileri ve Hakan bu yemeğe katılamazdı", IsCorrect = false, OrderIndex = 5 },
-        new Choice { Text = "Kurultaya katılmamak veya yemek yememek kağana sadakatin kesin bir göstergesi sayılmıştır", IsCorrect = false, OrderIndex = 6 },
-        new Choice { Text = "Kengeş kavramı sadece askeri tatbikatlara verilen bir isim olup meclis anlamı taşımaz", IsCorrect = false, OrderIndex = 7 }
+        new Choice { Text = "Toy ziyafetleri sadece halk arasında yapılır, devlet görevlileri ve Hakan bu yemeğe katılamazdı", IsCorrect = true, OrderIndex = 5 },
+        new Choice { Text = "Kurultaya katılmamak veya yemek yememek kağana sadakatin kesin bir göstergesi sayılmıştır", IsCorrect = true, OrderIndex = 6 },
+        new Choice { Text = "Kengeş kavramı sadece askeri tatbikatlara verilen bir isim olup meclis anlamı taşımaz", IsCorrect = true, OrderIndex = 7 }
     }
 },
 
@@ -5693,20 +5693,20 @@ new Question
 {
     Note = notKurultaydaOturmaDuzeniOrunVeProtokol,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Kurultaydaki oturma düzeni (Orun) ve protokolle ilgili aşağıda verilen bilgilerden hangisi yanlıştır?",
     Explanation = "Kurultaydaki oturma düzenine Orun denir. Boy beylerinin oturacağı yer hayvan sayısı, insan sayısı ve siyasi gücüne göre belirlenir. Mazeretsiz katılmamak isyan sayılır.",
     OrderIndex = 12,
     Choices =
     {
-        new Choice { Text = "Kurultaydaki protokol ve hiyerarşik oturma düzenine 'Orun' adı verilmektedir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Boy beylerinin oturacağı yer boyun insan sayısı ve ekonomik gücüne göre belirlenir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Nüfusu ve gücü fazla olan boylar (Örn: Oğuzlar) protocolde üst sıralarda yer alırlar", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Bir boy beyinin kurultaya mazeretsiz katılmaması devlete isyan kabul edilmektedir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Kurultaydaki protokol ve hiyerarşik oturma düzenine 'Orun' adı verilmektedir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Boy beylerinin oturacağı yer boyun insan sayısı ve ekonomik gücüne göre belirlenir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Nüfusu ve gücü fazla olan boylar (Örn: Oğuzlar) protocolde üst sıralarda yer alırlar", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Bir boy beyinin kurultaya mazeretsiz katılmaması devlete isyan kabul edilmektedir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Kurultayda herkes istediği yere oturabilir, herhangi bir oturma sırası veya protokol uygulanmazdı", IsCorrect = false, OrderIndex = 5 },
-        new Choice { Text = "Orun düzeni sadece Hakan ile Hatun arasındaki oturma sırasını ifade eden kuraldır", IsCorrect = false, OrderIndex = 6 },
-        new Choice { Text = "Güçsüz ve nüfusu az olan boylar protokol gereği kurultayda daima en baş köşeye oturtulurdu", IsCorrect = false, OrderIndex = 7 }
+        new Choice { Text = "Kurultayda herkes istediği yere oturabilir, herhangi bir oturma sırası veya protokol uygulanmazdı", IsCorrect = true, OrderIndex = 5 },
+        new Choice { Text = "Orun düzeni sadece Hakan ile Hatun arasındaki oturma sırasını ifade eden kuraldır", IsCorrect = true, OrderIndex = 6 },
+        new Choice { Text = "Güçsüz ve nüfusu az olan boylar protokol gereği kurultayda daima en baş köşeye oturtulurdu", IsCorrect = true, OrderIndex = 7 }
     }
 },
 
@@ -5739,21 +5739,21 @@ new Question
 {
     Note = notMeclislerinFarkliDevletlerdekiIsimleri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Farklı Türk devletleri ve meclis isimleri eşleştirmesinden hangisi yanlış verilmiştir?",
     Explanation = "Tabgaçlar - Nazırlar Meclisi, Hazarlar - İhtiyarlar Meclisi, Peçenekler - Komenton, Tuna Bulgarları - Millet Meclisi, Avrupa Hunları - Seçkinler Meclisi eşleşmesi doğrudur.",
     OrderIndex = 14,
     Choices =
     {
-        new Choice { Text = "Tabgaçlar - Nazırlar Meclisi", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Hazarlar - İhtiyarlar Meclisi", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Peçenekler - Komenton", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Avrupa Hunları - Seçkinler Meclisi", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Tuna Bulgarları - Millet Meclisi", IsCorrect = true, OrderIndex = 5 },
+        new Choice { Text = "Tabgaçlar - Nazırlar Meclisi", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Hazarlar - İhtiyarlar Meclisi", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Peçenekler - Komenton", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Avrupa Hunları - Seçkinler Meclisi", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Tuna Bulgarları - Millet Meclisi", IsCorrect = false, OrderIndex = 5 },
 
-        new Choice { Text = "Tuna Bulgarları - Komenton", IsCorrect = false, OrderIndex = 6 },
-        new Choice { Text = "Hazarlar - Nazırlar Meclisi", IsCorrect = false, OrderIndex = 7 },
-        new Choice { Text = "Tabgaçlar - İhtiyarlar Meclisi", IsCorrect = false, OrderIndex = 8 }
+        new Choice { Text = "Tuna Bulgarları - Komenton", IsCorrect = true, OrderIndex = 6 },
+        new Choice { Text = "Hazarlar - Nazırlar Meclisi", IsCorrect = true, OrderIndex = 7 },
+        new Choice { Text = "Tabgaçlar - İhtiyarlar Meclisi", IsCorrect = true, OrderIndex = 8 }
     }
 },
 
@@ -5786,20 +5786,20 @@ new Question
 {
     Note = notKonarGocerYasaminSosyalVeKulturelEtkileri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Konar-göçer yaşam tarzının Türk toplum yapısı ve kültürüne etkileriyle ilgili aşağıdaki yargılardan hangisi yanlıştır?",
     Explanation = "Konar-göçer yaşam nedeniyle bağımsızlık duygusu gelişmiş, taşınabilir sanat eserleri ve hayvan üslubu yaygınlaşmış, hapis cezaları kısa tutulmuş ve kölecilik/sınıf ayrımı oluşmamıştır.",
     OrderIndex = 16,
     Choices =
     {
-        new Choice { Text = "Mimarinin gelişmemesi sebebiyle hapis cezaları 10 günü geçmeyecek şekilde kısa tutulmuştur", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Sanatta taşınabilir eserler, küçük biblolar (tözler) ve hayvan üslubu ön plana çıkmıştır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Özel mülkiyet gelişmediği için toplumda sınıflaşma ve kölecilik anlayışı görülmemiştir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Toplumda eli silah tutan herkes asker kabul edilmiş, ordu-millet anlayışı egemen olmuştur", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Mimarinin gelişmemesi sebebiyle hapis cezaları 10 günü geçmeyecek şekilde kısa tutulmuştur", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Sanatta taşınabilir eserler, küçük biblolar (tözler) ve hayvan üslubu ön plana çıkmıştır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Özel mülkiyet gelişmediği için toplumda sınıflaşma ve kölecilik anlayışı görülmemiştir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Toplumda eli silah tutan herkes asker kabul edilmiş, ordu-millet anlayışı egemen olmuştur", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Konar-göçer yaşam tarzı sebebiyle toplumda belirgin feodal sınıf ayrımları ve kölelik gelişmiştir", IsCorrect = false, OrderIndex = 5 },
-        new Choice { Text = "Gelişmiş mimari tapınaklar ve devasa sabit heykeller konar-göçer dönemin temel sanat eserleridir", IsCorrect = false, OrderIndex = 6 },
-        new Choice { Text = "Konar-göçer yaşamda hapis cezaları ömür boyu hapishanelerde infaz edilmiştir", IsCorrect = false, OrderIndex = 7 }
+        new Choice { Text = "Konar-göçer yaşam tarzı sebebiyle toplumda belirgin feodal sınıf ayrımları ve kölelik gelişmiştir", IsCorrect = true, OrderIndex = 5 },
+        new Choice { Text = "Gelişmiş mimari tapınaklar ve devasa sabit heykeller konar-göçer dönemin temel sanat eserleridir", IsCorrect = true, OrderIndex = 6 },
+        new Choice { Text = "Konar-göçer yaşamda hapis cezaları ömür boyu hapishanelerde infaz edilmiştir", IsCorrect = true, OrderIndex = 7 }
     }
 },
 
@@ -5857,20 +5857,20 @@ new Question
 {
     Note = notToreninDegismezIlkeleriVeHukukSystemi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "İslam öncesi Türk hukuk sistemi ve törenin değişmez ilkeleri ile ilgili aşağıda verilen bilgilerden hangisi yanlıştır?",
     Explanation = "Törenin 4 değişmez ilkesi Könilik (Adalet), Uzluk (İyilik), Tüzlük (Eşitlik) ve Kişilik (İnsanlık)tir. Oksızlık ise 'bağımsızlık' anlamına gelmekte olup törenin değişmez 4 adalet/hukuk ilkesi arasında yer almaz.",
     OrderIndex = 19,
     Choices =
     {
-        new Choice { Text = "Könilik ilkesi törenin adalet anlayışını ifade etmektedir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Tüzlük ilkesi hukuk karşısında herkesin eşit olmasını temsil eder", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Konar-göçer yaşam nedeniyle hapis cezaları genellikle 10 günü geçmemektedir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Mahkemelere 'Yargu', mahkeme başkanına ise 'Yargan' veya 'Yargıcı' denmektedir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Könilik ilkesi törenin adalet anlayışını ifade etmektedir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Tüzlük ilkesi hukuk karşısında herkesin eşit olmasını temsil eder", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Konar-göçer yaşam nedeniyle hapis cezaları genellikle 10 günü geçmemektedir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Mahkemelere 'Yargu', mahkeme başkanına ise 'Yargan' veya 'Yargıcı' denmektedir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Oksızlık (bağımsızlık) kavramı törenin değişmeyen 4 temel adalet ilkesinden birisidir", IsCorrect = false, OrderIndex = 5 },
-        new Choice { Text = "Türk hukukunda suçlular ömür boyu hapis cezasına çarptırılmak üzere zindanlara atılırdı", IsCorrect = false, OrderIndex = 6 },
-        new Choice { Text = "Hükümdar dahi olsa törenin değişmez adalet ilkelerinin üstünde sayılarak yargılanamazdı", IsCorrect = false, OrderIndex = 7 }
+        new Choice { Text = "Oksızlık (bağımsızlık) kavramı törenin değişmeyen 4 temel adalet ilkesinden birisidir", IsCorrect = true, OrderIndex = 5 },
+        new Choice { Text = "Türk hukukunda suçlular ömür boyu hapis cezasına çarptırılmak üzere zindanlara atılırdı", IsCorrect = true, OrderIndex = 6 },
+        new Choice { Text = "Hükümdar dahi olsa törenin değişmez adalet ilkelerinin üstünde sayılarak yargılanamazdı", IsCorrect = true, OrderIndex = 7 }
     }
 },
 
@@ -5903,20 +5903,20 @@ new Question
 {
     Note = notOrduTeskilatiVeOnluSistem,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Türk ordu teşkilatı, Metehan'ın reformları ve Türklerin dünyayı etkilediği askeri unsurlarla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Türklerde ordu-millet anlayışı gereği askerlik özel bir meslek sayılmaz ve Hazarlar hariç tüm Türk devletlerinde ordular ücretsizdir. Hazarlar ise paralı asker kullanmışlardır.",
     OrderIndex = 21,
     Choices =
     {
-        new Choice { Text = "Metehan'ın tahta çıktığı MÖ 209 yılı Kara Kuvvetleri Komutanlığı'nın kuruluş yılı kabul edilir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Türkler dünyayı en çok askerlik ve ordu teşkilatlanması alanında etkilemiştir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Üzengi kullanımı, et konservesi (pastırma), pantolon ve yelek kullanımı dünyaya yayılmıştır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Metehan orduda disiplini sağlamak amacıyla ilk kez 'Onlu Sistem'i kurmuştur", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Metehan'ın tahta çıktığı MÖ 209 yılı Kara Kuvvetleri Komutanlığı'nın kuruluş yılı kabul edilir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Türkler dünyayı en çok askerlik ve ordu teşkilatlanması alanında etkilemiştir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Üzengi kullanımı, et konservesi (pastırma), pantolon ve yelek kullanımı dünyaya yayılmıştır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Metehan orduda disiplini sağlamak amacıyla ilk kez 'Onlu Sistem'i kurmuştur", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "İslam öncesi tüm Türk devletlerinde askerlik maaşlı ve özel bir profesyonel meslek olarak yürütülmüştür", IsCorrect = false, OrderIndex = 5 },
-        new Choice { Text = "Metehan'dan önce Türklerde hiçbir şekilde askeri birlik veya ordu bulunmamaktaydı", IsCorrect = false, OrderIndex = 6 },
-        new Choice { Text = "Türk orduları tamamen ağır zırhlı ve yavaş hareket eden yaya birliklerinden oluşurdu", IsCorrect = false, OrderIndex = 7 }
+        new Choice { Text = "İslam öncesi tüm Türk devletlerinde askerlik maaşlı ve özel bir profesyonel meslek olarak yürütülmüştür", IsCorrect = true, OrderIndex = 5 },
+        new Choice { Text = "Metehan'dan önce Türklerde hiçbir şekilde askeri birlik veya ordu bulunmamaktaydı", IsCorrect = true, OrderIndex = 6 },
+        new Choice { Text = "Türk orduları tamamen ağır zırhlı ve yavaş hareket eden yaya birliklerinden oluşurdu", IsCorrect = true, OrderIndex = 7 }
     }
 },
 
@@ -6878,18 +6878,18 @@ new Question
 {
 Note = notYaziVeAlfabeler,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Türk milletinin tarih boyunca kullandığı alfabeler arasında aşağıdakilerden hangisi yoktur?",
 Explanation = "Sanskritçe, Türk milletinin kullandığı alfabeler arasında belirtilmemiştir.",
 OrderIndex = 74,
 Choices =
 {
-new Choice { Text = "Orhon", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Uygur", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Arap", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Kiril", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Latin", IsCorrect = true, OrderIndex = 5 },
-new Choice { Text = "Sanskritçe", IsCorrect = false, OrderIndex = 6 },
+new Choice { Text = "Orhon", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Uygur", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Arap", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Kiril", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Latin", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Sanskritçe", IsCorrect = true, OrderIndex = 6 },
 }
 },
 
@@ -7585,15 +7585,15 @@ Note = notOrhunAbideleriBulunduguYer,
 Type = QuestionType.MultipleChoice,
 Text = "Orhun Abideleri ile ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Orhun Abideleri I. Göktürk dönemine değil, II. Göktürk (Kutluklar) dönemine aittir.",
-IsNegative = true,
+IsNegative = false,
 OrderIndex = 111,
 Choices =
 {
-new Choice { Text = "Moğolistan sınırları içerisinde bulunur.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "II. Göktürk (Kutluklar) dönemine aittir.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Runik yazı çeşidiyle yazılmıştır.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "William Thomson tarafından çözülmüştür.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "I. Göktürk dönemine aittir.", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Moğolistan sınırları içerisinde bulunur.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "II. Göktürk (Kutluklar) dönemine aittir.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Runik yazı çeşidiyle yazılmıştır.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "William Thomson tarafından çözülmüştür.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "I. Göktürk dönemine aittir.", IsCorrect = true, OrderIndex = 5 },
 },
 
 },
@@ -8025,15 +8025,15 @@ Note = notOrhunAbideleriGenelTekrar,
 Type = QuestionType.MultipleChoice,
 Text = "Orhun Abideleri ile ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Orhun Abideleri Uygurlara değil, II. Göktürk (Kutluklar) dönemine aittir.",
-IsNegative = true,
+IsNegative = false,
 OrderIndex = 133,
 Choices =
 {
-new Choice { Text = "Moğolistan sınırları içerisinde bulunur.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Türk tarihinin ilk siyasetnamesi kabul edilir.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Runik yazı çeşidiyle yazılmıştır.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Tonyukuk adına dikilen ilk kitabe 725 yılına tarihlenir.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Uygurlar döneminde yazılmıştır.", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Moğolistan sınırları içerisinde bulunur.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Türk tarihinin ilk siyasetnamesi kabul edilir.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Runik yazı çeşidiyle yazılmıştır.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Tonyukuk adına dikilen ilk kitabe 725 yılına tarihlenir.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Uygurlar döneminde yazılmıştır.", IsCorrect = true, OrderIndex = 5 },
 },
 
 },
@@ -8045,15 +8045,15 @@ Note = notOrhunAbideleriGenelTekrar,
 Type = QuestionType.MultipleChoice,
 Text = "Orhun Abideleri ile ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Orhun Abideleri'ni çözen kişi William Thomson'dır; Ramstad değildir.",
-IsNegative = true,
+IsNegative = false,
 OrderIndex = 134,
 Choices =
 {
-new Choice { Text = "İlk çözülen kelime Tengri'dir.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Danimarkalı filolog William Thomson tarafından çözülmüştür.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Türklerin yaşantıları hakkında bilgiler içerir.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Devlet yönetimine ilişkin bilgiler içerir.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Ramstad tarafından çözülmüştür.", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "İlk çözülen kelime Tengri'dir.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Danimarkalı filolog William Thomson tarafından çözülmüştür.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Türklerin yaşantıları hakkında bilgiler içerir.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Devlet yönetimine ilişkin bilgiler içerir.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Ramstad tarafından çözülmüştür.", IsCorrect = true, OrderIndex = 5 },
 },
 
 },
@@ -9116,17 +9116,17 @@ new Question
 {
     Note = notTurkDevletlerindeOnemliBilgiler,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Aşağıdakilerden hangisi Karluklarla ilgili yanlıştır?",
     Explanation = "Karluklar Hristiyanlığı resmi devlet dini olarak kabul etmemiş, metinde ilk Müslüman Türk boyu olarak belirtilmiştir.",
     OrderIndex = 176,
     Choices =
     {
-        new Choice { Text = "İlk Müslüman Türk boyu olarak belirtilmeleri", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "751 Talas Savaşı'nda Müslümanların yanında yer almaları", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Karahanlı Devleti'ni kuran dört Türk boyundan biri olmaları", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Talas Savaşı'nın son gününde savaşa müdahale etmeleri", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Hristiyanlığı resmi devlet dini olarak kabul etmeleri", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "İlk Müslüman Türk boyu olarak belirtilmeleri", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "751 Talas Savaşı'nda Müslümanların yanında yer almaları", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Karahanlı Devleti'ni kuran dört Türk boyundan biri olmaları", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Talas Savaşı'nın son gününde savaşa müdahale etmeleri", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Hristiyanlığı resmi devlet dini olarak kabul etmeleri", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -9135,17 +9135,17 @@ new Question
 {
     Note = notAvarlarVeJuanJuan,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Aşağıdakilerden hangisi Avarlarla ilgili yanlıştır?",
     Explanation = "Avarlar Orta Asya'dan batıya göç etmiş ve Avrupa Avarları olarak devlet kurmuştur.",
     OrderIndex = 177,
     Choices =
     {
-        new Choice { Text = "İstanbul'u kuşatan ilk Türk devleti olarak belirtilmeleri", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Orta Asya'dan Avrupa'ya göç etmeleri", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Bumin Kağan ile ilişkilendirilmeleri", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Asya Avarları ve Avrupa Avarları şeklinde ele alınmaları", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "751 Talas Savaşı'nda Müslümanların yanında yer almaları", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "İstanbul'u kuşatan ilk Türk devleti olarak belirtilmeleri", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Orta Asya'dan Avrupa'ya göç etmeleri", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Bumin Kağan ile ilişkilendirilmeleri", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Asya Avarları ve Avrupa Avarları şeklinde ele alınmaları", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "751 Talas Savaşı'nda Müslümanların yanında yer almaları", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -9154,17 +9154,17 @@ new Question
 {
     Note = notKutluAileler,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Aşağıdakilerden hangisi kut verilmiş hükümdar aileleriyle ilgili yanlıştır?",
     Explanation = "Uygurlarda kut verilmiş hükümdar ailesi Yağakar olarak verilmiştir; Tuk Hunlara aittir.",
     OrderIndex = 178,
     Choices =
     {
-        new Choice { Text = "Hunlarda aile adının Tuk olması", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Göktürklerde aile adının Bör veya Aşina olması", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Uygurlarda aile adının Yağakar olması", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Kağan olabilmek için kut verilmiş bir aileden gelmenin gerektiğinin belirtilmesi", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Hunlarda kutlu aile adının Yağakar olması", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Hunlarda aile adının Tuk olması", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Göktürklerde aile adının Bör veya Aşina olması", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Uygurlarda aile adının Yağakar olması", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Kağan olabilmek için kut verilmiş bir aileden gelmenin gerektiğinin belirtilmesi", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Hunlarda kutlu aile adının Yağakar olması", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -9173,17 +9173,17 @@ new Question
 {
     Note = notAtalarKultuMezarSaygisi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Aşağıdakilerden hangisi atalar kültüyle ilgili yanlıştır?",
     Explanation = "Atalar kültü, ataların mezarlarına duyulan saygıyla ilgilidir; yelme ise istihbarat unsurudur.",
     OrderIndex = 179,
     Choices =
     {
-        new Choice { Text = "Ataların mezarlarına duyulan saygıyla ilişkilendirilmesi", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Hun hükümdarlarına ait mezarların soyulması olayının bu konuyla ilişkilendirilmesi", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Önemli devlet adamlarının mezarlarının önem taşıması", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "İslam öncesi Türk kültür ve medeniyetinde önemli bir kavram olması", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Düşmanın durumunu öğrenmek amacıyla gönderilen kişiyi ifade etmesi", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Ataların mezarlarına duyulan saygıyla ilişkilendirilmesi", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Hun hükümdarlarına ait mezarların soyulması olayının bu konuyla ilişkilendirilmesi", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Önemli devlet adamlarının mezarlarının önem taşıması", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "İslam öncesi Türk kültür ve medeniyetinde önemli bir kavram olması", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Düşmanın durumunu öğrenmek amacıyla gönderilen kişiyi ifade etmesi", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -9192,17 +9192,17 @@ new Question
 {
     Note = notYarlik,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Aşağıdakilerden hangisi yarlıkla ilgili yanlıştır?",
     Explanation = "Yarlık, hükümdarın Tanrı adına emretme yetkisiyle ilişkilidir; mezar taşlarını ifade etmez.",
     OrderIndex = 180,
     Choices =
     {
-        new Choice { Text = "Hükümdarın Tanrı adına emretme yetkisiyle ilişkilendirilmesi", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Hükümdarın emirlerinin Tanrı'nın emirleri gibi görülmesiyle bağlantılı olması", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "İslam öncesi Türk kültürü bağlamında kullanılması", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Hükümdarın Tanrı tarafından gönderildiğine inanılmasıyla bağlantılı olması", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Ölen kişinin öldürdüğü düşman sayısı kadar dikilen mezar taşlarını ifade etmesi", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Hükümdarın Tanrı adına emretme yetkisiyle ilişkilendirilmesi", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Hükümdarın emirlerinin Tanrı'nın emirleri gibi görülmesiyle bağlantılı olması", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "İslam öncesi Türk kültürü bağlamında kullanılması", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Hükümdarın Tanrı tarafından gönderildiğine inanılmasıyla bağlantılı olması", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Ölen kişinin öldürdüğü düşman sayısı kadar dikilen mezar taşlarını ifade etmesi", IsCorrect = true, OrderIndex = 5 },
     }
 },
 // --- SORU 181 ---
@@ -9480,17 +9480,17 @@ new Question
 {
     Note = notKurultayVeOrun,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Aşağıdakilerden hangisi kurultay, orun ve toy kavramlarıyla ilgili yanlıştır?",
     Explanation = "Orun, boy beylerinin kurultayda oturacağı yeri belirleyen düzeni ifade eder; devlet meselelerinin görüşüldüğü meclis değildir.",
     OrderIndex = 196,
     Choices =
     {
-        new Choice { Text = "Kurultayda siyasi, sosyal, mali ve askerî meseleler görüşülür.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Orun, boy beylerinin oturacağı yeri belirleyen düzeni ifade eder.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Toy, devlet meselelerinde önemli kararların alındığı meclis anlamında kullanılabilir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Toy, kağanın halk için düzenlediği şenlik ve eğlence anlamında kullanılabilir.", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Orun, devlet meselelerinin görüşülerek karara bağlandığı meclisin adıdır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Kurultayda siyasi, sosyal, mali ve askerî meseleler görüşülür.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Orun, boy beylerinin oturacağı yeri belirleyen düzeni ifade eder.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Toy, devlet meselelerinde önemli kararların alındığı meclis anlamında kullanılabilir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Toy, kağanın halk için düzenlediği şenlik ve eğlence anlamında kullanılabilir.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Orun, devlet meselelerinin görüşülerek karara bağlandığı meclisin adıdır.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -9499,17 +9499,17 @@ new Question
 {
     Note = notHazarlarVeSeyyahlar,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Aşağıdakilerden hangisi Hazarlar ve seyyahlarla ilgili yanlıştır?",
     Explanation = "İbn Fadlan Hazarlarla değil, İtil Bulgarlarıyla ilişkilendirilmiştir.",
     OrderIndex = 197,
     Choices =
     {
-        new Choice { Text = "İbn Havkal, Hazarlar ve Musevilikle ilişkilendirilmiştir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "İbn Fadlan, İtil Bulgarlarıyla ilişkilendirilmiştir.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Wang Yiti, Uygurlara gelen Çinli seyyah olarak belirtilmiştir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "İbn Fadlan, İlteber Almış'ın Müslüman olma faaliyetlerini incelemiştir.", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "İbn Havkal, İtil Bulgarlarının Müslüman olma faaliyetlerini incelemiştir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "İbn Havkal, Hazarlar ve Musevilikle ilişkilendirilmiştir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "İbn Fadlan, İtil Bulgarlarıyla ilişkilendirilmiştir.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Wang Yiti, Uygurlara gelen Çinli seyyah olarak belirtilmiştir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "İbn Fadlan, İlteber Almış'ın Müslüman olma faaliyetlerini incelemiştir.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "İbn Havkal, İtil Bulgarlarının Müslüman olma faaliyetlerini incelemiştir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -9518,17 +9518,17 @@ new Question
 {
     Note = notToreVeKizilelma,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Aşağıdakilerden hangisi töre ve Kızılelma kavramlarıyla ilgili yanlıştır?",
     Explanation = "Kızılelma yazısız hukuk kurallarını değil, uzun vadeli hedef ve strateji anlayışını ifade eder.",
     OrderIndex = 198,
     Choices =
     {
-        new Choice { Text = "Töre, yazısız hukuk kurallarını ifade eder.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "İşbara Kağan'ın töresini değiştiremeyeceğini belirtmesi töreye verilen önemi gösterir.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Kızılelma, uzun vadeli strateji oluşturma anlayışıyla ilişkilidir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Kızılelma, belirlenen hedeflere ulaşılması anlayışıyla ilişkilidir.", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Kızılelma, yazısız hukuk kurallarının diğer adıdır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Töre, yazısız hukuk kurallarını ifade eder.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "İşbara Kağan'ın töresini değiştiremeyeceğini belirtmesi töreye verilen önemi gösterir.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Kızılelma, uzun vadeli strateji oluşturma anlayışıyla ilişkilidir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Kızılelma, belirlenen hedeflere ulaşılması anlayışıyla ilişkilidir.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Kızılelma, yazısız hukuk kurallarının diğer adıdır.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -9537,17 +9537,17 @@ new Question
 {
     Note = notTurkCihanHakimiyetiVeKut,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Aşağıdakilerden hangisi Türk Cihan Hakimiyeti ve kut anlayışıyla ilgili yanlıştır?",
     Explanation = "Kut, dünyaya hâkim olma düşüncesi değil, hükümdara Tanrı tarafından yönetme yetkisi verildiğine inanılmasıdır.",
     OrderIndex = 199,
     Choices =
     {
-        new Choice { Text = "Kut, hükümdara Gök Tanrı tarafından devleti yönetme yetkisinin verildiğine inanılmasıdır.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Hükümdarın Tanrı'nın iradesiyle tahta çıktığını belirtmesi kut anlayışıyla ilişkilidir.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Türk Cihan Hakimiyeti, dünyaya hâkim olma düşüncesiyle ilişkilidir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Milletleri kendi yönetimi altında toplama düşüncesi Türk Cihan Hakimiyeti ile ilişkilidir.", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Kut, dünyaya hâkim olma ve bütün milletleri yönetme düşüncesinin adıdır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Kut, hükümdara Gök Tanrı tarafından devleti yönetme yetkisinin verildiğine inanılmasıdır.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Hükümdarın Tanrı'nın iradesiyle tahta çıktığını belirtmesi kut anlayışıyla ilişkilidir.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Türk Cihan Hakimiyeti, dünyaya hâkim olma düşüncesiyle ilişkilidir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Milletleri kendi yönetimi altında toplama düşüncesi Türk Cihan Hakimiyeti ile ilişkilidir.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Kut, dünyaya hâkim olma ve bütün milletleri yönetme düşüncesinin adıdır.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -9556,17 +9556,17 @@ new Question
 {
     Note = notSinavSoruStilleri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Aşağıdakilerden hangisi tarih derslerinde kullanılan soru stilleriyle ilgili yanlıştır?",
     Explanation = "Yeni soru stillerinde yalnızca klasik bilgi soruları değil, şiirden bilgi çıkarma ve verilen bilgilerden başlık bulma gibi yöntemler de kullanılmaktadır.",
     OrderIndex = 200,
     Choices =
     {
-        new Choice { Text = "Boşluk doldurma tarzında sorular kullanılabilmektedir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Şiir üzerinden tarihî bilgi çıkarılması istenebilmektedir.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Verilen bilgilere uygun bir başlık bulunması istenebilmektedir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Bir metinde hangi kavrama değinilmediğinin belirlenmesi istenebilmektedir.", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Yeni soru stillerinde yalnızca doğrudan ezberlenmiş bilgi sorulmaktadır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Boşluk doldurma tarzında sorular kullanılabilmektedir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Şiir üzerinden tarihî bilgi çıkarılması istenebilmektedir.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Verilen bilgilere uygun bir başlık bulunması istenebilmektedir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Bir metinde hangi kavrama değinilmediğinin belirlenmesi istenebilmektedir.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Yeni soru stillerinde yalnızca doğrudan ezberlenmiş bilgi sorulmaktadır.", IsCorrect = true, OrderIndex = 5 },
     }
 },
             }
@@ -11439,7 +11439,7 @@ Buraya dikkat: 1064 yılı Sultan Alparslan'ın Ani'yi fethettiği yıldır.
 
         return new Topic
         {
-            
+
 
             Name = "İlk Türk İslam Devletleri",
             Description = "Türk islam",
@@ -11769,17 +11769,17 @@ new Question
 {
 Note = notKarahanlilarDevletiB2,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Karahanlılarda eski Türk geleneklerinin devam ettiğini gösteren uygulamalardan hangisi yanlıştır?",
 Explanation = "Latin alfabesinin kullanılması Karahanlılarda eski Türk geleneklerinin devamını gösteren bir unsur olarak belirtilmemiştir.",
 OrderIndex = 17,
 Choices =
 {
-new Choice { Text = "Hükümdarların Han unvanını kullanması", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Hükümdarların Hakan unvanını kullanması", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "İkili teşkilatın sürdürülmesi", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Resmi dilin Türkçe olması", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Latin alfabesinin kullanılması", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Hükümdarların Han unvanını kullanması", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Hükümdarların Hakan unvanını kullanması", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "İkili teşkilatın sürdürülmesi", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Resmi dilin Türkçe olması", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Latin alfabesinin kullanılması", IsCorrect = true, OrderIndex = 5 },
 }
 },
 
@@ -11950,17 +11950,17 @@ new Question
 {
 Note = notOrtaAsyaSehirUnvanlari,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Aşağıdakilerden hangisi şehirlerin verilen unvanlarıyla eşleştirilmesinde yanlıştır?",
 Explanation = "Şehirlerin Şahı unvanı Semerkant'a, İslam'ın Roma'sı unvanı Buhara'ya aittir.",
 OrderIndex = 27,
 Choices =
 {
-new Choice { Text = "Semerkant — Şehirlerin Şahı", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Kaşgar — Işıldayan İnci", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Buhara — İslam'ın Roma'sı", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Semerkant — Şehirlerin Şahı", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Buhara — Şehirlerin Şahı", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Semerkant — Şehirlerin Şahı", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Kaşgar — Işıldayan İnci", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Buhara — İslam'ın Roma'sı", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Semerkant — Şehirlerin Şahı", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Buhara — Şehirlerin Şahı", IsCorrect = true, OrderIndex = 5 },
 }
 },
 
@@ -11989,18 +11989,18 @@ new Question
 {
 Note = notKarahanlilarGenelOzellikler,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Karahanlılarla ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Karahanlıların merkezi Balasagun'dur; Bağdat Karahanlıların merkezi değildir.",
 OrderIndex = 29,
 Choices =
 {
-new Choice { Text = "Merkezi Balasagun'dur.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Kurucusu Bilge Kül Kadır Han'dır.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Karluk, Yağma, Çiğil ve Tuhsi boylarından meydana gelmiştir.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Zamanla Doğu ve Batı Karahanlılar olarak ikiye ayrılmıştır.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Merkezi Bağdat'tır.", IsCorrect = false, OrderIndex = 5 },
-new Choice { Text = "Kurucusu Gazneli Mahmut'tur.", IsCorrect = false, OrderIndex = 6 },
+new Choice { Text = "Merkezi Balasagun'dur.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Kurucusu Bilge Kül Kadır Han'dır.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Karluk, Yağma, Çiğil ve Tuhsi boylarından meydana gelmiştir.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Zamanla Doğu ve Batı Karahanlılar olarak ikiye ayrılmıştır.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Merkezi Bağdat'tır.", IsCorrect = true, OrderIndex = 5 },
+new Choice { Text = "Kurucusu Gazneli Mahmut'tur.", IsCorrect = true, OrderIndex = 6 },
 }
 },
 
@@ -12030,18 +12030,18 @@ new Question
 {
 Note = notKarahanlilarGenelOzellikler,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Karahanlılarla ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Karahanlılarda resmî dil Türkçedir; devletin resmî dili olarak Farsça belirtilmemiştir.",
 OrderIndex = 31,
 Choices =
 {
-new Choice { Text = "Han ve Hakan unvanlarını kullanmışlardır.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "İkili teşkilat geleneğini devam ettirmişlerdir.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Resmî dil olarak Türkçeyi kullanmışlardır.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Uygur alfabesi kullanılmıştır.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Resmî dil olarak Farsçayı kullanmışlardır.", IsCorrect = false, OrderIndex = 5 },
-new Choice { Text = "Yöneticileri ve halkı tamamen Slavlardan oluşmuştur.", IsCorrect = false, OrderIndex = 6 },
+new Choice { Text = "Han ve Hakan unvanlarını kullanmışlardır.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "İkili teşkilat geleneğini devam ettirmişlerdir.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Resmî dil olarak Türkçeyi kullanmışlardır.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Uygur alfabesi kullanılmıştır.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Resmî dil olarak Farsçayı kullanmışlardır.", IsCorrect = true, OrderIndex = 5 },
+new Choice { Text = "Yöneticileri ve halkı tamamen Slavlardan oluşmuştur.", IsCorrect = true, OrderIndex = 6 },
 }
 },
 
@@ -12146,18 +12146,18 @@ new Question
 {
 Note = notKarahanlilarRibatVeGulam,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Gulam sistemiyle ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Gulam sistemi Karahanlılarda ilk örneği görülen bir sistemdir; ilk kez Gaznelilerde başladığı belirtilmemiştir.",
 OrderIndex = 37,
 Choices =
 {
-new Choice { Text = "Gulam sisteminin ilk örneği Karahanlılarda görülmüştür.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Gulam kavramı köle anlamında kullanılmıştır.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Esir alınan kişilerden devlet hizmetine alınanlar olmuştur.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Gulamlar askerî veya devlet görevlerinde kullanılabilmiştir.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Gulam sistemi ilk kez Gazneli Mahmut tarafından kurulmuştur.", IsCorrect = false, OrderIndex = 5 },
-new Choice { Text = "Gulam sistemi yalnızca ticaret amacıyla oluşturulmuştur.", IsCorrect = false, OrderIndex = 6 },
+new Choice { Text = "Gulam sisteminin ilk örneği Karahanlılarda görülmüştür.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Gulam kavramı köle anlamında kullanılmıştır.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Esir alınan kişilerden devlet hizmetine alınanlar olmuştur.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Gulamlar askerî veya devlet görevlerinde kullanılabilmiştir.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Gulam sistemi ilk kez Gazneli Mahmut tarafından kurulmuştur.", IsCorrect = true, OrderIndex = 5 },
+new Choice { Text = "Gulam sistemi yalnızca ticaret amacıyla oluşturulmuştur.", IsCorrect = true, OrderIndex = 6 },
 }
 },
 
@@ -12204,18 +12204,18 @@ new Question
 {
 Note = notGaznelilerGenelOzellikler,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Gaznelilerle ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Gazneliler Hindistan yönünde faaliyet göstermiştir; temel yönleri Hindistan olarak belirtilmiştir.",
 OrderIndex = 40,
 Choices =
 {
-new Choice { Text = "Devletleşme sürecinde Alp Tigin'in önemli bir yeri vardır.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Sebük Tegin, Gazneli Mahmut'un babasıdır.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Gaznelilerin temel yönü Hindistan olmuştur.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Gazneli Mahmut devletin en önemli hükümdarıdır.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Gaznelilerin temel yönü Karahanlıların Balasagun bölgesidir.", IsCorrect = false, OrderIndex = 5 },
-new Choice { Text = "Gaznelilerin en önemli hükümdarı Satuk Buğra Han'dır.", IsCorrect = false, OrderIndex = 6 },
+new Choice { Text = "Devletleşme sürecinde Alp Tigin'in önemli bir yeri vardır.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Sebük Tegin, Gazneli Mahmut'un babasıdır.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Gaznelilerin temel yönü Hindistan olmuştur.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Gazneli Mahmut devletin en önemli hükümdarıdır.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Gaznelilerin temel yönü Karahanlıların Balasagun bölgesidir.", IsCorrect = true, OrderIndex = 5 },
+new Choice { Text = "Gaznelilerin en önemli hükümdarı Satuk Buğra Han'dır.", IsCorrect = true, OrderIndex = 6 },
 }
 },
 
@@ -12243,18 +12243,18 @@ new Question
 {
 Note = notGazneliMahmutAbbasiIliskisi,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Gazneli Mahmut'un unvanlarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Gazneli Mahmut'a verilen unvanlar arasında sultan, put kırıcı ve alemin aslanı bulunmaktadır; hükümdarın unvanı olarak hakan ifadesi bu bağlamda verilmemiştir.",
 OrderIndex = 42,
 Choices =
 {
-new Choice { Text = "Sultan unvanı verilmiştir.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Put kırıcı unvanı verilmiştir.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Alemin aslanı unvanı verilmiştir.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Unvanlarının bir kısmı Abbasilerle ilişkisiyle bağlantılıdır.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Hakan unvanı, metinde Gazneli Mahmut'a verilen özel unvan olarak belirtilmiştir.", IsCorrect = false, OrderIndex = 5 },
-new Choice { Text = "Somnat Fatihi unvanı tek ve değişmez unvanıdır.", IsCorrect = false, OrderIndex = 6 },
+new Choice { Text = "Sultan unvanı verilmiştir.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Put kırıcı unvanı verilmiştir.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Alemin aslanı unvanı verilmiştir.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Unvanlarının bir kısmı Abbasilerle ilişkisiyle bağlantılıdır.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Hakan unvanı, metinde Gazneli Mahmut'a verilen özel unvan olarak belirtilmiştir.", IsCorrect = true, OrderIndex = 5 },
+new Choice { Text = "Somnat Fatihi unvanı tek ve değişmez unvanıdır.", IsCorrect = true, OrderIndex = 6 },
 }
 },
 
@@ -12320,18 +12320,18 @@ new Question
 {
 Note = notGazneliMahmutVeHindistanSeferleri,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Gazneli Mahmut'un Hindistan seferleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Hindistan seferlerinin amaçlarından biri İslamiyet'i yaymaktır; Semerkant'ta medrese açmak bu seferlerin amacı değildir.",
 OrderIndex = 46,
 Choices =
 {
-new Choice { Text = "İslamiyet'i yaymak amaçlardan biridir.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Hindistan'ın yeraltı ve yerüstü kaynaklarına ulaşmak amaçlardan biridir.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Bölücü mezhep mensuplarının faaliyetlerini sona erdirmek amaçlardan biridir.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "İslam dünyasının liderliğini ele geçirmek amaçlardan biridir.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Semerkant'ta medrese açmak Hindistan seferlerinin temel amacıdır.", IsCorrect = false, OrderIndex = 5 },
-new Choice { Text = "Karahanlılarda gulam sistemini başlatmak Hindistan seferlerinin temel amacıdır.", IsCorrect = false, OrderIndex = 6 },
+new Choice { Text = "İslamiyet'i yaymak amaçlardan biridir.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Hindistan'ın yeraltı ve yerüstü kaynaklarına ulaşmak amaçlardan biridir.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Bölücü mezhep mensuplarının faaliyetlerini sona erdirmek amaçlardan biridir.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "İslam dünyasının liderliğini ele geçirmek amaçlardan biridir.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Semerkant'ta medrese açmak Hindistan seferlerinin temel amacıdır.", IsCorrect = true, OrderIndex = 5 },
+new Choice { Text = "Karahanlılarda gulam sistemini başlatmak Hindistan seferlerinin temel amacıdır.", IsCorrect = true, OrderIndex = 6 },
 }
 },
 
@@ -12359,18 +12359,18 @@ new Question
 {
 Note = notBiruniVeHindistan,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Biruni'nin Hindistan çalışmalarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Biruni, Hindistan'ın inançlarını küçümseyen değil, onlara saygılı ve tarafsız bir yaklaşım sergileyen bir eser ortaya koymuştur.",
 OrderIndex = 48,
 Choices =
 {
-new Choice { Text = "İlk dört Hindistan seferine katılmıştır.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Hindistan coğrafyası ve kültürünü ele almıştır.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Hindistan'ın inançlarına saygılı bir yaklaşım sergilemiştir.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Gazneli Mahmut tarafından sarayın en değerli hazinesi olarak görülmüştür.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Hindistan'daki inançları küçümseyerek eserini oluşturmuştur.", IsCorrect = false, OrderIndex = 5 },
-new Choice { Text = "Gazneli Mahmut'un tüm seferlerinde bulunmuştur.", IsCorrect = false, OrderIndex = 6 },
+new Choice { Text = "İlk dört Hindistan seferine katılmıştır.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Hindistan coğrafyası ve kültürünü ele almıştır.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Hindistan'ın inançlarına saygılı bir yaklaşım sergilemiştir.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Gazneli Mahmut tarafından sarayın en değerli hazinesi olarak görülmüştür.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Hindistan'daki inançları küçümseyerek eserini oluşturmuştur.", IsCorrect = true, OrderIndex = 5 },
+new Choice { Text = "Gazneli Mahmut'un tüm seferlerinde bulunmuştur.", IsCorrect = true, OrderIndex = 6 },
 }
 },
 
@@ -12398,18 +12398,18 @@ new Question
 {
 Note = notKarahanlilarGenelOzellikler,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Karahanlılarla ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Karahanlıların merkezi Balasagun'dur; Gazne Karahanlıların merkezi değildir.",
 OrderIndex = 50,
 Choices =
 {
-new Choice { Text = "Orta Asya'da kurulmuştur.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Kurucusu Bilge Kül Kadır Han'dır.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Karluk, Yağma, Çiğil ve Tuhsi boylarıyla ilişkilidir.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Satuk Buğra Han zamanında İslamiyet kabul edilmiştir.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Merkezi Gazne'dir.", IsCorrect = false, OrderIndex = 5 },
-new Choice { Text = "Kurucusu Gazneli Mahmut'tur.", IsCorrect = false, OrderIndex = 6 },
+new Choice { Text = "Orta Asya'da kurulmuştur.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Kurucusu Bilge Kül Kadır Han'dır.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Karluk, Yağma, Çiğil ve Tuhsi boylarıyla ilişkilidir.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Satuk Buğra Han zamanında İslamiyet kabul edilmiştir.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Merkezi Gazne'dir.", IsCorrect = true, OrderIndex = 5 },
+new Choice { Text = "Kurucusu Gazneli Mahmut'tur.", IsCorrect = true, OrderIndex = 6 },
 }
 },
 
@@ -12418,18 +12418,18 @@ new Question
 {
 Note = notGaznelilerGenelOzellikler,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Gaznelilerle ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Gazneliler adını kurucusundan değil, kurulduğu Gazne kentinden almıştır.",
 OrderIndex = 51,
 Choices =
 {
-new Choice { Text = "Afganistan'da kurulmuştur.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Gazne kentinde kurulmuştur.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Adını kurulduğu yerden almıştır.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "En önemli hükümdarı Gazneli Mahmut'tur.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Adını doğrudan Gazneli Mahmut'tan almıştır.", IsCorrect = false, OrderIndex = 5 },
-new Choice { Text = "Merkezi Balasagun'dur.", IsCorrect = false, OrderIndex = 6 },
+new Choice { Text = "Afganistan'da kurulmuştur.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Gazne kentinde kurulmuştur.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Adını kurulduğu yerden almıştır.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "En önemli hükümdarı Gazneli Mahmut'tur.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Adını doğrudan Gazneli Mahmut'tan almıştır.", IsCorrect = true, OrderIndex = 5 },
+new Choice { Text = "Merkezi Balasagun'dur.", IsCorrect = true, OrderIndex = 6 },
 }
 },
 
@@ -12457,18 +12457,18 @@ new Question
 {
 Note = notKarahanlilarRibatVeGulam,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Ribatlarla ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Ribatlar yalnızca saray amacıyla kullanılmamış; ticaret, güvenlik, sığınma ve İslamiyet'in yayılması gibi çeşitli işlevler üstlenmiştir.",
 OrderIndex = 53,
 Choices =
 {
-new Choice { Text = "İpek Yolu üzerindeki faaliyetlerle ilişkilidir.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Tüccarların dinlenmesi için kullanılmıştır.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Yol güvenliğine katkı sağlamıştır.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Gazi ve savaşçılar için sığınak olarak kullanılabilmiştir.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Yalnızca hükümdarların özel sarayı olarak kullanılmıştır.", IsCorrect = false, OrderIndex = 5 },
-new Choice { Text = "Yalnızca Hindistan'daki tapınakları korumak için yapılmıştır.", IsCorrect = false, OrderIndex = 6 },
+new Choice { Text = "İpek Yolu üzerindeki faaliyetlerle ilişkilidir.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Tüccarların dinlenmesi için kullanılmıştır.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Yol güvenliğine katkı sağlamıştır.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Gazi ve savaşçılar için sığınak olarak kullanılabilmiştir.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Yalnızca hükümdarların özel sarayı olarak kullanılmıştır.", IsCorrect = true, OrderIndex = 5 },
+new Choice { Text = "Yalnızca Hindistan'daki tapınakları korumak için yapılmıştır.", IsCorrect = true, OrderIndex = 6 },
 }
 },
 
@@ -12477,18 +12477,18 @@ new Question
 {
 Note = notGazneliMahmutVeHindistanSeferleri,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Somnat seferiyle ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Somnat seferi Hindistan'daki Şiva tapınağına yönelikti; Semerkant Medresesi ile ilgili değildir.",
 OrderIndex = 54,
 Choices =
 {
-new Choice { Text = "Somnat veya Sumnat adıyla anılmıştır.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "16. sefer olarak belirtilmiştir.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Hindistan'da gerçekleştirilmiştir.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Şiva tapınağındaki putların kırılmasıyla ilişkilendirilmiştir.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Semerkant'taki medreseye düzenlenmiştir.", IsCorrect = false, OrderIndex = 5 },
-new Choice { Text = "Bağdat'taki Abbasî merkezine karşı yapılmıştır.", IsCorrect = false, OrderIndex = 6 },
+new Choice { Text = "Somnat veya Sumnat adıyla anılmıştır.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "16. sefer olarak belirtilmiştir.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Hindistan'da gerçekleştirilmiştir.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Şiva tapınağındaki putların kırılmasıyla ilişkilendirilmiştir.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Semerkant'taki medreseye düzenlenmiştir.", IsCorrect = true, OrderIndex = 5 },
+new Choice { Text = "Bağdat'taki Abbasî merkezine karşı yapılmıştır.", IsCorrect = true, OrderIndex = 6 },
 }
 },
 
@@ -12497,18 +12497,18 @@ new Question
 {
 Note = notBiruniVeHindistan,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Biruni'nin Gazneli Mahmut dönemindeki faaliyetleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Biruni, Gazneli Mahmut'un ilk dört Hindistan seferine katılmıştır; bütün seferlerine katıldığı belirtilmemiştir.",
 OrderIndex = 55,
 Choices =
 {
-new Choice { Text = "İlk dört Hindistan seferine katılmıştır.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Hindistan coğrafyası hakkında çalışma yapmıştır.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Hindistan kültürünü ele almıştır.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Tahkik-i Malul Hint adlı eserle ilişkilendirilmiştir.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Gazneli Mahmut'un 17 Hindistan seferinin tamamına katılmıştır.", IsCorrect = false, OrderIndex = 5 },
-new Choice { Text = "Karahanlıların ilk hükümdarı olmuştur.", IsCorrect = false, OrderIndex = 6 },
+new Choice { Text = "İlk dört Hindistan seferine katılmıştır.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Hindistan coğrafyası hakkında çalışma yapmıştır.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Hindistan kültürünü ele almıştır.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Tahkik-i Malul Hint adlı eserle ilişkilendirilmiştir.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Gazneli Mahmut'un 17 Hindistan seferinin tamamına katılmıştır.", IsCorrect = true, OrderIndex = 5 },
+new Choice { Text = "Karahanlıların ilk hükümdarı olmuştur.", IsCorrect = true, OrderIndex = 6 },
 }
 },
 
@@ -12669,18 +12669,18 @@ new Question
 {
 Note = notKarahanlilarEgitimVeKultur,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Karahanlıların eğitim ve kültür faaliyetleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Semerkant Medresesi Karahanlılar döneminde Tamgaç Buğra Han zamanında açılmıştır; Gazneli Mahmut tarafından açılmamıştır.",
 OrderIndex = 64,
 Choices =
 {
-new Choice { Text = "Semerkant'ta medrese açılmıştır.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Tamgaç Buğra Han zamanında medrese açılmıştır.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Burslu öğrencilik sistemi başlatılmıştır.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "İlk Türk İslam yazılı edebî eserleri verilmiştir.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Semerkant Medresesi Gazneli Mahmut tarafından Hindistan'da açılmıştır.", IsCorrect = false, OrderIndex = 5 },
-new Choice { Text = "Karahanlılarda eğitim faaliyeti olarak yalnızca askerî eğitim verilmiştir.", IsCorrect = false, OrderIndex = 6 },
+new Choice { Text = "Semerkant'ta medrese açılmıştır.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Tamgaç Buğra Han zamanında medrese açılmıştır.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Burslu öğrencilik sistemi başlatılmıştır.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "İlk Türk İslam yazılı edebî eserleri verilmiştir.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Semerkant Medresesi Gazneli Mahmut tarafından Hindistan'da açılmıştır.", IsCorrect = true, OrderIndex = 5 },
+new Choice { Text = "Karahanlılarda eğitim faaliyeti olarak yalnızca askerî eğitim verilmiştir.", IsCorrect = true, OrderIndex = 6 },
 }
 },
 
@@ -12708,18 +12708,18 @@ new Question
 {
 Note = notGazneliMahmutAbbasiIliskisi,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Gazneli Mahmut'a sultan unvanının verilmesiyle ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Sultan unvanının verilmesi Somnat seferinden değil, Abbasileri korumak için Bağdat'a gelmesi ve Büveyhilerin geri çekilmesiyle ilişkilendirilmiştir.",
 OrderIndex = 66,
 Choices =
 {
-new Choice { Text = "Abbasiler Gazneli Mahmut'tan yardım istemiştir.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Büveyhilerin Bağdat'a saldırma ihtimali vardır.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Gazneli Mahmut Bağdat'a ordusuyla gelmiştir.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Büveyhiler Gazneli Mahmut'un gelişi üzerine geri çekilmiştir.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Sultan unvanı doğrudan Somnat seferinden sonra verilmiştir.", IsCorrect = false, OrderIndex = 5 },
-new Choice { Text = "Sultan unvanı Karahanlıların Tamgaç Buğra Han'a verdiği bir unvandır.", IsCorrect = false, OrderIndex = 6 },
+new Choice { Text = "Abbasiler Gazneli Mahmut'tan yardım istemiştir.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Büveyhilerin Bağdat'a saldırma ihtimali vardır.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Gazneli Mahmut Bağdat'a ordusuyla gelmiştir.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Büveyhiler Gazneli Mahmut'un gelişi üzerine geri çekilmiştir.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Sultan unvanı doğrudan Somnat seferinden sonra verilmiştir.", IsCorrect = true, OrderIndex = 5 },
+new Choice { Text = "Sultan unvanı Karahanlıların Tamgaç Buğra Han'a verdiği bir unvandır.", IsCorrect = true, OrderIndex = 6 },
 }
 },
 
@@ -13183,17 +13183,17 @@ new Question
 {
 Note = notCagriBeyVeAnadoluKesifleri,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Pasinler Savaşı ile ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Pasinler Savaşı 1048 yılında yapılmış, Selçuklular tarafından kazanılmış ve Gürcü kralı Liparit esir alınmıştır.",
 OrderIndex = 91,
 Choices =
 {
-new Choice { Text = "Pasinler Savaşı 1048 yılında yapılmıştır.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Savaşı Selçuklular kazanmıştır.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Gürcü kralı Liparit esir alınmıştır.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Pasinler Savaşı Bizans ile Selçuklular arasında gerçekleşmiştir.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Pasinler Savaşı 1071 yılında yapılmıştır.", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Pasinler Savaşı 1048 yılında yapılmıştır.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Savaşı Selçuklular kazanmıştır.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Gürcü kralı Liparit esir alınmıştır.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Pasinler Savaşı Bizans ile Selçuklular arasında gerçekleşmiştir.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Pasinler Savaşı 1071 yılında yapılmıştır.", IsCorrect = true, OrderIndex = 5 },
 }
 },
 
@@ -13278,17 +13278,17 @@ new Question
 {
 Note = notTugrulBeyDonemiB2,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "1058 yılındaki taç giyme töreniyle ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "1058 yılında Bağdat'ta Tuğrul Bey için taç giyme töreni yapılmış ve ona doğunun ve batının hükümdarı unvanı verilmiştir.",
 OrderIndex = 96,
 Choices =
 {
-new Choice { Text = "Taç giyme töreni Bağdat'ta yapılmıştır.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Tören 1058 yılında yapılmıştır.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Tuğrul Bey'e doğunun ve batının hükümdarı unvanı verilmiştir.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Bu gelişme Abbasiler ile Selçuklular arasındaki ilişkiyle bağlantılıdır.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Taç giyme töreni 1071 yılında yapılmıştır.", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Taç giyme töreni Bağdat'ta yapılmıştır.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Tören 1058 yılında yapılmıştır.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Tuğrul Bey'e doğunun ve batının hükümdarı unvanı verilmiştir.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Bu gelişme Abbasiler ile Selçuklular arasındaki ilişkiyle bağlantılıdır.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Taç giyme töreni 1071 yılında yapılmıştır.", IsCorrect = true, OrderIndex = 5 },
 }
 },
 
@@ -13354,17 +13354,17 @@ new Question
 {
 Note = notTugrulBeyDonemiB2,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Tuğrul Bey dönemiyle ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Tuğrul Bey döneminde 1055 Bağdat Seferi, 1058 taç giyme töreni ve Büveyhilerin sona erdirilmesi önemli gelişmelerdir.",
 OrderIndex = 100,
 Choices =
 {
-new Choice { Text = "Tuğrul Bey 1055 yılında Bağdat Seferi'ne çıkmıştır.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Tuğrul Bey 1058 yılında Bağdat'ta taç giymiştir.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Tuğrul Bey'e doğunun ve batının hükümdarı unvanı verilmiştir.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Tuğrul Bey döneminde Büveyhiler tamamen sona erdirilmiştir.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Tuğrul Bey 1055 yılında Anadolu Selçuklu Devleti'ni kurmuştur.", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Tuğrul Bey 1055 yılında Bağdat Seferi'ne çıkmıştır.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Tuğrul Bey 1058 yılında Bağdat'ta taç giymiştir.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Tuğrul Bey'e doğunun ve batının hükümdarı unvanı verilmiştir.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Tuğrul Bey döneminde Büveyhiler tamamen sona erdirilmiştir.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Tuğrul Bey 1055 yılında Anadolu Selçuklu Devleti'ni kurmuştur.", IsCorrect = true, OrderIndex = 5 },
 }
 },
 
@@ -13898,17 +13898,17 @@ new Question
 {
 Note = notRomenDiojenVeAlparslan,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Romen Diojen'in esir alınmasıyla ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Romen Diojen, bir gulam askeri tarafından yakalanmış ve Sultan Alparslan'ın çadırına götürülmüştür.",
 OrderIndex = 130,
 Choices =
 {
-new Choice { Text = "Romen Diojen savaşın sonunda esir alınmıştır.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Romen Diojen bir gulam askeri tarafından yakalanmıştır.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Romen Diojen Sultan Alparslan'ın huzuruna getirilmiştir.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Sultan Alparslan Romen Diojen'e kral gibi davranmıştır.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Romen Diojen savaş meydanından kendi ordusuyla birlikte ayrılmıştır.", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Romen Diojen savaşın sonunda esir alınmıştır.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Romen Diojen bir gulam askeri tarafından yakalanmıştır.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Romen Diojen Sultan Alparslan'ın huzuruna getirilmiştir.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Sultan Alparslan Romen Diojen'e kral gibi davranmıştır.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Romen Diojen savaş meydanından kendi ordusuyla birlikte ayrılmıştır.", IsCorrect = true, OrderIndex = 5 },
 }
 },
 
@@ -13917,17 +13917,17 @@ new Question
 {
 Note = notAlparslanVeAniFethi,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Sultan Alparslan dönemiyle ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Ani'nin fethi 1064 yılında gerçekleşmiş ve bu fetih üzerine Ebul Feth unvanı verilmiştir.",
 OrderIndex = 131,
 Choices =
 {
-new Choice { Text = "Sultan Alparslan 1064 yılında ilk seferini gerçekleştirmiştir.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Ani 1064 yılında fethedilmiştir.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Ani'nin fethi üzerine Ebul Feth unvanı verilmiştir.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Nizamül Mülk, Amidül Mülk'ün yerine vezir getirilmiştir.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Ebul Feth unvanı Tuğrul Bey'e verilmiştir.", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Sultan Alparslan 1064 yılında ilk seferini gerçekleştirmiştir.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Ani 1064 yılında fethedilmiştir.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Ani'nin fethi üzerine Ebul Feth unvanı verilmiştir.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Nizamül Mülk, Amidül Mülk'ün yerine vezir getirilmiştir.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Ebul Feth unvanı Tuğrul Bey'e verilmiştir.", IsCorrect = true, OrderIndex = 5 },
 }
 },
 
@@ -13936,17 +13936,17 @@ new Question
 {
 Note = notMalazgirtSavasTaktigi,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Malazgirt Savaşı'nın savaş taktiğiyle ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Selçuklu ordusu sahte ricat yaparak Bizans ordusunu ilerletmiş ve ardından kuşatma gerçekleştirmiştir.",
 OrderIndex = 132,
 Choices =
 {
-new Choice { Text = "Sahte ricat uygulanmıştır.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Gizlenen Selçuklu kuvvetleri harekete geçmiştir.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Bizans ordusu ilerletilmiştir.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Selçuklu ordusu Bizans ordusunu hilal şeklinde kuşatmıştır.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Selçuklu ordusu savaş boyunca hiç geri çekilmemiştir.", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Sahte ricat uygulanmıştır.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Gizlenen Selçuklu kuvvetleri harekete geçmiştir.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Bizans ordusu ilerletilmiştir.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Selçuklu ordusu Bizans ordusunu hilal şeklinde kuşatmıştır.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Selçuklu ordusu savaş boyunca hiç geri çekilmemiştir.", IsCorrect = true, OrderIndex = 5 },
 }
 },
 
@@ -13955,17 +13955,17 @@ new Question
 {
 Note = notMalazgirtSavasininGelisimi,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Malazgirt Savaşı'ndaki Bizans ordusuyla ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Bizans ordusunun ön tarafında ücretli Peçenek, Uz ve Kuman askerleri bulunmuştur.",
 OrderIndex = 133,
 Choices =
 {
-new Choice { Text = "Ordunun ön tarafında Peçenekler bulunmuştur.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Ordunun ön tarafında Uzlar bulunmuştur.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Ordunun ön tarafında Kumanlar bulunmuştur.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Bu askerlerin bir kısmı savaş sırasında taraf değiştirmiştir.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Bizans ordusunun ön tarafında yalnızca Selçuklu gulamları bulunmuştur.", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Ordunun ön tarafında Peçenekler bulunmuştur.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Ordunun ön tarafında Uzlar bulunmuştur.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Ordunun ön tarafında Kumanlar bulunmuştur.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Bu askerlerin bir kısmı savaş sırasında taraf değiştirmiştir.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Bizans ordusunun ön tarafında yalnızca Selçuklu gulamları bulunmuştur.", IsCorrect = true, OrderIndex = 5 },
 }
 },
 
@@ -13974,17 +13974,17 @@ new Question
 {
 Note = notTugrulBeyFaaliyetleriB2,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Tuğrul Bey'in faaliyetleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Tuğrul Bey döneminde 1055'te Bağdat Seferi yapılmış, 1058'de ise halifenin elinden taç giyilmiştir.",
 OrderIndex = 134,
 Choices =
 {
-new Choice { Text = "1055'te Bağdat Seferi yapılmıştır.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "1058'de halifenin elinden taç giymiştir.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Doğunun ve Batının Hükümdarı unvanı Tuğrul Bey'e aittir.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Pasinler Savaşı 1048 yılında yapılmıştır.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Ani'yi 1055 yılında fethetmiştir.", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "1055'te Bağdat Seferi yapılmıştır.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "1058'de halifenin elinden taç giymiştir.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Doğunun ve Batının Hükümdarı unvanı Tuğrul Bey'e aittir.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Pasinler Savaşı 1048 yılında yapılmıştır.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Ani'yi 1055 yılında fethetmiştir.", IsCorrect = true, OrderIndex = 5 },
 }
 },
 
@@ -14029,17 +14029,17 @@ new Question
 {
 Note = notRomenDiojenVeAlparslan,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Sultan Alparslan ile Romen Diojen arasındaki görüşmeyle ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Sultan Alparslan, Romen Diojen'e karşı insani bir tutum sergilemiş ve serbest bırakılması konusunda sözleşme yapılmasını konuşmuştur.",
 OrderIndex = 137,
 Choices =
 {
-new Choice { Text = "Romen Diojen Sultan Alparslan'ın huzuruna getirilmiştir.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Romen Diojen'in yarası tedavi edilmiştir.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Sultan Alparslan Romen Diojen'e kral gibi davranmıştır.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Romen Diojen'in serbest bırakılması için sözleşme yapılması konuşulmuştur.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Sultan Alparslan Romen Diojen'i hemen öldürmüştür.", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Romen Diojen Sultan Alparslan'ın huzuruna getirilmiştir.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Romen Diojen'in yarası tedavi edilmiştir.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Sultan Alparslan Romen Diojen'e kral gibi davranmıştır.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Romen Diojen'in serbest bırakılması için sözleşme yapılması konuşulmuştur.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Sultan Alparslan Romen Diojen'i hemen öldürmüştür.", IsCorrect = true, OrderIndex = 5 },
 }
 },
 // --- SORU 138 ---
@@ -14110,20 +14110,20 @@ new Question
 {
     Note = notMalazgirtSavasininSonuclari,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Aşağıdakilerden hangisi Malazgirt Savaşı'nın sonucu değildir?",
     Explanation = "Malazgirt Savaşı'nın sonucu Anadolu'nun kapısının Türklere açılmasıdır; Anadolu'nun kapısının Türklere kapanması savaşın sonucu değildir.",
     OrderIndex = 141,
     Choices =
     {
-        new Choice { Text = "Anadolu'nun kapısı Türklere açılmıştır.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Bizans'ın Anadolu'daki gücü kırılmıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Türklerin batıya ilerleyişi hızlanmıştır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Bizans Avrupa'dan yardım istemiştir.", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Anadolu'nun kapısı Türklere kapanmıştır.", IsCorrect = false, OrderIndex = 5 },
-        new Choice { Text = "Bizans'ın Anadolu'daki gücü artmıştır.", IsCorrect = false, OrderIndex = 6 },
-        new Choice { Text = "Türklerin batıya ilerleyişi yavaşlamıştır.", IsCorrect = false, OrderIndex = 7 },
-        new Choice { Text = "Bizans Avrupa'dan yardım istememiştir.", IsCorrect = false, OrderIndex = 8 },
+        new Choice { Text = "Anadolu'nun kapısı Türklere açılmıştır.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Bizans'ın Anadolu'daki gücü kırılmıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Türklerin batıya ilerleyişi hızlanmıştır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Bizans Avrupa'dan yardım istemiştir.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Anadolu'nun kapısı Türklere kapanmıştır.", IsCorrect = true, OrderIndex = 5 },
+        new Choice { Text = "Bizans'ın Anadolu'daki gücü artmıştır.", IsCorrect = true, OrderIndex = 6 },
+        new Choice { Text = "Türklerin batıya ilerleyişi yavaşlamıştır.", IsCorrect = true, OrderIndex = 7 },
+        new Choice { Text = "Bizans Avrupa'dan yardım istememiştir.", IsCorrect = true, OrderIndex = 8 },
     }
 },
 
@@ -14468,20 +14468,20 @@ new Question
 {
     Note = notMeliksahDonemiB2,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Aşağıdakilerden hangisi Sultan Melikşah dönemiyle ilgili değildir?",
     Explanation = "Sultan Melikşah döneminin özelliği Büyük Selçuklu Devleti'nin en parlak dönemini yaşamasıdır; yıkılış tarihi olarak verilen 1157 bu döneme ait değildir.",
     OrderIndex = 158,
     Choices =
     {
-        new Choice { Text = "Büyük Selçuklu Devleti'nin en parlak dönemi olması", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Kudüs'ün Atsız tarafından fethedilmesi", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Yemen ve Aden'e kadar fetihlerin gerçekleştirilmesi", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Nizamülmülk'ün etkisinin azaltılması", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Büyük Selçuklu Devleti'nin 1157 yılında tarihe karışması", IsCorrect = false, OrderIndex = 5 },
-        new Choice { Text = "Sultan Melikşah'ın zehirlenerek ölmesi", IsCorrect = true, OrderIndex = 6 },
-        new Choice { Text = "Gürcistan'ın fethedilmesi", IsCorrect = true, OrderIndex = 7 },
-        new Choice { Text = "Şam'ın fethedilmesi", IsCorrect = true, OrderIndex = 8 },
+        new Choice { Text = "Büyük Selçuklu Devleti'nin en parlak dönemi olması", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Kudüs'ün Atsız tarafından fethedilmesi", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Yemen ve Aden'e kadar fetihlerin gerçekleştirilmesi", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Nizamülmülk'ün etkisinin azaltılması", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Büyük Selçuklu Devleti'nin 1157 yılında tarihe karışması", IsCorrect = true, OrderIndex = 5 },
+        new Choice { Text = "Sultan Melikşah'ın zehirlenerek ölmesi", IsCorrect = false, OrderIndex = 6 },
+        new Choice { Text = "Gürcistan'ın fethedilmesi", IsCorrect = false, OrderIndex = 7 },
+        new Choice { Text = "Şam'ın fethedilmesi", IsCorrect = false, OrderIndex = 8 },
     }
 },
 
@@ -14679,20 +14679,20 @@ new Question
 {
     Note = notBuyukSelcukluDevletininYikilisi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Aşağıdakilerden hangisi Büyük Selçuklu Devleti'nin ayrıldığı devletlerden biri değildir?",
     Explanation = "Irak Selçukluları ve Kirman Selçukluları ayrılan devletler arasında sayılmıştır; Türkiye Selçukluları da bu bağlamda belirtilmiştir. Danişmentoğulları ise bu listede yer almamaktadır.",
     OrderIndex = 168,
     Choices =
     {
-        new Choice { Text = "Irak Selçukluları", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Kirman Selçukluları", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Türkiye Selçukluları", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Horasan Selçukluları", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Danişmentoğulları", IsCorrect = false, OrderIndex = 5 },
-        new Choice { Text = "Artukoğulları", IsCorrect = false, OrderIndex = 6 },
-        new Choice { Text = "Saltukoğulları", IsCorrect = false, OrderIndex = 7 },
-        new Choice { Text = "Dilmaçoğulları", IsCorrect = false, OrderIndex = 8 },
+        new Choice { Text = "Irak Selçukluları", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Kirman Selçukluları", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Türkiye Selçukluları", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Horasan Selçukluları", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Danişmentoğulları", IsCorrect = true, OrderIndex = 5 },
+        new Choice { Text = "Artukoğulları", IsCorrect = true, OrderIndex = 6 },
+        new Choice { Text = "Saltukoğulları", IsCorrect = true, OrderIndex = 7 },
+        new Choice { Text = "Dilmaçoğulları", IsCorrect = true, OrderIndex = 8 },
     }
 },
 new Question
@@ -14720,17 +14720,17 @@ new Question
 {
 Note = notBuyukSelcukluYikilmaNedenleri,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Büyük Selçuklu Devleti'nin yıkılma nedenleri arasında aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Talas Savaşı'nın kaybedilmesi Büyük Selçuklu Devleti'nin yıkılma nedenleri arasında verilmemiştir.",
 OrderIndex = 170,
 Choices =
 {
-new Choice { Text = "Melikler arasındaki taht kavgaları", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Oğuzların devlete küsmesi ve isyan etmesi", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Abbasilerin Selçuklu aleyhine gizli faaliyetlerde bulunması", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Melik ve Atabeylerin bağımsızlık çalışmaları", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Talas Savaşı'nın kaybedilmesi", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Melikler arasındaki taht kavgaları", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Oğuzların devlete küsmesi ve isyan etmesi", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Abbasilerin Selçuklu aleyhine gizli faaliyetlerde bulunması", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Melik ve Atabeylerin bağımsızlık çalışmaları", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Talas Savaşı'nın kaybedilmesi", IsCorrect = true, OrderIndex = 5 },
 }
 },
 
@@ -14832,17 +14832,17 @@ new Question
 {
 Note = notUrfaliMateos,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Urfalı Mateos ile ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Urfalı Mateos'un eseri Sultan Alparslan ve Melikşah dönemleri hakkında bilgiler vermektedir.",
 OrderIndex = 176,
 Choices =
 {
-new Choice { Text = "Vekayiname adlı eseri vardır.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Sultan Alparslan dönemi hakkında bilgiler vermiştir.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Melikşah dönemi hakkında bilgiler vermiştir.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Selçuklu tarihi açısından önemli bir kaynak olarak belirtilmiştir.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Eserinde yalnızca Gazneli Mahmut dönemini anlatmıştır.", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Vekayiname adlı eseri vardır.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Sultan Alparslan dönemi hakkında bilgiler vermiştir.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Melikşah dönemi hakkında bilgiler vermiştir.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Selçuklu tarihi açısından önemli bir kaynak olarak belirtilmiştir.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Eserinde yalnızca Gazneli Mahmut dönemini anlatmıştır.", IsCorrect = true, OrderIndex = 5 },
 }
 },
 
@@ -15355,17 +15355,17 @@ new Question
 {
 Note = notBuyukSelcukluYikilmaNedenleri,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Büyük Selçuklu Devleti'nin yıkılma nedenlerinden hangisi yanlıştır?",
 Explanation = "Sultan Alparslan'ın Ani'yi alması devletin yıkılma nedeni olarak verilmemiştir.",
 OrderIndex = 205,
 Choices =
 {
-new Choice { Text = "Meliklerin taht kavgaları", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Oğuzların devlete küsmesi ve isyan etmesi", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Abbasilerin Selçuklu aleyhine gizli faaliyetlerde bulunması", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Katvan Savaşı'nın kaybedilmesi", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Sultan Alparslan'ın Ani'yi alması", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Meliklerin taht kavgaları", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Oğuzların devlete küsmesi ve isyan etmesi", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Abbasilerin Selçuklu aleyhine gizli faaliyetlerde bulunması", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Katvan Savaşı'nın kaybedilmesi", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Sultan Alparslan'ın Ani'yi alması", IsCorrect = true, OrderIndex = 5 },
 }
 },
 
@@ -15374,17 +15374,17 @@ new Question
 {
 Note = notSelcukluDevletleriVeAtabeylikler,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Aşağıdakilerden hangisi belirtilen Selçuklu devletlerinden biri değildir?",
 Explanation = "Börüler bir Selçuklu devleti değil, Şam Atabeyliği'nin diğer adıdır.",
 OrderIndex = 206,
 Choices =
 {
-new Choice { Text = "Irak Selçukluları", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Kirman Selçukluları", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Suriye Selçukluları", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Türkiye Selçukluları", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Börüler", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Irak Selçukluları", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Kirman Selçukluları", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Suriye Selçukluları", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Türkiye Selçukluları", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Börüler", IsCorrect = true, OrderIndex = 5 },
 }
 },
 
@@ -15393,17 +15393,17 @@ new Question
 {
 Note = notKarahanlilar,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Karahanlılarla ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Karahanlılarda Türkçenin resmî dil olarak kullanıldığı belirtilmiştir; Farsça resmî dil olarak verilmemiştir.",
 OrderIndex = 207,
 Choices =
 {
-new Choice { Text = "Orta Asya'da kurulmuş ilk Müslüman Türk devleti olarak belirtilmiştir.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Türkçeyi resmî dil olarak kullanmışlardır.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Han ve Hakan gibi unvanları kullanmışlardır.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "İlk defa gulam sistemi Karahanlılarda görülmüştür.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Farsçayı resmî dil olarak kullanmışlardır.", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Orta Asya'da kurulmuş ilk Müslüman Türk devleti olarak belirtilmiştir.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Türkçeyi resmî dil olarak kullanmışlardır.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Han ve Hakan gibi unvanları kullanmışlardır.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "İlk defa gulam sistemi Karahanlılarda görülmüştür.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Farsçayı resmî dil olarak kullanmışlardır.", IsCorrect = true, OrderIndex = 5 },
 }
 },
 
@@ -15412,17 +15412,17 @@ new Question
 {
 Note = notGazneliler,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Gazneli Mahmut ile ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Gazneli Mahmut'un Sumnat seferinden sonra Put Kırıcı unvanını aldığı belirtilmiştir.",
 OrderIndex = 208,
 Choices =
 {
-new Choice { Text = "Sultan unvanını ilk kullanan hükümdar olarak belirtilmiştir.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Sumnat seferi önemli seferlerinden biridir.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Hindistan'a 17 sefer yapmıştır.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Sumnat seferinden sonra Put Kırıcı unvanını almıştır.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "1055 Bağdat seferinden sonra Doğu'nun ve Batı'nın Sultanı unvanını almıştır.", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Sultan unvanını ilk kullanan hükümdar olarak belirtilmiştir.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Sumnat seferi önemli seferlerinden biridir.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Hindistan'a 17 sefer yapmıştır.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Sumnat seferinden sonra Put Kırıcı unvanını almıştır.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "1055 Bağdat seferinden sonra Doğu'nun ve Batı'nın Sultanı unvanını almıştır.", IsCorrect = true, OrderIndex = 5 },
 }
 },
 
@@ -15431,17 +15431,17 @@ new Question
 {
 Note = notBuyukSelcukluKurulusVeYayilma,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Büyük Selçuklu Devleti'nin kuruluş süreciyle ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Çağrı Bey, Mikail'in oğlu olarak belirtilmiş; Dukak'ın oğlu olarak verilmemiştir.",
 OrderIndex = 209,
 Choices =
 {
-new Choice { Text = "Mikail'in oğulları Tuğrul ve Çağrı Beylerdir.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Tuğrul ve Çağrı Beylerin kurduğu devlet İran coğrafyasında gelişmiştir.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Devletin resmî dili Farsçadır.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Çağrı Bey Anadolu'da keşif hareketleri yapmıştır.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Çağrı Bey, Dukak'ın oğludur.", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Mikail'in oğulları Tuğrul ve Çağrı Beylerdir.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Tuğrul ve Çağrı Beylerin kurduğu devlet İran coğrafyasında gelişmiştir.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Devletin resmî dili Farsçadır.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Çağrı Bey Anadolu'da keşif hareketleri yapmıştır.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Çağrı Bey, Dukak'ın oğludur.", IsCorrect = true, OrderIndex = 5 },
 }
 },
 
@@ -15450,17 +15450,17 @@ new Question
 {
 Note = notMalazgirtVeMiryokefon,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Malazgirt ve Miryokefalon ile ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Malazgirt için yurt açan, Miryokefalon için yurt tutan ifadeleri kullanılmıştır.",
 OrderIndex = 210,
 Choices =
 {
-new Choice { Text = "Malazgirt Anadolu'nun kapılarının açılmasıyla ilişkilendirilmiştir.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Miryokefalon Anadolu'nun yurt edinilmesiyle ilişkilendirilmiştir.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Malazgirt için yurt açan ifadesi kullanılmıştır.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Miryokefalon için yurt tutan ifadesi kullanılmıştır.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Malazgirt için yurt tutan ifadesi kullanılmıştır.", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Malazgirt Anadolu'nun kapılarının açılmasıyla ilişkilendirilmiştir.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Miryokefalon Anadolu'nun yurt edinilmesiyle ilişkilendirilmiştir.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Malazgirt için yurt açan ifadesi kullanılmıştır.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Miryokefalon için yurt tutan ifadesi kullanılmıştır.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Malazgirt için yurt tutan ifadesi kullanılmıştır.", IsCorrect = true, OrderIndex = 5 },
 }
 },
 new Question
@@ -15521,17 +15521,17 @@ new Question
 {
 Note = notTalasSavasiB2,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Talas Savaşı ile ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Karluklar savaşın ilk dört gününde beklemiş, beşinci gün savaşa girerek Abbasilere yardım etmiştir.",
 OrderIndex = 214,
 Choices =
 {
-new Choice { Text = "Savaş 751 yılında gerçekleşmiştir.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Savaş Talas veya Taraz ırmağının yakınında gerçekleşmiştir.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Karluklar beşinci gün savaşa girmiştir.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Abbasiler 750 yılında Emevileri yıkmıştır.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Karluklar savaşın ilk gününde Çinlilerin yanında savaşa girmiştir.", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Savaş 751 yılında gerçekleşmiştir.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Savaş Talas veya Taraz ırmağının yakınında gerçekleşmiştir.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Karluklar beşinci gün savaşa girmiştir.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Abbasiler 750 yılında Emevileri yıkmıştır.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Karluklar savaşın ilk gününde Çinlilerin yanında savaşa girmiştir.", IsCorrect = true, OrderIndex = 5 },
 }
 },
 
@@ -15594,17 +15594,17 @@ new Question
 {
 Note = notTalasSavasiSonuclari,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Talas Savaşı'nın sonuçlarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Talas Savaşı Batı Türkistan'ın Çinlileşmesini engellemiş, Çinlileşmeyi hızlandırmamıştır.",
 OrderIndex = 218,
 Choices =
 {
-new Choice { Text = "Başta Karluklar olmak üzere Türklerin kitleler halinde Müslüman olmaya başlaması", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Kağıt yapımının öğrenilmesi", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Batı Türkistan'ın Çinlileşmesinin engellenmesi", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Uygurların yaptığı sanat eserlerinin batıya taşınması", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Batı Türkistan'ın Çinlileşmesinin hızlanması", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Başta Karluklar olmak üzere Türklerin kitleler halinde Müslüman olmaya başlaması", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Kağıt yapımının öğrenilmesi", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Batı Türkistan'ın Çinlileşmesinin engellenmesi", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Uygurların yaptığı sanat eserlerinin batıya taşınması", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Batı Türkistan'ın Çinlileşmesinin hızlanması", IsCorrect = true, OrderIndex = 5 },
 }
 },
 
@@ -15703,17 +15703,17 @@ new Question
 {
 Note = notMevaliPolitikasi,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Emeviler ve Abbasilerle ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Abbasiler Emevilerin Mevali politikasını devam ettirmemiş ve daha hoşgörülü bir yaklaşım sergilemiştir.",
 OrderIndex = 224,
 Choices =
 {
-new Choice { Text = "Emeviler Arap olmayan Müslümanlara yönelik Mevali politikası uygulamıştır.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Abbasiler Mevali politikasını devam ettirmemiştir.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Abbasilerin hoşgörülü yaklaşımı Türklerin İslamiyet'i kabul etmesinde etkili olmuştur.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Abbasiler Karlukların savaşçılık gücünden yararlanmak istemiştir.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Abbasiler Emevilerin Mevali politikasını aynen devam ettirmiştir.", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Emeviler Arap olmayan Müslümanlara yönelik Mevali politikası uygulamıştır.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Abbasiler Mevali politikasını devam ettirmemiştir.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Abbasilerin hoşgörülü yaklaşımı Türklerin İslamiyet'i kabul etmesinde etkili olmuştur.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Abbasiler Karlukların savaşçılık gücünden yararlanmak istemiştir.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Abbasiler Emevilerin Mevali politikasını aynen devam ettirmiştir.", IsCorrect = true, OrderIndex = 5 },
 }
 },
 
@@ -15759,17 +15759,17 @@ new Question
 {
 Note = notKarahanlilarDevletiB2,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Karahanlılar Devleti'nin kuruluşuyla ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Karahanlıların kurucusu Kutluk Bilge Kadır Han'dır; Satuk Buğra Han kurucu değildir.",
 OrderIndex = 227,
 Choices =
 {
-new Choice { Text = "Karluk, Yağma, Çiğil ve Tuhsi boylarıyla ilişkilidir.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Kutluk Bilge Kadır Han kurucu olarak belirtilmektedir.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Satuk Buğra Han kurucu değildir.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Karahanlılarda Han ve Hakan unvanları kullanılmıştır.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Satuk Buğra Han Karahanlıların kurucusudur.", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Karluk, Yağma, Çiğil ve Tuhsi boylarıyla ilişkilidir.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Kutluk Bilge Kadır Han kurucu olarak belirtilmektedir.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Satuk Buğra Han kurucu değildir.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Karahanlılarda Han ve Hakan unvanları kullanılmıştır.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Satuk Buğra Han Karahanlıların kurucusudur.", IsCorrect = true, OrderIndex = 5 },
 }
 },
 
@@ -15904,17 +15904,17 @@ new Question
 {
 Note = notKarahanlilarKulturVeMedeniyet,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Karahanlılar dönemi kültür ve medeniyetiyle ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Yeseviliğin kurucusu Hoca Ahmet Yesevi'dir; Balasagunlu Yusuf değildir.",
 OrderIndex = 235,
 Choices =
 {
-new Choice { Text = "Yeseviliğin kurucusu Hoca Ahmet Yesevi'dir.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Kutadgu Bilig'in yazarı Balasagunlu Yusuf'tur.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Atabetü'l-Hakayık'ın yazarı Edip Ahmet Yükneki'dir.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Semerkant medresesinde burslu öğrencilik sistemi uygulanmıştır.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Yeseviliğin kurucusu Balasagunlu Yusuf'tur.", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Yeseviliğin kurucusu Hoca Ahmet Yesevi'dir.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Kutadgu Bilig'in yazarı Balasagunlu Yusuf'tur.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Atabetü'l-Hakayık'ın yazarı Edip Ahmet Yükneki'dir.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Semerkant medresesinde burslu öğrencilik sistemi uygulanmıştır.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Yeseviliğin kurucusu Balasagunlu Yusuf'tur.", IsCorrect = true, OrderIndex = 5 },
 }
 },
 
@@ -15941,17 +15941,17 @@ new Question
 {
 Note = notTurklerinIslamDunyasinaKatkilari,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Türklerin İslam dünyasına katkılarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Türklerin İslam dünyasına katkıları arasında Müslümanları Bizans baskısından korumak ve İslamiyet'i yaymak bulunmaktadır.",
 OrderIndex = 237,
 Choices =
 {
-new Choice { Text = "Haçlı Seferleri'ne karşı savaşmaları", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Medrese, cami ve mescitler inşa etmeleri", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Halifeliğin korunmasına katkıda bulunmaları", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "İslamiyet'in farklı bölgelere yayılmasına katkıda bulunmaları", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Müslümanların Bizans baskısından korunmasını engellemeleri", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Haçlı Seferleri'ne karşı savaşmaları", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Medrese, cami ve mescitler inşa etmeleri", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Halifeliğin korunmasına katkıda bulunmaları", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "İslamiyet'in farklı bölgelere yayılmasına katkıda bulunmaları", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Müslümanların Bizans baskısından korunmasını engellemeleri", IsCorrect = true, OrderIndex = 5 },
 }
 },
 new Question
@@ -16033,14 +16033,14 @@ Type = QuestionType.MultipleChoice,
 Text = "Karahanlılarla ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Karahanlıların resmî dili Türkçedir; Arapça değildir.",
 OrderIndex = 242,
-IsNegative = true,
+IsNegative = false,
 Choices =
 {
-new Choice { Text = "Han ve Hakan unvanlarını kullanmışlardır.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "İkili teşkilat anlayışını kullanmışlardır.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Resmî dil olarak Türkçeyi kullanmışlardır.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Yöneticileri ve halkı Türklerden oluşmuştur.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Resmî dilleri Arapçadır.", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Han ve Hakan unvanlarını kullanmışlardır.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "İkili teşkilat anlayışını kullanmışlardır.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Resmî dil olarak Türkçeyi kullanmışlardır.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Yöneticileri ve halkı Türklerden oluşmuştur.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Resmî dilleri Arapçadır.", IsCorrect = true, OrderIndex = 5 },
 }
 },
 
@@ -16304,14 +16304,14 @@ Type = QuestionType.MultipleChoice,
 Text = "Gazneli Mahmut ile ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Gazneli Mahmut'un Put Kırıcı unvanı Somnat seferiyle ilişkilendirilmiştir; Sultan unvanı ise Abbasileri koruması sonrasında verilmiştir.",
 OrderIndex = 257,
-IsNegative = true,
+IsNegative = false,
 Choices =
 {
-new Choice { Text = "Abbasileri korumak amacıyla Bağdat'a gelmiştir.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Abbasi halifesinden sultan unvanını almıştır.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Put Kırıcı unvanıyla anılmıştır.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Hindistan'a 17 sefer yapmıştır.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Gazneliler Devleti'nin kurucusudur.", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Abbasileri korumak amacıyla Bağdat'a gelmiştir.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Abbasi halifesinden sultan unvanını almıştır.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Put Kırıcı unvanıyla anılmıştır.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Hindistan'a 17 sefer yapmıştır.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Gazneliler Devleti'nin kurucusudur.", IsCorrect = true, OrderIndex = 5 },
 }
 },
 
@@ -16377,14 +16377,14 @@ Type = QuestionType.MultipleChoice,
 Text = "Somnat Seferi ile ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Somnat Seferi'nde Şiva tapınağı yıkılmış ve Gazneli Mahmut Put Kırıcı unvanıyla anılmıştır.",
 OrderIndex = 261,
-IsNegative = true,
+IsNegative = false,
 Choices =
 {
-new Choice { Text = "Şiva tapınağıyla ilişkilidir.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Gazneli Mahmut'un Hindistan seferlerinden biridir.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Put Kırıcı unvanıyla ilişkilendirilmiştir.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Hindistan'daki önemli seferlerden biri olarak anlatılmıştır.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Abbasileri korumak için Büveyhoğullarına karşı yapılmıştır.", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Şiva tapınağıyla ilişkilidir.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Gazneli Mahmut'un Hindistan seferlerinden biridir.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Put Kırıcı unvanıyla ilişkilendirilmiştir.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Hindistan'daki önemli seferlerden biri olarak anlatılmıştır.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Abbasileri korumak için Büveyhoğullarına karşı yapılmıştır.", IsCorrect = true, OrderIndex = 5 },
 }
 },
 
@@ -16931,17 +16931,17 @@ new Question
 {
 Note = notTugrulBeyDonemiB2,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Tuğrul Bey dönemiyle ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Tuğrul Bey 1055 yılında Bağdat Seferi'ni gerçekleştirmiştir; 1055 yılı Pasinler Savaşı'nın tarihi değildir.",
 OrderIndex = 292,
 Choices =
 {
-new Choice { Text = "1055 yılında Bağdat Seferi gerçekleştirilmiştir.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "1058 yılında Bağdat'ta taç giyme töreni yapılmıştır.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Tuğrul Bey'e doğunun ve batının sultanı unvanı verilmiştir.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Büveyhilerin faaliyetlerine tamamen son verilmiştir.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Pasinler Savaşı 1055 yılında yapılmıştır.", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "1055 yılında Bağdat Seferi gerçekleştirilmiştir.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "1058 yılında Bağdat'ta taç giyme töreni yapılmıştır.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Tuğrul Bey'e doğunun ve batının sultanı unvanı verilmiştir.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Büveyhilerin faaliyetlerine tamamen son verilmiştir.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Pasinler Savaşı 1055 yılında yapılmıştır.", IsCorrect = true, OrderIndex = 5 },
 }
 },
 
@@ -17004,17 +17004,17 @@ new Question
 {
 Note = notBuyukSelcukluAnadoluSelcukluIliskisi,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Büyük Selçuklu Devleti ile Anadolu Selçuklu Devleti hakkında aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Anadolu Selçuklu Devleti, Büyük Selçuklu Devleti'nin yıkılmasından sonra kurulmamıştır; iki devlet çağdaş devletlerdir.",
 OrderIndex = 296,
 Choices =
 {
-new Choice { Text = "Büyük Selçuklu Devleti 1040 yılında kurulmuştur.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Anadolu Selçuklu Devleti 1075 yılında kurulmuştur.", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Büyük Selçuklu Devleti İran'da kurulmuştur.", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Anadolu Selçuklu Devleti Anadolu'da kurulmuştur.", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Anadolu Selçuklu Devleti, Büyük Selçuklu Devleti'nin yıkılmasından sonra kurulmuştur.", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Büyük Selçuklu Devleti 1040 yılında kurulmuştur.", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Anadolu Selçuklu Devleti 1075 yılında kurulmuştur.", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Büyük Selçuklu Devleti İran'da kurulmuştur.", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Anadolu Selçuklu Devleti Anadolu'da kurulmuştur.", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Anadolu Selçuklu Devleti, Büyük Selçuklu Devleti'nin yıkılmasından sonra kurulmuştur.", IsCorrect = true, OrderIndex = 5 },
 }
 },
 new Question
@@ -17417,17 +17417,17 @@ new Question
 {
 Note = notMalazgirtSavasiB2,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Malazgirt Savaşı ile ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Romen Diojen savaş sonunda esir alınmıştır; savaşın sonucu onun Selçukluları esir alması değildir.",
 OrderIndex = 319,
 Choices =
 {
-new Choice { Text = "Malazgirt Savaşı 1071 yılında yapılmıştır", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Savaş Rahve Ovası'nda yapılmıştır", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Savaşta sahte ricat uygulanmıştır", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Romen Diojen esir alınmıştır", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Romen Diojen Selçuklu ordusunu esir almıştır", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Malazgirt Savaşı 1071 yılında yapılmıştır", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Savaş Rahve Ovası'nda yapılmıştır", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Savaşta sahte ricat uygulanmıştır", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Romen Diojen esir alınmıştır", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Romen Diojen Selçuklu ordusunu esir almıştır", IsCorrect = true, OrderIndex = 5 },
 }
 },
 
@@ -17436,17 +17436,17 @@ new Question
 {
 Note = notMalazgirtSavasiB2,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Sultan Alparslan'ın Malazgirt Savaşı öncesindeki hazırlıklarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Sultan Alparslan atının kuyruğunu bağlamış, beyaz elbise giymiş ve beyaz ata binmiştir.",
 OrderIndex = 320,
 Choices =
 {
-new Choice { Text = "Atının kuyruğunu bağlamıştır", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Beyaz elbise giymiştir", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Beyaz ata binmiştir", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Askerlere moral vermiştir", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Savaştan önce Anadolu'dan çekilmiştir", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Atının kuyruğunu bağlamıştır", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Beyaz elbise giymiştir", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Beyaz ata binmiştir", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Askerlere moral vermiştir", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Savaştan önce Anadolu'dan çekilmiştir", IsCorrect = true, OrderIndex = 5 },
 }
 },
 
@@ -17455,17 +17455,17 @@ new Question
 {
 Note = notMalazgirtSavasiB2,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Romen Diojen'in esir alınmasıyla ilgili aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Romen Diojen bir Gulam askeri tarafından bulunmuş ve Sultan Alparslan'ın çadırına götürülmüştür.",
 OrderIndex = 321,
 Choices =
 {
-new Choice { Text = "Romen Diojen savaş alanında bulunmuştur", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Bir Gulam askeri tarafından bulunmuştur", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Sultan Alparslan'ın çadırına götürülmüştür", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Sultan Alparslan tarafından öldürülmemiştir", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Savaş alanından kendi isteğiyle ayrılmıştır", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Romen Diojen savaş alanında bulunmuştur", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Bir Gulam askeri tarafından bulunmuştur", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Sultan Alparslan'ın çadırına götürülmüştür", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Sultan Alparslan tarafından öldürülmemiştir", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Savaş alanından kendi isteğiyle ayrılmıştır", IsCorrect = true, OrderIndex = 5 },
 }
 },
 
@@ -17492,17 +17492,17 @@ new Question
 {
 Note = notMalazgirtSavasiB2,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Romen Diojen'in sonraki durumu hakkında aşağıdakilerden hangisi yanlıştır?",
 Explanation = "Romen Diojen'in esir düşmesi Bizans'ta taht değişikliğinin yaşanmasına yol açmış ve daha sonra yeni imparator tarafından yakalanmıştır.",
 OrderIndex = 323,
 Choices =
 {
-new Choice { Text = "Esir düştüğü haberi Bizans'a ulaşmıştır", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Bizans'ta taht değişikliği yaşanmıştır", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Yeni imparator tarafından yakalanmıştır", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Gözlerine mil çekilmiştir", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Sultan Alparslan tarafından öldürülmüştür", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Esir düştüğü haberi Bizans'a ulaşmıştır", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Bizans'ta taht değişikliği yaşanmıştır", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Yeni imparator tarafından yakalanmıştır", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Gözlerine mil çekilmiştir", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Sultan Alparslan tarafından öldürülmüştür", IsCorrect = true, OrderIndex = 5 },
 }
 },
 // --- SORU 324 ---
@@ -17890,17 +17890,17 @@ new Question
 {
     Note = notHasanSabbahVeBatinilikB2,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Aşağıdakilerden hangisi Batinilik ve Hasan Sabbah ile ilgili değildir?",
     Explanation = "Hasan Sabbah'ın Alamut Kalesi'ni merkez edinmesi ve fedailerle gerçekleştirilen suikastler metinde Batinilik ile ilişkilendirilmiştir.",
     OrderIndex = 342,
     Choices =
     {
-        new Choice { Text = "Hasan Sabbah", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Alamut Kalesi", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Fedailer", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Nizamülmülk'ün suikastle öldürülmesi", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Romen Diojen'in esir düşmesi", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Hasan Sabbah", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Alamut Kalesi", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Fedailer", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Nizamülmülk'ün suikastle öldürülmesi", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Romen Diojen'in esir düşmesi", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -18035,17 +18035,17 @@ new Question
 {
     Note = notBuyukSelcukluYikilisi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Aşağıdakilerden hangisi Büyük Selçuklu Devleti'nden ayrılan devletlerden biri değildir?",
     Explanation = "Irak Selçukluları, Türkiye Selçukluları ve Kirman Selçukluları ayrılan devletler arasında belirtilmiştir. Horasan Selçukluları ise asıl Büyük Selçuklu Devleti olarak ifade edilmiştir.",
     OrderIndex = 349,
     Choices =
     {
-        new Choice { Text = "Irak Selçukluları", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Türkiye Selçukluları", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Kirman Selçukluları", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Horasan Selçukluları olarak ifade edilen asıl Büyük Selçuklu", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Osmanlı Devleti", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Irak Selçukluları", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Türkiye Selçukluları", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Kirman Selçukluları", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Horasan Selçukluları olarak ifade edilen asıl Büyük Selçuklu", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Osmanlı Devleti", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -18724,17 +18724,17 @@ new Question
 {
 Note = notMemluklerB4,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Aşağıdakilerden hangisi Memlüklerin yıkılış süreciyle ilgili değildir?",
 Explanation = "Ayn Calut Savaşı Memlüklerin Moğollara karşı kazandığı bir savaştır; yıkılış sürecindeki savaşlardan değildir.",
 OrderIndex = 387,
 Choices =
 {
-new Choice { Text = "1516 Merci Dabık Savaşı", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "1517 Ridaniye Savaşı", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Ridaniye'nin son savaş kabul edilmesi", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "1516 yılında Merci Dabık'ın yapılması", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "1260 Ayn Calut Savaşı", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "1516 Merci Dabık Savaşı", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "1517 Ridaniye Savaşı", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Ridaniye'nin son savaş kabul edilmesi", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "1516 yılında Merci Dabık'ın yapılması", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "1260 Ayn Calut Savaşı", IsCorrect = true, OrderIndex = 5 },
 }
 },
 
@@ -19018,17 +19018,17 @@ new Question
 {
 Note = notSaltuklular,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Aşağıdakilerden hangisi Saltukluların eserlerinden biri değildir?",
 Explanation = "Divriği Ulu Camii Mengüceklilerle ilişkilendirilen önemli eserdir.",
 OrderIndex = 403,
 Choices =
 {
-new Choice { Text = "Kale Camii", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Tepsi Minare", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Üç Kümbetler", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Mama Hatun Türbesi", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Divriği Ulu Camii", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Kale Camii", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Tepsi Minare", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Üç Kümbetler", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Mama Hatun Türbesi", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Divriği Ulu Camii", IsCorrect = true, OrderIndex = 5 },
 }
 },
 
@@ -19311,18 +19311,18 @@ new Question
 {
 Note = notArtuklular,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Aşağıdakilerden hangisi Artukluların eserlerinden biri değildir?",
 Explanation = "Üç Kümbetler Saltukluların günümüze bıraktığı eserlerden biridir.",
 OrderIndex = 419,
 Choices =
 {
-new Choice { Text = "Malabadi Köprüsü", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Hatuniye Medresesi", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Necmeddin Külliyesi", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Koçhisar Ulu Camii", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Semaın Medresesi", IsCorrect = true, OrderIndex = 5 },
-new Choice { Text = "Üç Kümbetler", IsCorrect = false, OrderIndex = 6 },
+new Choice { Text = "Malabadi Köprüsü", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Hatuniye Medresesi", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Necmeddin Külliyesi", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Koçhisar Ulu Camii", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Semaın Medresesi", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Üç Kümbetler", IsCorrect = true, OrderIndex = 6 },
 }
 },
 
@@ -19477,17 +19477,17 @@ new Question
 {
 Note = notIlkAnadoluEserleri,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Aşağıdakilerden hangisi ilk Türk-İslam beyliklerinin eserleriyle ilgili değildir?",
 Explanation = "Divriği Ulu Camii ilk Türk-İslam beylikleri döneminin eserleri içinde yer alsa da verilen bağlantıda Mengüceklilerle ilişkilendirilmiştir; soru kökündeki diğer eserler farklı ilk beyliklerle doğrudan ilişkilidir.",
 OrderIndex = 428,
 Choices =
 {
-new Choice { Text = "Yağıbasan Medresesi", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Kale Camii", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Malabadi Köprüsü", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Divriği Ulu Camii", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Semerkant Medresesi", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Yağıbasan Medresesi", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Kale Camii", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Malabadi Köprüsü", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Divriği Ulu Camii", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Semerkant Medresesi", IsCorrect = true, OrderIndex = 5 },
 }
 },
 
@@ -19570,17 +19570,17 @@ new Question
 {
 Note = notMemluklerB4,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Aşağıdakilerden hangisi Memlüklerle ilgili değildir?",
 Explanation = "İlk donanmanın 1081 yılında kurulması Çaka Bey ile ilgilidir.",
 OrderIndex = 433,
 Choices =
 {
-new Choice { Text = "Mısır'da kurulmaları", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Suriye'de hüküm sürmeleri", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Hicaz'da hüküm sürmeleri", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Halifeliği korumaları", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "1081 yılında ilk donanmayı kurmaları", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Mısır'da kurulmaları", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Suriye'de hüküm sürmeleri", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Hicaz'da hüküm sürmeleri", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Halifeliği korumaları", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "1081 yılında ilk donanmayı kurmaları", IsCorrect = true, OrderIndex = 5 },
 }
 },
 
@@ -19608,17 +19608,17 @@ new Question
 {
 Note = notAnadoluyaGirisVeIlkBeylikler,
 Type = QuestionType.MultipleChoice,
-IsNegative = true,
+IsNegative = false,
 Text = "Aşağıdakilerden hangisi Anadolu'daki beş büyük Türk-İslam topluluğundan biri değildir?",
 Explanation = "Memlükler Anadolu'daki beş büyük Türk-İslam topluluğu arasında sayılmamıştır.",
 OrderIndex = 435,
 Choices =
 {
-new Choice { Text = "Danışmentliler", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Saltuklular", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Mengücekliler", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Artuklular", IsCorrect = true, OrderIndex = 4 },
-new Choice { Text = "Memlükler", IsCorrect = false, OrderIndex = 5 },
+new Choice { Text = "Danışmentliler", IsCorrect = false, OrderIndex = 1 },
+new Choice { Text = "Saltuklular", IsCorrect = false, OrderIndex = 2 },
+new Choice { Text = "Mengücekliler", IsCorrect = false, OrderIndex = 3 },
+new Choice { Text = "Artuklular", IsCorrect = false, OrderIndex = 4 },
+new Choice { Text = "Memlükler", IsCorrect = true, OrderIndex = 5 },
 }
 },
 // --- SORU 436 ---
@@ -19698,17 +19698,17 @@ new Question
 {
     Note = notCakaBey,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Çaka Bey'in öldürülmesiyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "I. Kılıç Arslan, Bizans'ın kışkırtmaları sonucunda kayınpederi Çaka Bey'i bir ziyafette öldürmüştür.",
     OrderIndex = 440,
     Choices =
     {
-        new Choice { Text = "I. Kılıç Arslan, Çaka Bey'i bir ziyafette öldürmüştür.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Çaka Bey, I. Kılıç Arslan'ın kayınpederidir.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Bizans, I. Kılıç Arslan'ı Çaka Bey'e karşı kışkırtmıştır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Çaka Bey'in öldürülmesinden sonra İzmir bölgesine Bizans yeniden egemen olmuştur.", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Çaka Bey'i öldüren kişi Uzun Hasan'dır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "I. Kılıç Arslan, Çaka Bey'i bir ziyafette öldürmüştür.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Çaka Bey, I. Kılıç Arslan'ın kayınpederidir.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Bizans, I. Kılıç Arslan'ı Çaka Bey'e karşı kışkırtmıştır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Çaka Bey'in öldürülmesinden sonra İzmir bölgesine Bizans yeniden egemen olmuştur.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Çaka Bey'i öldüren kişi Uzun Hasan'dır.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -19735,17 +19735,17 @@ new Question
 {
     Note = notCakaBey,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Çaka Beyliği hakkında aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Çaka Beyliği'nden günümüze ulaşan herhangi bir eser bulunmadığı belirtilmiştir.",
     OrderIndex = 442,
     Choices =
     {
-        new Choice { Text = "İzmir'de kurulmuştur.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Çaka Bey tarafından kurulmuştur.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Çaka Bey ilk Türk denizcisi olarak belirtilmiştir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "1081'de kurulan donanması Deniz Kuvvetleri Komutanlığının kuruluş yıl dönümüyle ilişkilendirilmiştir.", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Günümüze ulaşan önemli bir eseri bulunmaktadır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "İzmir'de kurulmuştur.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Çaka Bey tarafından kurulmuştur.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Çaka Bey ilk Türk denizcisi olarak belirtilmiştir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "1081'de kurulan donanması Deniz Kuvvetleri Komutanlığının kuruluş yıl dönümüyle ilişkilendirilmiştir.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Günümüze ulaşan önemli bir eseri bulunmaktadır.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -19790,17 +19790,17 @@ new Question
 {
     Note = notAnadoluBeylikleri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Aşağıdaki beylik-yer eşleştirmelerinden hangisi yanlıştır?",
     Explanation = "Dilmaçoğulları Bitlis'te kurulmuştur; Harput'ta ise Çubukoğulları kurulmuştur.",
     OrderIndex = 445,
     Choices =
     {
-        new Choice { Text = "Dilmaçoğulları — Bitlis", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Çubukoğulları — Harput", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Tanrıvermişoğulları — Efes", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Ahlatşahlar veya Sökmenliler — Ahlat", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "İnaloğulları — İzmir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Dilmaçoğulları — Bitlis", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Çubukoğulları — Harput", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Tanrıvermişoğulları — Efes", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Ahlatşahlar veya Sökmenliler — Ahlat", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "İnaloğulları — İzmir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -19845,17 +19845,17 @@ new Question
 {
     Note = notAkkoyunlular,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Akkoyunlular hakkında aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Akkoyunlular 1473 Otlukbeli Savaşı'nda Fatih Sultan Mehmet'e yenilmiştir.",
     OrderIndex = 448,
     Choices =
     {
-        new Choice { Text = "Şii karakterli bir Türk devletidir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "En önemli hükümdarları Uzun Hasan'dır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Dede Korkut hikâyelerini yazıya geçirmişlerdir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "1402 Ankara Savaşı'ndan sonra doğuda Osmanlı'nın rakibi olmuşlardır.", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "1473 Otlukbeli Savaşı'nda Fatih Sultan Mehmet'i yenmişlerdir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Şii karakterli bir Türk devletidir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "En önemli hükümdarları Uzun Hasan'dır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Dede Korkut hikâyelerini yazıya geçirmişlerdir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "1402 Ankara Savaşı'ndan sonra doğuda Osmanlı'nın rakibi olmuşlardır.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "1473 Otlukbeli Savaşı'nda Fatih Sultan Mehmet'i yenmişlerdir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -19918,17 +19918,17 @@ new Question
 {
     Note = notKarakoyunlular,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Karakoyunlular hakkında aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Karakoyunluların varlığına Akkoyunlular son vermiştir.",
     OrderIndex = 452,
     Choices =
     {
-        new Choice { Text = "Merkezleri Van-Erciş'tir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Kurucuları Bayram Hoca'dır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Azerbaycan'ın Türkleşmesinde etkili olmuşlardır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Akkoyunluların rakibidir.", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Varlıklarına Safeviler son vermiştir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Merkezleri Van-Erciş'tir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Kurucuları Bayram Hoca'dır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Azerbaycan'ın Türkleşmesinde etkili olmuşlardır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Akkoyunluların rakibidir.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Varlıklarına Safeviler son vermiştir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -20027,17 +20027,17 @@ new Question
 {
     Note = notBaburluler,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Babürlüler hakkında aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Babür Şah hayatını Babürname veya Vekayiname'de anlatmıştır; Tac Mahal ise Şah Cihan tarafından Mümtaz Mahal için yaptırılmıştır.",
     OrderIndex = 458,
     Choices =
     {
-        new Choice { Text = "1526 yılında Hindistan'da kurulmuşlardır.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Kurucuları Babür Şah'tır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Babür Şah hayatını Babürname'de anlatmıştır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Şah Cihan, Mümtaz Mahal için Tac Mahal'i yaptırmıştır.", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Tac Mahal'i Babür Şah kendi eşi için yaptırmıştır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "1526 yılında Hindistan'da kurulmuşlardır.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Kurucuları Babür Şah'tır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Babür Şah hayatını Babürname'de anlatmıştır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Şah Cihan, Mümtaz Mahal için Tac Mahal'i yaptırmıştır.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Tac Mahal'i Babür Şah kendi eşi için yaptırmıştır.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -20082,17 +20082,17 @@ new Question
 {
     Note = notHarzemSahlar,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Otrar Faciası ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Harzemşah valisi İnalcık, tüccar kafilesini durdurmuş ve 199 kişiyi tutuklayıp öldürmüştür.",
     OrderIndex = 461,
     Choices =
     {
-        new Choice { Text = "Otrar, Harzemşah ülkesinde önemli bir ticaret merkezidir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "İnalcık Harzemşah valisidir.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Tüccar kafilesi yaklaşık 200 kişiden oluşmuştur.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "199 kişi tutuklanıp öldürülmüştür.", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Tüccar kafilesini Bayram Hoca öldürmüştür.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Otrar, Harzemşah ülkesinde önemli bir ticaret merkezidir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "İnalcık Harzemşah valisidir.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Tüccar kafilesi yaklaşık 200 kişiden oluşmuştur.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "199 kişi tutuklanıp öldürülmüştür.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Tüccar kafilesini Bayram Hoca öldürmüştür.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -20155,17 +20155,17 @@ new Question
 {
     Note = notTimurDevleti,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Timur'un Türk tarihine etkileriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Timur, Altın Orda Devleti'ni parçalayarak Rusların güçlenmesine katkıda bulunmuş ve Ankara Savaşı sonrasında Fetret Devri'ne neden olmuştur.",
     OrderIndex = 465,
     Choices =
     {
-        new Choice { Text = "Altın Orda Devleti'ni parçalamıştır.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Rusların güçlenmesini sağlamıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Ankara Savaşı sonrasında Osmanlı Devleti'ni Fetret Devri'ne sokmuştur.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Anadolu beyliklerinin yeniden kurulmasına neden olmuştur.", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Akkoyunlulara 1473 Otlukbeli Savaşı'nda yenilmiştir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Altın Orda Devleti'ni parçalamıştır.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Rusların güçlenmesini sağlamıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Ankara Savaşı sonrasında Osmanlı Devleti'ni Fetret Devri'ne sokmuştur.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Anadolu beyliklerinin yeniden kurulmasına neden olmuştur.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Akkoyunlulara 1473 Otlukbeli Savaşı'nda yenilmiştir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -20282,17 +20282,17 @@ new Question
 {
     Note = notCengizHanligi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Cengiz İmparatorluğu'ndan dağılan devletlerle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Kubilay Çin'de kurulmuş ve Budizmi benimsemiştir; Altın Orda, Çağatay ve İlhanlı Müslüman devletler olarak belirtilmiştir.",
     OrderIndex = 472,
     Choices =
     {
-        new Choice { Text = "Altın Orda Karadeniz'in kuzeyinde kurulmuştur.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Çağatay Doğu Türkistan'da kurulmuştur.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "İlhanlılar İran'da kurulmuştur.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Kubilay Hanlığı Çin'de kurulmuştur.", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Kubilay Hanlığı İran'da kurulmuş ve Budizmi benimsemiştir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Altın Orda Karadeniz'in kuzeyinde kurulmuştur.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Çağatay Doğu Türkistan'da kurulmuştur.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "İlhanlılar İran'da kurulmuştur.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Kubilay Hanlığı Çin'de kurulmuştur.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Kubilay Hanlığı İran'da kurulmuş ve Budizmi benimsemiştir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -20373,17 +20373,17 @@ new Question
 {
     Note = notMisirTurkIslamDevletleriB2,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Tolunoğulları ve İhşidîlerle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Bu devletlerde yöneticilerin Türk, halkın Arap olduğu ve devlet-millet bütünlüğünün bulunmadığı belirtilmiştir.",
     OrderIndex = 477,
     Choices =
     {
-        new Choice { Text = "Tavaif-i Mülûk devletleri olarak belirtilmişlerdir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Yöneticileri Türk'tür.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Halkları Arap'tır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Devlet-millet bütünlüğünün bulunmadığı belirtilmiştir.", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Her ikisi de Hindistan'da kurulmuştur.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Tavaif-i Mülûk devletleri olarak belirtilmişlerdir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Yöneticileri Türk'tür.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Halkları Arap'tır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Devlet-millet bütünlüğünün bulunmadığı belirtilmiştir.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Her ikisi de Hindistan'da kurulmuştur.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -20446,17 +20446,17 @@ new Question
 {
     Note = notMemluklerB4,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Memlüklerle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Memlüklerin veraset sisteminde emirler de başa geçerek sultan olabilmiştir.",
     OrderIndex = 481,
     Choices =
     {
-        new Choice { Text = "Memlük kelimesi köle veya kölemen anlamına gelir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Ed-Devletü't-Türkiyye adıyla da anılmışlardır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Moğolları Ayn Calut ve Elbistan savaşlarında durdurmuşlardır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Veraset sistemlerinde emirler de sultan olabilmiştir.", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Veraset sistemleri diğer Türk devletleriyle tamamen aynıdır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Memlük kelimesi köle veya kölemen anlamına gelir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Ed-Devletü't-Türkiyye adıyla da anılmışlardır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Moğolları Ayn Calut ve Elbistan savaşlarında durdurmuşlardır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Veraset sistemlerinde emirler de sultan olabilmiştir.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Veraset sistemleri diğer Türk devletleriyle tamamen aynıdır.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -20537,17 +20537,17 @@ new Question
 {
     Note = notAnadoluSelcukluBeylikleri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Anadolu'daki beyliklerin eserleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Malabadi Köprüsü Artuklulardan, Divriği Ulu Cami ise Mengüceklilerden kalan eserler arasındadır.",
     OrderIndex = 486,
     Choices =
     {
-        new Choice { Text = "Danışmentlilerden Yağıbasan Medresesi kalmıştır.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Saltuklulardan Üç Kümbetler kalmıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Mengüceklilerden Divriği Ulu Cami kalmıştır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Artuklulardan Malabadi Köprüsü kalmıştır.", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Divriği Ulu Cami Artuklulardan kalmıştır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Danışmentlilerden Yağıbasan Medresesi kalmıştır.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Saltuklulardan Üç Kümbetler kalmıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Mengüceklilerden Divriği Ulu Cami kalmıştır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Artuklulardan Malabadi Köprüsü kalmıştır.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Divriği Ulu Cami Artuklulardan kalmıştır.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -20574,17 +20574,17 @@ new Question
 {
     Note = notAnadoluSelcukluBeylikleri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Anadolu beylikleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Artuklular Anadolu'da üç şube şeklinde kurulmuştur.",
     OrderIndex = 488,
     Choices =
     {
-        new Choice { Text = "Danışmentlilerden Kayseri Ulu Cami kalmıştır.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Saltuklulardan Tepsi Minare kalmıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Mengüceklilerden Divriği Ulu Cami kalmıştır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Artuklulardan Malabadi Köprüsü kalmıştır.", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Artuklular Anadolu'da tek şube şeklinde kurulmuştur.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Danışmentlilerden Kayseri Ulu Cami kalmıştır.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Saltuklulardan Tepsi Minare kalmıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Mengüceklilerden Divriği Ulu Cami kalmıştır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Artuklulardan Malabadi Köprüsü kalmıştır.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Artuklular Anadolu'da tek şube şeklinde kurulmuştur.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -20647,17 +20647,17 @@ new Question
 {
     Note = notIlkTurkIslamDevletleriSiyasiTarih,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Cengiz İmparatorluğu'nun dağılmasıyla ortaya çıkan devletlerle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Babürlüler Cengiz İmparatorluğu'nun dağılmasıyla ortaya çıkan devletler arasında sayılmamıştır.",
     OrderIndex = 492,
     Choices =
     {
-        new Choice { Text = "Altın Orda ortaya çıkmıştır.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Çağatay ortaya çıkmıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "İlhanlılar ortaya çıkmıştır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Kubilay ortaya çıkmıştır.", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Babürlüler ortaya çıkmıştır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Altın Orda ortaya çıkmıştır.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Çağatay ortaya çıkmıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "İlhanlılar ortaya çıkmıştır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Kubilay ortaya çıkmıştır.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Babürlüler ortaya çıkmıştır.", IsCorrect = true, OrderIndex = 5 },
     }
 }
 
@@ -21308,7 +21308,7 @@ new Question
 
         return new Topic
         {
-            
+
             Name = "İlk Türk İslam Devletleri Kültür ve Medeniyeti",
             Description = "...",
             Notes =
@@ -21320,7 +21320,7 @@ new Question
             Questions =
             {
                 // Sorular buraya yazılır.
-                new Question
+                                new Question
 {
     Note = notHukumdarDegisim,
     Type = QuestionType.MultipleChoice,
@@ -21344,18 +21344,18 @@ new Question
 {
     Note = notHukumdarDegisim,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "İlk Müslüman Türk devletlerinin hükümdarlık anlayışıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Kurultayın yerini divan almış, hükümdar divana başkanlık etmeye devam etmiştir; kurultay kurumu değişmeden aynen sürmemiştir.",
     OrderIndex = 2,
     Choices =
     {
-        new Choice { Text = "Sorular genellikle Büyük Selçuklu Devleti'nin kültür ve medeniyeti esas alınarak sorulur", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Hükümdarın aç doyurmak, çıplağı giydirmek gibi görevleri değişmemiştir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Kut anlayışının sürmesi taht kavgalarına yol açmıştır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Bazı kavramlar Karahanlı ve Gaznelilerde daha belirgin bulunuyorsa o devlete bağlanır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Sorular genellikle Büyük Selçuklu Devleti'nin kültür ve medeniyeti esas alınarak sorulur", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Hükümdarın aç doyurmak, çıplağı giydirmek gibi görevleri değişmemiştir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Kut anlayışının sürmesi taht kavgalarına yol açmıştır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Bazı kavramlar Karahanlı ve Gaznelilerde daha belirgin bulunuyorsa o devlete bağlanır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Kurultay kurumu isim ve işlev bakımından hiçbir değişikliğe uğramadan aynen devam etmiştir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Kurultay kurumu isim ve işlev bakımından hiçbir değişikliğe uğramadan aynen devam etmiştir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -21404,18 +21404,18 @@ new Question
 {
     Note = notHukumdarSembolleri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "İslamiyet öncesinde hükümdarın kullandığı sembollerden biri aşağıdakilerden hangisidir?",
     Explanation = "Kılıç, yay, tuğ, nevbet ve otağ İslamiyet öncesinden beri kullanılan sembollerdir; hutbe ise İslam'la gelen bir semboldür.",
     OrderIndex = 5,
     Choices =
     {
-        new Choice { Text = "Kılıç ve yay", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Tuğ", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Nevbet (davul)", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Otağ (çadır)", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Kılıç ve yay", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Tuğ", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Nevbet (davul)", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Otağ (çadır)", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Hutbe", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Hutbe", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -21443,18 +21443,18 @@ new Question
 {
     Note = notHukumdarUnvanlari,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "İslamiyet'in kabulünden sonra ilk Müslüman Türk devletlerinde kullanılan hükümdar unvanlarından biri değildir?",
     Explanation = "Han, Hakan, Sultan ve Padişah İslamiyet'in kabulünden sonra kullanılmaya devam eden unvanlardır; Kaan ise terk edilmiştir.",
     OrderIndex = 7,
     Choices =
     {
-        new Choice { Text = "Han", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Hakan", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Sultan", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Padişah", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Han", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Hakan", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Sultan", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Padişah", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Kaan", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Kaan", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -21482,18 +21482,18 @@ new Question
 {
     Note = notSarayGorevlileri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Aşağıdakilerden hangisi hükümdarın atlarından sorumlu olan saray görevlisi değildir?",
     Explanation = "Emir-i Ahur hükümdarın atlarından sorumlu görevlidir; diğer seçenekler farklı görevlere ait unvanlardır.",
     OrderIndex = 9,
     Choices =
     {
-        new Choice { Text = "Alemdar devletin bayraklarından sorumludur", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Çaşnigir hükümdarın yemeklerini kontrol eder", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Candar hükümdarın özel muhafızıdır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Hares Emiri suç işleyenleri cezalandırır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Alemdar devletin bayraklarından sorumludur", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Çaşnigir hükümdarın yemeklerini kontrol eder", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Candar hükümdarın özel muhafızıdır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Hares Emiri suç işleyenleri cezalandırır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Emir-i Ahur hükümdarın atlarından sorumludur", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Emir-i Ahur hükümdarın atlarından sorumludur", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -21521,18 +21521,18 @@ new Question
 {
     Note = notHacip,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Hacip ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Haciplerin başındaki kişiye Has Hacip, Hacibü'l-Hüccab veya Ulu Hacip (Gaznelilerde Hacib-i Bozork) denir; hacip sultanın kendisi değildir.",
     OrderIndex = 11,
     Choices =
     {
-        new Choice { Text = "Hükümdar ile halk arasındaki ilişkiyi düzenler", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Elçileri kabul eder", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Uygun gördüklerini Divan-ı Mezalim'e çıkarır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Şeri ve örfi hukuka hakim olmak zorundadır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Hükümdar ile halk arasındaki ilişkiyi düzenler", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Elçileri kabul eder", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Uygun gördüklerini Divan-ı Mezalim'e çıkarır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Şeri ve örfi hukuka hakim olmak zorundadır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Divan-ı Mezalim'in başkanlığını bizzat hacip yapar", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Divan-ı Mezalim'in başkanlığını bizzat hacip yapar", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -21560,18 +21560,18 @@ new Question
 {
     Note = notDivanSaltanat,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Büyük divanın (Divan-ı Saltanat) devletlere göre adlandırılmasıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Büyük Selçuklu'da bu divanın adı Divan-ı Saltanat'tır; Divan-ı Vezaret ise Gaznelilere, Meclis-i Ali ise Karahanlılara aittir.",
     OrderIndex = 13,
     Choices =
     {
-        new Choice { Text = "Karahanlılarda Meclis-i Ali denir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Gaznelilerde Divan-ı Vezaret denir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Büyük Selçuklu'da Divan-ı Saltanat denir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Günümüzdeki Bakanlar Kurulu'na tekabül eder", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Karahanlılarda Meclis-i Ali denir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Gaznelilerde Divan-ı Vezaret denir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Büyük Selçuklu'da Divan-ı Saltanat denir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Günümüzdeki Bakanlar Kurulu'na tekabül eder", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Gaznelilerde de Meclis-i Ali adıyla anılır", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Gaznelilerde de Meclis-i Ali adıyla anılır", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -21599,18 +21599,18 @@ new Question
 {
     Note = notDivaniIstifaArz,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Divan-ı İstifa ve Divan-ı Arz ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Divan-ı İstifa ekonomi ve mali işlerle, Divan-ı Arz ise ordu işleriyle ilgilenir; ikisi birbirinin görevini üstlenmez.",
     OrderIndex = 15,
     Choices =
     {
-        new Choice { Text = "Divan-ı İstifa'nın başında müstevfi bulunur", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Divan-ı Arz ordu işleriyle ilgilenir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Divan-ı Arz'ın başında emir-i arz bulunur", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "İstif etmek biriktirmek anlamına gelir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Divan-ı İstifa'nın başında müstevfi bulunur", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Divan-ı Arz ordu işleriyle ilgilenir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Divan-ı Arz'ın başında emir-i arz bulunur", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "İstif etmek biriktirmek anlamına gelir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Divan-ı İstifa ordu işleriyle, Divan-ı Arz ekonomi işleriyle ilgilenir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Divan-ı İstifa ordu işleriyle, Divan-ı Arz ekonomi işleriyle ilgilenir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -21638,18 +21638,18 @@ new Question
 {
     Note = notDivaniIsrafInsaBerit,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Divan-ı İşraf, Divan-ı İnşa ve Divan-ı Berid ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Divan-ı İşraf askeri ve hukuk dışındaki tüm devlet işlerini denetler; posta işleriyle ilgilenen Divan-ı Berid'dir.",
     OrderIndex = 17,
     Choices =
     {
-        new Choice { Text = "Divan-ı İnşa devletin iç ve dış yazışma işlerinden sorumludur", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Divan-ı İnşa eski adıyla Divan-ı Tuğra olarak bilinir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Divan-ı İşraf'ın başında müşrif-i memalik bulunur", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Divan-ı Berid gerçekte bir divan değildir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Divan-ı İnşa devletin iç ve dış yazışma işlerinden sorumludur", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Divan-ı İnşa eski adıyla Divan-ı Tuğra olarak bilinir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Divan-ı İşraf'ın başında müşrif-i memalik bulunur", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Divan-ı Berid gerçekte bir divan değildir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Divan-ı İşraf posta ve haberleşme işlerinden sorumludur", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Divan-ı İşraf posta ve haberleşme işlerinden sorumludur", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -21697,18 +21697,18 @@ new Question
 {
     Note = notDivaniMezalim,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Divan-ı Mezalim ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Divan-ı Mezalim'in başkanlığını bizzat sultan yapar; hacip başkanlık etmez, yalnızca kişileri sultanın huzuruna çıkarır.",
     OrderIndex = 20,
     Choices =
     {
-        new Choice { Text = "Divan-ı Mezalim'de verilen karar kesindir ve değiştirilemez", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Devlet memurlarının maaşlarının geç ödenmesiyle ilgili şikayetleri inceler", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Cuma ve bayram namazlarıyla ilgili görüş ve önerileri dinler", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Gazneli Mahmut'un oğlu Mesut'un tüccarla olan davası bu divanda görülmüştür", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Divan-ı Mezalim'de verilen karar kesindir ve değiştirilemez", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Devlet memurlarının maaşlarının geç ödenmesiyle ilgili şikayetleri inceler", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Cuma ve bayram namazlarıyla ilgili görüş ve önerileri dinler", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Gazneli Mahmut'un oğlu Mesut'un tüccarla olan davası bu divanda görülmüştür", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Divan-ı Mezalim'in başkanlığını hacip yapar", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Divan-ı Mezalim'in başkanlığını hacip yapar", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -21736,18 +21736,18 @@ new Question
 {
     Note = notDiniAskeriGorevliler,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Devlet görevlileriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Muhtesip çarşı ve pazarı denetleyen görevlidir; vergi toplama görevi ise amile aittir.",
     OrderIndex = 22,
     Choices =
     {
-        new Choice { Text = "Amil vergi toplayan sivil yöneticidir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Atabey hükümdarın oğlunun yetiştirilmesinden sorumludur", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Şahne askeri validir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "İlk Türk atabeyi Nizamülmülk'tür", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Amil vergi toplayan sivil yöneticidir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Atabey hükümdarın oğlunun yetiştirilmesinden sorumludur", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Şahne askeri validir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "İlk Türk atabeyi Nizamülmülk'tür", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Muhtesip vergi toplamakla görevlidir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Muhtesip vergi toplamakla görevlidir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -21775,18 +21775,18 @@ new Question
 {
     Note = notHukukSistemi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "İlk Türk İslam hukuk sistemi ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Örfi hukukun başında Emir-i Dad, şeri hukukun başında Kadıü'l-Kudat bulunur; bu iki görevli birbirinin yerini almaz.",
     OrderIndex = 24,
     Choices =
     {
-        new Choice { Text = "Örfi hukukun kaynakları arasında Hun ve Göktürk gelenekleri bulunur", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Şeri hukukun kaynakları Kur'an, sünnet, icma ve kıyastır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Örfi hukuk yönetim, maliye ve askerlik alanlarında geçerlidir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Askeri davalara Kadı Asker bakar", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Örfi hukukun kaynakları arasında Hun ve Göktürk gelenekleri bulunur", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Şeri hukukun kaynakları Kur'an, sünnet, icma ve kıyastır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Örfi hukuk yönetim, maliye ve askerlik alanlarında geçerlidir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Askeri davalara Kadı Asker bakar", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Örfi hukukun başında Kadıü'l-Kudat bulunur", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Örfi hukukun başında Kadıü'l-Kudat bulunur", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -21833,18 +21833,18 @@ new Question
 {
     Note = notTopragYonetimi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Toprak yönetimiyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Has topraklar sultana ayrılır; vakıf topraklar ise kamu yararına ayrılmış olup bir kez vakfedildikten sonra geri alınamaz.",
     OrderIndex = 27,
     Choices =
     {
-        new Choice { Text = "Has topraklardan elde edilen gelir sultana ayrılır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Vakıf toprak özel mülkiyetten çıkarma işlemidir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Haraç gayrimüslimlerden alınan bir vergidir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Mülk topraklar alınıp satılabilir ve miras bırakılabilir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Has topraklardan elde edilen gelir sultana ayrılır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Vakıf toprak özel mülkiyetten çıkarma işlemidir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Haraç gayrimüslimlerden alınan bir vergidir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Mülk topraklar alınıp satılabilir ve miras bırakılabilir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Vakfedilen bir toprak istenildiğinde geri alınabilir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Vakfedilen bir toprak istenildiğinde geri alınabilir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -21872,18 +21872,18 @@ new Question
 {
     Note = notIktaSistemi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "İkta sistemi ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "İkta sisteminin Osmanlı'daki karşılığı dirlik (tımar) sistemidir; pençik ise gulam sisteminin Osmanlı'daki karşılığıdır.",
     OrderIndex = 29,
     Choices =
     {
-        new Choice { Text = "İlk defa Hz. Ömer zamanında uygulanmıştır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Nizamülmülk tarafından geliştirilerek genişletilmiştir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Siyasetname adlı eserde tanımlanmıştır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Devlete ait olan ve kimsenin mülkiyetinde bulunmayan topraklardan elde edilen gelirlerin görevlilere verilmesidir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "İlk defa Hz. Ömer zamanında uygulanmıştır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Nizamülmülk tarafından geliştirilerek genişletilmiştir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Siyasetname adlı eserde tanımlanmıştır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Devlete ait olan ve kimsenin mülkiyetinde bulunmayan topraklardan elde edilen gelirlerin görevlilere verilmesidir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Osmanlı Devleti'ndeki karşılığı pençik sistemidir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Osmanlı Devleti'ndeki karşılığı pençik sistemidir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -21912,18 +21912,18 @@ new Question
 {
     Note = notIktaFaydalari,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "İkta sisteminin faydalarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "İkta sistemi devlet memurlarının maaşını topraktan elde edilen gelirle ödemiştir; merkezi hazineden doğrudan nakit ödeme yapılması sistemin amacına aykırıdır.",
     OrderIndex = 31,
     Choices =
     {
-        new Choice { Text = "Devlet memurlarının maaşı ödenmiştir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Üretimde süreklilik sağlanmıştır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Masrafsız bir ordu kurulmuştur", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Düzenli vergi toplanmıştır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Devlet memurlarının maaşı ödenmiştir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Üretimde süreklilik sağlanmıştır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Masrafsız bir ordu kurulmuştur", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Düzenli vergi toplanmıştır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Memur maaşları merkezi hazineden doğrudan ödenmiştir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Memur maaşları merkezi hazineden doğrudan ödenmiştir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -21970,18 +21970,18 @@ new Question
 {
     Note = notSosyalHayatKurumlari,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Sosyal hayat kurumlarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Bedesten her türlü ticari malın satıldığı geniş merkezdir; kapan ise yalnızca tek bir cins malın satıldığı yerdir, bu iki kavram birbirine karıştırılmamalıdır.",
     OrderIndex = 34,
     Choices =
     {
-        new Choice { Text = "Sebil halka su dağıtılan çeşmedir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Bargah saray ve yönetim merkezi anlamındadır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Tekke Oğuzların İslami inançlarını pekiştirmek için kurulmuştur", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Zaviye tekkenin köylerdeki küçük halidir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Sebil halka su dağıtılan çeşmedir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Bargah saray ve yönetim merkezi anlamındadır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Tekke Oğuzların İslami inançlarını pekiştirmek için kurulmuştur", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Zaviye tekkenin köylerdeki küçük halidir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Kapan her türlü ticari malın satıldığı geniş bir merkezdir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Kapan her türlü ticari malın satıldığı geniş bir merkezdir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -22009,18 +22009,18 @@ new Question
 {
     Note = notKumbeTturbeKulliye,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Kümbet, türbe ve külliye ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Külliye genellikle caminin merkez alınmasıyla oluşan toplu yapı grubudur; kurgan geleneğinin yerini alan ise kümbettir, külliye değil.",
     OrderIndex = 36,
     Choices =
     {
-        new Choice { Text = "Kümbet ilk defa Büyük Selçuklu Devleti'nde görülmüştür", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Türbe genellikle dini şahsiyetlerin gömüldüğü yarım daire biçimli yapıdır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Külliye genellikle caminin merkez alınmasıyla oluşur", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Kümbetin üst kısmı İslamiyet öncesi çadırı simgeler", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Kümbet ilk defa Büyük Selçuklu Devleti'nde görülmüştür", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Türbe genellikle dini şahsiyetlerin gömüldüğü yarım daire biçimli yapıdır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Külliye genellikle caminin merkez alınmasıyla oluşur", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Kümbetin üst kısmı İslamiyet öncesi çadırı simgeler", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "İslamiyet öncesi kurgan geleneğinin yerini külliye almıştır", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "İslamiyet öncesi kurgan geleneğinin yerini külliye almıştır", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -22048,18 +22048,18 @@ new Question
 {
     Note = notGulamSistemi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Gulam sistemi ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Gulam sisteminin Osmanlı Devleti'ndeki karşılığı pençik sistemidir; devşirme sistemi bambaşka bir uygulamadır.",
     OrderIndex = 38,
     Choices =
     {
-        new Choice { Text = "Esirlerin veya satın alınan çocukların beşte biri devlet sistemine alınır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Alınan askerlerin büyük çoğunluğu Türklerden oluşur", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Yetenekli çocuklar hassa askeri veya saray hizmetine yönlendirilir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "İslamiyet öncesi ordu yapısına göre getirilen en büyük yeniliktir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Esirlerin veya satın alınan çocukların beşte biri devlet sistemine alınır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Alınan askerlerin büyük çoğunluğu Türklerden oluşur", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Yetenekli çocuklar hassa askeri veya saray hizmetine yönlendirilir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "İslamiyet öncesi ordu yapısına göre getirilen en büyük yeniliktir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Osmanlı Devleti'ndeki karşılığı devşirme sistemidir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Osmanlı Devleti'ndeki karşılığı devşirme sistemidir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -22106,18 +22106,18 @@ new Question
 {
     Note = notMedreseler,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "İlk medreselerle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Anadolu'da kurulan ilk medrese Danışmentliler tarafından Tokat Niksar'da açılan Yağıbasan Medresesi'dir; Semerkant Medresesi ise Karahanlılar döneminde Orta Asya'da kurulmuştur.",
     OrderIndex = 41,
     Choices =
     {
-        new Choice { Text = "Semerkant Medresesi Karahanlılar tarafından kurulmuştur", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Semerkant Medresesi'nde burslu öğrencilik sistemi ilk kez uygulanmıştır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Nişabur Medresesi Büyük Selçuklu Devleti'nin kurduğu ilk medresedir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Yağıbasan Medresesi Danışmentliler tarafından Tokat Niksar'da kurulmuştur", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Semerkant Medresesi Karahanlılar tarafından kurulmuştur", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Semerkant Medresesi'nde burslu öğrencilik sistemi ilk kez uygulanmıştır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Nişabur Medresesi Büyük Selçuklu Devleti'nin kurduğu ilk medresedir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yağıbasan Medresesi Danışmentliler tarafından Tokat Niksar'da kurulmuştur", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Anadolu'da kurulan ilk medrese Semerkant Medresesi'dir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Anadolu'da kurulan ilk medrese Semerkant Medresesi'dir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -22165,18 +22165,18 @@ new Question
 {
     Note = notNizamiyeAcilmaNedenleri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Nizamiye medreselerinin açılma nedenleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Nizamiye medreselerinin amacı arasında vergi toplama görevi bulunmaz; bu görev amil gibi ayrı bir devlet görevlisine aittir.",
     OrderIndex = 44,
     Choices =
     {
-        new Choice { Text = "Bilim insanı yetiştirmeyi amaçlar", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Din adamı yetiştirmeyi amaçlar", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Devlet memuru ihtiyacını karşılamayı amaçlar", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Zararlı fikir akımlarına karşı fikirle mücadele etmeyi amaçlar", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Bilim insanı yetiştirmeyi amaçlar", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Din adamı yetiştirmeyi amaçlar", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Devlet memuru ihtiyacını karşılamayı amaçlar", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Zararlı fikir akımlarına karşı fikirle mücadele etmeyi amaçlar", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Vergi toplama işlerini yürütmeyi amaçlar", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Vergi toplama işlerini yürütmeyi amaçlar", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -22204,18 +22204,18 @@ new Question
 {
     Note = notMedreseUnvanlari,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Medrese ile ilgili kavramlar hakkında aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Müderris öğretmen anlamına gelir ve günümüzdeki profesöre karşılık gelir; öğrenciye ise softa veya danişmend denir.",
     OrderIndex = 46,
     Choices =
     {
-        new Choice { Text = "Muhaddis hadis ilmiyle uğraşan kişidir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Müfessir tefsir ilmiyle uğraşan kişidir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Fakih fıkıh ilmiyle uğraşan kişidir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Medresede öğrenim gören öğrenciye softa denir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Muhaddis hadis ilmiyle uğraşan kişidir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Müfessir tefsir ilmiyle uğraşan kişidir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Fakih fıkıh ilmiyle uğraşan kişidir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Medresede öğrenim gören öğrenciye softa denir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Müderris medresede öğrenim gören öğrenciye verilen isimdir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Müderris medresede öğrenim gören öğrenciye verilen isimdir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -22244,18 +22244,18 @@ new Question
 {
     Note = notMimariCesitleri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "İlk Müslüman Türk devletlerinde askeri mimariye örnek olarak aşağıdakilerden hangisi verilemez?",
     Explanation = "Kışla, tersane, kale ve sur askeri mimari örnekleridir; medrese ise yapısal özellikleri nedeniyle dini mimari grubuna girer.",
     OrderIndex = 48,
     Choices =
     {
-        new Choice { Text = "Kışla", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Tersane", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Kale ve burç", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Sur ve garnizon", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Kışla", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Tersane", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Kale ve burç", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Sur ve garnizon", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Medrese", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Medrese", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -22284,18 +22284,18 @@ new Question
 {
     Note = notKarahanliGazneliEserleri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Gazneli Devleti'nin mimari eserleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Gaznelilerin eserleri Afganistan'da bulunur; Ayşe Bibi Türbesi ise Karahanlılara aittir.",
     OrderIndex = 50,
     Choices =
     {
-        new Choice { Text = "Leşkeri Pazar Camii Gaznelilere aittir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "3. Mesut Minaresi Gaznelilere aittir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Ribat-ı Mahi Gaznelilere aittir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Gaznelilerin eserleri Afganistan'da bulunur", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Leşkeri Pazar Camii Gaznelilere aittir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "3. Mesut Minaresi Gaznelilere aittir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Ribat-ı Mahi Gaznelilere aittir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Gaznelilerin eserleri Afganistan'da bulunur", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Ayşe Bibi Türbesi Gaznelilere aittir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Ayşe Bibi Türbesi Gaznelilere aittir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -22343,18 +22343,18 @@ new Question
 {
     Note = notHatSanati,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Hat sanatıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "İslamiyet'in kabulüyle birlikte en çok gelişen sanat dalı hattır; resim ve heykelcilik ise gerilemiştir, gelişmemiştir.",
     OrderIndex = 53,
     Choices =
     {
-        new Choice { Text = "Hat, Arapçayı güzel yazma sanatıdır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Hat ile uğraşan kişiye hattat denir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Amasyalı Yakut ilk büyük Türk hattatıdır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "İslamiyet'in kabulünden sonra en çok gelişen sanat dalıdır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Hat, Arapçayı güzel yazma sanatıdır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Hat ile uğraşan kişiye hattat denir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Amasyalı Yakut ilk büyük Türk hattatıdır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "İslamiyet'in kabulünden sonra en çok gelişen sanat dalıdır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "İslamiyet'in kabulünden sonra heykelcilikle birlikte gerilemiştir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "İslamiyet'in kabulünden sonra heykelcilikle birlikte gerilemiştir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -22383,18 +22383,18 @@ new Question
 {
     Note = notMinyatur,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Minyatür sanatıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Minyatürde perspektif kurallarına uyulmaz; kişiler gerçek boyutlarına göre değil, statülerine göre çizilir. El-Cezeri'nin Otomata adlı eserindeki tasarımlar da minyatürle görselleştirilmiştir.",
     OrderIndex = 55,
     Choices =
     {
-        new Choice { Text = "Kişiler statülerine göre büyük veya küçük çizilir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "İlk örnekleri Uygurlarda görülmüştür", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Uğraşan kişiye musavvir denir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "El-Cezeri'nin Otomata adlı eserindeki tasarımlar minyatürle görselleştirilmiştir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Kişiler statülerine göre büyük veya küçük çizilir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "İlk örnekleri Uygurlarda görülmüştür", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Uğraşan kişiye musavvir denir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "El-Cezeri'nin Otomata adlı eserindeki tasarımlar minyatürle görselleştirilmiştir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Perspektif kurallarına titizlikle uyularak çizilir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Perspektif kurallarına titizlikle uyularak çizilir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -22422,18 +22422,18 @@ new Question
 {
     Note = notTezhipVeDigerSanatlar,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Süsleme sanatlarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Telkari gümüş işlemeciliği, vitray ise cam süsleme sanatıdır; bu iki sanat dalı birbirine karıştırılmamalıdır.",
     OrderIndex = 57,
     Choices =
     {
-        new Choice { Text = "Telkari gümüş işlemeciliği sanatıdır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Malakari duvar süsleme ve kabartma sanatıdır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Ebru kelime anlamı olarak bulut, bulutlanmak demektir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Tezhip kitap süslemede altın tozu kullanılan sanattır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Telkari gümüş işlemeciliği sanatıdır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Malakari duvar süsleme ve kabartma sanatıdır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Ebru kelime anlamı olarak bulut, bulutlanmak demektir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Tezhip kitap süslemede altın tozu kullanılan sanattır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Vitray gümüş işlemeciliği sanatıdır", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Vitray gümüş işlemeciliği sanatıdır", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -22480,18 +22480,18 @@ new Question
 {
     Note = notFarabi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Farabi ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Farabi'nin unvanı Muallim-i Sani'dir (ikinci öğretmen); dünyanın ilk öğretmeni olarak kabul edilen Aristo'dur, Farabi değildir.",
     OrderIndex = 60,
     Choices =
     {
-        new Choice { Text = "Siyaset felsefesinden ilk bahseden kişidir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "İhsau'l-Ulûm adlı eserinde ilimleri sınıflandırmıştır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Kitabü'l-Musiki adlı ilk modern müzik kitabını yazmıştır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "El-Medinetü'l-Fazıla adlı eseri yazmıştır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Siyaset felsefesinden ilk bahseden kişidir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "İhsau'l-Ulûm adlı eserinde ilimleri sınıflandırmıştır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Kitabü'l-Musiki adlı ilk modern müzik kitabını yazmıştır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "El-Medinetü'l-Fazıla adlı eseri yazmıştır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Dünyanın ilk öğretmeni kabul edilen kişidir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Dünyanın ilk öğretmeni kabul edilen kişidir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -22519,18 +22519,18 @@ new Question
 {
     Note = notGazali,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Gazali ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Kimya-i Saadet bir kimya kitabı değildir; ahlak ve dini öğütler içeren bir eserdir.",
     OrderIndex = 62,
     Choices =
     {
-        new Choice { Text = "Lakabı Hüccetü'l-İslam'dır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "İhyau Ulûmi'd-Din adlı eseri yazmıştır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Batınilik akımına karşı fikirle mücadele etmiştir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Bağdat'taki Nizamiye Medresesi'nin rektörlüğünü yapmıştır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Lakabı Hüccetü'l-İslam'dır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "İhyau Ulûmi'd-Din adlı eseri yazmıştır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Batınilik akımına karşı fikirle mücadele etmiştir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Bağdat'taki Nizamiye Medresesi'nin rektörlüğünü yapmıştır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Kimya-i Saadet, bir kimya bilimi eseridir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Kimya-i Saadet, bir kimya bilimi eseridir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -22558,18 +22558,18 @@ new Question
 {
     Note = notBiruni,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Biruni ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Tahkiku Ma li'l-Hind, Biruni'nin Hindistan seferleri sonucunda yazdığı eserdir; Asarü'l-Bakiye ise Asyalı milletlerin tarihini anlattığı eserdir. Bu iki eser birbirine karıştırılmamalıdır.",
     OrderIndex = 64,
     Choices =
     {
-        new Choice { Text = "Jeodezi ilmini bulmuştur", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Yer çekiminin varlığını Newton'dan önce ifade etmiştir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Asarü'l-Bakiye adlı eserinde Asyalı milletlerin tarihini anlatmıştır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Dünyanın yarıçapını oldukça doğru şekilde hesaplamıştır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Jeodezi ilmini bulmuştur", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Yer çekiminin varlığını Newton'dan önce ifade etmiştir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Asarü'l-Bakiye adlı eserinde Asyalı milletlerin tarihini anlatmıştır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Dünyanın yarıçapını oldukça doğru şekilde hesaplamıştır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Tahkiku Ma li'l-Hind adlı eserinde Asyalı milletlerin tarihini anlatmıştır", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Tahkiku Ma li'l-Hind adlı eserinde Asyalı milletlerin tarihini anlatmıştır", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -22597,18 +22597,18 @@ new Question
 {
     Note = notIbnSina,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "İbn Sina ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "İbn Sina'nın Şeyhü'l-Felasife (felsefenin şeyhi) lakabı da bulunur; onu yalnızca tıpla sınırlamak yanlıştır.",
     OrderIndex = 66,
     Choices =
     {
-        new Choice { Text = "El-Kanun fi't-Tıb adlı eserinde mikropları \"kurt\" kavramıyla tarif etmiştir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "İlk kez mide ameliyatı yapmıştır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Azimut halkasını bulmuştur", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Ayda bir kratere adı verilmiştir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "El-Kanun fi't-Tıb adlı eserinde mikropları \"kurt\" kavramıyla tarif etmiştir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "İlk kez mide ameliyatı yapmıştır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Azimut halkasını bulmuştur", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Ayda bir kratere adı verilmiştir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Yalnızca tıp alanında eser vermiş, felsefeyle ilgilenmemiştir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Yalnızca tıp alanında eser vermiş, felsefeyle ilgilenmemiştir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -22636,18 +22636,18 @@ new Question
 {
     Note = notCabirRaziIbnRust,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Cabir bin Hayyan, Zekeriya Razi ve İbn Rüşt ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Çiçek ve kızamık hastalıkları arasındaki farkı bulan kişi Zekeriya Razi'dir; Cabir bin Hayyan kimya alanında çalışmalar yapmıştır.",
     OrderIndex = 68,
     Choices =
     {
-        new Choice { Text = "Zekeriya Razi El-Havi adlı bir tıp ansiklopedisi yazmıştır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "İbn Rüşt Aristo'yu Avrupalılara tanıtan kişidir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "İbn Rüşt güneş lekelerini ilk defa gözlemlemiştir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Cabir bin Hayyan hassas terazi kullanmıştır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Zekeriya Razi El-Havi adlı bir tıp ansiklopedisi yazmıştır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "İbn Rüşt Aristo'yu Avrupalılara tanıtan kişidir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "İbn Rüşt güneş lekelerini ilk defa gözlemlemiştir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Cabir bin Hayyan hassas terazi kullanmıştır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Çiçek ve kızamık hastalıkları arasındaki farkı Cabir bin Hayyan bulmuştur", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Çiçek ve kızamık hastalıkları arasındaki farkı Cabir bin Hayyan bulmuştur", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -22675,18 +22675,18 @@ new Question
 {
     Note = notHarezmiVeDigerleri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Harezmi ve İbn Heysem ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Sıfırı bulan kişi Harezmi değildir; Harezmi'nin katkısı sıfırın yanına rakam yazarak denklemler çözmesidir.",
     OrderIndex = 70,
     Choices =
     {
-        new Choice { Text = "Harezmi ikinci ve üçüncü derece denklemleri çözmüştür", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Harezmi ondalık sayı sistemini bulmuştur", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "İbn Heysem karanlık odayı bulmuştur", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "İbn Heysem Kitabü'l-Menazir adlı eseri yazmıştır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Harezmi ikinci ve üçüncü derece denklemleri çözmüştür", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Harezmi ondalık sayı sistemini bulmuştur", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "İbn Heysem karanlık odayı bulmuştur", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "İbn Heysem Kitabü'l-Menazir adlı eseri yazmıştır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Harezmi sıfır sayısını ilk bulan kişidir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Harezmi sıfır sayısını ilk bulan kişidir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -22714,18 +22714,18 @@ new Question
 {
     Note = notKutadguBilig,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Kutadgu Bilig ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Kutadgu Bilig'de Küntoğdu adaleti, Aytoldı saadeti, Ögdülmüş aklı, Odgurmış ise kanaati temsil eder; bu karakterlerin temsil ettiği kavramlar birbirine karıştırılmamalıdır.",
     OrderIndex = 72,
     Choices =
     {
-        new Choice { Text = "6645 beyitten oluşur", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Tamgaç Buğra Han'a sunulmuştur", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Küntoğdu karakteri adaleti temsil eder", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Bir siyasetname ve nasihatnamedir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "6645 beyitten oluşur", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Tamgaç Buğra Han'a sunulmuştur", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Küntoğdu karakteri adaleti temsil eder", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Bir siyasetname ve nasihatnamedir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Ögdülmüş karakteri kanaati temsil eder", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Ögdülmüş karakteri kanaati temsil eder", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -22753,18 +22753,18 @@ new Question
 {
     Note = notDivanuLugatitTurk,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Divanü Lügati't-Türk ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Divanü Lügati't-Türk, Türkçe değil Arapça yazılmıştır; amacı Türkçenin zenginliğini Araplara göstermektir.",
     OrderIndex = 74,
     Choices =
     {
-        new Choice { Text = "Kaşgarlı Mahmut tarafından yazılmıştır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "El-Muktedi Billah'a sunulmuştur", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "İçinde Orta Asya'daki Türk topluluklarının yaşadığı yerleri gösteren bir harita bulunur", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "2008 yılı UNESCO tarafından Kaşgarlı Mahmut Yılı ilan edilmiştir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Kaşgarlı Mahmut tarafından yazılmıştır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "El-Muktedi Billah'a sunulmuştur", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "İçinde Orta Asya'daki Türk topluluklarının yaşadığı yerleri gösteren bir harita bulunur", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "2008 yılı UNESCO tarafından Kaşgarlı Mahmut Yılı ilan edilmiştir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Eser Türkçe olarak yazılmıştır", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Eser Türkçe olarak yazılmıştır", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -22792,18 +22792,18 @@ new Question
 {
     Note = notAtabetulHakayikVeAhmetYesevi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Atabetü'l-Hakayık ve Ahmet Yesevi ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "İlk Türk mutasavvıfı Ahmet Yesevi'dir, Hz. Mevlana değildir; bu bilgi sınavlarda sık sık karıştırılmak istenir.",
     OrderIndex = 76,
     Choices =
     {
-        new Choice { Text = "Atabetü'l-Hakayık, Edip Ahmet Yükneki tarafından yazılmıştır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Atabetü'l-Hakayık, Kutadgu Bilig'in devamı sayılır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Divan-ı Hikmet, Ahmet Yesevi'nin şiirlerini topladığı eserdir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Ahmet Yesevi'nin mezarını Timur yaptırmıştır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Atabetü'l-Hakayık, Edip Ahmet Yükneki tarafından yazılmıştır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Atabetü'l-Hakayık, Kutadgu Bilig'in devamı sayılır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Divan-ı Hikmet, Ahmet Yesevi'nin şiirlerini topladığı eserdir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Ahmet Yesevi'nin mezarını Timur yaptırmıştır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "İlk Türk mutasavvıfı Hz. Mevlana'dır", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "İlk Türk mutasavvıfı Hz. Mevlana'dır", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -22831,18 +22831,18 @@ new Question
 {
     Note = notFirdevsiVeAliSirNevai,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Firdevsi ve Ali Şir Nevai ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Şehname'de Alp Er Tunga, Afrasiyab adıyla geçer; bu isim değişikliği unutulmamalıdır.",
     OrderIndex = 78,
     Choices =
     {
-        new Choice { Text = "Ali Şir Nevai, Timur zamanında yaşamıştır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Ali Şir Nevai, Çağatay Türkçesinin en büyük şairi kabul edilir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Muhakemetü'l-Lügateyn'de Türkçenin üstünlüğü savunulmuştur", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Firdevsi, Şehname'yi Gazneli Mahmut'a sunmuştur", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Ali Şir Nevai, Timur zamanında yaşamıştır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Ali Şir Nevai, Çağatay Türkçesinin en büyük şairi kabul edilir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Muhakemetü'l-Lügateyn'de Türkçenin üstünlüğü savunulmuştur", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Firdevsi, Şehname'yi Gazneli Mahmut'a sunmuştur", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Şehname'de Alp Er Tunga \"Küntoğdu\" adıyla geçer", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Şehname'de Alp Er Tunga \"Küntoğdu\" adıyla geçer", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -22870,18 +22870,18 @@ new Question
 {
     Note = notNizamulmulkVeOmerHayyam,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Nizamülmülk ve Ömer Hayyam ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Celali Takvimi'nin heyet başkanlığını Ömer Hayyam yapmıştır; Nizamülmülk'ün eseri Siyasetname'dir, Celali Takvimi ile ilgisi yoktur.",
     OrderIndex = 80,
     Choices =
     {
-        new Choice { Text = "Nizamülmülk'ün gerçek adı Ebu Ali Hasan'dır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Nizamülmülk Nizamiye medreselerinin kuruluşunda etkili olmuştur", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Ömer Hayyam ikinci ve üçüncü derece denklemler çözmüştür", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Ömer Hayyam aşk, doğa ve ahiret üzerine rubailer yazmıştır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Nizamülmülk'ün gerçek adı Ebu Ali Hasan'dır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Nizamülmülk Nizamiye medreselerinin kuruluşunda etkili olmuştur", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Ömer Hayyam ikinci ve üçüncü derece denklemler çözmüştür", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Ömer Hayyam aşk, doğa ve ahiret üzerine rubailer yazmıştır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Celali Takvimi'nin heyet başkanlığını Nizamülmülk yapmıştır", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Celali Takvimi'nin heyet başkanlığını Nizamülmülk yapmıştır", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -23225,18 +23225,18 @@ new Question
 {
     Note = notKurulusVeIznik,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Anadolu Selçuklu Devleti'nin kuruluşuyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Anadolu Selçuklu Devleti'nin varlığı 1932'de Türk Tarih Kurumu ve Fuat Köprülü'nün çalışmalarıyla ortaya çıkarılmıştır; Büyük Selçuklu Devleti'nin yıkılmasından sonra kurulduğu ifadesi yanlıştır, iki devlet bir süre birlikte var olmuştur.",
     OrderIndex = 3,
     Choices =
     {
-        new Choice { Text = "Devlet, Kutalmış oğlu Süleymanşah tarafından kurulmuştur.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Devletin varlığı 1932'de Türk Tarih Kurumu'nun çalışmalarıyla ortaya çıkarılmıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Kuruluş sırasında Bizans'taki taht kavgalarından yararlanılmıştır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Süleymanşah'ın ölümünden sonra Şahinşah otoriteyi sağlayamamıştır.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Devlet, Kutalmış oğlu Süleymanşah tarafından kurulmuştur.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Devletin varlığı 1932'de Türk Tarih Kurumu'nun çalışmalarıyla ortaya çıkarılmıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Kuruluş sırasında Bizans'taki taht kavgalarından yararlanılmıştır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Süleymanşah'ın ölümünden sonra Şahinşah otoriteyi sağlayamamıştır.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Devlet, Büyük Selçuklu Devleti yıkıldıktan sonra kurulmuştur.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Devlet, Büyük Selçuklu Devleti yıkıldıktan sonra kurulmuştur.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -23284,18 +23284,18 @@ new Question
 {
     Note = notHacliSeferleriVeKilicArslan,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "I. Kılıç Arslan dönemi ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "I. Kılıç Arslan, İznik'i geri alamamış ve Malatya kuşatması sırasında İznik'i kaybetmiştir; İznik'i geri aldığı ifadesi yanlıştır.",
     OrderIndex = 6,
     Choices =
     {
-        new Choice { Text = "1097'de Eskişehir'de Dorlon Muharebesi'ni yapmıştır.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Malatya'yı Anadolu Türk siyasi birliğini sağlamak amacıyla kuşatmıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "İlk öncü Haçlı birliğini büyük ölçüde yok etmiştir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Devletin merkezini Konya'ya taşımıştır.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "1097'de Eskişehir'de Dorlon Muharebesi'ni yapmıştır.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Malatya'yı Anadolu Türk siyasi birliğini sağlamak amacıyla kuşatmıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "İlk öncü Haçlı birliğini büyük ölçüde yok etmiştir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Devletin merkezini Konya'ya taşımıştır.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "İznik'i I. Haçlı Seferi sonrasında geri almıştır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "İznik'i I. Haçlı Seferi sonrasında geri almıştır.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -23342,18 +23342,18 @@ new Question
 {
     Note = notMiryaKefelonVe11Ogul,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Miryokefalon Savaşı ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Miryokefalon Savaşı'nı I. Kılıç Arslan değil II. Kılıç Arslan kazanmıştır.",
     OrderIndex = 9,
     Choices =
     {
-        new Choice { Text = "1176 yılında kazanılmıştır.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "'Yurt Tutan Savaşı' olarak da anılır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Anadolu'nun kesin olarak Türk yurdu haline gelmesini sağlamıştır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Malazgirt'ten sonraki en önemli savaş kabul edilir.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "1176 yılında kazanılmıştır.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "'Yurt Tutan Savaşı' olarak da anılır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Anadolu'nun kesin olarak Türk yurdu haline gelmesini sağlamıştır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Malazgirt'ten sonraki en önemli savaş kabul edilir.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "I. Kılıç Arslan tarafından kazanılmıştır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "I. Kılıç Arslan tarafından kazanılmıştır.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -23401,18 +23401,18 @@ new Question
 {
     Note = notFarsUnvanlarVeGyasettin,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Anadolu Selçuklu Devleti'nin Farsça unvan kullanımıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "'Key' kelimesi Farsçada anahtar değil, hükümdar/sultan/büyük anlamına gelir.",
     OrderIndex = 12,
     Choices =
     {
-        new Choice { Text = "Devlet, resmi dil olarak Farsçayı kullanmıştır.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Hükümdarlar Key Hüsrev, Key Kavus gibi unvanlar taşımıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Devlet, Büyük Selçuklu Devleti'nin kurulduğu coğrafyada kurulmamıştır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "I. Gıyasettin Keyhüsrev döneminde Antalya, Bizans'tan alınmıştır.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Devlet, resmi dil olarak Farsçayı kullanmıştır.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Hükümdarlar Key Hüsrev, Key Kavus gibi unvanlar taşımıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Devlet, Büyük Selçuklu Devleti'nin kurulduğu coğrafyada kurulmamıştır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "I. Gıyasettin Keyhüsrev döneminde Antalya, Bizans'tan alınmıştır.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "'Key' kelimesi Farsçada 'anahtar' anlamına gelir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "'Key' kelimesi Farsçada 'anahtar' anlamına gelir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -23461,18 +23461,18 @@ new Question
 {
     Note = notTicaretVeKervansaray,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Anadolu Selçuklu Devleti'nin ticaret politikasıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Sinop ve Samsun, İzzettin Keykavus döneminde alınmış olup Sudak ve Alanya değil bu kentler onun döneminin kazanımlarıdır; kervansaraylar ücretsizdir, ücretli olan hanlardır.",
     OrderIndex = 15,
     Choices =
     {
-        new Choice { Text = "İzzettin Keykavus döneminde Sinop ve Samsun alınmıştır.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Kervansaraylarda 3 gün boyunca ücretsiz konaklama sağlanmıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Kıbrıs Krallığı ile düşük gümrük vergili anlaşmalar yapılmıştır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Kayseri'de Yabanlı Pazarı kurulmuştur.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "İzzettin Keykavus döneminde Sinop ve Samsun alınmıştır.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Kervansaraylarda 3 gün boyunca ücretsiz konaklama sağlanmıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Kıbrıs Krallığı ile düşük gümrük vergili anlaşmalar yapılmıştır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Kayseri'de Yabanlı Pazarı kurulmuştur.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Kervansaraylarda konaklama ücretlidir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Kervansaraylarda konaklama ücretlidir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -23501,18 +23501,18 @@ new Question
 {
     Note = notHanVeRibat,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Han ve kervansaray farkıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Hanlar şehir merkezinde olup ücretlidir; kervansaraylar ise şehir dışında olup ücretsizdir. 'Hanların ücretsiz olduğu' ifadesi yanlıştır.",
     OrderIndex = 17,
     Choices =
     {
-        new Choice { Text = "Kervansaraylar şehir dışında bulunur.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Hanlar şehir merkezinde bulunur.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Kervansaraylarda konaklama süresi 3 gündür.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Kervansaraylar ribatların devamıdır.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Kervansaraylar şehir dışında bulunur.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Hanlar şehir merkezinde bulunur.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Kervansaraylarda konaklama süresi 3 gündür.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Kervansaraylar ribatların devamıdır.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Hanlar ücretsizdir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Hanlar ücretsizdir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -23559,18 +23559,18 @@ new Question
 {
     Note = notYassiCemenVeMogolTehlikesi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Alaattin Keykubat dönemi ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Sudak limanı ve Kolonoros (Alanya) Alaattin Keykubat döneminde alınmıştır; bu bilgi doğrudur, dolayısıyla aksini iddia eden ifade yanlıştır.",
     OrderIndex = 20,
     Choices =
     {
-        new Choice { Text = "Sivas, Erzincan ve Tokat surları güçlendirilmiştir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Kolonoros (Alanya) fethedilmiştir.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Sudak limanı alınmıştır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Devletin en parlak dönemi olarak kabul edilir.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Sivas, Erzincan ve Tokat surları güçlendirilmiştir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Kolonoros (Alanya) fethedilmiştir.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Sudak limanı alınmıştır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Devletin en parlak dönemi olarak kabul edilir.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Sudak limanı bu dönemde değil İzzettin Keykavus döneminde alınmıştır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Sudak limanı bu dönemde değil İzzettin Keykavus döneminde alınmıştır.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -23618,18 +23618,18 @@ new Question
 {
     Note = notBabaIshakVeKosedag,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "1243 Kösedağ Savaşı ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Kösedağ Savaşı, Moğol komutanı Baycu Noyan liderliğindeki ordu ile yapılmış ve Anadolu Selçuklu Devleti bu savaşı kaybetmiştir; 'kazanmıştır' ifadesi yanlıştır.",
     OrderIndex = 23,
     Choices =
     {
-        new Choice { Text = "Sivas'ta yapılmıştır.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Moğol komutanı Baycu Noyan liderliğinde yapılmıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "1243 yılı Anadolu'da 'Baycu Noyan yılı' olarak anılmıştır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Baba İshak İsyanı, bu savaştan önce meydana gelmiştir.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Sivas'ta yapılmıştır.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Moğol komutanı Baycu Noyan liderliğinde yapılmıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "1243 yılı Anadolu'da 'Baycu Noyan yılı' olarak anılmıştır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Baba İshak İsyanı, bu savaştan önce meydana gelmiştir.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Anadolu Selçuklu Devleti bu savaşı kazanmıştır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Anadolu Selçuklu Devleti bu savaşı kazanmıştır.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -23677,18 +23677,18 @@ new Question
 {
     Note = notKosedagSonuclariVeBeylikler,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Kösedağ Savaşı sonrası dönemin önemli devlet adamlarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Üç şehzadeyi aynı anda hükümdar ilan eden kişi Muinüddin Pervane değil Celalettin Karatay'dır.",
     OrderIndex = 26,
     Choices =
     {
-        new Choice { Text = "Celalettin Karatay, üç şehzadeyi aynı anda hükümdar ilan etmiştir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Muinüddin Pervane, Abaka Han tarafından öldürtülmüştür.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Alaattin Siyavuş, Moğollar tarafından tahttan indirilmiştir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Son hükümdar III. Mesut'un ölümüyle devlet 1308'de sona ermiştir.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Celalettin Karatay, üç şehzadeyi aynı anda hükümdar ilan etmiştir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Muinüddin Pervane, Abaka Han tarafından öldürtülmüştür.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Alaattin Siyavuş, Moğollar tarafından tahttan indirilmiştir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Son hükümdar III. Mesut'un ölümüyle devlet 1308'de sona ermiştir.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Üç şehzadeyi aynı anda hükümdar ilan eden kişi Muinüddin Pervane'dir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Üç şehzadeyi aynı anda hükümdar ilan eden kişi Muinüddin Pervane'dir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -23737,18 +23737,18 @@ new Question
 {
     Note = notDenizciBeylikler,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Denizci Anadolu beylikleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Menteşeoğulları'nın kurulduğu bölge Muğla'dır; Kastamonu, Candaroğulları'nın kurulduğu bölgedir.",
     OrderIndex = 29,
     Choices =
     {
-        new Choice { Text = "Karesioğulları, Balıkesir ve Çanakkale'de kurulmuştur.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Aydınoğulları, İzmir ve Aydın bölgesinde kurulmuştur.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Candaroğulları, Sinop ve Kastamonu bölgesinde kurulmuştur.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Saruhanoğulları, Manisa'da kurulmuştur.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Karesioğulları, Balıkesir ve Çanakkale'de kurulmuştur.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Aydınoğulları, İzmir ve Aydın bölgesinde kurulmuştur.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Candaroğulları, Sinop ve Kastamonu bölgesinde kurulmuştur.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Saruhanoğulları, Manisa'da kurulmuştur.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Menteşeoğulları, Kastamonu bölgesinde kurulmuştur.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Menteşeoğulları, Kastamonu bölgesinde kurulmuştur.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -23795,18 +23795,18 @@ new Question
 {
     Note = notDigerBeylikler,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Anadolu beylikleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Karamanoğulları, kurulduğu yerin adını almamış, kurucusu Karaman Bey'in adını almıştır; bölgenin eski adı Larende'dir.",
     OrderIndex = 32,
     Choices =
     {
-        new Choice { Text = "Germiyanoğulları, Osmanlı'ya çeyiz ve vasiyet yoluyla katılmıştır.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Karamanoğulları, Osmanlı Devleti'ni en çok uğraştıran beyliktir.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Eşrefoğulları, Eşrefoğlu Ulu Camisi'ni yaptırmıştır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Eretna Beyliği'ne Kadı Burhanettin tarafından son verilmiştir.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Germiyanoğulları, Osmanlı'ya çeyiz ve vasiyet yoluyla katılmıştır.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Karamanoğulları, Osmanlı Devleti'ni en çok uğraştıran beyliktir.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Eşrefoğulları, Eşrefoğlu Ulu Camisi'ni yaptırmıştır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Eretna Beyliği'ne Kadı Burhanettin tarafından son verilmiştir.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Karamanoğulları, kurulduğu yer olan Larende'nin adını almıştır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Karamanoğulları, kurulduğu yer olan Larende'nin adını almıştır.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -23854,18 +23854,18 @@ new Question
 {
     Note = notASDBSDFarklariVeDivan,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Anadolu Selçuklu Devleti kurumlarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Divan-ı Berid bir divan çeşidi değil, posta teşkilatının adıdır.",
     OrderIndex = 35,
     Choices =
     {
-        new Choice { Text = "Türkiye topraklarında ilk ikta dağıtımı Tokat'ta yapılmıştır.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Divan-ı Pervane, ikta topraklarının dağıtımından sorumludur.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Devlet işlerinin görüşüldüğü divana Divan-ı Ala denilmiştir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Hükümdarlar Farsça unvanlar kullanmıştır.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Türkiye topraklarında ilk ikta dağıtımı Tokat'ta yapılmıştır.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Divan-ı Pervane, ikta topraklarının dağıtımından sorumludur.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Devlet işlerinin görüşüldüğü divana Divan-ı Ala denilmiştir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Hükümdarlar Farsça unvanlar kullanmıştır.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Divan-ı Berid bir divan çeşididir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Divan-ı Berid bir divan çeşididir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -23913,18 +23913,18 @@ new Question
 {
     Note = notAhilikTeskilati,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Ahilik teşkilatı ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Ahilik teşkilatının temelleri I. Gıyasettin Keyhüsrev zamanında Kayseri'de atılmıştır, Konya'da değil.",
     OrderIndex = 38,
     Choices =
     {
-        new Choice { Text = "Esnafların başındakilere 'şeyh' veya 'pir' denilmiştir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Ortak sandıklarda toplanan para, çıraklara destek olarak kullanılmıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Ahi Evran, felsefesini Letaif-i Hikmet adlı eserinde anlatmıştır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Üretilen mallara narh sistemine benzer şekilde değer biçilmiştir.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Esnafların başındakilere 'şeyh' veya 'pir' denilmiştir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Ortak sandıklarda toplanan para, çıraklara destek olarak kullanılmıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Ahi Evran, felsefesini Letaif-i Hikmet adlı eserinde anlatmıştır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Üretilen mallara narh sistemine benzer şekilde değer biçilmiştir.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Teşkilatın temelleri Konya'da atılmıştır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Teşkilatın temelleri Konya'da atılmıştır.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -23952,18 +23952,18 @@ new Question
 {
     Note = notFatmaBaciVeBacianiRum,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Fatma Bacı ve Bacıyân-ı Rum ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Fatma Bacı, Ahi Evran'ın eşidir, kızı değildir.",
     OrderIndex = 40,
     Choices =
     {
-        new Choice { Text = "Bacıyân-ı Rum'un temel prensibi 'aşına, eşine ve işine dikkat et' şeklindedir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Fatma Bacı, Moğolların Konya'yı basması sırasında öldürülmüştür.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "'Rum' ifadesi burada Anadolu anlamına gelmektedir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Teşkilat, kadınları dokumacılıktan ev işlerine kadar birçok konuda eğitmiştir.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Bacıyân-ı Rum'un temel prensibi 'aşına, eşine ve işine dikkat et' şeklindedir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Fatma Bacı, Moğolların Konya'yı basması sırasında öldürülmüştür.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "'Rum' ifadesi burada Anadolu anlamına gelmektedir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Teşkilat, kadınları dokumacılıktan ev işlerine kadar birçok konuda eğitmiştir.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Fatma Bacı, Ahi Evran'ın kızıdır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Fatma Bacı, Ahi Evran'ın kızıdır.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -24011,18 +24011,18 @@ new Question
 {
     Note = notIlimInsanlari,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Anadolu Selçuklu dönemi ilim insanlarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Mantıku't-Tayr'ın (Kuşların Dili) yazarı Feridüddin Attar'dır; Gülşehri bu eseri Türkçeye çevirmiştir, yazarı değildir.",
     OrderIndex = 43,
     Choices =
     {
-        new Choice { Text = "Aşık Paşa'nın mezarı Kırşehir'dedir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Muhyiddin Arabi, Vahdet-i Vücut felsefesinin öncüsüdür.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Ravendi, Selçuklu tarihini yazan bir tarihçidir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Hoca Dehhani, divan edebiyatının kurucusu sayılır.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Aşık Paşa'nın mezarı Kırşehir'dedir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Muhyiddin Arabi, Vahdet-i Vücut felsefesinin öncüsüdür.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Ravendi, Selçuklu tarihini yazan bir tarihçidir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Hoca Dehhani, divan edebiyatının kurucusu sayılır.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Mantıku't-Tayr'ın yazarı Gülşehri'dir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Mantıku't-Tayr'ın yazarı Gülşehri'dir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -24070,18 +24070,18 @@ new Question
 {
     Note = notMimariEserBulmaYontemi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Anadolu'daki mimari eserleri devletlere ayırma yöntemiyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Yakutiye Medresesi Erzurum'da olup Anadolu Selçuklu Devleti'ne değil İlhanlılara aittir; bu yöntemin bir istisnasıdır.",
     OrderIndex = 46,
     Choices =
     {
-        new Choice { Text = "İstanbul, Bursa ve Trabzon'daki eserler istisnasız Osmanlı'ya aittir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Sultan Dağı Medresesi, Anadolu Selçuklu Devleti'ne aittir.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "'Çifte' ve 'Alaattin' kelimeleri Anadolu Selçuklu Devleti eserleriyle ilişkilendirilir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Minare sayısının fazlalığı devletin gücünü sembolize eder.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "İstanbul, Bursa ve Trabzon'daki eserler istisnasız Osmanlı'ya aittir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Sultan Dağı Medresesi, Anadolu Selçuklu Devleti'ne aittir.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "'Çifte' ve 'Alaattin' kelimeleri Anadolu Selçuklu Devleti eserleriyle ilişkilendirilir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Minare sayısının fazlalığı devletin gücünü sembolize eder.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Yakutiye Medresesi, Anadolu Selçuklu Devleti'ne aittir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Yakutiye Medresesi, Anadolu Selçuklu Devleti'ne aittir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -24129,18 +24129,18 @@ new Question
 {
     Note = notASDMimariEserleri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Anadolu Selçuklu Devleti eserleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Kütahya'daki Karagöz Camisi Anadolu Selçuklu Devleti'ne aittir; Antalya'daki Karagözpaşa Camisi ise Osmanlı Devleti'ne aittir. İkisinin karıştırılması yanlıştır.",
     OrderIndex = 49,
     Choices =
     {
-        new Choice { Text = "Gevher Nesibe Darüşşifası Kayseri'dedir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Kırşehir Caca Bey Medresesi, Anadolu Selçuklu Devleti'ne aittir.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Erzurum Çifte Minareli Medrese, Anadolu Selçuklu Devleti'ne aittir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Beyşehir Kubadabat Sarayı, Anadolu Selçuklu Devleti'ne aittir.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Gevher Nesibe Darüşşifası Kayseri'dedir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Kırşehir Caca Bey Medresesi, Anadolu Selçuklu Devleti'ne aittir.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Erzurum Çifte Minareli Medrese, Anadolu Selçuklu Devleti'ne aittir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Beyşehir Kubadabat Sarayı, Anadolu Selçuklu Devleti'ne aittir.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Kütahya'daki Karagöz Camisi Osmanlı Devleti'ne aittir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Kütahya'daki Karagöz Camisi Osmanlı Devleti'ne aittir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -24682,18 +24682,18 @@ new Question
 {
     Note = notCagdasDevletlerIlhanliAltinordu,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "İlhanlılar ve Altınordu Devleti ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Altınordu Devleti, İran'da değil Karadeniz'in kuzeyinde kurulmuştur; İran'da kurulan devlet İlhanlılardır.",
     OrderIndex = 3,
     Choices =
     {
-        new Choice { Text = "İlhanlılar 1258'de Abbasi Devleti'ni yıkmıştır.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "İlhanlılar 1243 Kösedağ Savaşı ile Anadolu Selçuklu Devleti'ni mağlup etmiştir.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Altınordu Devleti Batu Han tarafından kurulmuştur.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Altınordu Devleti, Rusların güneye inmesini uzun süre engellemiştir.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "İlhanlılar 1258'de Abbasi Devleti'ni yıkmıştır.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "İlhanlılar 1243 Kösedağ Savaşı ile Anadolu Selçuklu Devleti'ni mağlup etmiştir.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Altınordu Devleti Batu Han tarafından kurulmuştur.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Altınordu Devleti, Rusların güneye inmesini uzun süre engellemiştir.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Altınordu Devleti İran'da kurulmuştur.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Altınordu Devleti İran'da kurulmuştur.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -24741,18 +24741,18 @@ new Question
 {
     Note = notCagdasDevletlerMemlukTurkiyeSelcuklu,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Memlükler Devleti ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Memlüklerde halifelik ile sultanlık ayrı kişilerdedir; halifelik yetkisini kendi üzerine alan hükümdar Yavuz Sultan Selim'dir, Memlük sultanları değil.",
     OrderIndex = 6,
     Choices =
     {
-        new Choice { Text = "1250'de Aybek tarafından kurulmuştur.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Abbasi halifesini himayelerine almışlardır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "1517'de Yavuz Sultan Selim tarafından yıkılmıştır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Ridaniye Savaşı sonucunda son bulmuşlardır.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "1250'de Aybek tarafından kurulmuştur.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Abbasi halifesini himayelerine almışlardır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "1517'de Yavuz Sultan Selim tarafından yıkılmıştır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Ridaniye Savaşı sonucunda son bulmuşlardır.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Memlük sultanları aynı zamanda halifelik yetkisini de kendi üzerlerinde taşımıştır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Memlük sultanları aynı zamanda halifelik yetkisini de kendi üzerlerinde taşımıştır.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -24799,18 +24799,18 @@ new Question
 {
     Note = notBizansVeTrabzonRum,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Bizans ve Rum imparatorlukları ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Bizans tekfurları, merkezi dinlememiş ve halka zulmetmiştir; bu nedenle birçok tekfur Osmanlı hakimiyetine geçmekten memnuniyet duymuştur, ifadenin tersi doğrudur.",
     OrderIndex = 9,
     Choices =
     {
-        new Choice { Text = "Bizans'ta Kantakuzenler ve Paleologoslar arasında sürekli taht kavgaları yaşanmıştır.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "1204'te Latinler İstanbul'u yağmalamıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Trabzon Rum İmparatorluğu 1461'e kadar varlığını sürdürmüştür.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "İznik Rum İmparatorluğu 1204-1261 arasında var olmuştur.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Bizans'ta Kantakuzenler ve Paleologoslar arasında sürekli taht kavgaları yaşanmıştır.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "1204'te Latinler İstanbul'u yağmalamıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Trabzon Rum İmparatorluğu 1461'e kadar varlığını sürdürmüştür.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "İznik Rum İmparatorluğu 1204-1261 arasında var olmuştur.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Bizans tekfurları merkezi eksiksiz dinlemiş ve halka adaletle davranmıştır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Bizans tekfurları merkezi eksiksiz dinlemiş ve halka adaletle davranmıştır.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -24858,18 +24858,18 @@ new Question
 {
     Note = notOsmanliKurulusYeriVeAtsb,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Osmanlı Devleti'nin kuruluş yeri ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Söğüt, Domaniç'in değil Bilecik'in bir ilçesidir; Domaniç ise Kütahya'ya bağlıdır.",
     OrderIndex = 12,
     Choices =
     {
-        new Choice { Text = "Söğüt ve Domaniç, biri yaylak biri kışlak olarak kullanılmıştır.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Söğüt ve Domaniç arasındaki İnegöl, ilk fetih hedeflerinden biri olmuştur.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Devletin kurucusu Osman Gazi'dir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Devletin ikinci kurucusu Çelebi Mehmet'tir.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Söğüt ve Domaniç, biri yaylak biri kışlak olarak kullanılmıştır.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Söğüt ve Domaniç arasındaki İnegöl, ilk fetih hedeflerinden biri olmuştur.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Devletin kurucusu Osman Gazi'dir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Devletin ikinci kurucusu Çelebi Mehmet'tir.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Söğüt, Domaniç'in bir ilçesidir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Söğüt, Domaniç'in bir ilçesidir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -24917,18 +24917,18 @@ new Question
 {
     Note = notKisaSurdeBuyumeNedenleri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Osmanlı Devleti'nin büyüme nedenleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Osmanlı Devleti başlarda güçlü beyliklerle savaşmak yerine iyi geçinmeyi tercih etmiştir; bu nedenle 'başlarda güçlü beyliklerle savaşarak toprak kazanmıştır' ifadesi yanlıştır.",
     OrderIndex = 15,
     Choices =
     {
-        new Choice { Text = "Türklerdeki gaza ve cihat ruhu etkili olmuştur.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Merkezi otoritenin güçlü tutulması etkili olmuştur.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Yetenekli padişahların art arda tahta çıkması etkili olmuştur.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Anadolu'da siyasi boşluğun bulunması etkili olmuştur.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Türklerdeki gaza ve cihat ruhu etkili olmuştur.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Merkezi otoritenin güçlü tutulması etkili olmuştur.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Yetenekli padişahların art arda tahta çıkması etkili olmuştur.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Anadolu'da siyasi boşluğun bulunması etkili olmuştur.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Osmanlı Devleti başlarda güçlü beyliklerle savaşarak toprak kazanmıştır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Osmanlı Devleti başlarda güçlü beyliklerle savaşarak toprak kazanmıştır.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -24956,18 +24956,18 @@ new Question
 {
     Note = notMudaraPolitikasi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Müdara politikası ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Mihail Kosses, Harmankaya Tekfuru'dur, İnegöl Tekfuru değildir.",
     OrderIndex = 17,
     Choices =
     {
-        new Choice { Text = "Görünüşte dostça geçinme anlamına gelir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Mihail Kosses 1313'te Müslüman olarak Abdullah Köseoğlu adını almıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Mihaloğulları sülalesinin kurucusu Mihail Kosses'tir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Her tekfurla kurulan ilişki kalıcı dostluğa dönüşmemiştir.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Görünüşte dostça geçinme anlamına gelir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Mihail Kosses 1313'te Müslüman olarak Abdullah Köseoğlu adını almıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Mihaloğulları sülalesinin kurucusu Mihail Kosses'tir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Her tekfurla kurulan ilişki kalıcı dostluğa dönüşmemiştir.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Mihail Kosses, İnegöl Tekfuru'dur.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Mihail Kosses, İnegöl Tekfuru'dur.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -25015,18 +25015,18 @@ new Question
 {
     Note = notGaziyaniRumVeDestekcigruplar,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Osmanlı Devleti'nin kuruluşuna destek veren teşkilatlarla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "'Rum' kelimesi bu teşkilat isimlerinde Anadolu anlamına gelir; günümüzdeki Yunanistan anlamında kullanılmamıştır.",
     OrderIndex = 20,
     Choices =
     {
-        new Choice { Text = "Ahiyân-ı Rum, Anadolu esnaf ve zanaatkârlarını ifade eder.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Abdalân-ı Rum, Anadolu dervişlerini ve ozanlarını ifade eder.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Osman Bey, Şeyh Edebali'nin kızı Bala Hatun ile evlenmiştir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Osman Bey'in çevresinde Alperenler bulunmaktaydı.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Ahiyân-ı Rum, Anadolu esnaf ve zanaatkârlarını ifade eder.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Abdalân-ı Rum, Anadolu dervişlerini ve ozanlarını ifade eder.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Osman Bey, Şeyh Edebali'nin kızı Bala Hatun ile evlenmiştir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Osman Bey'in çevresinde Alperenler bulunmaktaydı.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "'Rum' kelimesi bu isimlerde günümüzdeki Yunanistan'ı ifade eder.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "'Rum' kelimesi bu isimlerde günümüzdeki Yunanistan'ı ifade eder.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -25074,18 +25074,18 @@ new Question
 {
     Note = notIskanIstimaletTimar,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "İskan, istimalet ve tımar politikalarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Osmanlı, kılıç hakkı olan (savaşarak alınan) şehirlerdeki en büyük kiliseyi camiye çevirmiştir; bu ifadenin tam tersi (hiçbir kiliseye dokunulmadığı) yanlıştır.",
     OrderIndex = 23,
     Choices =
     {
-        new Choice { Text = "Tımar sisteminde toprağı işleyene araç-gereç de verilmiştir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "İskan sırasında iklim uyumuna dikkat edilmiştir.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "İstimalet politikası gönül alma ve hoşgörüyü içerir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Yeni yerleşim yerlerine han, hamam ve külliye gibi yapılar inşa edilmiştir.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Tımar sisteminde toprağı işleyene araç-gereç de verilmiştir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "İskan sırasında iklim uyumuna dikkat edilmiştir.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "İstimalet politikası gönül alma ve hoşgörüyü içerir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yeni yerleşim yerlerine han, hamam ve külliye gibi yapılar inşa edilmiştir.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Kılıç hakkı olan şehirlerde hiçbir kilise camiye çevrilmemiştir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Kılıç hakkı olan şehirlerde hiçbir kilise camiye çevrilmemiştir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -25134,18 +25134,18 @@ new Question
 {
     Note = notIskaninAmaclariVeSartlari,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "İskan politikasının amaç ve şartlarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "İskana tabi tutulanların eski yurtlarına dönüşü belirli bir süre (genellikle 5 yıl) yasaklanmıştır; 'serbesttir' ifadesi yanlıştır.",
     OrderIndex = 26,
     Choices =
     {
-        new Choice { Text = "Fethedilen bölgelerin Türkleşmesini sağlamak amaçlanmıştır.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Kavgalı aileleri birbirinden uzaklaştırarak huzuru sağlamak amaçlanmıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Bölgeyi imar faaliyetleriyle şenlendirmek amaçlanmıştır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "İskana tabi tutulanlara vergiden muaf toprak verilmiştir.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Fethedilen bölgelerin Türkleşmesini sağlamak amaçlanmıştır.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Kavgalı aileleri birbirinden uzaklaştırarak huzuru sağlamak amaçlanmıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Bölgeyi imar faaliyetleriyle şenlendirmek amaçlanmıştır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "İskana tabi tutulanlara vergiden muaf toprak verilmiştir.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "İskana tabi tutulanların eski yurtlarına dönüşü serbesttir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "İskana tabi tutulanların eski yurtlarına dönüşü serbesttir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -25192,18 +25192,18 @@ new Question
 {
     Note = notOsmanBeyDonemiFetihleri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Osman Bey dönemi fetihleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Hem İznik hem de Bursa'nın fethi Osman Bey'e değil oğlu Orhan Bey'e nasip olmuştur; Osman Bey yalnızca bu şehirleri kuşatmıştır.",
     OrderIndex = 29,
     Choices =
     {
-        new Choice { Text = "Osman Bey'in lakabı Fahreddin'dir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "1285'te Kulaca Hisar alınmıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "1302'de Koyunhisar Savaşı Bizans'a karşı kazanılmıştır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "1299-1300 civarında Yarhisar ve Yenişehir alınmıştır.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Osman Bey'in lakabı Fahreddin'dir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "1285'te Kulaca Hisar alınmıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "1302'de Koyunhisar Savaşı Bizans'a karşı kazanılmıştır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "1299-1300 civarında Yarhisar ve Yenişehir alınmıştır.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "İznik ve Bursa'nın fethi Osman Bey'e nasip olmuştur.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "İznik ve Bursa'nın fethi Osman Bey'e nasip olmuştur.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -25251,18 +25251,18 @@ new Question
 {
     Note = notOsmanBeyDonemiIlkler,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Osman Bey dönemi ilkleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Osman Bey, vasiyeti gereği Gümüşlü Kümbet'e defnedilmiştir; bu yapı İznik'te değil Bursa'dadır.",
     OrderIndex = 32,
     Choices =
     {
-        new Choice { Text = "Bilecik'in alınmasıyla demir madeni işlenerek silah yapılmıştır.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "İlk para bu dönemde bastırılmıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Konur Alp ve Samsa Çavuş gibi kişilere tımar dağıtılmıştır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Osman Bey, oğlu Orhan Bey tarafından defnedilmiştir.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Bilecik'in alınmasıyla demir madeni işlenerek silah yapılmıştır.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "İlk para bu dönemde bastırılmıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Konur Alp ve Samsa Çavuş gibi kişilere tımar dağıtılmıştır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Osman Bey, oğlu Orhan Bey tarafından defnedilmiştir.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Osman Bey, İznik'teki Gümüşlü Kümbet'e defnedilmiştir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Osman Bey, İznik'teki Gümüşlü Kümbet'e defnedilmiştir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -25310,18 +25310,18 @@ new Question
 {
     Note = notOrhanBeyBursaIznik,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Bursa ve İznik'in başkent olma sırasıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Kronolojik olarak önce İznik (1331) başkent yapılmış, Bursa'nın imarı tamamlandıktan sonra başkentlik Bursa'ya geçmiştir; 'Bursa ilk başkenttir' ifadesi yanlıştır.",
     OrderIndex = 35,
     Choices =
     {
-        new Choice { Text = "Bursa 1326'da fethedilmiştir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "İznik 1331'de fethedilmiş ve hemen başkent yapılmıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "1337'de İzmit alınmıştır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "1337 yılı Avrupa'da Yüzyıl Savaşları'nın başlangıcına denk gelir.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Bursa 1326'da fethedilmiştir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "İznik 1331'de fethedilmiş ve hemen başkent yapılmıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "1337'de İzmit alınmıştır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "1337 yılı Avrupa'da Yüzyıl Savaşları'nın başlangıcına denk gelir.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Bursa, İznik'ten önce başkent yapılan ilk şehirdir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Bursa, İznik'ten önce başkent yapılan ilk şehirdir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -25370,18 +25370,18 @@ new Question
 {
     Note = notOrhanBeyPelekanonCimpeKale,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Çimpe Kalesi ve Halil olayı ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Halil, Theodora'dan doğmuştur; Gelibolu Fatihi Süleyman Paşa ise Nilüfer Hatun'dan doğmuştur, ikisi farklı kişilerdir.",
     OrderIndex = 38,
     Choices =
     {
-        new Choice { Text = "Çimpe Kalesi 1353'te Osmanlı'nın eline geçmiştir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Halil, Foçalı korsanlar tarafından kaçırılmıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Halil 4 yıl sonra fidye ile geri alınmıştır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Orhan Bey, Kantakuzenos'un kızı Theodora ile evlenmiştir.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Çimpe Kalesi 1353'te Osmanlı'nın eline geçmiştir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Halil, Foçalı korsanlar tarafından kaçırılmıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Halil 4 yıl sonra fidye ile geri alınmıştır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Orhan Bey, Kantakuzenos'un kızı Theodora ile evlenmiştir.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Halil ile Gelibolu Fatihi Süleyman Paşa aynı kişidir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Halil ile Gelibolu Fatihi Süleyman Paşa aynı kişidir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -25429,18 +25429,18 @@ new Question
 {
     Note = notOrhanBeyDonemiIlkler,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Orhan Bey dönemi ilkleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "İlk vezir Alaeddin Paşa, Orhan Bey'in ağabeyidir, oğlu değildir.",
     OrderIndex = 41,
     Choices =
     {
-        new Choice { Text = "İlk cami, İznik'teki Hacı Özbek Camisi'dir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "İlk saray, Bursa Bey Sarayı'dır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "İlk ordu, Yaya ve Müsellem ordusudur.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "İlk divan, Divan-ı Hümayun'dur.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "İlk cami, İznik'teki Hacı Özbek Camisi'dir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "İlk saray, Bursa Bey Sarayı'dır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "İlk ordu, Yaya ve Müsellem ordusudur.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "İlk divan, Divan-ı Hümayun'dur.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "İlk vezir Alaeddin Paşa, Orhan Bey'in oğludur.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "İlk vezir Alaeddin Paşa, Orhan Bey'in oğludur.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -25469,18 +25469,18 @@ new Question
 {
     Note = notOrhanBeyRumeliFetihleri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Orhan Bey dönemi Rumeli fetihleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Bu dönemde İstanbul kuşatılmamıştır; yalnızca çevresi ele geçirilerek şehir git gide çevrelenmiştir.",
     OrderIndex = 43,
     Choices =
     {
-        new Choice { Text = "1345'te Karesioğulları toprakları Osmanlı'ya katılmıştır.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "1353'te Çimpe Kalesi Osmanlı'nın eline geçmiştir.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "1357'de Çorlu, Tekirdağ ve Malkara fethedilmiştir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Bu fetihler İstanbul'un çevrelenmesini sağlamıştır.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "1345'te Karesioğulları toprakları Osmanlı'ya katılmıştır.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "1353'te Çimpe Kalesi Osmanlı'nın eline geçmiştir.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "1357'de Çorlu, Tekirdağ ve Malkara fethedilmiştir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Bu fetihler İstanbul'un çevrelenmesini sağlamıştır.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Bu dönemde İstanbul doğrudan kuşatılmıştır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Bu dönemde İstanbul doğrudan kuşatılmıştır.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -25527,18 +25527,18 @@ new Question
 {
     Note = notBiriciMuratHudavendigarBeylikler,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "I. Murat dönemi beylik ilişkileriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Hamitoğulları toprakları parayla (80.000 altın karşılığında) satın alınmıştır; çeyiz yoluyla alınan beylik Germiyanoğulları'dır.",
     OrderIndex = 46,
     Choices =
     {
-        new Choice { Text = "Germiyanoğulları toprakları çeyiz yoluyla alınmıştır.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Devlet Hatun, Yıldırım Bayezid ile evlenmiştir.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Edirne, Bizans'ın üç büyük merkezinden biridir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "I. Murat'ın lakabı Hüdavendigar'dır.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Germiyanoğulları toprakları çeyiz yoluyla alınmıştır.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Devlet Hatun, Yıldırım Bayezid ile evlenmiştir.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Edirne, Bizans'ın üç büyük merkezinden biridir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "I. Murat'ın lakabı Hüdavendigar'dır.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Hamitoğulları toprakları çeyiz yoluyla alınmıştır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Hamitoğulları toprakları çeyiz yoluyla alınmıştır.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -25585,18 +25585,18 @@ new Question
 {
     Note = notBiriciMuratSirpSindigiCirmen,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Sırp Sındığı ve Çirmen savaşlarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Sırp Sındığı Savaşı'nı Hacı İlbey, Çirmen Savaşı'nı ise Lala Şahin Paşa yönetmiştir; komutanlar birbirine karıştırılmamalıdır.",
     OrderIndex = 49,
     Choices =
     {
-        new Choice { Text = "Sırp Sındığı Savaşı 1364'te gerçekleşmiştir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Çirmen Savaşı 1371'de gerçekleşmiştir.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "1387'de Ploşnik'te Osmanlı öncü birlikleri bozguna uğramıştır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Her iki savaş da Meriç Nehri çevresinde gerçekleşmiştir.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Sırp Sındığı Savaşı 1364'te gerçekleşmiştir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Çirmen Savaşı 1371'de gerçekleşmiştir.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "1387'de Ploşnik'te Osmanlı öncü birlikleri bozguna uğramıştır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Her iki savaş da Meriç Nehri çevresinde gerçekleşmiştir.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Sırp Sındığı Savaşı'nı da Çirmen Savaşı'nı da Lala Şahin Paşa yönetmiştir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Sırp Sındığı Savaşı'nı da Çirmen Savaşı'nı da Lala Şahin Paşa yönetmiştir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -25643,18 +25643,18 @@ new Question
 {
     Note = notBiriciMuratKosovaSavasi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "I. Murat'ın şehadeti ve sonrası ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "I. Murat'ın şehadetinin ardından tahta Yakup Çelebi değil Yıldırım Bayezid çıkmıştır; Yakup Çelebi ise boğdurularak öldürülmüştür.",
     OrderIndex = 52,
     Choices =
     {
-        new Choice { Text = "I. Murat, Miloš Obilić tarafından şehit edilmiştir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Yakup Çelebi, yay kirişiyle boğdurularak öldürülmüştür.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "I. Murat'ın şehadetinden sonra Yıldırım Bayezid tahta çıkmıştır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "I. Kosova Savaşı'nda ilk defa top kullanılmıştır.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "I. Murat, Miloš Obilić tarafından şehit edilmiştir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Yakup Çelebi, yay kirişiyle boğdurularak öldürülmüştür.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "I. Murat'ın şehadetinden sonra Yıldırım Bayezid tahta çıkmıştır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "I. Kosova Savaşı'nda ilk defa top kullanılmıştır.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "I. Murat'ın şehadetinden sonra Yakup Çelebi tahta çıkmıştır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "I. Murat'ın şehadetinden sonra Yakup Çelebi tahta çıkmıştır.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -25702,18 +25702,18 @@ new Question
 {
     Note = notBiriciMuratKurumsalGelismeler,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "I. Murat dönemi kurumsal gelişmeleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Pençik sistemi Çandarlı Kara Halil Hayreddin Paşa ve Molla Rüstem'in teşvikiyle kurulmuştur, tek başına Lala Şahin Paşa tarafından değil.",
     OrderIndex = 55,
     Choices =
     {
-        new Choice { Text = "Veraset anlayışı 'hükümdar ve oğullarına aittir' şeklinde değişmiştir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Manastır merkezli Rumeli Beylerbeyliği kurulmuştur.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Kapıkulu Ocağı'na bağlı Yeniçeri ve Topçu ocakları kurulmuştur.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Sistemli şekilde tımar ve iskan uygulamaları yapılmıştır.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Veraset anlayışı 'hükümdar ve oğullarına aittir' şeklinde değişmiştir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Manastır merkezli Rumeli Beylerbeyliği kurulmuştur.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Kapıkulu Ocağı'na bağlı Yeniçeri ve Topçu ocakları kurulmuştur.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Sistemli şekilde tımar ve iskan uygulamaları yapılmıştır.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Pençik sistemi yalnızca Lala Şahin Paşa tarafından kurulmuştur.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Pençik sistemi yalnızca Lala Şahin Paşa tarafından kurulmuştur.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -25741,18 +25741,18 @@ new Question
 {
     Note = notBiriciMuratSavciBeyIsyani,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Savcı Bey İsyanı ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Savcı Bey, isyanının bastırılmasının ardından idam edilmiştir; IV. Andronikos'a uygulanan yalancı körlük cezası Savcı Bey'e değil Bizans şehzadesine uygulanmıştır.",
     OrderIndex = 57,
     Choices =
     {
-        new Choice { Text = "Savcı Bey, IV. Andronikos ile anlaşarak isyan etmiştir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "İsyancı kendi adına para bastırmıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Bu isyan Osmanlı'da ilk kapsamlı ve sistemli şehzade isyanıdır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "İsyan I. Murat döneminde gerçekleşmiştir.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Savcı Bey, IV. Andronikos ile anlaşarak isyan etmiştir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "İsyancı kendi adına para bastırmıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Bu isyan Osmanlı'da ilk kapsamlı ve sistemli şehzade isyanıdır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "İsyan I. Murat döneminde gerçekleşmiştir.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Savcı Bey'e yalancı körlük cezası uygulanmıştır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Savcı Bey'e yalancı körlük cezası uygulanmıştır.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -25799,18 +25799,18 @@ new Question
 {
     Note = notYildirimBeyazitFrenkYazisiIstanbulKusatma,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Yıldırım Bayezid'in İstanbul kuşatmalarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "İstanbul dört kez kuşatılmış olsa da hiçbirinde alınamamıştır; 'İstanbul bu kuşatmalardan biriyle alınmıştır' ifadesi yanlıştır.",
     OrderIndex = 60,
     Choices =
     {
-        new Choice { Text = "İstanbul, 1391-1401 arasında dört kez kuşatılmıştır.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Kuşatmaya yardımcı olmak için Anadolu Hisarı yaptırılmıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Karamanoğulları'nın isyanları kuşatmaların yarıda kesilmesine neden olmuştur.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "1401'de Timur'un Sivas'ı işgali kuşatmanın kaldırılmasına neden olmuştur.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "İstanbul, 1391-1401 arasında dört kez kuşatılmıştır.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Kuşatmaya yardımcı olmak için Anadolu Hisarı yaptırılmıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Karamanoğulları'nın isyanları kuşatmaların yarıda kesilmesine neden olmuştur.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "1401'de Timur'un Sivas'ı işgali kuşatmanın kaldırılmasına neden olmuştur.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "İstanbul, bu dört kuşatmadan biri sonucunda fethedilmiştir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "İstanbul, bu dört kuşatmadan biri sonucunda fethedilmiştir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -25857,18 +25857,18 @@ new Question
 {
     Note = notYildirimSultaniIklimiRum,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Niğbolu Savaşı ve Sultan-ı İklim-i Rum unvanıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Halifelik yetkisini kendi üzerine alan hükümdar Yavuz Sultan Selim'dir; Yıldırım Bayezid döneminde halifelik hâlâ Memlüklerdeydi ve halife ile sultan ayrı kişilerdi.",
     OrderIndex = 63,
     Choices =
     {
-        new Choice { Text = "Niğbolu Savaşı'nda Macar Kralı Sigismund yenilmiştir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Tuna Nehri üzerindeki Niğbolu Kalesi kuşatılmıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Sultan-ı İklim-i Rum, Anadolu memleketlerinin sultanı anlamına gelir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Bu unvan Yıldırım Bayezid'in isteği üzerine verilmiştir.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Niğbolu Savaşı'nda Macar Kralı Sigismund yenilmiştir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Tuna Nehri üzerindeki Niğbolu Kalesi kuşatılmıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Sultan-ı İklim-i Rum, Anadolu memleketlerinin sultanı anlamına gelir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Bu unvan Yıldırım Bayezid'in isteği üzerine verilmiştir.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Yıldırım Bayezid, bu dönemde halifelik yetkisini de üzerine almıştır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Yıldırım Bayezid, bu dönemde halifelik yetkisini de üzerine almıştır.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -25916,18 +25916,18 @@ new Question
 {
     Note = notAnkaraSavasiNedenleri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Ankara Savaşı'nın nedenleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Ankara Savaşı Haçlılarla değil Timur ile yapılmıştır; 'Haçlı ittifakının kışkırtmasıyla başlamıştır' ifadesi yanlıştır.",
     OrderIndex = 66,
     Choices =
     {
-        new Choice { Text = "Akkoyunlular Timur'u Anadolu'ya doğru kışkırtmıştır.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Timur, Sivas'ı işgal ederek büyük bir katliam yapmıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "İkisi de Türk-İslam dünyasının tek lideri olmak istemiştir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Yıldırım Bayezid, sığınan beylere amanname vermiştir.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Akkoyunlular Timur'u Anadolu'ya doğru kışkırtmıştır.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Timur, Sivas'ı işgal ederek büyük bir katliam yapmıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "İkisi de Türk-İslam dünyasının tek lideri olmak istemiştir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yıldırım Bayezid, sığınan beylere amanname vermiştir.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Savaş, bir Haçlı ittifakının kışkırtmasıyla başlamıştır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Savaş, bir Haçlı ittifakının kışkırtmasıyla başlamıştır.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -25975,18 +25975,18 @@ new Question
 {
     Note = notAnkaraSavasiSonuclariVeFetret,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Ankara Savaşı sonrası dönemle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Karesioğulları, beylik ailesinin tüm bireyleri ortadan kalktığı için tekrar kurulamamıştır; diğer beyliklerden farklı olarak istisnadır.",
     OrderIndex = 69,
     Choices =
     {
-        new Choice { Text = "Timur, son verilen beyliklerin çoğunun topraklarını eski beylere geri vermiştir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Fetret Devri 1402-1413 yılları arasında yaşanmıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Fetret Devri'nde Balkanlarda büyük bir toprak kaybı yaşanmamıştır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Bu durumun nedeni istimalet ve iskan politikalarının etkisidir.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Timur, son verilen beyliklerin çoğunun topraklarını eski beylere geri vermiştir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Fetret Devri 1402-1413 yılları arasında yaşanmıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Fetret Devri'nde Balkanlarda büyük bir toprak kaybı yaşanmamıştır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Bu durumun nedeni istimalet ve iskan politikalarının etkisidir.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Karesioğulları da diğer beylikler gibi tekrar kurulmuştur.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Karesioğulları da diğer beylikler gibi tekrar kurulmuştur.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -26033,18 +26033,18 @@ new Question
 {
     Note = notCelebiMehmetDuzmeceMustafaBedrettin,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Çelebi Mehmet dönemiyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Düzmece Mustafa, ilk isyanında yakalanamamış, Bizans'a sığınmış ve ikinci kez II. Murat döneminde isyan ederek yakalanmıştır; 'Çelebi Mehmet döneminde yakalanıp idam edildi' ifadesi yanlıştır.",
     OrderIndex = 72,
     Choices =
     {
-        new Choice { Text = "Şeyh Bedrettin'in müritleri arasında Börklüce Mustafa ve Torlak Kemal vardır.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Venedik ile ilk deniz savaşı bu dönemde yapılmıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Çalı Bey, Venedik ile yapılan deniz savaşında şehit olmuştur.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Düzmece Mustafa, ilk isyanının ardından Bizans'a sığınmıştır.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Şeyh Bedrettin'in müritleri arasında Börklüce Mustafa ve Torlak Kemal vardır.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Venedik ile ilk deniz savaşı bu dönemde yapılmıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Çalı Bey, Venedik ile yapılan deniz savaşında şehit olmuştur.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Düzmece Mustafa, ilk isyanının ardından Bizans'a sığınmıştır.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Düzmece Mustafa, Çelebi Mehmet döneminde yakalanarak idam edilmiştir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Düzmece Mustafa, Çelebi Mehmet döneminde yakalanarak idam edilmiştir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -26091,18 +26091,18 @@ new Question
 {
     Note = notIkinciMuratEdirneSegedin,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "II. Murat dönemi ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "II. Murat'ın lakabı Ebu'l-Hayrat'tır; 'Sofu' unvanı ise II. Bayezid'e aittir.",
     OrderIndex = 75,
     Choices =
     {
-        new Choice { Text = "II. Murat döneminde Aydınoğulları Beyliği'ne son verilmiştir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Mezid Bey, Macarlarla mücadelede önemli bir akıncı beydir.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "1437-1444 arasında Hünyadi Yanoş ile mücadele edilmiştir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "II. Murat'ın lakabı Ebu'l-Hayrat'tır.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "II. Murat döneminde Aydınoğulları Beyliği'ne son verilmiştir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Mezid Bey, Macarlarla mücadelede önemli bir akıncı beydir.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "1437-1444 arasında Hünyadi Yanoş ile mücadele edilmiştir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "II. Murat'ın lakabı Ebu'l-Hayrat'tır.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "II. Murat'ın lakabı Sofu'dur.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "II. Murat'ın lakabı Sofu'dur.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -26150,18 +26150,18 @@ new Question
 {
     Note = notIkinciMuratVarnaKosova,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Varna ve II. Kosova savaşlarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "1683 II. Viyana Kuşatması'na kadar (235 yıl boyunca) Osmanlı üzerine Haçlı ittifakı kurulamamıştır; 'hemen ardından yeni bir ittifak kurulmuştur' ifadesi yanlıştır.",
     OrderIndex = 78,
     Choices =
     {
-        new Choice { Text = "Varna Savaşı 1444'te, II. Kosova Savaşı 1448'de gerçekleşmiştir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "II. Kosova Savaşı'nın sonucu Miryokefalon Savaşı'na benzetilir.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Avrupalılar bu savaşlardan sonra savunma durumuna geçmiştir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Osmanlı Devleti bu savaşlardan sonra taarruza geçmiştir.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Varna Savaşı 1444'te, II. Kosova Savaşı 1448'de gerçekleşmiştir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "II. Kosova Savaşı'nın sonucu Miryokefalon Savaşı'na benzetilir.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Avrupalılar bu savaşlardan sonra savunma durumuna geçmiştir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Osmanlı Devleti bu savaşlardan sonra taarruza geçmiştir.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "II. Kosova Savaşı'ndan hemen sonra Osmanlı üzerine yeni bir Haçlı ittifakı kurulmuştur.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "II. Kosova Savaşı'ndan hemen sonra Osmanlı üzerine yeni bir Haçlı ittifakı kurulmuştur.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -26170,18 +26170,18 @@ new Question
 {
     Note = notHacliSavaslariKronolojisi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Aşağıdakilerden hangisi Osmanlı Devleti ile Haçlılar arasında yapılan savaşlardan biri değildir?",
     Explanation = "Ankara Savaşı, Haçlılarla değil Timur ile yapılmıştır; bu nedenle Osmanlı-Haçlı savaşları arasında sayılmaz.",
     OrderIndex = 79,
     Choices =
     {
-        new Choice { Text = "Ankara Savaşı", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Ankara Savaşı", IsCorrect = true, OrderIndex = 1 },
 
-        new Choice { Text = "Sırp Sındığı Savaşı", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "I. Kosova Savaşı", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Niğbolu Savaşı", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Varna Savaşı", IsCorrect = true, OrderIndex = 5 },
+        new Choice { Text = "Sırp Sındığı Savaşı", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "I. Kosova Savaşı", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Niğbolu Savaşı", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Varna Savaşı", IsCorrect = false, OrderIndex = 5 },
     }
 },
 
@@ -26209,18 +26209,18 @@ new Question
 {
     Note = notHacliSavaslariKronolojisi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Osmanlı-Haçlı savaşları kronolojisiyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Koyunhisar (1302) ve Pelekanon (1329) savaşları Bizans'a karşı yapılmış doğrudan Osmanlı-Bizans savaşlarıdır; Haçlı savaşları kronolojisine dahil değildir.",
     OrderIndex = 81,
     Choices =
     {
-        new Choice { Text = "Sırp Sındığı Savaşı'nda karşı taraf lideri Macar Kralı Layoş'tur.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "I. Kosova Savaşı'nda karşı taraf lideri Sırp Kralı Lazar'dır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Niğbolu Savaşı'nda karşı taraf lideri Macar Kralı Sigismund'dur.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Varna ve II. Kosova savaşlarında Hünyadi Yanoş yer almıştır.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Sırp Sındığı Savaşı'nda karşı taraf lideri Macar Kralı Layoş'tur.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "I. Kosova Savaşı'nda karşı taraf lideri Sırp Kralı Lazar'dır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Niğbolu Savaşı'nda karşı taraf lideri Macar Kralı Sigismund'dur.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Varna ve II. Kosova savaşlarında Hünyadi Yanoş yer almıştır.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Koyunhisar ve Pelekanon savaşları bu Haçlı savaşları kronolojisine dahildir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Koyunhisar ve Pelekanon savaşları bu Haçlı savaşları kronolojisine dahildir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -26787,18 +26787,18 @@ new Question
 {
     Note = notFatihKisiligiVeUnvanlar,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Fatih Sultan Mehmet'in unvanlarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "'Grand Türk' lakabını Fatih'e Venedikliler takmıştır; bu unvanı Fatih kendisi istememiştir, tersine Yıldırım Bayezid Sultan-ı İklim-i Rum unvanını kendisi istemiştir.",
     OrderIndex = 3,
     Choices =
     {
-        new Choice { Text = "Sultanü'l-Bahreyn ve Hakanü'l-Berreyn unvanını almıştır.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Ebu'l-Feth unvanını almıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Venedikliler ona 'Grand Türk' lakabını takmıştır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Kayzer-i Rum unvanı Roma krallarına özgü bir unvandır.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Sultanü'l-Bahreyn ve Hakanü'l-Berreyn unvanını almıştır.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Ebu'l-Feth unvanını almıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Venedikliler ona 'Grand Türk' lakabını takmıştır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Kayzer-i Rum unvanı Roma krallarına özgü bir unvandır.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "'Grand Türk' unvanını Fatih kendisi halifeden istemiştir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "'Grand Türk' unvanını Fatih kendisi halifeden istemiştir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -26848,18 +26848,18 @@ new Question
 {
     Note = notIstanbulunFethiNedenleri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "İstanbul'un fethinin nedenleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "İstanbul'un fethinin dini nedeni Hazreti Muhammed'in hadisidir; Papa'nın daveti bu fethin bir nedeni değildir, tam tersine Bizans Papa'dan Osmanlı'ya karşı yardım istemiştir.",
     OrderIndex = 6,
     Choices =
     {
-        new Choice { Text = "Bizans, Anadolu beylikleriyle işbirliği içinde olmuştur.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Bizans, Haçlı Seferleri düzenlenmesine neden olmuştur.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Hazreti Muhammed'in hadisi dini bir neden oluşturmuştur.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "İstanbul'un bilim ve kültür merkezi olması bir neden olmuştur.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Bizans, Anadolu beylikleriyle işbirliği içinde olmuştur.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Bizans, Haçlı Seferleri düzenlenmesine neden olmuştur.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Hazreti Muhammed'in hadisi dini bir neden oluşturmuştur.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "İstanbul'un bilim ve kültür merkezi olması bir neden olmuştur.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Papa'nın Osmanlı'yı İstanbul'u fethetmeye davet etmesi bir nedendir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Papa'nın Osmanlı'yı İstanbul'u fethetmeye davet etmesi bir nedendir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -26906,18 +26906,18 @@ new Question
 {
     Note = notFetihHazirliklariVeOnlemler,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "İstanbul'un fethi için yapılan hazırlıklarla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Şahi topunun projesini bizzat Fatih Sultan Mehmet çizmiştir; Macar Urban yalnızca dökümünü gerçekleştirmiştir.",
     OrderIndex = 9,
     Choices =
     {
-        new Choice { Text = "400 parçalık bir donanma hazırlanmıştır.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Anadolu beylikleriyle saldırmazlık anlaşmaları yapılmıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Rumeli Hisarı'nın karşısında Anadolu Hisarı bulunmaktadır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Şahnişin adı verilen hareketli kuleler inşa edilmiştir.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "400 parçalık bir donanma hazırlanmıştır.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Anadolu beylikleriyle saldırmazlık anlaşmaları yapılmıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Rumeli Hisarı'nın karşısında Anadolu Hisarı bulunmaktadır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Şahnişin adı verilen hareketli kuleler inşa edilmiştir.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Şahi topunun projesini Macar Urban çizmiştir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Şahi topunun projesini Macar Urban çizmiştir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -26967,18 +26967,18 @@ new Question
 {
     Note = notBizansinAldigiOnlemler,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Bizans'ın aldığı önlemlerle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Fatih, Haliç'e çekilen zinciri kırmak yerine gemileri karadan yürüterek zincirin arkasına geçirmiştir; 'zinciri doğrudan kırarak geçmiştir' ifadesi yanlıştır.",
     OrderIndex = 12,
     Choices =
     {
-        new Choice { Text = "Grejuva, deniz üzerinde yanabilen bir maddedir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Bizans, Katolik dünyasından yardım istemiştir.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Grandük Notaras, Osmanlı sarığını Katolik külahına tercih etmiştir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Bizans halkı silahlandırılmıştır.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Grejuva, deniz üzerinde yanabilen bir maddedir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Bizans, Katolik dünyasından yardım istemiştir.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Grandük Notaras, Osmanlı sarığını Katolik külahına tercih etmiştir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Bizans halkı silahlandırılmıştır.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Fatih, Haliç'teki zinciri doğrudan kırarak geçmiştir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Fatih, Haliç'teki zinciri doğrudan kırarak geçmiştir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -27028,18 +27028,18 @@ new Question
 {
     Note = notFetihSonuclariGenel,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "İstanbul'un fethinin sonuçlarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Fatih Sultan Mehmet, Ortodokslara din ve mezhep özgürlüğü tanımıştır; 'Ortodoksluk tamamen yasaklanmıştır' ifadesi yanlıştır.",
     OrderIndex = 15,
     Choices =
     {
-        new Choice { Text = "Genadios Rum patriği olarak atanmıştır.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "II. Mehmet'e 'Fatih' unvanı verilmiştir.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Orta Çağ kapanmış, Yeni Çağ başlamıştır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Fatih, Kayzer-i Rum unvanını almıştır.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Genadios Rum patriği olarak atanmıştır.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "II. Mehmet'e 'Fatih' unvanı verilmiştir.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Orta Çağ kapanmış, Yeni Çağ başlamıştır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Fatih, Kayzer-i Rum unvanını almıştır.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Fetihten sonra Ortodoksluk tamamen yasaklanmıştır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Fetihten sonra Ortodoksluk tamamen yasaklanmıştır.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -27086,18 +27086,18 @@ new Question
 {
     Note = notFetihSonuclariAvrupaEtkisi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "İstanbul'un fethinin Avrupa'ya etkileriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Fatih Sultan Mehmet, Bizanslı bilim insanlarının seyahat özgürlüğüne müdahale etmemiş, kalmalarını istemiş ama zorlamamıştır; 'bilim insanlarını zorla alıkoymuştur' ifadesi yanlıştır.",
     OrderIndex = 18,
     Choices =
     {
-        new Choice { Text = "Rönesans'ın başlamasında kaçan bilim insanları etkili olmuştur.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Feodalite, şahi toplarının etkisiyle zayıflamıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Boğazların ele geçirilmesi yeni ticaret yolları arayışına yol açmıştır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Bu süreç Coğrafi Keşiflere zemin hazırlamıştır.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Rönesans'ın başlamasında kaçan bilim insanları etkili olmuştur.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Feodalite, şahi toplarının etkisiyle zayıflamıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Boğazların ele geçirilmesi yeni ticaret yolları arayışına yol açmıştır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Bu süreç Coğrafi Keşiflere zemin hazırlamıştır.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Fatih Sultan Mehmet, bilim insanlarını zorla alıkoymuştur.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Fatih Sultan Mehmet, bilim insanlarını zorla alıkoymuştur.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -27125,18 +27125,18 @@ new Question
 {
     Note = notCandarliIdami,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Çandarlı Halil Paşa'nın idamıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Çandarlı'nın malları, oğluna II. Bayezid döneminde geri verilmiştir; 'mallar hiçbir zaman geri verilmemiştir' ifadesi yanlıştır.",
     OrderIndex = 20,
     Choices =
     {
-        new Choice { Text = "Çandarlı, fetihten kısa süre sonra hapsedilmiştir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Bu olay, Osmanlı'da ilk sadrazam idamıdır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Molla Gürani ve Akşemseddin fetih taraftarıydı.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Çandarlı, İstanbul'un fethedilmesine karşı çıkmıştır.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Çandarlı, fetihten kısa süre sonra hapsedilmiştir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Bu olay, Osmanlı'da ilk sadrazam idamıdır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Molla Gürani ve Akşemseddin fetih taraftarıydı.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Çandarlı, İstanbul'un fethedilmesine karşı çıkmıştır.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Çandarlı'nın malları hiçbir zaman ailesine geri verilmemiştir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Çandarlı'nın malları hiçbir zaman ailesine geri verilmemiştir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -27185,18 +27185,18 @@ new Question
 {
     Note = notFatihinAnadoluFetihleri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Fatih'in Anadolu fetihleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Karamanoğulları, Fatih döneminde tamamen ortadan kaldırılmamış, Silifke merkezli olarak II. Bayezid dönemine kadar varlığını sürdürmüştür.",
     OrderIndex = 23,
     Choices =
     {
-        new Choice { Text = "Trabzon Rum İmparatorluğu'nun alınmasıyla Bizans'ın dirilme umudu sona ermiştir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Candaroğulları'nın diğer adı İsfendiyaroğulları'dır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Amasra, Cenevizlilerden alınmıştır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Doğu Anadolu, Akkoyunlularla yapılan mücadele sonucu alınmıştır.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Trabzon Rum İmparatorluğu'nun alınmasıyla Bizans'ın dirilme umudu sona ermiştir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Candaroğulları'nın diğer adı İsfendiyaroğulları'dır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Amasra, Cenevizlilerden alınmıştır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Doğu Anadolu, Akkoyunlularla yapılan mücadele sonucu alınmıştır.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Karamanoğulları, Fatih döneminde tamamen ortadan kaldırılmıştır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Karamanoğulları, Fatih döneminde tamamen ortadan kaldırılmıştır.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -27244,18 +27244,18 @@ new Question
 {
     Note = notFatihinBalkanFetihleri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Fatih Sultan Mehmet'in Balkan ve deniz fetihleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Eflak ve Boğdan'ın ortak adı Memleketeyn'dir; bu iki bölge sırasıyla bugünkü Romanya ve Moldova'ya karşılık gelir.",
     OrderIndex = 26,
     Choices =
     {
-        new Choice { Text = "Arnavutluk'ta İskender Bey'e karşı büyük mücadele verilmiştir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Ege Adaları'ndan Bozcaada ve Gökçeada alınmıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Otranto Limanı fethedilmiş, ancak sonra kaybedilmiştir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Sırbistan alınmış, ancak Belgrad alınamamıştır.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Arnavutluk'ta İskender Bey'e karşı büyük mücadele verilmiştir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Ege Adaları'ndan Bozcaada ve Gökçeada alınmıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Otranto Limanı fethedilmiş, ancak sonra kaybedilmiştir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Sırbistan alınmış, ancak Belgrad alınamamıştır.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Eflak ve Boğdan'ın ortak adı Evlad-ı Fatihan'dır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Eflak ve Boğdan'ın ortak adı Evlad-ı Fatihan'dır.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -27302,18 +27302,18 @@ new Question
 {
     Note = notFatihinKirimVeAkkoyunlu,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Kırım'ın alınması ve Otlukbeli Savaşı ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Fatih döneminde Memlüklerle Hicaz su yolları nedeniyle gerginlik olsa da doğrudan bir savaş yaşanmamıştır; bu durum Otlukbeli Savaşı ile karıştırılmamalıdır.",
     OrderIndex = 29,
     Choices =
     {
-        new Choice { Text = "Kırım'ın alınması Karadeniz'i bir Türk gölü haline getirmiştir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Uzun Hasan'a 'Küçük Türk' denilmiştir.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Otlukbeli Savaşı sonrası Doğu Anadolu'nun büyük bölümü Osmanlı'ya geçmiştir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Akdeniz'in Türk gölü haline gelmesi Kanuni dönemine aittir.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Kırım'ın alınması Karadeniz'i bir Türk gölü haline getirmiştir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Uzun Hasan'a 'Küçük Türk' denilmiştir.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Otlukbeli Savaşı sonrası Doğu Anadolu'nun büyük bölümü Osmanlı'ya geçmiştir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Akdeniz'in Türk gölü haline gelmesi Kanuni dönemine aittir.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Fatih Sultan Mehmet döneminde Memlüklerle doğrudan bir savaş yaşanmıştır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Fatih Sultan Mehmet döneminde Memlüklerle doğrudan bir savaş yaşanmıştır.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -27360,18 +27360,18 @@ new Question
 {
     Note = notAtsbVeAsbFarki,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "ATSB ve ASB kavramlarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "ATSB, Türk beyliklerinin ortadan kaldırılmasını ifade eder; Trabzon Rum İmparatorluğu Türk olmadığı için bu fetih ATSB'ye değil yalnızca ASB'ye örnektir.",
     OrderIndex = 32,
     Choices =
     {
-        new Choice { Text = "ASB, Anadolu topraklarının tek bir siyasi güç altında toplanmasını ifade eder.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "ATSB, Türk beyliklerinin tek bayrak altında toplanmasını ifade eder.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Kırım'ın alınması ne ATSB ne de ASB'ye örnektir (Anadolu dışındadır).", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Candaroğulları'ndan Sinop'un alınması hem ATSB hem ASB'dir.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "ASB, Anadolu topraklarının tek bir siyasi güç altında toplanmasını ifade eder.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "ATSB, Türk beyliklerinin tek bayrak altında toplanmasını ifade eder.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Kırım'ın alınması ne ATSB ne de ASB'ye örnektir (Anadolu dışındadır).", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Candaroğulları'ndan Sinop'un alınması hem ATSB hem ASB'dir.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Trabzon Rum İmparatorluğu'nun alınması ATSB'ye örnektir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Trabzon Rum İmparatorluğu'nun alınması ATSB'ye örnektir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -27421,18 +27421,18 @@ new Question
 {
     Note = notFatihDonemiKurumsalGelismeler,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Fatih dönemi kurumsal gelişmeleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Nişancı örfi hukukun temsilcisidir; kazasker ise şeri hukukun temsilcisidir. Bu ikisi birbirine karıştırılmamalıdır.",
     OrderIndex = 35,
     Choices =
     {
-        new Choice { Text = "Sahn-ı Seman medreseleri açılmıştır.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "'Sahn-ı Seman' sekiz bölüm anlamına gelir.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Kanunname-i Ali Osmani'de kardeş katli vacip hale getirilmiştir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "İlk defa iltizam sistemi uygulanmıştır.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Sahn-ı Seman medreseleri açılmıştır.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "'Sahn-ı Seman' sekiz bölüm anlamına gelir.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Kanunname-i Ali Osmani'de kardeş katli vacip hale getirilmiştir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "İlk defa iltizam sistemi uygulanmıştır.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Nişancı, şeri hukukun temsilcisidir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Nişancı, şeri hukukun temsilcisidir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -27479,18 +27479,18 @@ new Question
 {
     Note = notFatihDonemiDigerGelismeler,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Fatih dönemi kapitülasyonları ve diğer gelişmelerle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "İlk kapitülasyon 1352'de Orhan Bey döneminde Cenevizlilere verilmiştir; Fatih döneminde ise Venediklilere devam ettirilmiştir; 'ilk kapitülasyon Fatih döneminde verilmiştir' ifadesi yanlıştır.",
     OrderIndex = 38,
     Choices =
     {
-        new Choice { Text = "Hicaz su yolları sorunu Memlüklerle ilişkileri germiştir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Bu gerginlik savaşa yol açmamıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Venedik'e verilen kapitülasyonların amacı yalnızca ticari değildir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Gerçek anlamda ilk kapsamlı kapitülasyon Kanuni döneminde Fransa'ya verilmiştir.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Hicaz su yolları sorunu Memlüklerle ilişkileri germiştir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Bu gerginlik savaşa yol açmamıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Venedik'e verilen kapitülasyonların amacı yalnızca ticari değildir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Gerçek anlamda ilk kapsamlı kapitülasyon Kanuni döneminde Fransa'ya verilmiştir.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "İlk kapitülasyon Fatih Sultan Mehmet döneminde verilmiştir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "İlk kapitülasyon Fatih Sultan Mehmet döneminde verilmiştir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -27518,18 +27518,18 @@ new Question
 {
     Note = notFatihinOlumu,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Fatih Sultan Mehmet'in ölümüyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Fatih'in ölüm nedeni kesin olarak bilinmemektedir; 'kesin olarak zehirlendiği kanıtlanmıştır' ifadesi yanlıştır, bu yalnızca bir rivayettir.",
     OrderIndex = 40,
     Choices =
     {
-        new Choice { Text = "Venedikliler ölümü üzerine 'büyük kartal öldü' demiştir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Ölümünün ardından defin işlemi günler sürmüştür.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Ölümünden sonra Bayezid ile Cem Sultan arasında taht mücadelesi başlamıştır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Ölüm nedeni kesin olarak bilinmemektedir.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Venedikliler ölümü üzerine 'büyük kartal öldü' demiştir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Ölümünün ardından defin işlemi günler sürmüştür.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Ölümünden sonra Bayezid ile Cem Sultan arasında taht mücadelesi başlamıştır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Ölüm nedeni kesin olarak bilinmemektedir.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Fatih'in zehirlenerek öldürüldüğü kesin olarak kanıtlanmıştır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Fatih'in zehirlenerek öldürüldüğü kesin olarak kanıtlanmıştır.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -27576,18 +27576,18 @@ new Question
 {
     Note = notIkinciBayezidCemSultan,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Cem Sultan olayı ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Cem Sultan olayı bir iç sorun olarak başlamış, ancak zamanla Papa'nın elinde bir tehdit unsuruna dönüşerek uluslararası bir sorun haline gelmiştir; 'yalnızca iç bir sorun olarak kalmıştır' ifadesi yanlıştır.",
     OrderIndex = 43,
     Choices =
     {
-        new Choice { Text = "Cem Sultan, Osmanlı topraklarının ikiye bölünmesini teklif etmiştir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Bu olay nedeniyle II. Bayezid döneminde batıya seferlerde durgunluk yaşanmıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Cem Sultan, esaret altında yaşamış ve orada ölmüştür.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Savaşı II. Bayezid kazanmıştır.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Cem Sultan, Osmanlı topraklarının ikiye bölünmesini teklif etmiştir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Bu olay nedeniyle II. Bayezid döneminde batıya seferlerde durgunluk yaşanmıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Cem Sultan, esaret altında yaşamış ve orada ölmüştür.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Savaşı II. Bayezid kazanmıştır.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Cem Sultan olayı yalnızca bir iç sorun olarak kalmış, hiçbir zaman uluslararası boyut kazanmamıştır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Cem Sultan olayı yalnızca bir iç sorun olarak kalmış, hiçbir zaman uluslararası boyut kazanmamıştır.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -27637,18 +27637,18 @@ new Question
 {
     Note = notIkinciBayezidDigerOlaylar,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "II. Bayezid dönemi ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "II. Bayezid, tahttan zorla indirilen ilk Osmanlı padişahıdır; bunu gerçekleştiren oğlu Yavuz Sultan Selim'dir; 'tahtından hiç indirilmemiştir' ifadesi yanlıştır.",
     OrderIndex = 46,
     Choices =
     {
-        new Choice { Text = "Bu dönem, yükselme içinde bir duraklama dönemi olarak nitelendirilir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "1511'de Antalya'da Şahkulu İsyanı yaşanmıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "İhtisap Kanunu bu dönemde çıkarılmıştır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Memlüklerle yapılan savaştan kesin bir sonuç alınamamıştır.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Bu dönem, yükselme içinde bir duraklama dönemi olarak nitelendirilir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "1511'de Antalya'da Şahkulu İsyanı yaşanmıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "İhtisap Kanunu bu dönemde çıkarılmıştır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Memlüklerle yapılan savaştan kesin bir sonuç alınamamıştır.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "II. Bayezid, tahtından hiçbir zaman zorla indirilmemiştir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "II. Bayezid, tahtından hiçbir zaman zorla indirilmemiştir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -27695,18 +27695,18 @@ new Question
 {
     Note = notYavuzDoguSeferleriVeAtsb,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Yavuz Sultan Selim'in doğu siyasetiyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Ramazanoğulları, Dulkadiroğulları'na son verildiğinde hemen ortadan kaldırılmamıştır; bey Osmanlı'ya bağlılığını bildirdiği için beyliğin yaşamasına değil beyin yaşamasına izin verilmiş, aile tükenince topraklar Osmanlı'ya katılmıştır.",
     OrderIndex = 49,
     Choices =
     {
-        new Choice { Text = "Çaldıran Savaşı ile Şii tehlikesi bertaraf edilmiştir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Turnadağ Savaşı ile Dulkadiroğulları'na son verilmiştir.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Bozoklu Celal İsyanı Tokat'ta çıkmıştır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Safeviler, Şahkulu İsyanı'na destek vermiştir.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Çaldıran Savaşı ile Şii tehlikesi bertaraf edilmiştir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Turnadağ Savaşı ile Dulkadiroğulları'na son verilmiştir.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Bozoklu Celal İsyanı Tokat'ta çıkmıştır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Safeviler, Şahkulu İsyanı'na destek vermiştir.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Ramazanoğulları, Dulkadiroğulları'na son verilir verilmez hemen ortadan kaldırılmıştır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Ramazanoğulları, Dulkadiroğulları'na son verilir verilmez hemen ortadan kaldırılmıştır.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -27756,18 +27756,18 @@ new Question
 {
     Note = notYavuzMemluklerVeHilafet,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Yavuz'un Memlük seferleri ve hilafetin alınmasıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Memlüklerde halife ile sultan ayrı kişilerdi; Yavuz Sultan Selim halifeliği kendi üzerine alarak bu ayrımı sona erdirmiştir. 'Halifelik ve sultanlık Osmanlı'da da ayrı kişilerde kalmıştır' ifadesi yanlıştır.",
     OrderIndex = 52,
     Choices =
     {
-        new Choice { Text = "Mercidabık Savaşı ile Suriye ve Filistin Osmanlı'ya geçmiştir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Ridaniye Savaşı ile Memlükler Devleti yıkılmıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Ridaniye Savaşı sürerken Avrupa'da Reform hareketi başlamıştır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Halife Mütevekkil, halifeliği Yavuz Sultan Selim'e devretmiştir.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Mercidabık Savaşı ile Suriye ve Filistin Osmanlı'ya geçmiştir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Ridaniye Savaşı ile Memlükler Devleti yıkılmıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Ridaniye Savaşı sürerken Avrupa'da Reform hareketi başlamıştır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Halife Mütevekkil, halifeliği Yavuz Sultan Selim'e devretmiştir.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Halifelik ve sultanlık Osmanlı Devleti'nde de ayrı kişilerde kalmaya devam etmiştir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Halifelik ve sultanlık Osmanlı Devleti'nde de ayrı kişilerde kalmaya devam etmiştir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -27795,18 +27795,18 @@ new Question
 {
     Note = notYavuzUnvanVeVasiyet,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Yavuz Sultan Selim'in unvanı ve vasiyetiyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Kanuni dahil hiçbir Osmanlı padişahı Yavuz kadar hazineyi dolduramamıştır; 'Kanuni onu geçmiştir' ifadesi yanlıştır.",
     OrderIndex = 54,
     Choices =
     {
-        new Choice { Text = "Yavuz, 'Mekke ve Medine'nin sahibi' unvanını kabul etmemiştir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Yavuz, 1520'de şir-i pençe adı verilen bir hastalıktan vefat etmiştir.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Yavuz'un vasiyetinde hazine dolu tutulması istenmiştir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Hadimü'l-Haremeyn unvanı hizmetkârlık anlamı taşır.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Yavuz, 'Mekke ve Medine'nin sahibi' unvanını kabul etmemiştir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Yavuz, 1520'de şir-i pençe adı verilen bir hastalıktan vefat etmiştir.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Yavuz'un vasiyetinde hazine dolu tutulması istenmiştir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Hadimü'l-Haremeyn unvanı hizmetkârlık anlamı taşır.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Kanuni Sultan Süleyman, hazineyi Yavuz'dan daha fazla doldurmuştur.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Kanuni Sultan Süleyman, hazineyi Yavuz'dan daha fazla doldurmuştur.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -27853,18 +27853,18 @@ new Question
 {
     Note = notKanuniKisiligiVeMisirIsyanlari,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Kanuni'nin tahtının ilk yıllarındaki isyanlarla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Canberdi Gazali ve Ahmet Paşa isyanları Mısır'da; Baba Zünnun ve Kalender Çelebi isyanları ise farklı bölgelerde çıkmıştır; her ikisi de Kanuni'nin tahtının ilk yıllarına aittir.",
     OrderIndex = 57,
     Choices =
     {
-        new Choice { Text = "Canberdi Gazali isyanı Mısır'da çıkmıştır.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Kalender Çelebi isyanı Kanuni döneminde bastırılmıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Kanuni, 46 yıl tahtta kalmıştır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Kanuni'nin ünlü sözü Muhibbi imzasıyla yazılmıştır.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Canberdi Gazali isyanı Mısır'da çıkmıştır.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Kalender Çelebi isyanı Kanuni döneminde bastırılmıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Kanuni, 46 yıl tahtta kalmıştır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Kanuni'nin ünlü sözü Muhibbi imzasıyla yazılmıştır.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Bu isyanlar Kanuni'nin saltanatının son yıllarında çıkmıştır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Bu isyanlar Kanuni'nin saltanatının son yıllarında çıkmıştır.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -27911,18 +27911,18 @@ new Question
 {
     Note = notKanuniAvrupaFetihleri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Kanuni'nin Avrupa fetihleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Viyana, 1529'da kuşatılmış ancak alınamamıştır; 'Viyana bu kuşatmada fethedilmiştir' ifadesi yanlıştır.",
     OrderIndex = 60,
     Choices =
     {
-        new Choice { Text = "Belgrad 1521'de alınmıştır.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Rodos 1522'de Sen Jean Şövalyelerinden alınmıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Mohaç Meydan Muharebesi 1526'da kazanılmıştır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "1071 Malazgirt, 1526 Mohaç ve 1922 Büyük Taarruz'da Turan taktiği uygulanmıştır.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Belgrad 1521'de alınmıştır.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Rodos 1522'de Sen Jean Şövalyelerinden alınmıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Mohaç Meydan Muharebesi 1526'da kazanılmıştır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "1071 Malazgirt, 1526 Mohaç ve 1922 Büyük Taarruz'da Turan taktiği uygulanmıştır.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Viyana, 1529'daki kuşatmada fethedilmiştir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Viyana, 1529'daki kuşatmada fethedilmiştir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -27969,18 +27969,18 @@ new Question
 {
     Note = notKanuniIstanbulAntlasmasi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "İstanbul Antlaşması ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "İstanbul Antlaşması sonrasında sağlanan Orta Avrupa'daki siyasi üstünlük 1606 Zitvatorok Antlaşması'na kadar sürmüştür; 'hiçbir zaman sona ermemiştir' ifadesi yanlıştır.",
     OrderIndex = 63,
     Choices =
     {
-        new Choice { Text = "Antlaşma diğer adıyla İbrahim Paşa Antlaşması olarak da bilinir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Bu durum Orta Avrupa'nın siyasi üstünlüğünü Osmanlı'ya kazandırmıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Osmanlı-Fransa dostluğunun temelleri bu dönemde atılmıştır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Fransızca, Osmanlı'nın ilk yabancı resmi dili olmuştur.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Antlaşma diğer adıyla İbrahim Paşa Antlaşması olarak da bilinir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Bu durum Orta Avrupa'nın siyasi üstünlüğünü Osmanlı'ya kazandırmıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Osmanlı-Fransa dostluğunun temelleri bu dönemde atılmıştır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Fransızca, Osmanlı'nın ilk yabancı resmi dili olmuştur.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "İstanbul Antlaşması'nın sağladığı siyasi üstünlük hiçbir zaman sona ermemiştir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "İstanbul Antlaşması'nın sağladığı siyasi üstünlük hiçbir zaman sona ermemiştir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -28027,18 +28027,18 @@ new Question
 {
     Note = notBarbarosVeAkdeniz,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Barbaros Hayreddin Paşa ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Karadeniz'in Türk gölü olması Fatih dönemine (Kırım'ın alınması) aittir; Barbaros'un ilgili olduğu Preveze zaferi ise Akdeniz'i Türk gölü yapmıştır.",
     OrderIndex = 66,
     Choices =
     {
-        new Choice { Text = "1538'de Cezayir'i Osmanlı Devleti'ne katmıştır.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Kaptan-ı deryalık görevine getirilmiştir.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Kanuni döneminden itibaren divana üye olan ilk denizcidir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Preveze zaferi Donanma Günü olarak kutlanır.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "1538'de Cezayir'i Osmanlı Devleti'ne katmıştır.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Kaptan-ı deryalık görevine getirilmiştir.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Kanuni döneminden itibaren divana üye olan ilk denizcidir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Preveze zaferi Donanma Günü olarak kutlanır.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Barbaros, Karadeniz'i bir Türk gölü haline getirmiştir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Barbaros, Karadeniz'i bir Türk gölü haline getirmiştir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -28085,18 +28085,18 @@ new Question
 {
     Note = notKanuniHintDenizSeferleri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Hint deniz seferleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Seydi Ali Reis, Kitabü'l-Muhit'i Piri Reis'in idamından sonra bölgede kaybolmamak amacıyla yazmıştır; bu eseri yazan kişi Piri Reis değildir.",
     OrderIndex = 69,
     Choices =
     {
-        new Choice { Text = "Seferler 1538-1553 yılları arasında dört kez düzenlenmiştir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Gücerat Sultanlığı sonradan Portekizlilerden yana tavır almıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Piri Reis, bu seferler sonrasında idam edilmiştir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Kitabü'l-Muhit, bölgede kaybolmamak amacıyla yazılmıştır.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Seferler 1538-1553 yılları arasında dört kez düzenlenmiştir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Gücerat Sultanlığı sonradan Portekizlilerden yana tavır almıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Piri Reis, bu seferler sonrasında idam edilmiştir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Kitabü'l-Muhit, bölgede kaybolmamak amacıyla yazılmıştır.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Kitabü'l-Muhit'i Piri Reis yazmıştır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Kitabü'l-Muhit'i Piri Reis yazmıştır.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -28144,18 +28144,18 @@ new Question
 {
     Note = notKanuniDigerFetihlerVeZigetvar,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Kanuni'nin diğer fetihleri ve Zigetvar seferiyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Malta hiçbir zaman fethedilememiştir, yalnızca kuşatılmıştır; 'Malta 1565'te fethedilmiştir' ifadesi yanlıştır.",
     OrderIndex = 72,
     Choices =
     {
-        new Choice { Text = "Turgut Reis, Trablusgarp Beylerbeyi olarak atanmıştır.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Cerbe Deniz Savaşı'nı Piyale Paşa kazanmıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Kanuni'nin ölümü ordunun dağılmaması için gizlenmiştir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Turgut Reis, Malta Kuşatması sırasında şehit olmuştur.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Turgut Reis, Trablusgarp Beylerbeyi olarak atanmıştır.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Cerbe Deniz Savaşı'nı Piyale Paşa kazanmıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Kanuni'nin ölümü ordunun dağılmaması için gizlenmiştir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Turgut Reis, Malta Kuşatması sırasında şehit olmuştur.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Malta, 1565'teki kuşatmada fethedilmiştir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Malta, 1565'teki kuşatmada fethedilmiştir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -28203,18 +28203,18 @@ new Question
 {
     Note = notKapitulasyonAmaclari,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Kapitülasyonlarla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Fransa'ya verilen kapitülasyonlar Venedik'e verilenlerden çok daha geniş kapsamlıdır (eğitim, din, hukuk, ekonomi gibi birçok alanı kapsar); 'ikisi aynı kapsamdadır' ifadesi yanlıştır.",
     OrderIndex = 75,
     Choices =
     {
-        new Choice { Text = "1535'te I. François ile Ahdname-i Hümayun imzalanmıştır.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Fransızlara konsolosluk mahkemeleri kurma hakkı verilmiştir.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Kapitülasyonlar hazineye gelir sağlamıştır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "1569'daki kapitülasyon Fransa'ya verilmiştir.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "1535'te I. François ile Ahdname-i Hümayun imzalanmıştır.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Fransızlara konsolosluk mahkemeleri kurma hakkı verilmiştir.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Kapitülasyonlar hazineye gelir sağlamıştır.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "1569'daki kapitülasyon Fransa'ya verilmiştir.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Fransa'ya ve Venedik'e verilen kapitülasyonlar aynı kapsamdadır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Fransa'ya ve Venedik'e verilen kapitülasyonlar aynı kapsamdadır.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -28262,18 +28262,18 @@ new Question
 {
     Note = notSokulluSelimDonemiInebahti,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "II. Selim dönemi ve İnebahtı olayıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "İnebahtı'da donanma yakılmasına rağmen Kıbrıs Osmanlı'nın elinde kalmıştır; 'Kıbrıs bu savaştan sonra Venedik'e geri verildi' ifadesi yanlıştır.",
     OrderIndex = 78,
     Choices =
     {
-        new Choice { Text = "II. Selim, İstanbul'da doğup İstanbul'da ölmüştür.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Kıbrıs, 1571'de Venedik'in elinden alınmıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Sokullu Mehmet Paşa, Venedik elçisine 'kesilen sakal daha gür çıkar' demiştir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "İnebahtı'da Haçlı donanması Osmanlı donanmasını yakmıştır.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "II. Selim, İstanbul'da doğup İstanbul'da ölmüştür.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Kıbrıs, 1571'de Venedik'in elinden alınmıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Sokullu Mehmet Paşa, Venedik elçisine 'kesilen sakal daha gür çıkar' demiştir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "İnebahtı'da Haçlı donanması Osmanlı donanmasını yakmıştır.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Kıbrıs, İnebahtı Savaşı'ndan sonra Venedik'e geri verilmiştir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Kıbrıs, İnebahtı Savaşı'ndan sonra Venedik'e geri verilmiştir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -28320,18 +28320,18 @@ new Question
 {
     Note = notSokulluMuratDonemiFerhatPasa,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "III. Murat dönemi ve Ferhat Paşa Antlaşması ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Yükselme döneminin bitiş tarihi güncel yaklaşımda III. Murat'ın ölümü (1595) olarak kabul edilir, Sokullu'nun ölümü (1579) değil; bu nedenle Ferhat Paşa Antlaşması (1590) yükselme dönemine dahildir.",
     OrderIndex = 81,
     Choices =
     {
-        new Choice { Text = "Meşaleler Savaşı, gece meşale ışığında devam ettiği için bu adı almıştır.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Ferhat Paşa Antlaşması ile Tebriz, Revan ve Bağdat alınmıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "1576'da Fas Osmanlı egemenliğine girmiştir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Güncel yaklaşımda yükselme dönemi III. Murat'ın ölümüyle (1595) sona erer.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Meşaleler Savaşı, gece meşale ışığında devam ettiği için bu adı almıştır.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Ferhat Paşa Antlaşması ile Tebriz, Revan ve Bağdat alınmıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "1576'da Fas Osmanlı egemenliğine girmiştir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Güncel yaklaşımda yükselme dönemi III. Murat'ın ölümüyle (1595) sona erer.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Yükselme döneminin bitişi güncel yaklaşımda hâlâ Sokullu'nun ölüm tarihi (1579) olarak kabul edilir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Yükselme döneminin bitişi güncel yaklaşımda hâlâ Sokullu'nun ölüm tarihi (1579) olarak kabul edilir.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -28359,18 +28359,18 @@ new Question
 {
     Note = notSokulluDonVolgaProjesi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Don-Volga projesiyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Bu kanalı Osmanlı Devleti değil, 1956'da Rusya açmıştır; 'Osmanlı Devleti tarafından başarıyla tamamlanmıştır' ifadesi yanlıştır.",
     OrderIndex = 83,
     Choices =
     {
-        new Choice { Text = "Projenin uygulanması Mimar Sinan'a verilmiştir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Mimar Sinan'ın vefatı projenin tamamlanamamasında etkili olmuştur.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Kırım Hanlığı'nın isteksizliği projeyi olumsuz etkilemiştir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Rus saldırıları projenin tamamlanmasını engellemiştir.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Projenin uygulanması Mimar Sinan'a verilmiştir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Mimar Sinan'ın vefatı projenin tamamlanamamasında etkili olmuştur.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Kırım Hanlığı'nın isteksizliği projeyi olumsuz etkilemiştir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Rus saldırıları projenin tamamlanmasını engellemiştir.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Don-Volga Kanalı, Osmanlı Devleti tarafından başarıyla tamamlanmıştır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Don-Volga Kanalı, Osmanlı Devleti tarafından başarıyla tamamlanmıştır.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -28398,18 +28398,18 @@ new Question
 {
     Note = notSokulluSuveysVeKanalProjeleri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Sokullu'nun Süveyş ve Marmara-Karadeniz projeleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Süveyş Kanalı, Osmanlı Devleti tarafından değil 1869'da İngiltere ve Fransa şirketleri tarafından açılmıştır; 'Osmanlı Devleti tarafından açılmıştır' ifadesi yanlıştır.",
     OrderIndex = 85,
     Choices =
     {
-        new Choice { Text = "Marmara-Karadeniz projesi günümüzdeki Kanal İstanbul projesine benzetilir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Marmara-Karadeniz projesinin amacı tersanelerin kereste ihtiyacını karşılamaktı.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Süveyş projesi Ümit Burnu'nun keşfiyle önemini yitiren Baharat Yolu'nu canlandırmayı amaçlıyordu.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Süveyş ve Don-Volga projeleri farklı coğrafyalarda planlanmıştır.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Marmara-Karadeniz projesi günümüzdeki Kanal İstanbul projesine benzetilir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Marmara-Karadeniz projesinin amacı tersanelerin kereste ihtiyacını karşılamaktı.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Süveyş projesi Ümit Burnu'nun keşfiyle önemini yitiren Baharat Yolu'nu canlandırmayı amaçlıyordu.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Süveyş ve Don-Volga projeleri farklı coğrafyalarda planlanmıştır.", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Süveyş Kanalı, Osmanlı Devleti tarafından 1869'da açılmıştır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Süveyş Kanalı, Osmanlı Devleti tarafından 1869'da açılmıştır.", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -29733,18 +29733,18 @@ new Question
 {
     Note = notOsmanliDigerAdlari,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Osmanlı Devleti'nin diğer adlarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Osmanoğulları, Osmanlı'nın beylik dönemindeki adıdır; devletin resmi/gerçek adı ise Devlet-i Aliye'dir.",
     OrderIndex = 2,
     Choices =
     {
-        new Choice { Text = "Batı kaynaklarında Ottoman ve Atman isimleri kullanılmıştır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Osmanoğulları, beylik dönemindeki adıdır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Osmani/Osmaniye de kullanılan isimler arasındadır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Gaziler ismi de kullanılmıştır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Batı kaynaklarında Ottoman ve Atman isimleri kullanılmıştır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Osmanoğulları, beylik dönemindeki adıdır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Osmani/Osmaniye de kullanılan isimler arasındadır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Gaziler ismi de kullanılmıştır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Devletin resmi adı Osmanoğulları'dır", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Devletin resmi adı Osmanoğulları'dır", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -29791,18 +29791,18 @@ new Question
 {
     Note = notPadisahSembolVeUnvanlari,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Padişah sembolleri ve unvanlarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Dünya tarihinde sultan unvanını ilk kullanan Gazneli Mahmut'tur; Osmanlı tarihinde ilk kullanan ise Orhan Bey'dir.",
     OrderIndex = 5,
     Choices =
     {
-        new Choice { Text = "Osmanlı padişahları ok hariç neredeyse tüm sembolleri kullanmıştır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Hüdavendigar padişah unvanlarından biridir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Dünya tarihinde sultan unvanını ilk kullanan Gazneli Mahmut'tur", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Osmanlı tarihinde sultan unvanını ilk kullanan Orhan Bey'dir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Osmanlı padişahları ok hariç neredeyse tüm sembolleri kullanmıştır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Hüdavendigar padişah unvanlarından biridir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Dünya tarihinde sultan unvanını ilk kullanan Gazneli Mahmut'tur", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Osmanlı tarihinde sultan unvanını ilk kullanan Orhan Bey'dir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Dünya tarihinde sultan unvanını ilk kullanan padişah Orhan Bey'dir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Dünya tarihinde sultan unvanını ilk kullanan padişah Orhan Bey'dir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -29830,18 +29830,18 @@ new Question
 {
     Note = notVerasetDegisimleri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Osmanlı Devleti'nde veraset sistemindeki değişikliklerle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Fatih Sultan Mehmet, ülkenin yalnızca padişaha ait olduğunu ve hükümdar hayattayken taht kavgası yapılamayacağını vurgulamıştır; Ekber ve Erşed sistemini getiren ise 1. Ahmet'tir.",
     OrderIndex = 7,
     Choices =
     {
-        new Choice { Text = "Osman Bey döneminde ülke hükümdar ve ailesinin ortak malıydı", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "1. Murat döneminde ülke hükümdar ve oğullarına ait sayılmıştır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Fatih Sultan Mehmet, hükümdar hayattayken taht kavgası yapılamayacağını vurgulamıştır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "1. Ahmet, Ekber ve Erşed sistemini getirmiştir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Osman Bey döneminde ülke hükümdar ve ailesinin ortak malıydı", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "1. Murat döneminde ülke hükümdar ve oğullarına ait sayılmıştır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Fatih Sultan Mehmet, hükümdar hayattayken taht kavgası yapılamayacağını vurgulamıştır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "1. Ahmet, Ekber ve Erşed sistemini getirmiştir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Ekber ve Erşed sistemini getiren padişah Fatih Sultan Mehmet'tir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Ekber ve Erşed sistemini getiren padişah Fatih Sultan Mehmet'tir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -29888,18 +29888,18 @@ new Question
 {
     Note = notMusadere,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Müsadere ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Müsadere usulü Tanzimat döneminde tamamen kaldırılmıştır; 2. Mahmut ise bu uygulamayı yalnızca kısmen sınırlandırmıştır.",
     OrderIndex = 10,
     Choices =
     {
-        new Choice { Text = "Bir devlet memurunun haksız yollarla elde ettiği mallara devletin el koymasıdır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Bu hak yalnızca padişaha aittir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Osmanlı'da özel mülkiyet anlayışının gelişmesini engellemiştir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "İlk defa Çandarlı Ali Paşa ailesine uygulanmıştır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Bir devlet memurunun haksız yollarla elde ettiği mallara devletin el koymasıdır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Bu hak yalnızca padişaha aittir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Osmanlı'da özel mülkiyet anlayışının gelişmesini engellemiştir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "İlk defa Çandarlı Ali Paşa ailesine uygulanmıştır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Müsadere usulü Tanzimat döneminde değil, 2. Mahmut döneminde tamamen kaldırılmıştır", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Müsadere usulü Tanzimat döneminde değil, 2. Mahmut döneminde tamamen kaldırılmıştır", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -29946,18 +29946,18 @@ new Question
 {
     Note = notBeratnameAdaletnameAmanname,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Beratname, adaletname ve amanname ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Beratname bir memuru göreve atama, aylık bağlama veya görevden alma belgesidir; bir bölgedeki haksızlığı gidermek amacıyla çıkarılan belge ise adaletnamedir.",
     OrderIndex = 13,
     Choices =
     {
-        new Choice { Text = "Beratname bir memuru göreve atama belgesidir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Adaletname bir bölgedeki haksızlığı gidermek için çıkarılır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Amanname bir kişiyi padişahın himayesi altına alır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Yıldırım Bayezid, Celayiroğlu Ahmet'e amanname vermiştir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Beratname bir memuru göreve atama belgesidir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Adaletname bir bölgedeki haksızlığı gidermek için çıkarılır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Amanname bir kişiyi padişahın himayesi altına alır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yıldırım Bayezid, Celayiroğlu Ahmet'e amanname vermiştir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Beratname bir bölgedeki haksızlığı gideren belgedir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Beratname bir bölgedeki haksızlığı gideren belgedir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -29985,18 +29985,18 @@ new Question
 {
     Note = notDivanBaskanligiVeSeferGoreviDegisimi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Divan başkanlığı ve sefer görevindeki değişimlerle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Divana başkanlık etmeyi bırakan padişah Fatih Sultan Mehmet'tir; sefere bizzat çıkma geleneğini bırakan ise Yavuz Sultan Selim'dir. Bu iki değişikliğin aynı padişaha ait olduğu söylenirse yanlış olur.",
     OrderIndex = 15,
     Choices =
     {
-        new Choice { Text = "Divana başkanlık etme görevi Fatih Sultan Mehmet'e kadar padişaha aitti", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Fatih Sultan Mehmet'ten sonra divana sadrazamlar başkanlık etmiştir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Yavuz Sultan Selim sefer görevini sadrazama bırakmıştır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Fatih Sultan Mehmet'e kadar padişahlar bizzat sefere çıkmıştır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Divana başkanlık etme görevi Fatih Sultan Mehmet'e kadar padişaha aitti", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Fatih Sultan Mehmet'ten sonra divana sadrazamlar başkanlık etmiştir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Yavuz Sultan Selim sefer görevini sadrazama bırakmıştır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Fatih Sultan Mehmet'e kadar padişahlar bizzat sefere çıkmıştır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Divan başkanlığını ve sefer görevini bırakan padişah aynı kişidir, ikisi de Fatih Sultan Mehmet'tir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Divan başkanlığını ve sefer görevini bırakan padişah aynı kişidir, ikisi de Fatih Sultan Mehmet'tir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -30024,18 +30024,18 @@ new Question
 {
     Note = notSehzadeEgitimi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Şehzade eğitimi ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Şehzadeler sancağa gönderildiklerinde Çelebi Sultan unvanını alırlardı; Serdar-ı Ekrem ise sadrazamın sefere çıktığındaki unvanıdır.",
     OrderIndex = 17,
     Choices =
     {
-        new Choice { Text = "Şehzadeler 7 yaşında eğitime başlar", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Şehzadeler 12 yaşında sancağa gönderilir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Şehzadelerin yanında Lala adı verilen devlet adamları bulunur", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Amasya ve Manisa önemli şehzade sancak kentleridir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Şehzadeler 7 yaşında eğitime başlar", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Şehzadeler 12 yaşında sancağa gönderilir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Şehzadelerin yanında Lala adı verilen devlet adamları bulunur", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Amasya ve Manisa önemli şehzade sancak kentleridir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Şehzadeler sancağa gönderildiklerinde Serdar-ı Ekrem unvanını alır", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Şehzadeler sancağa gönderildiklerinde Serdar-ı Ekrem unvanını alır", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -30063,18 +30063,18 @@ new Question
 {
     Note = notOsmanliDevletFelsefeleri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Devlet-i Ebet Müddet, Nizam-ı Alem ve Kanun-i Kadim ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Devlet-i Ebet Müddet, devletin sonsuza kadar yaşama felsefesidir; dünyayı adaletle yönetme anlayışı ise Nizam-ı Alem'dir. Bu iki kavram birbirine karıştırılmamalıdır.",
     OrderIndex = 19,
     Choices =
     {
-        new Choice { Text = "Kanun-i Kadim, atalardan gelen kanunları sürekli hale getirme anlayışıdır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Osmanlı'da \"ata\" denince akla Fatih Sultan Mehmet ve Kanuni Sultan Süleyman gelir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Nizam-ı Alem farklı halkların adaletle yönetilmesini amaçlar", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Devlet-i Ebet Müddet devletin sonsuza kadar yaşama felsefesidir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Kanun-i Kadim, atalardan gelen kanunları sürekli hale getirme anlayışıdır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Osmanlı'da \"ata\" denince akla Fatih Sultan Mehmet ve Kanuni Sultan Süleyman gelir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Nizam-ı Alem farklı halkların adaletle yönetilmesini amaçlar", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Devlet-i Ebet Müddet devletin sonsuza kadar yaşama felsefesidir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Devlet-i Ebet Müddet, dünyayı adaletle yönetme anlayışını ifade eder", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Devlet-i Ebet Müddet, dünyayı adaletle yönetme anlayışını ifade eder", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -30121,18 +30121,18 @@ new Question
 {
     Note = notOsmanliKurulusYeriVeBaskentleri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Osmanlı Devleti'nin kuruluş bölgesi ve ilk merkezleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Osmanlı'da \"başkent\" değil \"merkez\" terimi kullanılır; merkezlerin sürekli batıya doğru değişmesi, devletin fetih yönünün batıya doğru olduğunu gösterir.",
     OrderIndex = 22,
     Choices =
     {
-        new Choice { Text = "Karacahisar'da ilk kadı ataması ve ilk vergi alınmıştır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Bilecik 1302'de alınmıştır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Merkezlerin batıya doğru değişmesi fetih yönünü gösterir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Kuruluş bölgesinin antik adı Bitinya'dır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Karacahisar'da ilk kadı ataması ve ilk vergi alınmıştır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Bilecik 1302'de alınmıştır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Merkezlerin batıya doğru değişmesi fetih yönünü gösterir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Kuruluş bölgesinin antik adı Bitinya'dır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Osmanlı Devleti'nde resmi olarak \"başkent\" terimi kullanılmıştır", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Osmanlı Devleti'nde resmi olarak \"başkent\" terimi kullanılmıştır", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -30160,18 +30160,18 @@ new Question
 {
     Note = notIstanbulunFethiVeDigerAdlari,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "İstanbul'un fethi ve diğer adlarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Osmanlı Devleti resmi olarak en çok İstanbul adını kullanmıştır; Konstantiniye ise Bizans döneminden kalan adlardan biridir.",
     OrderIndex = 24,
     Choices =
     {
-        new Choice { Text = "İstanbul 1453'te Fatih Sultan Mehmet tarafından fethedilmiştir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Yıldırım Bayezid İstanbul'u kuşatmış ama alamamıştır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "İstanbul'un diğer adları arasında Asitane ve Dersaadet bulunur", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "İstanbul'a 150'nin üzerinde farklı isim verilmiştir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "İstanbul 1453'te Fatih Sultan Mehmet tarafından fethedilmiştir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Yıldırım Bayezid İstanbul'u kuşatmış ama alamamıştır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "İstanbul'un diğer adları arasında Asitane ve Dersaadet bulunur", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "İstanbul'a 150'nin üzerinde farklı isim verilmiştir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Osmanlı Devleti resmi olarak en çok Konstantiniye adını kullanmıştır", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Osmanlı Devleti resmi olarak en çok Konstantiniye adını kullanmıştır", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -30199,18 +30199,18 @@ new Question
 {
     Note = notIstanbulYonetimi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "İstanbul'un yönetimiyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "İstanbul'un boğazlarının korunmasından Kaptan-ı Derya sorumludur; imar işlerinden ise Mimarbaşı sorumludur, bu iki görev birbirine karıştırılmamalıdır.",
     OrderIndex = 26,
     Choices =
     {
-        new Choice { Text = "Boğazların korunmasından Kaptan-ı Derya sorumludur", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Adalet işlerinden İstanbul kadısı sorumludur", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Güvenlikten Yeniçeri Ağası sorumludur", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Genel sorumluluk sadrazama aittir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Boğazların korunmasından Kaptan-ı Derya sorumludur", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Adalet işlerinden İstanbul kadısı sorumludur", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Güvenlikten Yeniçeri Ağası sorumludur", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Genel sorumluluk sadrazama aittir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "İmar işlerinden Kaptan-ı Derya sorumludur", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "İmar işlerinden Kaptan-ı Derya sorumludur", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -30238,18 +30238,18 @@ new Question
 {
     Note = notOsmanliSaraylari,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Osmanlı sarayları ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "İshak Paşa Sarayı'nda batı tarzı mimarinin etkisi yalnızca bir kapıda görülür; sarayın tamamının batı tarzında inşa edildiği saray Dolmabahçe'dir.",
     OrderIndex = 28,
     Choices =
     {
-        new Choice { Text = "Bey Sarayı Orhan Bey döneminde Bursa'da açılmıştır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Topkapı Sarayı Fatih Sultan Mehmet döneminde yapılmıştır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "İshak Paşa Sarayı ilk ısıtmalı saraydır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Yıldız Sarayı 2. Abdülhamit'in yönetim merkezidir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Bey Sarayı Orhan Bey döneminde Bursa'da açılmıştır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Topkapı Sarayı Fatih Sultan Mehmet döneminde yapılmıştır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "İshak Paşa Sarayı ilk ısıtmalı saraydır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yıldız Sarayı 2. Abdülhamit'in yönetim merkezidir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "İshak Paşa Sarayı tamamen batı tarzı mimariyle inşa edilmiştir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "İshak Paşa Sarayı tamamen batı tarzı mimariyle inşa edilmiştir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -30277,18 +30277,18 @@ new Question
 {
     Note = notTopkapiSarayiBolumleri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Topkapı Sarayı'nın bölümleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Enderun'u ilk kuran 1. Murat'tır (Edirne'de); sistemleştirip Topkapı Sarayı'na taşıyan ise Fatih Sultan Mehmet'tir.",
     OrderIndex = 30,
     Choices =
     {
-        new Choice { Text = "Birun kelime anlamı olarak dış veya taşra demektir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Divan toplantıları Birun'da yapılır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Harem'de erkek çocuk doğuran kadına haseki unvanı verilir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Enderun'u ilk kuran 1. Murat'tır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Birun kelime anlamı olarak dış veya taşra demektir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Divan toplantıları Birun'da yapılır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Harem'de erkek çocuk doğuran kadına haseki unvanı verilir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Enderun'u ilk kuran 1. Murat'tır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Enderun'u ilk kuran ve sistemleştiren kişi aynı padişahtır, ikisi de Fatih Sultan Mehmet'tir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Enderun'u ilk kuran ve sistemleştiren kişi aynı padişahtır, ikisi de Fatih Sultan Mehmet'tir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -30335,18 +30335,18 @@ new Question
 {
     Note = notHarem,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Harem ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Harem'de doğurganlık oranı yüksek olduğu için ağırlıklı olarak Slav kökenli kadınlar tercih edilmiştir; sadece belirli bir bölge dışlanmamıştır.",
     OrderIndex = 33,
     Choices =
     {
-        new Choice { Text = "Kelime anlamı \"yasak\"tır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Devşirilen kız çocuklarının eğitim gördüğü bir okuldur", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Padişahın annesi kadınları inceleyip şehzadelerle evlendirilmelerini sağlar", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Erkek çocuk doğuran kadına haseki unvanı verilir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Kelime anlamı \"yasak\"tır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Devşirilen kız çocuklarının eğitim gördüğü bir okuldur", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Padişahın annesi kadınları inceleyip şehzadelerle evlendirilmelerini sağlar", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Erkek çocuk doğuran kadına haseki unvanı verilir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Haremde ağırlıklı olarak Arap kökenli kadınlar tercih edilmiştir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Haremde ağırlıklı olarak Arap kökenli kadınlar tercih edilmiştir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -30374,18 +30374,18 @@ new Question
 {
     Note = notDivaniHumayun,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Divan-ı Hümayun ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Divan-ı Hümayun, ilk Türk İslam devletlerindeki Divan-ı Mezalim'e benzetilir; kadı kararlarına yapılan itirazlara ise kazasker bakar.",
     OrderIndex = 35,
     Choices =
     {
-        new Choice { Text = "Alınan kararlara hüküm denir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Hükümlerin kaydedildiği deftere Mühimme denir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Kadı kararlarına yapılan itirazlara kazasker bakar", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Kararların dine uygunluğunu şeyhülislam inceler", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Alınan kararlara hüküm denir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Hükümlerin kaydedildiği deftere Mühimme denir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Kadı kararlarına yapılan itirazlara kazasker bakar", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Kararların dine uygunluğunu şeyhülislam inceler", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Divan-ı Hümayun, ilk Türk İslam devletlerindeki Divan-ı İstifa'ya benzetilir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Divan-ı Hümayun, ilk Türk İslam devletlerindeki Divan-ı İstifa'ya benzetilir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -30432,18 +30432,18 @@ new Question
 {
     Note = notSadrazam,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Sadrazam ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Sadrazam sefere çıktığında, yerine Sadaret Kaymakamı (Sadaret Kethüdası) bakar; Serdar-ı Ekrem ise sadrazamın kendi sefer unvanıdır.",
     OrderIndex = 38,
     Choices =
     {
-        new Choice { Text = "Padişahın mührünü taşır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "İlk vezir Alaeddin Paşa'dır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Verdiği emirlere buyruldu denir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Sefer sırasında Serdar-ı Ekrem unvanını alır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Padişahın mührünü taşır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "İlk vezir Alaeddin Paşa'dır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Verdiği emirlere buyruldu denir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Sefer sırasında Serdar-ı Ekrem unvanını alır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Sadrazam sefere çıktığında yerine kazasker bakar", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Sadrazam sefere çıktığında yerine kazasker bakar", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -30471,18 +30471,18 @@ new Question
 {
     Note = notDefterdarVeKazasker,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Defterdar ve kazasker ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Kazaskerin tuttuğu defter Ruznamçe'dir; defterdar ise bütçe yapıp hesap tutan bir maliye görevlisidir, defter tutma görevi Ruznamçe ile karıştırılmamalıdır.",
     OrderIndex = 40,
     Choices =
     {
-        new Choice { Text = "Defterdar günümüzdeki maliye bakanına denktir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Rumeli defterdarı protokolde Anadolu defterdarından öncedir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Kazasker Milli Eğitim Bakanı ve Adalet Bakanı görevlerini birlikte yürütür", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Kazasker sayısı Rumeli ve Anadolu olmak üzere ikidir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Defterdar günümüzdeki maliye bakanına denktir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Rumeli defterdarı protokolde Anadolu defterdarından öncedir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Kazasker Milli Eğitim Bakanı ve Adalet Bakanı görevlerini birlikte yürütür", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Kazasker sayısı Rumeli ve Anadolu olmak üzere ikidir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Kazaskerin tuttuğu defterin adı Tahrir'dir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Kazaskerin tuttuğu defterin adı Tahrir'dir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -30510,18 +30510,18 @@ new Question
 {
     Note = notNisanciVeReisulKuttab,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Nişancı ve reisülküttab ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Reisülküttab, nişancının iş yükünün artması nedeniyle 17. yüzyılda nişancıdan ayrılarak kurulmuştur; 18. yüzyılda değil.",
     OrderIndex = 42,
     Choices =
     {
-        new Choice { Text = "Nişancı belgelere padişahın tuğrasını çeker", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Nişancı örfi hukukun divandaki temsilcisidir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Reisülküttab günümüzün dışişleri bakanına benzer", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Nişancı tımar topraklarını dağıtır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Nişancı belgelere padişahın tuğrasını çeker", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Nişancı örfi hukukun divandaki temsilcisidir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Reisülküttab günümüzün dışişleri bakanına benzer", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Nişancı tımar topraklarını dağıtır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Reisülküttab 18. yüzyılda nişancıdan ayrılarak kurulmuştur", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Reisülküttab 18. yüzyılda nişancıdan ayrılarak kurulmuştur", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -30549,18 +30549,18 @@ new Question
 {
     Note = notKaptaniDeryaVeYeniceriAgasi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Kaptan-ı derya ve yeniçeri ağası ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "İlk kaptan-ı derya Karamürsel Alp'tir; divana üye olan ilk kaptan-ı derya ise Barbaros Hayrettin Paşa'dır. Bu iki bilgi birbirine karıştırılmamalıdır.",
     OrderIndex = 44,
     Choices =
     {
-        new Choice { Text = "Kaptan-ı derya divanın doğal (sürekli) üyesi değildir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Kaptan-ı derya İstanbul'da bulunduğu dönemlerde divana katılır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Yeniçeri ağası normalde divan toplantılarına katılamaz", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Yeniçeri ağasına vezir rütbesi (payesi) verilirse divana katılabilir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Kaptan-ı derya divanın doğal (sürekli) üyesi değildir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Kaptan-ı derya İstanbul'da bulunduğu dönemlerde divana katılır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Yeniçeri ağası normalde divan toplantılarına katılamaz", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yeniçeri ağasına vezir rütbesi (payesi) verilirse divana katılabilir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Divana üye olan ilk kaptan-ı derya Karamürsel Alp'tir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Divana üye olan ilk kaptan-ı derya Karamürsel Alp'tir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -30588,18 +30588,18 @@ new Question
 {
     Note = notSeyhulislam,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Şeyhülislam ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Divana sonradan üye olma sırası 16. yüzyılda kaptan-ı derya, 17. yüzyılda reisülküttab, 18. yüzyılda şeyhülislam şeklindedir; şeyhülislam 16. yüzyılda değil 18. yüzyılda üye olmuştur.",
     OrderIndex = 46,
     Choices =
     {
-        new Choice { Text = "İlk şeyhülislam Molla Fenari'dir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Verdiği kararlara fetva denir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Atamasını padişah yapar", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Divanda alınan kararların dine uygunluğunu inceler", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "İlk şeyhülislam Molla Fenari'dir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Verdiği kararlara fetva denir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Atamasını padişah yapar", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Divanda alınan kararların dine uygunluğunu inceler", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Şeyhülislam divana 16. yüzyılda üye olmuştur", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Şeyhülislam divana 16. yüzyılda üye olmuştur", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -30627,18 +30627,18 @@ new Question
 {
     Note = notTasraTeskilatiOncesi1840,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "1840 öncesi taşra teşkilatıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Eyaletin adalet, güvenlik ve yönetiminden sorumlu olan görevli beylerbeyidir; sancakbeyi ise sancağın yöneticisidir.",
     OrderIndex = 48,
     Choices =
     {
-        new Choice { Text = "Köyün adaletinden naib sorumludur", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Sancağın adaletinden kadı sorumludur", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Sancağın güvenliğinden subaşı sorumludur", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Sancağın yöneticisi sancakbeyidir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Köyün adaletinden naib sorumludur", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Sancağın adaletinden kadı sorumludur", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Sancağın güvenliğinden subaşı sorumludur", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Sancağın yöneticisi sancakbeyidir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Eyaletin yöneticisi sancakbeyidir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Eyaletin yöneticisi sancakbeyidir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -30666,18 +30666,18 @@ new Question
 {
     Note = notTasraTeskilatiSonrasi1871,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "1871 sonrası taşra teşkilatıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "1871 sonrası sistemde köyün yöneticisi muhtar, livanın (sancağın) yöneticisi ise mutasarrıftır (kaymakam); bu iki görevli birbirine karıştırılmamalıdır.",
     OrderIndex = 50,
     Choices =
     {
-        new Choice { Text = "Köyün yöneticisi muhtardır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Kazanın yöneticisi kaza müdürüdür", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Vilayetin yöneticisi vali (müşir)dir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "1871 sonrası sisteme nahiye birimi eklenmiştir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Köyün yöneticisi muhtardır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Kazanın yöneticisi kaza müdürüdür", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Vilayetin yöneticisi vali (müşir)dir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "1871 sonrası sisteme nahiye birimi eklenmiştir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Livanın (sancağın) yöneticisi muhtardır", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Livanın (sancağın) yöneticisi muhtardır", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -30724,18 +30724,18 @@ new Question
 {
     Note = notImtiyazliEyaletler,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "İmtiyazlı eyaletlerle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Kırım yöneticilerine han veya giray unvanı verilir; şerif ise Mekke yöneticisine verilen unvandır. Bu iki unvan birbirine karıştırılmamalıdır.",
     OrderIndex = 53,
     Choices =
     {
-        new Choice { Text = "Eflak ve Boğdan'a birlikte Memleketeyn denir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Eflak-Boğdan yöneticilerine voyvoda unvanı verilir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Mekke yöneticisine emir veya şerif unvanı verilir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Hicaz ne vergi ne asker vermiştir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Eflak ve Boğdan'a birlikte Memleketeyn denir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Eflak-Boğdan yöneticilerine voyvoda unvanı verilir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Mekke yöneticisine emir veya şerif unvanı verilir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Hicaz ne vergi ne asker vermiştir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Kırım yöneticilerine şerif unvanı verilir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Kırım yöneticilerine şerif unvanı verilir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -30763,18 +30763,18 @@ new Question
 {
     Note = notYurtlukOcaklikEyaletler,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Yurtluk-ocaklık eyaletlerle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Yurtluk-ocaklık bölgelerin Anadolu'daki adı ağalıktır; ayanlık ise Balkanlar'daki karşılığıdır. Bu iki terim birbirinin yerine kullanılmamalıdır.",
     OrderIndex = 55,
     Choices =
     {
-        new Choice { Text = "Aşiretlerin yoğun olduğu bölgelerdir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Aşiret liderlerine belirli yönetimsel haklar verilmiştir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Dersim ve Çölemerik bu tür eyaletlere örnektir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Kendi içlerinde serbest bırakılmışlardır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Aşiretlerin yoğun olduğu bölgelerdir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Aşiret liderlerine belirli yönetimsel haklar verilmiştir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Dersim ve Çölemerik bu tür eyaletlere örnektir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Kendi içlerinde serbest bırakılmışlardır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Bu sistemin Balkanlar'daki adı ağalıktır", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Bu sistemin Balkanlar'daki adı ağalıktır", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -30802,18 +30802,18 @@ new Question
 {
     Note = notSalyaneliEyaletler,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Salyaneli eyaletlerle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "İltizamın kaydı hayat (ömür boyu) şartıyla verilmesine malikane denir; muacele bedeli ise ihaleye girerken peşin ödenen bedeldir. Bu iki kavram birbirine karıştırılmamalıdır.",
     OrderIndex = 57,
     Choices =
     {
-        new Choice { Text = "Bu eyaletlerde tımar sistemi uygulanmaz", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "İltizamı kazanan kişiye mültezim denir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Mısır, Bağdat ve Yemen salyaneli eyaletlere örnektir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "İhaleye girerken ödenen peşin bedele muacele denir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Bu eyaletlerde tımar sistemi uygulanmaz", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "İltizamı kazanan kişiye mültezim denir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Mısır, Bağdat ve Yemen salyaneli eyaletlere örnektir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "İhaleye girerken ödenen peşin bedele muacele denir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "İltizamın ömür boyu verilmesine muacele bedeli denir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "İltizamın ömür boyu verilmesine muacele bedeli denir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -30841,18 +30841,18 @@ new Question
 {
     Note = notSalyanesizEyaletler,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Salyanesiz eyaletlerle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Salyanesiz eyaletler genellikle merkeze (İstanbul'a) yakın topraklardır; Mısır, Tunus ve Cezayir gibi uzak eyaletler ise salyaneli gruba girer.",
     OrderIndex = 59,
     Choices =
     {
-        new Choice { Text = "Halep, Sivas ve Diyarbakır salyanesiz eyaletlere örnektir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Bu eyaletlerde tımar sistemi uygulanır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Bu eyaletler tarımsal açıdan verimli topraklardır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Devlet memuruna doğrudan maaş yerine toprak geliri bırakılır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Halep, Sivas ve Diyarbakır salyanesiz eyaletlere örnektir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Bu eyaletlerde tımar sistemi uygulanır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Bu eyaletler tarımsal açıdan verimli topraklardır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Devlet memuruna doğrudan maaş yerine toprak geliri bırakılır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Salyanesiz eyaletler genellikle merkeze uzak eyaletlerdir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Salyanesiz eyaletler genellikle merkeze uzak eyaletlerdir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -30880,18 +30880,18 @@ new Question
 {
     Note = notMahkemeTurleri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Osmanlı mahkeme türleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Osmanlı'daki mahkeme ikilikleri 1926'da çıkarılan Medeni Kanun ile ortadan kaldırılmıştır; Tanzimat Fermanı bu ikilikleri sona erdirmemiştir, aksine yeni mahkeme türleri (Ticaret, Nizamiye) eklenmesine yol açmıştır.",
     OrderIndex = 61,
     Choices =
     {
-        new Choice { Text = "Şeri mahkemeler Müslüman-gayrimüslim arasındaki davalara bakar", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Cemaat mahkemeleri gayrimüslimlerin kendi aralarındaki davalara bakar", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Nizamiye mahkemeleri özellikle miras ve cinayet davalarına bakar", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Ticaret mahkemeleri ticari davalara bakar", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Şeri mahkemeler Müslüman-gayrimüslim arasındaki davalara bakar", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Cemaat mahkemeleri gayrimüslimlerin kendi aralarındaki davalara bakar", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Nizamiye mahkemeleri özellikle miras ve cinayet davalarına bakar", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Ticaret mahkemeleri ticari davalara bakar", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Mahkeme ikilikleri Tanzimat Fermanı ile ortadan kaldırılmıştır", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Mahkeme ikilikleri Tanzimat Fermanı ile ortadan kaldırılmıştır", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -30919,20 +30919,20 @@ new Question
 {
     Note = notKadininGorevleri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Kadının görevleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Kadılar maaşlarını devletten almazlar; davalardan aldıkları harçlarla geçinirlerdi.",
     OrderIndex = 63,
     Choices =
     {
-        new Choice { Text = "Bir bölgenin noteri gibi işlem yapar", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Nikah kıyar ve boşanma davalarına bakar", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Çarşı ve pazarlarda fiyat denetimi (narh) yapar", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Kazaların yöneticiliğini de yapar", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Vakıf, esnaf ve loncaları denetler", IsCorrect = true, OrderIndex = 5 },
-        new Choice { Text = "Miras davalarına bakar", IsCorrect = true, OrderIndex = 6 },
+        new Choice { Text = "Bir bölgenin noteri gibi işlem yapar", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Nikah kıyar ve boşanma davalarına bakar", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Çarşı ve pazarlarda fiyat denetimi (narh) yapar", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Kazaların yöneticiliğini de yapar", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Vakıf, esnaf ve loncaları denetler", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Miras davalarına bakar", IsCorrect = false, OrderIndex = 6 },
 
-        new Choice { Text = "Maaşını doğrudan devlet hazinesinden alır", IsCorrect = false, OrderIndex = 7 },
+        new Choice { Text = "Maaşını doğrudan devlet hazinesinden alır", IsCorrect = true, OrderIndex = 7 },
     }
 },
 
@@ -30960,18 +30960,18 @@ new Question
 {
     Note = notKadiDefterleriVeYardimcilari,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Tereke defteri ve Şuhudü'l-Hal ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Tereke defterine ölen kişinin fiziksel özellikleri (boy, göz rengi vb.) yazılmaz; yalnızca mirasçılık durumuyla ilgili mal varlığı bilgileri yazılır.",
     OrderIndex = 65,
     Choices =
     {
-        new Choice { Text = "Tereke defteri kadıların tuttuğu bir defterdir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Şuhudü'l-Hal, o bölgenin ileri gelenlerinden oluşan bir kuruldur", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Şuhudü'l-Hal günümüzdeki jüriye benzetilir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Tereke defterinde alacak, verecek ve mal durumu bilgileri bulunur", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Tereke defteri kadıların tuttuğu bir defterdir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Şuhudü'l-Hal, o bölgenin ileri gelenlerinden oluşan bir kuruldur", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Şuhudü'l-Hal günümüzdeki jüriye benzetilir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Tereke defterinde alacak, verecek ve mal durumu bilgileri bulunur", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Tereke defterine ölen kişinin boyu ve göz rengi gibi fiziksel özellikleri yazılır", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Tereke defterine ölen kişinin boyu ve göz rengi gibi fiziksel özellikleri yazılır", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -31018,18 +31018,18 @@ new Question
 {
     Note = notSurnameVeSurreAlaylari,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Surname ve surre alaylarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Surname, düğün ve şenlik konularında yazılan eserlerin ortak adıdır, özel bir eserin adı değildir; surre ise \"kese\" anlamına gelir.",
     OrderIndex = 68,
     Choices =
     {
-        new Choice { Text = "Surname düğün, şenlik ve ziyafet konularında yazılan eserlerin ortak adıdır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Surre kelime anlamı olarak kesedir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Padişahlar hacca bizzat gidemezlerdi", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Surre alayları İstanbul'dan düzenlenirdi", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Surname düğün, şenlik ve ziyafet konularında yazılan eserlerin ortak adıdır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Surre kelime anlamı olarak kesedir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Padişahlar hacca bizzat gidemezlerdi", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Surre alayları İstanbul'dan düzenlenirdi", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Surname belirli bir yazarın özel eserinin adıdır", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Surname belirli bir yazarın özel eserinin adıdır", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -31057,18 +31057,18 @@ new Question
 {
     Note = notVakifSistemi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Vakıf sistemi ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Avarız (olağanüstü) vakıflar yalnızca deprem, sel, yangın gibi acil durumlar için devreye girer; sürekli hizmet veren vakıflar ise olağan vakıflardır.",
     OrderIndex = 70,
     Choices =
     {
-        new Choice { Text = "Malını vakfeden kişiye vâkıf denir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Vakfedilen mala mevkuf denir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Kişinin irade beyanına sığa denir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "İlk vakıf teşkilatını Orhan Bey kurmuştur", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Malını vakfeden kişiye vâkıf denir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Vakfedilen mala mevkuf denir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Kişinin irade beyanına sığa denir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "İlk vakıf teşkilatını Orhan Bey kurmuştur", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Avarız vakıfları sürekli hizmet veren olağan vakıflardır", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Avarız vakıfları sürekli hizmet veren olağan vakıflardır", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -31096,21 +31096,21 @@ new Question
 {
     Note = notOsmanliHayirKurumlari,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Osmanlı hayır kurumları ve cemiyetleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Darülbedayi günümüzdeki tiyatro kurumuna karşılık gelir; Darülelhan ise konservatuvara karşılık gelir. Bu iki kurum birbirine karıştırılmamalıdır.",
     OrderIndex = 72,
     Choices =
     {
-        new Choice { Text = "Darüleytam yetimler yurdudur", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Hamidiye Etfal Hastanesi ilk çocuk hastanesidir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Donanma Cemiyeti piyango yöntemiyle gemi almıştır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Hilal-i Ahmer günümüzdeki Kızılay'ın Osmanlı dönemindeki adıdır", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Darüşşafaka yatılı bir eğitim kurumudur", IsCorrect = true, OrderIndex = 5 },
-        new Choice { Text = "Darülelhan günümüzdeki konservatuvardır", IsCorrect = true, OrderIndex = 6 },
-        new Choice { Text = "Himaye-i Etfal günümüzdeki Çocuk Esirgeme Kurumu'na karşılık gelir", IsCorrect = true, OrderIndex = 7 },
+        new Choice { Text = "Darüleytam yetimler yurdudur", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Hamidiye Etfal Hastanesi ilk çocuk hastanesidir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Donanma Cemiyeti piyango yöntemiyle gemi almıştır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Hilal-i Ahmer günümüzdeki Kızılay'ın Osmanlı dönemindeki adıdır", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Darüşşafaka yatılı bir eğitim kurumudur", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Darülelhan günümüzdeki konservatuvardır", IsCorrect = false, OrderIndex = 6 },
+        new Choice { Text = "Himaye-i Etfal günümüzdeki Çocuk Esirgeme Kurumu'na karşılık gelir", IsCorrect = false, OrderIndex = 7 },
 
-        new Choice { Text = "Darülbedayi günümüzdeki konservatuvara karşılık gelir", IsCorrect = false, OrderIndex = 8 },
+        new Choice { Text = "Darülbedayi günümüzdeki konservatuvara karşılık gelir", IsCorrect = true, OrderIndex = 8 },
     }
 },
 
@@ -31138,18 +31138,18 @@ new Question
 {
     Note = notYoneticiSiniflarGenel,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Yönetici ve yönetilen sınıflarla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Yönetici sınıfın adı berayadır; reaya (teba) ise yönetilen sınıfı ifade eder. Bu iki terim birbirinin yerine kullanılmamalıdır.",
     OrderIndex = 74,
     Choices =
     {
-        new Choice { Text = "Yönetici sınıf kendi içinde seyfiye, ilmiye ve kalemiye olarak üçe ayrılır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Seyfiye askeri-yönetici sınıftır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "İlmiye din-eğitim-hukuk sınıfıdır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Kalemiye yazışma-mali-dışişleri sınıfıdır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Yönetici sınıf kendi içinde seyfiye, ilmiye ve kalemiye olarak üçe ayrılır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Seyfiye askeri-yönetici sınıftır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "İlmiye din-eğitim-hukuk sınıfıdır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Kalemiye yazışma-mali-dışişleri sınıfıdır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Yönetici sınıfın adı reayadır", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Yönetici sınıfın adı reayadır", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -31177,18 +31177,18 @@ new Question
 {
     Note = notSeyfiyeSinifi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Seyfiye sınıfı ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Seyfiye kelime anlamı olarak \"kılıç\" demektir; sınıfın üyeleri Enderun ve diğer kurumlardan yetişen ümeradır. Kazasker ise bu sınıfa dahil değildir.",
     OrderIndex = 76,
     Choices =
     {
-        new Choice { Text = "Seyfiye kelime anlamı olarak kılıç demektir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Padişah, sadrazam ve vezirler seyfiye sınıfına girer", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Seyfiye üyeleri ümera olarak adlandırılır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Subaşı ve sancakbeyi seyfiye sınıfına girer", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Seyfiye kelime anlamı olarak kılıç demektir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Padişah, sadrazam ve vezirler seyfiye sınıfına girer", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Seyfiye üyeleri ümera olarak adlandırılır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Subaşı ve sancakbeyi seyfiye sınıfına girer", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Kazasker seyfiye sınıfına dahildir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Kazasker seyfiye sınıfına dahildir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -31216,18 +31216,18 @@ new Question
 {
     Note = notIlmiyeSinifi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "İlmiye sınıfı ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Kazasker, adındaki \"asker\" kelimesine rağmen ilmiye sınıfına dahildir; seyfiyeye dahil değildir.",
     OrderIndex = 78,
     Choices =
     {
-        new Choice { Text = "İlmiye sınıfının üyeleri ulema olarak adlandırılır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Naib kadının yardımcısıdır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Nakibü'l-eşraf seyit ve şeriflerin kayıtlarını tutar", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Müderrisin yardımcısına muhzır denir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "İlmiye sınıfının üyeleri ulema olarak adlandırılır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Naib kadının yardımcısıdır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Nakibü'l-eşraf seyit ve şeriflerin kayıtlarını tutar", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Müderrisin yardımcısına muhzır denir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Kazasker adındaki asker kelimesinden dolayı seyfiye sınıfına dahildir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Kazasker adındaki asker kelimesinden dolayı seyfiye sınıfına dahildir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -31255,18 +31255,18 @@ new Question
 {
     Note = notKalemiyeSinifi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Kalemiye sınıfı ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Defterdar mali işlerden, nişancı ise yazışma ve tapu-kadastro işlerinden sorumludur; ikisi de kalemiye sınıfına dahildir, seyfiyeye değil.",
     OrderIndex = 80,
     Choices =
     {
-        new Choice { Text = "Defterdar kalemiye sınıfına dahildir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Reisülküttab kalemiye sınıfına dahildir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Katipler kalemiye sınıfına dahildir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Nişancı kalemiye sınıfına dahildir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Defterdar kalemiye sınıfına dahildir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Reisülküttab kalemiye sınıfına dahildir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Katipler kalemiye sınıfına dahildir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Nişancı kalemiye sınıfına dahildir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Nişancı seyfiye sınıfına dahildir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Nişancı seyfiye sınıfına dahildir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -31313,20 +31313,20 @@ new Question
 {
     Note = notKapikuluOcaklarininKurulusu,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Kapıkulu ocaklarının kuruluşuyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Yeniçeri Ocağı'nı 2. Mahmut kaldırmıştır (Vaka-i Hayriye); Yavuz Sultan Selim bu ocağı kaldırmamıştır.",
     OrderIndex = 83,
     Choices =
     {
-        new Choice { Text = "Yaya ve Müsellem, Orhan Bey döneminde kurulmuştur", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Kapıkulu askerleri 3 ayda bir ulufe adında maaş alır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Yeniçeri Ocağı'nın piri Hacı Bektaş Veli'dir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Sefer öncesi okunan duaya gülbank denir", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Kapıkulu Ocağı, 1363'te Edirne'de 1. Murat döneminde kurulmuştur", IsCorrect = true, OrderIndex = 5 },
-        new Choice { Text = "Her padişah değişikliğinde verilen paraya culus bahşişi denir", IsCorrect = true, OrderIndex = 6 },
+        new Choice { Text = "Yaya ve Müsellem, Orhan Bey döneminde kurulmuştur", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Kapıkulu askerleri 3 ayda bir ulufe adında maaş alır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Yeniçeri Ocağı'nın piri Hacı Bektaş Veli'dir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Sefer öncesi okunan duaya gülbank denir", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Kapıkulu Ocağı, 1363'te Edirne'de 1. Murat döneminde kurulmuştur", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Her padişah değişikliğinde verilen paraya culus bahşişi denir", IsCorrect = false, OrderIndex = 6 },
 
-        new Choice { Text = "Yeniçeri Ocağı'nı Yavuz Sultan Selim kaldırmıştır", IsCorrect = false, OrderIndex = 7 },
+        new Choice { Text = "Yeniçeri Ocağı'nı Yavuz Sultan Selim kaldırmıştır", IsCorrect = true, OrderIndex = 7 },
     }
 },
 
@@ -31354,18 +31354,18 @@ new Question
 {
     Note = notDevsirmeSistemi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Devşirme sistemi ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Devşirme sistemi kadı ve papaz nezaretinde, kayıt altında yürütülen düzenli bir sistemdir; keyfi ve habersiz uygulanan zorla bir toplama değildir.",
     OrderIndex = 85,
     Choices =
     {
-        new Choice { Text = "Devşirilen çocuklar Müslüman yapılırdı", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Yahudi çocukları devşirilmezdi", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Devşirme, resmi izin ve kayıt (esame defteri) eşliğinde yapılırdı", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Zanaat sahibi (şehir görmüş) çocuklar devşirilmezdi", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Devşirilen çocuklar Müslüman yapılırdı", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Yahudi çocukları devşirilmezdi", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Devşirme, resmi izin ve kayıt (esame defteri) eşliğinde yapılırdı", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Zanaat sahibi (şehir görmüş) çocuklar devşirilmezdi", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Devşirme, kadı ve papaz olmadan gizlice ve habersizce yapılırdı", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Devşirme, kadı ve papaz olmadan gizlice ve habersizce yapılırdı", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -31393,18 +31393,18 @@ new Question
 {
     Note = notKapikuluPiyadeleri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Kapıkulu piyadeleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Ateşli silah ve el bombası yapımından sorumlu ocak Humbaracı Ocağı'dır; Cebeci Ocağı ise silahların bakım-onarımından sorumludur.",
     OrderIndex = 87,
     Choices =
     {
-        new Choice { Text = "Yeniçeri Ocağı padişahı korur", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Bostancı Ocağı saray ve yalıları korur", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Top Arabacıları Ocağı topların taşınmasından sorumludur", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Acemi Oğlanlar Ocağı'ndan usta birliğe geçişe bedergah denir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Yeniçeri Ocağı padişahı korur", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Bostancı Ocağı saray ve yalıları korur", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Top Arabacıları Ocağı topların taşınmasından sorumludur", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Acemi Oğlanlar Ocağı'ndan usta birliğe geçişe bedergah denir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Ateşli silah ve el bombası yapımından Cebeci Ocağı sorumludur", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Ateşli silah ve el bombası yapımından Cebeci Ocağı sorumludur", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -31432,18 +31432,18 @@ new Question
 {
     Note = notKapikuluSuvarileri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Kapıkulu süvarileriyle (altı bölük halkı) ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Hazineyi koruyan bölük sağ ve sol gariplerdir; ulufeciler ise saltanat sancaklarını korur. Bu iki görev birbirine karıştırılmamalıdır.",
     OrderIndex = 89,
     Choices =
     {
-        new Choice { Text = "Silahtar ve sipahiler otağı korur", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Ulufeciler saltanat sancaklarını korur", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Sağ ve sol garipler ordunun ağırlıklarını korur", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Kapıkulu süvarileri altı bölükten oluşur", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Silahtar ve sipahiler otağı korur", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Ulufeciler saltanat sancaklarını korur", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Sağ ve sol garipler ordunun ağırlıklarını korur", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Kapıkulu süvarileri altı bölükten oluşur", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Hazineyi ulufeciler korur", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Hazineyi ulufeciler korur", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -31471,18 +31471,18 @@ new Question
 {
     Note = notEyaletAskerleriTimarli,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Tımarlı sipahilerle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Tımarlı sipahilerin yerini 17. yüzyıl sonrasında segban/sarıca adı verilen ücretli askerler almıştır; redif birlikleri ise daha sonra 2. Mahmut döneminde kurulmuştur.",
     OrderIndex = 91,
     Choices =
     {
-        new Choice { Text = "Geçimlerini tımar topraklarından sağlarlar", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Ordunun en kalabalık kısmını oluştururlar", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "17. yüzyıl sonrasında yerlerini segban/sarıca adlı ücretli askerlere bırakmışlardır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "2. Mahmut döneminde redif birlikleri kurulmuştur", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Geçimlerini tımar topraklarından sağlarlar", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Ordunun en kalabalık kısmını oluştururlar", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "17. yüzyıl sonrasında yerlerini segban/sarıca adlı ücretli askerlere bırakmışlardır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "2. Mahmut döneminde redif birlikleri kurulmuştur", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Tımarlı sipahilerin yerini doğrudan yeniçeriler almıştır", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Tımarlı sipahilerin yerini doğrudan yeniçeriler almıştır", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -31510,20 +31510,20 @@ new Question
 {
     Note = notEyaletAskerleriDiger,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Diğer eyalet askerleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Yol açma görevi Yörükler'e aittir; Akıncılar ise sınır boylarında keşif ve istihbarat yapan birliklerdir. Bu iki grubun görevleri birbirine karıştırılmamalıdır.",
     OrderIndex = 93,
     Choices =
     {
-        new Choice { Text = "Beşliler sınır kalelerini korur", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Turnalar (turnacılar) haberci olarak görev yapar", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Deliler cesaretleriyle tanınan askerlerdir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Akıncılar sınır boylarında keşif ve istihbarat yapar", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Azap (Azep) bekar çiftçi erkeklerden oluşur", IsCorrect = true, OrderIndex = 5 },
-        new Choice { Text = "Yörükler dağlık ve geçitli bölgelerde yol açar", IsCorrect = true, OrderIndex = 6 },
+        new Choice { Text = "Beşliler sınır kalelerini korur", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Turnalar (turnacılar) haberci olarak görev yapar", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Deliler cesaretleriyle tanınan askerlerdir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Akıncılar sınır boylarında keşif ve istihbarat yapar", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Azap (Azep) bekar çiftçi erkeklerden oluşur", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Yörükler dağlık ve geçitli bölgelerde yol açar", IsCorrect = false, OrderIndex = 6 },
 
-        new Choice { Text = "Yol açma görevi Akıncılar'a aittir", IsCorrect = false, OrderIndex = 7 },
+        new Choice { Text = "Yol açma görevi Akıncılar'a aittir", IsCorrect = true, OrderIndex = 7 },
     }
 },
 
@@ -31570,18 +31570,18 @@ new Question
 {
     Note = notDenizKuvvetleriGenel,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Osmanlı deniz kuvvetleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Çaka Bey, 1081'de ölmüştür ve Osmanlı Devleti'nin kuruluşundan (1299) önce yaşamıştır; bu yüzden Osmanlı'da yetişen bir denizci olarak sayılamaz.",
     OrderIndex = 96,
     Choices =
     {
-        new Choice { Text = "Denizcilik faaliyetleri Karesioğulları'nın alınmasıyla başlamıştır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Deniz kuvvetleri komutanına kaptan-ı derya denir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "İlk tersane Karamürsel'de Orhan Bey döneminde açılmıştır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Deniz kuvvetleri askerlerine levent denir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Denizcilik faaliyetleri Karesioğulları'nın alınmasıyla başlamıştır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Deniz kuvvetleri komutanına kaptan-ı derya denir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "İlk tersane Karamürsel'de Orhan Bey döneminde açılmıştır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Deniz kuvvetleri askerlerine levent denir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Çaka Bey Osmanlı Devleti'nde yetişen ünlü bir denizcidir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Çaka Bey Osmanlı Devleti'nde yetişen ünlü bir denizcidir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -31609,18 +31609,18 @@ new Question
 {
     Note = notUnluOsmanliDenizcileri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Ünlü Osmanlı denizcileriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Miratü'l-Memalik, Seydi Ali Reis'in eseridir, Piri Reis'in değil; Piri Reis'in eseri Kitab-ı Bahriye'dir. Bu iki denizci ve eserleri birbirine karıştırılmamalıdır.",
     OrderIndex = 98,
     Choices =
     {
-        new Choice { Text = "Hacı İlbey, Evrenosoğulları ve Ece Halil Karesioğulları kökenlidir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Barbaros Hayrettin Paşa'nın gerçek adı Hızır'dır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Turgut Reis Malta kuşatmasında şehit olmuştur", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Seydi Ali Reis Hint deniz seferlerine katılmıştır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Hacı İlbey, Evrenosoğulları ve Ece Halil Karesioğulları kökenlidir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Barbaros Hayrettin Paşa'nın gerçek adı Hızır'dır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Turgut Reis Malta kuşatmasında şehit olmuştur", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Seydi Ali Reis Hint deniz seferlerine katılmıştır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Miratü'l-Memalik adlı eser Piri Reis'e aittir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Miratü'l-Memalik adlı eser Piri Reis'e aittir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -31648,18 +31648,18 @@ new Question
 {
     Note = notMulkArazi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Mülk arazi ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Haraç gayrimüslimlerden, öşür ise Müslümanlardan alınan vergidir; bu iki vergi türü birbirine karıştırılmamalıdır.",
     OrderIndex = 100,
     Choices =
     {
-        new Choice { Text = "Mülk arazi alınıp satılabilir ve miras bırakılabilir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Öşri toprak Müslümanlara aittir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Haraci toprak gayrimüslimlere aittir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Mülk arazi toplam topraklar içinde küçük bir oran oluşturur", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Mülk arazi alınıp satılabilir ve miras bırakılabilir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Öşri toprak Müslümanlara aittir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Haraci toprak gayrimüslimlere aittir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Mülk arazi toplam topraklar içinde küçük bir oran oluşturur", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Haraç Müslümanlardan alınan bir vergidir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Haraç Müslümanlardan alınan bir vergidir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -31706,19 +31706,19 @@ new Question
 {
     Note = notMiriArazininCesitleri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Miri arazinin çeşitleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Mukataa, geliri doğrudan hazineye ait olan ve iltizamla işletilen topraktır; paşmaklık ise padişahın annesine, kızlarına ve eşlerine ayrılan topraktır. Bu iki toprak türü birbirine karıştırılmamalıdır.",
     OrderIndex = 103,
     Choices =
     {
-        new Choice { Text = "Ocaklık kale muhafızlarına ve tersanecilere ayrılır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Yurtluk sınır boylarında oturanlara ayrılır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Metruk arazi halkın ortaklaşa kullandığı topraktır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Arpalık saray adamlarına ve ilmiye sınıfından yüksek kişilere verilir", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Malikane, devlete yararlılık gösterenlere verilen topraktır", IsCorrect = true, OrderIndex = 5 },
+        new Choice { Text = "Ocaklık kale muhafızlarına ve tersanecilere ayrılır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Yurtluk sınır boylarında oturanlara ayrılır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Metruk arazi halkın ortaklaşa kullandığı topraktır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Arpalık saray adamlarına ve ilmiye sınıfından yüksek kişilere verilir", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Malikane, devlete yararlılık gösterenlere verilen topraktır", IsCorrect = false, OrderIndex = 5 },
 
-        new Choice { Text = "Mukataa padişahın annesine, kızlarına ve eşlerine ayrılan topraktır", IsCorrect = false, OrderIndex = 6 },
+        new Choice { Text = "Mukataa padişahın annesine, kızlarına ve eşlerine ayrılan topraktır", IsCorrect = true, OrderIndex = 6 },
     }
 },
 
@@ -31746,18 +31746,18 @@ new Question
 {
     Note = notDirlikSistemi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Dirlik (tımar) sistemiyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Tımar, geliri 3.000-20.000 akçe arasında olan ve devlet memurları ile askerlere verilen en küçük dirlik toprağıdır; en büyük toprak ise has'tır.",
     OrderIndex = 105,
     Choices =
     {
-        new Choice { Text = "Zeamet toprakları 20.000-100.000 akçe arasında gelir sağlar", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Has toprakları padişah ve sadrazam gibi üst düzey kişilere verilir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Zeamet orta düzey görevlilere (kadı, müderris gibi) verilir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Tımar devlet memurlarına ve askerlere verilir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Zeamet toprakları 20.000-100.000 akçe arasında gelir sağlar", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Has toprakları padişah ve sadrazam gibi üst düzey kişilere verilir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Zeamet orta düzey görevlilere (kadı, müderris gibi) verilir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Tımar devlet memurlarına ve askerlere verilir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Tımar, dirlik sisteminin en büyük gelirli toprak türüdür", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Tımar, dirlik sisteminin en büyük gelirli toprak türüdür", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -31785,18 +31785,18 @@ new Question
 {
     Note = notCifthaneSistemi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Çifthane sistemiyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Çifthane sistemi, tarımın büyük çiftliklerde belirli ailelerde toplanmasını engellemiştir; feodal bir yapı ortaya çıkarmamıştır.",
     OrderIndex = 107,
     Choices =
     {
-        new Choice { Text = "Devlet, bir çift öküzün işleyebileceği kadar toprağı köylüye kiraya verir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Köylü toprağı mazeretsiz ekmezse çift bozan vergisi alınır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Toprağı sürekli ekmeyen köylünün elinden toprak alınabilir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Aynı sistem devlet açısından dirlik (tımar) olarak adlandırılır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Devlet, bir çift öküzün işleyebileceği kadar toprağı köylüye kiraya verir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Köylü toprağı mazeretsiz ekmezse çift bozan vergisi alınır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Toprağı sürekli ekmeyen köylünün elinden toprak alınabilir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Aynı sistem devlet açısından dirlik (tımar) olarak adlandırılır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Çifthane sistemi tarımın büyük çiftliklerde toplanmasını kolaylaştırmıştır", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Çifthane sistemi tarımın büyük çiftliklerde toplanmasını kolaylaştırmıştır", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -31843,18 +31843,18 @@ new Question
 {
     Note = notSehzadeganMektebiVeAminAlayi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Şehzadegan Mektebi ve Amin Alayı ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Amin Alayı yalnızca şehzadelere özgü değildir; sıradan halk çocukları için de düzenlenirdi.",
     OrderIndex = 110,
     Choices =
     {
-        new Choice { Text = "Şehzadeler 7-12 yaş arasında eğitim görürdü", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Şehzadelere hace-i sultani denilen ünlü hocalar ders verirdi", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Amin Alayı'nın diğer adı bedi besmeledir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Amin Alayı'nda çocuk süslenip bir hayvana bindirilirdi", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Şehzadeler 7-12 yaş arasında eğitim görürdü", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Şehzadelere hace-i sultani denilen ünlü hocalar ders verirdi", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Amin Alayı'nın diğer adı bedi besmeledir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Amin Alayı'nda çocuk süslenip bir hayvana bindirilirdi", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Amin Alayı yalnızca şehzadeler için düzenlenirdi", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Amin Alayı yalnızca şehzadeler için düzenlenirdi", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -31901,18 +31901,18 @@ new Question
 {
     Note = notMedreseGenelOzellikleri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Osmanlı medreselerinin genel özellikleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "İlk müderris Davudu Kayseri'dir; günümüze ulaşan en eski medrese ise Süleyman Paşa Medresesi'dir. Bu iki bilgi birbirine karıştırılmamalıdır.",
     OrderIndex = 113,
     Choices =
     {
-        new Choice { Text = "İlk medrese Orhan Bey döneminde İznik'te açılmıştır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Eğitim dili Arapçadır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Sahn-ı Seman Medreseleri Fatih Sultan Mehmet döneminde açılmıştır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "17. yüzyıldan sonra akli bilimlerden bazı dersler kaldırılmıştır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "İlk medrese Orhan Bey döneminde İznik'te açılmıştır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Eğitim dili Arapçadır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Sahn-ı Seman Medreseleri Fatih Sultan Mehmet döneminde açılmıştır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "17. yüzyıldan sonra akli bilimlerden bazı dersler kaldırılmıştır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Günümüze ulaşan en eski medrese Davudu Kayseri Medresesi'dir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Günümüze ulaşan en eski medrese Davudu Kayseri Medresesi'dir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -31940,18 +31940,18 @@ new Question
 {
     Note = notMedreseAkademikBasamaklar,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Medresenin akademik basamakları ve kavramlarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Medreseyi bitiren kişi kadı unvanı alır; müderris ise atanmış öğretmen anlamına gelir. Bu iki unvan birbirine karıştırılmamalıdır.",
     OrderIndex = 115,
     Choices =
     {
-        new Choice { Text = "Medreseye yeni başlayan öğrenciye softa veya suhte denir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Atama bekleme süresindeki kişiye mülazım denir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Darü'l-Hendese mühendis yetiştiren ihtisas medresesidir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Medreseden alınan diplomaya icazetname denir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Medreseye yeni başlayan öğrenciye softa veya suhte denir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Atama bekleme süresindeki kişiye mülazım denir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Darü'l-Hendese mühendis yetiştiren ihtisas medresesidir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Medreseden alınan diplomaya icazetname denir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Medreseyi bitiren kişiye müderris denir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Medreseyi bitiren kişiye müderris denir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -31979,18 +31979,18 @@ new Question
 {
     Note = notMedreseBozulmaNedenleri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Medreselerin bozulma nedenleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Ulemanın akli bilimleri gereksiz görmesi medreselerin bozulma nedenlerinden biridir; akli bilimlere verilen önemin artması bozulmayı önlemiştir, artırmamıştır.",
     OrderIndex = 117,
     Choices =
     {
-        new Choice { Text = "Rüşvet ve iltimasın artması bozulma nedenidir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Beşik uleması anlayışı bozulma nedenlerinden biridir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "19. yüzyılda azınlıkların farklı müfredatlı okullar açması bozulmaya katkı sağlamıştır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Göçler sonrası nüfusun medreselerde barındırılması bozulma nedenlerindendir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Rüşvet ve iltimasın artması bozulma nedenidir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Beşik uleması anlayışı bozulma nedenlerinden biridir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "19. yüzyılda azınlıkların farklı müfredatlı okullar açması bozulmaya katkı sağlamıştır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Göçler sonrası nüfusun medreselerde barındırılması bozulma nedenlerindendir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Akli bilimlere verilen önemin artması medreselerin bozulmasına neden olmuştur", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Akli bilimlere verilen önemin artması medreselerin bozulmasına neden olmuştur", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -32037,18 +32037,18 @@ new Question
 {
     Note = notKadizadeVeDavuduKayseri,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Kadızade-i Rumi ve Davudu Kayseri ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Osmanlı Devleti'nin ilk şeyhülislamı Molla Fenari'dir; Davudu Kayseri ise ilk müderristir. Bu iki unvan birbirine karıştırılmamalıdır.",
     OrderIndex = 120,
     Choices =
     {
-        new Choice { Text = "Kadızade-i Rumi, Uluğ Bey ve Ali Kuşçu'nun hocasıdır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Kadızade-i Rumi matematik ve astronomiyle ilgilenmiştir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Davudu Kayseri Orhan Bey döneminde İznik Orhaniyesi'ne atanmıştır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Davudu Kayseri Osmanlı'nın ilk müderrisidir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Kadızade-i Rumi, Uluğ Bey ve Ali Kuşçu'nun hocasıdır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Kadızade-i Rumi matematik ve astronomiyle ilgilenmiştir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Davudu Kayseri Orhan Bey döneminde İznik Orhaniyesi'ne atanmıştır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Davudu Kayseri Osmanlı'nın ilk müderrisidir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Davudu Kayseri Osmanlı'nın ilk şeyhülislamıdır", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Davudu Kayseri Osmanlı'nın ilk şeyhülislamıdır", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -32076,18 +32076,18 @@ new Question
 {
     Note = notAltuncuzadeVeAksemsettin,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Altuncuzade ve Akşemsettin ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Bevliye (üroloji) alanında çalışan Altuncuzade'dir; Akşemsettin ise mikrop teorisiyle uğraşmıştır. Bu iki bilim insanının uzmanlık alanları birbirine karıştırılmamalıdır.",
     OrderIndex = 122,
     Choices =
     {
-        new Choice { Text = "Altuncuzade Fatih Sultan Mehmet dönemi saray hekimidir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Akşemsettin mikropları \"canlı tohum\" olarak tanımlamıştır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Akşemsettin Risaletü'n-Nuriye adlı eseri yazmıştır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Akşemsettin Fatih Sultan Mehmet'in hocasıdır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Altuncuzade Fatih Sultan Mehmet dönemi saray hekimidir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Akşemsettin mikropları \"canlı tohum\" olarak tanımlamıştır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Akşemsettin Risaletü'n-Nuriye adlı eseri yazmıştır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Akşemsettin Fatih Sultan Mehmet'in hocasıdır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Bevliye (üroloji) alanında çalışan kişi Akşemsettin'dir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Bevliye (üroloji) alanında çalışan kişi Akşemsettin'dir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -32115,18 +32115,18 @@ new Question
 {
     Note = notSabuncuogluSerafettin,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Sabuncuoğlu Şerafettin ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Sabuncuoğlu Şerafettin'in eseri Fatih Sultan Mehmet'e sunulmuştur; Kanuni Sultan Süleyman'a değil.",
     OrderIndex = 124,
     Choices =
     {
-        new Choice { Text = "Kitabü'l-Cerrahiyeti'l-Haniye adlı eseri yazmıştır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Yaptığı ameliyatları minyatürlerle görselleştirmiştir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Deneysel farmakolojinin öncüsüdür", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "En ünlü deneyi \"horoz deneyi\"dir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Kitabü'l-Cerrahiyeti'l-Haniye adlı eseri yazmıştır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Yaptığı ameliyatları minyatürlerle görselleştirmiştir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Deneysel farmakolojinin öncüsüdür", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "En ünlü deneyi \"horoz deneyi\"dir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Eserini Kanuni Sultan Süleyman'a sunmuştur", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Eserini Kanuni Sultan Süleyman'a sunmuştur", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -32154,18 +32154,18 @@ new Question
 {
     Note = notAliKuscu,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Ali Kuşçu ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Ali Kuşçu, ömrünün son iki yılını Osmanlı'da geçirmiştir; hayatının büyük bölümü Timur ve Akkoyunlu topraklarında geçmiştir, tüm hayatı Osmanlı'da geçmemiştir.",
     OrderIndex = 126,
     Choices =
     {
-        new Choice { Text = "Timur Devleti'nde (Semerkant'ta) yetişmiştir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Ayasofya Medresesi'nde müderrislik yapmıştır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Ayın haritasını çıkarmıştır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Fetih Risalesi adlı eseri yazmıştır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Timur Devleti'nde (Semerkant'ta) yetişmiştir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Ayasofya Medresesi'nde müderrislik yapmıştır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Ayın haritasını çıkarmıştır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Fetih Risalesi adlı eseri yazmıştır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Hayatının tamamını Osmanlı topraklarında geçirmiştir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Hayatının tamamını Osmanlı topraklarında geçirmiştir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -32193,18 +32193,18 @@ new Question
 {
     Note = notPiriReisVeSeydiAliReis,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Piri Reis ve Seydi Ali Reis ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Piri Reis'in ilk haritası Yavuz Sultan Selim'e sunulmuştur; Kanuni Sultan Süleyman'a değil.",
     OrderIndex = 128,
     Choices =
     {
-        new Choice { Text = "Piri Reis Kitab-ı Bahriye adlı eseri yazmıştır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Piri Reis eserinde Amerika'nın keşfinden bahsetmiştir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Seydi Ali Reis Kanuni Sultan Süleyman döneminde Hint deniz seferlerine katılmıştır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Seydi Ali Reis'in eseri \"ülkelerin aynası\" anlamına gelir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Piri Reis Kitab-ı Bahriye adlı eseri yazmıştır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Piri Reis eserinde Amerika'nın keşfinden bahsetmiştir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Seydi Ali Reis Kanuni Sultan Süleyman döneminde Hint deniz seferlerine katılmıştır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Seydi Ali Reis'in eseri \"ülkelerin aynası\" anlamına gelir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Piri Reis ilk haritasını Kanuni Sultan Süleyman'a sunmuştur", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Piri Reis ilk haritasını Kanuni Sultan Süleyman'a sunmuştur", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -32251,18 +32251,18 @@ new Question
 {
     Note = notTakiyuddinMehmet,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Takiyüddin Mehmet ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Takiyüddin Mehmet'in rasathanesi, dönemin muhalefeti sonucu top atışıyla yıktırılmıştır; günümüze kadar korunmamıştır.",
     OrderIndex = 131,
     Choices =
     {
-        new Choice { Text = "Güneş ve ay cetvellerini içeren zic hazırlamıştır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Tıp konularında 30'a yakın eser vermiştir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Otomatik makineler üzerine çalışmalar yapmıştır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Rasathanesi İstanbul depremi ve yangınıyla ilişkilendirilerek eleştirilmiştir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Güneş ve ay cetvellerini içeren zic hazırlamıştır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Tıp konularında 30'a yakın eser vermiştir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Otomatik makineler üzerine çalışmalar yapmıştır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Rasathanesi İstanbul depremi ve yangınıyla ilişkilendirilerek eleştirilmiştir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Rasathanesi günümüze kadar korunarak gelmiştir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Rasathanesi günümüze kadar korunarak gelmiştir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -32290,18 +32290,18 @@ new Question
 {
     Note = notEvliyaCelebiVeKatipCelebi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Evliya Çelebi ve Katip Çelebi ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Seyahatname'yi yazan Evliya Çelebi'dir; Katip Çelebi ise Cihannüma ve Keşfü'z-Zünun'un yazarıdır. Bu iki isim ve eserleri birbirine karıştırılmamalıdır.",
     OrderIndex = 133,
     Choices =
     {
-        new Choice { Text = "Evliya Çelebi \"Seyahat ya Resulallah\" diyerek yola çıkmıştır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Katip Çelebi'nin diğer adı Hacı Kalfa'dır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Katip Çelebi bir bibliyografdır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "İkisi de 17. yüzyılda yaşamıştır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Evliya Çelebi \"Seyahat ya Resulallah\" diyerek yola çıkmıştır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Katip Çelebi'nin diğer adı Hacı Kalfa'dır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Katip Çelebi bir bibliyografdır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "İkisi de 17. yüzyılda yaşamıştır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Seyahatname'yi Katip Çelebi yazmıştır", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Seyahatname'yi Katip Çelebi yazmıştır", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -32329,18 +32329,18 @@ new Question
 {
     Note = notYanyaliEsadEfendi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Muallim unvanlarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "İkinci öğretmen (Muallim-i Sani) unvanı Farabi'ye aittir; İbn Sina bu unvanı taşımaz.",
     OrderIndex = 135,
     Choices =
     {
-        new Choice { Text = "Birinci öğretmen (Muallim-i Evvel) Aristo'dur", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Üçüncü öğretmen (Muallim-i Salis) Yanyalı Esad Efendi'dir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Yanyalı Esad Efendi 18. yüzyılda (Lale Devri'nde) yaşamıştır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Yanyalı Esad Efendi müderrislik ve kadılık yapmıştır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Birinci öğretmen (Muallim-i Evvel) Aristo'dur", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Üçüncü öğretmen (Muallim-i Salis) Yanyalı Esad Efendi'dir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Yanyalı Esad Efendi 18. yüzyılda (Lale Devri'nde) yaşamıştır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yanyalı Esad Efendi müderrislik ve kadılık yapmıştır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "İkinci öğretmen (Muallim-i Sani) unvanı İbn Sina'ya aittir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "İkinci öğretmen (Muallim-i Sani) unvanı İbn Sina'ya aittir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -32368,18 +32368,18 @@ new Question
 {
     Note = notHezarfenVeLagari,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Hezarfen Ahmet Çelebi ve Lagari Hasan Çelebi ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Hezarfen'in kanatla uçtuğu rivayet edilir (roketle değil); roketle uçan kişi Lagari Hasan Çelebi'dir.",
     OrderIndex = 137,
     Choices =
     {
-        new Choice { Text = "İkisi de 4. Murat döneminde yaşamıştır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Hezarfen'in Galata Kulesi'nden Üsküdar'a uçtuğu rivayet edilir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Lagari yaklaşık 300 metre havalanmıştır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Hezarfen ile ilgili bilgiler olaydan 100 yıl sonra yazıya geçirilmiştir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "İkisi de 4. Murat döneminde yaşamıştır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Hezarfen'in Galata Kulesi'nden Üsküdar'a uçtuğu rivayet edilir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Lagari yaklaşık 300 metre havalanmıştır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Hezarfen ile ilgili bilgiler olaydan 100 yıl sonra yazıya geçirilmiştir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Hezarfen barutlu bir roketle uçmuştur", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Hezarfen barutlu bir roketle uçmuştur", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -32407,18 +32407,18 @@ new Question
 {
     Note = notKociBeyVeNaima,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Koçi Bey ve Naima ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Vakanüvislerden önce tarih yazıcılığı görevini üstlenen kişilere \"şehnameci\" denirdi; Naima'nın kendisi vakanüvistir, şehnameci değildir.",
     OrderIndex = 139,
     Choices =
     {
-        new Choice { Text = "Koçi Bey risalesini 4. Murat'a sunmuştur", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Koçi Bey devletin bozulma nedenlerini tespit etmiştir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Naima ilk resmi vakanüvistir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Vakanüvislerden önceki tarih yazıcılarına şehnameci denirdi", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Koçi Bey risalesini 4. Murat'a sunmuştur", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Koçi Bey devletin bozulma nedenlerini tespit etmiştir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Naima ilk resmi vakanüvistir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Vakanüvislerden önceki tarih yazıcılarına şehnameci denirdi", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Naima'ya şehnameci denir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Naima'ya şehnameci denir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -32484,18 +32484,18 @@ new Question
 {
     Note = notMehmetFatihGokmenVeMustafaBehcet,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Mehmet Fatih Gökmen ve Mustafa Behçet Efendi ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Mehmet Fatih Gökmen'in soyadı olması, onun 1934 sonrasında (Cumhuriyet döneminde) da yaşadığını gösterir; yalnızca Osmanlı döneminde yaşamamıştır.",
     OrderIndex = 143,
     Choices =
     {
-        new Choice { Text = "Mehmet Fatih Gökmen takvim çalışmalarıyla tanınır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Mustafa Behçet Efendi Tıbbiye-i Şahane başhekimliği yapmıştır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Behçet hastalığının adı Mustafa Behçet Efendi'den gelir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Mehmet Fatih Gökmen hicri takvim hesaplamalarıyla tanınır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Mehmet Fatih Gökmen takvim çalışmalarıyla tanınır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Mustafa Behçet Efendi Tıbbiye-i Şahane başhekimliği yapmıştır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Behçet hastalığının adı Mustafa Behçet Efendi'den gelir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Mehmet Fatih Gökmen hicri takvim hesaplamalarıyla tanınır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Mehmet Fatih Gökmen yalnızca Osmanlı döneminde yaşamıştır", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Mehmet Fatih Gökmen yalnızca Osmanlı döneminde yaşamıştır", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -32523,18 +32523,18 @@ new Question
 {
     Note = notAhmetCevdetPasa,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Ahmet Cevdet Paşa ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Mecelle'nin yerini 1926'da İsviçre'den uyarlanan Medeni Kanun almıştır; Mecelle günümüzde hala yürürlükte değildir.",
     OrderIndex = 145,
     Choices =
     {
-        new Choice { Text = "Mecelle önce Abdülaziz, sonra Abdülhamit döneminde yürürlüğe girmiştir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Tarih-i Cevdet adlı bir tarih kitabı yazmıştır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Kısas-ı Enbiya adlı eseri yazmıştır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Kızı Fatma Aliye ilk Türk kadın yazar olarak bilinir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Mecelle önce Abdülaziz, sonra Abdülhamit döneminde yürürlüğe girmiştir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Tarih-i Cevdet adlı bir tarih kitabı yazmıştır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Kısas-ı Enbiya adlı eseri yazmıştır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Kızı Fatma Aliye ilk Türk kadın yazar olarak bilinir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Mecelle günümüzde hâlâ yürürlükte olan bir kanundur", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Mecelle günümüzde hâlâ yürürlükte olan bir kanundur", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -32581,18 +32581,18 @@ new Question
 {
     Note = notFiskalizmVeMerkantilizm,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Fiskalizm ve merkantilizm ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Fiskalizm Osmanlı'nın kendi ekonomik anlayışıdır; merkantilizm ise Avrupa kökenli bir sistemdir ve Osmanlı ekonomisine olumsuz etki yapmıştır, olumlu değil.",
     OrderIndex = 148,
     Choices =
     {
-        new Choice { Text = "Fiskalizm devletin gelirini en üste, giderini en alta çekmeyi amaçlar", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Merkantilizm 15-16. yüzyıllarda Avrupa'da ortaya çıkmıştır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Merkantilizm zenginliği altın ve gümüş miktarıyla ölçer", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Fiskalizm Osmanlı'nın kendi ekonomik anlayışıdır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Fiskalizm devletin gelirini en üste, giderini en alta çekmeyi amaçlar", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Merkantilizm 15-16. yüzyıllarda Avrupa'da ortaya çıkmıştır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Merkantilizm zenginliği altın ve gümüş miktarıyla ölçer", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Fiskalizm Osmanlı'nın kendi ekonomik anlayışıdır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Merkantilizm Osmanlı ekonomisine olumlu etki yapmıştır", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Merkantilizm Osmanlı ekonomisine olumlu etki yapmıştır", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -32639,18 +32639,18 @@ new Question
 {
     Note = notLoncaTeskilati,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Lonca teşkilatı ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Lonca üyeleri, üyeler arasında farklı dinlerden kişiler bulunduğu ve zaten profesyonel bir ordu olduğu için cihada gitmez.",
     OrderIndex = 151,
     Choices =
     {
-        new Choice { Text = "Ahilik teşkilatının devamıdır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Gayrimüslimler de üye olabilir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Teşkilatın başındaki kişiye şeyh veya pir denir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Esnafın güvenliğini sağlayan kişiye yiğitbaşı denir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Ahilik teşkilatının devamıdır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Gayrimüslimler de üye olabilir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Teşkilatın başındaki kişiye şeyh veya pir denir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Esnafın güvenliğini sağlayan kişiye yiğitbaşı denir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Lonca üyeleri cihada gider", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Lonca üyeleri cihada gider", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -32697,18 +32697,18 @@ new Question
 {
     Note = notMenzilTeskilati,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Menzil teşkilatı ve Mekkari Taifesi ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Mekkari Taifesi ikame hayvan sağlayan nakliyat kuruluşudur; kervanlar arası haberleşmeyi sağlayan ise menzil teşkilatıdır.",
     OrderIndex = 154,
     Choices =
     {
-        new Choice { Text = "Menzil kelime anlamı olarak mesafe demektir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Mekkari Taifesi günümüzdeki nakliyat şirketlerine benzer", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Mekkar kelimesi at, eşek, deve ve katırın ortak adıdır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Menzil teşkilatı kervanların yol boyunca haber iletmesini sağlar", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Menzil kelime anlamı olarak mesafe demektir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Mekkari Taifesi günümüzdeki nakliyat şirketlerine benzer", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Mekkar kelimesi at, eşek, deve ve katırın ortak adıdır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Menzil teşkilatı kervanların yol boyunca haber iletmesini sağlar", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Kervanlar arası haberleşmeyi sağlayan kuruluş Mekkari Taifesi'dir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Kervanlar arası haberleşmeyi sağlayan kuruluş Mekkari Taifesi'dir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -32774,18 +32774,18 @@ new Question
 {
     Note = notSeriVergiler,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Şeri vergilerle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Öşür Müslümanlardan 1/10, haraç ise gayrimüslimlerden 2/10 oranında alınır; bu iki oran birbirine karıştırılmamalıdır.",
     OrderIndex = 158,
     Choices =
     {
-        new Choice { Text = "Öşür Müslümanların ürünlerinden 1/10 oranında alınır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Haraç gayrimüslimlerin ürünlerinden 2/10 oranında alınır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Cizye kadınlardan ve din adamlarından alınmaz", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Zekatın en düşük oranı 1/40'tır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Öşür Müslümanların ürünlerinden 1/10 oranında alınır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Haraç gayrimüslimlerin ürünlerinden 2/10 oranında alınır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Cizye kadınlardan ve din adamlarından alınmaz", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Zekatın en düşük oranı 1/40'tır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Öşür gayrimüslimlerin ürünlerinden 1/10 oranında alınır", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Öşür gayrimüslimlerin ürünlerinden 1/10 oranında alınır", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -32813,18 +32813,18 @@ new Question
 {
     Note = notOrfiVergiler,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Örfi vergilerle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "İmdadiye seferiye sefer zamanında, imdadiye hazariye ise barış zamanında toplanan vergilerdir; bu iki vergi birbirinin yerine kullanılmamalıdır.",
     OrderIndex = 160,
     Choices =
     {
-        new Choice { Text = "Ağıl (adet-i ağnam) küçükbaş hayvanlardan alınır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Çift bozan toprağını mazeretsiz ekmeyenden alınır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Derbent vergisi geçit ve köprülerden alınır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Resm-i Sefine boğazlardan geçen gemilerden alınır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Ağıl (adet-i ağnam) küçükbaş hayvanlardan alınır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Çift bozan toprağını mazeretsiz ekmeyenden alınır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Derbent vergisi geçit ve köprülerden alınır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Resm-i Sefine boğazlardan geçen gemilerden alınır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "İmdadiye seferiye barış zamanında toplanan vergidir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "İmdadiye seferiye barış zamanında toplanan vergidir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -32890,18 +32890,18 @@ new Question
 {
     Note = notOsmanliParaSistemi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Osmanlı para sistemiyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "İlk kağıt para (Kaime) Sultan Abdülmecid döneminde çıkarılmıştır; Osman Bey döneminde ise ilk (bakır) para basılmıştır. Bu iki dönem birbirine karıştırılmamalıdır.",
     OrderIndex = 164,
     Choices =
     {
-        new Choice { Text = "Osman Bey döneminde ilk (bakır) para basılmıştır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Orhan Bey döneminde ilk gümüş para basılmıştır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Fatih Sultan Mehmet döneminde ilk altın para basılmıştır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Kaime kağıt paranın adıdır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Osman Bey döneminde ilk (bakır) para basılmıştır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Orhan Bey döneminde ilk gümüş para basılmıştır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Fatih Sultan Mehmet döneminde ilk altın para basılmıştır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Kaime kağıt paranın adıdır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "İlk kağıt para Osman Bey döneminde çıkarılmıştır", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "İlk kağıt para Osman Bey döneminde çıkarılmıştır", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -32949,18 +32949,18 @@ new Question
 {
     Note = notOsmanliBankaciligi,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Osmanlı bankacılığı ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Ziraat Bankası'nın kökeni Memleket Sandıkları'dır ve 1888'de adını Ziraat Bankası olarak değiştirmiştir; İtibar-ı Milli Osmanlı Bankası ise İttihatçıların bankasıdır. Bu iki banka birbirine karıştırılmamalıdır.",
     OrderIndex = 167,
     Choices =
     {
-        new Choice { Text = "Bank-ı Dersaadet Galatalı bankerler tarafından kurulmuştur", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Bank-ı Osmani para basma yetkisine sahiptir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "İtibar-ı Milli Osmanlı Bankası İttihatçıların bankasıdır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Mithat Paşa'nın Memleket Sandıkları'nın kuruluşunda büyük rolü vardır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Bank-ı Dersaadet Galatalı bankerler tarafından kurulmuştur", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Bank-ı Osmani para basma yetkisine sahiptir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "İtibar-ı Milli Osmanlı Bankası İttihatçıların bankasıdır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Mithat Paşa'nın Memleket Sandıkları'nın kuruluşunda büyük rolü vardır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Ziraat Bankası'nın kökeni İtibar-ı Milli Osmanlı Bankası'dır", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Ziraat Bankası'nın kökeni İtibar-ı Milli Osmanlı Bankası'dır", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -32988,18 +32988,18 @@ new Question
 {
     Note = notMimarSinanVeIlkCami,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Mimar Sinan ve ilk Osmanlı camii ile ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Mimar Sinan'ın çıraklık eseri Şehzade Camii'dir; Süleymaniye Camii ise kalfalık eseridir. Bu iki eser birbirine karıştırılmamalıdır.",
     OrderIndex = 169,
     Choices =
     {
-        new Choice { Text = "Osmanlı'nın ilk camii İznik'teki Hacı Özbek Camii'dir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Süleymaniye Camii Mimar Sinan'ın kalfalık eseridir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Selimiye Camii Edirne'dedir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Mimar Sinan Kanuni Sultan Süleyman döneminde eserler vermiştir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Osmanlı'nın ilk camii İznik'teki Hacı Özbek Camii'dir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Süleymaniye Camii Mimar Sinan'ın kalfalık eseridir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Selimiye Camii Edirne'dedir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Mimar Sinan Kanuni Sultan Süleyman döneminde eserler vermiştir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Şehzade Camii Mimar Sinan'ın ustalık eseridir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Şehzade Camii Mimar Sinan'ın ustalık eseridir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -33027,18 +33027,18 @@ new Question
 {
     Note = notSelatinCamilerVeDigerMimari,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Selatin camiler ve Mimar Sinan dışı eserlerle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Mostar Köprüsü, Mimar Sinan'a değil onun öğrencisi Mimar Hayrettin'e aittir.",
     OrderIndex = 171,
     Choices =
     {
-        new Choice { Text = "Selatin camiler padişahların kendi adına yaptırdığı camilerdir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Nuruosmaniye Camii Osmanlı'nın batı tarzındaki ilk camisidir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Sultan Ahmet Camii'nin mimarı Sedefkar Mehmed Ağa'dır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Sultan Ahmet Camii yabancılar tarafından \"Blue Mosque\" olarak anılır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Selatin camiler padişahların kendi adına yaptırdığı camilerdir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Nuruosmaniye Camii Osmanlı'nın batı tarzındaki ilk camisidir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Sultan Ahmet Camii'nin mimarı Sedefkar Mehmed Ağa'dır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Sultan Ahmet Camii yabancılar tarafından \"Blue Mosque\" olarak anılır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Mostar Köprüsü Mimar Sinan'ın kendi eseridir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Mostar Köprüsü Mimar Sinan'ın kendi eseridir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -33085,18 +33085,18 @@ new Question
 {
     Note = notMinyatuOsmanli,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Minyatür sanatı ve ünlü nakkaşlarla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Matrakçı Nasuh, Kanuni Sultan Süleyman dönemi nakkaşıdır; Lale Devri'nin en ünlü nakkaşı ise Levni'dir. Bu iki isim ve dönemleri birbirine karıştırılmamalıdır.",
     OrderIndex = 174,
     Choices =
     {
-        new Choice { Text = "Minyatürle uğraşan kişiye musavvir veya nakkaş denir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Levni Lale Devri'nin ünlü nakkaşıdır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Nakkaş Sinan Bey Fatih Sultan Mehmet döneminde yaşamıştır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Matrakçı Nasuh Kanuni Sultan Süleyman döneminde yaşamıştır", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Minyatürle uğraşan kişiye musavvir veya nakkaş denir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Levni Lale Devri'nin ünlü nakkaşıdır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Nakkaş Sinan Bey Fatih Sultan Mehmet döneminde yaşamıştır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Matrakçı Nasuh Kanuni Sultan Süleyman döneminde yaşamıştır", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Matrakçı Nasuh Lale Devri'nde yaşamıştır", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Matrakçı Nasuh Lale Devri'nde yaşamıştır", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -33143,18 +33143,18 @@ new Question
 {
     Note = notResimSanatiOsmanli,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Osmanlı resim sanatıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "İlk resim sergisini açan Şeker Ahmet Paşa'dır; Osman Hamdi Bey ise Sanayi-i Nefise Mektebi'nin kurucusudur. Bu iki isim ve katkıları birbirine karıştırılmamalıdır.",
     OrderIndex = 177,
     Choices =
     {
-        new Choice { Text = "Resmini yaptıran ilk Osmanlı padişahı Fatih Sultan Mehmet'tir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Resmini devlet dairelerine astıran padişah 2. Mahmut'tur", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Mihri Müşfik Osmanlı'nın ilk kadın ressamıdır", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Osman Hamdi Bey Sanayi-i Nefise Mektebi'nin kurucusudur", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Resmini yaptıran ilk Osmanlı padişahı Fatih Sultan Mehmet'tir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Resmini devlet dairelerine astıran padişah 2. Mahmut'tur", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Mihri Müşfik Osmanlı'nın ilk kadın ressamıdır", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Osman Hamdi Bey Sanayi-i Nefise Mektebi'nin kurucusudur", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "İlk resim sergisini Osman Hamdi Bey açmıştır", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "İlk resim sergisini Osman Hamdi Bey açmıştır", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -33201,18 +33201,18 @@ new Question
 {
     Note = notDigerSanatDallariOsmanli,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Diğer sanat dallarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Telkari gümüş işlemeciliği, malakari ise duvar süsleme (kabartma) sanatıdır; bu iki kavram birbirine karıştırılmamalıdır.",
     OrderIndex = 180,
     Choices =
     {
-        new Choice { Text = "Heykelini yaptıran tek Osmanlı padişahı Sultan Abdülaziz'dir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Vitray cam süsleme sanatıdır", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Ciltçilikle uğraşana mücellit denir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Ebru kelime anlamı olarak bulut, bulutlanmak demektir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Heykelini yaptıran tek Osmanlı padişahı Sultan Abdülaziz'dir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Vitray cam süsleme sanatıdır", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Ciltçilikle uğraşana mücellit denir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Ebru kelime anlamı olarak bulut, bulutlanmak demektir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Telkari duvar süsleme (kabartma) sanatıdır", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Telkari duvar süsleme (kabartma) sanatıdır", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -33240,18 +33240,18 @@ new Question
 {
     Note = notDivanTasavvufHalkEdebiyati,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Divan, tasavvuf ve halk edebiyatı temsilcileriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Karacaoğlan halk edebiyatı temsilcisidir; Hacı Bayram Veli ise tasavvuf edebiyatı temsilcisidir. Bu iki isim farklı edebiyat türlerine aittir.",
     OrderIndex = 182,
     Choices =
     {
-        new Choice { Text = "Baki divan edebiyatı temsilcisidir", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Hacı Bayram Veli tasavvuf edebiyatı temsilcisidir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Köroğlu halk edebiyatı temsilcisidir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Karacaoğlan halk edebiyatı temsilcisidir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Baki divan edebiyatı temsilcisidir", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Hacı Bayram Veli tasavvuf edebiyatı temsilcisidir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Köroğlu halk edebiyatı temsilcisidir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Karacaoğlan halk edebiyatı temsilcisidir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Karacaoğlan tasavvuf edebiyatı temsilcisidir", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Karacaoğlan tasavvuf edebiyatı temsilcisidir", IsCorrect = true, OrderIndex = 5 },
     }
 },
 
@@ -33279,18 +33279,18 @@ new Question
 {
     Note = notOsmanliSpor,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
+    IsNegative = false,
     Text = "Osmanlı sporuyla ilgili aşağıdakilerden hangisi yanlıştır?",
     Explanation = "Selim Sırrı Tarcan, Milli Olimpiyat Komitesi'ni kurmuştur; ilk beden eğitimi öğretmeni ise Mehmet Faik Üstünidman'dır. Bu iki isim birbirine karıştırılmamalıdır.",
     OrderIndex = 184,
     Choices =
     {
-        new Choice { Text = "Orhan Bey döneminde ilk güreş tekkeleri açılmıştır", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Okçulukla uğraşana kemankeş denir", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Hünerli at binicilerine cündi denir", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Mehmet Faik Üstünidman ilk beden eğitimi öğretmenidir", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Orhan Bey döneminde ilk güreş tekkeleri açılmıştır", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Okçulukla uğraşana kemankeş denir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Hünerli at binicilerine cündi denir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Mehmet Faik Üstünidman ilk beden eğitimi öğretmenidir", IsCorrect = false, OrderIndex = 4 },
 
-        new Choice { Text = "Milli Olimpiyat Komitesi'ni Mehmet Faik Üstünidman kurmuştur", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Milli Olimpiyat Komitesi'ni Mehmet Faik Üstünidman kurmuştur", IsCorrect = true, OrderIndex = 5 },
     }
 },
 

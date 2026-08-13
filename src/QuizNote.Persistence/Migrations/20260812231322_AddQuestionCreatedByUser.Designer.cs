@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using QuizNote.Persistence;
@@ -11,9 +12,11 @@ using QuizNote.Persistence;
 namespace QuizNote.Persistence.Migrations
 {
     [DbContext(typeof(QuizNoteDbContext))]
-    partial class QuizNoteDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260812231322_AddQuestionCreatedByUser")]
+    partial class AddQuestionCreatedByUser
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

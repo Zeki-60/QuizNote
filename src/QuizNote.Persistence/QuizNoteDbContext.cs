@@ -51,6 +51,9 @@ public class QuizNoteDbContext(DbContextOptions<QuizNoteDbContext> options) : Db
             // Not silinince ona bağlı sorular da gitsin — notsuz soru bu projede anlamsız.
             e.HasOne(x => x.Note).WithMany(n => n.Questions)
                 .HasForeignKey(x => x.NoteId).OnDelete(DeleteBehavior.Cascade);
+            // Ekleyen kullanıcı silinirse soru silinmesin; sadece köken bilgisi kaybolsun.
+            e.HasOne(x => x.CreatedByUser).WithMany()
+                .HasForeignKey(x => x.CreatedByUserId).OnDelete(DeleteBehavior.SetNull);
         });
 
         b.Entity<Choice>(e =>

@@ -70,6 +70,14 @@ public class Question
     public int OrderIndex { get; set; }
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
+    /// <summary>
+    /// Soruyu ekleyen kullanıcı. Seed verisindeki sorularda null'dır; bir kullanıcı
+    /// arayüzden yeni soru eklediğinde kendi Id'si yazılır. "Kendi Sorularım" kartı
+    /// ve düzenleme ekranındaki köken bilgisi bunu kullanır.
+    /// </summary>
+    public Guid? CreatedByUserId { get; set; }
+    public User? CreatedByUser { get; set; }
+
     public ICollection<Choice> Choices { get; set; } = new List<Choice>();
     public ICollection<MatchPair> MatchPairs { get; set; } = new List<MatchPair>();
 }

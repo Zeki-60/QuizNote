@@ -86,3 +86,43 @@ public record CreateQuestionRequest(
     int OrderIndex,
     List<CreateChoiceRequest>? Choices,
     List<CreateMatchPairRequest>? MatchPairs);
+
+// --- Düzenleme ekranı: soruyu TÜM şıklarıyla (IsCorrect dahil) döner ---
+/// <summary>Düzenleme ekranında gösterilen şık; havuzdaki tüm şıklar (doğru/yanlış fark etmeksizin).</summary>
+public record ChoiceEditDto(Guid Id, string Text, bool IsCorrect, int OrderIndex);
+
+public record QuestionEditDto(
+    Guid Id,
+    Guid TopicId,
+    QuestionType Type,
+    string Text,
+    bool IsNegative,
+    string? Explanation,
+    int OrderIndex,
+    Guid NoteId,
+    string NoteTitle,
+    string NoteBody,
+    IReadOnlyList<ChoiceEditDto> Choices);
+
+public record UpdateQuestionRequest(string Text, bool IsNegative, string? Explanation);
+
+public record CreateChoiceForQuestionRequest(string Text, bool IsCorrect);
+public record UpdateChoiceRequest(string Text, bool IsCorrect);
+
+// --- Kullanıcının arayüzden yeni soru eklemesi ---
+/// <summary>
+/// Kullanıcı yeni soru eklerken: konu seçilir, not her zaman yeni oluşturulur
+/// (NoteTitle/NoteBody boş bırakılabilir — bu durumda soru metninden türetilen
+/// bir başlık ve boş bir gövdeyle otomatik bir not açılır). Şıklarda en az bir
+/// IsCorrect=true olmalıdır.
+/// </summary>
+public record CreateUserQuestionRequest(
+    Guid TopicId,
+    string? NoteTitle,
+    string? NoteBody,
+    string Text,
+    string? Explanation,
+    List<CreateChoiceForQuestionRequest> Choices);
+
+/// <summary>Kullanıcının konular ekranında listelediği kendi eklediği sorular için özet kart.</summary>
+public record MyQuestionsSummaryDto(int Count);
