@@ -20640,7 +20640,8 @@ new Question
         new Choice { Text = "Kubilay ortaya çıkmıştır.", IsCorrect = false, OrderIndex = 4 },
         new Choice { Text = "Babürlüler ortaya çıkmıştır.", IsCorrect = true, OrderIndex = 5 },
     }
-}
+},
+
 
             }
         };
@@ -21526,6 +21527,158 @@ new Question
             Questions =
             {
                 // Sorular buraya yazılır.
+
+// --- SORU 107 ---
+new Question
+{
+    Note = notDiniAskeriGorevliler,
+    Type = QuestionType.MultipleChoice,
+    Text = "Aşağıdakilerden hangisi doğrudur?",
+    Explanation = "Amil vergi toplayan sivil yöneticidir; yuğruş Karahanlılarda, hace Gaznelilerde vezir unvanıdır. Melik hükümdarın oğlu, atabey onun yetiştirilmesinden sorumlu görevli, şahne askeri vali, muhtesip ise çarşı ve pazarı denetleyen görevlidir.",
+    OrderIndex = 107,
+    Choices =
+    {
+        new Choice { Text = "Amil vergi toplayan sivil yöneticidir; diğer adı ılımga veya ımga'dır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Yuğruş, Karahanlılarda vezire verilen Türkçe isimdir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Hace, Gaznelilerde vezire verilen isimdir.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Melik, hükümdarın oğludur; İslamiyet öncesindeki karşılığı Tigin'dir.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Atabey, hükümdarın oğlunun yetiştirilmesinden sorumlu görevlidir; Osmanlı'daki karşılığı Lala'dır.", IsCorrect = true, OrderIndex = 5 },
+        new Choice { Text = "Şahne, askeri validir.", IsCorrect = true, OrderIndex = 6 },
+        new Choice { Text = "Muhtesip, çarşı ve pazarı denetleyen görevlidir.", IsCorrect = true, OrderIndex = 7 },
+
+        new Choice { Text = "Amil, sarayda hükümdarın özel muhafızlığını yapan görevlidir.", IsCorrect = false, OrderIndex = 8 },
+        new Choice { Text = "Yuğruş, Gaznelilerde askeri valiye verilen unvandır.", IsCorrect = false, OrderIndex = 9 },
+        new Choice { Text = "Hace, Karahanlılarda hükümdarın oğlunu yetiştiren görevlidir.", IsCorrect = false, OrderIndex = 10 },
+        new Choice { Text = "Melik, çarşı ve pazarı denetleyen görevliye verilen isimdir.", IsCorrect = false, OrderIndex = 11 },
+        new Choice { Text = "Şahne, hükümdarın oğlunun eğitiminden sorumlu görevli olarak görev yapar.", IsCorrect = false, OrderIndex = 12 }
+    }
+},
+
+// --- SORU 108 ---
+new Question
+{
+    Note = notDiniAskeriGorevliler,
+    Type = QuestionType.MultipleChoice,
+    Text = "Vergi toplayan sivil yöneticiye ne ad verilir?",
+    Explanation = "Vergi toplayan sivil yönetici Amil'dir; diğer adları ılımga veya ımga'dır.",
+    OrderIndex = 108,
+    Choices =
+    {
+        new Choice { Text = "Amil", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Yuğruş", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Hace", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Şahne", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Muhtesip", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 109 ---
+new Question
+{
+    Note = notDiniAskeriGorevliler,
+    Type = QuestionType.MultipleChoice,
+    Text = "Karahanlılarda vezire verilen Türkçe isim nedir?",
+    Explanation = "Karahanlılarda vezire verilen Türkçe isim Yuğruş'tur.",
+    OrderIndex = 109,
+    Choices =
+    {
+        new Choice { Text = "Yuğruş", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Hace", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Atabey", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Amil", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Şahne", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 110 ---
+new Question
+{
+    Note = notDiniAskeriGorevliler,
+    Type = QuestionType.MultipleChoice,
+    Text = "Gaznelilerde vezire ne isim verilir?",
+    Explanation = "Gaznelilerde vezire Hace adı verilmiştir.",
+    OrderIndex = 110,
+    Choices =
+    {
+        new Choice { Text = "Hace", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Yuğruş", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Amil", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Şahne", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Muhtesip", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 111 ---
+new Question
+{
+    Note = notDiniAskeriGorevliler,
+    Type = QuestionType.MultipleChoice,
+    Text = "Hükümdarın oğluna ne ad verilir?",
+    Explanation = "Hükümdarın oğluna Melik denir; İslamiyet öncesindeki karşılığı Tigin'dir.",
+    OrderIndex = 111,
+    Choices =
+    {
+        new Choice { Text = "Melik", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Atabey", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Yuğruş", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Hace", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Şahne", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 112 ---
+new Question
+{
+    Note = notDiniAskeriGorevliler,
+    Type = QuestionType.MultipleChoice,
+    Text = "Hükümdarın oğlunun yetiştirilmesinden sorumlu görevliye ne ad verilir?",
+    Explanation = "Hükümdarın oğlunun yetiştirilmesinden sorumlu görevli Atabey'dir; Osmanlı'daki karşılığı Lala'dır.",
+    OrderIndex = 112,
+    Choices =
+    {
+        new Choice { Text = "Atabey", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Melik", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Amil", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Şahne", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Muhtesip", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 113 ---
+new Question
+{
+    Note = notDiniAskeriGorevliler,
+    Type = QuestionType.MultipleChoice,
+    Text = "Askeri valiye ne ad verilir?",
+    Explanation = "Askeri vali Şahne olarak adlandırılır.",
+    OrderIndex = 113,
+    Choices =
+    {
+        new Choice { Text = "Şahne", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Amil", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Atabey", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Hace", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Yuğruş", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 114 ---
+new Question
+{
+    Note = notDiniAskeriGorevliler,
+    Type = QuestionType.MultipleChoice,
+    Text = "Çarşı ve pazarı denetleyen, günümüzdeki zabıtaya benzeyen görevliye ne ad verilir?",
+    Explanation = "Çarşı ve pazarı denetleyen, günümüzdeki zabıtaya benzeyen görevli Muhtesip'tir.",
+    OrderIndex = 114,
+    Choices =
+    {
+        new Choice { Text = "Muhtesip", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Amil", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Şahne", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Atabey", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Hace", IsCorrect = false, OrderIndex = 5 }
+    }
+},
                                 new Question
 {
     Note = notHukumdarDegisim,
@@ -34075,10 +34228,10 @@ new Question
     }
 }
 
-    /// <summary>
-    /// Deneme amaçlı konu. Yeni özellikleri (ör. pasif soru işaretleme) hızlıca
-    /// test edebilmek için tek not ve tek sorudan oluşur.
-    /// </summary>
+/// <summary>
+/// Deneme amaçlı konu. Yeni özellikleri (ör. pasif soru işaretleme) hızlıca
+/// test edebilmek için tek not ve tek sorudan oluşur.
+/// </summary>
 
 
 /* Seed yazarken örnek şablon:
