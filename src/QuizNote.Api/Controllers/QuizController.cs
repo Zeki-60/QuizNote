@@ -717,21 +717,66 @@ public class QuizController(QuizNoteDbContext db) : ControllerBase
     }
 
     /// <summary>
-    /// Kullanıcının kendi eklediği soruları (ve notlarını) DbSeeder.cs'deki seed veri
-    /// formatına benzer C# kodu olarak bir .txt dosyası şeklinde indirir. Topbar'daki
-    /// indirme ikonu bunu çağırır.
+    /// Soru çözme ekranındaki aktif kapsama (tümü / konu / favoriler / aktif olmayanlar /
+    /// kendi sorularım) göre soruları (ve notlarını) DbSeeder.cs'deki seed veri formatına
+    /// benzer C# kodu olarak bir .txt dosyası şeklinde indirir. Soru ekranındaki indirme
+    /// ikonu bunu çağırır; <paramref name="scope"/>: "topic" | "favorites" | "inactive" |
+    /// "myQuestions" | "all". <paramref name="scope"/> "topic" ise <paramref name="topicId"/>
+    /// zorunludur.
     /// </summary>
-    [Authorize]
-    [HttpGet("me/questions/export")]
-    public async Task<ActionResult> ExportMyQuestions(CancellationToken ct)
+    [HttpGet("questions/export")]
+    public async Task<ActionResult> ExportQuestions(
+        [FromQuery] string scope, [FromQuery] Guid? topicId, CancellationToken ct)
     {
         var userId = CurrentUserId;
-        if (userId is null) return Unauthorized();
 
-        var questions = await db.Questions
-            .Where(q => q.CreatedByUserId == userId)
-            // Pasifleştirilmiş (aktif olmayan) sorular dışa aktarıma dahil edilmez.
-            .Where(q => !db.InactiveQuestions.Any(i => i.UserId == userId && i.QuestionId == q.Id))
+        var query = db.Questions.AsQueryable();
+        string scopeLabel;
+
+        if (scope == "topic")
+        {
+            if (topicId is null)
+                return BadRequest(new { message = "Konu belirtilmelidir." });
+
+            var topic = await db.Topics.FirstOrDefaultAsync(t => t.Id == topicId, ct);
+            if (topic is null) return NotFound(new { message = "Konu bulunamadı." });
+
+            query = query.Where(q => q.TopicId == topicId);
+            scopeLabel = $"\"{topic.Name}\" konusu";
+        }
+        else if (scope == "favorites")
+        {
+            if (userId is null) return Unauthorized(new { message = "Favoriler için giriş yapmalısınız." });
+            query = query.Where(q => db.FavoriteQuestions.Any(f => f.UserId == userId && f.QuestionId == q.Id));
+            scopeLabel = "Favorilerim";
+        }
+        else if (scope == "inactive")
+        {
+            if (userId is null) return Unauthorized(new { message = "Aktif olmayanlar için giriş yapmalısınız." });
+            query = query.Where(q => db.InactiveQuestions.Any(i => i.UserId == userId && i.QuestionId == q.Id));
+            scopeLabel = "Aktif olmayan sorularım";
+        }
+        else if (scope == "myQuestions")
+        {
+            if (userId is null) return Unauthorized(new { message = "Kendi sorularınız için giriş yapmalısınız." });
+            query = query.Where(q => q.CreatedByUserId == userId);
+            scopeLabel = "Kendi sorularım";
+        }
+        else if (scope == "all")
+        {
+            scopeLabel = "Tüm sorular";
+        }
+        else
+        {
+            return BadRequest(new { message = "Geçersiz kapsam." });
+        }
+
+        // "Aktif olmayanlar" kapsamı hariç, kullanıcının pasife aldığı sorular dışa
+        // aktarıma dahil edilmez (next-question ucundaki filtrelemeyle tutarlı).
+        if (scope != "inactive" && userId is not null)
+            query = query.Where(q => !db.InactiveQuestions.Any(i => i.UserId == userId && i.QuestionId == q.Id));
+
+        var questions = await query
             .Include(q => q.Choices)
             .Include(q => q.Note)
             .Include(q => q.Topic)
@@ -739,7 +784,7 @@ public class QuizController(QuizNoteDbContext db) : ControllerBase
             .ToListAsync(ct);
 
         var sb = new System.Text.StringBuilder();
-        sb.AppendLine("// Kendi eklediğiniz sorular ve notlar — DbSeeder.cs seed formatında dışa aktarıldı.");
+        sb.AppendLine($"// {scopeLabel} — DbSeeder.cs seed formatında dışa aktarıldı.");
         sb.AppendLine($"// Dışa aktarma tarihi: {DateTime.UtcNow:yyyy-MM-dd HH:mm} UTC");
         sb.AppendLine();
 
@@ -770,6 +815,7 @@ public class QuizController(QuizNoteDbContext db) : ControllerBase
                 sb.AppendLine($"    Text = {CsString(q.Text)},");
                 if (!string.IsNullOrWhiteSpace(q.Explanation))
                     sb.AppendLine($"    Explanation = {CsString(q.Explanation)},");
+                sb.AppendLine($"    OrderIndex = {q.OrderIndex},");
                 sb.AppendLine("    Choices =");
                 sb.AppendLine("    {");
                 foreach (var c in q.Choices.OrderBy(c => c.OrderIndex))
@@ -782,10 +828,19 @@ public class QuizController(QuizNoteDbContext db) : ControllerBase
         }
 
         if (questions.Count == 0)
-            sb.AppendLine("// Henüz eklediğiniz bir soru yok.");
+            sb.AppendLine("// Bu kapsamda soru bulunamadı.");
+
+        var fileName = scope switch
+        {
+            "topic" => "konu-sorulari.txt",
+            "favorites" => "favori-sorularim.txt",
+            "inactive" => "aktif-olmayan-sorularim.txt",
+            "myQuestions" => "kendi-sorularim.txt",
+            _ => "tum-sorular.txt",
+        };
 
         var bytes = System.Text.Encoding.UTF8.GetBytes(sb.ToString());
-        return File(bytes, "text/plain; charset=utf-8", "kendi-sorularim.txt");
+        return File(bytes, "text/plain; charset=utf-8", fileName);
     }
 
     /// <summary>Bir metni C# string literal'ine (çift tırnak + kaçış) çevirir.</summary>
