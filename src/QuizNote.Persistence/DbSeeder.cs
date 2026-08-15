@@ -20656,11 +20656,11 @@ new Question
             Body = """
            İlk Müslüman Türk devletlerinin kültür ve medeniyeti incelenirken esas alınan devlet Büyük Selçuklu Devleti'dir; sorular genellikle bu devletin kültür ve medeniyetinden gelir. Bazı kavramlar Karahanlı veya Gazneli Devleti'nde daha belirgin bulunuyorsa o devlete bağlanır.
 
-           - İslamiyet öncesindeki **Kut** anlayışı, Müslümanlıkla birlikte devam etmiştir; kut, gök tanrının hükümdara ve ailesine devlet yönetme yetkisi verdiğine olan inançtır.
-           - İslamiyet'in kabulünden sonra bu anlayış, devlet yönetme yetkisinin **Allah'ın nasibi ve takdirine** dönüştüğü şeklinde yeniden yorumlanmıştır.
-           - Kut anlayışının sürmesi, kardeşler arasında **taht kavgalarına** yol açmaya devam etmiş; bu da devletlerin kısa ömürlü olmasına veya merkezi otoritenin bozulmasına neden olmuştur.
-           - Hükümdarın görevleri (aç doyurmak, çıplağı giydirmek, ülkenin bağımsızlığını korumak) değişmemiştir.
-           - Eski **kurultayın** yerini **divan** almış, hükümdar divana başkanlık etmeye devam etmiştir.
+           • İslamiyet öncesindeki **Kut** anlayışı, Müslümanlıkla birlikte devam etmiştir; kut, gök tanrının hükümdara ve ailesine devlet yönetme yetkisi verdiğine olan inançtır.
+           • İslamiyet'in kabulünden sonra bu anlayış, devlet yönetme yetkisinin **Allah'ın nasibi ve takdirine** dönüştüğü şeklinde yeniden yorumlanmıştır.
+           • Kut anlayışının sürmesi, kardeşler arasında **taht kavgalarına** yol açmaya devam etmiş; bu da devletlerin kısa ömürlü olmasına veya merkezi otoritenin bozulmasına neden olmuştur.
+           • Hükümdarın görevleri (aç doyurmak, çıplağı giydirmek, ülkenin bağımsızlığını korumak) değişmemiştir.
+           • Eski **kurultayın** yerini **divan** almış, hükümdar divana başkanlık etmeye devam etmiştir.
 
            **Burası karıştırılabilir:** Kut anlayışı ortadan kalkmamış, İslami bir içerik kazanarak (Allah'ın nasibi ve takdiri) devam etmiştir.
            """
@@ -20682,11 +20682,11 @@ new Question
             Body = """
            İslamiyet'in kabulüyle birlikte hükümdarlık sembollerine yeni unsurlar eklenmiştir:
 
-           - **Çetr:** Saltanat şemsiyesi. Üzerine Fetih suresi işlenir, hükümdarı savaş sırasında korur ve manevi anlam taşır. Şemsiyenin düşmesi, hükümdarın veya yakınındaki komutanın vurulduğunun işareti sayılırdı.
-           - **Hilat:** Abbasi halifesinin gönderdiği kemer, külah, at, para, ziynet gibi hediyelerin tümüne verilen isim.
-           - **Tıraz:** Halifenin ve sultanın adının işlendiği, hükümdara gönderilen özel işlemeli elbise.
-           - **Hutbe:** Cuma namazlarında halifeyle birlikte hükümdarın adının okutulup dua edilmesi.
-           - **Menşur:** Abbasi halifesinin, kurulan bir İslam devletine verdiği onay belgesi.
+           • **Çetr**:** Saltanat şemsiyesi. Üzerine Fetih suresi işlenir, hükümdarı savaş sırasında korur ve manevi anlam taşır. Şemsiyenin düşmesi, hükümdarın veya yakınındaki komutanın vurulduğunun işareti sayılırdı.
+           • **Hilat**:** Abbasi halifesinin gönderdiği kemer, külah, at, para, ziynet gibi hediyelerin tümüne verilen isim.
+           • **Tıraz**:** Halifenin ve sultanın adının işlendiği, hükümdara gönderilen özel işlemeli elbise.
+           • **Hutbe**:** Cuma namazlarında halifeyle birlikte hükümdarın adının okutulup dua edilmesi.
+           • **Menşur**:** Abbasi halifesinin, kurulan bir İslam devletine verdiği onay belgesi.
 
            Bunların hepsi İslamiyet'le birlikte ortaya çıkmış sembollerdir; İslamiyet öncesinde bulunmazlar.
 
@@ -20714,19 +20714,19 @@ new Question
             Body = """
            Sarayda hükümdarın çevresinde görev yapan özel kişiler bulunurdu:
 
-           - **Alemdar:** Devletin bayraklarından sorumlu görevli.
-           - **Çaşnigir:** Hükümdarın yemeklerini kontrol eden görevli (zehirlenme ihtimaline karşı).
-           - **Emir-i Ahur:** Hükümdarın atlarından sorumlu görevli.
-           - **Taşt-dar (Abdar):** Hükümdarın temizlik işlerinden sorumlu görevli.
-           - **Camedar:** Hükümdarın kıyafetleriyle ilgilenen görevli.
-           - **Candar:** Hükümdarın özel muhafızı, yakın korumasıdır.
-           - **Hares Emiri:** Hükümdara karşı suç işleyenleri cezalandıran görevli.
-           - **Serhenk:** Hükümdarın yolculuk güzergahıyla ilgilenen görevli.
-           - **Vekil-i Has:** Sarayın tüm işleriyle ilgilenen görevli.
-           - **Emir-i Şikar:** Hükümdarın av partilerini tertip eden görevli.
-           - **Şarabdar:** Hükümdarın içecekleriyle ilgilenen görevli.
-           - **Hansalar:** Hükümdarın sofra düzeniyle ilgilenen görevli.
-           - **Aşçıbaşı (Şaşi):** Padişahın yiyecekleriyle ilgilenen görevli.
+           • **Alemdar**:** Devletin bayraklarından sorumlu görevli.
+           • **Çaşnigir**:** Hükümdarın yemeklerini kontrol eden görevli (zehirlenme ihtimaline karşı).
+           • **Emir-i Ahur**:** Hükümdarın atlarından sorumlu görevli.
+           • **Taşt-dar (Abdar)**:** Hükümdarın temizlik işlerinden sorumlu görevli.
+           • **Camedar**:** Hükümdarın kıyafetleriyle ilgilenen görevli.
+           • **Candar**:** Hükümdarın özel muhafızı, yakın korumasıdır.
+           • **Hares Emiri**:** Hükümdara karşı suç işleyenleri cezalandıran görevli.
+           • **Serhenk**:** Hükümdarın yolculuk güzergahıyla ilgilenen görevli.
+           • **Vekil-i Has**:** Sarayın tüm işleriyle ilgilenen görevli.
+           • **Emir-i Şikar**:** Hükümdarın av partilerini tertip eden görevli.
+           • **Şarabdar**:** Hükümdarın içecekleriyle ilgilenen görevli.
+           • **Hansalar**:** Hükümdarın sofra düzeniyle ilgilenen görevli.
+           • **Aşçıbaşı (Şaşi)**:** Padişahın yiyecekleriyle ilgilenen görevli.
 
            **Burası karıştırılabilir:** "-dar" eki sona geldiğinde "yapan, eden" anlamı taşır (candar, alemdar gibi); "dar" kelimenin başına geldiğinde ise kurum/yapı anlamı taşır (darüşşifa, darülfünun gibi).
            """
@@ -20739,9 +20739,9 @@ new Question
            Hacip, hükümdar ve vezirden sonra protokolde üçüncü sırada yer alan yetkilidir. Sarayda birden fazla hacip bulunur; hepsi şeri ve örfi hukuka hakim olmak zorundadır.
 
            Hacibin görevleri:
-           - Hükümdar ile halk arasındaki ilişkiyi düzenlemek.
-           - Elçileri kabul etmek.
-           - Uygun gördüğü kişileri Divan-ı Mezalim'e (sultanın huzuruna) çıkarmak.
+           • Hükümdar ile halk arasındaki ilişkiyi düzenlemek.
+           • Elçileri kabul etmek.
+           • Uygun gördüğü kişileri Divan-ı Mezalim'e (sultanın huzuruna) çıkarmak.
 
            Haciplerin başındaki kişiye **Has Hacip**, **Hacibü'l-Hüccab** veya **Ulu Hacip** denir; Gaznelilerde bu kişiye **Hacib-i Bozork** denir. **Balasagunlu Yusuf**, Kutadgu Bilig'i sunduktan sonra Has Haciplik görevine yükseltilmiştir.
 
@@ -20755,9 +20755,9 @@ new Question
             Body = """
            İslam öncesindeki kurultayın yerini **divan** almıştır. **Divan-ı Saltanat**, merkezi otoritenin (Hakan/Sultan) bulunduğu büyük divandır ve bu ismin farklı devletlerde farklı karşılıkları vardır:
 
-           - **Karahanlılarda: Meclis-i Ali** (Ali burada "büyük" anlamındadır).
-           - **Gaznelilerde: Divan-ı Vezaret** (mali ve genel işlerden sorumludur).
-           - **Büyük Selçuklu Devleti'nde: Divan-ı Saltanat**.
+           • **Karahanlılarda**: Meclis-i Ali** (Ali burada "büyük" anlamındadır).
+           • **Gaznelilerde**: Divan-ı Vezaret** (mali ve genel işlerden sorumludur).
+           • **Büyük Selçuklu Devleti'nde**: Divan-ı Saltanat**.
 
            Divan-ı Saltanat günümüzdeki **Bakanlar Kurulu**'na tekabül eder. Bu divana bağlı alt divanlar bulunur.
 
@@ -20771,8 +20771,8 @@ new Question
             Body = """
            Divan-ı Saltanat'a bağlı alt divanlardan ikisi:
 
-           - **Divan-ı İstifa:** "İstif etmek" biriktirmek demektir; bu divan ekonomi ve mali işlerle ilgilenir. Başındaki görevliye müstevfi denir.
-           - **Divan-ı Arz:** "Arz etmek" bir durumu bildirmek anlamına gelir ve en çok askeriyede kullanılır; bu divan ordu işleriyle ilgilenir. Başındaki görevliye emir-i arz denir.
+           • **Divan-ı İstifa**:** "İstif etmek" biriktirmek demektir; bu divan ekonomi ve mali işlerle ilgilenir. Başındaki görevliye müstevfi denir.
+           • **Divan-ı Arz**:** "Arz etmek" bir durumu bildirmek anlamına gelir ve en çok askeriyede kullanılır; bu divan ordu işleriyle ilgilenir. Başındaki görevliye emir-i arz denir.
 
            **Burası karıştırılabilir:** Divan-ı İstifa ekonomiyle, Divan-ı Arz ise ordu işleriyle ilgilenir; isimler kelime köküyle bağlantılı olarak (istif=biriktirme, arz=bildirme) ayırt edilmelidir.
            """
@@ -20784,9 +20784,9 @@ new Question
             Body = """
            Divan-ı Saltanat'a bağlı diğer divanlar:
 
-           - **Divan-ı İşraf:** Askeri ve hukuk dışındaki tüm devlet işlerini denetleyen kurumdur (günümüzdeki Sayıştay'a benzetilebilir). Başındaki görevliye müşrif-i memalik denir.
-           - **Divan-ı İnşa (eski adıyla Divan-ı Tuğra):** Devletin iç ve dış yazışma işlerinden sorumlu divandır. Başında Tuğrai bulunur.
-           - **Divan-ı Berid:** Adında "divan" geçmesine rağmen aslında bir divan değildir; posta ve haberleşme işlerinden sorumludur. Başındaki görevliye Berid denir.
+           • **Divan-ı İşraf**:** Askeri ve hukuk dışındaki tüm devlet işlerini denetleyen kurumdur (günümüzdeki Sayıştay'a benzetilebilir). Başındaki görevliye müşrif-i memalik denir.
+           • **Divan-ı İnşa (eski adıyla Divan-ı Tuğra)**:** Devletin iç ve dış yazışma işlerinden sorumlu divandır. Başında Tuğrai bulunur.
+           • **Divan-ı Berid**:** Adında "divan" geçmesine rağmen aslında bir divan değildir; posta ve haberleşme işlerinden sorumludur. Başındaki görevliye Berid denir.
 
            **Burası karıştırılabilir:** Divan-ı Berid ismine rağmen alt divanlardan biri sayılmaz; sadece isim benzerliği taşır.
            """
@@ -20809,12 +20809,12 @@ new Question
            Divan-ı Mezalim, zulme veya haksızlığa uğradığını düşünen kişilerin başvurduğu, başkanlığını bizzat sultanın yaptığı divandır. Kişi önce hacibe başvurur; hacip uygun görürse kişiyi sultanın huzuruna (divana) çıkarır.
 
            Divan-ı Mezalim'in görevleri:
-           - Kadı kararlarına yapılan itirazları değerlendirmek ve sonuçlandırmak.
-           - Devlet memurları hakkındaki şikayetleri incelemek.
-           - Katipleri aracılığıyla vakıfları denetlemek.
-           - Muhtesibin yerine getiremediği kararları uygulamak.
-           - Devlet memurlarının maaşlarının geç veya eksik ödenmesiyle ilgili şikayetleri incelemek.
-           - Cuma ve bayram namazları, hac ve cihat gibi ibadetlerle ilgili görüş ve önerileri dinlemek.
+           • Kadı kararlarına yapılan itirazları değerlendirmek ve sonuçlandırmak.
+           • Devlet memurları hakkındaki şikayetleri incelemek.
+           • Katipleri aracılığıyla vakıfları denetlemek.
+           • Muhtesibin yerine getiremediği kararları uygulamak.
+           • Devlet memurlarının maaşlarının geç veya eksik ödenmesiyle ilgili şikayetleri incelemek.
+           • Cuma ve bayram namazları, hac ve cihat gibi ibadetlerle ilgili görüş ve önerileri dinlemek.
 
            Divan-ı Mezalim'de sultan tarafından verilen karar kesindir ve değiştirilemez.
 
@@ -20830,13 +20830,13 @@ new Question
             Body = """
            İlk Müslüman Türk devletlerinde bilinmesi gereken bazı görevliler:
 
-           - **Amil:** Vergi toplayan sivil yönetici; diğer adıyla ılımga veya ımga.
-           - **Yuğruş:** Karahanlılarda vezire verilen Türkçe isim.
-           - **Hace:** Gaznelilerde vezire verilen isim.
-           - **Melik:** Hükümdarın oğlu (İslamiyet öncesindeki karşılığı Tigin'dir).
-           - **Atabey:** Hükümdarın oğlunun (meliğin) yetiştirilmesinden sorumlu görevli. Osmanlı'daki karşılığı Lala'dır. İlk Türk atabeyi vezir Nizamülmülk'tür.
-           - **Şahne:** Askeri vali.
-           - **Muhtesip:** Çarşı ve pazarı denetleyen, günümüzdeki zabıtaya benzeyen görevli.
+           • **Amil**:** Vergi toplayan sivil yönetici; diğer adıyla ılımga veya ımga.
+           • **Yuğruş**:** Karahanlılarda vezire verilen Türkçe isim.
+           • **Hace**:** Gaznelilerde vezire verilen isim.
+           • **Melik**:** Hükümdarın oğlu (İslamiyet öncesindeki karşılığı Tigin'dir).
+           • **Atabey**:** Hükümdarın oğlunun (meliğin) yetiştirilmesinden sorumlu görevli. Osmanlı'daki karşılığı Lala'dır. İlk Türk atabeyi vezir Nizamülmülk'tür.
+           • **Şahne**:** Askeri vali.
+           • **Muhtesip**:** Çarşı ve pazarı denetleyen, günümüzdeki zabıtaya benzeyen görevli.
 
            **Burası karıştırılabilir:** Vezir unvanı devletten devlete farklı adlarla anılır; Karahanlılarda yuğruş, Gaznelilerde hace olarak geçer.
            """
@@ -20847,9 +20847,9 @@ new Question
             Title = "İlk Türk İslam Devletleri — Hukuk Sisteminin Kaynakları",
             Body = """
            İlk Türk İslam hukukunun oluşmasında üç temel kaynak vardır:
-           - İslam'ın getirdiği esaslar.
-           - Oğuzların kabile gelenekleri.
-           - Göktürk, Uygur, Sasani ve Hun gelenekleri.
+           • İslam'ın getirdiği esaslar.
+           • Oğuzların kabile gelenekleri.
+           • Göktürk, Uygur, Sasani ve Hun gelenekleri.
 
            Hukuk, örfi hukuk ve şeri hukuk olmak üzere iki kısma ayrılmıştır.
 
@@ -20867,9 +20867,9 @@ new Question
         {
             Title = "İlk Türk İslam Devletleri — Şeri ve Örfi Hukukun Uygulama Alanları",
             Body = """
-           - **Şeri hukuk**: evlenme, boşanma ve **miras** gibi alanlarda uygulanır. Miras, İslamiyet öncesinde bulunmayan, Müslüman olunca ortaya çıkan yeni bir kavramdır.
-           - **Mihir**: evlilikte erkeğin kadına vermeyi taahhüt ettiği, boşanma sonrası kadının geçimini sağlamaya yönelik bir haktır; şeri hukukun kapsamındadır. Selçuklu döneminde en çok mihir davaları görülmüştür.
-           - **Örfi hukuk**: yönetim, maliye ve askerlik gibi alanlarda geçerlidir.
+           • **Şeri hukuk**: evlenme, boşanma ve **miras** gibi alanlarda uygulanır. Miras, İslamiyet öncesinde bulunmayan, Müslüman olunca ortaya çıkan yeni bir kavramdır.
+           • **Mihir**: evlilikte erkeğin kadına vermeyi taahhüt ettiği, boşanma sonrası kadının geçimini sağlamaya yönelik bir haktır; şeri hukukun kapsamındadır. Selçuklu döneminde en çok mihir davaları görülmüştür.
+           • **Örfi hukuk**: yönetim, maliye ve askerlik gibi alanlarda geçerlidir.
 
            **Burası karıştırılabilir:** Miras İslamiyet öncesi Türk toplumunda kavram olarak yoktu; şeri hukukla birlikte ortaya çıkmıştır.
            """
@@ -20881,11 +20881,11 @@ new Question
             Body = """
            İlk Türk İslam devletlerinde toprak; miri (devlete ait), vakıf ve mülk (Müslüman ve gayrimüslimlere ait) topraklar olmak üzere ayrılırdı.
 
-           - **Has toprak:** Geliri doğrudan sultana ayrılan en verimli topraktır.
-           - **Vakıf toprak:** Bir kişinin kendi mülkünü (toprak, han vb.) kendisinden sonra kamu yararına bir kuruma bağışlamasıyla oluşan topraktır; özel mülkiyetten çıkarma işlemidir ve bir kez vakfedildikten sonra geri alınamaz.
-           - **Öşri toprak:** Müslümanlara ait topraktır; üründen öşür adı verilen vergi alınır.
-           - **Haraci toprak:** Gayrimüslimlerden haraç adı verilen vergi alınan topraktır.
-           - **Mülk toprak:** Alınıp satılabilen, miras bırakılabilen kişisel mülkiyet toprağıdır.
+           • **Has toprak**:** Geliri doğrudan sultana ayrılan en verimli topraktır.
+           • **Vakıf toprak**:** Bir kişinin kendi mülkünü (toprak, han vb.) kendisinden sonra kamu yararına bir kuruma bağışlamasıyla oluşan topraktır; özel mülkiyetten çıkarma işlemidir ve bir kez vakfedildikten sonra geri alınamaz.
+           • **Öşri toprak**:** Müslümanlara ait topraktır; üründen öşür adı verilen vergi alınır.
+           • **Haraci toprak**:** Gayrimüslimlerden haraç adı verilen vergi alınan topraktır.
+           • **Mülk toprak**:** Alınıp satılabilen, miras bırakılabilen kişisel mülkiyet toprağıdır.
 
            **Burası karıştırılabilir:** Öşür Müslümanlardan, haraç ise gayrimüslimlerden alınan vergidir; bu iki kavram ters bağlanabilir.
            """
@@ -20906,11 +20906,11 @@ new Question
             Title = "İlk Türk İslam Devletleri — İkta Sisteminin Faydaları",
             Body = """
            İkta sisteminin sağladığı faydalar:
-           - Toprağın boş kalması engellenmiş, üretimde süreklilik sağlanmıştır.
-           - Düzenli vergi toplanmıştır.
-           - Devlet memurlarının maaşı ödenmiştir.
-           - Masrafsız bir ordu kurulmuştur.
-           - Görevlinin bulunduğu bölgenin güvenliği sağlanmıştır.
+           • Toprağın boş kalması engellenmiş, üretimde süreklilik sağlanmıştır.
+           • Düzenli vergi toplanmıştır.
+           • Devlet memurlarının maaşı ödenmiştir.
+           • Masrafsız bir ordu kurulmuştur.
+           • Görevlinin bulunduğu bölgenin güvenliği sağlanmıştır.
 
            **Burası karıştırılabilir:** İkta sisteminin beş faydası da doğru olmakla birlikte, sistemin temel uygulanma amacı olarak sınavlarda özellikle "masrafsız bir ordu kurmak" öne çıkarılır.
            """
@@ -20934,15 +20934,15 @@ new Question
             Body = """
            İlk Müslüman Türk devletlerinde sosyal hayatta ortaya çıkan kurumlar:
 
-           - **İmarethane:** Yoksullara sıcak yemek dağıtılan kurum.
-           - **Kapan:** Tek bir cins malın satıldığı yer (un kapanı, balık kapanı gibi).
-           - **Bedesten:** Her türlü ticari malın depolanıp satıldığı merkez.
-           - **Sebil:** Halka ücretsiz su dağıtılan çeşme.
-           - **Bargah:** Saray, yönetim merkezi.
-           - **Tekke:** Yeni Müslüman olan Oğuzların inançlarını pekiştirmek amacıyla kurulan din kurumu.
-           - **Zaviye:** Tekkenin köy ve kasabalardaki küçük hali.
-           - **Darüşşifa (Darülafiye, Bimaristan):** Hastane.
-           - **Arasta:** Tek bir cins malın satıldığı, genellikle üstü açık çarşı.
+           • **İmarethane**:** Yoksullara sıcak yemek dağıtılan kurum.
+           • **Kapan**:** Tek bir cins malın satıldığı yer (un kapanı, balık kapanı gibi).
+           • **Bedesten**:** Her türlü ticari malın depolanıp satıldığı merkez.
+           • **Sebil**:** Halka ücretsiz su dağıtılan çeşme.
+           • **Bargah**:** Saray, yönetim merkezi.
+           • **Tekke**:** Yeni Müslüman olan Oğuzların inançlarını pekiştirmek amacıyla kurulan din kurumu.
+           • **Zaviye**:** Tekkenin köy ve kasabalardaki küçük hali.
+           • **Darüşşifa (Darülafiye, Bimaristan)**:** Hastane.
+           • **Arasta**:** Tek bir cins malın satıldığı, genellikle üstü açık çarşı.
 
            **Burası karıştırılabilir:** Kapan ve arasta ikisi de tek bir cins malın satıldığı yerlerdir; bedesten ise her türlü ticari malın satıldığı geniş merkezdir.
            """
@@ -20952,9 +20952,9 @@ new Question
         {
             Title = "İlk Türk İslam Devletleri — Kümbet, Türbe ve Külliye",
             Body = """
-           - **Kümbet:** İslamiyet öncesi **kurgan** geleneğinin yerini alan, padişah, sultan eşleri ve önemli devlet adamlarının gömüldüğü özel mezar yapısıdır. İlk defa **Büyük Selçuklu Devleti**'nde görülmüştür; üst kısmı İslamiyet öncesi çadırı simgeler.
-           - **Türbe:** Genellikle dini şahsiyetlerin ve onların sülalesinden gelen kişilerin gömüldüğü, yarım daire biçimli mezar yapısıdır.
-           - **Külliye:** Genellikle caminin merkez alınarak etrafına medrese, han, hamam, kütüphane gibi yapıların eklenmesiyle oluşan toplu yapı grubudur.
+           • **Kümbet**:** İslamiyet öncesi **kurgan** geleneğinin yerini alan, padişah, sultan eşleri ve önemli devlet adamlarının gömüldüğü özel mezar yapısıdır. İlk defa **Büyük Selçuklu Devleti**'nde görülmüştür; üst kısmı İslamiyet öncesi çadırı simgeler.
+           • **Türbe**:** Genellikle dini şahsiyetlerin ve onların sülalesinden gelen kişilerin gömüldüğü, yarım daire biçimli mezar yapısıdır.
+           • **Külliye**:** Genellikle caminin merkez alınarak etrafına medrese, han, hamam, kütüphane gibi yapıların eklenmesiyle oluşan toplu yapı grubudur.
 
            **Burası karıştırılabilir:** Kümbet ilk defa Büyük Selçuklu Devleti'nde görülen bir mimari yapı türüdür; İslamiyet öncesinde bulunmaz.
            """
@@ -20964,10 +20964,10 @@ new Question
         {
             Title = "İlk Türk İslam Devletleri — Gulam Sistemi",
             Body = """
-           - **Gulam sistemi**, savaşlarda elde edilen esirlerin veya satın alınan çocukların beşte birinin (ganimetin beşte biri devlet malı sayıldığından) devlet sistemine alınıp **gulamhanelerde** yetiştirildiği sistemdir. Gulam kelimesi "köle" anlamına gelir.
-           - Gulam olarak alınan askerlerin büyük çoğunluğu, savaşçılık özellikleri nedeniyle **Türklerden** oluşmuştur; yabancı köle alındığı düşüncesi yanlıştır.
-           - Gulamhanede yetiştirilen çocuklar, yeteneklerine göre ya **hassa askeri** olarak orduya ya da saray hizmetine (idari göreve) yönlendirilirdi.
-           - Gulam sisteminin Osmanlı Devleti'ndeki karşılığı **pençik sistemidir** (pençik: beşte bir). Gulam sistemi, İslamiyet öncesi Türk ordu yapısına göre getirilen en büyük yeniliktir.
+           • **Gulam sistemi**, savaşlarda elde edilen esirlerin veya satın alınan çocukların beşte birinin (ganimetin beşte biri devlet malı sayıldığından) devlet sistemine alınıp **gulamhanelerde** yetiştirildiği sistemdir. Gulam kelimesi "köle" anlamına gelir.
+           • Gulam olarak alınan askerlerin büyük çoğunluğu, savaşçılık özellikleri nedeniyle **Türklerden** oluşmuştur; yabancı köle alındığı düşüncesi yanlıştır.
+           • Gulamhanede yetiştirilen çocuklar, yeteneklerine göre ya **hassa askeri** olarak orduya ya da saray hizmetine (idari göreve) yönlendirilirdi.
+           • **Gulam sisteminin Osmanlı Devleti'ndeki karşılığı **pençik sistemidir** (pençik**: beşte bir). Gulam sistemi, İslamiyet öncesi Türk ordu yapısına göre getirilen en büyük yeniliktir.
 
            **Burası karıştırılabilir:** Gulam sisteminin Osmanlı'daki karşılığı devşirme değil, pençik sistemidir.
            """
@@ -20989,9 +20989,9 @@ new Question
             Body = """
            İlk Türk İslam devletlerinde eğitim alanında açılan önemli medreseler:
 
-           - **Semerkant Medresesi:** Karahanlılar tarafından kurulan ilk Türk İslam medresesidir; burslu öğrencilik sisteminin ilk uygulandığı medresedir.
-           - **Yağıbasan Medresesi:** Danışmentliler tarafından Tokat Niksar'da kurulmuş, Anadolu'da kurulan ilk medresedir.
-           - **Nişabur Medresesi:** Büyük Selçuklu Devleti'nin kurduğu ilk medresedir.
+           • **Semerkant Medresesi**:** Karahanlılar tarafından kurulan ilk Türk İslam medresesidir; burslu öğrencilik sisteminin ilk uygulandığı medresedir.
+           • **Yağıbasan Medresesi**:** Danışmentliler tarafından Tokat Niksar'da kurulmuş, Anadolu'da kurulan ilk medresedir.
+           • **Nişabur Medresesi**:** Büyük Selçuklu Devleti'nin kurduğu ilk medresedir.
 
            **Burası karıştırılabilir:** İlk Türk İslam medresesi Semerkant Medresesi'dir; Anadolu'daki ilk medrese ise Yağıbasan Medresesi'dir.
            """
@@ -21012,12 +21012,12 @@ new Question
             Title = "İlk Türk İslam Devletleri — Nizamiye Medreselerinin Açılma Nedenleri",
             Body = """
            Nizamiye medreselerinin açılma nedenleri:
-           - İslamiyet'e yeni geçen Oğuz topluluklarının inançlarını pekiştirmek.
-           - Yoksul ve yetenekli çocukları topluma kazandırmak.
-           - Bilim insanı yetiştirmek.
-           - Devlet memuru ihtiyacını karşılamak.
-           - Din adamı yetiştirmek.
-           - Zararlı fikir akımlarına (özellikle **Batınilik**) karşı fikirle karşılık vermek.
+           • İslamiyet'e yeni geçen Oğuz topluluklarının inançlarını pekiştirmek.
+           • Yoksul ve yetenekli çocukları topluma kazandırmak.
+           • Bilim insanı yetiştirmek.
+           • Devlet memuru ihtiyacını karşılamak.
+           • Din adamı yetiştirmek.
+           • Zararlı fikir akımlarına (özellikle **Batınilik**) karşı fikirle karşılık vermek.
            """
         };
 
@@ -21026,12 +21026,12 @@ new Question
             Title = "İlk Türk İslam Devletleri — Medrese ile İlgili Kavramlar",
             Body = """
            Medreselerle ilgili terimler:
-           - **Softa (Danişmend/Şakirt):** Medresede öğrenim gören öğrenci.
-           - **Müderris:** Öğretmen (günümüzdeki profesöre karşılık gelir).
-           - **İcazetname:** Medreseden veya bir meslek kuruluşundan (örneğin ahilik teşkilatından) mezuniyet sonunda verilen diploma.
-           - **Muhaddis:** Hadis ilmiyle uğraşan kişi.
-           - **Müfessir:** Tefsir ilmiyle uğraşan kişi.
-           - **Fakih:** Fıkıh ilmiyle uğraşan kişi (örnek: Dursun Fakih).
+           • **Softa (Danişmend/Şakirt)**:** Medresede öğrenim gören öğrenci.
+           • **Müderris**:** Öğretmen (günümüzdeki profesöre karşılık gelir).
+           • **İcazetname**:** Medreseden veya bir meslek kuruluşundan (örneğin ahilik teşkilatından) mezuniyet sonunda verilen diploma.
+           • **Muhaddis**:** Hadis ilmiyle uğraşan kişi.
+           • **Müfessir**:** Tefsir ilmiyle uğraşan kişi.
+           • **Fakih**:** Fıkıh ilmiyle uğraşan kişi (örnek: Dursun Fakih).
 
            **Burası karıştırılabilir:** Ahilik teşkilatında ustalığa geçen kişiye verilen diplomanın adı da icazetnamedir, ahitname değildir.
            """
@@ -21045,9 +21045,9 @@ new Question
             Body = """
            İlk Müslüman Türk devletlerinde mimari; dini, sivil ve askeri olmak üzere üç grupta incelenir. Bir yapının hangi gruba girdiği, içinde ne yapıldığına değil, yapının kendi mimari özelliklerine göre belirlenir.
 
-           - **Dini mimari:** Cami, mescit, türbe, kümbet, külliye, medrese, tekke ve zaviye.
-           - **Sivil mimari:** Ev, çeşme (sebil), kervansaray, han, hamam, kütüphane, ribat.
-           - **Askeri mimari:** Kışla, tersane, kale, burç, sur, garnizon, Nizamiye kapısı.
+           • **Dini mimari**:** Cami, mescit, türbe, kümbet, külliye, medrese, tekke ve zaviye.
+           • **Sivil mimari**:** Ev, çeşme (sebil), kervansaray, han, hamam, kütüphane, ribat.
+           • **Askeri mimari**:** Kışla, tersane, kale, burç, sur, garnizon, Nizamiye kapısı.
 
            Cami ile mescit aynı anlamda kullanılır (secde edilen yer); Türk milleti "cami", Araplar ve Farslar ise "mescit" demeyi tercih etmiştir.
 
@@ -21103,11 +21103,11 @@ new Question
         {
             Title = "İlk Türk İslam Devletleri — Tezhip, Telkari, Malakari, Vitray ve Ebru",
             Body = """
-           - **Tezhip:** Kelime anlamı "altınlamak, yaldızlamak"tır; kitapları (özellikle Kur'an-ı Kerim'i) altın tozuyla süsleme sanatıdır. Uğraşana müzehhip denir.
-           - **Telkari:** Gümüş işlemeciliği sanatıdır; Türkiye'de en ünlü olduğu yer Mardin'dir.
-           - **Malakari:** Duvar süsleme ve kabartma sanatıdır.
-           - **Vitray:** Cam süsleme sanatıdır; renkli camlardan oluşur ve maliyeti yüksektir.
-           - **Ebru:** Kelime anlamı "bulut, bulutlanmak"tır; kağıt üzerinde su ve boya ile yapılan süsleme sanatıdır.
+           • **Tezhip**:** Kelime anlamı "altınlamak, yaldızlamak"tır; kitapları (özellikle Kur'an-ı Kerim'i) altın tozuyla süsleme sanatıdır. Uğraşana müzehhip denir.
+           • **Telkari**:** Gümüş işlemeciliği sanatıdır; Türkiye'de en ünlü olduğu yer Mardin'dir.
+           • **Malakari**:** Duvar süsleme ve kabartma sanatıdır.
+           • **Vitray**:** Cam süsleme sanatıdır; renkli camlardan oluşur ve maliyeti yüksektir.
+           • **Ebru**:** Kelime anlamı "bulut, bulutlanmak"tır; kağıt üzerinde su ve boya ile yapılan süsleme sanatıdır.
 
            **Burası karıştırılabilir:** Tezhip kitap süslemede altın tozu kullanımıyken, vitray cam süsleme sanatıdır; bu iki kavram birbirinden farklıdır.
            """
@@ -21130,13 +21130,13 @@ new Question
            Farabi, dünyanın ilk öğretmeni kabul edilen Aristo'nun en büyük yorumcularından biridir ve bu nedenle "Muallim-i Sani" (ikinci öğretmen) unvanıyla anılır. Batıda "Alfarabius" olarak tanınır.
 
            Farabi'nin özellikleri:
-           - Siyaset felsefesinden ilk bahseden kişidir.
-           - Birleşmiş Milletler fikrini ilk defa ortaya atan kişidir (bazı sorunların devletler tarafından ortak çözülmesi gerektiğini savunmuştur).
-           - İhsau'l-Ulûm adlı eserinde İslam dünyasında ilimleri ilk sınıflandıran kişidir.
-           - Kitabü'l-Musiki adlı, dünyanın ilk modern müzik kitabını yazmıştır.
-           - Logaritmayı icat etmiş, hava, ses ve titreşim olaylarını incelemiştir.
-           - El-Medinetü'l-Fazıla (Erdemli Şehir) adlı eserinde ideal devlet ve hükümdar anlayışını anlatmıştır.
-           - İslam dünyasında pozitif bilimleri başlatan kişidir.
+           • Siyaset felsefesinden ilk bahseden kişidir.
+           • Birleşmiş Milletler fikrini ilk defa ortaya atan kişidir (bazı sorunların devletler tarafından ortak çözülmesi gerektiğini savunmuştur).
+           • İhsau'l-Ulûm adlı eserinde İslam dünyasında ilimleri ilk sınıflandıran kişidir.
+           • Kitabü'l-Musiki adlı, dünyanın ilk modern müzik kitabını yazmıştır.
+           • Logaritmayı icat etmiş, hava, ses ve titreşim olaylarını incelemiştir.
+           • El-Medinetü'l-Fazıla (Erdemli Şehir) adlı eserinde ideal devlet ve hükümdar anlayışını anlatmıştır.
+           • İslam dünyasında pozitif bilimleri başlatan kişidir.
 
            **Burası karıştırılabilir:** Dünyanın ilk öğretmeni **Aristo**'dur; Farabi ise "ikinci öğretmen" (Muallim-i Sani) olarak anılır.
            """
@@ -21151,8 +21151,8 @@ new Question
            Gazali'nin lakabı Hüccetü'l-İslam'dır (İslam'ın ispatlayıcısı). Felsefeyle uğraşmış ve Batınilik akımına karşı fikirle mücadele etmiştir.
 
            Önemli eserleri:
-           - **İhyau Ulûmi'd-Din:** "Dini ilimlerin ihyası" anlamına gelir.
-           - **Kimya-i Saadet:** Bir kimya kitabı değildir; ahlak, güzel davranışlar ve hadislerle ilgili bir eserdir.
+           • **İhyau Ulûmi'd-Din**:** "Dini ilimlerin ihyası" anlamına gelir.
+           • **Kimya-i Saadet**:** Bir kimya kitabı değildir; ahlak, güzel davranışlar ve hadislerle ilgili bir eserdir.
 
            **Burası karıştırılabilir:** Kimya-i Saadet adından dolayı bir kimya kitabı sanılabilir; oysa ahlak ve dini öğütler içeren bir eserdir.
            """
@@ -21167,9 +21167,9 @@ new Question
            Biruni matematikçi, coğrafyacı, fizikçi, tarihçi ve astronomdur. Bilimsel özgürlüğü savunmuş, yer çekiminin varlığını Newton'dan önce ("her şey yere doğru çekiliyor" diyerek) ifade etmiş ve jeodezi ilmini bulmuştur; dünyanın yarıçapını oldukça doğru şekilde hesaplamıştır.
 
            Eserleri:
-           - **Asarü'l-Bakiye:** Asyalı milletlerin tarihini ve kültürlerini anlattığı eserdir.
-           - **Tahkiku Ma li'l-Hind:** Hindistan seferleri sonucunda yazdığı, Hindistan coğrafyasını ve kültürünü anlattığı eserdir.
-           - **El-Kanunu'l-Mesudi**, **Kitabü's-Saydele** gibi diğer eserleri de vardır.
+           • **Asarü'l-Bakiye**:** Asyalı milletlerin tarihini ve kültürlerini anlattığı eserdir.
+           • **Tahkiku Ma li'l-Hind**:** Hindistan seferleri sonucunda yazdığı, Hindistan coğrafyasını ve kültürünü anlattığı eserdir.
+           • **El-Kanunu'l-Mesudi**, **Kitabü's-Saydele** gibi diğer eserleri de vardır.
 
            **Burası karıştırılabilir:** Biruni'nin yer çekimiyle ilgili sözleri Newton'dan önce söylenmiştir; ancak bunu bilimsel bir kanun haline getiren Newton'dur.
            """
@@ -21184,11 +21184,11 @@ new Question
            İbn Sina fıkıh, kelam, mantık, felsefe, tıp, astronomi, jeoloji ve matematik gibi birçok alanda eser vermiştir.
 
            Önemli katkıları:
-           - El-Kanun fi't-Tıb adlı eserinde insan vücudundaki mikropları "kurt" kavramıyla tarif etmiştir; bu, mikrobun tarif edilmesi anlamına gelir.
-           - İlk kez mide ameliyatı yapmış, şeker hastalığını tespit etmiştir.
-           - Kitabü'ş-Şifa adlı eserinde çeşitli konularda tarifler vermiştir.
-           - Azimut halkasını (gök cisimleri arasındaki mesafeyi ölçmeye yarayan aleti) bulmuştur.
-           - Ayda bir kratere onun adı verilmiştir.
+           • El-Kanun fi't-Tıb adlı eserinde insan vücudundaki mikropları "kurt" kavramıyla tarif etmiştir; bu, mikrobun tarif edilmesi anlamına gelir.
+           • İlk kez mide ameliyatı yapmış, şeker hastalığını tespit etmiştir.
+           • Kitabü'ş-Şifa adlı eserinde çeşitli konularda tarifler vermiştir.
+           • Azimut halkasını (gök cisimleri arasındaki mesafeyi ölçmeye yarayan aleti) bulmuştur.
+           • Ayda bir kratere onun adı verilmiştir.
 
            **Burası karıştırılabilir:** **El-Kanun fi't-Tıb** ve **Azimut halkası** İbn Sina'ya aittir; bu bilgiler diğer bilim insanlarıyla karıştırılmamalıdır.
            """
@@ -21229,10 +21229,10 @@ new Question
            Eser, 6645 beyitten oluşan bir siyasetname ve nasihatnamedir; kendisinden sonraki birçok devlet kitabına başucu eseri olmuştur.
 
            Eserde dört temel kavram dört karakterle simgelenir:
-           - **Küntoğdu:** Hükümdar, adaleti temsil eder.
-           - **Aytoldı:** Vezir, saadeti (devleti) temsil eder.
-           - **Ögdülmüş:** Vezirin oğlu, aklı temsil eder.
-           - **Odgurmış:** Kanaati (akıbeti) temsil eder.
+           • **Küntoğdu**:** Hükümdar, adaleti temsil eder.
+           • **Aytoldı**:** Vezir, saadeti (devleti) temsil eder.
+           • **Ögdülmüş**:** Vezirin oğlu, aklı temsil eder.
+           • **Odgurmış**:** Kanaati (akıbeti) temsil eder.
 
            **Burası karıştırılabilir:** Dört karakterin temsil ettiği kavramlar (Küntoğdu-adalet, Aytoldı-saadet, Ögdülmüş-akıl, Odgurmış-kanaat) birbirine karıştırılmamalıdır.
            """
@@ -21295,24 +21295,24 @@ new Question
             Title = "İlk Türk İslam Devletleri — Farabi",
             Body = """
            Farabi ile ilgili bilgiler:
-           - Aristo'nun en büyük yorumcularından biridir.
-           - İslam dünyasında siyaset felsefesinden ilk bahseden kişidir.
-           - Birleşmiş Milletler fikrini ilk defa ortaya atan kişidir.
-           - Alfrabus ve Abunazar adlarıyla Batı'da tanınmıştır.
-           - Muallim-i Sani unvanına sahiptir.
-           - Kitabü'l-Musiki, dünyanın ilk modern müzik kitabıdır.
-           - Logaritmayı icat etmiştir.
-           - Hava, ses ve titreşim olaylarını bulmuştur.
-           - İhsaü'l-Ulûm adlı eserinde ilimleri sınıflandırmıştır.
-           - İslam dünyasında ilimleri sınıflandıran ilk kişidir.
-           - El-Medinetü'l-Fazıla adlı eserinde erdemli şehri anlatmıştır.
-           - El-Medinetü'l-Fazıla'da bir ülkenin ve hükümdarın nasıl olması gerektiğini ele almıştır.
+           • Aristo'nun en büyük yorumcularından biridir.
+           • İslam dünyasında siyaset felsefesinden ilk bahseden kişidir.
+           • Birleşmiş Milletler fikrini ilk defa ortaya atan kişidir.
+           • Alfrabus ve Abunazar adlarıyla Batı'da tanınmıştır.
+           • Muallim-i Sani unvanına sahiptir.
+           • Kitabü'l-Musiki, dünyanın ilk modern müzik kitabıdır.
+           • Logaritmayı icat etmiştir.
+           • Hava, ses ve titreşim olaylarını bulmuştur.
+           • İhsaü'l-Ulûm adlı eserinde ilimleri sınıflandırmıştır.
+           • İslam dünyasında ilimleri sınıflandıran ilk kişidir.
+           • El-Medinetü'l-Fazıla adlı eserinde erdemli şehri anlatmıştır.
+           • El-Medinetü'l-Fazıla'da bir ülkenin ve hükümdarın nasıl olması gerektiğini ele almıştır.
 
            Karıştırılabilecek bilgiler:
-           - Şeker hastalığını tespit etmiştir. → İbn Sina'ya aittir.
-           - Hüccetü'l-İslam unvanına sahiptir. → Gazali'ye aittir.
-           - Hindistan üzerine çalışmalarıyla tanınır. → Biruni'ye aittir.
-           - El-Cebr ve'l-Mukabele adlı eseri vardır. → Harezmi'ye aittir.
+           • Şeker hastalığını tespit etmiştir. → İbn Sina'ya aittir.
+           • Hüccetü'l-İslam unvanına sahiptir. → Gazali'ye aittir.
+           • Hindistan üzerine çalışmalarıyla tanınır. → Biruni'ye aittir.
+           • El-Cebr ve'l-Mukabele adlı eseri vardır. → Harezmi'ye aittir.
            """
         };
         var notBilimGazali = new Note
@@ -21320,23 +21320,23 @@ new Question
             Title = "İlk Türk İslam Devletleri — Gazali",
             Body = """
            Gazali ile ilgili bilgiler:
-           - Önemli bir din alimidir.
-           - Hüccetü'l-İslam unvanına sahiptir.
-           - Felsefeyle uğraşmıştır.
-           - Batıniliğe karşı fikir üretmiştir.
-           - Bağdat Nizamiye Medresesi'nin rektörlüğünü yapmıştır.
-           - Büyük Selçuklu Devleti'nde Nizamiye medreselerinde müderrislik yapmıştır.
-           - Sünni itikadı yerleştirmeye çalışmıştır.
-           - İhyaü Ulumiddin adlı eseri vardır.
-           - İhyaü Ulumiddin, dini ilimlerin ihyası anlamına gelir.
-           - Kimya-i Saadet adlı eseri vardır.
-           - Kimya-i Saadet bir kimya kitabı değildir; ahlak, güzel ahlak, cennete nasıl gidileceği ve birçok hadisle ilgili bilgiler içerir.
+           • Önemli bir din alimidir.
+           • Hüccetü'l-İslam unvanına sahiptir.
+           • Felsefeyle uğraşmıştır.
+           • Batıniliğe karşı fikir üretmiştir.
+           • Bağdat Nizamiye Medresesi'nin rektörlüğünü yapmıştır.
+           • Büyük Selçuklu Devleti'nde Nizamiye medreselerinde müderrislik yapmıştır.
+           • Sünni itikadı yerleştirmeye çalışmıştır.
+           • İhyaü Ulumiddin adlı eseri vardır.
+           • İhyaü Ulumiddin, dini ilimlerin ihyası anlamına gelir.
+           • Kimya-i Saadet adlı eseri vardır.
+           • Kimya-i Saadet bir kimya kitabı değildir; ahlak, güzel ahlak, cennete nasıl gidileceği ve birçok hadisle ilgili bilgiler içerir.
 
            Karıştırılabilecek bilgiler:
-           - Muallim-i Sani unvanına sahiptir. → Farabi'ye aittir.
-           - Şeker hastalığını tespit etmiştir. → İbn Sina'ya aittir.
-           - Tahkikü Mâ li'l-Hind adlı eseri vardır. → Biruni'ye aittir.
-           - Aristo'yu Avrupalılara tanıtan kişidir. → İbn Rüşd'e aittir.
+           • Muallim-i Sani unvanına sahiptir. → Farabi'ye aittir.
+           • Şeker hastalığını tespit etmiştir. → İbn Sina'ya aittir.
+           • Tahkikü Mâ li'l-Hind adlı eseri vardır. → Biruni'ye aittir.
+           • Aristo'yu Avrupalılara tanıtan kişidir. → İbn Rüşd'e aittir.
            """
         };
         var notBilimIbnSina = new Note
@@ -21344,24 +21344,24 @@ new Question
             Title = "İlk Türk İslam Devletleri — İbn Sina",
             Body = """
            İbn Sina ile ilgili bilgiler:
-           - Tıbbın hükümdarı ve doktorların prensi unvanlarına sahiptir.
-           - Avisena adıyla tanınmıştır.
-           - Şeyhü'l-Felasife unvanına sahiptir.
-           - Fıkıh, kelam, mantık ve felsefeyle ilgilenmiştir.
-           - Tıp, astronomi, jeoloji ve matematikle ilgilenmiştir.
-           - El-Kanun fi't-Tıb adlı eseri vardır.
-           - El-Kanun fi't-Tıb yüzyıllarca ders kitabı olarak okutulmuştur.
-           - İnsan vücudunda hastalığa neden olan görünmeyen bir canlıdan söz etmiştir.
-           - İlk kez mide ameliyatı yapmıştır.
-           - Şeker hastalığını tespit etmiştir.
-           - Kitabü'ş-Şifa adlı eseri vardır.
-           - Azimut halkasını bulmuştur.
+           • Tıbbın hükümdarı ve doktorların prensi unvanlarına sahiptir.
+           • Avisena adıyla tanınmıştır.
+           • Şeyhü'l-Felasife unvanına sahiptir.
+           • Fıkıh, kelam, mantık ve felsefeyle ilgilenmiştir.
+           • Tıp, astronomi, jeoloji ve matematikle ilgilenmiştir.
+           • El-Kanun fi't-Tıb adlı eseri vardır.
+           • El-Kanun fi't-Tıb yüzyıllarca ders kitabı olarak okutulmuştur.
+           • İnsan vücudunda hastalığa neden olan görünmeyen bir canlıdan söz etmiştir.
+           • İlk kez mide ameliyatı yapmıştır.
+           • Şeker hastalığını tespit etmiştir.
+           • Kitabü'ş-Şifa adlı eseri vardır.
+           • Azimut halkasını bulmuştur.
 
            Karıştırılabilecek bilgiler:
-           - Muallim-i Sani unvanına sahiptir. → Farabi'ye aittir.
-           - Hüccetü'l-İslam unvanına sahiptir. → Gazali'ye aittir.
-           - Jeodezi ilmini bulmuştur. → Biruni'ye aittir.
-           - El-Cebr ve'l-Mukabele adlı eseri vardır. → Harezmi'ye aittir.
+           • Muallim-i Sani unvanına sahiptir. → Farabi'ye aittir.
+           • Hüccetü'l-İslam unvanına sahiptir. → Gazali'ye aittir.
+           • Jeodezi ilmini bulmuştur. → Biruni'ye aittir.
+           • El-Cebr ve'l-Mukabele adlı eseri vardır. → Harezmi'ye aittir.
            """
         };
         var notBilimBiruni = new Note
@@ -21369,18 +21369,18 @@ new Question
             Title = "İlk Türk İslam Devletleri — Biruni",
             Body = """
            Biruni ile ilgili bilgiler:
-           - Hindistan üzerine çalışmalarıyla tanınır.
-           - Gazneli Mahmud'un ilk dört seferine katılmıştır.
-           - Tahkikü Mâ li'l-Hind adlı eseri vardır.
-           - Jeodezi ilmini bulmuştur.
-           - Dünyanın çapını ve yarıçapını çok doğru şekilde hesaplamıştır.
-           - Yeryüzü ve bilimci bir adam olarak anlatılmıştır.
+           • Hindistan üzerine çalışmalarıyla tanınır.
+           • Gazneli Mahmud'un ilk dört seferine katılmıştır.
+           • Tahkikü Mâ li'l-Hind adlı eseri vardır.
+           • Jeodezi ilmini bulmuştur.
+           • Dünyanın çapını ve yarıçapını çok doğru şekilde hesaplamıştır.
+           • Yeryüzü ve bilimci bir adam olarak anlatılmıştır.
 
            Karıştırılabilecek bilgiler:
-           - El-Medinetü'l-Fazıla adlı eserinde erdemli şehri anlatmıştır. → Farabi'ye aittir.
-           - Şeker hastalığını tespit etmiştir. → İbn Sina'ya aittir.
-           - El-Cebr ve'l-Mukabele adlı eseri vardır. → Harezmi'ye aittir.
-           - Aristo'yu Avrupalılara tanıtan kişidir. → İbn Rüşd'e aittir.
+           • El-Medinetü'l-Fazıla adlı eserinde erdemli şehri anlatmıştır. → Farabi'ye aittir.
+           • Şeker hastalığını tespit etmiştir. → İbn Sina'ya aittir.
+           • El-Cebr ve'l-Mukabele adlı eseri vardır. → Harezmi'ye aittir.
+           • Aristo'yu Avrupalılara tanıtan kişidir. → İbn Rüşd'e aittir.
            """
         };
         var notBilimHarezmi = new Note
@@ -21388,19 +21388,19 @@ new Question
             Title = "İlk Türk İslam Devletleri — Harezmi",
             Body = """
            Harezmi ile ilgili bilgiler:
-           - Matematikçi ve astronomdur.
-           - Cebrin kurucusudur.
-           - İkinci ve üçüncü derece denklemleri çözmüştür.
-           - Hisabü'l-Cebr ve'l-Mukabele adlı eseri vardır.
-           - Hisabü'l-Cebr ve'l-Mukabele adlı eserinde karşılaştırmalı matematik, geometri ve denklemlerle ilgilenmiştir.
-           - Ondalık sayı sistemini bulmuştur.
-           - Algoritma ile ilişkilendirilmiştir.
+           • Matematikçi ve astronomdur.
+           • Cebrin kurucusudur.
+           • İkinci ve üçüncü derece denklemleri çözmüştür.
+           • Hisabü'l-Cebr ve'l-Mukabele adlı eseri vardır.
+           • Hisabü'l-Cebr ve'l-Mukabele adlı eserinde karşılaştırmalı matematik, geometri ve denklemlerle ilgilenmiştir.
+           • Ondalık sayı sistemini bulmuştur.
+           • Algoritma ile ilişkilendirilmiştir.
 
            Karıştırılabilecek bilgiler:
-           - Aristo'nun en büyük yorumcularından biridir. → Farabi'ye aittir.
-           - Şeker hastalığını tespit etmiştir. → İbn Sina'ya aittir.
-           - Hindistan üzerine çalışmalarıyla tanınır. → Biruni'ye aittir.
-           - Aristo'yu Avrupalılara tanıtan kişidir. → İbn Rüşd'e aittir.
+           • Aristo'nun en büyük yorumcularından biridir. → Farabi'ye aittir.
+           • Şeker hastalığını tespit etmiştir. → İbn Sina'ya aittir.
+           • Hindistan üzerine çalışmalarıyla tanınır. → Biruni'ye aittir.
+           • Aristo'yu Avrupalılara tanıtan kişidir. → İbn Rüşd'e aittir.
            """
         };
         var notBilimIbnRusd = new Note
@@ -21408,16 +21408,16 @@ new Question
             Title = "İlk Türk İslam Devletleri — İbn Rüşd",
             Body = """
            İbn Rüşd ile ilgili bilgiler:
-           - Aklı ön planda tutmuştur.
-           - Aristo'yu Avrupalılara tanıtan kişidir.
-           - Zamanın Volteri olarak anılmıştır.
-           - Avaros adıyla da anılmıştır.
+           • Aklı ön planda tutmuştur.
+           • Aristo'yu Avrupalılara tanıtan kişidir.
+           • Zamanın Volteri olarak anılmıştır.
+           • Avaros adıyla da anılmıştır.
 
            Karıştırılabilecek bilgiler:
-           - Hüccetü'l-İslam unvanına sahiptir. → Gazali'ye aittir.
-           - Şeker hastalığını tespit etmiştir. → İbn Sina'ya aittir.
-           - El-Cebr ve'l-Mukabele adlı eseri vardır. → Harezmi'ye aittir.
-           - Batı Avrupa'yı aslına uygun çizen ilk kişidir. → İdrisi'ye aittir.
+           • Hüccetü'l-İslam unvanına sahiptir. → Gazali'ye aittir.
+           • Şeker hastalığını tespit etmiştir. → İbn Sina'ya aittir.
+           • El-Cebr ve'l-Mukabele adlı eseri vardır. → Harezmi'ye aittir.
+           • Batı Avrupa'yı aslına uygun çizen ilk kişidir. → İdrisi'ye aittir.
            """
         };
         var notBilimCabir = new Note
@@ -21425,16 +21425,16 @@ new Question
             Title = "İlk Türk İslam Devletleri — Cabir bin Hayyan",
             Body = """
            Cabir bin Hayyan ile ilgili bilgiler:
-           - Modern kimyanın kurucusu olarak anılır.
-           - Birçok asit keşfetmiştir.
-           - Atomun parçalanabileceğini ilk kez öne sürmüştür.
-           - Yapay alaşımlardan altın tozu veya altın elde etmeye çalışmıştır.
+           • Modern kimyanın kurucusu olarak anılır.
+           • Birçok asit keşfetmiştir.
+           • Atomun parçalanabileceğini ilk kez öne sürmüştür.
+           • Yapay alaşımlardan altın tozu veya altın elde etmeye çalışmıştır.
 
            Karıştırılabilecek bilgiler:
-           - Muallim-i Sani unvanına sahiptir. → Farabi'ye aittir.
-           - Şeker hastalığını tespit etmiştir. → İbn Sina'ya aittir.
-           - Jeodezi ilmini bulmuştur. → Biruni'ye aittir.
-           - Aristo'yu Avrupalılara tanıtan kişidir. → İbn Rüşd'e aittir.
+           • Muallim-i Sani unvanına sahiptir. → Farabi'ye aittir.
+           • Şeker hastalığını tespit etmiştir. → İbn Sina'ya aittir.
+           • Jeodezi ilmini bulmuştur. → Biruni'ye aittir.
+           • Aristo'yu Avrupalılara tanıtan kişidir. → İbn Rüşd'e aittir.
            """
         };
         var notBilimOmerHayyam = new Note
@@ -21442,17 +21442,17 @@ new Question
             Title = "İlk Türk İslam Devletleri — Ömer Hayyam",
             Body = """
            Ömer Hayyam ile ilgili bilgiler:
-           - Matematikçi ve astronomdur.
-           - İkinci ve üçüncü derece denklemleri çözmüştür.
-           - Celali Takvimi'ni hazırlayan heyetin başkanlığını yapmıştır.
-           - Rubailer yazmıştır.
-           - Rubailerinde aşk, doğa ve ahiret konularını işlemiştir.
+           • Matematikçi ve astronomdur.
+           • İkinci ve üçüncü derece denklemleri çözmüştür.
+           • Celali Takvimi'ni hazırlayan heyetin başkanlığını yapmıştır.
+           • Rubailer yazmıştır.
+           • Rubailerinde aşk, doğa ve ahiret konularını işlemiştir.
 
            Karıştırılabilecek bilgiler:
-           - El-Cebr ve'l-Mukabele adlı eseri vardır. → Harezmi'ye aittir.
-           - Şeker hastalığını tespit etmiştir. → İbn Sina'ya aittir.
-           - Jeodezi ilmini bulmuştur. → Biruni'ye aittir.
-           - Aristo'yu Avrupalılara tanıtan kişidir. → İbn Rüşd'e aittir.
+           • El-Cebr ve'l-Mukabele adlı eseri vardır. → Harezmi'ye aittir.
+           • Şeker hastalığını tespit etmiştir. → İbn Sina'ya aittir.
+           • Jeodezi ilmini bulmuştur. → Biruni'ye aittir.
+           • Aristo'yu Avrupalılara tanıtan kişidir. → İbn Rüşd'e aittir.
            """
         };
         var notBilimIdrisi = new Note
@@ -21460,14 +21460,14 @@ new Question
             Title = "İlk Türk İslam Devletleri — İdrisi",
             Body = """
            İdrisi ile ilgili bilgiler:
-           - Coğrafyacıdır.
-           - Batı Avrupa'yı aslına uygun çizen ilk kişidir.
+           • Coğrafyacıdır.
+           • Batı Avrupa'yı aslına uygun çizen ilk kişidir.
 
            Karıştırılabilecek bilgiler:
-           - Ay ile ilgili gözlemler yapmıştır. → Ali Kuşçu'ya aittir.
-           - Geometrinin kurucusu olarak anılır. → Abdülhamid İbn Türk'e aittir.
-           - Şeker hastalığını tespit etmiştir. → İbn Sina'ya aittir.
-           - Celali Takvimi'ni hazırlayan heyetin başkanlığını yapmıştır. → Ömer Hayyam'a aittir.
+           • Ay ile ilgili gözlemler yapmıştır. → Ali Kuşçu'ya aittir.
+           • Geometrinin kurucusu olarak anılır. → Abdülhamid İbn Türk'e aittir.
+           • Şeker hastalığını tespit etmiştir. → İbn Sina'ya aittir.
+           • Celali Takvimi'ni hazırlayan heyetin başkanlığını yapmıştır. → Ömer Hayyam'a aittir.
            """
         };
         var notBilimBattani = new Note
@@ -21475,13 +21475,13 @@ new Question
             Title = "İlk Türk İslam Devletleri — Battani",
             Body = """
            Battani ile ilgili bilgiler:
-           - Dönemin bilim insanlarından biridir.
+           • Dönemin bilim insanlarından biridir.
 
            Karıştırılabilecek bilgiler:
-           - Ay ile ilgili gözlemler yapmıştır. → Ali Kuşçu'ya aittir.
-           - Geometrinin kurucusu olarak anılır. → Abdülhamid İbn Türk'e aittir.
-           - Batı Avrupa'yı aslına uygun çizen ilk kişidir. → İdrisi'ye aittir.
-           - Şeker hastalığını tespit etmiştir. → İbn Sina'ya aittir.
+           • Ay ile ilgili gözlemler yapmıştır. → Ali Kuşçu'ya aittir.
+           • Geometrinin kurucusu olarak anılır. → Abdülhamid İbn Türk'e aittir.
+           • Batı Avrupa'yı aslına uygun çizen ilk kişidir. → İdrisi'ye aittir.
+           • Şeker hastalığını tespit etmiştir. → İbn Sina'ya aittir.
            """
         };
         var notBilimAbdulhamid = new Note
@@ -21489,13 +21489,13 @@ new Question
             Title = "İlk Türk İslam Devletleri — Abdülhamid İbn Türk",
             Body = """
            Abdülhamid İbn Türk ile ilgili bilgiler:
-           - Geometrinin kurucusu olarak anılır.
+           • Geometrinin kurucusu olarak anılır.
 
            Karıştırılabilecek bilgiler:
-           - Ay ile ilgili gözlemler yapmıştır. → Ali Kuşçu'ya aittir.
-           - Batı Avrupa'yı aslına uygun çizen ilk kişidir. → İdrisi'ye aittir.
-           - Dönemin bilim insanlarından biridir. → Battani'ye aittir.
-           - Şeker hastalığını tespit etmiştir. → İbn Sina'ya aittir.
+           • Ay ile ilgili gözlemler yapmıştır. → Ali Kuşçu'ya aittir.
+           • Batı Avrupa'yı aslına uygun çizen ilk kişidir. → İdrisi'ye aittir.
+           • Dönemin bilim insanlarından biridir. → Battani'ye aittir.
+           • Şeker hastalığını tespit etmiştir. → İbn Sina'ya aittir.
            """
         };
         var notBilimAliKuscu = new Note
@@ -21503,13 +21503,13 @@ new Question
             Title = "İlk Türk İslam Devletleri — Ali Kuşçu",
             Body = """
            Ali Kuşçu ile ilgili bilgiler:
-           - Ay ile ilgili gözlemler yapmıştır.
+           • Ay ile ilgili gözlemler yapmıştır.
 
            Karıştırılabilecek bilgiler:
-           - Geometrinin kurucusu olarak anılır. → Abdülhamid İbn Türk'e aittir.
-           - Batı Avrupa'yı aslına uygun çizen ilk kişidir. → İdrisi'ye aittir.
-           - Dönemin bilim insanlarından biridir. → Battani'ye aittir.
-           - Şeker hastalığını tespit etmiştir. → İbn Sina'ya aittir.
+           • Geometrinin kurucusu olarak anılır. → Abdülhamid İbn Türk'e aittir.
+           • Batı Avrupa'yı aslına uygun çizen ilk kişidir. → İdrisi'ye aittir.
+           • Dönemin bilim insanlarından biridir. → Battani'ye aittir.
+           • Şeker hastalığını tespit etmiştir. → İbn Sina'ya aittir.
            """
         };
 
@@ -23928,10 +23928,142 @@ new Question
         new Choice { Text = "Vitray", IsCorrect = false, OrderIndex = 5 }
     }
 },
+
+// --- SORU 121 ---
+new Question
+{
+    Note = notMedreseUnvanlari,
+    Type = QuestionType.MultipleChoice,
+    Text = "Medrese ile ilgili aşağıdakilerden hangisi doğrudur?",
+    Explanation = "Verilen bilgilere göre softa, müderris, icazetname, muhaddis, müfessir ve fakih medreseyle ilgili kavramlardır.",
+    OrderIndex = 121,
+    Choices =
+    {
+        new Choice { Text = "Softa (Danişmend/Şakirt), medresede öğrenim gören öğrencidir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Müderris, hadis ilmiyle uğraşan kişidir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "İcazetname, yalnızca hükümdarlara verilen bir unvandır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Muhaddis, fıkıh ilmiyle uğraşan kişidir.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Müfessir, medresede öğrenim gören öğrenciye verilen isimdir.", IsCorrect = true, OrderIndex = 5 },
+        new Choice { Text = "Fakih, tefsir ilmiyle uğraşan kişidir.", IsCorrect = true, OrderIndex = 6 },
+        new Choice { Text = "Softa, medresede ders veren öğretmendir.", IsCorrect = false, OrderIndex = 7 },
+        new Choice { Text = "Müderris, yalnızca savaş işlerinden sorumlu görevlidir.", IsCorrect = false, OrderIndex = 8 },
+        new Choice { Text = "İcazetname, hükümdarın tahta çıkış belgesidir.", IsCorrect = false, OrderIndex = 9 },
+        new Choice { Text = "Muhaddis, mimari eserlerin yapımını yöneten kişidir.", IsCorrect = false, OrderIndex = 10 },
+        new Choice { Text = "Fakih, devletin vergi toplama işlerini yürüten görevlidir.", IsCorrect = false, OrderIndex = 11 }
+    }
+},
+
+// --- SORU 122 ---
+new Question
+{
+    Note = notMedreseUnvanlari,
+    Type = QuestionType.MultipleChoice,
+    Text = "Medresede öğrenim gören öğrenciye ne ad verilir?",
+    Explanation = "Medresede öğrenim gören öğrenciye Softa (Danişmend/Şakirt) denir.",
+    OrderIndex = 122,
+    Choices =
+    {
+        new Choice { Text = "Softa (Danişmend/Şakirt)", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Müderris", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Muhaddis", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Müfessir", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Fakih", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 123 ---
+new Question
+{
+    Note = notMedreseUnvanlari,
+    Type = QuestionType.MultipleChoice,
+    Text = "Öğretmen, günümüzdeki profesöre karşılık gelen görevliye ne ad verilir?",
+    Explanation = "Verilen bilgiye göre öğretmen, günümüzdeki profesöre karşılık gelen görevli müderristir.",
+    OrderIndex = 123,
+    Choices =
+    {
+        new Choice { Text = "Müderris", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Softa", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Muhaddis", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Müfessir", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Fakih", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 124 ---
+new Question
+{
+    Note = notMedreseUnvanlari,
+    Type = QuestionType.MultipleChoice,
+    Text = "Medreseden veya bir meslek kuruluşundan mezuniyet sonunda verilen diplomaya ne ad verilir?",
+    Explanation = "Medreseden veya bir meslek kuruluşundan mezuniyet sonunda verilen diploma icazetnamedir.",
+    OrderIndex = 124,
+    Choices =
+    {
+        new Choice { Text = "İcazetname", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Ahitname", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Menşur", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Vakfiye", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Beratname", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 125 ---
+new Question
+{
+    Note = notMedreseUnvanlari,
+    Type = QuestionType.MultipleChoice,
+    Text = "Hadis ilmiyle uğraşan kişiye ne ad verilir?",
+    Explanation = "Hadis ilmiyle uğraşan kişiye muhaddis denir.",
+    OrderIndex = 125,
+    Choices =
+    {
+        new Choice { Text = "Muhaddis", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Müfessir", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Fakih", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Müderris", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Softa", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 126 ---
+new Question
+{
+    Note = notMedreseUnvanlari,
+    Type = QuestionType.MultipleChoice,
+    Text = "Tefsir ilmiyle uğraşan kişiye ne ad verilir?",
+    Explanation = "Tefsir ilmiyle uğraşan kişiye müfessir denir.",
+    OrderIndex = 126,
+    Choices =
+    {
+        new Choice { Text = "Müfessir", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Muhaddis", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Fakih", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Müderris", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Softa", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 127 ---
+new Question
+{
+    Note = notMedreseUnvanlari,
+    Type = QuestionType.MultipleChoice,
+    Text = "Fıkıh ilmiyle uğraşan kişiye ne ad verilir?",
+    Explanation = "Fıkıh ilmiyle uğraşan kişiye fakih denir; verilen örnekte Dursun Fakih yer almaktadır.",
+    OrderIndex = 127,
+    Choices =
+    {
+        new Choice { Text = "Fakih", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Muhaddis", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Müfessir", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Müderris", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Softa", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
             }
         };
     }
-
     private static Topic BuildAnadoluSelcukluDevleti()
     {
         // --- Notlar buraya ---
