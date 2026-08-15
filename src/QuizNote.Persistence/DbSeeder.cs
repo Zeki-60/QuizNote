@@ -23814,6 +23814,120 @@ new Question
         new Choice { Text = "Şeker hastalığını tespit etmiştir.", IsCorrect = false, OrderIndex = 5 },
     }
 },
+
+// --- SORU 115 ---
+new Question
+{
+    Note = notTezhipVeDigerSanatlar,
+    Type = QuestionType.MultipleChoice,
+    Text = "Aşağıdakilerden hangisi doğrudur?",
+    Explanation = "Tezhip kitapları altın tozuyla süsleme, telkari gümüş işlemeciliği, malakari duvar süsleme ve kabartma, vitray cam süsleme, ebru ise kağıt üzerinde su ve boya ile yapılan süsleme sanatıdır.",
+    OrderIndex = 115,
+    Choices =
+    {
+        new Choice { Text = "Tezhip, kitapları özellikle Kur'an-ı Kerim'i altın tozuyla süsleme sanatıdır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Telkari, gümüş işlemeciliği sanatıdır ve Türkiye'de en ünlü olduğu yer Mardin'dir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Malakari, duvar süsleme ve kabartma sanatıdır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Vitray, renkli camlardan oluşan cam süsleme sanatıdır ve maliyeti yüksektir.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Ebru, kağıt üzerinde su ve boya ile yapılan süsleme sanatıdır; kelime anlamı bulut, bulutlanmaktır.", IsCorrect = true, OrderIndex = 5 },
+
+        new Choice { Text = "Tezhip, taş ve mermer üzerine yapılan kabartma sanatıdır.", IsCorrect = false, OrderIndex = 6 },
+        new Choice { Text = "Telkari, renkli cam parçalarının birleştirilmesiyle yapılan süsleme sanatıdır.", IsCorrect = false, OrderIndex = 7 },
+        new Choice { Text = "Malakari, gümüş tellerle yapılan takı işleme sanatıdır.", IsCorrect = false, OrderIndex = 8 },
+        new Choice { Text = "Vitray, kitap sayfalarının altın tozuyla süslenmesi sanatıdır.", IsCorrect = false, OrderIndex = 9 },
+        new Choice { Text = "Ebru, duvarlarda kabartma oluşturmak amacıyla yapılan süsleme sanatıdır.", IsCorrect = false, OrderIndex = 10 }
+    }
+},
+
+// --- SORU 116 ---
+new Question
+{
+    Note = notTezhipVeDigerSanatlar,
+    Type = QuestionType.MultipleChoice,
+    Text = "Kitapları, özellikle Kur'an-ı Kerim'i altın tozuyla süsleme sanatına ne ad verilir?",
+    Explanation = "Kitapları, özellikle Kur'an-ı Kerim'i altın tozuyla süsleme sanatı Tezhip'tir.",
+    OrderIndex = 116,
+    Choices =
+    {
+        new Choice { Text = "Tezhip", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Telkari", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Malakari", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Vitray", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Ebru", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 117 ---
+new Question
+{
+    Note = notTezhipVeDigerSanatlar,
+    Type = QuestionType.MultipleChoice,
+    Text = "Gümüş işlemeciliği sanatına ne ad verilir?",
+    Explanation = "Gümüş işlemeciliği sanatı Telkari'dir; Türkiye'de en ünlü olduğu yer Mardin'dir.",
+    OrderIndex = 117,
+    Choices =
+    {
+        new Choice { Text = "Telkari", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Tezhip", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Malakari", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Vitray", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Ebru", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 118 ---
+new Question
+{
+    Note = notTezhipVeDigerSanatlar,
+    Type = QuestionType.MultipleChoice,
+    Text = "Duvar süsleme ve kabartma sanatına ne ad verilir?",
+    Explanation = "Duvar süsleme ve kabartma sanatı Malakari'dir.",
+    OrderIndex = 118,
+    Choices =
+    {
+        new Choice { Text = "Malakari", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Tezhip", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Telkari", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Vitray", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Ebru", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 119 ---
+new Question
+{
+    Note = notTezhipVeDigerSanatlar,
+    Type = QuestionType.MultipleChoice,
+    Text = "Renkli camlardan oluşan ve maliyeti yüksek olan cam süsleme sanatına ne ad verilir?",
+    Explanation = "Renkli camlardan oluşan ve maliyeti yüksek olan cam süsleme sanatı Vitray'dır.",
+    OrderIndex = 119,
+    Choices =
+    {
+        new Choice { Text = "Vitray", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Ebru", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Tezhip", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Telkari", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Malakari", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 120 ---
+new Question
+{
+    Note = notTezhipVeDigerSanatlar,
+    Type = QuestionType.MultipleChoice,
+    Text = "Kağıt üzerinde su ve boya ile yapılan, kelime anlamı bulut veya bulutlanmak olan süsleme sanatına ne ad verilir?",
+    Explanation = "Kağıt üzerinde su ve boya ile yapılan ve kelime anlamı bulut, bulutlanmak olan süsleme sanatı Ebru'dur.",
+    OrderIndex = 120,
+    Choices =
+    {
+        new Choice { Text = "Ebru", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Tezhip", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Telkari", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Malakari", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Vitray", IsCorrect = false, OrderIndex = 5 }
+    }
+},
             }
         };
     }
