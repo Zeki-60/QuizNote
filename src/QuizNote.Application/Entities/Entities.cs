@@ -17,7 +17,6 @@ public class User
 
     public ICollection<UserQuestionLevel> QuestionLevels { get; set; } = new List<UserQuestionLevel>();
     public ICollection<FavoriteQuestion> Favorites { get; set; } = new List<FavoriteQuestion>();
-    public ICollection<InactiveQuestion> InactiveQuestions { get; set; } = new List<InactiveQuestion>();
 }
 
 /// <summary>Bir konu başlığı; sorular ve notlar bunun altında gruplanır.</summary>
@@ -141,19 +140,6 @@ public class UserQuestionLevel
 
 /// <summary>Kullanıcının favori olarak işaretlediği soru.</summary>
 public class FavoriteQuestion
-{
-    public Guid Id { get; set; } = Guid.NewGuid();
-
-    public Guid UserId { get; set; }
-    public User User { get; set; } = null!;
-    public Guid QuestionId { get; set; }
-    public Question Question { get; set; } = null!;
-
-    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-}
-
-/// <summary>Kullanıcının pasif (aktif olmayan) olarak işaretlediği soru.</summary>
-public class InactiveQuestion
 {
     public Guid Id { get; set; } = Guid.NewGuid();
 

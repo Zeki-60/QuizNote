@@ -12,16 +12,21 @@ public record TopicDto(Guid Id, string Name, string? Description, int QuestionCo
 public record CreateTopicRequest(string Name, string? Description);
 
 /// <summary>
-/// Soru kartının yanındaki bilgi kartı için: aktif kapsamdaki (konu/favoriler/
-/// aktif olmayanlar/tümü) toplam soru sayısı, seviye dağılımı, favori ve pasif
-/// soru sayıları.
+/// Soru kartının yanındaki bilgi kartı için: aktif kapsamdaki (konu/favoriler/tümü)
+/// toplam soru sayısı, seviye dağılımı, favori sayısı, 0-100 aralığında ortalama
+/// başarı puanı.
 /// </summary>
 public record ScopeStatsDto(
     int TotalQuestions,
     /// <summary>Index'i seviye (0-5), değeri o seviyedeki soru sayısı olan dizi.</summary>
     IReadOnlyList<int> LevelCounts,
     int FavoriteCount,
-    int InactiveCount);
+    /// <summary>
+    /// Kapsamdaki tüm soruların seviye ortalamasının yüzdeye çevrilmiş hali:
+    /// (seviyelerin toplamı) / (soru sayısı * MaxLevel) * 100. Hiç soru yoksa 0.
+    /// Çözülmemiş sorular başlangıç seviyesinde (0) sayılır.
+    /// </summary>
+    int ScorePercent);
 
 // --- Note ---
 public record NoteDto(Guid Id, Guid TopicId, string Title, string Body);
@@ -47,9 +52,7 @@ public record QuestionDto(
     int Level,
     int MaxLevel,
     /// <summary>Kullanıcı bu soruyu favorilere eklemiş mi?</summary>
-    bool IsFavorite,
-    /// <summary>Kullanıcı bu soruyu pasif (aktif olmayan) olarak işaretlemiş mi?</summary>
-    bool IsInactive);
+    bool IsFavorite);
 
 // --- Cevaplama ---
 /// <summary>

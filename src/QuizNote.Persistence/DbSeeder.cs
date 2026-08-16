@@ -131,7 +131,35 @@ public static class DbSeeder
     private static Topic BuildIslamiyetOncesiTurkTarihi()
     {
         // --- Notlar: "Türklerin İlk Ana Yurdu" başlığının ilgili bölümleri ---
+        var notTurkDestanlari = new Note
+        {
+            Title = "İslamiyet Öncesi Türk Tarihi — Türk Destanları",
+            Body = """
+    • **Göç Destanı:** Uygurlara aittir.
+    • Uygurların kutsal bir kayayı Çinlilere vermesiyle başlayan olaylar anlatılır.
+    • Kayanın verilmesinden sonra ülkede bereketin ve huzurun bozulması üzerine Uygurlar yurtlarını terk ederek göç eder.
+    • **Ana fikir:** Uygurların göçü ve yurtlarından ayrılması.
 
+    • **Türeyiş Destanı:** Uygurlara aittir.
+    • Uygur hükümdarının kızlarının kutsal bir varlıkla evlendirilmesi ve bu birliktelikten Uygur hükümdar soyunun ortaya çıkması anlatılır.
+    • **Ana fikir:** Uygurların türeyişi ve soylarının ortaya çıkışı.
+
+    • **Ergenekon Destanı:** Göktürklere aittir.
+    • Düşmanları tarafından yok edilen Türklerden bir kişinin kurtulması ve Türklerin Ergenekon adı verilen vadide çoğalması anlatılır.
+    • Türkler vadiden çıkmak için demir dağı eriterek dışarı çıkar ve yeniden güçlü bir devlet kurar.
+    • **Ana fikir:** Türklerin yeniden çoğalması, güçlenmesi ve Ergenekon'dan çıkışı.
+
+    • **Bozkurt Destanı:** Göktürklere aittir.
+    • Düşman saldırısından sağ kalan bir Türk çocuğunun dişi bir bozkurt tarafından kurtarılması ve büyütülmesi anlatılır.
+    • Bozkurt, Türklerin yeniden çoğalmasında ve soylarının devam etmesinde önemli rol oynar.
+    • **Ana fikir:** Türk soyunun bozkurt sayesinde yeniden türemesi.
+
+    • **Manas Destanı:** Kırgızlara aittir.
+    • Kırgız kahramanı **Manas'ın** hayatı, savaşları ve Kırgızları bir araya getirme mücadelesi anlatılır.
+    • Manas'ın düşmanlara karşı mücadele ederek Kırgızların bağımsızlığını ve birliğini sağlamaya çalışması temel konudur.
+    • **Ana fikir:** Manas'ın Kırgızları birleştirmesi ve düşmanlara karşı mücadelesi.
+    """
+        };
         var notAnaYurtNeresi = new Note
         {
             Title = "Türklerin İlk Ana Yurdu — Konum",
@@ -981,6 +1009,17 @@ public static class DbSeeder
                    kullanan topluluklar arasındadırlar.
                    """
         };
+        var notGokTanrininKaganaVerdigiYetkiler = new Note
+        {
+            Title = "İslamiyet Öncesi Türk Tarihi — Gök Tanrı'nın Kağana Verdiği Yetkiler",
+            Body = """
+    ### Gök Tanrı'nın Kağana Verdiği Yetkiler
+
+    - **Kut:** Devleti yönetme yetkisinin Tanrı tarafından kağana ve ailesine verilmesidir. 
+    - **Küç:** Tanrı'nın kağana savaşma ve askerî başarı elde etme gücü vermesidir. 
+    - **Ülüş:** Tanrı'nın ülkeye verdiği ekonomik bolluğun kağan tarafından halka adil şekilde dağıtılmasıdır.
+    """
+        };
 
         // --- Notlar: "Asya Hun Devleti" başlığının ilgili bölümleri ---
 
@@ -1456,6 +1495,18 @@ public static class DbSeeder
                    """
         };
 
+        var notTunaBulgarHanlari = new Note
+        {
+            Title = "Tuna Bulgarları",
+            Body = """
+            - **Asparuh Han** tarafından kuruldu.
+            - **Krum Han** döneminde İstanbul kuşatıldı.
+            - **Omurtak Han** dönemi Tuna Bulgarlarının **en parlak** dönemidir.
+            - **Boris Han** döneminde **Hristiyanlık** kabul edildi.
+            - **Simeon** döneminde Han unvanı bırakılarak **Çar unvanı** kullanılmaya başlandı. Çar unvanını ilk kullanan Simeon'dur.
+            """
+        };
+
         return new Topic
         {
             Name = "İslamiyet Öncesi Türk Tarihi",
@@ -1489,7 +1540,8 @@ public static class DbSeeder
                 notTunaVeItilBulgarlari, notItilBulgarlari, notHazarlarGenel,
                 notHazarlarAskeriVeEmevi, notSibirler, notKipcaklar,
                 notGokturkGenelKurulus, notGokturkTolesVeAvar, notGokturkTeskilatVeMukan,
-                notGokturkDisPolitikaVeDiplomasi, notGokturkTapoVeYikilis, notKursatAyaklanmasi
+                notGokturkDisPolitikaVeDiplomasi, notGokturkTapoVeYikilis, notKursatAyaklanmasi,
+                notTunaBulgarHanlari, notTurkDestanlari, notGokTanrininKaganaVerdigiYetkiler
             },
             Questions =
             {
@@ -4236,6 +4288,250 @@ new Question
                         new Choice { Text = "Kürşat Ayaklanması Türklerin Çin kültürünü tamamen benimsemesine yol açan barışçıl bir elçilik olayıdır", IsCorrect = true, OrderIndex = 7 },
                     }
                 },
+
+                // --- SORU 117 ---
+                new Question
+                {
+                    Note = notTunaBulgarHanlari,
+                    Type = QuestionType.MultipleChoice,
+                    IsNegative = false,
+                    Text = "Tuna Bulgarları kim tarafından kurulmuştur?",
+                    Explanation = "Tuna Bulgarları Asparuh Han tarafından kurulmuştur.",
+                    OrderIndex = 117,
+                    Choices =
+                    {
+                        new Choice { Text = "Asparuh Han", IsCorrect = true, OrderIndex = 1 },
+                        new Choice { Text = "Krum Han", IsCorrect = false, OrderIndex = 2 },
+                        new Choice { Text = "Omurtak Han", IsCorrect = false, OrderIndex = 3 },
+                        new Choice { Text = "Boris Han", IsCorrect = false, OrderIndex = 4 },
+                        new Choice { Text = "Simeon", IsCorrect = false, OrderIndex = 5 },
+                    }
+                },
+
+                // --- SORU 118 ---
+                new Question
+                {
+                    Note = notTunaBulgarHanlari,
+                    Type = QuestionType.MultipleChoice,
+                    IsNegative = false,
+                    Text = "Tuna Bulgarları hangi hükümdarın döneminde İstanbul'u kuşatmıştır?",
+                    Explanation = "Tuna Bulgarları Krum Han döneminde İstanbul'u kuşatmıştır.",
+                    OrderIndex = 118,
+                    Choices =
+                    {
+                        new Choice { Text = "Krum Han", IsCorrect = true, OrderIndex = 1 },
+                        new Choice { Text = "Asparuh Han", IsCorrect = false, OrderIndex = 2 },
+                        new Choice { Text = "Omurtak Han", IsCorrect = false, OrderIndex = 3 },
+                        new Choice { Text = "Boris Han", IsCorrect = false, OrderIndex = 4 },
+                        new Choice { Text = "Simeon", IsCorrect = false, OrderIndex = 5 },
+                    }
+                },
+
+                // --- SORU 119 ---
+                new Question
+                {
+                    Note = notTunaBulgarHanlari,
+                    Type = QuestionType.MultipleChoice,
+                    IsNegative = false,
+                    Text = "Tuna Bulgarlarının en parlak dönemi hangi hükümdarın dönemidir?",
+                    Explanation = "Omurtak Han dönemi Tuna Bulgarlarının en parlak dönemidir.",
+                    OrderIndex = 119,
+                    Choices =
+                    {
+                        new Choice { Text = "Omurtak Han", IsCorrect = true, OrderIndex = 1 },
+                        new Choice { Text = "Asparuh Han", IsCorrect = false, OrderIndex = 2 },
+                        new Choice { Text = "Krum Han", IsCorrect = false, OrderIndex = 3 },
+                        new Choice { Text = "Boris Han", IsCorrect = false, OrderIndex = 4 },
+                        new Choice { Text = "Simeon", IsCorrect = false, OrderIndex = 5 },
+                    }
+                },
+
+                // --- SORU 120 ---
+                new Question
+                {
+                    Note = notTunaBulgarHanlari,
+                    Type = QuestionType.MultipleChoice,
+                    IsNegative = false,
+                    Text = "Tuna Bulgarları hangi hükümdarın döneminde Hristiyanlığı kabul etmiştir?",
+                    Explanation = "Tuna Bulgarları Boris Han döneminde Hristiyanlığı kabul etmiştir.",
+                    OrderIndex = 120,
+                    Choices =
+                    {
+                        new Choice { Text = "Boris Han", IsCorrect = true, OrderIndex = 1 },
+                        new Choice { Text = "Asparuh Han", IsCorrect = false, OrderIndex = 2 },
+                        new Choice { Text = "Krum Han", IsCorrect = false, OrderIndex = 3 },
+                        new Choice { Text = "Omurtak Han", IsCorrect = false, OrderIndex = 4 },
+                        new Choice { Text = "Simeon", IsCorrect = false, OrderIndex = 5 },
+                    }
+                },
+
+                // --- SORU 121 ---
+                new Question
+                {
+                    Note = notTunaBulgarHanlari,
+                    Type = QuestionType.MultipleChoice,
+                    IsNegative = false,
+                    Text = "Tuna Bulgarlarında Han unvanı bırakılarak Çar unvanı hangi hükümdarın döneminde kullanılmaya başlanmıştır?",
+                    Explanation = "Simeon döneminde Han unvanı bırakılarak Çar unvanı kullanılmaya başlanmıştır. Çar unvanını ilk kullanan Simeon'dur.",
+                    OrderIndex = 121,
+                    Choices =
+                    {
+                        new Choice { Text = "Simeon", IsCorrect = true, OrderIndex = 1 },
+                        new Choice { Text = "Asparuh Han", IsCorrect = false, OrderIndex = 2 },
+                        new Choice { Text = "Krum Han", IsCorrect = false, OrderIndex = 3 },
+                        new Choice { Text = "Omurtak Han", IsCorrect = false, OrderIndex = 4 },
+                        new Choice { Text = "Boris Han", IsCorrect = false, OrderIndex = 5 },
+                    }
+                },
+                // --- SORU 1 ---
+new Question
+{
+    Note = notTurkDestanlari,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Uygurlara ait olan bu destanda, Uygurların kutsal bir kayayı Çinlilere vermesiyle başlayan olaylar anlatılmaktadır. Kayanın verilmesinden sonra ülkede bereketin ve huzurun bozulması üzerine Uygurlar yurtlarını terk ederek göç etmişlerdir. Metinde hakkında bilgiler verilen Türk destanı aşağıdakilerden hangisidir?",
+    Explanation = "Uygurların kutsal kayanın verilmesinden sonra yurtlarını terk ederek göç etmelerini anlatan destan Göç Destanı'dır.",
+    OrderIndex = 122,
+    Choices =
+    {
+        new Choice { Text = "Göç Destanı", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Türeyiş Destanı", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Ergenekon Destanı", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Bozkurt Destanı", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Manas Destanı", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 2 ---
+new Question
+{
+    Note = notTurkDestanlari,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Uygurlara ait olan bu destanda, Uygur hükümdarının kızlarının kutsal bir varlıkla evlendirilmesi ve bu birliktelikten Uygur hükümdar soyunun ortaya çıkması anlatılmaktadır. Destanda Uygurların türeyişi ve soylarının ortaya çıkışı konu edilmiştir. Metinde hakkında bilgiler verilen Türk destanı aşağıdakilerden hangisidir?",
+    Explanation = "Uygurların türeyişini ve hükümdar soyunun ortaya çıkışını anlatan destan Türeyiş Destanı'dır.",
+    OrderIndex = 123,
+    Choices =
+    {
+        new Choice { Text = "Türeyiş Destanı", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Göç Destanı", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Ergenekon Destanı", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Bozkurt Destanı", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Manas Destanı", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 3 ---
+new Question
+{
+    Note = notTurkDestanlari,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Göktürklere ait olan bu destanda, düşmanları tarafından yok edilen Türklerden bir kişinin kurtulması ve Türklerin Ergenekon adı verilen vadide çoğalması anlatılmaktadır. Türkler uzun süre sonra vadiden çıkmak için demir dağı eritmiş ve yeniden güçlü bir devlet kurmuştur. Metinde hakkında bilgiler verilen Türk destanı aşağıdakilerden hangisidir?",
+    Explanation = "Türklerin Ergenekon'da çoğalmasını, demir dağı eriterek vadiden çıkmasını ve yeniden güçlenmesini anlatan destan Ergenekon Destanı'dır.",
+    OrderIndex = 124,
+    Choices =
+    {
+        new Choice { Text = "Ergenekon Destanı", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Bozkurt Destanı", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Türeyiş Destanı", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Göç Destanı", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Manas Destanı", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 4 ---
+new Question
+{
+    Note = notTurkDestanlari,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Göktürklere ait olan bu destanda, düşman saldırısından sağ kalan bir Türk çocuğunun dişi bir bozkurt tarafından kurtarılması ve büyütülmesi anlatılmaktadır. Bozkurt, Türklerin yeniden çoğalmasında ve soylarının devam etmesinde önemli bir rol oynamıştır. Metinde hakkında bilgiler verilen Türk destanı aşağıdakilerden hangisidir?",
+    Explanation = "Dişi bozkurdun Türk çocuğunu kurtarmasını ve Türk soyunun yeniden türemesindeki rolünü anlatan destan Bozkurt Destanı'dır.",
+    OrderIndex = 125,
+    Choices =
+    {
+        new Choice { Text = "Bozkurt Destanı", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Ergenekon Destanı", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Göç Destanı", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Türeyiş Destanı", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Manas Destanı", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 5 ---
+new Question
+{
+    Note = notTurkDestanlari,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Kırgızlara ait olan bu destanda, Kırgız kahramanı Manas'ın hayatı, savaşları ve Kırgızları bir araya getirme mücadelesi anlatılmaktadır. Manas'ın düşmanlara karşı mücadele ederek Kırgızların bağımsızlığını ve birliğini sağlamaya çalışması temel konudur. Metinde hakkında bilgiler verilen Türk destanı aşağıdakilerden hangisidir?",
+    Explanation = "Manas'ın Kırgızları birleştirme ve düşmanlara karşı mücadele etmesini anlatan destan Manas Destanı'dır.",
+    OrderIndex = 126,
+    Choices =
+    {
+        new Choice { Text = "Manas Destanı", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Göç Destanı", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Bozkurt Destanı", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Ergenekon Destanı", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Türeyiş Destanı", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+new Question
+{
+    Note = notGokTanrininKaganaVerdigiYetkiler,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Devleti yönetme yetkisinin Tanrı tarafından kağana ve ailesine verilmesine ne ad verilir?",
+    Explanation = "Devleti yönetme yetkisinin Tanrı tarafından kağana ve ailesine verilmesine Kut denir.",
+    OrderIndex = 127,
+    Choices =
+    {
+        new Choice { Text = "Kut", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Küç", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Ülüş", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Töre", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Yabgu", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 2 ---
+new Question
+{
+    Note = notGokTanrininKaganaVerdigiYetkiler,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Tanrı'nın kağana savaşma ve askerî başarı elde etme gücü vermesine ne ad verilir?",
+    Explanation = "Tanrı'nın kağana savaşma ve askerî başarı elde etme gücü vermesine Küç denir.",
+    OrderIndex = 128,
+    Choices =
+    {
+        new Choice { Text = "Küç", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Kut", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Ülüş", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Töre", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Kurgan", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 3 ---
+new Question
+{
+    Note = notGokTanrininKaganaVerdigiYetkiler,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Tanrı'nın ülkeye verdiği ekonomik bolluğun kağan tarafından halka adil şekilde dağıtılmasına ne ad verilir?",
+    Explanation = "Ekonomik bolluğun kağan tarafından halka adil şekilde dağıtılmasına Ülüş denir.",
+    OrderIndex = 129,
+    Choices =
+    {
+        new Choice { Text = "Ülüş", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Kut", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Küç", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Töre", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Yuğ", IsCorrect = false, OrderIndex = 5 }
+    }
+},
             }
         };
     }
@@ -11548,22 +11844,7 @@ new Choice { Text = "Çiğiller", IsCorrect = false, OrderIndex = 5 },
 },
 
 // --- SORU 6 ---
-new Question
-{
-Note = notTalasSavasiVeSonuclari,
-Type = QuestionType.MultipleChoice,
-Text = "Talas Savaşı'nda Karluklar savaşa hangi günde katılmıştır?",
-Explanation = "Karluklar ilk dört gün savaşa katılmamış, beşinci gün savaşa girerek Abbasilerin yanında yer almıştır.",
-OrderIndex = 6,
-Choices =
-{
-new Choice { Text = "Beşinci gün", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "İlk gün", IsCorrect = false, OrderIndex = 2 },
-new Choice { Text = "İkinci gün", IsCorrect = false, OrderIndex = 3 },
-new Choice { Text = "Üçüncü gün", IsCorrect = false, OrderIndex = 4 },
-new Choice { Text = "Dördüncü gün", IsCorrect = false, OrderIndex = 5 },
-}
-},
+
 
 // --- SORU 7 ---
 new Question
@@ -11782,41 +12063,10 @@ new Choice { Text = "Kadır Han", IsCorrect = false, OrderIndex = 5 },
 }
 },
 
-// --- SORU 19 ---
-new Question
-{
-Note = notKarahanliKulturVeMedeniyet,
-Type = QuestionType.MultipleChoice,
-Text = "Kutadgu Bilig'in yazarı aşağıdakilerden hangisidir?",
-Explanation = "Kutadgu Bilig, Balasagunlu Yusuf tarafından yazılmıştır.",
-OrderIndex = 19,
-Choices =
-{
-new Choice { Text = "Balasagunlu Yusuf", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Edip Ahmet Yükneki", IsCorrect = false, OrderIndex = 2 },
-new Choice { Text = "Hoca Ahmet Yesevi", IsCorrect = false, OrderIndex = 3 },
-new Choice { Text = "Satuk Buğra Han", IsCorrect = false, OrderIndex = 4 },
-new Choice { Text = "Tamgaç İbrahim Han", IsCorrect = false, OrderIndex = 5 },
-}
-},
 
-// --- SORU 20 ---
-new Question
-{
-Note = notKarahanliKulturVeMedeniyet,
-Type = QuestionType.MultipleChoice,
-Text = "Atabetü'l-Hakayık'ın yazarı aşağıdakilerden hangisidir?",
-Explanation = "Atabetü'l-Hakayık, Edip Ahmet Yükneki tarafından yazılmıştır.",
-OrderIndex = 20,
-Choices =
-{
-new Choice { Text = "Edip Ahmet Yükneki", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Balasagunlu Yusuf", IsCorrect = false, OrderIndex = 2 },
-new Choice { Text = "Hoca Ahmet Yesevi", IsCorrect = false, OrderIndex = 3 },
-new Choice { Text = "Tamgaç İbrahim Han", IsCorrect = false, OrderIndex = 4 },
-new Choice { Text = "Kutluk Bilge Kadır Han", IsCorrect = false, OrderIndex = 5 },
-}
-},
+
+
+
 
 // --- SORU 21 ---
 new Question
@@ -11890,23 +12140,7 @@ new Choice { Text = "Medreseleri kapatmaları", IsCorrect = false, OrderIndex = 
 }
 },
 
-// --- SORU 25 ---
-new Question
-{
-Note = notOrtaAsyaSehirUnvanlari,
-Type = QuestionType.MultipleChoice,
-Text = "Şehirlerin Şahı unvanı aşağıdaki şehirlerden hangisine verilmiştir?",
-Explanation = "Semerkant, Şehirlerin Şahı unvanıyla anılmıştır.",
-OrderIndex = 25,
-Choices =
-{
-new Choice { Text = "Semerkant", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Buhara", IsCorrect = false, OrderIndex = 2 },
-new Choice { Text = "Kaşgar", IsCorrect = false, OrderIndex = 3 },
-new Choice { Text = "Tarsus", IsCorrect = false, OrderIndex = 4 },
-new Choice { Text = "Samarra", IsCorrect = false, OrderIndex = 5 },
-}
-},
+
 
 // --- SORU 26 ---
 new Question
@@ -12220,24 +12454,7 @@ new Choice { Text = "Biruni'nin ilk dört sefere katılması", IsCorrect = false
 },
 
 // --- SORU 42 ---
-new Question
-{
-Note = notGazneliMahmutAbbasiIliskisi,
-Type = QuestionType.MultipleChoice,
-IsNegative = false,
-Text = "Gazneli Mahmut'un unvanlarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
-Explanation = "Gazneli Mahmut'a verilen unvanlar arasında sultan, put kırıcı ve alemin aslanı bulunmaktadır; hükümdarın unvanı olarak hakan ifadesi bu bağlamda verilmemiştir.",
-OrderIndex = 42,
-Choices =
-{
-new Choice { Text = "Sultan unvanı verilmiştir.", IsCorrect = false, OrderIndex = 1 },
-new Choice { Text = "Put kırıcı unvanı verilmiştir.", IsCorrect = false, OrderIndex = 2 },
-new Choice { Text = "Alemin aslanı unvanı verilmiştir.", IsCorrect = false, OrderIndex = 3 },
-new Choice { Text = "Unvanlarının bir kısmı Abbasilerle ilişkisiyle bağlantılıdır.", IsCorrect = false, OrderIndex = 4 },
-new Choice { Text = "Hakan unvanı, metinde Gazneli Mahmut'a verilen özel unvan olarak belirtilmiştir.", IsCorrect = true, OrderIndex = 5 },
-new Choice { Text = "Somnat Fatihi unvanı tek ve değişmez unvanıdır.", IsCorrect = true, OrderIndex = 6 },
-}
-},
+
 
 // --- SORU 43 ---
 new Question
@@ -13254,24 +13471,7 @@ new Choice { Text = "1071", IsCorrect = false, OrderIndex = 6 },
 }
 },
 
-// --- SORU 96 ---
-new Question
-{
-Note = notTugrulBeyDonemiB2,
-Type = QuestionType.MultipleChoice,
-IsNegative = false,
-Text = "1058 yılındaki taç giyme töreniyle ilgili aşağıdakilerden hangisi yanlıştır?",
-Explanation = "1058 yılında Bağdat'ta Tuğrul Bey için taç giyme töreni yapılmış ve ona doğunun ve batının hükümdarı unvanı verilmiştir.",
-OrderIndex = 96,
-Choices =
-{
-new Choice { Text = "Taç giyme töreni Bağdat'ta yapılmıştır.", IsCorrect = false, OrderIndex = 1 },
-new Choice { Text = "Tören 1058 yılında yapılmıştır.", IsCorrect = false, OrderIndex = 2 },
-new Choice { Text = "Tuğrul Bey'e doğunun ve batının hükümdarı unvanı verilmiştir.", IsCorrect = false, OrderIndex = 3 },
-new Choice { Text = "Bu gelişme Abbasiler ile Selçuklular arasındaki ilişkiyle bağlantılıdır.", IsCorrect = false, OrderIndex = 4 },
-new Choice { Text = "Taç giyme töreni 1071 yılında yapılmıştır.", IsCorrect = true, OrderIndex = 5 },
-}
-},
+
 
 // --- SORU 97 ---
 new Question
@@ -13461,22 +13661,7 @@ new Choice { Text = "Şam'ı almak", IsCorrect = false, OrderIndex = 5 },
 },
 
 // --- SORU 107 ---
-new Question
-{
-Note = notTugrulBeyFaaliyetleriB2,
-Type = QuestionType.MultipleChoice,
-Text = "1048 yılında Bizans ile yapılan savaş aşağıdakilerden hangisidir?",
-Explanation = "1048 yılında Bizans ile Pasinler Savaşı yapılmıştır.",
-OrderIndex = 107,
-Choices =
-{
-new Choice { Text = "Pasinler Savaşı", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Büyük Zap Savaşı", IsCorrect = false, OrderIndex = 2 },
-new Choice { Text = "Malazgirt Savaşı", IsCorrect = false, OrderIndex = 3 },
-new Choice { Text = "Rahve Savaşı", IsCorrect = false, OrderIndex = 4 },
-new Choice { Text = "Ani Savaşı", IsCorrect = false, OrderIndex = 5 },
-}
-},
+
 
 // --- SORU 108 ---
 new Question
@@ -13551,22 +13736,7 @@ new Choice { Text = "Romen Diojen", IsCorrect = false, OrderIndex = 5 },
 },
 
 // --- SORU 112 ---
-new Question
-{
-Note = notAlparslanVeAniFethi,
-Type = QuestionType.MultipleChoice,
-Text = "Sultan Alparslan'ın vezir olarak Amidül Mülk'ün yerine getirdiği kişi aşağıdakilerden hangisidir?",
-Explanation = "Sultan Alparslan, Amidül Mülk'ün yerine Nizamül Mülk'ü vezir getirmiştir.",
-OrderIndex = 112,
-Choices =
-{
-new Choice { Text = "Nizamül Mülk", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Afşin", IsCorrect = false, OrderIndex = 2 },
-new Choice { Text = "Liparit", IsCorrect = false, OrderIndex = 3 },
-new Choice { Text = "Romen Diojen", IsCorrect = false, OrderIndex = 4 },
-new Choice { Text = "Tuğrul Bey", IsCorrect = false, OrderIndex = 5 },
-}
-},
+
 
 // --- SORU 113 ---
 new Question
@@ -13658,23 +13828,7 @@ new Choice { Text = "Şam", IsCorrect = false, OrderIndex = 5 },
 }
 },
 
-// --- SORU 118 ---
-new Question
-{
-Note = notMalazgirtOncesiAnadolu,
-Type = QuestionType.MultipleChoice,
-Text = "Romen Diojen'in 1067-1071 yılları arasındaki Anadolu seferlerinin amacı aşağıdakilerden hangisidir?",
-Explanation = "Romen Diojen'in amacı Anadolu'ya yerleşmeye çalışan Türkleri Anadolu'dan atmak ve Türklerin yerleşmesini engellemektir.",
-OrderIndex = 118,
-Choices =
-{
-new Choice { Text = "Türkleri Anadolu'dan atmak", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Ani'yi fethetmek", IsCorrect = false, OrderIndex = 2 },
-new Choice { Text = "Bağdat'a sefer yapmak", IsCorrect = false, OrderIndex = 3 },
-new Choice { Text = "Selçuklu Devleti'ne vezir olmak", IsCorrect = false, OrderIndex = 4 },
-new Choice { Text = "Kayseri'yi Selçuklulara bırakmak", IsCorrect = false, OrderIndex = 5 },
-}
-},
+
 
 // --- SORU 119 ---
 new Question
@@ -14005,24 +14159,7 @@ new Choice { Text = "Peçeneklerle savaşmıştır.", IsCorrect = false, OrderIn
 }
 },
 
-// --- SORU 137 ---
-new Question
-{
-Note = notRomenDiojenVeAlparslan,
-Type = QuestionType.MultipleChoice,
-IsNegative = false,
-Text = "Sultan Alparslan ile Romen Diojen arasındaki görüşmeyle ilgili aşağıdakilerden hangisi yanlıştır?",
-Explanation = "Sultan Alparslan, Romen Diojen'e karşı insani bir tutum sergilemiş ve serbest bırakılması konusunda sözleşme yapılmasını konuşmuştur.",
-OrderIndex = 137,
-Choices =
-{
-new Choice { Text = "Romen Diojen Sultan Alparslan'ın huzuruna getirilmiştir.", IsCorrect = false, OrderIndex = 1 },
-new Choice { Text = "Romen Diojen'in yarası tedavi edilmiştir.", IsCorrect = false, OrderIndex = 2 },
-new Choice { Text = "Sultan Alparslan Romen Diojen'e kral gibi davranmıştır.", IsCorrect = false, OrderIndex = 3 },
-new Choice { Text = "Romen Diojen'in serbest bırakılması için sözleşme yapılması konuşulmuştur.", IsCorrect = false, OrderIndex = 4 },
-new Choice { Text = "Sultan Alparslan Romen Diojen'i hemen öldürmüştür.", IsCorrect = true, OrderIndex = 5 },
-}
-},
+
 // --- SORU 138 ---
 new Question
 {
@@ -14846,22 +14983,7 @@ new Choice { Text = "Salgurlar", IsCorrect = false, OrderIndex = 5 },
 },
 
 // --- SORU 178 ---
-new Question
-{
-Note = notSelcukluDevletleriVeAtabeylikler,
-Type = QuestionType.MultipleChoice,
-Text = "Aşağıdakilerden hangisi Selçuklu devletlerinden biridir?",
-Explanation = "Kirman Selçukluları, belirtilen Selçuklu devletleri arasında yer almaktadır.",
-OrderIndex = 178,
-Choices =
-{
-new Choice { Text = "Kirman Selçukluları", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Börüler", IsCorrect = false, OrderIndex = 2 },
-new Choice { Text = "Zengiler", IsCorrect = false, OrderIndex = 3 },
-new Choice { Text = "İl Denizliler", IsCorrect = false, OrderIndex = 4 },
-new Choice { Text = "Salgurlar", IsCorrect = false, OrderIndex = 5 },
-}
-},
+
 
 // --- SORU 179 ---
 new Question
@@ -16494,22 +16616,7 @@ new Choice { Text = "Karahanlıların dört Türk boyundan oluşması", IsCorrec
 new Choice { Text = "Satuk Buğra Han'ın İslamiyet'i kabul etmesi", IsCorrect = false, OrderIndex = 5 },
 }
 },
-new Question
-{
-Note = notGaznelilerinYikilisSureci,
-Type = QuestionType.MultipleChoice,
-Text = "Selçuklular ile Gazneliler arasında yapılan savaşlardan hangisi en bilinen savaştır?",
-Explanation = "Dandanakan Savaşı, Selçuklular ile Gazneliler arasındaki mücadelede en bilinen savaştır.",
-OrderIndex = 269,
-Choices =
-{
-new Choice { Text = "Dandanakan", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Nesa", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Serahs", IsCorrect = true, OrderIndex = 3 },
-new Choice { Text = "Pasinler", IsCorrect = false, OrderIndex = 4 },
-new Choice { Text = "Malazgirt", IsCorrect = false, OrderIndex = 5 },
-}
-},
+
 
 // --- SORU 270 ---
 new Question
@@ -16728,22 +16835,7 @@ new Choice { Text = "Yenikent", IsCorrect = false, OrderIndex = 5 },
 },
 
 // --- SORU 282 ---
-new Question
-{
-Note = notCagriBeyAnadoluKesifleri,
-Type = QuestionType.MultipleChoice,
-Text = "Çağrı Bey'in 1015-1021 yılları arasındaki Anadolu hareketlerinin temel amacı aşağıdakilerden hangisidir?",
-Explanation = "Çağrı Bey'in Anadolu hareketlerinin amacı keşif yapmak ve yurt bulmaktır.",
-OrderIndex = 282,
-Choices =
-{
-new Choice { Text = "Yurt bulmak", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Yurt edinmek", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Kesin olarak Anadolu'yu fethetmek", IsCorrect = false, OrderIndex = 3 },
-new Choice { Text = "Bağdat'ı ele geçirmek", IsCorrect = false, OrderIndex = 4 },
-new Choice { Text = "Büveyhileri sona erdirmek", IsCorrect = false, OrderIndex = 5 },
-}
-},
+
 
 // --- SORU 283 ---
 new Question
@@ -17469,23 +17561,7 @@ new Choice { Text = "Onu kendi ordusunun başına geçirmiştir", IsCorrect = fa
 },
 
 // --- SORU 323 ---
-new Question
-{
-Note = notMalazgirtSavasiB2,
-Type = QuestionType.MultipleChoice,
-IsNegative = false,
-Text = "Romen Diojen'in sonraki durumu hakkında aşağıdakilerden hangisi yanlıştır?",
-Explanation = "Romen Diojen'in esir düşmesi Bizans'ta taht değişikliğinin yaşanmasına yol açmış ve daha sonra yeni imparator tarafından yakalanmıştır.",
-OrderIndex = 323,
-Choices =
-{
-new Choice { Text = "Esir düştüğü haberi Bizans'a ulaşmıştır", IsCorrect = false, OrderIndex = 1 },
-new Choice { Text = "Bizans'ta taht değişikliği yaşanmıştır", IsCorrect = false, OrderIndex = 2 },
-new Choice { Text = "Yeni imparator tarafından yakalanmıştır", IsCorrect = false, OrderIndex = 3 },
-new Choice { Text = "Gözlerine mil çekilmiştir", IsCorrect = false, OrderIndex = 4 },
-new Choice { Text = "Sultan Alparslan tarafından öldürülmüştür", IsCorrect = true, OrderIndex = 5 },
-}
-},
+
 // --- SORU 324 ---
 new Question
 {
@@ -17699,25 +17775,7 @@ new Question
 },
 
 // --- SORU 334 ---
-new Question
-{
-    Note = notMeliksahDonemiB2,
-    Type = QuestionType.MultipleChoice,
-    Text = "Sultan Melikşah, Sultan Alparslan'dan sonra ne yapmıştır?",
-    Explanation = "Sultan Melikşah, Sultan Alparslan'dan sonra tahta geçmiştir.",
-    OrderIndex = 334,
-    Choices =
-    {
-        new Choice { Text = "Tahta geçmiştir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Devlete en parlak dönemini yaşatmıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Yemen'den Aden'e kadar fetihler yapmıştır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Şam'dan Kudüs'e kadar fetihler yapmıştır.", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Sultan Alparslan'dan önce tahta geçmiştir.", IsCorrect = false, OrderIndex = 5 },
-        new Choice { Text = "Bizans İmparatoru olmuştur.", IsCorrect = false, OrderIndex = 6 },
-        new Choice { Text = "Malazgirt'ten önce Romen Diojen'i esir almıştır.", IsCorrect = false, OrderIndex = 7 },
-        new Choice { Text = "Oğuzların üzerine ordu göndermiştir.", IsCorrect = false, OrderIndex = 8 },
-    }
-},
+
 
 // --- SORU 335 ---
 new Question
@@ -17824,26 +17882,7 @@ new Question
     }
 },
 
-// --- SORU 340 ---
-new Question
-{
-    Note = notHasanSabbahVeBatinilikB2,
-    Type = QuestionType.MultipleChoice,
-    Text = "Kendini feda eden suikastçılara verilen ad aşağıdakilerden hangisidir?",
-    Explanation = "Bu faaliyetler sonucunda kendini öldüren kişilere fedai adı verilmiştir.",
-    OrderIndex = 340,
-    Choices =
-    {
-        new Choice { Text = "Fedai", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Kendini feda eden kişi", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Kendini öldüren kişi", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Suikastçı", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Dai", IsCorrect = false, OrderIndex = 5 },
-        new Choice { Text = "Vezir", IsCorrect = false, OrderIndex = 6 },
-        new Choice { Text = "Tahsildar", IsCorrect = false, OrderIndex = 7 },
-        new Choice { Text = "Komutan", IsCorrect = false, OrderIndex = 8 },
-    }
-},
+
 
 // --- SORU 341 ---
 new Question
@@ -17906,26 +17945,7 @@ new Question
     }
 },
 
-// --- SORU 344 ---
-new Question
-{
-    Note = notBuyukSelcukluTahtMucadeleleri,
-    Type = QuestionType.MultipleChoice,
-    Text = "Melikşah'ın ölümünden sonra taht mücadeleleri hangi yıllar arasında yaşanmıştır?",
-    Explanation = "Melikşah'ın ölümüyle birlikte 1092'den 1118'e kadar dört hükümdar arasında taht mücadeleleri yaşanmıştır.",
-    OrderIndex = 344,
-    Choices =
-    {
-        new Choice { Text = "1092'den 1118'e kadar", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "1092", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "1118", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "1092-1118 dönemi", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "1071'den 1092'ye kadar", IsCorrect = false, OrderIndex = 5 },
-        new Choice { Text = "1118'den 1157'ye kadar", IsCorrect = false, OrderIndex = 6 },
-        new Choice { Text = "1157'den 1190'a kadar", IsCorrect = false, OrderIndex = 7 },
-        new Choice { Text = "1025'ten 1071'e kadar", IsCorrect = false, OrderIndex = 8 },
-    }
-},
+
 
 // --- SORU 345 ---
 new Question
@@ -18194,22 +18214,7 @@ new Choice { Text = "Humareveyh", IsCorrect = false, OrderIndex = 5 },
 },
 
 // --- SORU 359 ---
-new Question
-{
-Note = notIhsidiler,
-Type = QuestionType.MultipleChoice,
-Text = "İhşidiler Devleti hangi yıllar arasında hüküm sürmüştür?",
-Explanation = "İhşidiler 935-969 yılları arasında hüküm sürmüştür.",
-OrderIndex = 359,
-Choices =
-{
-new Choice { Text = "935-969", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "868-905", IsCorrect = false, OrderIndex = 2 },
-new Choice { Text = "840-1212", IsCorrect = false, OrderIndex = 3 },
-new Choice { Text = "1260-1277", IsCorrect = false, OrderIndex = 4 },
-new Choice { Text = "905-935", IsCorrect = false, OrderIndex = 5 },
-}
-},
+
 
 // --- SORU 360 ---
 new Question
@@ -18445,23 +18450,7 @@ new Choice { Text = "Ak alınlı", IsCorrect = false, OrderIndex = 5 },
 }
 },
 
-// --- SORU 373 ---
-new Question
-{
-Note = notMemluklerB4,
-Type = QuestionType.MultipleChoice,
-Text = "Memlüklerde hükümdarlığın el değiştirmesinde aşağıdakilerden hangisi etkili olabilmiştir?",
-Explanation = "Memlüklerde emir adı verilen herhangi bir komutan baskı yoluyla hükümdarlığı ele geçirebilmiştir.",
-OrderIndex = 373,
-Choices =
-{
-new Choice { Text = "Emir adı verilen bir komutanın hükümdarlığı ele geçirmesi", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Her zaman babadan oğula geçiş", IsCorrect = false, OrderIndex = 2 },
-new Choice { Text = "Halifenin otomatik olarak sultan olması", IsCorrect = false, OrderIndex = 3 },
-new Choice { Text = "Hükümdarın yalnızca halk tarafından seçilmesi", IsCorrect = false, OrderIndex = 4 },
-new Choice { Text = "Hükümdarlığın yalnızca valilere bırakılması", IsCorrect = false, OrderIndex = 5 },
-}
-},
+
 
 // --- SORU 374 ---
 new Question
@@ -18977,22 +18966,7 @@ new Choice { Text = "Malabadi Köprüsü", IsCorrect = false, OrderIndex = 6 },
 },
 
 // --- SORU 402 ---
-new Question
-{
-Note = notSaltuklular,
-Type = QuestionType.MultipleChoice,
-Text = "Saltukluların mücadele ettiği topluluklar arasında aşağıdakilerden hangisi yer alır?",
-Explanation = "Saltuklular bölgede Gürcüler ve Ermenilerle mücadele etmiştir.",
-OrderIndex = 402,
-Choices =
-{
-new Choice { Text = "Gürcüler", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Ermeniler", IsCorrect = true, OrderIndex = 2 },
-new Choice { Text = "Moğollar", IsCorrect = false, OrderIndex = 3 },
-new Choice { Text = "Peçenekler", IsCorrect = false, OrderIndex = 4 },
-new Choice { Text = "Memlükler", IsCorrect = false, OrderIndex = 5 },
-}
-},
+
 
 // --- SORU 403 ---
 new Question
@@ -19086,22 +19060,7 @@ new Choice { Text = "Tepsi Minare", IsCorrect = false, OrderIndex = 5 },
 },
 
 // --- SORU 408 ---
-new Question
-{
-Note = notMengucekliler,
-Type = QuestionType.MultipleChoice,
-Text = "Divriği Ulu Camii aşağıdakilerden hangisi tarafından 1985'ten beri koruma altındadır?",
-Explanation = "Divriği Ulu Camii 1985'ten beri UNESCO tarafından koruma altındadır.",
-OrderIndex = 408,
-Choices =
-{
-new Choice { Text = "UNESCO", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Anadolu Selçuklu Devleti", IsCorrect = false, OrderIndex = 2 },
-new Choice { Text = "Memlükler", IsCorrect = false, OrderIndex = 3 },
-new Choice { Text = "Bizans", IsCorrect = false, OrderIndex = 4 },
-new Choice { Text = "Büyük Selçuklu Devleti", IsCorrect = false, OrderIndex = 5 },
-}
-},
+
 
 // --- SORU 409 ---
 new Question
@@ -25318,6 +25277,199 @@ new Question
         new Choice { Text = "Kütahya'daki Karagöz Camisi Osmanlı Devleti'ne aittir.", IsCorrect = false, OrderIndex = 5 },
     }
 },
+// --- SORU 50 ---
+new Question
+{
+    Note = notIlimInsanlari,
+    Type = QuestionType.MultipleChoice,
+    Text = "Anadolu Selçuklu Devleti dönemindeki önemli ilim insanları ve eserleriyle ilgili aşağıdakilerden hangisi doğrudur?",
+    Explanation = "Verilen bilgilere göre Hazreti Mevlana, Hacı Bektaş-ı Veli, Yunus Emre, Aşık Paşa, Muhyiddin Arabi, Hacı Paşa, Ravendi, Feridüddin Attar ve Hoca Dehhani önemli isimler arasındadır.",
+    OrderIndex = 50,
+    Choices =
+    {
+        new Choice { Text = "Hazreti Mevlana, Divan-ı Kebir ve Mesnevi adlı eserleri kaleme almıştır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Hacı Bektaş-ı Veli, Makalat adlı eserin sahibidir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Yunus Emre, Risaletü'n-Nushiyye adlı eseri yazmıştır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Aşık Paşa, Garipname adlı eseri yazmıştır ve mezarı Kırşehir'dedir.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Muhyiddin Arabi, Vahdet-i Vücut felsefesinin öncüsüdür.", IsCorrect = true, OrderIndex = 5 },
+        new Choice { Text = "Hacı Paşa, 'Anadolu'nun İbn Sina'sı' olarak anılan tıp âlimidir.", IsCorrect = true, OrderIndex = 6 },
+        new Choice { Text = "Ravendi, Selçuklu tarihini yazan bir tarihçidir.", IsCorrect = true, OrderIndex = 7 },
+        new Choice { Text = "Feridüddin Attar, Mantıku't-Tayr adlı eserin yazarıdır ve eseri Gülşehri Türkçeye çevirmiştir.", IsCorrect = true, OrderIndex = 8 },
+        new Choice { Text = "Hoca Dehhani, Anadolu Selçuklu Devleti'nde divan edebiyatının kurucusu sayılır.", IsCorrect = true, OrderIndex = 9 },
+
+        new Choice { Text = "Hazreti Mevlana, Makalat adlı eserin sahibidir.", IsCorrect = false, OrderIndex = 10 },
+        new Choice { Text = "Hacı Bektaş-ı Veli, Garipname adlı eseri yazmıştır.", IsCorrect = false, OrderIndex = 11 },
+        new Choice { Text = "Yunus Emre, Mantıku't-Tayr adlı eserin yazarıdır.", IsCorrect = false, OrderIndex = 12 },
+        new Choice { Text = "Aşık Paşa, Risaletü'n-Nushiyye adlı eseri yazmıştır.", IsCorrect = false, OrderIndex = 13 },
+        new Choice { Text = "Muhyiddin Arabi, Selçuklu tarihini yazan tarihçidir.", IsCorrect = false, OrderIndex = 14 },
+        new Choice { Text = "Hacı Paşa, Vahdet-i Vücut felsefesinin öncüsüdür.", IsCorrect = false, OrderIndex = 15 },
+        new Choice { Text = "Ravendi, Anadolu'nun İbn Sina'sı olarak anılan tıp âlimidir.", IsCorrect = false, OrderIndex = 16 },
+        new Choice { Text = "Gülşehri, Mantıku't-Tayr'ın yazarıdır; Feridüddin Attar ise eseri Türkçeye çevirmiştir.", IsCorrect = false, OrderIndex = 17 },
+        new Choice { Text = "Hoca Dehhani, Bacıyân-ı Rum teşkilatının kurucusu sayılır.", IsCorrect = false, OrderIndex = 18 }
+    }
+},
+
+// --- SORU 51 ---
+new Question
+{
+    Note = notIlimInsanlari,
+    Type = QuestionType.MultipleChoice,
+    Text = "Makalat adlı eserin sahibi aşağıdakilerden hangisidir?",
+    Explanation = "Makalat adlı eserin sahibi Hacı Bektaş-ı Veli'dir.",
+    OrderIndex = 51,
+    Choices =
+    {
+        new Choice { Text = "Hacı Bektaş-ı Veli", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Hazreti Mevlana", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Yunus Emre", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Aşık Paşa", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Hoca Dehhani", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 52 ---
+new Question
+{
+    Note = notIlimInsanlari,
+    Type = QuestionType.MultipleChoice,
+    Text = "Risaletü'n-Nushiyye adlı eseri yazan kişi aşağıdakilerden hangisidir?",
+    Explanation = "Risaletü'n-Nushiyye adlı eseri Yunus Emre yazmıştır.",
+    OrderIndex = 52,
+    Choices =
+    {
+        new Choice { Text = "Yunus Emre", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Hacı Bektaş-ı Veli", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Aşık Paşa", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Hazreti Mevlana", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Ravendi", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 53 ---
+new Question
+{
+    Note = notIlimInsanlari,
+    Type = QuestionType.MultipleChoice,
+    Text = "Garipname adlı eseri yazan ve mezarı Kırşehir'de bulunan kişi aşağıdakilerden hangisidir?",
+    Explanation = "Garipname adlı eseri Aşık Paşa yazmıştır ve mezarı Kırşehir'dedir.",
+    OrderIndex = 53,
+    Choices =
+    {
+        new Choice { Text = "Aşık Paşa", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Yunus Emre", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Hoca Dehhani", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Ravendi", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Hacı Bektaş-ı Veli", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 54 ---
+new Question
+{
+    Note = notIlimInsanlari,
+    Type = QuestionType.MultipleChoice,
+    Text = "Vahdet-i Vücut felsefesinin öncüsü aşağıdakilerden hangisidir?",
+    Explanation = "Vahdet-i Vücut felsefesinin öncüsü Muhyiddin Arabi'dir.",
+    OrderIndex = 54,
+    Choices =
+    {
+        new Choice { Text = "Muhyiddin Arabi", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Hacı Paşa", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Ravendi", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Feridüddin Attar", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Hoca Dehhani", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 55 ---
+new Question
+{
+    Note = notIlimInsanlari,
+    Type = QuestionType.MultipleChoice,
+    Text = "'Anadolu'nun İbn Sina'sı' olarak anılan tıp âlimi aşağıdakilerden hangisidir?",
+    Explanation = "Hacı Paşa, 'Anadolu'nun İbn Sina'sı' olarak anılan tıp âlimidir.",
+    OrderIndex = 55,
+    Choices =
+    {
+        new Choice { Text = "Hacı Paşa", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Muhyiddin Arabi", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Ravendi", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Aşık Paşa", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Feridüddin Attar", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 56 ---
+new Question
+{
+    Note = notIlimInsanlari,
+    Type = QuestionType.MultipleChoice,
+    Text = "Selçuklu tarihini yazan tarihçi aşağıdakilerden hangisidir?",
+    Explanation = "Selçuklu tarihini yazan tarihçi Ravendi'dir.",
+    OrderIndex = 56,
+    Choices =
+    {
+        new Choice { Text = "Ravendi", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Feridüddin Attar", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Hoca Dehhani", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Muhyiddin Arabi", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Yunus Emre", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 57 ---
+new Question
+{
+    Note = notIlimInsanlari,
+    Type = QuestionType.MultipleChoice,
+    Text = "Mantıku't-Tayr adlı eserin yazarı aşağıdakilerden hangisidir?",
+    Explanation = "Mantıku't-Tayr adlı eserin yazarı Feridüddin Attar'dır; eseri Gülşehri Türkçeye çevirmiştir.",
+    OrderIndex = 57,
+    Choices =
+    {
+        new Choice { Text = "Feridüddin Attar", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Gülşehri", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Ravendi", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Hoca Dehhani", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Hazreti Mevlana", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 58 ---
+new Question
+{
+    Note = notIlimInsanlari,
+    Type = QuestionType.MultipleChoice,
+    Text = "Anadolu Selçuklu Devleti'nde divan edebiyatının kurucusu sayılan kişi aşağıdakilerden hangisidir?",
+    Explanation = "Hoca Dehhani, Anadolu Selçuklu Devleti'nde divan edebiyatının kurucusu sayılır.",
+    OrderIndex = 58,
+    Choices =
+    {
+        new Choice { Text = "Hoca Dehhani", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Aşık Paşa", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Yunus Emre", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Hacı Bektaş-ı Veli", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Feridüddin Attar", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 59 ---
+new Question
+{
+    Note = notIlimInsanlari,
+    Type = QuestionType.MultipleChoice,
+    Text = "Mantıku't-Tayr adlı eseri Türkçeye çeviren kişi aşağıdakilerden hangisidir?",
+    Explanation = "Mantıku't-Tayr'ın yazarı Feridüddin Attar, eseri Türkçeye çeviren kişi ise Gülşehri'dir.",
+    OrderIndex = 59,
+    Choices =
+    {
+        new Choice { Text = "Gülşehri", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Feridüddin Attar", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Ravendi", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Hoca Dehhani", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Yunus Emre", IsCorrect = false, OrderIndex = 5 }
+    }
+},
 
             }
         };
@@ -26619,25 +26771,7 @@ new Question
     }
 },
 
-// --- SORU 42 ---
-new Question
-{
-    Note = notOrhanBeyRumeliFetihleri,
-    Type = QuestionType.MultipleChoice,
-    Text = "Orhan Bey döneminde Rumeli'de gerçekleşen fetihlerden biri aşağıdakilerden hangisidir?",
-    Explanation = "1357'de Çorlu, Tekirdağ ve Malkara fethedilmiştir.",
-    OrderIndex = 42,
-    Choices =
-    {
-        new Choice { Text = "1357'de Çorlu, Tekirdağ ve Malkara'nın fethi", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "1345'te Karesioğulları'nın topraklarının alınması", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "1354'te Marmara ve Gelibolu hattının fethinin tamamlanması", IsCorrect = true, OrderIndex = 3 },
 
-        new Choice { Text = "1364'te Edirne'nin başkent ilan edilmesi", IsCorrect = false, OrderIndex = 4 },
-        new Choice { Text = "1389'da I. Kosova Savaşı'nın kazanılması", IsCorrect = false, OrderIndex = 5 },
-        new Choice { Text = "1371'de Çirmen Savaşı'nın kazanılması", IsCorrect = false, OrderIndex = 6 },
-    }
-},
 
 // --- SORU 43 (ters soru) ---
 new Question

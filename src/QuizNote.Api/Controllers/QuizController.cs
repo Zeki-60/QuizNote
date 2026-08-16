@@ -144,22 +144,27 @@ public class QuizController(QuizNoteDbContext db) : ControllerBase
     /// seviyesi düşük (zorlanılan) sorular daha sık gelir.
     /// <paramref name="excludeIds"/> son gösterilen soruları dışlar; aynı soru üst üste gelmez.
     /// <paramref name="favoritesOnly"/> açıkken yalnızca favori sorulardan seçilir.
-    /// <paramref name="inactiveOnly"/> açıkken yalnızca pasif (aktif olmayan) işaretli
-    /// sorulardan seçilir; kapalıyken (normal akış) kullanıcının pasif işaretlediği
-    /// sorular havuza hiç girmez.
+    /// <paramref name="orderIndex"/> verilmişse rastgele seçim yapılmaz; yalnızca
+    /// <paramref name="topicId"/> ile belirtilen konuda o sıra numarasına sahip soru
+    /// döner. Yalnızca bir konu içindeyken anlamlıdır; <paramref name="topicId"/>
+    /// verilmemişse veya <paramref name="favoritesOnly"/>/<paramref name="myQuestionsOnly"/>
+    /// açıksa reddedilir.
     /// </summary>
     [HttpGet("next-question")]
     public async Task<ActionResult<QuestionDto>> GetNextQuestion(
         [FromQuery] Guid? topicId,
         [FromQuery] bool prioritizeHard,
         [FromQuery] bool favoritesOnly,
-        [FromQuery] bool inactiveOnly,
         [FromQuery] bool myQuestionsOnly,
         [FromQuery] string? excludeIds,
+        [FromQuery] int? orderIndex,
         CancellationToken ct)
     {
         if (topicId is not null && !await db.Topics.AnyAsync(t => t.Id == topicId, ct))
             return NotFound(new { message = "Konu bulunamadı." });
+
+        if (orderIndex is not null && (topicId is null || favoritesOnly || myQuestionsOnly))
+            return BadRequest(new { message = "Sıra numarasıyla arama yalnızca bir konu içindeyken kullanılabilir." });
 
         var userId = CurrentUserId;
 
@@ -185,21 +190,8 @@ public class QuizController(QuizNoteDbContext db) : ControllerBase
             query = query.Where(q => q.CreatedByUserId == userId);
         }
 
-        if (inactiveOnly)
-        {
-            if (userId is null)
-                return Unauthorized(new { message = "Aktif olmayanlar için giriş yapmalısınız." });
-
-            query = query.Where(q => db.InactiveQuestions
-                .Any(i => i.UserId == userId && i.QuestionId == q.Id));
-        }
-        else if (userId is not null)
-        {
-            // Normal akışta (Tümü / konu / favoriler / kendi sorularım) kullanıcının
-            // pasife aldığı sorular havuza hiç girmez.
-            query = query.Where(q => !db.InactiveQuestions
-                .Any(i => i.UserId == userId && i.QuestionId == q.Id));
-        }
+        if (orderIndex is not null)
+            query = query.Where(q => q.OrderIndex == orderIndex);
 
         var questions = await query
             .Include(q => q.Choices)
@@ -210,8 +202,8 @@ public class QuizController(QuizNoteDbContext db) : ControllerBase
         if (questions.Count == 0)
             return NotFound(new
             {
-                message = inactiveOnly
-                    ? "Aktif olmayan sorunuz yok."
+                message = orderIndex is not null
+                    ? $"Bu konuda {orderIndex} numaralı soru bulunamadı."
                     : myQuestionsOnly
                         ? "Henüz eklediğiniz bir soru yok."
                         : favoritesOnly
@@ -219,10 +211,20 @@ public class QuizController(QuizNoteDbContext db) : ControllerBase
                             : "Soru bulunamadı."
             });
 
-        // Son gösterilen soruları dışla; havuz tükenirse dışlama kaldırılır.
-        var excluded = ParseIds(excludeIds);
-        var pool = questions.Where(q => !excluded.Contains(q.Id)).ToList();
-        if (pool.Count == 0) pool = questions;
+        // Sıra numarasıyla aranıyorsa dışlama/rastgelelik uygulanmaz; eşleşen soru
+        // (varsa birden fazla olsa da) doğrudan gösterilir.
+        List<Question> pool;
+        if (orderIndex is not null)
+        {
+            pool = questions;
+        }
+        else
+        {
+            // Son gösterilen soruları dışla; havuz tükenirse dışlama kaldırılır.
+            var excluded = ParseIds(excludeIds);
+            pool = questions.Where(q => !excluded.Contains(q.Id)).ToList();
+            if (pool.Count == 0) pool = questions;
+        }
 
         // Seviyeler havuzdaki sorulara göre çekilir; konu filtresinden bağımsızdır.
         var poolIds = pool.Select(q => q.Id).ToList();
@@ -242,10 +244,8 @@ public class QuizController(QuizNoteDbContext db) : ControllerBase
 
         var isFavorite = userId is not null && await db.FavoriteQuestions
             .AnyAsync(f => f.UserId == userId && f.QuestionId == picked.Id, ct);
-        var isInactive = userId is not null && await db.InactiveQuestions
-            .AnyAsync(i => i.UserId == userId && i.QuestionId == picked.Id, ct);
 
-        return Ok(ToDto(picked, LevelOf(picked), isFavorite, isInactive));
+        return Ok(ToDto(picked, LevelOf(picked), isFavorite));
     }
 
     /// <summary>Virgülle ayrılmış GUID listesini ayrıştırır; geçersizleri yok sayar.</summary>
@@ -259,7 +259,7 @@ public class QuizController(QuizNoteDbContext db) : ControllerBase
             .ToHashSet();
     }
 
-    private static QuestionDto ToDto(Question q, int level, bool isFavorite, bool isInactive) => new(
+    private static QuestionDto ToDto(Question q, int level, bool isFavorite) => new(
         q.Id,
         q.Type,
         q.Text,
@@ -273,8 +273,7 @@ public class QuizController(QuizNoteDbContext db) : ControllerBase
         q.MatchPairs.OrderBy(_ => Guid.NewGuid()).Select(m => new MatchRightDto(m.Id, m.RightText)).ToList(),
         level,
         UserQuestionLevel.MaxLevel,
-        isFavorite,
-        isInactive);
+        isFavorite);
 
     /// <summary>Favori durumunu tersine çevirir ve yeni durumu döndürür.</summary>
     [Authorize]
@@ -299,33 +298,26 @@ public class QuizController(QuizNoteDbContext db) : ControllerBase
         return Ok(new { isFavorite = existing is null });
     }
 
-    /// <summary>Pasif (aktif olmayan) durumunu tersine çevirir ve yeni durumu döndürür.</summary>
+    /// <summary>
+    /// Bir soruyu (ve bağlı şıklarını) kalıcı olarak siler. Soru kartındaki 🗑 butonu,
+    /// kullanıcı onayladıktan sonra bunu çağırır. Bağlı not silinmez.
+    /// </summary>
     [Authorize]
-    [HttpPost("questions/{questionId:guid}/inactive")]
-    public async Task<ActionResult> ToggleInactive(Guid questionId, CancellationToken ct)
+    [HttpDelete("questions/{questionId:guid}")]
+    public async Task<ActionResult> DeleteQuestion(Guid questionId, CancellationToken ct)
     {
-        var userId = CurrentUserId;
-        if (userId is null) return Unauthorized();
+        var question = await db.Questions.FirstOrDefaultAsync(q => q.Id == questionId, ct);
+        if (question is null) return NotFound(new { message = "Soru bulunamadı." });
 
-        if (!await db.Questions.AnyAsync(q => q.Id == questionId, ct))
-            return NotFound(new { message = "Soru bulunamadı." });
-
-        var existing = await db.InactiveQuestions
-            .FirstOrDefaultAsync(i => i.UserId == userId && i.QuestionId == questionId, ct);
-
-        if (existing is null)
-            db.InactiveQuestions.Add(new InactiveQuestion { UserId = userId.Value, QuestionId = questionId });
-        else
-            db.InactiveQuestions.Remove(existing);
-
+        db.Questions.Remove(question);
         await db.SaveChangesAsync(ct);
-        return Ok(new { isInactive = existing is null });
+        return NoContent();
     }
 
     /// <summary>
-    /// Konular ekranı için özet: toplam soru sayısı, favori sayısı, pasif soru sayısı
-    /// ve kullanıcının kendi eklediği soru sayısı. "Tümü", "Favorilerim", "Aktif
-    /// Olmayanlar" ve "Kendi Sorularım" kartları ile "Toplam soru: ..." göstergesi bunu kullanır.
+    /// Konular ekranı için özet: toplam soru sayısı, favori sayısı ve kullanıcının
+    /// kendi eklediği soru sayısı. "Tümü", "Favorilerim" ve "Kendi Sorularım" kartları
+    /// ile "Toplam soru: ..." göstergesi bunu kullanır.
     /// </summary>
     [HttpGet("me/summary")]
     public async Task<ActionResult> Summary(CancellationToken ct)
@@ -338,21 +330,17 @@ public class QuizController(QuizNoteDbContext db) : ControllerBase
             ? 0
             : await db.FavoriteQuestions.CountAsync(f => f.UserId == userId, ct);
 
-        var inactiveCount = userId is null
-            ? 0
-            : await db.InactiveQuestions.CountAsync(i => i.UserId == userId, ct);
-
         var myQuestionsCount = userId is null
             ? 0
             : await db.Questions.CountAsync(q => q.CreatedByUserId == userId, ct);
 
-        return Ok(new { totalQuestions, favoriteCount, inactiveCount, myQuestionsCount });
+        return Ok(new { totalQuestions, favoriteCount, myQuestionsCount });
     }
 
     /// <summary>
     /// Soru kartının yanındaki bilgi kartı için: aktif kapsamdaki (konu / favoriler /
-    /// aktif olmayanlar / kendi sorularım / tümü) toplam soru sayısı, seviye dağılımı,
-    /// favori ve pasif soru sayıları. <paramref name="scope"/>: "topic" | "favorites" | "inactive" | "myQuestions" | "all".
+    /// kendi sorularım / tümü) toplam soru sayısı, seviye dağılımı, favori sayısı.
+    /// <paramref name="scope"/>: "topic" | "favorites" | "myQuestions" | "all".
     /// </summary>
     [HttpGet("me/scope-stats")]
     public async Task<ActionResult<ScopeStatsDto>> ScopeStats(
@@ -370,10 +358,6 @@ public class QuizController(QuizNoteDbContext db) : ControllerBase
             query = userId is null
                 ? query.Where(q => false)
                 : query.Where(q => db.FavoriteQuestions.Any(f => f.UserId == userId && f.QuestionId == q.Id));
-        else if (scope == "inactive")
-            query = userId is null
-                ? query.Where(q => false)
-                : query.Where(q => db.InactiveQuestions.Any(i => i.UserId == userId && i.QuestionId == q.Id));
         else if (scope == "myQuestions")
             query = userId is null
                 ? query.Where(q => false)
@@ -383,6 +367,7 @@ public class QuizController(QuizNoteDbContext db) : ControllerBase
         var ids = await query.Select(q => q.Id).ToListAsync(ct);
 
         var levelCounts = new int[UserQuestionLevel.MaxLevel + 1];
+        var levelSum = 0;
         if (userId is not null && ids.Count > 0)
         {
             var levels = await db.UserQuestionLevels
@@ -393,23 +378,26 @@ public class QuizController(QuizNoteDbContext db) : ControllerBase
             foreach (var level in levels)
                 levelCounts[Math.Clamp(level, UserQuestionLevel.MinLevel, UserQuestionLevel.MaxLevel)]++;
 
-            // Seviye kaydı olmayan sorular başlangıç seviyesindedir.
+            // Seviye kaydı olmayan sorular başlangıç seviyesindedir (0 katkı yapar).
             levelCounts[UserQuestionLevel.StartLevel] += ids.Count - levels.Count;
+            levelSum = levels.Sum();
         }
         else
         {
             levelCounts[UserQuestionLevel.StartLevel] = ids.Count;
         }
 
+        // Konu puanı: seviyelerin toplamının, ulaşılabilecek maksimuma (soru sayısı *
+        // MaxLevel) oranı; tüm sorular seviye 5 ise 100, hepsi 0 ise 0 olur.
+        var scorePercent = ids.Count == 0
+            ? 0
+            : (int)Math.Round(100.0 * levelSum / (ids.Count * UserQuestionLevel.MaxLevel));
+
         var favoriteCount = userId is null
             ? 0
             : await db.FavoriteQuestions.CountAsync(f => f.UserId == userId && ids.Contains(f.QuestionId), ct);
 
-        var inactiveCount = userId is null
-            ? 0
-            : await db.InactiveQuestions.CountAsync(i => i.UserId == userId && ids.Contains(i.QuestionId), ct);
-
-        return Ok(new ScopeStatsDto(ids.Count, levelCounts, favoriteCount, inactiveCount));
+        return Ok(new ScopeStatsDto(ids.Count, levelCounts, favoriteCount, scorePercent));
     }
 
     /// <summary>
@@ -717,12 +705,11 @@ public class QuizController(QuizNoteDbContext db) : ControllerBase
     }
 
     /// <summary>
-    /// Soru çözme ekranındaki aktif kapsama (tümü / konu / favoriler / aktif olmayanlar /
-    /// kendi sorularım) göre soruları (ve notlarını) DbSeeder.cs'deki seed veri formatına
-    /// benzer C# kodu olarak bir .txt dosyası şeklinde indirir. Soru ekranındaki indirme
-    /// ikonu bunu çağırır; <paramref name="scope"/>: "topic" | "favorites" | "inactive" |
-    /// "myQuestions" | "all". <paramref name="scope"/> "topic" ise <paramref name="topicId"/>
-    /// zorunludur.
+    /// Soru çözme ekranındaki aktif kapsama (tümü / konu / favoriler / kendi sorularım)
+    /// göre soruları (ve notlarını) DbSeeder.cs'deki seed veri formatına benzer C# kodu
+    /// olarak bir .txt dosyası şeklinde indirir. Soru ekranındaki indirme ikonu bunu
+    /// çağırır; <paramref name="scope"/>: "topic" | "favorites" | "myQuestions" | "all".
+    /// <paramref name="scope"/> "topic" ise <paramref name="topicId"/> zorunludur.
     /// </summary>
     [HttpGet("questions/export")]
     public async Task<ActionResult> ExportQuestions(
@@ -750,12 +737,6 @@ public class QuizController(QuizNoteDbContext db) : ControllerBase
             query = query.Where(q => db.FavoriteQuestions.Any(f => f.UserId == userId && f.QuestionId == q.Id));
             scopeLabel = "Favorilerim";
         }
-        else if (scope == "inactive")
-        {
-            if (userId is null) return Unauthorized(new { message = "Aktif olmayanlar için giriş yapmalısınız." });
-            query = query.Where(q => db.InactiveQuestions.Any(i => i.UserId == userId && i.QuestionId == q.Id));
-            scopeLabel = "Aktif olmayan sorularım";
-        }
         else if (scope == "myQuestions")
         {
             if (userId is null) return Unauthorized(new { message = "Kendi sorularınız için giriş yapmalısınız." });
@@ -770,11 +751,6 @@ public class QuizController(QuizNoteDbContext db) : ControllerBase
         {
             return BadRequest(new { message = "Geçersiz kapsam." });
         }
-
-        // "Aktif olmayanlar" kapsamı hariç, kullanıcının pasife aldığı sorular dışa
-        // aktarıma dahil edilmez (next-question ucundaki filtrelemeyle tutarlı).
-        if (scope != "inactive" && userId is not null)
-            query = query.Where(q => !db.InactiveQuestions.Any(i => i.UserId == userId && i.QuestionId == q.Id));
 
         var questions = await query
             .Include(q => q.Choices)
@@ -834,7 +810,6 @@ public class QuizController(QuizNoteDbContext db) : ControllerBase
         {
             "topic" => "konu-sorulari.txt",
             "favorites" => "favori-sorularim.txt",
-            "inactive" => "aktif-olmayan-sorularim.txt",
             "myQuestions" => "kendi-sorularim.txt",
             _ => "tum-sorular.txt",
         };

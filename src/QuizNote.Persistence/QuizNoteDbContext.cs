@@ -13,7 +13,6 @@ public class QuizNoteDbContext(DbContextOptions<QuizNoteDbContext> options) : Db
     public DbSet<MatchPair> MatchPairs => Set<MatchPair>();
     public DbSet<UserQuestionLevel> UserQuestionLevels => Set<UserQuestionLevel>();
     public DbSet<FavoriteQuestion> FavoriteQuestions => Set<FavoriteQuestion>();
-    public DbSet<InactiveQuestion> InactiveQuestions => Set<InactiveQuestion>();
 
     protected override void OnModelCreating(ModelBuilder b)
     {
@@ -92,17 +91,6 @@ public class QuizNoteDbContext(DbContextOptions<QuizNoteDbContext> options) : Db
             e.HasOne(x => x.Question).WithMany()
                 .HasForeignKey(x => x.QuestionId).OnDelete(DeleteBehavior.Cascade);
             // Aynı soru bir kullanıcıda yalnızca bir kez favori olabilir.
-            e.HasIndex(x => new { x.UserId, x.QuestionId }).IsUnique();
-        });
-
-        b.Entity<InactiveQuestion>(e =>
-        {
-            e.ToTable("inactive_questions");
-            e.HasOne(x => x.User).WithMany(u => u.InactiveQuestions)
-                .HasForeignKey(x => x.UserId).OnDelete(DeleteBehavior.Cascade);
-            e.HasOne(x => x.Question).WithMany()
-                .HasForeignKey(x => x.QuestionId).OnDelete(DeleteBehavior.Cascade);
-            // Aynı soru bir kullanıcıda yalnızca bir kez pasif olabilir.
             e.HasIndex(x => new { x.UserId, x.QuestionId }).IsUnique();
         });
 
