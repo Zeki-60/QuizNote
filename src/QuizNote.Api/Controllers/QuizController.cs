@@ -299,6 +299,36 @@ public class QuizController(QuizNoteDbContext db) : ControllerBase
     }
 
     /// <summary>
+    /// Kullanıcının bu sorudaki seviyesini doğrudan maksimuma (5) ayarlar. Soru
+    /// ekranındaki "Max" butonu bunu çağırır; yeni seviyeyi döndürür.
+    /// </summary>
+    [Authorize]
+    [HttpPost("questions/{questionId:guid}/max-level")]
+    public async Task<ActionResult> SetMaxLevel(Guid questionId, CancellationToken ct)
+    {
+        var userId = CurrentUserId;
+        if (userId is null) return Unauthorized();
+
+        if (!await db.Questions.AnyAsync(q => q.Id == questionId, ct))
+            return NotFound(new { message = "Soru bulunamadı." });
+
+        var levelRow = await db.UserQuestionLevels
+            .FirstOrDefaultAsync(l => l.UserId == userId && l.QuestionId == questionId, ct);
+
+        if (levelRow is null)
+        {
+            levelRow = new UserQuestionLevel { UserId = userId.Value, QuestionId = questionId };
+            db.UserQuestionLevels.Add(levelRow);
+        }
+
+        levelRow.Level = UserQuestionLevel.MaxLevel;
+        levelRow.UpdatedAt = DateTime.UtcNow;
+
+        await db.SaveChangesAsync(ct);
+        return Ok(new { level = levelRow.Level, maxLevel = UserQuestionLevel.MaxLevel });
+    }
+
+    /// <summary>
     /// Bir soruyu (ve bağlı şıklarını) kalıcı olarak siler. Soru kartındaki 🗑 butonu,
     /// kullanıcı onayladıktan sonra bunu çağırır. Bağlı not silinmez.
     /// </summary>

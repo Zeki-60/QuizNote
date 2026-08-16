@@ -2671,28 +2671,7 @@ new Question
 
                 // --- SORU 31 ---
                 // Üçüncü ve dördüncü çeldirici yaz özellikleridir.
-                new Question
-                {
-                    Note = notYazKis,
-                    Type = QuestionType.MultipleChoice,
-                    Text = "Orta Asya'da kışların özellikleri ile ilgili aşağıdakilerden hangisi doğrudur?",
-                    Explanation = "Kışlar inanılmaz sert ve kuraktır; çayırın üzeri karla kaplandığı için hayvan yem bulamaz.",
-                    OrderIndex = 31,
-                    Choices =
-                    {
-                        new Choice { Text = "İnanılmaz serttir", IsCorrect = true, OrderIndex = 1 },
-                        new Choice { Text = "O da kuraktır", IsCorrect = true, OrderIndex = 2 },
-                        new Choice { Text = "Çayırın üzeri karla kaplıdır", IsCorrect = true, OrderIndex = 3 },
-                        new Choice { Text = "Hayvan yem bulamaz", IsCorrect = true, OrderIndex = 4 },
-
-                        new Choice { Text = "Ilıman ve yağışlıdır", IsCorrect = false, OrderIndex = 5 },
-                        new Choice { Text = "Hayvanlar için otlak bakımından en verimli mevsimdir", IsCorrect = false, OrderIndex = 6 },
-                        new Choice { Text = "Çok sıcak ve kuraktır", IsCorrect = false, OrderIndex = 7 },
-                        new Choice { Text = "Hayvan su bulamaz", IsCorrect = false, OrderIndex = 8 },
-                        new Choice { Text = "Su kaynaklarını tüketir", IsCorrect = false, OrderIndex = 9 },
-                        new Choice { Text = "Kuraklıkla hiç ilgisi yoktur", IsCorrect = false, OrderIndex = 10 },
-                    }
-                },
+                
 
                 // --- SORU 32 ---
                 new Question
@@ -30112,25 +30091,7 @@ new Question
     }
 },
 
-// --- SORU 74 ---
-new Question
-{
-    Note = notKapitulasyonAmaclari,
-    Type = QuestionType.MultipleChoice,
-    Text = "Kapitülasyonların verilme amaçlarından biri aşağıdakilerden hangisidir?",
-    Explanation = "Kapitülasyonlar hazineye gelir sağlamak, batılı devletleri müttefik edinmek ve Haçlı ittifakını parçalamak amacıyla verilmiştir.",
-    OrderIndex = 74,
-    Choices =
-    {
-        new Choice { Text = "Hazineye gelir sağlamak", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Batılı devletleri müttefik edinmek", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Haçlı ittifakını parçalamak", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Ticari faaliyetleri geliştirmek", IsCorrect = true, OrderIndex = 4 },
 
-        new Choice { Text = "Batılı devletlerin Osmanlı topraklarını işgal etmesini teşvik etmek", IsCorrect = false, OrderIndex = 5 },
-        new Choice { Text = "Osmanlı ordusunu batılı devletlere bağlamak", IsCorrect = false, OrderIndex = 6 },
-    }
-},
 
 // --- SORU 75 (ters soru) ---
 new Question
