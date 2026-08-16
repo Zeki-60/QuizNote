@@ -39,6 +39,10 @@ public static class DbSeeder
     /// <see cref="Topic.Notes"/> listesine eklenmemişse EF onu sahipsiz bir kayıt olarak
     /// yazmaya çalışır ve anlaşılması güç bir foreign key hatası alınır; burada erkenden
     /// ve hangi notun eksik olduğunu söyleyerek durdurulur.
+    ///
+    /// Ayrıca aynı konu içinde tekrarlanan Question.OrderIndex değerleri de yakalanır:
+    /// <see cref="SyncTopicAsync"/> soruları OrderIndex'e göre eşleştirdiği için, aynı
+    /// konuda iki soru aynı OrderIndex'i paylaşırsa biri sessizce yok sayılır.
     /// </summary>
     private static void Validate(Topic topic)
     {
@@ -54,6 +58,18 @@ public static class DbSeeder
             throw new InvalidOperationException(
                 $"'{topic.Name}' konusunda şu notlar sorulara bağlı ama Notes listesine " +
                 $"eklenmemiş: {string.Join(", ", missing)}");
+
+        var duplicateOrderIndexes = topic.Questions
+            .GroupBy(q => q.OrderIndex)
+            .Where(g => g.Count() > 1)
+            .Select(g => g.Key)
+            .ToList();
+
+        if (duplicateOrderIndexes.Count > 0)
+            throw new InvalidOperationException(
+                $"'{topic.Name}' konusunda şu OrderIndex değerleri birden fazla soruda " +
+                $"tekrarlanıyor: {string.Join(", ", duplicateOrderIndexes)}. Her sorunun " +
+                "OrderIndex'i kendi konusu içinde benzersiz olmalıdır.");
     }
 
     private static async Task SyncTopicAsync(QuizNoteDbContext db, Topic seedTopic, CancellationToken ct)
@@ -87,12 +103,16 @@ public static class DbSeeder
             noteByTitle[seedNote.Title] = seedNote;
         }
 
-        // Metni veritabanında bulunmayan soruları, şıklarıyla birlikte ekle.
-        var existingTexts = dbTopic.Questions.Select(q => q.Text).ToHashSet();
+        // OrderIndex'i veritabanında bulunmayan soruları, şıklarıyla birlikte ekle.
+        // Metin yerine OrderIndex'e göre eşleştirilir: kullanıcı bir soruyu API üzerinden
+        // (metnini) güncellediğinde, seed'deki eski metin artık veritabanındakiyle
+        // eşleşmez ve metin bazlı karşılaştırma bunu yanlışlıkla "yeni soru" sayıp
+        // kopyalardı. OrderIndex, Konu içinde soru başına sabit bir kimlik gibi kullanılır.
+        var existingOrderIndexes = dbTopic.Questions.Select(q => q.OrderIndex).ToHashSet();
 
         foreach (var seedQuestion in seedTopic.Questions)
         {
-            if (existingTexts.Contains(seedQuestion.Text)) continue;
+            if (existingOrderIndexes.Contains(seedQuestion.OrderIndex)) continue;
 
             // Soru seed'de bir Note nesnesine referansla bağlıdır. O not veritabanında
             // zaten varsa referans oradaki kayda çevrilmeli; aksi halde EF aynı başlıkta
@@ -104,7 +124,7 @@ public static class DbSeeder
             seedQuestion.TopicId = dbTopic.Id;
 
             db.Questions.Add(seedQuestion);
-            existingTexts.Add(seedQuestion.Text);
+            existingOrderIndexes.Add(seedQuestion.OrderIndex);
         }
     }
 
@@ -8499,7 +8519,7 @@ new Question
     Type = QuestionType.MultipleChoice,
     Text = "Vezir Tonyukuk'a hangi unvanlar verilmiştir?",
     Explanation = "Tonyukuk, siyasi öngörüsü ve devlet tecrübesinden dolayı 'Apa Tarkan' unvanını almış; üç Göktürk kağanına danışmanlık yaparak devletin kuruluş ve yükselişindeki rolünden dolayı da 'Türklerin Bismarck'ı' olarak anılmıştır.",
-    OrderIndex = 142,
+    OrderIndex = 511,
     Choices =
     {
         new Choice { Text = "Apa Tarkan", IsCorrect = true, OrderIndex = 1 },
@@ -23620,7 +23640,7 @@ new Question
     Type = QuestionType.MultipleChoice,
     Text = "Harezmi ile ilgili aşağıdakilerden hangisi doğrudur?",
     Explanation = "Harezmi matematikçi ve astronomdur; cebrin kurucusu olarak anılır ve Hisabü'l-Cebr ve'l-Mukabele adlı eseriyle matematik alanında çalışmalar yapmıştır.",
-    OrderIndex = 99,
+    OrderIndex = 128,
     Choices =
     {
         new Choice { Text = "Matematikçi ve astronomdur.", IsCorrect = true, OrderIndex = 1 },
@@ -25961,7 +25981,7 @@ new Question
             Notes =
             {
                 // Not değişkenleri buraya yazılır: notXxx, notYyy
-                notCagdasDevletlerIlhanliAltinordu, notCagdasDevletlerMemlukTurkiyeSelcuklu, notBizansVeTrabzonRum, notOsmanliKurulusYeriVeAtsb, notKisaSurdeBuyumeNedenleri, notMudaraPolitikasi, notGaziyaniRumVeDestekcigruplar, notIskanIstimaletTimar, notIskaninAmaclariVeSartlari, notOsmanBeyDonemiFetihleri, notOsmanBeyDonemiIlkler, notOrhanBeyBursaIznik, notOrhanBeyPelekanonCimpeKale, notOrhanBeyDonemiIlkler, notOrhanBeyRumeliFetihleri, notBiriciMuratHudavendigarBeylikler, notBiriciMuratSirpSindigiCirmen, notBiriciMuratKosovaSavasi, notBiriciMuratKurumsalGelismeler, notBiriciMuratSavciBeyIsyani, notYildirimBeyazitFrenkYazisiIstanbulKusatma, notYildirimSultaniIklimiRum, notAnkaraSavasiNedenleri, notAnkaraSavasiSonuclariVeFetret, notCelebiMehmetDuzmeceMustafaBedrettin, notIkinciMuratEdirneSegedin, notIkinciMuratVarnaKosova, notHacliSavaslariKronolojisi
+                notCagdasDevletlerIlhanliAltinordu, notCagdasDevletlerMemlukTurkiyeSelcuklu,notBizansVeTrabzonRum, notOsmanliKurulusYeriVeAtsb, notKisaSurdeBuyumeNedenleri, notMudaraPolitikasi, notGaziyaniRumVeDestekcigruplar, notIskanIstimaletTimar, notIskaninAmaclariVeSartlari, notOsmanBeyDonemiFetihleri, notOsmanBeyDonemiIlkler, notOrhanBeyBursaIznik, notOrhanBeyPelekanonCimpeKale, notOrhanBeyDonemiIlkler, notOrhanBeyRumeliFetihleri, notBiriciMuratHudavendigarBeylikler, notBiriciMuratSirpSindigiCirmen, notBiriciMuratKosovaSavasi, notBiriciMuratKurumsalGelismeler, notBiriciMuratSavciBeyIsyani, notYildirimBeyazitFrenkYazisiIstanbulKusatma, notYildirimSultaniIklimiRum, notAnkaraSavasiNedenleri, notAnkaraSavasiSonuclariVeFetret, notCelebiMehmetDuzmeceMustafaBedrettin, notIkinciMuratEdirneSegedin, notIkinciMuratVarnaKosova, notHacliSavaslariKronolojisi
 
             },
             Questions =
@@ -26317,25 +26337,7 @@ new Question
     }
 },
 
-// --- SORU 19 ---
-new Question
-{
-    Note = notGaziyaniRumVeDestekcigruplar,
-    Type = QuestionType.MultipleChoice,
-    Text = "Osmanlı Devleti'nin kuruluşuna destek veren 'Rum' ile biten teşkilatlar aşağıdakilerden hangileridir?",
-    Explanation = "Gaziyân-ı Rum, Ahiyân-ı Rum, Abdalân-ı Rum ve Bacıyân-ı Rum, Osmanlı'nın kuruluşuna destek veren dört teşkilattır.",
-    OrderIndex = 19,
-    Choices =
-    {
-        new Choice { Text = "Gaziyân-ı Rum", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Ahiyân-ı Rum", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Abdalân-ı Rum", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Bacıyân-ı Rum", IsCorrect = true, OrderIndex = 4 },
 
-        new Choice { Text = "Mihaloğulları", IsCorrect = false, OrderIndex = 5 },
-        new Choice { Text = "Evrenosoğulları", IsCorrect = false, OrderIndex = 6 },
-    }
-},
 
 // --- SORU 20 (ters soru) ---
 new Question
@@ -27182,24 +27184,7 @@ new Question
 },
 
 // --- SORU 64 ---
-new Question
-{
-    Note = notAnkaraSavasiNedenleri,
-    Type = QuestionType.MultipleChoice,
-    Text = "1402 Ankara Savaşı'nın nedenlerinden biri aşağıdakilerden hangisidir?",
-    Explanation = "Timur'un önünden kaçan Celayiroğlu Ahmet ve Karayülük Osman'ın Yıldırım Bayezid'e sığınması, Ankara Savaşı'nın nedenlerinden biridir.",
-    OrderIndex = 64,
-    Choices =
-    {
-        new Choice { Text = "Celayiroğlu Ahmet ve Karayülük Osman'ın Yıldırım Bayezid'e sığınması", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Akkoyunluların Timur'u Anadolu'ya kışkırtması", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "İki liderin birbirini tahrik eden mektuplaşmaları", IsCorrect = true, OrderIndex = 3 },
 
-        new Choice { Text = "Bizans'ın Timur'dan yardım istemesi", IsCorrect = false, OrderIndex = 4 },
-        new Choice { Text = "Papa'nın Timur'u kışkırtması", IsCorrect = false, OrderIndex = 5 },
-        new Choice { Text = "Venedik'in Osmanlı'ya savaş açması", IsCorrect = false, OrderIndex = 6 },
-    }
-},
 
 // --- SORU 65 ---
 new Question
@@ -27494,42 +27479,418 @@ new Question
     }
 },
 
-// --- SORU 80 ---
+
+
+
+// --- SORU 94 ---
 new Question
 {
-    Note = notHacliSavaslariKronolojisi,
+    Note = notCelebiMehmetDuzmeceMustafaBedrettin,
     Type = QuestionType.MultipleChoice,
-    Text = "'SINAV 2' şifresiyle hatırlanan Osmanlı-Haçlı savaşları kronolojisinde 'V' harfi hangi savaşı temsil eder?",
-    Explanation = "'V' harfi, 1444'te gerçekleşen Varna Savaşı'nı temsil eder.",
-    OrderIndex = 80,
+    IsNegative = true,
+    Text = "1. Mehmet dönemi ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "1. Mehmet, Fetret Devri'ne son vermiş, Osmanlı Devleti'nin ikinci kurucusu olarak kabul edilmiş ve döneminde Şeyh Bedrettin İsyanı ile Venedik'e karşı ilk deniz savaşı gibi gelişmeler yaşanmıştır.",
+    OrderIndex = 94,
     Choices =
     {
-        new Choice { Text = "Varna Savaşı", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "1. Mehmet, Fetret Devri'ne son vermiştir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "1. Mehmet, Osmanlı Devleti'nin ikinci kurucusu olarak kabul edilmiştir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Fetret Devri 1402-1413 yılları arasında yaşanmıştır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Fetret Devri'ndeki mücadeleyi Çelebi Mehmet kazanmıştır.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Fetret Devri sırasında Anadolu Türk siyasi birliği bozulmuştur.", IsCorrect = true, OrderIndex = 5 },
+        new Choice { Text = "Fetret Devri'ne rağmen Balkanlarda büyük bir kopuş yaşanmamıştır.", IsCorrect = true, OrderIndex = 6 },
+        new Choice { Text = "Balkanlarda büyük bir kopuş yaşanmamasında istimalet ve iskan politikaları etkili olmuştur.", IsCorrect = true, OrderIndex = 7 },
+        new Choice { Text = "Çelebi Mehmet'in unvanı 'Çelebi'dir ve bilgili şehzade anlamına gelir.", IsCorrect = true, OrderIndex = 8 },
+        new Choice { Text = "Şeyh Bedrettin İsyanı, Osmanlı Devleti'ndeki ilk dini nitelikli toplumsal ayaklanmadır.", IsCorrect = true, OrderIndex = 9 },
+        new Choice { Text = "Şeyh Bedrettin, Torlak Kemal ve Börklüce Mustafa isyanları bu dönemde görülmüştür.", IsCorrect = true, OrderIndex = 10 },
+        new Choice { Text = "Düzmece Mustafa, 1. Mehmet ve 2. Murat dönemlerinde isyan etmiştir.", IsCorrect = true, OrderIndex = 11 },
+        new Choice { Text = "1. Mehmet döneminde Venedik ile deniz savaşı yapılmıştır.", IsCorrect = true, OrderIndex = 12 },
+        new Choice { Text = "Çalı Bey, Venedik'e karşı yapılan deniz savaşında şehit olmuştur.", IsCorrect = true, OrderIndex = 13 },
 
-        new Choice { Text = "Niğbolu Savaşı", IsCorrect = false, OrderIndex = 2 },
-        new Choice { Text = "II. Kosova Savaşı", IsCorrect = false, OrderIndex = 3 },
-        new Choice { Text = "Sırp Sındığı Savaşı", IsCorrect = false, OrderIndex = 4 },
-        new Choice { Text = "Ankara Savaşı", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "1. Mehmet, Fetret Devri'ni başlatmıştır.", IsCorrect = false, OrderIndex = 14 },
+        new Choice { Text = "Fetret Devri 1413-1421 yılları arasında yaşanmıştır.", IsCorrect = false, OrderIndex = 15 },
+        new Choice { Text = "Şeyh Bedrettin İsyanı Osmanlı Devleti'ndeki ilk askeri ayaklanmadır.", IsCorrect = false, OrderIndex = 16 },
+        new Choice { Text = "Çelebi Mehmet'in unvanı 'Yıldırım'dır.", IsCorrect = false, OrderIndex = 17 },
+        new Choice { Text = "Çalı Bey, Venedik'e karşı yapılan kara savaşında şehit olmuştur.", IsCorrect = false, OrderIndex = 18 }
+    }
+},
+// --- SORU 95 ---
+new Question
+{
+    Note = notOrhanBeyDonemiIlkler,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "İlk tersane hangi Osmanlı padişahı döneminde açılmıştır?",
+    Explanation = "İlk tersane Karamürsel Tersanesi olup Orhan Bey döneminde açılmıştır.",
+    OrderIndex = 95,
+    Choices =
+    {
+        new Choice { Text = "Orhan Bey", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Osman Bey", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "I. Murat", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 5 }
     }
 },
 
-// --- SORU 81 (ters soru) ---
+// --- SORU 96 ---
 new Question
 {
-    Note = notHacliSavaslariKronolojisi,
+    Note = notOrhanBeyDonemiIlkler,
     Type = QuestionType.MultipleChoice,
-    IsNegative = true,
-    Text = "Osmanlı-Haçlı savaşları kronolojisiyle ilgili aşağıdakilerden hangisi yanlıştır?",
-    Explanation = "Koyunhisar (1302) ve Pelekanon (1329) savaşları Bizans'a karşı yapılmış doğrudan Osmanlı-Bizans savaşlarıdır; Haçlı savaşları kronolojisine dahil değildir.",
-    OrderIndex = 81,
+    IsNegative = false,
+    Text = "İlk saray hangi Osmanlı padişahı döneminde yapılmıştır?",
+    Explanation = "İlk saray Bursa Bey Sarayı olup Orhan Bey döneminde yapılmıştır.",
+    OrderIndex = 96,
     Choices =
     {
-        new Choice { Text = "Sırp Sındığı Savaşı'nda karşı taraf lideri Macar Kralı Layoş'tur.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "I. Kosova Savaşı'nda karşı taraf lideri Sırp Kralı Lazar'dır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Niğbolu Savaşı'nda karşı taraf lideri Macar Kralı Sigismund'dur.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Varna ve II. Kosova savaşlarında Hünyadi Yanoş yer almıştır.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Orhan Bey", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Osman Bey", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "I. Murat", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 5 }
+    }
+},
 
-        new Choice { Text = "Koyunhisar ve Pelekanon savaşları bu Haçlı savaşları kronolojisine dahildir.", IsCorrect = false, OrderIndex = 5 },
+// --- SORU 97 ---
+new Question
+{
+    Note = notOrhanBeyDonemiIlkler,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "İlk medrese hangi Osmanlı padişahı döneminde açılmıştır?",
+    Explanation = "İlk medrese İznik (Orhaniye) Medresesi olup Orhan Bey döneminde açılmıştır.",
+    OrderIndex = 97,
+    Choices =
+    {
+        new Choice { Text = "Orhan Bey", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Osman Bey", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "I. Murat", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 98 ---
+new Question
+{
+    Note = notOrhanBeyDonemiIlkler,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "İlk müderris hangi Osmanlı padişahı döneminde görev yapmıştır?",
+    Explanation = "İlk müderris Davud-i Kayseri olup Orhan Bey döneminde görev yapmıştır.",
+    OrderIndex = 98,
+    Choices =
+    {
+        new Choice { Text = "Orhan Bey", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Osman Bey", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "I. Murat", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 99 ---
+new Question
+{
+    Note = notOrhanBeyDonemiIlkler,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "İlk cami hangi Osmanlı padişahı döneminde yapılmıştır?",
+    Explanation = "İlk cami Hacı Özbek Camisi olup İznik'te Orhan Bey döneminde yapılmıştır.",
+    OrderIndex = 99,
+    Choices =
+    {
+        new Choice { Text = "Orhan Bey", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Osman Bey", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "I. Murat", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 100 ---
+new Question
+{
+    Note = notOrhanBeyDonemiIlkler,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "İlk kul sistemi hangi Osmanlı padişahı döneminde uygulanmıştır?",
+    Explanation = "İlk kul sistemi Orhan Bey döneminde uygulanmıştır.",
+    OrderIndex = 100,
+    Choices =
+    {
+        new Choice { Text = "Orhan Bey", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Osman Bey", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "I. Murat", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 101 ---
+new Question
+{
+    Note = notOrhanBeyDonemiIlkler,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "İlk gümüş para hangi Osmanlı padişahı döneminde bastırılmıştır?",
+    Explanation = "İlk gümüş para olan akçe Orhan Bey döneminde bastırılmıştır.",
+    OrderIndex = 101,
+    Choices =
+    {
+        new Choice { Text = "Orhan Bey", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Osman Bey", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "I. Murat", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 102 ---
+new Question
+{
+    Note = notOrhanBeyDonemiIlkler,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "İlk ordu olan Yaya ve Müsellem ordusu hangi Osmanlı padişahı döneminde kurulmuştur?",
+    Explanation = "İlk ordu Yaya ve Müsellem ordusu olup Orhan Bey döneminde kurulmuştur.",
+    OrderIndex = 102,
+    Choices =
+    {
+        new Choice { Text = "Orhan Bey", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Osman Bey", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "I. Murat", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 103 ---
+new Question
+{
+    Note = notOrhanBeyDonemiIlkler,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "İlk Divan-ı Hümayun hangi Osmanlı padişahı döneminde kurulmuştur?",
+    Explanation = "İlk Divan-ı Hümayun Orhan Bey döneminde kurulmuştur.",
+    OrderIndex = 103,
+    Choices =
+    {
+        new Choice { Text = "Orhan Bey", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Osman Bey", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "I. Murat", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 104 ---
+new Question
+{
+    Note = notOrhanBeyDonemiIlkler,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "İlk vezir hangi Osmanlı padişahı döneminde görev yapmıştır?",
+    Explanation = "İlk vezir Alaeddin Paşa olup Orhan Bey döneminde görev yapmıştır.",
+    OrderIndex = 104,
+    Choices =
+    {
+        new Choice { Text = "Orhan Bey", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Osman Bey", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "I. Murat", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 105 ---
+new Question
+{
+    Note = notOrhanBeyDonemiIlkler,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "İlk imarethane hangi Osmanlı padişahı döneminde kurulmuştur?",
+    Explanation = "İlk imarethane Orhan Bey döneminde kurulmuştur.",
+    OrderIndex = 105,
+    Choices =
+    {
+        new Choice { Text = "Orhan Bey", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Osman Bey", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "I. Murat", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 106 ---
+new Question
+{
+    Note = notOrhanBeyDonemiIlkler,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "İlk vakıf teşkilatı hangi Osmanlı padişahı döneminde kurulmuştur?",
+    Explanation = "İlk vakıf teşkilatı Orhan Bey döneminde kurulmuştur.",
+    OrderIndex = 106,
+    Choices =
+    {
+        new Choice { Text = "Orhan Bey", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Osman Bey", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "I. Murat", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 107 ---
+new Question
+{
+    Note = notOrhanBeyDonemiIlkler,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "İlk defa 'sultan' unvanı hangi Osmanlı padişahı döneminde kullanılmıştır?",
+    Explanation = "Osmanlı Devleti'nde ilk defa 'sultan' unvanı Orhan Bey döneminde kullanılmıştır.",
+    OrderIndex = 107,
+    Choices =
+    {
+        new Choice { Text = "Orhan Bey", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Osman Bey", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "I. Murat", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 108 ---
+new Question
+{
+    Note = notOrhanBeyDonemiIlkler,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Bursa'daki Kara Tatarların Tekirdağ'ın Hayrabolu ilçesine yerleştirilmesi şeklindeki ilk iskan uygulaması hangi Osmanlı padişahı döneminde yapılmıştır?",
+    Explanation = "İlk iskan uygulaması, Bursa'daki Kara Tatarların Tekirdağ'ın Hayrabolu ilçesine yerleştirilmesiyle Orhan Bey döneminde yapılmıştır.",
+    OrderIndex = 108,
+    Choices =
+    {
+        new Choice { Text = "Orhan Bey", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Osman Bey", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "I. Murat", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 109 ---
+new Question
+{
+    Note = notBiriciMuratKurumsalGelismeler,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "İlk defa maliye teşkilatı hangi Osmanlı padişahı döneminde kurulmuştur?",
+    Explanation = "İlk defa maliye teşkilatı I. Murat döneminde kurulmuş; kazaskerlik, defterdarlık ve sadrazamlık makamları oluşturulmuştur.",
+    OrderIndex = 109,
+    Choices =
+    {
+        new Choice { Text = "I. Murat", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Orhan Bey", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Osman Bey", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 110 ---
+new Question
+{
+    Note = notBiriciMuratKurumsalGelismeler,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Edirne'de Kapıkulu Ocağı hangi Osmanlı padişahı döneminde kurulmuştur?",
+    Explanation = "Edirne'de Kapıkulu Ocağı I. Murat döneminde kurulmuş; buna bağlı olarak Yeniçeri Ocağı ve Topçu Ocağı oluşturulmuştur.",
+    OrderIndex = 110,
+    Choices =
+    {
+        new Choice { Text = "I. Murat", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Orhan Bey", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Osman Bey", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 111 ---
+new Question
+{
+    Note = notBiriciMuratKurumsalGelismeler,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Çandarlı Kara Halil Hayreddin Paşa ve Molla Rüstem'in teşvikiyle Pençik Sistemi hangi Osmanlı padişahı döneminde kurulmuştur?",
+    Explanation = "Savaş esirlerinin beşte birinin devlete ayrılmasını esas alan Pençik Sistemi I. Murat döneminde kurulmuştur.",
+    OrderIndex = 111,
+    Choices =
+    {
+        new Choice { Text = "I. Murat", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Orhan Bey", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Osman Bey", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 112 ---
+new Question
+{
+    Note = notBiriciMuratKurumsalGelismeler,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Sistemli şekilde tımar ve iskan uygulamaları hangi Osmanlı padişahı döneminde yapılmıştır?",
+    Explanation = "Sistemli şekilde tımar ve iskan uygulamaları I. Murat döneminde yapılmıştır.",
+    OrderIndex = 112,
+    Choices =
+    {
+        new Choice { Text = "I. Murat", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Orhan Bey", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Osman Bey", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 113 ---
+new Question
+{
+    Note = notBiriciMuratKurumsalGelismeler,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Veraset sisteminde 'ülke hükümdar ve oğullarına aittir' anlayışının getirilmesi hangi Osmanlı padişahı döneminde gerçekleşmiştir?",
+    Explanation = "Veraset sisteminde yapılan değişiklikle 'ülke hükümdar ve ailesine aittir' anlayışı yerine 'ülke hükümdar ve oğullarına aittir' anlayışı getirilmiştir.",
+    OrderIndex = 113,
+    Choices =
+    {
+        new Choice { Text = "I. Murat", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Orhan Bey", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Osman Bey", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 114 ---
+new Question
+{
+    Note = notBiriciMuratKurumsalGelismeler,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Manastır merkezli Rumeli Beylerbeyliği hangi Osmanlı padişahı döneminde kurulmuştur?",
+    Explanation = "Manastır merkezli Rumeli Beylerbeyliği I. Murat döneminde kurulmuş ve ilk Rumeli Beylerbeyi Lala Şahin Paşa olmuştur.",
+    OrderIndex = 114,
+    Choices =
+    {
+        new Choice { Text = "I. Murat", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Orhan Bey", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Osman Bey", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 5 }
     }
 },
 
@@ -27572,6 +27933,13 @@ new Question
 
            **Burası karıştırılabilir:** İstanbul'un fethinin dini nedeni yalnızca hadis-i şeriftir; boğazlara hakim olmak ekonomik, Anadolu-Rumeli toprak bütünlüğü ise siyasi/stratejik bir nedendir.
            """
+        };
+        var notOsmanliYukselisIdrisiBitlisi = new Note
+        {
+            Title = "Osmanlı Devleti Yükseliş Dönemi — İdris-i Bitlisi",
+            Body = """
+    • **İdris-i Bitlisi**, **Heşt Behişt (8 Cennet)** adlı eseriyle Güneydoğu Anadolu ve Musul bölgesindeki yaklaşık **25 bölgenin** ikna yoluyla Osmanlı idaresine bağlanmasında etkili olmuştur.
+    """
         };
 
         var notFetihHazirliklariVeOnlemler = new Note
@@ -28040,6 +28408,66 @@ new Question
            **Burası karıştırılabilir:** Süveyş Kanalı projesi ile **Don-Volga** projesi farklı coğrafyalarda (biri Mısır'da, diğeri Kırım-Kafkasya'da) planlanmış iki ayrı Sokullu projesidir; ikisi de gerçekleştirilememiştir.
            """
         };
+        var notFatihSultanMehmet = new Note
+        {
+            Title = "Osmanlı Devleti Yükselme Dönemi — Fatih Sultan Mehmet",
+            Body = """
+    • **Osmanlı Devleti'nin yükselme döneminin ilk padişahıdır.**
+    • **Yedi dil** biliyordu.
+    • **Avni** mahlasıyla şiirler yazmıştır.
+    • Bir ayağı Şark'ta, bir ayağı Garb'da olan büyük hükümdar olarak anılmıştır.
+    • İstanbul'u **29 Mayıs 1453'te** fethetmiştir.
+    • İstanbul'un fethinden sonra **Kayzer-i Rum** unvanını almıştır.
+    • **Sultanül Bahreyn** ve **Hakanül Berreyn** unvanlarını almıştır.
+    • **Hakanül Berreyn**, iki karanın ve iki denizin hükümdarı anlamındadır.
+    • **Ebü'l-Feth**, yani fetihlerin babası unvanını almıştır.
+    • İstanbul'un fethi İslam dünyasında **Fethi Mübin**, yani parlak zafer olarak nitelendirilmiştir.
+    • İstanbul'un fethiyle **kuruluş dönemi sona ermiş, yükselme dönemi başlamıştır.**
+    • İstanbul, Osmanlı Devleti'nin **başkenti** olmuştur.
+    • Anadolu ve Rumeli arasındaki **toprak bütünlüğü sağlanmıştır.**
+    • **Boğazlar ve İpek Yolu** Osmanlı Devleti'nin eline geçmiştir.
+    • Boğazların ve İpek Yolu'nun Osmanlı denetimine geçmesi Avrupalıların yeni ticaret yolları aramasına ve **Coğrafi Keşiflere** neden olmuştur.
+    • İstanbul'un fethi **Orta Çağ'ın kapanıp Yeni Çağ'ın başlaması** olarak nitelendirilmiştir.
+    • İstanbul'un fethi için Anadolu ve Rumeli arasındaki toprak bütünlüğünü sağlamak amaçlanmıştır.
+    • İstanbul'un fethi için Boğazlara ve İpek Yolu'na hâkim olmak amaçlanmıştır.
+    • Bizans'ın Anadolu beyliklerini Osmanlı'ya karşı kışkırtması fetih nedenlerindendir.
+    • Bizans'ın Haçlı seferlerine neden olması fetih nedenlerindendir.
+    • Bizans'ın şehzadeleri kışkırtması fetih nedenlerindendir.
+    • İstanbul'un bilim ve kültür merkezi olması fetih nedenlerindendir.
+    • Hz. Muhammed'in hadisi İstanbul'un fethinin **dini nedenidir.**
+    • Fetih hazırlıkları sırasında **Şahi** adı verilen top dökülmüştür.
+    • **400 parçalık donanma** hazırlanmıştır.
+    • **Mancınıklar ve hareketli kuleler** hazırlanmıştır.
+    • Anadolu beylikleri ve Avrupa devletleriyle saldırmazlık anlaşmaları imzalanmıştır.
+    • **Rumeli Hisarı** yapılmış ve **Boğaz Kesen** olarak adlandırılmıştır.
+    • **Trabzon Rum İmparatorluğu'na** 1461 yılında son verilmiştir.
+    • Karamanoğullarından **Konya ve Karaman** alınmıştır.
+    • Cenevizlilerden **Amasra** alınmıştır.
+    • İsfendiyaroğullarından **Sinop ve Samsun** alınmıştır.
+    • **Sırbistan** alınmış, **Belgrad alınamamıştır.**
+    • **Bosna-Hersek, Arnavutluk ve Mora Yarımadası** alınmıştır.
+    • **Eflak ve Boğdan** alınmıştır.
+    • Eflak ve Boğdan'ın özel adı **Memleketeyn**'dir.
+    • **Bozcaada ve Gökçeada** alınmıştır.
+    • **Rodos** kuşatılmış ancak alınamamıştır.
+    • **Otranto** fethedilmiştir.
+    • **Kırım** alınmış ve **Karadeniz Türk gölü** hâline gelmiştir.
+    • 1473 yılında Erzincan'da Akkoyunlularla **Otluk Beli Savaşı** yapılmış ve kazanılmıştır.
+    • Otluk Beli Savaşı sonucunda **Doğu Anadolu Osmanlı egemenliğine** geçmiştir.
+    • Fatih döneminde Venediklilere **ticari imtiyaz** verilmiştir.
+    • Venedikliler Osmanlı Devleti'nde **elçi bulundurma hakkını elde eden ilk yabancı devlet**tir.
+    • Venedik elçisine **Balyos veya Baylos** denilmiştir.
+    • **Hicaz Su Yolları problemi** Fatih döneminde Osmanlı-Memlük ilişkilerini germiştir ancak savaşa yol açmamıştır.
+    • **Sahn-ı Seman medreselerini** Fatih kurmuştur.
+    • Sahn-ı Seman medreselerinde **fıkıh, tefsir, kelam, matematik ve trigonometri** gibi dersler okutulmuştur.
+    • **Sahn-ı Seman**, sekiz bölüm anlamına gelir.
+    • İlk defa **altın para** bastırmıştır.
+    • Altın paranın diğer adı **Sultani**'dir.
+    • **Cülus bahşişi vermek**, her padişah tahta çıktığında yasal hâle getirilmiştir.
+    • **Kanunname-i Âli Osman** ile örfi hukuk kuralları yazılı hâle getirilmiştir.
+    • **Nizam-ı âlem için kardeş katli**, Kanunname-i Âli Osman ile vacip hâle getirilmiştir.
+    """
+        };
 
         return new Topic
         {
@@ -28048,7 +28476,7 @@ new Question
             Notes =
             {
                 // Not değişkenleri buraya yazılır: notXxx, notYyy
-                notFatihKisiligiVeUnvanlar, notIstanbulunFethiNedenleri, notFetihHazirliklariVeOnlemler, notBizansinAldigiOnlemler, notFetihSonuclariGenel, notFetihSonuclariAvrupaEtkisi, notCandarliIdami, notFatihinAnadoluFetihleri, notFatihinBalkanFetihleri, notFatihinKirimVeAkkoyunlu, notAtsbVeAsbFarki, notFatihDonemiKurumsalGelismeler, notFatihDonemiDigerGelismeler, notFatihinOlumu, notIkinciBayezidCemSultan, notIkinciBayezidDigerOlaylar, notYavuzDoguSeferleriVeAtsb, notYavuzMemluklerVeHilafet, notYavuzUnvanVeVasiyet, notKanuniKisiligiVeMisirIsyanlari, notKanuniAvrupaFetihleri, notKanuniIstanbulAntlasmasi, notBarbarosVeAkdeniz, notKanuniHintDenizSeferleri, notKanuniDigerFetihlerVeZigetvar, notKapitulasyonAmaclari, notSokulluSelimDonemiInebahti, notSokulluMuratDonemiFerhatPasa, notSokulluDonVolgaProjesi, notSokulluSuveysVeKanalProjeleri
+                notFatihKisiligiVeUnvanlar, notIstanbulunFethiNedenleri, notFatihSultanMehmet,notFetihHazirliklariVeOnlemler, notBizansinAldigiOnlemler, notFetihSonuclariGenel, notFetihSonuclariAvrupaEtkisi, notCandarliIdami, notFatihinAnadoluFetihleri, notFatihinBalkanFetihleri, notFatihinKirimVeAkkoyunlu, notAtsbVeAsbFarki, notFatihDonemiKurumsalGelismeler, notFatihDonemiDigerGelismeler, notFatihinOlumu, notIkinciBayezidCemSultan, notIkinciBayezidDigerOlaylar, notYavuzDoguSeferleriVeAtsb, notYavuzMemluklerVeHilafet, notYavuzUnvanVeVasiyet, notKanuniKisiligiVeMisirIsyanlari, notKanuniAvrupaFetihleri, notKanuniIstanbulAntlasmasi, notBarbarosVeAkdeniz, notKanuniHintDenizSeferleri, notKanuniDigerFetihlerVeZigetvar, notKapitulasyonAmaclari, notSokulluSelimDonemiInebahti, notSokulluMuratDonemiFerhatPasa, notSokulluDonVolgaProjesi, notSokulluSuveysVeKanalProjeleri, notOsmanliYukselisIdrisiBitlisi
 
             },
             Questions =
@@ -28527,6 +28955,7 @@ new Question
         new Choice { Text = "Kayzer-i Rum", IsCorrect = false, OrderIndex = 5 },
     }
 },
+
 
 // --- SORU 25 ---
 new Question
@@ -29721,6 +30150,509 @@ new Question
         new Choice { Text = "Süveyş Kanalı, Osmanlı Devleti tarafından 1869'da açılmıştır.", IsCorrect = false, OrderIndex = 5 },
     }
 },
+// --- SORU 86 ---
+new Question
+{
+    Note = notOsmanliYukselisIdrisiBitlisi,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "\"Heşt Behişt\" adlı eseriyle Güneydoğu Anadolu ve Musul bölgesindeki yaklaşık 25 bölgenin ikna yoluyla Osmanlı idaresine bağlanmasında etkili olan kişi kimdir?",
+    Explanation = "İdris-i Bitlisi, Heşt Behişt adlı eseriyle Güneydoğu Anadolu ve Musul bölgesindeki yaklaşık 25 bölgenin ikna yoluyla Osmanlı idaresine bağlanmasında etkili olmuştur.",
+    OrderIndex = 86,
+    Choices =
+    {
+        new Choice { Text = "İdris-i Bitlisi", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Kemal Reis", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Barbaros Hayreddin Paşa", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Gedik Ahmet Paşa", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Piri Reis", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 87 ---
+new Question
+{
+    Note = notFatihSultanMehmet,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = true,
+    Text = "Fatih Sultan Mehmet ile ilgili aşağıdakilerden hangisi doğrudur?",
+    Explanation = "Fatih Sultan Mehmet ile ilgili verilen bilgiler arasında yanlış olan seçenek, kaynakta belirtilen bilgilerle uyuşmamaktadır.",
+    OrderIndex = 87,
+    Choices =
+    {
+        new Choice { Text = "Osmanlı Devleti'nin yükselme döneminin ilk padişahıdır.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Yedi dil biliyordu.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Avni mahlasıyla şiirler yazmıştır.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Bir ayağı Şark'ta, bir ayağı Garb'da olan büyük hükümdar olarak anılmıştır.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "İstanbul'u 29 Mayıs 1453'te fethetmiştir.", IsCorrect = true, OrderIndex = 5 },
+        new Choice { Text = "İstanbul'un fethinden sonra Kayzer-i Rum unvanını almıştır.", IsCorrect = true, OrderIndex = 6 },
+        new Choice { Text = "Sultanül Bahreyn ve Hakanül Berreyn unvanlarını almıştır.", IsCorrect = true, OrderIndex = 7 },
+        new Choice { Text = "Hakanül Berreyn, iki karanın ve iki denizin hükümdarı anlamındadır.", IsCorrect = true, OrderIndex = 8 },
+        new Choice { Text = "Ebü'l-Feth, yani fetihlerin babası unvanını almıştır.", IsCorrect = true, OrderIndex = 9 },
+        new Choice { Text = "İstanbul'un fethi İslam dünyasında Fethi Mübin, yani parlak zafer olarak nitelendirilmiştir.", IsCorrect = true, OrderIndex = 10 },
+        new Choice { Text = "Anadolu ve Rumeli arasındaki toprak bütünlüğü sağlanmıştır.", IsCorrect = true, OrderIndex = 13 },
+        new Choice { Text = "Boğazlar ve İpek Yolu Osmanlı Devleti'nin eline geçmiştir.", IsCorrect = true, OrderIndex = 14 },
+        new Choice { Text = "Boğazların ve İpek Yolu'nun Osmanlı denetimine geçmesi Avrupalıların yeni ticaret yolları aramasına ve Coğrafi Keşiflere neden olmuştur.", IsCorrect = true, OrderIndex = 15 },
+        new Choice { Text = "İstanbul'un fethi Orta Çağ'ın kapanıp Yeni Çağ'ın başlaması olarak nitelendirilmiştir.", IsCorrect = true, OrderIndex = 16 },
+        new Choice { Text = "Bizans'ın Anadolu beyliklerini Osmanlı'ya karşı kışkırtması fetih nedenlerindendir.", IsCorrect = true, OrderIndex = 19 },
+        new Choice { Text = "Bizans'ın Haçlı seferlerine neden olması fetih nedenlerindendir.", IsCorrect = true, OrderIndex = 20 },
+        new Choice { Text = "Bizans'ın şehzadeleri kışkırtması fetih nedenlerindendir.", IsCorrect = true, OrderIndex = 21 },
+        new Choice { Text = "İstanbul'un bilim ve kültür merkezi olması fetih nedenlerindendir.", IsCorrect = true, OrderIndex = 22 },
+        new Choice { Text = "Hz. Muhammed'in hadisi İstanbul'un fethinin dini nedenidir.", IsCorrect = true, OrderIndex = 23 },
+        new Choice { Text = "Fetih hazırlıkları sırasında Şahi adı verilen top dökülmüştür.", IsCorrect = true, OrderIndex = 24 },
+        new Choice { Text = "400 parçalık donanma hazırlanmıştır.", IsCorrect = true, OrderIndex = 25 },
+        new Choice { Text = "Mancınıklar ve hareketli kuleler hazırlanmıştır.", IsCorrect = true, OrderIndex = 26 },
+        new Choice { Text = "Anadolu beylikleri ve Avrupa devletleriyle saldırmazlık anlaşmaları imzalanmıştır.", IsCorrect = true, OrderIndex = 27 },
+        new Choice { Text = "Rumeli Hisarı yapılmış ve Boğaz Kesen olarak adlandırılmıştır.", IsCorrect = true, OrderIndex = 28 },
+        new Choice { Text = "Trabzon Rum İmparatorluğu'na 1461 yılında son verilmiştir.", IsCorrect = true, OrderIndex = 29 },
+        new Choice { Text = "Karamanoğullarından Konya ve Karaman alınmıştır.", IsCorrect = true, OrderIndex = 30 },
+        new Choice { Text = "Cenevizlilerden Amasra alınmıştır.", IsCorrect = true, OrderIndex = 31 },
+        new Choice { Text = "İsfendiyaroğullarından Sinop ve Samsun alınmıştır.", IsCorrect = true, OrderIndex = 32 },
+        new Choice { Text = "Sırbistan alınmış, Belgrad alınamamıştır.", IsCorrect = true, OrderIndex = 33 },
+        new Choice { Text = "Bosna-Hersek, Arnavutluk ve Mora Yarımadası alınmıştır.", IsCorrect = true, OrderIndex = 34 },
+        new Choice { Text = "Eflak ve Boğdan alınmıştır.", IsCorrect = true, OrderIndex = 35 },
+        new Choice { Text = "Eflak ve Boğdan'ın özel adı Memleketeyn'dir.", IsCorrect = true, OrderIndex = 36 },
+        new Choice { Text = "Bozcaada ve Gökçeada alınmıştır.", IsCorrect = true, OrderIndex = 37 },
+        new Choice { Text = "Rodos kuşatılmış ancak alınamamıştır.", IsCorrect = true, OrderIndex = 38 },
+        new Choice { Text = "Otranto fethedilmiştir.", IsCorrect = true, OrderIndex = 39 },
+        new Choice { Text = "Kırım alınmış ve Karadeniz Türk gölü hâline gelmiştir.", IsCorrect = true, OrderIndex = 40 },
+        new Choice { Text = "1473 yılında Erzincan'da Akkoyunlularla Otluk Beli Savaşı yapılmış ve kazanılmıştır.", IsCorrect = true, OrderIndex = 41 },
+        new Choice { Text = "Otluk Beli Savaşı sonucunda Doğu Anadolu Osmanlı egemenliğine geçmiştir.", IsCorrect = true, OrderIndex = 42 },
+        new Choice { Text = "Fatih döneminde Venediklilere ticari imtiyaz verilmiştir.", IsCorrect = true, OrderIndex = 43 },
+        new Choice { Text = "Venedikliler Osmanlı Devleti'nde elçi bulundurma hakkını elde eden ilk yabancı devlettir.", IsCorrect = true, OrderIndex = 44 },
+        new Choice { Text = "Venedik elçisine Balyos veya Baylos denilmiştir.", IsCorrect = true, OrderIndex = 45 },
+        new Choice { Text = "Hicaz Su Yolları problemi Fatih döneminde Osmanlı-Memlük ilişkilerini germiştir ancak savaşa yol açmamıştır.", IsCorrect = true, OrderIndex = 46 },
+        new Choice { Text = "Sahn-ı Seman medreselerini Fatih kurmuştur.", IsCorrect = true, OrderIndex = 47 },
+        new Choice { Text = "Sahn-ı Seman medreselerinde fıkıh, tefsir, kelam, matematik ve trigonometri gibi dersler okutulmuştur.", IsCorrect = true, OrderIndex = 48 },
+        new Choice { Text = "Sahn-ı Seman, sekiz bölüm anlamına gelir.", IsCorrect = true, OrderIndex = 49 },
+        new Choice { Text = "İlk defa altın para bastırmıştır.", IsCorrect = true, OrderIndex = 50 },
+        new Choice { Text = "Altın paranın diğer adı Sultani'dir.", IsCorrect = true, OrderIndex = 51 },
+        new Choice { Text = "Cülus bahşişi vermek her padişah tahta çıktığında yasal hâle getirilmiştir.", IsCorrect = true, OrderIndex = 52 },
+        new Choice { Text = "Kanunname-i Âli Osman ile örfi hukuk kuralları yazılı hâle getirilmiştir.", IsCorrect = true, OrderIndex = 53 },
+        new Choice { Text = "Nizam-ı âlem için kardeş katli Kanunname-i Âli Osman ile vacip hâle getirilmiştir.", IsCorrect = true, OrderIndex = 54 },
+
+        // Yanlış çeldiriciler
+        new Choice { Text = "İstanbul'un fethinden sonra Kayzer-i Rum unvanını Yıldırım Bayezid almıştır.", IsCorrect = false, OrderIndex = 55 },
+        new Choice { Text = "Fatih döneminde Rodos fethedilmiş ve Osmanlı topraklarına katılmıştır.", IsCorrect = false, OrderIndex = 56 },
+        new Choice { Text = "Otluk Beli Savaşı Akkoyunlularla yapılmış ancak Osmanlı Devleti savaşı kaybetmiştir.", IsCorrect = false, OrderIndex = 57 },
+        new Choice { Text = "Eflak ve Boğdan'ın özel adı Rumeli Beylerbeyliği'dir.", IsCorrect = false, OrderIndex = 58 },
+        new Choice { Text = "Fatih döneminde Venediklilere ticari imtiyaz verilmemiştir.", IsCorrect = false, OrderIndex = 59 }
+    }
+},new Question
+{
+    Note = notFatihSultanMehmet,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "İstanbul'un fethinden sonra Fatih Sultan Mehmet'in aldığı unvan aşağıdakilerden hangisidir?",
+    Explanation = "İstanbul'un fethinden sonra Fatih Sultan Mehmet Kayzer-i Rum unvanını almıştır.",
+    OrderIndex = 88,
+    Choices =
+    {
+        new Choice { Text = "Kayzer-i Rum", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Sultan-ı İklim-i Rum", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Ebü'l-Feth", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Hakanül Berreyn", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Çelebi", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 89 ---
+new Question
+{
+    Note = notFatihSultanMehmet,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Fatih Sultan Mehmet'in aldığı 'iki karanın ve iki denizin hükümdarı' anlamındaki unvan aşağıdakilerden hangisidir?",
+    Explanation = "Hakanül Berreyn, iki karanın ve iki denizin hükümdarı anlamındadır.",
+    OrderIndex = 89,
+    Choices =
+    {
+        new Choice { Text = "Hakanül Berreyn", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Kayzer-i Rum", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Ebü'l-Feth", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Sultanül Bahreyn", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Sultan-ı İklim-i Rum", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 90 ---
+new Question
+{
+    Note = notFatihSultanMehmet,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Fatih Sultan Mehmet'in 'fetihlerin babası' anlamındaki unvanı aşağıdakilerden hangisidir?",
+    Explanation = "Ebü'l-Feth, fetihlerin babası anlamına gelir.",
+    OrderIndex = 90,
+    Choices =
+    {
+        new Choice { Text = "Ebü'l-Feth", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Kayzer-i Rum", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Hakanül Berreyn", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Sultanül Bahreyn", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Çelebi", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+// --- SORU 92 ---
+new Question
+{
+    Note = notFatihSultanMehmet,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "\"Kayzer-i Rum\" unvanı verilen Osmanlı padişahı kimdir?",
+    Explanation = "Fatih Sultan Mehmet, İstanbul'un fethinden sonra Kayzer-i Rum unvanını almıştır.",
+    OrderIndex = 92,
+    Choices =
+    {
+        new Choice { Text = "Fatih Sultan Mehmet", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "I. Murat", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Yavuz Sultan Selim", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 93 ---
+new Question
+{
+    Note = notFatihSultanMehmet,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "\"Sultanül Bahreyn\" unvanı verilen Osmanlı padişahı kimdir?",
+    Explanation = "Fatih Sultan Mehmet, Sultanül Bahreyn ve Hakanül Berreyn unvanlarını almıştır.",
+    OrderIndex = 93,
+    Choices =
+    {
+        new Choice { Text = "Fatih Sultan Mehmet", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "I. Murat", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Kanuni Sultan Süleyman", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 94 ---
+new Question
+{
+    Note = notFatihSultanMehmet,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "\"Hakanül Berreyn\" unvanı verilen Osmanlı padişahı kimdir?",
+    Explanation = "Fatih Sultan Mehmet, Hakanül Berreyn unvanını almıştır.",
+    OrderIndex = 94,
+    Choices =
+    {
+        new Choice { Text = "Fatih Sultan Mehmet", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Yavuz Sultan Selim", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Orhan Bey", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 95 ---
+new Question
+{
+    Note = notFatihSultanMehmet,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "\"Ebü'l-Feth\" unvanı verilen Osmanlı padişahı kimdir?",
+    Explanation = "Fatih Sultan Mehmet, fetihlerin babası anlamındaki Ebü'l-Feth unvanını almıştır.",
+    OrderIndex = 95,
+    Choices =
+    {
+        new Choice { Text = "Fatih Sultan Mehmet", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "I. Murat", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Yavuz Sultan Selim", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+// --- SORU 96 ---
+new Question
+{
+    Note = notFatihSultanMehmet,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Osmanlı Devleti'ni kuruluş döneminden yükselme dönemine geçiren olay aşağıdakilerden hangisidir?",
+    Explanation = "İstanbul'un fethiyle kuruluş dönemi sona ermiş, yükselme dönemi başlamıştır.",
+    OrderIndex = 96,
+    Choices =
+    {
+        new Choice { Text = "İstanbul'un Fethi", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Bursa'nın Fethi", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Ankara Savaşı", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "I. Kosova Savaşı", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Niğbolu Savaşı", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 97 ---
+new Question
+{
+    Note = notFatihSultanMehmet,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "1473 yılında Erzincan'da Akkoyunlularla yapılan ve Osmanlı Devleti'nin kazandığı savaş aşağıdakilerden hangisidir?",
+    Explanation = "1473 yılında Erzincan'da Akkoyunlularla Otluk Beli Savaşı yapılmış ve Osmanlı Devleti savaşı kazanmıştır.",
+    OrderIndex = 97,
+    Choices =
+    {
+        new Choice { Text = "Otluk Beli Savaşı", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Çaldıran Savaşı", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Ankara Savaşı", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Niğbolu Savaşı", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "I. Kosova Savaşı", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 98 ---
+new Question
+{
+    Note = notFatihSultanMehmet,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Osmanlı Devleti'nin yükselme döneminin ilk padişahı kimdir?",
+    Explanation = "Fatih Sultan Mehmet, Osmanlı Devleti'nin yükselme döneminin ilk padişahıdır.",
+    OrderIndex = 98,
+    Choices =
+    {
+        new Choice { Text = "Fatih Sultan Mehmet", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yavuz Sultan Selim", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Kanuni Sultan Süleyman", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 99 ---
+new Question
+{
+    Note = notFatihSultanMehmet,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Osmanlı Devleti'nde ilk defa altın para bastıran padişah kimdir?",
+    Explanation = "Fatih Sultan Mehmet döneminde ilk defa altın para bastırılmıştır.",
+    OrderIndex = 99,
+    Choices =
+    {
+        new Choice { Text = "Fatih Sultan Mehmet", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Orhan Bey", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "I. Murat", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 100 ---
+new Question
+{
+    Note = notFatihSultanMehmet,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Osmanlı Devleti'nde elçi bulundurma hakkını elde eden ilk yabancı devlet hangisidir?",
+    Explanation = "Venedikliler, Osmanlı Devleti'nde elçi bulundurma hakkını elde eden ilk yabancı devlettir.",
+    OrderIndex = 100,
+    Choices =
+    {
+        new Choice { Text = "Venedikliler", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Cenevizliler", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Macarlar", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Fransızlar", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "İngilizler", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 101 ---
+new Question
+{
+    Note = notFatihSultanMehmet,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Osmanlı Devleti'nde her padişah tahta çıktığında cülus bahşişi vermeyi yasal hâle getiren padişah kimdir?",
+    Explanation = "Fatih Sultan Mehmet döneminde cülus bahşişi vermek her padişah tahta çıktığında yasal hâle getirilmiştir.",
+    OrderIndex = 101,
+    Choices =
+    {
+        new Choice { Text = "Fatih Sultan Mehmet", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "I. Murat", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Yavuz Sultan Selim", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+// --- SORU 102 ---
+new Question
+{
+    Note = notFatihSultanMehmet,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Karamanoğullarından Konya ve Karaman'ı alan Osmanlı padişahı kimdir?",
+    Explanation = "Fatih Sultan Mehmet döneminde Karamanoğullarından Konya ve Karaman alınmıştır.",
+    OrderIndex = 102,
+    Choices =
+    {
+        new Choice { Text = "Fatih Sultan Mehmet", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "I. Murat", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Yavuz Sultan Selim", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 103 ---
+new Question
+{
+    Note = notFatihSultanMehmet,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Cenevizlilerden Amasra'yı alan Osmanlı padişahı kimdir?",
+    Explanation = "Fatih Sultan Mehmet döneminde Cenevizlilerden Amasra alınmıştır.",
+    OrderIndex = 103,
+    Choices =
+    {
+        new Choice { Text = "Fatih Sultan Mehmet", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Orhan Bey", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "I. Murat", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 104 ---
+new Question
+{
+    Note = notFatihSultanMehmet,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "İsfendiyaroğullarından Sinop ve Samsun'u alan Osmanlı padişahı kimdir?",
+    Explanation = "Fatih Sultan Mehmet döneminde İsfendiyaroğullarından Sinop ve Samsun alınmıştır.",
+    OrderIndex = 104,
+    Choices =
+    {
+        new Choice { Text = "Fatih Sultan Mehmet", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "I. Murat", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Orhan Bey", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 105 ---
+new Question
+{
+    Note = notFatihSultanMehmet,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Trabzon Rum İmparatorluğu'na son veren Osmanlı padişahı kimdir?",
+    Explanation = "Fatih Sultan Mehmet döneminde 1461 yılında Trabzon Rum İmparatorluğu'na son verilmiştir.",
+    OrderIndex = 105,
+    Choices =
+    {
+        new Choice { Text = "Fatih Sultan Mehmet", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yavuz Sultan Selim", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Kanuni Sultan Süleyman", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 106 ---
+new Question
+{
+    Note = notFatihSultanMehmet,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Aşağıdakilerden hangisi Fatih Sultan Mehmet'in aldığı yerlerden biri değildir?",
+    Explanation = "Belgrad, Fatih Sultan Mehmet döneminde alınamamıştır.",
+    OrderIndex = 106,
+    Choices =
+    {
+        new Choice { Text = "Belgrad", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Amasra", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Sinop", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Samsun", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Otranto", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 107 ---
+new Question
+{
+    Note = notFatihSultanMehmet,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Aşağıdakilerden hangisi Fatih Sultan Mehmet döneminde alınan yerlerden biridir?",
+    Explanation = "Fatih Sultan Mehmet döneminde Bosna-Hersek, Arnavutluk ve Mora Yarımadası alınmıştır.",
+    OrderIndex = 107,
+    Choices =
+    {
+        new Choice { Text = "Mora Yarımadası", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Belgrad", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Rodos", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Kıbrıs", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Girit", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 108 ---
+new Question
+{
+    Note = notFatihSultanMehmet,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Eflak ve Boğdan'ın Fatih Sultan Mehmet dönemindeki ortak adı aşağıdakilerden hangisidir?",
+    Explanation = "Eflak ve Boğdan'ın özel adı Memleketeyn'dir.",
+    OrderIndex = 108,
+    Choices =
+    {
+        new Choice { Text = "Memleketeyn", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Rumeli", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Anadolu", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Beylerbeylik", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Devleteyn", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 109 ---
+new Question
+{
+    Note = notFatihSultanMehmet,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Fatih Sultan Mehmet döneminde kuşatıldığı hâlde alınamayan yer aşağıdakilerden hangisidir?",
+    Explanation = "Rodos, Fatih Sultan Mehmet döneminde kuşatılmış ancak alınamamıştır.",
+    OrderIndex = 109,
+    Choices =
+    {
+        new Choice { Text = "Rodos", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Kırım", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Otranto", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Amasra", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Bozcaada", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 110 ---
+new Question
+{
+    Note = notFatihSultanMehmet,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Kırım'ı alarak Karadeniz'in Türk gölü hâline gelmesini sağlayan Osmanlı padişahı kimdir?",
+    Explanation = "Fatih Sultan Mehmet döneminde Kırım alınmış ve Karadeniz Türk gölü hâline gelmiştir.",
+    OrderIndex = 110,
+    Choices =
+    {
+        new Choice { Text = "Fatih Sultan Mehmet", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Yavuz Sultan Selim", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Kanuni Sultan Süleyman", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+
 
             }
         };

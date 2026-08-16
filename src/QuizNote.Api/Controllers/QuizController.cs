@@ -263,8 +263,8 @@ public class QuizController(QuizNoteDbContext db) : ControllerBase
         q.Id,
         q.Type,
         q.Text,
-        // Sonsuz akışta sıra numarası anlamsız; alan uyumluluk için 0 kalır.
-        0,
+        // Soru no arama kutusunda gösterilir; sıra numarası konu içindeki gerçek değeridir.
+        q.OrderIndex,
         q.NoteId,
         q.Note.Title,
         BuildChoices(q),
