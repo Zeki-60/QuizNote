@@ -9876,6 +9876,20 @@ new Question
     /// </summary>
     private static Topic BuildIlkTurkIslamDevletleri()
     {
+        var notIkinciBayezid = new Note
+        {
+            Title = "Osmanlı Devleti Yükselme Dönemi — II. Bayezid",
+            Body = """
+    • **II. Bayezid dönemine damga vuran olay Cem Sultan olayıdır.**
+    • **Cem Sultan olayı**, Osmanlı'da ilk defa bir iç sorunun uluslararası sorun hâline gelmesine neden olmuştur.
+    • Cem Sultan olayından dolayı batıya sefer hareketi yok denecek kadar az olmuştur.
+    • **1511 yılında Antalya'da Şahkulu İsyanı** çıkmıştır.
+    • Şahkulu İsyanı **Türkmenler** tarafından çıkarılmıştır.
+    • **Kemal Reis**, İspanya'daki zulüm altında bulunan Müslüman ve Yahudileri İstanbul'a getirmiştir.
+    • II. Bayezid döneminde **Karamanoğullarına tamamen son verilmiştir.**
+    • II. Bayezid döneminde **Memlük Devletiyle savaş** yaşanmıştır.
+    """
+        };
         // --- Notlar buraya ---
         var notTurklerinIslamiyetiKabulu = new Note
         {
@@ -28468,6 +28482,71 @@ new Question
     • **Nizam-ı âlem için kardeş katli**, Kanunname-i Âli Osman ile vacip hâle getirilmiştir.
     """
         };
+        var notIkinciBayezid = new Note
+        {
+            Title = "Osmanlı Devleti Yükselme Dönemi — II. Bayezid",
+            Body = """
+    • **II. Bayezid dönemine damga vuran olay Cem Sultan olayıdır.**
+    • **Cem Sultan olayı**, Osmanlı'da ilk defa bir iç sorunun uluslararası sorun hâline gelmesine neden olmuştur.
+    • Cem Sultan olayından dolayı batıya sefer hareketi yok denecek kadar az olmuştur.
+    • **1511 yılında Antalya'da Şahkulu İsyanı** çıkmıştır.
+    • Şahkulu İsyanı **Türkmenler** tarafından çıkarılmıştır.
+    • **Kemal Reis**, İspanya'daki zulüm altında bulunan Müslüman ve Yahudileri İstanbul'a getirmiştir.
+    • II. Bayezid döneminde **Karamanoğullarına tamamen son verilmiştir.**
+    • II. Bayezid döneminde **Memlük Devletiyle savaş** yaşanmıştır.
+    """
+        };
+        var notYavuzSultanSelim = new Note
+        {
+            Title = "Osmanlı Devleti Yükselme Dönemi — Yavuz Sultan Selim",
+            Body = """
+    • **Yavuz Sultan Selim**, 8 yıllık hükümdarlığı döneminde çok sayıda fetih gerçekleştirmiştir.
+    • Yavuz Sultan Selim, **“8 yıla 80 yıllık iş sığdırmış padişah”** olarak anılmıştır.
+    • **Doğu siyasetini** benimsemiştir.
+    • **1514 yılında Çaldıran Savaşı** yapılmıştır.
+    • **1515 yılında Turnadağ Savaşı** yapılmış ve Dulkadiroğulları Beyliği'ne son verilmiştir.
+    • Turnadağ Savaşı'nın kazanılmasıyla **Anadolu Türk siyasi birliği kesin olarak sağlanmıştır.**
+    • **1516 yılında Memlüklerle Mercidabık Savaşı** yapılmış ve kazanılmıştır.
+    • Mercidabık Savaşı sonucunda **Suriye ve Filistin** Osmanlı Devleti'nin eline geçmiştir.
+    • Mercidabık Savaşı'nda Memlük hükümdarı **Kansu Gavri** ölmüştür.
+    • **1517 yılında Memlüklerle Ridaniye Savaşı** yapılmış ve kazanılmıştır.
+    • Ridaniye Savaşı sonucunda **Memlük Devleti yıkılmıştır.**
+    • Ridaniye Savaşı sonucunda **Suriye, Filistin, Irak, Hicaz ve Mısır** Osmanlı Devleti'nin eline geçmiştir.
+    • Ridaniye Savaşı sonucunda **halifelik Osmanlı Devleti'ne geçmiştir.**
+    • Yavuz Sultan Selim, **padişahlık ve halifeliği kendi şahsında birleştirmiştir.**
+    • Yavuz Sultan Selim'den itibaren **teokratik devlet anlayışı güçlenmiştir.**
+    • Mısır'ın alınmasıyla Osmanlı Devleti **Baharat Yolu'na hâkim olmuştur.**
+    • **Kutsal emanetler** İstanbul'a, Topkapı Sarayı'na götürülmüştür.
+    • **Mısır hazineleri** İstanbul'a götürülmüştür.
+    • Yavuz Sultan Selim'e **Mekke ve Medine'nin sahibi** unvanı verilmek istenmiş, ancak bunu kabul etmemiştir.
+    • Yavuz Sultan Selim, **Mekke ve Medine'nin hizmetkârı** anlamındaki **Hadimül Haremeyn** unvanını benimsemiştir.
+    • **Haremeyn**, Mekke ve Medine'yi ifade eder.
+    • **Şerifeyn**, iki şerefli kutsal kent anlamında kullanılmıştır.
+    • Yavuz Sultan Selim, **hazineyi İstanbul'a getirmiştir.**
+    • Yavuz Sultan Selim, **1520 yılında Şirpençe** adı verilen sırtındaki bir çıbandan dolayı hayatını kaybetmiştir.
+    """
+        };
+        var notKanuniSultanSuleyman = new Note
+        {
+            Title = "Osmanlı Devleti Yükselme Dönemi — Kanuni Sultan Süleyman",
+            Body = """
+    • **1520-1566** yılları arasında hüküm sürmüştür.
+    • **46 yıl** tahtta kalmıştır.
+    • Osmanlı tarihinde **en uzun süre tahta kalan padişahtır.**
+    • **1529 yılında Viyana ilk defa kuşatılmıştır.**
+    • Viyana Kuşatması'nda **kış şartlarının yaklaşması ve ağır topların getirilmemesi** nedeniyle seferden geri dönülmüştür.
+    • **1532 yılında Alman Seferi** yapılmıştır.
+    • Alman Seferi sırasında Avusturya Kralı Ferdinand ile **İstanbul Anlaşması** imzalanmıştır.
+    • İstanbul Anlaşması sonucunda **I. Fransua, Şarlken'in elinden kurtarılmıştır.**
+    • **1541 yılında Macaristan** alınmıştır.
+    • **1535 yılında Fransa ile Ahdi Atik Anlaşması** yapılmıştır.
+    • Fransa'ya verilen kapitülasyonlarda **eğitim, dil, din, mezhep, ekonomi, siyaset ve hukuk** alanlarında geniş imtiyazlar bulunmuştur.
+    • Fransızların kendi aralarındaki davalarına bakmak için **konsolosluk mahkemeleri** kurulmuştur.
+    • Kanuni Sultan Süleyman'ın seferleri **Matrakçı Nasuh** tarafından minyatürleştirilmiştir.
+    • Matrakçı Nasuh'un bu konuyla ilgili eserleri **Süleymannâme** ve **Beyân-ı Menâzil-i Sefer-i Irakeyn**'dir.
+    • Kanuni Sultan Süleyman son seferini **1566 yılında Zigetvar** üzerine yapmıştır.
+    """
+        };
 
         return new Topic
         {
@@ -28476,12 +28555,165 @@ new Question
             Notes =
             {
                 // Not değişkenleri buraya yazılır: notXxx, notYyy
-                notFatihKisiligiVeUnvanlar, notIstanbulunFethiNedenleri, notFatihSultanMehmet,notFetihHazirliklariVeOnlemler, notBizansinAldigiOnlemler, notFetihSonuclariGenel, notFetihSonuclariAvrupaEtkisi, notCandarliIdami, notFatihinAnadoluFetihleri, notFatihinBalkanFetihleri, notFatihinKirimVeAkkoyunlu, notAtsbVeAsbFarki, notFatihDonemiKurumsalGelismeler, notFatihDonemiDigerGelismeler, notFatihinOlumu, notIkinciBayezidCemSultan, notIkinciBayezidDigerOlaylar, notYavuzDoguSeferleriVeAtsb, notYavuzMemluklerVeHilafet, notYavuzUnvanVeVasiyet, notKanuniKisiligiVeMisirIsyanlari, notKanuniAvrupaFetihleri, notKanuniIstanbulAntlasmasi, notBarbarosVeAkdeniz, notKanuniHintDenizSeferleri, notKanuniDigerFetihlerVeZigetvar, notKapitulasyonAmaclari, notSokulluSelimDonemiInebahti, notSokulluMuratDonemiFerhatPasa, notSokulluDonVolgaProjesi, notSokulluSuveysVeKanalProjeleri, notOsmanliYukselisIdrisiBitlisi
+                notFatihKisiligiVeUnvanlar, notIstanbulunFethiNedenleri,notYavuzSultanSelim, notKanuniSultanSuleyman,notIkinciBayezid,notFatihSultanMehmet,notFetihHazirliklariVeOnlemler, notBizansinAldigiOnlemler, notFetihSonuclariGenel, notFetihSonuclariAvrupaEtkisi, notCandarliIdami, notFatihinAnadoluFetihleri, notFatihinBalkanFetihleri, notFatihinKirimVeAkkoyunlu, notAtsbVeAsbFarki, notFatihDonemiKurumsalGelismeler, notFatihDonemiDigerGelismeler, notFatihinOlumu, notIkinciBayezidCemSultan, notIkinciBayezidDigerOlaylar, notYavuzDoguSeferleriVeAtsb, notYavuzMemluklerVeHilafet, notYavuzUnvanVeVasiyet, notKanuniKisiligiVeMisirIsyanlari, notKanuniAvrupaFetihleri, notKanuniIstanbulAntlasmasi, notBarbarosVeAkdeniz, notKanuniHintDenizSeferleri, notKanuniDigerFetihlerVeZigetvar, notKapitulasyonAmaclari, notSokulluSelimDonemiInebahti, notSokulluMuratDonemiFerhatPasa, notSokulluDonVolgaProjesi, notSokulluSuveysVeKanalProjeleri, notOsmanliYukselisIdrisiBitlisi
 
             },
             Questions =
             {
                 // Sorular buraya yazılır.
+
+                // --- SORU 122 ---
+new Question
+{
+    Note = notKanuniSultanSuleyman,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Kanuni Sultan Süleyman ve dönemi ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Kanuni Sultan Süleyman dönemine ait bilgiler arasında yanlış olan ifade belirlenmelidir.",
+    OrderIndex = 122,
+    Choices =
+    {
+        new Choice { Text = "1520-1566 yılları arasında hüküm sürmüş ve 46 yıl tahtta kalmıştır.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "1529 yılında Viyana ilk defa kuşatılmıştır.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Viyana Kuşatması'nda kış şartlarının yaklaşması ve ağır topların getirilmemesi nedeniyle seferden geri dönülmüştür.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "1532 yılında Alman Seferi yapılmış ve Avusturya Kralı Ferdinand ile İstanbul Anlaşması imzalanmıştır.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "1541 yılında Macaristan alınmıştır.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "1535 yılında Fransa ile Ahdi Atik Anlaşması yapılmıştır.", IsCorrect = false, OrderIndex = 6 },
+        new Choice { Text = "Fransa'ya verilen kapitülasyonlarda eğitim, dil, din, mezhep, ekonomi, siyaset ve hukuk alanlarında geniş imtiyazlar bulunmuştur.", IsCorrect = false, OrderIndex = 7 },
+        new Choice { Text = "Fransızların kendi aralarındaki davalarına bakmak için konsolosluk mahkemeleri kurulmuştur.", IsCorrect = false, OrderIndex = 8 },
+        new Choice { Text = "Kanuni Sultan Süleyman'ın seferleri Matrakçı Nasuh tarafından minyatürleştirilmiştir.", IsCorrect = false, OrderIndex = 9 },
+        new Choice { Text = "Matrakçı Nasuh'un bu konuyla ilgili eserleri Süleymannâme ve Beyân-ı Menâzil-i Sefer-i Irakeyn'dir.", IsCorrect = false, OrderIndex = 10 },
+        new Choice { Text = "Kanuni Sultan Süleyman son seferini 1566 yılında Zigetvar üzerine yapmıştır.", IsCorrect = false, OrderIndex = 11 },
+
+        new Choice { Text = "Osmanlı tarihinde en uzun süre tahta kalan padişah Yavuz Sultan Selim'dir.", IsCorrect = true, OrderIndex = 12 },
+        new Choice { Text = "1473 yılında Erzincan'da Akkoyunlularla Otluk Beli Savaşı yapılmış ve kazanılmıştır.", IsCorrect = true, OrderIndex = 13 },
+        new Choice { Text = "1517 yılında Ridaniye Savaşı yapılmış ve Memlük Devleti yıkılmıştır.", IsCorrect = true, OrderIndex = 14 },
+        new Choice { Text = "1511 yılında Antalya'da Türkmenler tarafından Şahkulu İsyanı çıkarılmıştır.", IsCorrect = true, OrderIndex = 15 },
+        new Choice { Text = "Fatih Sultan Mehmet döneminde Sahn-ı Seman medreseleri kurulmuştur.", IsCorrect = true, OrderIndex = 16 }
+    }
+},
+                // --- SORU 121 ---
+new Question
+{
+    Note = notYavuzSultanSelim,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Yavuz Sultan Selim ve dönemi ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Yavuz Sultan Selim dönemine ait bilgiler arasında yanlış olan ifade belirlenmelidir.",
+    OrderIndex = 121,
+    Choices =
+    {
+        new Choice { Text = "Kendisine Mekke ve Medine'nin sahibi unvanı verilmek istenmiş, ancak bunu kabul etmeyerek Mekke ve Medine'nin hizmetkârı anlamındaki Hadimül Haremeyn unvanını benimsemiştir.", IsCorrect = false, OrderIndex = 1 },
+        new Choice { Text = "Kutsal emanetler ve Mısır hazineleri İstanbul'a götürülmüştür.", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Yavuz Sultan Selim'den itibaren teokratik devlet anlayışı güçlenmiştir.", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Mısır'ın alınmasıyla Osmanlı Devleti Baharat Yolu'na hâkim olmuştur.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Ridaniye Savaşı sonucunda halifelik Osmanlı Devleti'ne geçmiştir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Ridaniye Savaşı sonucunda Memlük Devleti yıkılmıştır.", IsCorrect = false, OrderIndex = 6 },
+        new Choice { Text = "Mercidabık Savaşı'nda Memlük hükümdarı Kansu Gavri ölmüştür.", IsCorrect = false, OrderIndex = 7 },
+
+        new Choice { Text = "İstanbul'un fethiyle kuruluş dönemi sona ermiş, yükselme dönemi başlamıştır.", IsCorrect = true, OrderIndex = 8 },
+        new Choice { Text = "1473 yılında Erzincan'da Akkoyunlularla Otluk Beli Savaşı yapılmış ve kazanılmıştır.", IsCorrect = true, OrderIndex = 9 },
+        new Choice { Text = "II. Bayezid dönemine damga vuran olay Cem Sultan olayıdır.", IsCorrect = true, OrderIndex = 10 },
+        new Choice { Text = "1446'da Buçuktepe İsyanı yaşanmış ve bu isyan ilk yeniçeri isyanı olmuştur.", IsCorrect = true, OrderIndex = 11 },
+        new Choice { Text = "1511 yılında Antalya'da Şahkulu İsyanı çıkmıştır.", IsCorrect = true, OrderIndex = 12 }
+    }
+},
+                // --- SORU 116 ---
+new Question
+{
+    Note = notYavuzSultanSelim,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "1515 yılında Dulkadiroğulları Beyliği'ne son verilmesini sağlayan savaş aşağıdakilerden hangisidir?",
+    Explanation = "1515 yılında Turnadağ Savaşı yapılmış ve Dulkadiroğulları Beyliği'ne son verilmiştir.",
+    OrderIndex = 116,
+    Choices =
+    {
+        new Choice { Text = "Turnadağ Savaşı", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Çaldıran Savaşı", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Mercidabık Savaşı", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Ridaniye Savaşı", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Otluk Beli Savaşı", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 117 ---
+new Question
+{
+    Note = notYavuzSultanSelim,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "1514 yılında Safevilerle yapılan savaş aşağıdakilerden hangisidir?",
+    Explanation = "1514 yılında Çaldıran Savaşı yapılmıştır.",
+    OrderIndex = 117,
+    Choices =
+    {
+        new Choice { Text = "Çaldıran Savaşı", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Turnadağ Savaşı", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Mercidabık Savaşı", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Ridaniye Savaşı", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "II. Kosova Savaşı", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 118 ---
+new Question
+{
+    Note = notYavuzSultanSelim,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "1516 yılında Memlüklerle yapılan, sonucunda Suriye ve Filistin'in Osmanlı Devleti'nin eline geçtiği ve Memlük hükümdarı Kansu Gavri'nin öldüğü savaş aşağıdakilerden hangisidir?",
+    Explanation = "1516 yılında yapılan Mercidabık Savaşı kazanılmış; Suriye ve Filistin Osmanlı Devleti'nin eline geçmiş ve Memlük hükümdarı Kansu Gavri ölmüştür.",
+    OrderIndex = 118,
+    Choices =
+    {
+        new Choice { Text = "Mercidabık Savaşı", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Ridaniye Savaşı", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Çaldıran Savaşı", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Turnadağ Savaşı", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Otluk Beli Savaşı", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 119 ---
+new Question
+{
+    Note = notYavuzSultanSelim,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "1517 yılında Memlüklerle yapılan; Memlük Devleti'nin yıkılmasına, halifeliğin Osmanlı Devleti'ne geçmesine ve Suriye, Filistin, Irak, Hicaz ile Mısır'ın Osmanlı topraklarına katılmasına yol açan savaş aşağıdakilerden hangisidir?",
+    Explanation = "1517 yılında yapılan Ridaniye Savaşı kazanılmış; Memlük Devleti yıkılmış, halifelik Osmanlı Devleti'ne geçmiş ve belirtilen bölgeler Osmanlı Devleti'nin eline geçmiştir.",
+    OrderIndex = 119,
+    Choices =
+    {
+        new Choice { Text = "Ridaniye Savaşı", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Mercidabık Savaşı", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Çaldıran Savaşı", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Turnadağ Savaşı", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Sırp Sındığı Savaşı", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 120 ---
+new Question
+{
+    Note = notYavuzSultanSelim,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Yavuz Sultan Selim'in 1520 yılında hayatını kaybetmesine neden olan Şirpençe aşağıdakilerden hangisidir?",
+    Explanation = "Yavuz Sultan Selim, 1520 yılında Şirpençe adı verilen sırtındaki bir çıbandan dolayı hayatını kaybetmiştir.",
+    OrderIndex = 120,
+    Choices =
+    {
+        new Choice { Text = "Sırttaki bir çıban", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Bir savaşta aldığı yara", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Bir deniz kazasında oluşan yara", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Bir at kazasında oluşan yara", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Bir hastalık nedeniyle oluşan ateşli rahatsızlık", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+
                 new Question
 {
     Note = notFatihKisiligiVeUnvanlar,
@@ -29212,25 +29444,7 @@ new Question
     }
 },
 
-// --- SORU 38 (ters soru) ---
-new Question
-{
-    Note = notFatihDonemiDigerGelismeler,
-    Type = QuestionType.MultipleChoice,
-    IsNegative = true,
-    Text = "Fatih dönemi kapitülasyonları ve diğer gelişmelerle ilgili aşağıdakilerden hangisi yanlıştır?",
-    Explanation = "İlk kapitülasyon 1352'de Orhan Bey döneminde Cenevizlilere verilmiştir; Fatih döneminde ise Venediklilere devam ettirilmiştir; 'ilk kapitülasyon Fatih döneminde verilmiştir' ifadesi yanlıştır.",
-    OrderIndex = 38,
-    Choices =
-    {
-        new Choice { Text = "Hicaz su yolları sorunu Memlüklerle ilişkileri germiştir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Bu gerginlik savaşa yol açmamıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Venedik'e verilen kapitülasyonların amacı yalnızca ticari değildir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Gerçek anlamda ilk kapsamlı kapitülasyon Kanuni döneminde Fransa'ya verilmiştir.", IsCorrect = true, OrderIndex = 4 },
 
-        new Choice { Text = "İlk kapitülasyon Fatih Sultan Mehmet döneminde verilmiştir.", IsCorrect = false, OrderIndex = 5 },
-    }
-},
 
 // --- SORU 39 ---
 new Question
@@ -29586,25 +29800,7 @@ new Question
     }
 },
 
-// --- SORU 57 (ters soru) ---
-new Question
-{
-    Note = notKanuniKisiligiVeMisirIsyanlari,
-    Type = QuestionType.MultipleChoice,
-    IsNegative = true,
-    Text = "Kanuni'nin tahtının ilk yıllarındaki isyanlarla ilgili aşağıdakilerden hangisi yanlıştır?",
-    Explanation = "Canberdi Gazali ve Ahmet Paşa isyanları Mısır'da; Baba Zünnun ve Kalender Çelebi isyanları ise farklı bölgelerde çıkmıştır; her ikisi de Kanuni'nin tahtının ilk yıllarına aittir.",
-    OrderIndex = 57,
-    Choices =
-    {
-        new Choice { Text = "Canberdi Gazali isyanı Mısır'da çıkmıştır.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Kalender Çelebi isyanı Kanuni döneminde bastırılmıştır.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Kanuni, 46 yıl tahtta kalmıştır.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Kanuni'nin ünlü sözü Muhibbi imzasıyla yazılmıştır.", IsCorrect = true, OrderIndex = 4 },
 
-        new Choice { Text = "Bu isyanlar Kanuni'nin saltanatının son yıllarında çıkmıştır.", IsCorrect = false, OrderIndex = 5 },
-    }
-},
 
 // --- SORU 58 ---
 new Question
@@ -30649,6 +30845,107 @@ new Question
         new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 3 },
         new Choice { Text = "Yavuz Sultan Selim", IsCorrect = false, OrderIndex = 4 },
         new Choice { Text = "Kanuni Sultan Süleyman", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+// --- SORU 111 ---
+new Question
+{
+    Note = notIkinciBayezid,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Osmanlı Devleti'nde ilk defa bir iç sorunun uluslararası bir sorun hâline gelmesine yol açan olay aşağıdakilerden hangisidir?",
+    Explanation = "Cem Sultan olayı, Osmanlı'da ilk defa bir iç sorunun uluslararası sorun hâline gelmesine neden olmuştur.",
+    OrderIndex = 111,
+    Choices =
+    {
+        new Choice { Text = "Cem Sultan Olayı", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Şahkulu İsyanı", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Buçuktepe İsyanı", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Şeyh Bedrettin İsyanı", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Düzmece Mustafa İsyanı", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 112 ---
+new Question
+{
+    Note = notIkinciBayezid,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "1511 yılında Antalya'da Türkmenler tarafından çıkarılan Şahkulu İsyanı hangi Osmanlı padişahı döneminde yaşanmıştır?",
+    Explanation = "1511 yılında Antalya'da Türkmenler tarafından çıkarılan Şahkulu İsyanı, II. Bayezid döneminde yaşanmıştır.",
+    OrderIndex = 112,
+    Choices =
+    {
+        new Choice { Text = "II. Bayezid", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Fatih Sultan Mehmet", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Yavuz Sultan Selim", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Yıldırım Bayezid", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 113 ---
+new Question
+{
+    Note = notIkinciBayezid,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "İspanya'daki zulüm altında bulunan Müslüman ve Yahudileri İstanbul'a getiren kişi kimdir?",
+    Explanation = "Kemal Reis, İspanya'daki zulüm altında bulunan Müslüman ve Yahudileri İstanbul'a getirmiştir.",
+    OrderIndex = 113,
+    Choices =
+    {
+        new Choice { Text = "Kemal Reis", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Barbaros Hayreddin Paşa", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Piri Reis", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Turgut Reis", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Kılıç Ali Paşa", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 114 ---
+new Question
+{
+    Note = notIkinciBayezid,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Karamanoğullarına tamamen son veren Osmanlı padişahı kimdir?",
+    Explanation = "Karamanoğullarına tamamen II. Bayezid döneminde son verilmiştir.",
+    OrderIndex = 114,
+    Choices =
+    {
+        new Choice { Text = "II. Bayezid", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Fatih Sultan Mehmet", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Yavuz Sultan Selim", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "II. Murat", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Kanuni Sultan Süleyman", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+// --- SORU 115 ---
+// --- SORU 115 ---
+new Question
+{
+    Note = notIkinciBayezid,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "II. Bayezid dönemi ile ilgili aşağıdakilerden hangisi doğrudur?",
+    Explanation = "Cem Sultan olayı, Şahkulu İsyanı, Kemal Reis'in İstanbul'a getirdiği kişiler, Karamanoğullarına tamamen son verilmesi ve Memlük Devletiyle yapılan savaş II. Bayezid dönemiyle ilgilidir.",
+    OrderIndex = 115,
+    Choices =
+    {
+        new Choice { Text = "Cem Sultan olayı, Osmanlı'da ilk defa bir iç sorunun uluslararası sorun hâline gelmesine neden olmuştur.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Cem Sultan olayından dolayı batıya sefer hareketi yok denecek kadar az olmuştur.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "1511 yılında Antalya'da Şahkulu İsyanı Türkmenler tarafından çıkarılmıştır.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Kemal Reis, İspanya'daki zulüm altında bulunan Müslüman ve Yahudileri İstanbul'a getirmiştir.", IsCorrect = true, OrderIndex = 5 },
+        new Choice { Text = "II. Bayezid döneminde Karamanoğullarına tamamen son verilmiştir.", IsCorrect = true, OrderIndex = 6 },
+        new Choice { Text = "II. Bayezid döneminde Memlük Devletiyle savaş yaşanmıştır.", IsCorrect = true, OrderIndex = 7 },
+
+        new Choice { Text = "İstanbul'un fethiyle Osmanlı Devleti'nin yükselme dönemi başlamıştır.", IsCorrect = false, OrderIndex = 8 },
+        new Choice { Text = "Kırım'ın alınmasıyla Karadeniz Türk gölü hâline gelmiştir.", IsCorrect = false, OrderIndex = 9 },
+        new Choice { Text = "Otluk Beli Savaşı'nda Akkoyunlular mağlup edilmiştir.", IsCorrect = false, OrderIndex = 10 },
+        new Choice { Text = "Edirne-Segedin Antlaşması'ndan sonra 12 yaşındaki Mehmet tahta geçirilmiştir.", IsCorrect = false, OrderIndex = 11 },
+        new Choice { Text = "II. Kosova Savaşı ile Balkanların kesin Türk yurdu hâline geldiği belirtilmiştir.", IsCorrect = false, OrderIndex = 12 }
     }
 },
 
@@ -31937,6 +32234,20 @@ new Question
            - **Selim Sırrı Tarcan**, **Milli Olimpiyat Komitesi'ni** kurmuştur; **Mehmet Faik Üstünidman** ise **ilk beden eğitimi öğretmenidir** (jimnastik ilk kez ders müfredatına girmiştir).
            """
         };
+        var notIkinciBayezid = new Note
+        {
+            Title = "Osmanlı Devleti Yükselme Dönemi — II. Bayezid",
+            Body = """
+    • **II. Bayezid dönemine damga vuran olay Cem Sultan olayıdır.**
+    • **Cem Sultan olayı**, Osmanlı'da ilk defa bir iç sorunun uluslararası sorun hâline gelmesine neden olmuştur.
+    • Cem Sultan olayından dolayı batıya sefer hareketi yok denecek kadar az olmuştur.
+    • **1511 yılında Antalya'da Şahkulu İsyanı** çıkmıştır.
+    • Şahkulu İsyanı **Türkmenler** tarafından çıkarılmıştır.
+    • **Kemal Reis**, İspanya'daki zulüm altında bulunan Müslüman ve Yahudileri İstanbul'a getirmiştir.
+    • II. Bayezid döneminde **Karamanoğullarına tamamen son verilmiştir.**
+    • II. Bayezid döneminde **Memlük Devletiyle savaş** yaşanmıştır.
+    """
+        };
 
         return new Topic
         {
@@ -31945,7 +32256,7 @@ new Question
             Notes =
             {
                 // Not değişkenleri buraya yazılır: notXxx, notYyy
-                notOsmanliDigerAdlari, notOsmanliKulturKaynaklari, notPadisahSembolVeUnvanlari, notVerasetDegisimleri, notPadisahGorevleriFerman, notMusadere, notKullukHakki, notBeratnameAdaletnameAmanname, notDivanBaskanligiVeSeferGoreviDegisimi, notSehzadeEgitimi, notOsmanliDevletFelsefeleri, notOsmanliKurulusYeriVeBaskentleri, notIstanbulunFethiVeDigerAdlari, notIstanbulYonetimi, notOsmanliSaraylari, notTopkapiSarayiBolumleri, notEnderun, notHarem, notDivaniHumayun, notDivanCesitleri, notSadrazam, notDefterdarVeKazasker, notNisanciVeReisulKuttab, notKaptaniDeryaVeYeniceriAgasi, notSeyhulislam, notTasraTeskilatiOncesi1840, notTasraTeskilatiSonrasi1871, notEyaletSistemiGenel, notImtiyazliEyaletler, notYurtlukOcaklikEyaletler, notSalyaneliEyaletler, notSalyanesizEyaletler, notMahkemeTurleri, notKadininGorevleri, notKadiDefterleriVeYardimcilari, notMilletSistemi, notSurnameVeSurreAlaylari, notVakifSistemi, notOsmanliHayirKurumlari, notYoneticiSiniflarGenel, notSeyfiyeSinifi, notIlmiyeSinifi, notKalemiyeSinifi, notOsmanliOrduGenel, notKapikuluOcaklarininKurulusu, notDevsirmeSistemi, notKapikuluPiyadeleri, notKapikuluSuvarileri, notEyaletAskerleriTimarli, notEyaletAskerleriDiger, notHiristiyanYardimciBirlikler, notDenizKuvvetleriGenel, notUnluOsmanliDenizcileri, notMulkArazi, notVakifAraziToprak, notMiriArazininCesitleri, notDirlikSistemi, notCifthaneSistemi, notEgitimGenelYapisi, notSarayOkullariEnderunHarem, notSehzadeganMektebiVeAminAlayi, notSibyanMektebi, notMedreseGenelOzellikleri, notMedreseAkademikBasamaklar, notMedreseBozulmaNedenleri, notKurulusDonemiKaynaklari, notKadizadeVeDavuduKayseri, notAltuncuzadeVeAksemsettin, notSabuncuogluSerafettin, notAliKuscu, notPiriReisVeSeydiAliReis, notEbuSuudEfendi, notTakiyuddinMehmet, notEvliyaCelebiVeKatipCelebi, notYanyaliEsadEfendi, notHezarfenVeLagari, notKociBeyVeNaima, notErzurumluIbrahimHakki, notHumbaraciAhmetPasa, notMehmetFatihGokmenVeMustafaBehcet, notAhmetCevdetPasa, notIyaseVeGelenekcilik, notFiskalizmVeMerkantilizm, notNarhSistemi, notLoncaTeskilati, notDerbentVeEhliHiref, notMenzilTeskilati, notGedikVeEhliHibre, notMuhtesipVeVergiKavramlari, notSeriVergiler, notOrfiVergiler, notAvarizVergisi, notStandardizasyonVeKapan, notOsmanliParaSistemi, notEkonomininBozulmaNedenleri, notOsmanliBankaciligi, notMimarSinanVeIlkCami, notSelatinCamilerVeDigerMimari, notHatSanatiUstalari, notMinyatuOsmanli, notTezhipOsmanli, notResimSanatiOsmanli, notMuzikOsmanli, notDigerSanatDallariOsmanli, notDivanTasavvufHalkEdebiyati, notOsmanliSpor
+                notOsmanliDigerAdlari, notOsmanliKulturKaynaklari,notIkinciBayezid, notPadisahSembolVeUnvanlari, notVerasetDegisimleri, notPadisahGorevleriFerman, notMusadere, notKullukHakki, notBeratnameAdaletnameAmanname, notDivanBaskanligiVeSeferGoreviDegisimi, notSehzadeEgitimi, notOsmanliDevletFelsefeleri, notOsmanliKurulusYeriVeBaskentleri, notIstanbulunFethiVeDigerAdlari, notIstanbulYonetimi, notOsmanliSaraylari, notTopkapiSarayiBolumleri, notEnderun, notHarem, notDivaniHumayun, notDivanCesitleri, notSadrazam, notDefterdarVeKazasker, notNisanciVeReisulKuttab, notKaptaniDeryaVeYeniceriAgasi, notSeyhulislam, notTasraTeskilatiOncesi1840, notTasraTeskilatiSonrasi1871, notEyaletSistemiGenel, notImtiyazliEyaletler, notYurtlukOcaklikEyaletler, notSalyaneliEyaletler, notSalyanesizEyaletler, notMahkemeTurleri, notKadininGorevleri, notKadiDefterleriVeYardimcilari, notMilletSistemi, notSurnameVeSurreAlaylari, notVakifSistemi, notOsmanliHayirKurumlari, notYoneticiSiniflarGenel, notSeyfiyeSinifi, notIlmiyeSinifi, notKalemiyeSinifi, notOsmanliOrduGenel, notKapikuluOcaklarininKurulusu, notDevsirmeSistemi, notKapikuluPiyadeleri, notKapikuluSuvarileri, notEyaletAskerleriTimarli, notEyaletAskerleriDiger, notHiristiyanYardimciBirlikler, notDenizKuvvetleriGenel, notUnluOsmanliDenizcileri, notMulkArazi, notVakifAraziToprak, notMiriArazininCesitleri, notDirlikSistemi, notCifthaneSistemi, notEgitimGenelYapisi, notSarayOkullariEnderunHarem, notSehzadeganMektebiVeAminAlayi, notSibyanMektebi, notMedreseGenelOzellikleri, notMedreseAkademikBasamaklar, notMedreseBozulmaNedenleri, notKurulusDonemiKaynaklari, notKadizadeVeDavuduKayseri, notAltuncuzadeVeAksemsettin, notSabuncuogluSerafettin, notAliKuscu, notPiriReisVeSeydiAliReis, notEbuSuudEfendi, notTakiyuddinMehmet, notEvliyaCelebiVeKatipCelebi, notYanyaliEsadEfendi, notHezarfenVeLagari, notKociBeyVeNaima, notErzurumluIbrahimHakki, notHumbaraciAhmetPasa, notMehmetFatihGokmenVeMustafaBehcet, notAhmetCevdetPasa, notIyaseVeGelenekcilik, notFiskalizmVeMerkantilizm, notNarhSistemi, notLoncaTeskilati, notDerbentVeEhliHiref, notMenzilTeskilati, notGedikVeEhliHibre, notMuhtesipVeVergiKavramlari, notSeriVergiler, notOrfiVergiler, notAvarizVergisi, notStandardizasyonVeKapan, notOsmanliParaSistemi, notEkonomininBozulmaNedenleri, notOsmanliBankaciligi, notMimarSinanVeIlkCami, notSelatinCamilerVeDigerMimari, notHatSanatiUstalari, notMinyatuOsmanli, notTezhipOsmanli, notResimSanatiOsmanli, notMuzikOsmanli, notDigerSanatDallariOsmanli, notDivanTasavvufHalkEdebiyati, notOsmanliSpor
 
             },
             Questions =
