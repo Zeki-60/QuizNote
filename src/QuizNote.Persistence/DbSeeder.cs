@@ -31692,6 +31692,22 @@ new Question
            **Burası karıştırılabilir:** Aynı toprak sistemi devletin bakış açısıyla "dirlik/tımar", köylünün bakış açısıyla "çifthane" olarak adlandırılır; bu iki terim aynı sistemin farklı taraflardan görünümüdür.
            """
         };
+        var notOsmanliVergileri = new Note
+        {
+            Title = "Osmanlı Kültür ve Medeniyeti — Vergiler",
+            Body = """
+    • **Ağıl ve Adet-i Ağnam:** Küçükbaş hayvanlardan alınan vergi (**1/40** oranında).
+    • **Baç:** **Osmanlı Devleti'nin ilk vergisi** kabul edilir; pazar vergisidir (**Osman Bey'in Germiyanlı bir tüccardan aldığı** rivayet edilir).
+    • **Çift Resmi (Çifthane vergisi):** Bir çift öküzle tarlayı süren köylünün devlete ödediği vergi.
+    • **Çift Bozan:** Toprağını mazeretsiz olarak **2-3 yıl üst üste ekmeyen** köylüden alınan cezai vergi.
+    • **İltizam (Muacele Bedeli):** İltizam ihalesine girerken peşin ödenen bedel.
+    • **İspenç:** Gayrimüslimlerin ödediği toprak vergisi.
+    • **İmdadiye Seferiye:** **Sefer** zamanında toplanan vergi.
+    • **İmdadiye Hazariye:** **Barış** zamanında toplanan vergi.
+    • **Derbent Vergisi:** Geçit ve köprülerden alınan vergi.
+    • **Resm-i Sefine:** Boğazlardan geçen gemilerden alınan vergi.
+    """
+        };
 
         // --- Notlar: "Osmanlı Devleti Kültür ve Medeniyeti" (eğitim ve bilim insanları) ---
 
@@ -32217,7 +32233,7 @@ new Question
             Notes =
             {
                 // Not değişkenleri buraya yazılır: notXxx, notYyy
-                notOsmanliDigerAdlari, notOsmanliKulturKaynaklari,notIkinciBayezid, notPadisahSembolVeUnvanlari, notVerasetDegisimleri, notPadisahGorevleriFerman, notMusadere, notKullukHakki, notBeratnameAdaletnameAmanname, notDivanBaskanligiVeSeferGoreviDegisimi, notSehzadeEgitimi, notOsmanliDevletFelsefeleri, notOsmanliKurulusYeriVeBaskentleri, notIstanbulunFethiVeDigerAdlari, notIstanbulYonetimi, notOsmanliSaraylari, notTopkapiSarayiBolumleri, notEnderun, notHarem, notDivaniHumayun, notDivanCesitleri, notSadrazam, notDefterdarVeKazasker, notNisanciVeReisulKuttab, notKaptaniDeryaVeYeniceriAgasi, notSeyhulislam, notTasraTeskilatiOncesi1840, notTasraTeskilatiSonrasi1871, notEyaletSistemiGenel, notImtiyazliEyaletler, notYurtlukOcaklikEyaletler, notSalyaneliEyaletler, notSalyanesizEyaletler, notMahkemeTurleri, notKadininGorevleri, notKadiDefterleriVeYardimcilari, notMilletSistemi, notSurnameVeSurreAlaylari, notVakifSistemi, notOsmanliHayirKurumlari, notYoneticiSiniflarGenel, notSeyfiyeSinifi, notIlmiyeSinifi, notKalemiyeSinifi, notOsmanliOrduGenel, notKapikuluOcaklarininKurulusu, notDevsirmeSistemi, notKapikuluPiyadeleri, notKapikuluSuvarileri, notEyaletAskerleriTimarli, notEyaletAskerleriDiger, notHiristiyanYardimciBirlikler, notDenizKuvvetleriGenel, notUnluOsmanliDenizcileri, notMulkArazi, notVakifAraziToprak, notMiriArazininCesitleri, notDirlikSistemi, notCifthaneSistemi, notEgitimGenelYapisi, notSarayOkullariEnderunHarem, notSehzadeganMektebiVeAminAlayi, notSibyanMektebi, notMedreseGenelOzellikleri, notMedreseAkademikBasamaklar, notMedreseBozulmaNedenleri, notKurulusDonemiKaynaklari, notKadizadeVeDavuduKayseri, notAltuncuzadeVeAksemsettin, notSabuncuogluSerafettin, notAliKuscu, notPiriReisVeSeydiAliReis, notEbuSuudEfendi, notTakiyuddinMehmet, notEvliyaCelebiVeKatipCelebi, notYanyaliEsadEfendi, notHezarfenVeLagari, notKociBeyVeNaima, notErzurumluIbrahimHakki, notHumbaraciAhmetPasa, notMehmetFatihGokmenVeMustafaBehcet, notAhmetCevdetPasa, notIyaseVeGelenekcilik, notFiskalizmVeMerkantilizm, notNarhSistemi, notLoncaTeskilati, notDerbentVeEhliHiref, notMenzilTeskilati, notGedikVeEhliHibre, notMuhtesipVeVergiKavramlari, notSeriVergiler, notOrfiVergiler, notAvarizVergisi, notStandardizasyonVeKapan, notOsmanliParaSistemi, notEkonomininBozulmaNedenleri, notOsmanliBankaciligi, notMimarSinanVeIlkCami, notSelatinCamilerVeDigerMimari, notHatSanatiUstalari, notMinyatuOsmanli, notTezhipOsmanli, notResimSanatiOsmanli, notMuzikOsmanli, notDigerSanatDallariOsmanli, notDivanTasavvufHalkEdebiyati, notOsmanliSpor
+                notOsmanliDigerAdlari, notOsmanliVergileri,notOsmanliKulturKaynaklari,notIkinciBayezid, notPadisahSembolVeUnvanlari, notVerasetDegisimleri, notPadisahGorevleriFerman, notMusadere, notKullukHakki, notBeratnameAdaletnameAmanname, notDivanBaskanligiVeSeferGoreviDegisimi, notSehzadeEgitimi, notOsmanliDevletFelsefeleri, notOsmanliKurulusYeriVeBaskentleri, notIstanbulunFethiVeDigerAdlari, notIstanbulYonetimi, notOsmanliSaraylari, notTopkapiSarayiBolumleri, notEnderun, notHarem, notDivaniHumayun, notDivanCesitleri, notSadrazam, notDefterdarVeKazasker, notNisanciVeReisulKuttab, notKaptaniDeryaVeYeniceriAgasi, notSeyhulislam, notTasraTeskilatiOncesi1840, notTasraTeskilatiSonrasi1871, notEyaletSistemiGenel, notImtiyazliEyaletler, notYurtlukOcaklikEyaletler, notSalyaneliEyaletler, notSalyanesizEyaletler, notMahkemeTurleri, notKadininGorevleri, notKadiDefterleriVeYardimcilari, notMilletSistemi, notSurnameVeSurreAlaylari, notVakifSistemi, notOsmanliHayirKurumlari, notYoneticiSiniflarGenel, notSeyfiyeSinifi, notIlmiyeSinifi, notKalemiyeSinifi, notOsmanliOrduGenel, notKapikuluOcaklarininKurulusu, notDevsirmeSistemi, notKapikuluPiyadeleri, notKapikuluSuvarileri, notEyaletAskerleriTimarli, notEyaletAskerleriDiger, notHiristiyanYardimciBirlikler, notDenizKuvvetleriGenel, notUnluOsmanliDenizcileri, notMulkArazi, notVakifAraziToprak, notMiriArazininCesitleri, notDirlikSistemi, notCifthaneSistemi, notEgitimGenelYapisi, notSarayOkullariEnderunHarem, notSehzadeganMektebiVeAminAlayi, notSibyanMektebi, notMedreseGenelOzellikleri, notMedreseAkademikBasamaklar, notMedreseBozulmaNedenleri, notKurulusDonemiKaynaklari, notKadizadeVeDavuduKayseri, notAltuncuzadeVeAksemsettin, notSabuncuogluSerafettin, notAliKuscu, notPiriReisVeSeydiAliReis, notEbuSuudEfendi, notTakiyuddinMehmet, notEvliyaCelebiVeKatipCelebi, notYanyaliEsadEfendi, notHezarfenVeLagari, notKociBeyVeNaima, notErzurumluIbrahimHakki, notHumbaraciAhmetPasa, notMehmetFatihGokmenVeMustafaBehcet, notAhmetCevdetPasa, notIyaseVeGelenekcilik, notFiskalizmVeMerkantilizm, notNarhSistemi, notLoncaTeskilati, notDerbentVeEhliHiref, notMenzilTeskilati, notGedikVeEhliHibre, notMuhtesipVeVergiKavramlari, notSeriVergiler, notOrfiVergiler, notAvarizVergisi, notStandardizasyonVeKapan, notOsmanliParaSistemi, notEkonomininBozulmaNedenleri, notOsmanliBankaciligi, notMimarSinanVeIlkCami, notSelatinCamilerVeDigerMimari, notHatSanatiUstalari, notMinyatuOsmanli, notTezhipOsmanli, notResimSanatiOsmanli, notMuzikOsmanli, notDigerSanatDallariOsmanli, notDivanTasavvufHalkEdebiyati, notOsmanliSpor
 
             },
             Questions =
@@ -35806,6 +35822,404 @@ new Question
         new Choice { Text = "Milli Olimpiyat Komitesi'ni Mehmet Faik Üstünidman kurmuştur", IsCorrect = false, OrderIndex = 5 },
     }
 },
+// --- SORU 185 ---
+new Question
+{
+    Note = notMahkemeTurleri,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Osmanlı Devleti'nde Müslüman-gayrimüslim arasındaki tüm davalara hangi mahkeme bakardı?",
+    Explanation = "Müslüman-gayrimüslim arasındaki tüm davalara Şeri Mahkemeler bakardı.",
+    OrderIndex = 185,
+    Choices =
+    {
+        new Choice { Text = "Şeri Mahkemeler", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Cemaat Mahkemeleri", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Konsolosluk Mahkemeleri", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Ticaret Mahkemeleri", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Nizamiye Mahkemeleri", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 186 ---
+new Question
+{
+    Note = notMahkemeTurleri,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Osmanlı Devleti'nde gayrimüslimlerin kendi aralarındaki davalara hangi mahkemeler bakardı?",
+    Explanation = "Rum, Ermeni ve Musevi cemaati gibi gayrimüslimlerin kendi aralarındaki davalarına Cemaat Mahkemeleri bakardı.",
+    OrderIndex = 186,
+    Choices =
+    {
+        new Choice { Text = "Cemaat Mahkemeleri", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Şeri Mahkemeler", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Konsolosluk Mahkemeleri", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Ticaret Mahkemeleri", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Nizamiye Mahkemeleri", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 187 ---
+new Question
+{
+    Note = notMahkemeTurleri,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Kapitülasyon verilen devletin kendi vatandaşları arasındaki davalara hangi mahkemeler bakardı?",
+    Explanation = "Konsolosluk Mahkemeleri, kapitülasyon verilen devletin kendi vatandaşları arasındaki davalara bakardı.",
+    OrderIndex = 187,
+    Choices =
+    {
+        new Choice { Text = "Konsolosluk Mahkemeleri", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Şeri Mahkemeler", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Cemaat Mahkemeleri", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Ticaret Mahkemeleri", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Nizamiye Mahkemeleri", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 188 ---
+new Question
+{
+    Note = notMahkemeTurleri,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Osmanlı Devleti'nde ticari davalara hangi mahkemeler bakardı?",
+    Explanation = "Tanzimat'tan sonra eklenen Ticaret Mahkemeleri ticari davalara bakardı.",
+    OrderIndex = 188,
+    Choices =
+    {
+        new Choice { Text = "Ticaret Mahkemeleri", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Nizamiye Mahkemeleri", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Şeri Mahkemeler", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Cemaat Mahkemeleri", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Konsolosluk Mahkemeleri", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 189 ---
+new Question
+{
+    Note = notMahkemeTurleri,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Osmanlı Devleti'nde özellikle miras ve cinayet davalarına hangi mahkemeler bakardı?",
+    Explanation = "Tanzimat'tan sonra özellikle miras ve cinayet davalarına Nizamiye Mahkemeleri bakardı.",
+    OrderIndex = 189,
+    Choices =
+    {
+        new Choice { Text = "Nizamiye Mahkemeleri", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Ticaret Mahkemeleri", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Şeri Mahkemeler", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Cemaat Mahkemeleri", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Konsolosluk Mahkemeleri", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+// --- SORU 190 ---
+new Question
+{
+    Note = notOsmanliSaraylari,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Orhan Bey döneminde Bursa'da açılan ilk Osmanlı sarayı aşağıdakilerden hangisidir?",
+    Explanation = "Bey Sarayı, Orhan Bey döneminde Bursa'da açılan ilk Osmanlı sarayıdır.",
+    OrderIndex = 190,
+    Choices =
+    {
+        new Choice { Text = "Bey Sarayı", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Topkapı Sarayı", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "İshak Paşa Sarayı", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Dolmabahçe Sarayı", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Yıldız Sarayı", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 191 ---
+new Question
+{
+    Note = notOsmanliSaraylari,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Fatih Sultan Mehmet döneminde yapılmış ve Osmanlı'nın en uzun süre kullanılan sarayı olan yapı aşağıdakilerden hangisidir?",
+    Explanation = "Topkapı Sarayı, Fatih Sultan Mehmet döneminde yapılmış ve Osmanlı'nın en uzun süre kullanılan sarayıdır.",
+    OrderIndex = 191,
+    Choices =
+    {
+        new Choice { Text = "Topkapı Sarayı", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Bey Sarayı", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "İshak Paşa Sarayı", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Dolmabahçe Sarayı", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Yıldız Sarayı", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 192 ---
+new Question
+{
+    Note = notOsmanliSaraylari,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Ağrı Doğubayazıt'ta bulunan, İran saldırılarına karşı yapılan ve ilk ısıtmalı saray olan yapı aşağıdakilerden hangisidir?",
+    Explanation = "İshak Paşa Sarayı, Ağrı Doğubayazıt'ta bulunur ve İran saldırılarına karşı yapılmıştır; ilk ısıtmalı saraydır.",
+    OrderIndex = 192,
+    Choices =
+    {
+        new Choice { Text = "İshak Paşa Sarayı", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Bey Sarayı", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Topkapı Sarayı", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Dolmabahçe Sarayı", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Yıldız Sarayı", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 193 ---
+new Question
+{
+    Note = notOsmanliSaraylari,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Tamamıyla Batı Avrupa sarayları, özellikle Fransa'daki Versay Sarayı örnek alınarak yapılan ilk ve tek saray aşağıdakilerden hangisidir?",
+    Explanation = "Dolmabahçe Sarayı, tamamen Batı Avrupa sarayları örnek alınarak yapılan ilk ve tek saraydır.",
+    OrderIndex = 193,
+    Choices =
+    {
+        new Choice { Text = "Dolmabahçe Sarayı", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Topkapı Sarayı", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "İshak Paşa Sarayı", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Bey Sarayı", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Yıldız Sarayı", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 194 ---
+new Question
+{
+    Note = notOsmanliSaraylari,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Özellikle II. Abdülhamit'in yönetim merkezi olarak kullandığı saray aşağıdakilerden hangisidir?",
+    Explanation = "Yıldız Sarayı, özellikle II. Abdülhamit'in yönetim merkezi olarak kullandığı saraydır.",
+    OrderIndex = 194,
+    Choices =
+    {
+        new Choice { Text = "Yıldız Sarayı", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Dolmabahçe Sarayı", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Topkapı Sarayı", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Bey Sarayı", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "İshak Paşa Sarayı", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+// --- SORU 195 ---
+new Question
+{
+    Note = notOsmanliVergileri,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Küçükbaş hayvanlardan 1/40 oranında alınan vergi aşağıdakilerden hangisidir?",
+    Explanation = "Ağıl ve Adet-i Ağnam, küçükbaş hayvanlardan 1/40 oranında alınan vergidir.",
+    OrderIndex = 195,
+    Choices =
+    {
+        new Choice { Text = "Ağıl ve Adet-i Ağnam", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "İspenç", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Çift Resmi", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Baç", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Resm-i Sefine", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 196 ---
+new Question
+{
+    Note = notOsmanliVergileri,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Osmanlı Devleti'nin ilk vergisi kabul edilen ve pazar vergisi olan vergi aşağıdakilerden hangisidir?",
+    Explanation = "Baç, Osmanlı Devleti'nin ilk vergisi kabul edilir ve pazar vergisidir.",
+    OrderIndex = 196,
+    Choices =
+    {
+        new Choice { Text = "Baç", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "İspenç", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "İmdadiye Seferiye", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Derbent Vergisi", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Çift Bozan", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 197 ---
+new Question
+{
+    Note = notOsmanliVergileri,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Bir çift öküzle tarlayı süren köylünün devlete ödediği vergi aşağıdakilerden hangisidir?",
+    Explanation = "Çift Resmi, bir çift öküzle tarlayı süren köylünün devlete ödediği vergidir.",
+    OrderIndex = 197,
+    Choices =
+    {
+        new Choice { Text = "Çift Resmi", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Çift Bozan", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Baç", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "İspenç", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Ağıl ve Adet-i Ağnam", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 198 ---
+new Question
+{
+    Note = notOsmanliVergileri,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Toprağını mazeretsiz olarak 2-3 yıl üst üste ekmeyen köylüden alınan cezai vergi aşağıdakilerden hangisidir?",
+    Explanation = "Çift Bozan, toprağını mazeretsiz olarak 2-3 yıl üst üste ekmeyen köylüden alınan cezai vergidir.",
+    OrderIndex = 198,
+    Choices =
+    {
+        new Choice { Text = "Çift Bozan", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Çift Resmi", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "İltizam", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "İspenç", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Derbent Vergisi", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 199 ---
+new Question
+{
+    Note = notOsmanliVergileri,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "İltizam ihalesine girerken peşin ödenen bedele ne ad verilir?",
+    Explanation = "İltizam ihalesine girerken peşin ödenen bedel Muacele Bedeli olarak adlandırılır.",
+    OrderIndex = 199,
+    Choices =
+    {
+        new Choice { Text = "Muacele Bedeli", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Baç", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Çift Bozan", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "İspenç", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "İmdadiye Hazariye", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 200 ---
+new Question
+{
+    Note = notOsmanliVergileri,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Gayrimüslimlerin ödediği toprak vergisi aşağıdakilerden hangisidir?",
+    Explanation = "İspenç, gayrimüslimlerin ödediği toprak vergisidir.",
+    OrderIndex = 200,
+    Choices =
+    {
+        new Choice { Text = "İspenç", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Çift Resmi", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Baç", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "İmdadiye Seferiye", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Resm-i Sefine", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 201 ---
+new Question
+{
+    Note = notOsmanliVergileri,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Sefer zamanında toplanan vergi aşağıdakilerden hangisidir?",
+    Explanation = "İmdadiye Seferiye, sefer zamanında toplanan vergidir.",
+    OrderIndex = 201,
+    Choices =
+    {
+        new Choice { Text = "İmdadiye Seferiye", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "İmdadiye Hazariye", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Derbent Vergisi", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "İspenç", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Çift Bozan", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 202 ---
+new Question
+{
+    Note = notOsmanliVergileri,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Barış zamanında toplanan vergi aşağıdakilerden hangisidir?",
+    Explanation = "İmdadiye Hazariye, barış zamanında toplanan vergidir.",
+    OrderIndex = 202,
+    Choices =
+    {
+        new Choice { Text = "İmdadiye Hazariye", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "İmdadiye Seferiye", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "İspenç", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "Baç", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Resm-i Sefine", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 203 ---
+new Question
+{
+    Note = notOsmanliVergileri,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Geçit ve köprülerden alınan vergi aşağıdakilerden hangisidir?",
+    Explanation = "Derbent Vergisi, geçit ve köprülerden alınan vergidir.",
+    OrderIndex = 203,
+    Choices =
+    {
+        new Choice { Text = "Derbent Vergisi", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Resm-i Sefine", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Baç", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "İspenç", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "İltizam", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 204 ---
+new Question
+{
+    Note = notOsmanliVergileri,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Boğazlardan geçen gemilerden alınan vergi aşağıdakilerden hangisidir?",
+    Explanation = "Resm-i Sefine, boğazlardan geçen gemilerden alınan vergidir.",
+    OrderIndex = 204,
+    Choices =
+    {
+        new Choice { Text = "Resm-i Sefine", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Derbent Vergisi", IsCorrect = false, OrderIndex = 2 },
+        new Choice { Text = "Baç", IsCorrect = false, OrderIndex = 3 },
+        new Choice { Text = "İmdadiye Seferiye", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "İspenç", IsCorrect = false, OrderIndex = 5 }
+    }
+},
+
+// --- SORU 205 ---
+new Question
+{
+    Note = notOsmanliParaSistemi,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Osmanlı para tarihindeki önemli dönüm noktaları ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    Explanation = "Osmanlı para tarihindeki dönüm noktaları; Osman Bey dönemindeki bakır para, Orhan Bey dönemindeki gümüş para, Fatih dönemindeki altın para ve Abdülmecid dönemindeki kaime ile ilişkilidir.",
+    OrderIndex = 205,
+    Choices =
+    {
+        new Choice { Text = "İlk para bakırdır, Osman Bey döneminde basılmıştır ve adı Kaime'dir.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "İlk gümüş para I. Murat döneminde basılmıştır ve adı yine Akçe'dir.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Orhan Bey döneminde ilk gümüş para basılmış ve adı yine Akçe olmuştur.", IsCorrect = false, OrderIndex = 4 },
+        new Choice { Text = "Fatih Sultan Mehmet döneminde ilk altın para basılmıştır; bu paraya Sikke-i Hasene veya Sultani denilmiştir.", IsCorrect = false, OrderIndex = 5 },
+        new Choice { Text = "Sultan Abdülmecid döneminde ilk kağıt para basılmış ve adına Kaime denilmiştir.", IsCorrect = false, OrderIndex = 6 },
+        new Choice { Text = "Sultan Abdülmecid döneminde demir para olan Kuruş, diğer adıyla Mecidiye de kullanılmıştır.", IsCorrect = false, OrderIndex = 7 }
+    }
+},
+
 
             }
         };
