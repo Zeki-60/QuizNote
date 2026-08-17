@@ -2645,30 +2645,7 @@ new Question
                     }
                 },
 
-                // --- SORU 30 ---
-                // Son iki çeldirici kış özellikleridir; mevsimleri karıştıranı yakalar.
-                new Question
-                {
-                    Note = notYazKis,
-                    Type = QuestionType.MultipleChoice,
-                    Text = "Orta Asya'da yazların özellikleri ile ilgili aşağıdakilerden hangisi doğrudur?",
-                    Explanation = "Yazlar çok sıcak ve kuraktır, su kaynaklarını tüketir; hayvan su bulamaz.",
-                    OrderIndex = 30,
-                    Choices =
-                    {
-                        new Choice { Text = "Çok sıcak ve kuraktır", IsCorrect = true, OrderIndex = 1 },
-                        new Choice { Text = "Su kaynaklarını tüketir", IsCorrect = true, OrderIndex = 2 },
-                        new Choice { Text = "Hayvan su bulamaz", IsCorrect = true, OrderIndex = 3 },
-
-                        new Choice { Text = "Serin ve yağışlıdır", IsCorrect = false, OrderIndex = 4 },
-                        new Choice { Text = "Su kaynaklarını çoğaltır", IsCorrect = false, OrderIndex = 5 },
-                        new Choice { Text = "Hayvanlar için en verimli mevsimdir", IsCorrect = false, OrderIndex = 6 },
-                        new Choice { Text = "İnanılmaz serttir", IsCorrect = false, OrderIndex = 7 },
-                        new Choice { Text = "Çayırın üzeri karla kaplıdır", IsCorrect = false, OrderIndex = 8 },
-                        new Choice { Text = "Hayvan yem bulamaz", IsCorrect = false, OrderIndex = 9 },
-                    }
-                },
-
+                
                 // --- SORU 31 ---
                 // Üçüncü ve dördüncü çeldirici yaz özellikleridir.
                 
@@ -14060,24 +14037,7 @@ new Choice { Text = "Romen Diojen savaş meydanından kendi ordusuyla birlikte a
 }
 },
 
-// --- SORU 131 ---
-new Question
-{
-Note = notAlparslanVeAniFethi,
-Type = QuestionType.MultipleChoice,
-IsNegative = false,
-Text = "Sultan Alparslan dönemiyle ilgili aşağıdakilerden hangisi yanlıştır?",
-Explanation = "Ani'nin fethi 1064 yılında gerçekleşmiş ve bu fetih üzerine Ebul Feth unvanı verilmiştir.",
-OrderIndex = 131,
-Choices =
-{
-new Choice { Text = "Sultan Alparslan 1064 yılında ilk seferini gerçekleştirmiştir.", IsCorrect = false, OrderIndex = 1 },
-new Choice { Text = "Ani 1064 yılında fethedilmiştir.", IsCorrect = false, OrderIndex = 2 },
-new Choice { Text = "Ani'nin fethi üzerine Ebul Feth unvanı verilmiştir.", IsCorrect = false, OrderIndex = 3 },
-new Choice { Text = "Nizamül Mülk, Amidül Mülk'ün yerine vezir getirilmiştir.", IsCorrect = false, OrderIndex = 4 },
-new Choice { Text = "Ebul Feth unvanı Tuğrul Bey'e verilmiştir.", IsCorrect = true, OrderIndex = 5 },
-}
-},
+
 
 // --- SORU 132 ---
 new Question
@@ -16233,22 +16193,7 @@ new Choice { Text = "Burslu öğrencilik sistemi Selçuklularda başlamıştır.
 },
 
 // --- SORU 247 ---
-new Question
-{
-Note = notKarahanlilardaEgitimVeKultur,
-Type = QuestionType.MultipleChoice,
-Text = "Karahanlılar döneminde aşağıdakilerden hangisi gerçekleştirilmiştir?",
-Explanation = "Karahanlılar döneminde ilk Türk İslam yazılı edebî eserleri verilmiştir.",
-OrderIndex = 247,
-Choices =
-{
-new Choice { Text = "İlk Türk İslam yazılı edebî eserleri verilmiştir.", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "İlk Türk İslam eserleri Gazneliler döneminde verilmiştir.", IsCorrect = false, OrderIndex = 2 },
-new Choice { Text = "İlk Türk İslam yazılı eserleri Hindistan'da verilmiştir.", IsCorrect = false, OrderIndex = 3 },
-new Choice { Text = "İlk Türk İslam yazılı eserleri Abbasiler tarafından verilmiştir.", IsCorrect = false, OrderIndex = 4 },
-new Choice { Text = "İlk Türk İslam yazılı eserleri Büveyhoğulları döneminde verilmiştir.", IsCorrect = false, OrderIndex = 5 },
-}
-},
+
 
 // --- SORU 248 ---
 new Question
