@@ -14386,26 +14386,7 @@ new Question
     }
 },
 
-// --- SORU 150 ---
-new Question
-{
-    Note = notMalazgirtSavasininSonuclari,
-    Type = QuestionType.MultipleChoice,
-    Text = "Abbas Halifesi Sultan Alparslan'a aşağıdaki unvanlardan hangisini vermiştir?",
-    Explanation = "Abbas Halifesi Sultan Alparslan'a İslam ülkelerinin sultanı unvanını vermiştir.",
-    OrderIndex = 150,
-    Choices =
-    {
-        new Choice { Text = "İslam ülkelerinin sultanı", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Sultan Alparslan'a verilen bir unvan", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Abbas Halifesi tarafından verilen unvan", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "İslam ülkelerinin sultanı unvanı", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Doğunun ve batının hükümdarı", IsCorrect = false, OrderIndex = 5 },
-        new Choice { Text = "Anadolu'nun hükümdarı", IsCorrect = false, OrderIndex = 6 },
-        new Choice { Text = "Rumların sultanı", IsCorrect = false, OrderIndex = 7 },
-        new Choice { Text = "Katoliklerin sultanı", IsCorrect = false, OrderIndex = 8 },
-    }
-},
+
 
 // --- SORU 151 ---
 new Question
@@ -14428,26 +14409,7 @@ new Question
     }
 },
 
-// --- SORU 152 ---
-new Question
-{
-    Note = notMalazgirtVeHacliSeferleri,
-    Type = QuestionType.MultipleChoice,
-    Text = "Selçuklu elçisinin Romen Diojen'e verdiği cevap aşağıdakilerden hangisidir?",
-    Explanation = "Selçuklu elçisi, atların Hemedan'da kışlayabileceğini ancak Romen Diojen'in nerede kışlayacağını Allah'ın bileceğini söylemiştir.",
-    OrderIndex = 152,
-    Choices =
-    {
-        new Choice { Text = "Atlarınız Hemedan'da kışlayabilir.", IsCorrect = true, OrderIndex = 1 },
-        new Choice { Text = "Sizin nerede kışlayacağınızı Allah bilir.", IsCorrect = true, OrderIndex = 2 },
-        new Choice { Text = "Hemedan'da kışlayabileceğinizi söylemiştir.", IsCorrect = true, OrderIndex = 3 },
-        new Choice { Text = "Romen Diojen'in nerede kışlayacağını Allah'ın bileceğini söylemiştir.", IsCorrect = true, OrderIndex = 4 },
-        new Choice { Text = "Atlarınız İsfahan'da kışlayabilir.", IsCorrect = false, OrderIndex = 5 },
-        new Choice { Text = "Sizin nerede kışlayacağınızı ben bilirim.", IsCorrect = false, OrderIndex = 6 },
-        new Choice { Text = "Atlarınız Şam'da kışlayabilir.", IsCorrect = false, OrderIndex = 7 },
-        new Choice { Text = "Sizin Kudüs'te kışlayacağınızı biliyorum.", IsCorrect = false, OrderIndex = 8 },
-    }
-},
+
 
 // --- SORU 153 ---
 new Question
@@ -16539,23 +16501,7 @@ new Choice { Text = "Semerkant Medresesi", IsCorrect = false, OrderIndex = 5 },
 }
 },
 
-// --- SORU 267 ---
-new Question
-{
-Note = notGaznelilerinKurulusuVeGenelOzellikleri,
-Type = QuestionType.MultipleChoice,
-Text = "Gazneliler Devleti hangi şehirde kurulmuştur?",
-Explanation = "Gazneliler Devleti Afganistan'daki Gazne kentinde kurulmuştur.",
-OrderIndex = 267,
-Choices =
-{
-new Choice { Text = "Gazne", IsCorrect = true, OrderIndex = 1 },
-new Choice { Text = "Balasagun", IsCorrect = false, OrderIndex = 2 },
-new Choice { Text = "Bağdat", IsCorrect = false, OrderIndex = 3 },
-new Choice { Text = "Semerkant", IsCorrect = false, OrderIndex = 4 },
-new Choice { Text = "Mekke", IsCorrect = false, OrderIndex = 5 },
-}
-},
+
 
 // --- SORU 268 ---
 new Question
@@ -30875,6 +30821,29 @@ new Question
            **Burası karıştırılabilir:** Osmanlı Devleti'nin gerçek ismi Devlet-i Aliye'dir; Osmanoğulları ise beylik dönemindeki adıdır.
            """
         };
+        var notSarayGorevlileri = new Note
+        {
+            Title = "İlk Türk İslam Devletleri — Saraydaki Özel Görevliler",
+            Body = """
+           Sarayda hükümdarın çevresinde görev yapan özel kişiler bulunurdu:
+
+           • **Alemdar**:** Devletin bayraklarından sorumlu görevli.
+           • **Çaşnigir**:** Hükümdarın yemeklerini kontrol eden görevli (zehirlenme ihtimaline karşı).
+           • **Emir-i Ahur**:** Hükümdarın atlarından sorumlu görevli.
+           • **Taşt-dar (Abdar)**:** Hükümdarın temizlik işlerinden sorumlu görevli.
+           • **Camedar**:** Hükümdarın kıyafetleriyle ilgilenen görevli.
+           • **Candar**:** Hükümdarın özel muhafızı, yakın korumasıdır.
+           • **Hares Emiri**:** Hükümdara karşı suç işleyenleri cezalandıran görevli.
+           • **Serhenk**:** Hükümdarın yolculuk güzergahıyla ilgilenen görevli.
+           • **Vekil-i Has**:** Sarayın tüm işleriyle ilgilenen görevli.
+           • **Emir-i Şikar**:** Hükümdarın av partilerini tertip eden görevli.
+           • **Şarabdar**:** Hükümdarın içecekleriyle ilgilenen görevli.
+           • **Hansalar**:** Hükümdarın sofra düzeniyle ilgilenen görevli.
+           • **Aşçıbaşı (Şaşi)**:** Padişahın yiyecekleriyle ilgilenen görevli.
+
+           **Burası karıştırılabilir:** "-dar" eki sona geldiğinde "yapan, eden" anlamı taşır (candar, alemdar gibi); "dar" kelimenin başına geldiğinde ise kurum/yapı anlamı taşır (darüşşifa, darülfünun gibi).
+           """
+        };
 
         var notOsmanliKulturKaynaklari = new Note
         {
@@ -32178,7 +32147,7 @@ new Question
             Notes =
             {
                 // Not değişkenleri buraya yazılır: notXxx, notYyy
-                notOsmanliDigerAdlari, notOsmanliVergileri,notOsmanliKulturKaynaklari,notIkinciBayezid, notPadisahSembolVeUnvanlari, notVerasetDegisimleri, notPadisahGorevleriFerman, notMusadere, notKullukHakki, notBeratnameAdaletnameAmanname, notDivanBaskanligiVeSeferGoreviDegisimi, notSehzadeEgitimi, notOsmanliDevletFelsefeleri, notOsmanliKurulusYeriVeBaskentleri, notIstanbulunFethiVeDigerAdlari, notIstanbulYonetimi, notOsmanliSaraylari, notTopkapiSarayiBolumleri, notEnderun, notHarem, notDivaniHumayun, notDivanCesitleri, notSadrazam, notDefterdarVeKazasker, notNisanciVeReisulKuttab, notKaptaniDeryaVeYeniceriAgasi, notSeyhulislam, notTasraTeskilatiOncesi1840, notTasraTeskilatiSonrasi1871, notEyaletSistemiGenel, notImtiyazliEyaletler, notYurtlukOcaklikEyaletler, notSalyaneliEyaletler, notSalyanesizEyaletler, notMahkemeTurleri, notKadininGorevleri, notKadiDefterleriVeYardimcilari, notMilletSistemi, notSurnameVeSurreAlaylari, notVakifSistemi, notOsmanliHayirKurumlari, notYoneticiSiniflarGenel, notSeyfiyeSinifi, notIlmiyeSinifi, notKalemiyeSinifi, notOsmanliOrduGenel, notKapikuluOcaklarininKurulusu, notDevsirmeSistemi, notKapikuluPiyadeleri, notKapikuluSuvarileri, notEyaletAskerleriTimarli, notEyaletAskerleriDiger, notHiristiyanYardimciBirlikler, notDenizKuvvetleriGenel, notUnluOsmanliDenizcileri, notMulkArazi, notVakifAraziToprak, notMiriArazininCesitleri, notDirlikSistemi, notCifthaneSistemi, notEgitimGenelYapisi, notSarayOkullariEnderunHarem, notSehzadeganMektebiVeAminAlayi, notSibyanMektebi, notMedreseGenelOzellikleri, notMedreseAkademikBasamaklar, notMedreseBozulmaNedenleri, notKurulusDonemiKaynaklari, notKadizadeVeDavuduKayseri, notAltuncuzadeVeAksemsettin, notSabuncuogluSerafettin, notAliKuscu, notPiriReisVeSeydiAliReis, notEbuSuudEfendi, notTakiyuddinMehmet, notEvliyaCelebiVeKatipCelebi, notYanyaliEsadEfendi, notHezarfenVeLagari, notKociBeyVeNaima, notErzurumluIbrahimHakki, notHumbaraciAhmetPasa, notMehmetFatihGokmenVeMustafaBehcet, notAhmetCevdetPasa, notIyaseVeGelenekcilik, notFiskalizmVeMerkantilizm, notNarhSistemi, notLoncaTeskilati, notDerbentVeEhliHiref, notMenzilTeskilati, notGedikVeEhliHibre, notMuhtesipVeVergiKavramlari, notSeriVergiler, notOrfiVergiler, notAvarizVergisi, notStandardizasyonVeKapan, notOsmanliParaSistemi, notEkonomininBozulmaNedenleri, notOsmanliBankaciligi, notMimarSinanVeIlkCami, notSelatinCamilerVeDigerMimari, notHatSanatiUstalari, notMinyatuOsmanli, notTezhipOsmanli, notResimSanatiOsmanli, notMuzikOsmanli, notDigerSanatDallariOsmanli, notDivanTasavvufHalkEdebiyati, notOsmanliSpor
+                notOsmanliDigerAdlari, notOsmanliVergileri,notSarayGorevlileri,notOsmanliKulturKaynaklari,notIkinciBayezid, notPadisahSembolVeUnvanlari, notVerasetDegisimleri, notPadisahGorevleriFerman, notMusadere, notKullukHakki, notBeratnameAdaletnameAmanname, notDivanBaskanligiVeSeferGoreviDegisimi, notSehzadeEgitimi, notOsmanliDevletFelsefeleri, notOsmanliKurulusYeriVeBaskentleri, notIstanbulunFethiVeDigerAdlari, notIstanbulYonetimi, notOsmanliSaraylari, notTopkapiSarayiBolumleri, notEnderun, notHarem, notDivaniHumayun, notDivanCesitleri, notSadrazam, notDefterdarVeKazasker, notNisanciVeReisulKuttab, notKaptaniDeryaVeYeniceriAgasi, notSeyhulislam, notTasraTeskilatiOncesi1840, notTasraTeskilatiSonrasi1871, notEyaletSistemiGenel, notImtiyazliEyaletler, notYurtlukOcaklikEyaletler, notSalyaneliEyaletler, notSalyanesizEyaletler, notMahkemeTurleri, notKadininGorevleri, notKadiDefterleriVeYardimcilari, notMilletSistemi, notSurnameVeSurreAlaylari, notVakifSistemi, notOsmanliHayirKurumlari, notYoneticiSiniflarGenel, notSeyfiyeSinifi, notIlmiyeSinifi, notKalemiyeSinifi, notOsmanliOrduGenel, notKapikuluOcaklarininKurulusu, notDevsirmeSistemi, notKapikuluPiyadeleri, notKapikuluSuvarileri, notEyaletAskerleriTimarli, notEyaletAskerleriDiger, notHiristiyanYardimciBirlikler, notDenizKuvvetleriGenel, notUnluOsmanliDenizcileri, notMulkArazi, notVakifAraziToprak, notMiriArazininCesitleri, notDirlikSistemi, notCifthaneSistemi, notEgitimGenelYapisi, notSarayOkullariEnderunHarem, notSehzadeganMektebiVeAminAlayi, notSibyanMektebi, notMedreseGenelOzellikleri, notMedreseAkademikBasamaklar, notMedreseBozulmaNedenleri, notKurulusDonemiKaynaklari, notKadizadeVeDavuduKayseri, notAltuncuzadeVeAksemsettin, notSabuncuogluSerafettin, notAliKuscu, notPiriReisVeSeydiAliReis, notEbuSuudEfendi, notTakiyuddinMehmet, notEvliyaCelebiVeKatipCelebi, notYanyaliEsadEfendi, notHezarfenVeLagari, notKociBeyVeNaima, notErzurumluIbrahimHakki, notHumbaraciAhmetPasa, notMehmetFatihGokmenVeMustafaBehcet, notAhmetCevdetPasa, notIyaseVeGelenekcilik, notFiskalizmVeMerkantilizm, notNarhSistemi, notLoncaTeskilati, notDerbentVeEhliHiref, notMenzilTeskilati, notGedikVeEhliHibre, notMuhtesipVeVergiKavramlari, notSeriVergiler, notOrfiVergiler, notAvarizVergisi, notStandardizasyonVeKapan, notOsmanliParaSistemi, notEkonomininBozulmaNedenleri, notOsmanliBankaciligi, notMimarSinanVeIlkCami, notSelatinCamilerVeDigerMimari, notHatSanatiUstalari, notMinyatuOsmanli, notTezhipOsmanli, notResimSanatiOsmanli, notMuzikOsmanli, notDigerSanatDallariOsmanli, notDivanTasavvufHalkEdebiyati, notOsmanliSpor
 
             },
             Questions =
@@ -36162,6 +36131,45 @@ new Question
         new Choice { Text = "Fatih Sultan Mehmet döneminde ilk altın para basılmıştır; bu paraya Sikke-i Hasene veya Sultani denilmiştir.", IsCorrect = false, OrderIndex = 5 },
         new Choice { Text = "Sultan Abdülmecid döneminde ilk kağıt para basılmış ve adına Kaime denilmiştir.", IsCorrect = false, OrderIndex = 6 },
         new Choice { Text = "Sultan Abdülmecid döneminde demir para olan Kuruş, diğer adıyla Mecidiye de kullanılmıştır.", IsCorrect = false, OrderIndex = 7 }
+    }
+},
+// --- SORU 206 ---
+new Question
+{
+    Note = notSarayGorevlileri,
+    Type = QuestionType.MultipleChoice,
+    IsNegative = false,
+    Text = "Aşağıdaki saray görevlileri ile görevleri eşleştirmelerinden hangisi doğrudur?",
+    Explanation = "Osmanlı saray teşkilatında her görevlinin belirli bir sorumluluk alanı bulunurdu.",
+    OrderIndex = 206,
+    Choices =
+    {
+        // Doğru havuzu
+        new Choice { Text = "Alemdar — Devletin bayraklarından sorumludur.", IsCorrect = true, OrderIndex = 1 },
+        new Choice { Text = "Çaşnigir — Hükümdarın yemeklerini kontrol eder.", IsCorrect = true, OrderIndex = 2 },
+        new Choice { Text = "Emir-i Ahur — Hükümdarın atlarından sorumludur.", IsCorrect = true, OrderIndex = 3 },
+        new Choice { Text = "Taşt-dar (Abdar) — Hükümdarın temizlik işleriyle ilgilenir.", IsCorrect = true, OrderIndex = 4 },
+        new Choice { Text = "Camedar — Hükümdarın kıyafetleriyle ilgilenir.", IsCorrect = true, OrderIndex = 5 },
+        new Choice { Text = "Candar — Hükümdarın özel muhafızıdır.", IsCorrect = true, OrderIndex = 6 },
+        new Choice { Text = "Hares Emiri — Hükümdara karşı suç işleyenleri cezalandırır.", IsCorrect = true, OrderIndex = 7 },
+        new Choice { Text = "Serhenk — Hükümdarın yolculuk güzergâhıyla ilgilenir.", IsCorrect = true, OrderIndex = 8 },
+        new Choice { Text = "Vekil-i Has — Sarayın tüm işleriyle ilgilenir.", IsCorrect = true, OrderIndex = 9 },
+        new Choice { Text = "Emir-i Şikar — Hükümdarın av partilerini tertip eder.", IsCorrect = true, OrderIndex = 10 },
+        new Choice { Text = "Şarabdar — Hükümdarın içecekleriyle ilgilenir.", IsCorrect = true, OrderIndex = 11 },
+        new Choice { Text = "Hansalar — Hükümdarın sofra düzeniyle ilgilenir.", IsCorrect = true, OrderIndex = 12 },
+        new Choice { Text = "Aşçıbaşı (Şaşi) — Padişahın yiyecekleriyle ilgilenir.", IsCorrect = true, OrderIndex = 13 },
+
+        // Yanlış havuzu
+        new Choice { Text = "Alemdar — Hükümdarın kıyafetlerinden sorumludur.", IsCorrect = false, OrderIndex = 14 },
+        new Choice { Text = "Çaşnigir — Hükümdarın atlarını eğitir.", IsCorrect = false, OrderIndex = 15 },
+        new Choice { Text = "Emir-i Ahur — Sarayın bayraklarını taşır.", IsCorrect = false, OrderIndex = 16 },
+        new Choice { Text = "Camedar — Hükümdarın yemeklerini tadar.", IsCorrect = false, OrderIndex = 17 },
+        new Choice { Text = "Candar — Hükümdarın av partilerini düzenler.", IsCorrect = false, OrderIndex = 18 },
+        new Choice { Text = "Hares Emiri — Sarayın içeceklerinden sorumludur.", IsCorrect = false, OrderIndex = 19 },
+        new Choice { Text = "Serhenk — Hükümdarın özel muhafızıdır.", IsCorrect = false, OrderIndex = 20 },
+        new Choice { Text = "Vekil-i Has — Geçit ve köprülerin güvenliğini sağlar.", IsCorrect = false, OrderIndex = 21 },
+        new Choice { Text = "Şarabdar — Hükümdarın yolculuk güzergâhını belirler.", IsCorrect = false, OrderIndex = 22 },
+        new Choice { Text = "Hansalar — Hükümdara karşı suç işleyenleri cezalandırır.", IsCorrect = false, OrderIndex = 23 }
     }
 },
 

@@ -52,7 +52,12 @@ public record QuestionDto(
     int Level,
     int MaxLevel,
     /// <summary>Kullanıcı bu soruyu favorilere eklemiş mi?</summary>
-    bool IsFavorite);
+    bool IsFavorite,
+    /// <summary>Soruya bağlı resmin göreli URL'i (örn. /uploads/images/xxx.jpg); yoksa null.</summary>
+    string? ImageUrl);
+
+/// <summary>Resim havuzundaki bir kayıt; arama/listeleme sonuçlarında kullanılır.</summary>
+public record QuestionImageDto(Guid Id, string FileName, string Url, DateTime UploadedAt);
 
 // --- Cevaplama ---
 /// <summary>
@@ -108,6 +113,8 @@ public record QuestionEditDto(
     IReadOnlyList<ChoiceEditDto> Choices);
 
 public record UpdateQuestionRequest(string Text, bool IsNegative, string? Explanation);
+
+public record SetQuestionImageRequest(Guid ImageId);
 
 public record CreateChoiceForQuestionRequest(string Text, bool IsCorrect);
 public record UpdateChoiceRequest(string Text, bool IsCorrect);

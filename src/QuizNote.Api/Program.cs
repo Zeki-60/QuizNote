@@ -8,6 +8,11 @@ using Microsoft.OpenApi;
 using QuizNote.Api.Services;
 using QuizNote.Persistence;
 
+// wwwroot (ve içindeki uploads/images) WebApplicationBuilder oluşturulmadan önce var
+// olmalı; aksi halde WebRootFileProvider klasörsüz kurgulanır ve UseStaticFiles hep
+// 404 döner, sonradan Directory.CreateDirectory çağrılsa bile provider güncellenmez.
+Directory.CreateDirectory(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", "images"));
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<QuizNoteDbContext>(opt =>
@@ -84,6 +89,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+// Soru resimleri wwwroot/uploads/images altında saklanır ve /uploads/... altından servis edilir.
+app.UseStaticFiles();
 
 app.UseCors(CorsPolicy);
 app.UseAuthentication();

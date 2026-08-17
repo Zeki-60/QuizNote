@@ -13,6 +13,7 @@ public class QuizNoteDbContext(DbContextOptions<QuizNoteDbContext> options) : Db
     public DbSet<MatchPair> MatchPairs => Set<MatchPair>();
     public DbSet<UserQuestionLevel> UserQuestionLevels => Set<UserQuestionLevel>();
     public DbSet<FavoriteQuestion> FavoriteQuestions => Set<FavoriteQuestion>();
+    public DbSet<QuestionImage> QuestionImages => Set<QuestionImage>();
 
     protected override void OnModelCreating(ModelBuilder b)
     {
@@ -53,6 +54,18 @@ public class QuizNoteDbContext(DbContextOptions<QuizNoteDbContext> options) : Db
             // Ekleyen kullanıcı silinirse soru silinmesin; sadece köken bilgisi kaybolsun.
             e.HasOne(x => x.CreatedByUser).WithMany()
                 .HasForeignKey(x => x.CreatedByUserId).OnDelete(DeleteBehavior.SetNull);
+            // Resim silinirse (havuzdan tamamen kaldırılırsa) sorudaki referans null'a
+            // düşer; resim başka sorulara da bağlı olabileceği için Cascade kullanılmaz.
+            e.HasOne(x => x.Image).WithMany()
+                .HasForeignKey(x => x.ImageId).OnDelete(DeleteBehavior.SetNull);
+        });
+
+        b.Entity<QuestionImage>(e =>
+        {
+            e.ToTable("question_images");
+            e.Property(x => x.FileName).HasMaxLength(300).IsRequired();
+            e.Property(x => x.StoredFileName).HasMaxLength(300).IsRequired();
+            e.Property(x => x.ContentType).HasMaxLength(100).IsRequired();
         });
 
         b.Entity<Choice>(e =>

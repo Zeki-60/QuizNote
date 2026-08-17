@@ -58,6 +58,12 @@ public class Question
     public QuestionType Type { get; set; }
     public string Text { get; set; } = null!;
 
+    /// <summary>Soruya eklenmiş tekil resim; opsiyoneldir. Havuzdaki mevcut bir
+    /// resim başka bir soruya da bağlanabilir (aynı QuestionImage birden fazla
+    /// soru tarafından referans alınabilir).</summary>
+    public Guid? ImageId { get; set; }
+    public QuestionImage? Image { get; set; }
+
     /// <summary>
     /// Ters soru ("hangisi söylenemez / yanlıştır") işareti. Havuzdan şık çekilirken
     /// seçim tersine döner: 1 yanlış + 4 doğru sunulur ve aranan cevap yanlış olandır.
@@ -136,6 +142,25 @@ public class UserQuestionLevel
         Level = Math.Clamp(next, MinLevel, MaxLevel);
         UpdatedAt = DateTime.UtcNow;
     }
+}
+
+/// <summary>
+/// Yüklenmiş bir resim dosyası. Global bir havuzdur; aynı resim birden fazla
+/// soruya bağlanabilir. Diskteki gerçek dosya adı çakışmayı önlemek için
+/// benzersiz üretilir; kullanıcının gördüğü/aradığı isim ayrıca tutulur.
+/// </summary>
+public class QuestionImage
+{
+    public Guid Id { get; set; } = Guid.NewGuid();
+
+    /// <summary>Kullanıcının yüklerken verdiği/gördüğü orijinal dosya adı; arama bunun üzerinden yapılır.</summary>
+    public string FileName { get; set; } = null!;
+
+    /// <summary>wwwroot/uploads/images altındaki gerçek dosya adı (GUID tabanlı, benzersiz).</summary>
+    public string StoredFileName { get; set; } = null!;
+
+    public string ContentType { get; set; } = null!;
+    public DateTime UploadedAt { get; set; } = DateTime.UtcNow;
 }
 
 /// <summary>Kullanıcının favori olarak işaretlediği soru.</summary>

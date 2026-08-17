@@ -10,8 +10,16 @@ namespace QuizNote.Api.Controllers;
 
 [ApiController]
 [Route("api")]
-public class QuizController(QuizNoteDbContext db) : ControllerBase
+public class QuizController(QuizNoteDbContext db, IWebHostEnvironment env) : ControllerBase
 {
+    /// <summary>Resimlerin diske yazıldığı klasör: wwwroot/uploads/images.</summary>
+    private string ImagesDirectory => Path.Combine(env.ContentRootPath, "wwwroot", "uploads", "images");
+
+    /// <summary>Yalnızca resim olarak kabul edilen dosya uzantıları.</summary>
+    private static readonly HashSet<string> AllowedImageExtensions =
+        new(StringComparer.OrdinalIgnoreCase) { ".jpg", ".jpeg", ".png", ".gif", ".webp" };
+
+
     private Guid? CurrentUserId =>
         Guid.TryParse(User.FindFirstValue(ClaimTypes.NameIdentifier), out var id) ? id : null;
 
@@ -197,6 +205,7 @@ public class QuizController(QuizNoteDbContext db) : ControllerBase
             .Include(q => q.Choices)
             .Include(q => q.MatchPairs)
             .Include(q => q.Note)
+            .Include(q => q.Image)
             .ToListAsync(ct);
 
         if (questions.Count == 0)
@@ -273,7 +282,12 @@ public class QuizController(QuizNoteDbContext db) : ControllerBase
         q.MatchPairs.OrderBy(_ => Guid.NewGuid()).Select(m => new MatchRightDto(m.Id, m.RightText)).ToList(),
         level,
         UserQuestionLevel.MaxLevel,
-        isFavorite);
+        isFavorite,
+        ImageUrlOf(q.Image));
+
+    /// <summary>Bir resmin göreli servis URL'ini üretir; resim yoksa null.</summary>
+    private static string? ImageUrlOf(QuestionImage? image) =>
+        image is null ? null : $"/uploads/images/{image.StoredFileName}";
 
     /// <summary>Favori durumunu tersine çevirir ve yeni durumu döndürür.</summary>
     [Authorize]
@@ -851,5 +865,95 @@ public class QuizController(QuizNoteDbContext db) : ControllerBase
     /// <summary>Bir metni C# string literal'ine (çift tırnak + kaçış) çevirir.</summary>
     private static string CsString(string s) =>
         "\"" + s.Replace("\\", "\\\\").Replace("\"", "\\\"").Replace("\r\n", "\\n").Replace("\n", "\\n") + "\"";
+
+    // --- Soru resimleri ---
+
+    /// <summary>
+    /// Resim havuzunda isme göre arama yapar. <paramref name="search"/> boşsa en son
+    /// yüklenenler döner. Soru düzenleme ekranındaki "mevcut resimlerden seç" listesi
+    /// bunu kullanır.
+    /// </summary>
+    [HttpGet("images")]
+    public async Task<ActionResult<IReadOnlyList<QuestionImageDto>>> SearchImages(
+        [FromQuery] string? search, CancellationToken ct)
+    {
+        var query = db.QuestionImages.AsQueryable();
+
+        if (!string.IsNullOrWhiteSpace(search))
+            query = query.Where(i => EF.Functions.ILike(i.FileName, $"%{search.Trim()}%"));
+
+        var images = await query
+            .OrderByDescending(i => i.UploadedAt)
+            .Take(50)
+            .Select(i => new QuestionImageDto(i.Id, i.FileName, "/uploads/images/" + i.StoredFileName, i.UploadedAt))
+            .ToListAsync(ct);
+
+        return Ok(images);
+    }
+
+    /// <summary>
+    /// Bilgisayardan yeni bir resim yükler; havuza eklenir ve kaydı döner. Soruya
+    /// bağlamak için ayrıca <see cref="SetQuestionImage"/> çağrılmalıdır.
+    /// </summary>
+    [Authorize]
+    [HttpPost("images")]
+    [RequestSizeLimit(10 * 1024 * 1024)]
+    public async Task<ActionResult<QuestionImageDto>> UploadImage(IFormFile file, CancellationToken ct)
+    {
+        if (file is null || file.Length == 0)
+            return BadRequest(new { message = "Bir resim dosyası seçilmelidir." });
+
+        var ext = Path.GetExtension(file.FileName);
+        if (!AllowedImageExtensions.Contains(ext))
+            return BadRequest(new { message = "Yalnızca JPG, PNG, GIF veya WEBP dosyaları yüklenebilir." });
+
+        Directory.CreateDirectory(ImagesDirectory);
+
+        var storedFileName = $"{Guid.NewGuid():N}{ext}";
+        var fullPath = Path.Combine(ImagesDirectory, storedFileName);
+
+        await using (var stream = System.IO.File.Create(fullPath))
+            await file.CopyToAsync(stream, ct);
+
+        var image = new QuestionImage
+        {
+            FileName = file.FileName,
+            StoredFileName = storedFileName,
+            ContentType = file.ContentType,
+        };
+        db.QuestionImages.Add(image);
+        await db.SaveChangesAsync(ct);
+
+        return Ok(new QuestionImageDto(image.Id, image.FileName, "/uploads/images/" + image.StoredFileName, image.UploadedAt));
+    }
+
+    /// <summary>Bir soruya (havuzdaki mevcut veya yeni yüklenmiş) bir resmi bağlar.</summary>
+    [Authorize]
+    [HttpPut("questions/{questionId:guid}/image")]
+    public async Task<ActionResult> SetQuestionImage(Guid questionId, [FromBody] SetQuestionImageRequest req, CancellationToken ct)
+    {
+        var question = await db.Questions.FirstOrDefaultAsync(q => q.Id == questionId, ct);
+        if (question is null) return NotFound(new { message = "Soru bulunamadı." });
+
+        if (!await db.QuestionImages.AnyAsync(i => i.Id == req.ImageId, ct))
+            return NotFound(new { message = "Resim bulunamadı." });
+
+        question.ImageId = req.ImageId;
+        await db.SaveChangesAsync(ct);
+        return NoContent();
+    }
+
+    /// <summary>Sorudan resim bağını kaldırır; resmin kendisi havuzdan silinmez.</summary>
+    [Authorize]
+    [HttpDelete("questions/{questionId:guid}/image")]
+    public async Task<ActionResult> RemoveQuestionImage(Guid questionId, CancellationToken ct)
+    {
+        var question = await db.Questions.FirstOrDefaultAsync(q => q.Id == questionId, ct);
+        if (question is null) return NotFound(new { message = "Soru bulunamadı." });
+
+        question.ImageId = null;
+        await db.SaveChangesAsync(ct);
+        return NoContent();
+    }
 
 }
