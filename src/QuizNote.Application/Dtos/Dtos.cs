@@ -24,9 +24,10 @@ public record ScopeStatsDto(
     /// <summary>
     /// Kapsamdaki tüm soruların seviye ortalamasının yüzdeye çevrilmiş hali:
     /// (seviyelerin toplamı) / (soru sayısı * MaxLevel) * 100. Hiç soru yoksa 0.
-    /// Çözülmemiş sorular başlangıç seviyesinde (0) sayılır.
+    /// Çözülmemiş sorular başlangıç seviyesinde (0) sayılır. 2 ondalık basamağa
+    /// yuvarlanır (örn. 26.13).
     /// </summary>
-    int ScorePercent);
+    double ScorePercent);
 
 // --- Note ---
 public record NoteDto(Guid Id, Guid TopicId, string Title, string Body);
@@ -54,7 +55,10 @@ public record QuestionDto(
     /// <summary>Kullanıcı bu soruyu favorilere eklemiş mi?</summary>
     bool IsFavorite,
     /// <summary>Soruya bağlı resmin göreli URL'i (örn. /uploads/images/xxx.jpg); yoksa null.</summary>
-    string? ImageUrl);
+    string? ImageUrl,
+    /// <summary>Sorunun ait olduğu konunun adı; Tümü/Favorilerim/Kendi Sorularım gibi
+    /// konudan bağımsız kapsamlarda ekranda hangi konudan geldiğini göstermek için.</summary>
+    string TopicName);
 
 /// <summary>Resim havuzundaki bir kayıt; arama/listeleme sonuçlarında kullanılır.</summary>
 public record QuestionImageDto(Guid Id, string FileName, string Url, DateTime UploadedAt);

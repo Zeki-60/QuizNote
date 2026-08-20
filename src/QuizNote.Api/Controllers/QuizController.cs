@@ -206,6 +206,7 @@ public class QuizController(QuizNoteDbContext db, IWebHostEnvironment env) : Con
             .Include(q => q.MatchPairs)
             .Include(q => q.Note)
             .Include(q => q.Image)
+            .Include(q => q.Topic)
             .ToListAsync(ct);
 
         if (questions.Count == 0)
@@ -283,7 +284,8 @@ public class QuizController(QuizNoteDbContext db, IWebHostEnvironment env) : Con
         level,
         UserQuestionLevel.MaxLevel,
         isFavorite,
-        ImageUrlOf(q.Image));
+        ImageUrlOf(q.Image),
+        q.Topic.Name);
 
     /// <summary>Bir resmin göreli servis URL'ini üretir; resim yoksa null.</summary>
     private static string? ImageUrlOf(QuestionImage? image) =>
@@ -432,10 +434,11 @@ public class QuizController(QuizNoteDbContext db, IWebHostEnvironment env) : Con
         }
 
         // Konu puanı: seviyelerin toplamının, ulaşılabilecek maksimuma (soru sayısı *
-        // MaxLevel) oranı; tüm sorular seviye 5 ise 100, hepsi 0 ise 0 olur.
+        // MaxLevel) oranı; tüm sorular seviye 5 ise 100, hepsi 0 ise 0 olur. 2 ondalık
+        // basamağa yuvarlanır (örn. 26.13) — arayüzde daha ayrıntılı bir gösterge sağlar.
         var scorePercent = ids.Count == 0
             ? 0
-            : (int)Math.Round(100.0 * levelSum / (ids.Count * UserQuestionLevel.MaxLevel));
+            : Math.Round(100.0 * levelSum / (ids.Count * UserQuestionLevel.MaxLevel), 2);
 
         var favoriteCount = userId is null
             ? 0
